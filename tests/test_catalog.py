@@ -42,6 +42,22 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(stats['monthly'],{'2026-01':2})
         self.assertEqual(stats['focus_monthly'],{'2026-01':1})
 
+    def test_publication_series_spans_years_and_stops_at_cutoff(self):
+        stats = {'monthly': {'2025-12': 2, '2026-02': 3}}
+        rows = c.publication_series(stats, '2026-03-01')
+        january = next(row for row in rows if row['month'] == '2026-01')
+        self.assertEqual(january, {'month': '2026-01', 'papers': 0, 'cumulative': 2, 'partial': False})
+        self.assertEqual(rows[-1], {'month': '2026-03', 'papers': 0, 'cumulative': 5, 'partial': True})
+        self.assertFalse(any(row['month'] > '2026-03' for row in rows))
+        self.assertEqual(sum(row['papers'] for row in rows), rows[-1]['cumulative'])
+
+    def test_completed_month_and_out_of_horizon_data(self):
+        stats = {'monthly': {'2024-02': 1}}
+        self.assertFalse(c.publication_series(stats, '2024-02-29')[-1]['partial'])
+        self.assertTrue(c.publication_series(stats, '2024-02-28')[-1]['partial'])
+        with self.assertRaisesRegex(ValueError, 'cutoff'):
+            c.publication_series(stats, '2024-01-31')
+
     def test_import_history_preserves_baseline_and_counts_removals(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);source=root/'source';source.mkdir();(root/'data').mkdir()

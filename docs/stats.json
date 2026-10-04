@@ -1,0 +1,364 @@
+{
+  "papers": 177,
+  "resources": 10,
+  "monthly_coverage": 173,
+  "search_cutoff": "2026-10-01",
+  "updated_on": "2026-10-03",
+  "timeline": [
+    {
+      "month": "2022-01",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-02",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-03",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-04",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-05",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-06",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-07",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-08",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-09",
+      "papers": 0,
+      "cumulative": 0,
+      "partial": false
+    },
+    {
+      "month": "2022-10",
+      "papers": 1,
+      "cumulative": 1,
+      "partial": false
+    },
+    {
+      "month": "2022-11",
+      "papers": 1,
+      "cumulative": 2,
+      "partial": false
+    },
+    {
+      "month": "2022-12",
+      "papers": 0,
+      "cumulative": 2,
+      "partial": false
+    },
+    {
+      "month": "2023-01",
+      "papers": 0,
+      "cumulative": 2,
+      "partial": false
+    },
+    {
+      "month": "2023-02",
+      "papers": 0,
+      "cumulative": 2,
+      "partial": false
+    },
+    {
+      "month": "2023-03",
+      "papers": 2,
+      "cumulative": 4,
+      "partial": false
+    },
+    {
+      "month": "2023-04",
+      "papers": 0,
+      "cumulative": 4,
+      "partial": false
+    },
+    {
+      "month": "2023-05",
+      "papers": 3,
+      "cumulative": 7,
+      "partial": false
+    },
+    {
+      "month": "2023-06",
+      "papers": 0,
+      "cumulative": 7,
+      "partial": false
+    },
+    {
+      "month": "2023-07",
+      "papers": 1,
+      "cumulative": 8,
+      "partial": false
+    },
+    {
+      "month": "2023-08",
+      "papers": 2,
+      "cumulative": 10,
+      "partial": false
+    },
+    {
+      "month": "2023-09",
+      "papers": 1,
+      "cumulative": 11,
+      "partial": false
+    },
+    {
+      "month": "2023-10",
+      "papers": 5,
+      "cumulative": 16,
+      "partial": false
+    },
+    {
+      "month": "2023-11",
+      "papers": 1,
+      "cumulative": 17,
+      "partial": false
+    },
+    {
+      "month": "2023-12",
+      "papers": 0,
+      "cumulative": 17,
+      "partial": false
+    },
+    {
+      "month": "2024-01",
+      "papers": 0,
+      "cumulative": 17,
+      "partial": false
+    },
+    {
+      "month": "2024-02",
+      "papers": 0,
+      "cumulative": 17,
+      "partial": false
+    },
+    {
+      "month": "2024-03",
+      "papers": 1,
+      "cumulative": 18,
+      "partial": false
+    },
+    {
+      "month": "2024-04",
+      "papers": 0,
+      "cumulative": 18,
+      "partial": false
+    },
+    {
+      "month": "2024-05",
+      "papers": 1,
+      "cumulative": 19,
+      "partial": false
+    },
+    {
+      "month": "2024-06",
+      "papers": 2,
+      "cumulative": 21,
+      "partial": false
+    },
+    {
+      "month": "2024-07",
+      "papers": 2,
+      "cumulative": 23,
+      "partial": false
+    },
+    {
+      "month": "2024-08",
+      "papers": 2,
+      "cumulative": 25,
+      "partial": false
+    },
+    {
+      "month": "2024-09",
+      "papers": 1,
+      "cumulative": 26,
+      "partial": false
+    },
+    {
+      "month": "2024-10",
+      "papers": 2,
+      "cumulative": 28,
+      "partial": false
+    },
+    {
+      "month": "2024-11",
+      "papers": 0,
+      "cumulative": 28,
+      "partial": false
+    },
+    {
+      "month": "2024-12",
+      "papers": 0,
+      "cumulative": 28,
+      "partial": false
+    },
+    {
+      "month": "2025-01",
+      "papers": 0,
+      "cumulative": 28,
+      "partial": false
+    },
+    {
+      "month": "2025-02",
+      "papers": 2,
+      "cumulative": 30,
+      "partial": false
+    },
+    {
+      "month": "2025-03",
+      "papers": 0,
+      "cumulative": 30,
+      "partial": false
+    },
+    {
+      "month": "2025-04",
+      "papers": 4,
+      "cumulative": 34,
+      "partial": false
+    },
+    {
+      "month": "2025-05",
+      "papers": 2,
+      "cumulative": 36,
+      "partial": false
+    },
+    {
+      "month": "2025-06",
+      "papers": 2,
+      "cumulative": 38,
+      "partial": false
+    },
+    {
+      "month": "2025-07",
+      "papers": 5,
+      "cumulative": 43,
+      "partial": false
+    },
+    {
+      "month": "2025-08",
+      "papers": 0,
+      "cumulative": 43,
+      "partial": false
+    },
+    {
+      "month": "2025-09",
+      "papers": 1,
+      "cumulative": 44,
+      "partial": false
+    },
+    {
+      "month": "2025-10",
+      "papers": 3,
+      "cumulative": 47,
+      "partial": false
+    },
+    {
+      "month": "2025-11",
+      "papers": 1,
+      "cumulative": 48,
+      "partial": false
+    },
+    {
+      "month": "2025-12",
+      "papers": 2,
+      "cumulative": 50,
+      "partial": false
+    },
+    {
+      "month": "2026-01",
+      "papers": 3,
+      "cumulative": 53,
+      "partial": false
+    },
+    {
+      "month": "2026-02",
+      "papers": 1,
+      "cumulative": 54,
+      "partial": false
+    },
+    {
+      "month": "2026-03",
+      "papers": 2,
+      "cumulative": 56,
+      "partial": false
+    },
+    {
+      "month": "2026-04",
+      "papers": 5,
+      "cumulative": 61,
+      "partial": false
+    },
+    {
+      "month": "2026-05",
+      "papers": 11,
+      "cumulative": 72,
+      "partial": false
+    },
+    {
+      "month": "2026-06",
+      "papers": 7,
+      "cumulative": 79,
+      "partial": false
+    },
+    {
+      "month": "2026-07",
+      "papers": 16,
+      "cumulative": 95,
+      "partial": false
+    },
+    {
+      "month": "2026-08",
+      "papers": 21,
+      "cumulative": 116,
+      "partial": false
+    },
+    {
+      "month": "2026-09",
+      "papers": 56,
+      "cumulative": 172,
+      "partial": false
+    },
+    {
+      "month": "2026-10",
+      "papers": 1,
+      "cumulative": 173,
+      "partial": true
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-10-03",
+      "papers": 177,
+      "resources": 10
+    }
+  ]
+}

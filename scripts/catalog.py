@@ -2,6 +2,7 @@
 """Build a living bibliography using only Python's standard library."""
 import argparse
 import collections
+import calendar
 import datetime as dt
 import hashlib
 import html
@@ -220,69 +221,85 @@ def statistics(records, history):
             'history': [{'date': h['date'], 'papers': len(h['paper_ids']), 'resources': len(h['resource_ids'])} for h in history]}
 
 
-def svg_timeline(stats, year):
-    width, height, left, top, plotw, ploth = 1000, 380, 64, 65, 900, 230
-    values, focus_values = [], []
-    for month in range(1,13):
-        limit = f'{year}-{month:02}'
-        values.append(sum(v for k,v in stats['monthly'].items() if k <= limit))
-        focus_values.append(sum(v for k,v in stats['focus_monthly'].items() if k <= limit))
-    maxmonth = max((int(m[5:]) for m in stats['monthly'] if m.startswith(str(year))), default=1)
-    maximum = max(20, ((max(values)+39)//40)*40)
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
-           '<title id="title">Publication timeline of the included literature</title>',
-           '<desc id="desc">Cumulative included papers by release month; this is not the project collection history.</desc>',
-           '<rect width="1000" height="380" rx="16" fill="#f5f7f3"/>',
-           f'<g font-family="Arial,sans-serif" font-size="13" fill="#344c43"><text x="28" y="30" font-size="18" font-weight="bold">Included literature · cumulative by release month · {year}</text>']
+def publication_series(stats, cutoff):
+    """Include empty elapsed months; never imply future months have zero papers."""
+    through = dt.date.fromisoformat(cutoff)
+    final_month = cutoff[:7]
+    if any(month > final_month for month in stats['monthly']):
+        raise ValueError('Publication month exceeds the search cutoff')
+    first_year = min((int(month[:4]) for month in stats['monthly']), default=through.year)
+    cumulative, rows = 0, []
+    for year in range(first_year, through.year + 1):
+        for month in range(1, (through.month if year == through.year else 12) + 1):
+            key = f'{year}-{month:02}'
+            count = stats['monthly'].get(key, 0)
+            cumulative += count
+            rows.append({'month': key, 'papers': count, 'cumulative': cumulative,
+                         'partial': key == final_month and through.day < calendar.monthrange(year, month)[1]})
+    return rows
+
+
+def public_statistics(stats, config):
+    return {'papers': stats['papers'], 'resources': stats['resources'],
+            'monthly_coverage': stats['monthly_coverage'],
+            'search_cutoff': config['search_cutoff'], 'updated_on': config['updated_on'],
+            'timeline': publication_series(stats, config['search_cutoff']),
+            'history': stats['history']}
+
+
+def svg_timeline(stats, cutoff):
+    year = int(cutoff[:4])
+    rows = [r for r in publication_series(stats, cutoff) if r['month'].startswith(str(year))]
+    left, top, plotw, ploth = 64, 85, 895, 220
+    maximum = max(10, ((max(r['papers'] for r in rows)+9)//10)*10)
+    slot = plotw / len(rows)
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">',
+           f'<title id="title">Collected papers by publication month · {year}</title>',
+           '<desc id="desc">'+html.escape('; '.join(f'{r["month"]}: {r["papers"]}'+(' (partial month)' if r['partial'] else '') for r in rows))+'. Counts describe the survey collection, including related work, not all papers in the field.</desc>',
+           '<rect width="1000" height="390" rx="12" fill="#f5f5ef"/>',
+           '<g font-family="Arial,sans-serif" font-size="13" fill="#1b4033">',
+           f'<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#6a796e">{year} · Search through {cutoff}</text>']
     for i in range(5):
         value = maximum*i/4
         y = top+ploth-ploth*i/4
-        out += [f'<path d="M{left} {y}h{plotw}" stroke="#d9e2dc"/>', f'<text x="{left-12}" y="{y+4}" text-anchor="end">{value:g}</text>']
-    for i in range(maxmonth):
-        x = left+plotw*i/11
-        out.append(f'<text x="{x}" y="{top+ploth+24}" text-anchor="middle">{dt.date(year,i+1,1):%b}</text>')
-    for data,color in [(values,'#195c47'),(focus_values,'#bf682f')]:
-        points = [(left+plotw*i/11, top+ploth-ploth*value/maximum) for i,value in enumerate(data[:maxmonth])]
-        out.append('<polyline fill="none" stroke="'+color+'" stroke-width="3" points="'+' '.join(f'{x:.1f},{y:.1f}' for x,y in points)+'"/>')
-        for (x,y),value in zip(points,data):
-            out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="{color}"/><text x="{x}" y="{y-12}" text-anchor="middle" fill="{color}">{value}</text>')
-    out += ['<circle cx="32" cy="351" r="5" fill="#195c47"/><text x="44" y="355">All papers with a known release month</text>',
-            '<circle cx="400" cy="351" r="5" fill="#bf682f"/><text x="412" y="355">Harness Optimization and Search Workflows category</text></g></svg>']
+        out += [f'<path d="M{left} {y}h{plotw}" stroke="#d9dfd3"/>', f'<text x="{left-12}" y="{y+4}" text-anchor="end" fill="#6a796e">{value:g}</text>']
+    for i,row in enumerate(rows):
+        x = left + slot * (i+.5)
+        h = ploth * row['papers'] / maximum
+        color = '#b27548' if row['partial'] else '#2c614b'
+        label = dt.date.fromisoformat(row['month']+'-01').strftime('%b') + ('*' if row['partial'] else '')
+        out += [f'<rect x="{x-slot*.28:.1f}" y="{top+ploth-h:.1f}" width="{slot*.56:.1f}" height="{h:.1f}" rx="3" fill="{color}"/>',
+                f'<text x="{x:.1f}" y="{top+ploth-h-10:.1f}" text-anchor="middle">{row["papers"]}</text>',
+                f'<text x="{x:.1f}" y="{top+ploth+24}" text-anchor="middle" fill="#6a796e">{label}</text>']
+    note = '* Partial month. ' if any(r['partial'] for r in rows) else ''
+    out += [f'<text x="28" y="368" fill="#6a796e">{note}Known release months: {stats["monthly_coverage"]}/{stats["papers"]} papers. Official resources are excluded.</text></g></svg>']
     return '\n'.join(out)+'\n'
 
 
-def markdown(records, stats, config):
-    lines = ['# Harness RSI', '', '**A living literature collection on agent harness optimization and recursive self-improvement.**', '',
-             'Follow the methods, browse the papers, and track how this collection grows.', '',
-             f'**{stats["papers"]} papers & manuscripts · {stats["resources"]} official resources · {len(stats["categories"])} thematic categories**', '',
-             f'Literature search cutoff: **{config["search_cutoff"]}** · Collection updated: **{config["updated_on"]}**', '',
-             '[Browse the bibliography](#literature-by-topic) · [BibTeX](data/literature.bib) · [Data & methodology](CONTRIBUTING.md) · [Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml)', '',
-             '![Publication timeline](docs/assets/publication-timeline.svg)', '',
-             'The plot counts **included literature by release month**, using first arXiv submission when available and bibliographic publication dates otherwise. It includes older papers in the cumulative total. It is a view of our collection, not an estimate of every paper in the field. '+f'{stats["monthly_coverage"]}/{stats["papers"]} papers have month-level or finer dates; the others remain listed and are excluded from this monthly plot.', '',
-             '## Scope', '',
-             'The focus is persistent changes to an agent’s harness: its executable workflow, prompts, tools, memory mechanisms, and improvement process. The collection also includes related search, memory, training, evaluation, and infrastructure work. **Inclusion does not mean that a method achieves recursive self-improvement.** Categories describe primary contributions, not RSI capability levels.', '',
-             'Sources and summaries are imported from our survey bibliography and Literature Map. This repository does not redistribute paper PDFs or contain the unpublished ACL manuscript. It is a curated working collection, not an exhaustive census or a replication of reported results.', '',
-             '## Collection growth', '',
-             'The initial import is a baseline, not historical evidence of when each paper was discovered. Future updates record dated snapshots; removals can reduce the total. Publication dates and `added_on` dates are kept separate.', '',
-             '| Snapshot | Papers | Official resources |', '| :-- | --: | --: |']
+def markdown(stats, config):
+    lines = ['# Harness RSI', '', '**What can change. What evolution creates.**', '',
+             'A research companion exploring editable agent harnesses and the mechanisms they evolve across task domains.', '',
+             'The research atlas will connect **task domains → editable harnesses → evolved mechanisms → evidence**. Domain findings and the survey link are forthcoming.', '',
+             '## A growing research collection', '',
+             f'**{stats["papers"]} papers & manuscripts · {stats["resources"]} official resources**', '',
+             f'Collection updated: **{config["updated_on"]}** · Literature search through: **{config["search_cutoff"]}**', '',
+             '![Collected papers by publication month](docs/assets/publication-timeline.svg)', '',
+             'Counts describe the literature included in our survey, including related methods, surveys, and benchmarks. They do not represent a census of the field or a count of methods that achieve RSI. Official resources are counted separately.', '',
+             f'The chart uses first arXiv submission where available and bibliographic publication dates otherwise. **{stats["monthly_coverage"]}/{stats["papers"]}** papers have a known release month; the remaining papers are included in the total but excluded from monthly and cumulative charts. The final month stops at the stated search cutoff.', '',
+             '## Collection updates', '',
+             'These are actual collection snapshots, distinct from the publication months above. The initial import is the baseline; earlier collection activity has not been reconstructed. Future imports extend this history, and removals can reduce the total.', '',
+             '| Collection snapshot | Papers | Official resources |', '| :-- | --: | --: |']
     lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history']]
-    lines += ['', '## Explore locally', '', '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
-              'Open http://localhost:8000 for the standalone research homepage. It reserves domain studies on editable harnesses, evolved mechanisms, and supporting evidence. Findings and publication links are intentionally unfilled. The bibliography below remains supporting project material. The static `docs/` directory is ready for hosting when publication is authorized.', '',
-              '## Literature by topic', '', '| Topic | Records |', '| :-- | --: |']
-    for category,count in stats['categories'].items():
-        lines.append(f'| {category} | {count} |')
-    for category in stats['categories']:
-        lines += ['', f'### {category}', '']
-        subset = [r for r in records if r['category']==category]
-        subset.sort(key=lambda r:(r['release']['value'] or '',r['title']),reverse=True)
-        for r in subset:
-            date = r['release']['value'] or 'n.d.'
-            lines += [f'- **[{r["title"]}]({r["url"]})** ({date}) — {r["summary"]}']
-    lines += ['', '## Maintain this collection', '',
-              'See [CONTRIBUTING.md](CONTRIBUTING.md) for the import, build, validation, and date policies. Bibliographic fields live in `data/literature.bib`; classification, summaries, date provenance, and first-added dates live in `data/annotations.json`. Charts, this README, and the website data are generated from them.', '',
+    lines += ['', '## Explore the project', '',
+              'The standalone homepage contains interactive monthly and cumulative publication views and a domain atlas prepared for future findings. The website and this README present aggregate progress; individual records remain in the underlying data.', '',
+              '[Bibliography data](data/literature.bib) · [Counting methodology & contributions](CONTRIBUTING.md) · [Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml)', '',
+              'Preview the website locally:', '', '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
+              'Open http://localhost:8000. The arXiv and public website links will be added when available.', '',
+              '## Keep the collection current', '',
+              'Update the survey bibliography and Literature Map, then import them. One build refreshes the website statistics, monthly chart, and this README together.', '',
               '```sh', 'python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD',
-              'python3 scripts/catalog.py build', 'python3 -m unittest discover -s tests', 'python3 scripts/catalog.py check', '```', '',
-              'No external packages, API keys, or build service are required.', '']
+              'python3 -m unittest discover -s tests', 'python3 scripts/catalog.py check', '```', '',
+              'See [CONTRIBUTING.md](CONTRIBUTING.md) for source verification, date provenance, and update policies. No external packages or API keys are required.', '']
     return '\n'.join(lines)
 
 
@@ -300,9 +317,10 @@ def outputs():
             raise ValueError('Latest snapshot does not match current corpus; run import')
     stats = statistics(records, history)
     dataset = {'config':config, 'stats':stats, 'records':records}
-    return {ROOT/'README.md': markdown(records, stats, config),
+    return {ROOT/'README.md': markdown(stats, config),
+            ROOT/'docs/stats.json': json.dumps(public_statistics(stats, config), ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/catalog.json': json.dumps(dataset, ensure_ascii=False, indent=2)+'\n',
-            ROOT/'docs/assets/publication-timeline.svg': svg_timeline(stats, int(config['search_cutoff'][:4]))}
+            ROOT/'docs/assets/publication-timeline.svg': svg_timeline(stats, config['search_cutoff'])}
 
 
 def main():

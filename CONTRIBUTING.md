@@ -1,6 +1,6 @@
 # Maintaining Harness RSI
 
-This repository is the literature companion to an ongoing survey. The public-facing material is a bibliography, thematic summaries, and descriptive statistics; the manuscript stays in Overleaf.
+This repository is the literature companion to an ongoing survey. The homepage and GitHub README show aggregate publication trends and collection updates. The research atlas will explain editable harnesses and evolved mechanisms across domains once findings are ready. Individual paper records remain in the source data; the manuscript stays in Overleaf.
 
 ## Add or correct a paper
 
@@ -13,7 +13,7 @@ python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY
 python3 -m unittest discover -s tests
 python3 scripts/catalog.py check
 git diff
-git add data docs/catalog.json docs/assets/publication-timeline.svg README.md
+git add data docs/catalog.json docs/stats.json docs/assets/publication-timeline.svg README.md
 git commit -m "Update literature collection"
 git push
 ```
@@ -42,9 +42,9 @@ Versions of the same arXiv record are one work. Preprint and published versions 
 
 ## Read the charts correctly
 
-**Publication timeline:** cumulative included papers with a known release month. Earlier years contribute to a later year’s opening total. Quarterly values aggregate the same months; the final month/quarter stops at the stated search cutoff. Year-only and undated papers are excluded from these charts but retained in the paper total and catalog. These curves describe this collection, not the entire research field.
+**Publication timeline:** the website defaults to monthly counts and offers a cumulative view and year selector. The GitHub README shows monthly counts for the search-cutoff year. Earlier years contribute to a later year’s cumulative opening total. Only months through the search cutoff appear; a partially covered final month is marked. A zero means no included records for that month, not that no relevant work was published. Year-only and undated papers are excluded from these charts but retained in the collection total.
 
-The second line is the explicitly named **Harness Optimization and Search Workflows** category. It is one topical subset; it neither includes all harness-related work nor labels the subset as fully recursive systems.
+These plots describe the entire survey collection, including adjacent methods, surveys, benchmarks, and supporting work. They are not a field-wide census or a count of direct Harness RSI methods. Official resources are excluded from paper counts. `docs/stats.json` contains only aggregate counts, publication-month series, update dates, and collection snapshots; the homepage does not load individual paper records.
 
 **Collection history:** dated corpus snapshots beginning with the initial import. There is initially one point. Future additions and removals produce real collection-history points. Never substitute publication dates or BibTeX access dates for historical collection dates.
 
@@ -61,13 +61,13 @@ python3 -m http.server 8000 --directory docs
 
 Open `http://localhost:8000` for the standalone research homepage. Its domain tabs work without a backend. All assets are local and there are no analytics, external fonts, or API keys.
 
-The homepage is a scaffold: editable scope, evolved mechanisms, and evidence remain empty until the domain studies are ready. `docs/project.json` contains the planned domain names and empty `findings` arrays, plus null arXiv and website URLs. The renderer intentionally displays empty states; presenting findings will require an evidence-backed study view. Do not fill it with inferred results, placeholder scores, or invented links. The existing bibliography and statistics remain available in the repository, separate from the homepage.
+The homepage is a scaffold: editable scope, evolved mechanisms, and evidence remain empty until the domain studies are ready. `docs/project.json` contains the planned domain names and empty `findings` arrays, plus null arXiv and website URLs. The renderer intentionally displays empty states; presenting findings will require an evidence-backed study view. Do not fill it with inferred results, placeholder scores, or invented links. The aggregate activity section is populated from the actual bibliography. Keep domain findings empty until source-supported content is ready. Counts and the data-update date come from the import pipeline, not the date of a website redesign.
 
 The validation workflow checks source consistency, identifiers, date precision, snapshot totals, and generated-file freshness. These checks do **not** verify a paper’s scientific claims; reading the primary sources remains necessary.
 
 ## GitHub hosting
 
-The README displays the literature list and a generated SVG chart directly on GitHub. The `docs/` folder is also a complete static website.
+The README displays aggregate counts, a monthly SVG chart, and collection updates, without enumerating papers. The `docs/` folder is also a complete static website.
 
 The repository starts private. Website deployment is a separate, manual action: after deciding to publish the collection, set GitHub Pages to use GitHub Actions and run **Publish literature website**. That workflow refuses to run on a private repository. It deploys only `docs/`. No automatic web-publication or literature-discovery schedule is configured.
 
