@@ -1,0 +1,23 @@
+name: Website or figure issue
+description: Report a visualization, accessibility, display, or figure-attribution problem.
+title: '[Website] '
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or figure
+      description: Link or section title where the issue appears.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What happened?
+      description: Include the expected behavior and steps to reproduce. For a figure, include any relevant source or attribution information.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      description: Useful for layout and interaction issues.

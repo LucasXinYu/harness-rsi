@@ -4,13 +4,62 @@
   "arxiv_url": null,
   "website_url": null,
   "domains": [
-    {"id": "coding", "name": "Coding & terminal", "findings": []},
-    {"id": "math", "name": "Math & formal reasoning", "findings": []},
-    {"id": "classification", "name": "Text classification", "findings": []},
-    {"id": "workspaces", "name": "Web & professional workflows", "findings": []},
-    {"id": "science", "name": "ML & scientific discovery", "findings": []},
-    {"id": "engineering", "name": "Engineering design", "findings": []},
-    {"id": "embodied", "name": "Embodied agents", "findings": []},
-    {"id": "multimodal", "name": "Multimodal agents", "findings": []}
+    {
+      "id": "coding",
+      "name": "Coding & terminal",
+      "findings": []
+    },
+    {
+      "id": "math",
+      "name": "Math & formal reasoning",
+      "findings": []
+    },
+    {
+      "id": "classification",
+      "name": "Text classification",
+      "findings": []
+    },
+    {
+      "id": "workspaces",
+      "name": "Web & professional workflows",
+      "findings": []
+    },
+    {
+      "id": "science",
+      "name": "ML & scientific discovery",
+      "findings": []
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering design",
+      "findings": []
+    },
+    {
+      "id": "embodied",
+      "name": "Embodied agents",
+      "findings": []
+    },
+    {
+      "id": "multimodal",
+      "name": "Multimodal agents",
+      "findings": []
+    }
+  ],
+  "figures": [],
+  "contributors": [
+    {
+      "name": "Xin (Lucas) Yu",
+      "role": "Project lead",
+      "description": "Research direction, literature curation, and editorial decisions.",
+      "url": "https://github.com/LucasXinYu",
+      "kind": "human"
+    },
+    {
+      "name": "Codex",
+      "role": "AI assistant · OpenAI",
+      "description": "Assistance with implementation, visualization, literature organization, and editing.",
+      "url": null,
+      "kind": "ai"
+    }
   ]
 }

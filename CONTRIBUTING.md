@@ -65,11 +65,29 @@ The homepage is a scaffold: editable scope, evolved mechanisms, and evidence rem
 
 The validation workflow checks source consistency, identifiers, date precision, snapshot totals, and generated-file freshness. These checks do **not** verify a paper’s scientific claims; reading the primary sources remains necessary.
 
+## Add research figures
+
+The website uses the same visual identity as the repository cover. Its figure gallery supports a full-width figure and pairs of smaller figures, descriptive captions, source links, lazy loading, and a keyboard-accessible image viewer with zoom, download, and Escape to close.
+
+Keep `figures` in `docs/project.json` empty until a research figure is ready. For each approved figure, add an image under `docs/assets/figures/` and an entry with:
+
+- `id`: stable figure identifier.
+- `title`: short descriptive title.
+- `src`: local path such as `assets/figures/workflow.svg`.
+- `alt`: description of the information conveyed by the figure.
+- `caption`: scope, interpretation, and relevant context.
+- `layout`: `wide` for a full-width figure, or `standard` for a half-width figure.
+- `source_url`: an optional HTTPS link to the primary source.
+
+Use SVG for diagrams and PNG, WebP, AVIF, or JPEG for raster images. Preserve the source's aspect ratio and ensure text remains legible when enlarged. Add only original figures or material you have permission to redistribute, and retain attribution. Do not use illustrative placeholders as evidence. The existing hero image is explicitly a conceptual schematic and is separate from research findings.
+
+Contributor names, roles, and descriptions live in `docs/project.json` and appear on the website and in the generated README. Xin (Lucas) Yu (GitHub: LucasXinYu) leads the project. Codex is credited as an OpenAI AI assistant for assisted work, rather than as a human researcher or a scholarly author. Run `python3 scripts/catalog.py build` after changing contributor information.
+
 ## GitHub hosting
 
 The README displays aggregate counts, a monthly SVG chart, and collection updates, without enumerating papers. The `docs/` folder is also a complete static website.
 
-The repository starts private. Website deployment is a separate, manual action: after deciding to publish the collection, set GitHub Pages to use GitHub Actions and run **Publish literature website**. That workflow refuses to run on a private repository. It deploys only `docs/`. No automatic web-publication or literature-discovery schedule is configured.
+The repository starts private. Website deployment is a separate, manual action: after deciding to publish the collection, set GitHub Pages to use GitHub Actions and run **Publish literature website**. That workflow refuses to run on a private repository. It deploys only `docs/`. No automatic web-publication or literature-discovery schedule is configured. The official-project branding identifies this repository as the project home; it does not imply that the survey has been published or accepted.
 
 ## File boundaries
 

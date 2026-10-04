@@ -76,6 +76,8 @@ async function init() {
     domains = project.domains;
     if (!Array.isArray(domains) || !domains.length) throw new Error('No domains configured.');
     renderDomains();
+    renderContributors(project.contributors || []);
+    renderFigures(project.figures || []);
     setFutureLink('paper-action', project.arxiv_url, 'arXiv paper');
     setFutureLink('paper-resource', project.arxiv_url, 'Read the survey');
     setFutureLink('site-resource', project.website_url, 'Visit the research website');
@@ -108,7 +110,7 @@ function renderPublicationChart() {
   const countKey = cumulative ? 'cumulative' : 'papers';
   const panel = byId('publication-chart');
   const width = Math.max(260, panel.clientWidth);
-  const height = 260, left = 34, right = 15, top = 31, bottom = 33;
+  const height = width > 650 ? 310 : 260, left = 34, right = 15, top = 31, bottom = 33;
   const plotHeight = height - top - bottom;
   const step = (width - left - right) / rows.length;
   const largest = Math.max(...rows.map(row => row[countKey]), 1);
@@ -140,8 +142,31 @@ function renderPublicationChart() {
     group.append(svgElement('text', { x, y: y - 10, 'text-anchor': 'middle', fill: color }, row[countKey]));
     group.append(svgElement('text', { x, y: height - 10, 'text-anchor': 'middle', 'font-size': width < 400 ? 9 : 10 }, monthName(row.month) + (row.partial ? '*' : '')));
   });
+  const tooltip = document.createElement('div');
+  tooltip.className = 'chart-tooltip';
+  tooltip.hidden = true;
+  tooltip.setAttribute('aria-hidden', 'true');
+  points.forEach(({ x, row }) => {
+    const hit = svgElement('rect', { x: x - step / 2, y: top - 18, width: step, height: plotHeight + 18, fill: 'transparent', class: 'chart-hit', tabindex: 0, role: 'img', 'aria-label': `${row.month}: ${row[countKey]} ${cumulative ? 'cumulative papers' : 'papers'}${row.partial ? ', partial month' : ''}` });
+    const show = () => {
+      tooltip.replaceChildren();
+      const date = document.createElement('span');
+      date.textContent = `${monthName(row.month)} ${year}${row.partial ? ' · partial' : ''}`;
+      const value = document.createElement('strong');
+      value.textContent = `${row[countKey]} ${cumulative ? 'cumulative' : 'papers'}`;
+      tooltip.append(date, value);
+      tooltip.hidden = false;
+      tooltip.style.left = `${Math.max(0, Math.min(width - tooltip.offsetWidth, x - tooltip.offsetWidth / 2))}px`;
+    };
+    hit.addEventListener('pointerenter', show);
+    hit.addEventListener('focus', show);
+    hit.addEventListener('pointerleave', () => { tooltip.hidden = true; });
+    hit.addEventListener('blur', () => { tooltip.hidden = true; });
+    hit.addEventListener('keydown', event => { if (event.key === 'Escape') tooltip.hidden = true; });
+    group.append(hit);
+  });
   svg.append(group);
-  panel.replaceChildren(svg);
+  panel.replaceChildren(svg, tooltip);
   byId('chart-heading').textContent = heading;
   byId('chart-description').textContent = cumulative ? 'Known release months · includes papers from earlier years' : 'Included literature · monthly counts';
   byId('monthly-view').setAttribute('aria-pressed', String(!cumulative));
@@ -217,3 +242,123 @@ async function initStatistics() {
   }
 }
 initStatistics();
+
+
+// Contributors describe project assistance, not scholarly authorship.
+function renderContributors(contributors) {
+  const grid = byId('contributor-grid');
+  grid.replaceChildren();
+  contributors.forEach(person => {
+    const card = document.createElement('article');
+    card.className = 'contributor-card';
+    card.dataset.kind = person.kind;
+    const avatar = document.createElement('div');
+    avatar.className = 'contributor-avatar';
+    avatar.setAttribute('aria-hidden', 'true');
+    avatar.textContent = person.kind === 'ai' ? '⌘' : 'LY';
+    const copy = document.createElement('div');
+    const name = document.createElement('h3');
+    if (person.url && new URL(person.url).protocol === 'https:') {
+      const link = document.createElement('a');
+      link.href = person.url;
+      link.textContent = `${person.name} ↗`;
+      name.append(link);
+    } else name.textContent = person.name;
+    const role = document.createElement('p');
+    role.className = 'contributor-role';
+    role.textContent = person.role;
+    const description = document.createElement('p');
+    description.className = 'contributor-description';
+    description.textContent = person.description;
+    copy.append(name, role, description);
+    card.append(avatar, copy);
+    grid.append(card);
+  });
+}
+
+function figureAsset(path) {
+  if (typeof path !== 'string' || !path.startsWith('assets/') || path.split('/').includes('..') || !/\.(svg|png|jpe?g|webp|avif)$/i.test(path)) {
+    throw new Error('Figures must use local image assets in assets/.');
+  }
+  return path;
+}
+
+function openFigure(figure) {
+  const source = figureAsset(figure.src);
+  const viewer = byId('figure-viewer');
+  byId('viewer-title').textContent = figure.title;
+  byId('viewer-caption').textContent = figure.caption;
+  byId('viewer-image').src = source;
+  byId('viewer-image').alt = figure.alt;
+  byId('download-figure').href = source;
+  byId('download-figure').download = source.split('/').at(-1);
+  byId('viewer-stage').classList.remove('zoomed');
+  byId('zoom-figure').setAttribute('aria-pressed', 'false');
+  byId('zoom-figure').textContent = 'Zoom in +';
+  viewer.showModal();
+  document.body.style.overflow = 'hidden';
+  byId('viewer-stage').scrollTop = 0;
+  byId('viewer-stage').scrollLeft = 0;
+}
+
+function renderFigures(figures) {
+  if (!figures.length) return;
+  const gallery = byId('figure-gallery');
+  gallery.replaceChildren();
+  figures.forEach((figure, index) => {
+    const article = document.createElement('article');
+    article.className = `figure-reservation${figure.layout === 'wide' ? ' figure-wide' : ''}`;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'figure-image-button';
+    button.setAttribute('aria-label', `Expand figure: ${figure.title}`);
+    const image = document.createElement('img');
+    image.src = figureAsset(figure.src);
+    image.alt = figure.alt;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    button.append(image);
+    button.addEventListener('click', () => openFigure(figure));
+    const caption = document.createElement('div');
+    caption.className = 'figure-caption';
+    const number = document.createElement('span');
+    number.textContent = String(index + 1).padStart(2, '0');
+    const copy = document.createElement('div');
+    const title = document.createElement('h3');
+    title.textContent = figure.title;
+    const description = document.createElement('p');
+    description.textContent = figure.caption;
+    copy.append(title, description);
+    if (figure.source_url) {
+      const source = new URL(figure.source_url);
+      if (source.protocol !== 'https:') throw new Error('Figure sources must use HTTPS.');
+      const link = document.createElement('a');
+      link.href = source.href;
+      link.className = 'figure-source';
+      link.textContent = 'Source ↗';
+      copy.append(link);
+    }
+    caption.append(number, copy);
+    article.append(button, caption);
+    gallery.append(article);
+  });
+  document.querySelector('.figure-section .atlas-note').textContent = 'Select a figure to enlarge it. Captions and source links accompany each figure.';
+}
+
+byId('expand-lens').addEventListener('click', () => openFigure({
+  src: 'assets/harness-lens.svg', title: 'The Harness RSI research lens',
+  caption: 'A conceptual view of editable harnesses, evolved mechanisms, and supporting evidence. This schematic is not a reported experimental result.',
+  alt: 'Layered schematic linking editable harness scope, evolved mechanisms, and traceable evidence.'
+}));
+byId('close-viewer').addEventListener('click', () => byId('figure-viewer').close());
+byId('figure-viewer').addEventListener('close', () => { document.body.style.overflow = ''; });
+byId('figure-viewer').addEventListener('click', event => {
+  if (event.target !== byId('figure-viewer')) return;
+  const bounds = byId('figure-viewer').getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) byId('figure-viewer').close();
+});
+byId('zoom-figure').addEventListener('click', () => {
+  const zoomed = byId('viewer-stage').classList.toggle('zoomed');
+  byId('zoom-figure').setAttribute('aria-pressed', String(zoomed));
+  byId('zoom-figure').textContent = zoomed ? 'Fit to view −' : 'Zoom in +';
+});

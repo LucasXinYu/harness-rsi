@@ -256,7 +256,7 @@ def svg_timeline(stats, cutoff):
     out = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">',
            f'<title id="title">Collected papers by publication month · {year}</title>',
            '<desc id="desc">'+html.escape('; '.join(f'{r["month"]}: {r["papers"]}'+(' (partial month)' if r['partial'] else '') for r in rows))+'. Counts describe the survey collection, including related work, not all papers in the field.</desc>',
-           '<rect width="1000" height="390" rx="12" fill="#f5f5ef"/>',
+           '<rect width="1000" height="390" rx="12" fill="#f6f6f1"/>',
            '<g font-family="Arial,sans-serif" font-size="13" fill="#1b4033">',
            f'<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#6a796e">{year} · Search through {cutoff}</text>']
     for i in range(5):
@@ -266,7 +266,7 @@ def svg_timeline(stats, cutoff):
     for i,row in enumerate(rows):
         x = left + slot * (i+.5)
         h = ploth * row['papers'] / maximum
-        color = '#b27548' if row['partial'] else '#2c614b'
+        color = '#b27548' if row['partial'] else '#335e45'
         label = dt.date.fromisoformat(row['month']+'-01').strftime('%b') + ('*' if row['partial'] else '')
         out += [f'<rect x="{x-slot*.28:.1f}" y="{top+ploth-h:.1f}" width="{slot*.56:.1f}" height="{h:.1f}" rx="3" fill="{color}"/>',
                 f'<text x="{x:.1f}" y="{top+ploth-h-10:.1f}" text-anchor="middle">{row["papers"]}</text>',
@@ -276,30 +276,42 @@ def svg_timeline(stats, cutoff):
     return '\n'.join(out)+'\n'
 
 
-def markdown(stats, config):
-    lines = ['# Harness RSI', '', '**What can change. What evolution creates.**', '',
-             'A research companion exploring editable agent harnesses and the mechanisms they evolve across task domains.', '',
-             'The research atlas will connect **task domains → editable harnesses → evolved mechanisms → evidence**. Domain findings and the survey link are forthcoming.', '',
-             '## A growing research collection', '',
-             f'**{stats["papers"]} papers & manuscripts · {stats["resources"]} official resources**', '',
-             f'Collection updated: **{config["updated_on"]}** · Literature search through: **{config["search_cutoff"]}**', '',
+def markdown(stats, config, project):
+    lines = ['![Harness RSI — A living research atlas](docs/assets/project-banner.svg)', '',
+             '<p align="center"><strong>The official project repository for Harness RSI</strong><br>Research in progress · Survey and domain findings forthcoming</p>', '',
+             '<p align="center"><a href="#living-collection">Collection activity</a> · <a href="#research-atlas">Research atlas</a> · <a href="#contributors">Contributors</a> · <a href="CONTRIBUTING.md">Contribute</a></p>', '',
+             '## Research atlas', '',
+             'We study **what an agent can change in its harness, what mechanisms emerge, and what evidence supports those changes** across task domains. The website is the visual companion: domain studies, annotated figures, and an evolving picture of the collected literature.', '',
+             '| Editable harness | Evolved mechanism | Supporting evidence |',
+             '| :-- | :-- | :-- |',
+             '| Components and modification boundaries | Concrete changes in how the agent works | Source papers, artifacts, traces, and evaluations |', '',
+             'The standalone homepage is ready for domain studies and a growing figure library, with expandable images and source captions. Findings remain unfilled until the research is ready.', '',
+             '**Project links:** arXiv paper — forthcoming · Public website — forthcoming · [Bibliography data](data/literature.bib) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)', '',
+             '## Living collection', '',
+             f'**{stats["papers"]} papers & manuscripts** · **{stats["resources"]} official resources** · Updated **{config["updated_on"]}**', '',
              '![Collected papers by publication month](docs/assets/publication-timeline.svg)', '',
-             'Counts describe the literature included in our survey, including related methods, surveys, and benchmarks. They do not represent a census of the field or a count of methods that achieve RSI. Official resources are counted separately.', '',
-             f'The chart uses first arXiv submission where available and bibliographic publication dates otherwise. **{stats["monthly_coverage"]}/{stats["papers"]}** papers have a known release month; the remaining papers are included in the total but excluded from monthly and cumulative charts. The final month stops at the stated search cutoff.', '',
-             '## Collection updates', '',
-             'These are actual collection snapshots, distinct from the publication months above. The initial import is the baseline; earlier collection activity has not been reconstructed. Future imports extend this history, and removals can reduce the total.', '',
+             f'The survey collection includes related methods, surveys, and benchmarks. **{stats["monthly_coverage"]}/{stats["papers"]} papers** have known release months and appear in these charts. Official resources are counted separately. Search through **{config["search_cutoff"]}**.', '',
+             '<details>', '<summary>How to read the statistics</summary>', '',
+             'The chart uses first arXiv submission where available and bibliographic publication dates otherwise. These counts describe our collection, not a census of the field or a count of methods that achieve RSI. Monthly and cumulative views exclude papers without month-level dates. The final month stops at the search cutoff.', '',
+             'Publication dates and collection updates are different: the snapshots below record actual imports. The first snapshot is the baseline; earlier collection activity has not been reconstructed. Future imports extend this history, and removals can reduce the total.', '',
+             '[Full data and date methodology](CONTRIBUTING.md#data-definitions)', '', '</details>', '',
+             '### Collection updates', '',
              '| Collection snapshot | Papers | Official resources |', '| :-- | --: | --: |']
-    lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history']]
-    lines += ['', '## Explore the project', '',
-              'The standalone homepage contains interactive monthly and cumulative publication views and a domain atlas prepared for future findings. The website and this README present aggregate progress; individual records remain in the underlying data.', '',
-              '[Bibliography data](data/literature.bib) · [Counting methodology & contributions](CONTRIBUTING.md) · [Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml)', '',
-              'Preview the website locally:', '', '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
-              'Open http://localhost:8000. The arXiv and public website links will be added when available.', '',
-              '## Keep the collection current', '',
-              'Update the survey bibliography and Literature Map, then import them. One build refreshes the website statistics, monthly chart, and this README together.', '',
+    lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history'][-5:]]
+    lines += ['', '## Contributors', '', '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
+    for person in project.get('contributors', []):
+        name = f'[{person["name"]}]({person["url"]})' if person.get('url') else person['name']
+        lines += [f'| {name} | {person["role"]} | {person["description"]} |']
+    lines += ['', '## Run the website', '',
+              'A static website with local assets. No API keys, analytics, or third-party build dependencies.', '',
+              '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
+              'Open http://localhost:8000. Figure assets and captions are managed through `docs/project.json`; see the [figure guide](CONTRIBUTING.md#add-research-figures).', '',
+              '## Keep it growing', '',
+              '[Suggest a paper or correction](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Report a website issue](https://github.com/LucasXinYu/harness-rsi/issues/new?template=website.yml)', '',
+              'Update the survey bibliography and Literature Map, then import them. One build refreshes the website statistics, chart, and this README together.', '',
               '```sh', 'python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD',
               'python3 -m unittest discover -s tests', 'python3 scripts/catalog.py check', '```', '',
-              'See [CONTRIBUTING.md](CONTRIBUTING.md) for source verification, date provenance, and update policies. No external packages or API keys are required.', '']
+              'See [CONTRIBUTING.md](CONTRIBUTING.md) for verification, attribution, figures, and update policies.', '']
     return '\n'.join(lines)
 
 
@@ -317,7 +329,7 @@ def outputs():
             raise ValueError('Latest snapshot does not match current corpus; run import')
     stats = statistics(records, history)
     dataset = {'config':config, 'stats':stats, 'records':records}
-    return {ROOT/'README.md': markdown(stats, config),
+    return {ROOT/'README.md': markdown(stats, config, read_json(ROOT/'docs/project.json')),
             ROOT/'docs/stats.json': json.dumps(public_statistics(stats, config), ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/catalog.json': json.dumps(dataset, ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/assets/publication-timeline.svg': svg_timeline(stats, config['search_cutoff'])}
