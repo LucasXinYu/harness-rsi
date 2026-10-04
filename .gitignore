@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+*.aux
+*.log
+*.pdf
+*.zip
+paper.tex
+notes/
+output/

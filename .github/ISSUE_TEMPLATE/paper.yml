@@ -1,0 +1,33 @@
+name: Suggest or correct a paper
+description: Add literature on harness optimization and RSI, or correct an existing record.
+title: '[Literature] '
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Primary-source URL
+      description: Publisher, arXiv/preprint record, or official author page.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Method and relevance
+      description: What changes, how it changes, and why it belongs in this collection. Distinguish harness updates from task outputs and model training.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Suggested category
+  - type: textarea
+    id: correction
+    attributes:
+      label: Date evidence or correction details
+      description: Include the citation key for existing records and source evidence for factual corrections.
