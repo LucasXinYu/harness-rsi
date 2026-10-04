@@ -59,7 +59,9 @@ python3 scripts/catalog.py check
 python3 -m http.server 8000 --directory docs
 ```
 
-Open `http://localhost:8000`. The browser’s search and filters work without a backend. All assets are local and there are no analytics, external fonts, or API keys.
+Open `http://localhost:8000` for the standalone research homepage. Its domain tabs work without a backend. All assets are local and there are no analytics, external fonts, or API keys.
+
+The homepage is a scaffold: editable scope, evolved mechanisms, and evidence remain empty until the domain studies are ready. `docs/project.json` contains the planned domain names and empty `findings` arrays, plus null arXiv and website URLs. The renderer intentionally displays empty states; presenting findings will require an evidence-backed study view. Do not fill it with inferred results, placeholder scores, or invented links. The existing bibliography and statistics remain available in the repository, separate from the homepage.
 
 The validation workflow checks source consistency, identifiers, date precision, snapshot totals, and generated-file freshness. These checks do **not** verify a paper’s scientific claims; reading the primary sources remains necessary.
 

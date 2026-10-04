@@ -267,7 +267,7 @@ def markdown(records, stats, config):
              '| Snapshot | Papers | Official resources |', '| :-- | --: | --: |']
     lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history']]
     lines += ['', '## Explore locally', '', '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
-              'Open http://localhost:8000 for the searchable catalog, topic filters, monthly/quarterly publication views, and collection history. The static `docs/` directory is ready for GitHub Pages when public hosting is enabled.', '',
+              'Open http://localhost:8000 for the standalone research homepage. It reserves domain studies on editable harnesses, evolved mechanisms, and supporting evidence. Findings and publication links are intentionally unfilled. The bibliography below remains supporting project material. The static `docs/` directory is ready for hosting when publication is authorized.', '',
               '## Literature by topic', '', '| Topic | Records |', '| :-- | --: |']
     for category,count in stats['categories'].items():
         lines.append(f'| {category} | {count} |')

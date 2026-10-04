@@ -34,7 +34,7 @@ The initial import is a baseline, not historical evidence of when each paper was
 python3 -m http.server 8000 --directory docs
 ```
 
-Open http://localhost:8000 for the searchable catalog, topic filters, monthly/quarterly publication views, and collection history. The static `docs/` directory is ready for GitHub Pages when public hosting is enabled.
+Open http://localhost:8000 for the standalone research homepage. It reserves domain studies on editable harnesses, evolved mechanisms, and supporting evidence. Findings and publication links are intentionally unfilled. The bibliography below remains supporting project material. The static `docs/` directory is ready for hosting when publication is authorized.
 
 ## Literature by topic
 
