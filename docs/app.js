@@ -120,20 +120,20 @@ function renderPublicationChart() {
   const heading = cumulative ? 'Cumulative papers by publication month' : 'Papers by publication month';
   svg.append(svgElement('title', { id: 'plot-title' }, `${heading}, ${year}`));
   svg.append(svgElement('desc', { id: 'plot-description' }, rows.map(row => `${row.month}: ${row[countKey]}${row.partial ? ', partial month' : ''}`).join('; ')));
-  const group = svgElement('g', { 'font-family': 'Arial, sans-serif', 'font-size': 10, fill: '#6a796e' });
+  const group = svgElement('g', { 'font-family': 'Manrope, Arial, sans-serif', 'font-size': 10, fill: '#858293' });
   for (let i = 0; i <= 4; i++) {
     const y = top + plotHeight * (1 - i / 4);
-    group.append(svgElement('path', { d: `M${left} ${y}H${width-right}`, stroke: '#e1e6dc', fill: 'none' }));
+    group.append(svgElement('path', { d: `M${left} ${y}H${width-right}`, stroke: '#ebe8f0', fill: 'none' }));
     group.append(svgElement('text', { x: left - 10, y: y + 3, 'text-anchor': 'end' }, maximum * i / 4));
   }
   const points = rows.map((row, i) => ({ x: left + step * (i + .5), y: top + plotHeight * (1 - row[countKey] / maximum), row }));
   if (cumulative) {
     const path = points.map(point => `${point.x},${point.y}`).join(' ');
-    group.append(svgElement('polygon', { points: `${points[0].x},${top+plotHeight} ${path} ${points.at(-1).x},${top+plotHeight}`, fill: '#eaf0e4' }));
-    group.append(svgElement('polyline', { points: path, fill: 'none', stroke: '#2c614b', 'stroke-width': 2 }));
+    group.append(svgElement('polygon', { points: `${points[0].x},${top+plotHeight} ${path} ${points.at(-1).x},${top+plotHeight}`, fill: '#eee9fa' }));
+    group.append(svgElement('polyline', { points: path, fill: 'none', stroke: '#8466d4', 'stroke-width': 2 }));
   }
   points.forEach(({ x, y, row }) => {
-    const color = row.partial ? '#b27548' : '#2c614b';
+    const color = row.partial ? '#bc7c63' : '#8466d4';
     const mark = cumulative
       ? svgElement('circle', { cx: x, cy: y, r: 3.5, fill: color })
       : svgElement('rect', { x: x - step * .26, y, width: step * .52, height: top + plotHeight - y, rx: 2, fill: color });
@@ -304,6 +304,7 @@ function openFigure(figure) {
 function renderFigures(figures) {
   if (!figures.length) return;
   const gallery = byId('figure-gallery');
+  gallery.classList.add('populated');
   gallery.replaceChildren();
   figures.forEach((figure, index) => {
     const article = document.createElement('article');
@@ -346,9 +347,9 @@ function renderFigures(figures) {
 }
 
 byId('expand-lens').addEventListener('click', () => openFigure({
-  src: 'assets/harness-lens.svg', title: 'The Harness RSI research lens',
-  caption: 'A conceptual view of editable harnesses, evolved mechanisms, and supporting evidence. This schematic is not a reported experimental result.',
-  alt: 'Layered schematic linking editable harness scope, evolved mechanisms, and traceable evidence.'
+  src: 'assets/recursive-loop.svg', title: 'The recursive loop',
+  caption: 'Original Harness RSI project artwork. A continuous ribbon represents repetition, transformation, and a return to the improvement process.',
+  alt: 'An original violet ribbon looping through a continuous three-dimensional form.'
 }));
 byId('close-viewer').addEventListener('click', () => byId('figure-viewer').close());
 byId('figure-viewer').addEventListener('close', () => { document.body.style.overflow = ''; });

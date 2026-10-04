@@ -59,7 +59,7 @@ python3 scripts/catalog.py check
 python3 -m http.server 8000 --directory docs
 ```
 
-Open `http://localhost:8000` for the standalone research homepage. Its domain tabs work without a backend. All assets are local and there are no analytics, external fonts, or API keys.
+Open `http://localhost:8000` for the standalone research homepage. Its domain tabs work without a backend. All assets are local, including the Manrope typeface (SIL Open Font License in `docs/assets/fonts/`). There are no analytics, remote font requests, or API keys.
 
 The homepage is a scaffold: editable scope, evolved mechanisms, and evidence remain empty until the domain studies are ready. `docs/project.json` contains the planned domain names and empty `findings` arrays, plus null arXiv and website URLs. The renderer intentionally displays empty states; presenting findings will require an evidence-backed study view. Do not fill it with inferred results, placeholder scores, or invented links. The aggregate activity section is populated from the actual bibliography. Keep domain findings empty until source-supported content is ready. Counts and the data-update date come from the import pipeline, not the date of a website redesign.
 
@@ -79,7 +79,7 @@ Keep `figures` in `docs/project.json` empty until a research figure is ready. Fo
 - `layout`: `wide` for a full-width figure, or `standard` for a half-width figure.
 - `source_url`: an optional HTTPS link to the primary source.
 
-Use SVG for diagrams and PNG, WebP, AVIF, or JPEG for raster images. Preserve the source's aspect ratio and ensure text remains legible when enlarged. Add only original figures or material you have permission to redistribute, and retain attribution. Do not use illustrative placeholders as evidence. The existing hero image is explicitly a conceptual schematic and is separate from research findings.
+Use SVG for diagrams and PNG, WebP, AVIF, or JPEG for raster images. Preserve the source's aspect ratio and ensure text remains legible when enlarged. Add only original figures or material you have permission to redistribute, and retain attribution. Do not use illustrative placeholders as evidence. The recursive ribbon in the header is original project artwork, separate from research findings. Its parametric source lives in `scripts/identity.py`; run it to regenerate the artwork and cover.
 
 Contributor names, roles, and descriptions live in `docs/project.json` and appear on the website and in the generated README. Xin (Lucas) Yu (GitHub: LucasXinYu) leads the project. Codex is credited as an OpenAI AI assistant for assisted work, rather than as a human researcher or a scholarly author. Run `python3 scripts/catalog.py build` after changing contributor information.
 

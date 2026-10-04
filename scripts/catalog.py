@@ -256,36 +256,33 @@ def svg_timeline(stats, cutoff):
     out = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">',
            f'<title id="title">Collected papers by publication month · {year}</title>',
            '<desc id="desc">'+html.escape('; '.join(f'{r["month"]}: {r["papers"]}'+(' (partial month)' if r['partial'] else '') for r in rows))+'. Counts describe the survey collection, including related work, not all papers in the field.</desc>',
-           '<rect width="1000" height="390" rx="12" fill="#f6f6f1"/>',
-           '<g font-family="Arial,sans-serif" font-size="13" fill="#1b4033">',
-           f'<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#6a796e">{year} · Search through {cutoff}</text>']
+           '<rect width="1000" height="390" rx="12" fill="#fcfaff"/>',
+           '<g font-family="Arial,sans-serif" font-size="13" fill="#302638">',
+           f'<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9785a6">{year} · Search through {cutoff}</text>']
     for i in range(5):
         value = maximum*i/4
         y = top+ploth-ploth*i/4
-        out += [f'<path d="M{left} {y}h{plotw}" stroke="#d9dfd3"/>', f'<text x="{left-12}" y="{y+4}" text-anchor="end" fill="#6a796e">{value:g}</text>']
+        out += [f'<path d="M{left} {y}h{plotw}" stroke="#eae2f2"/>', f'<text x="{left-12}" y="{y+4}" text-anchor="end" fill="#9785a6">{value:g}</text>']
     for i,row in enumerate(rows):
         x = left + slot * (i+.5)
         h = ploth * row['papers'] / maximum
-        color = '#b27548' if row['partial'] else '#335e45'
+        color = '#ba866d' if row['partial'] else '#9775d2'
         label = dt.date.fromisoformat(row['month']+'-01').strftime('%b') + ('*' if row['partial'] else '')
         out += [f'<rect x="{x-slot*.28:.1f}" y="{top+ploth-h:.1f}" width="{slot*.56:.1f}" height="{h:.1f}" rx="3" fill="{color}"/>',
                 f'<text x="{x:.1f}" y="{top+ploth-h-10:.1f}" text-anchor="middle">{row["papers"]}</text>',
-                f'<text x="{x:.1f}" y="{top+ploth+24}" text-anchor="middle" fill="#6a796e">{label}</text>']
+                f'<text x="{x:.1f}" y="{top+ploth+24}" text-anchor="middle" fill="#9785a6">{label}</text>']
     note = '* Partial month. ' if any(r['partial'] for r in rows) else ''
-    out += [f'<text x="28" y="368" fill="#6a796e">{note}Known release months: {stats["monthly_coverage"]}/{stats["papers"]} papers. Official resources are excluded.</text></g></svg>']
+    out += [f'<text x="28" y="368" fill="#9785a6">{note}Known release months: {stats["monthly_coverage"]}/{stats["papers"]} papers. Official resources are excluded.</text></g></svg>']
     return '\n'.join(out)+'\n'
 
 
 def markdown(stats, config, project):
     lines = ['![Harness RSI — A living research atlas](docs/assets/project-banner.svg)', '',
-             '<p align="center"><strong>The official project repository for Harness RSI</strong><br>Research in progress · Survey and domain findings forthcoming</p>', '',
+             '<p align="center">A survey and visual atlas of <strong>agent harness optimization and recursive self-improvement.</strong><br><sub>Official project repository · Research in progress</sub></p>', '',
              '<p align="center"><a href="#living-collection">Collection activity</a> · <a href="#research-atlas">Research atlas</a> · <a href="#contributors">Contributors</a> · <a href="CONTRIBUTING.md">Contribute</a></p>', '',
              '## Research atlas', '',
              'We study **what an agent can change in its harness, what mechanisms emerge, and what evidence supports those changes** across task domains. The website is the visual companion: domain studies, annotated figures, and an evolving picture of the collected literature.', '',
-             '| Editable harness | Evolved mechanism | Supporting evidence |',
-             '| :-- | :-- | :-- |',
-             '| Components and modification boundaries | Concrete changes in how the agent works | Source papers, artifacts, traces, and evaluations |', '',
-             'The standalone homepage is ready for domain studies and a growing figure library, with expandable images and source captions. Findings remain unfilled until the research is ready.', '',
+             'Explore editable components, evolved mechanisms, and supporting evidence by domain. The visual atlas and figure library are in preparation; publication trends are already available.', '',
              '**Project links:** arXiv paper — forthcoming · Public website — forthcoming · [Bibliography data](data/literature.bib) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)', '',
              '## Living collection', '',
              f'**{stats["papers"]} papers & manuscripts** · **{stats["resources"]} official resources** · Updated **{config["updated_on"]}**', '',

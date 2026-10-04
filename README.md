@@ -1,6 +1,6 @@
 ![Harness RSI — A living research atlas](docs/assets/project-banner.svg)
 
-<p align="center"><strong>The official project repository for Harness RSI</strong><br>Research in progress · Survey and domain findings forthcoming</p>
+<p align="center">A survey and visual atlas of <strong>agent harness optimization and recursive self-improvement.</strong><br><sub>Official project repository · Research in progress</sub></p>
 
 <p align="center"><a href="#living-collection">Collection activity</a> · <a href="#research-atlas">Research atlas</a> · <a href="#contributors">Contributors</a> · <a href="CONTRIBUTING.md">Contribute</a></p>
 
@@ -8,11 +8,7 @@
 
 We study **what an agent can change in its harness, what mechanisms emerge, and what evidence supports those changes** across task domains. The website is the visual companion: domain studies, annotated figures, and an evolving picture of the collected literature.
 
-| Editable harness | Evolved mechanism | Supporting evidence |
-| :-- | :-- | :-- |
-| Components and modification boundaries | Concrete changes in how the agent works | Source papers, artifacts, traces, and evaluations |
-
-The standalone homepage is ready for domain studies and a growing figure library, with expandable images and source captions. Findings remain unfilled until the research is ready.
+Explore editable components, evolved mechanisms, and supporting evidence by domain. The visual atlas and figure library are in preparation; publication trends are already available.
 
 **Project links:** arXiv paper — forthcoming · Public website — forthcoming · [Bibliography data](data/literature.bib) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)
 
