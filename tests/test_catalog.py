@@ -1,4 +1,5 @@
 import importlib.util
+import copy
 import json
 from pathlib import Path
 import tempfile
@@ -77,6 +78,29 @@ class CatalogTests(unittest.TestCase):
                 self.assertEqual(c.read_json(root/'data/annotations.json')['a']['added_on'],'2026-10-03')
                 with self.assertRaisesRegex(ValueError,'backdated'):
                     c.import_sources(source,'2026-10-02')
+                # A manuscript-only alias must not inflate the Map-defined corpus.
+                with (source/'literature.bib').open('a') as out:
+                    out.write('@misc{extra,\n title = {Supporting reference},\n year = {2026},\n url = {https://example.org/extra}\n}\n')
+                c.import_sources(source,'2026-10-08')
+                self.assertEqual(set(c.read_json(root/'data/annotations.json')), {'a','b'})
+                self.assertEqual(len(c.read_json(root/'data/history.json')), 4)
+
+    def test_findings_require_resolvable_evidence_and_counts(self):
+        project=c.read_json(c.ROOT/'docs/project.json')
+        records=c.load_catalog()
+        c.validate_project(project,records)
+        bad=copy.deepcopy(project)
+        bad['domains'][0]['records']+=1
+        with self.assertRaisesRegex(ValueError,'totals'):
+            c.validate_project(bad,records)
+        bad=copy.deepcopy(project)
+        bad['insights'][0]['cells'][0]['finding']='nonexistent'
+        with self.assertRaisesRegex(ValueError,'missing evidence'):
+            c.validate_project(bad,records)
+        bad=copy.deepcopy(project)
+        bad['domains'][0]['findings'][0]['sources'][0]['url']='https://example.org/wrong-paper'
+        with self.assertRaisesRegex(ValueError,'differs'):
+            c.validate_project(bad,records)
 
     def test_current_corpus_totals_and_generated_output(self):
         records=c.load_catalog()

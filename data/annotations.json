@@ -26,12 +26,12 @@
   "bounded_rsi_survey2026": {
     "category": "Surveys, Definitions, and Conceptual Frameworks",
     "kind": "paper",
-    "summary": "Reviews the progression from bounded self-refinement to autonomous research loops, including self-evaluation and feedback-driven revision. It helps distinguish local corrections from broader improvement processes.",
+    "summary": "Source/version: Existing entry rechecked against arXiv v2, revised 6 September 2026; not a new addition. Organizes improvement by its target—deployment behavior, trained policy, evaluation, or the research process—and by the degree of loop closure. It contrasts bounded refinement with broader recursive claims and analyzes the verification signals that support them. Its discussion already includes harness-level improvement and grounding constraints.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2026-07-08",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2607.07663"
     }
   },
@@ -67,8 +67,8 @@
     "release": {
       "value": "2025-07-28",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2507.21046"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2507.21046v4"
     }
   },
   "metaharness2026": {
@@ -79,7 +79,7 @@
     "release": {
       "value": "2026-03-30",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2603.28052v1"
     }
   },
@@ -91,7 +91,7 @@
     "release": {
       "value": "2026-04-28",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2604.25850v4"
     }
   },
@@ -103,7 +103,7 @@
     "release": {
       "value": "2026-09-21",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.24972v2"
     }
   },
@@ -115,20 +115,20 @@
     "release": {
       "value": "2026-09-14",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2609.14857"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.14857v1"
     }
   },
   "sia2026": {
     "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
     "kind": "paper",
-    "summary": "Combines updates to an agent's harness with updates to model weights. It expands the improvement target beyond runtime software and provides a case for examining how the two update channels interact.",
+    "summary": "Combines Feedback-Agent revisions of task-specific harnesses with subsequent model-weight updates. For MAGIC denoising hyperparameter optimization, the paper reports a batched configuration driver and a parser organizing parameter–score pairs during harness iteration; the model is fixed in that phase. This supplies an experiment-interface case for Section 4, distinct from MLE-bench evaluation. The report does not establish final-version retention or isolated effects of these tools; later GRPO updates and output postprocessing are not counted as harness changes. Source: Sections 6.2–6.3.3 and 7.2.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2026-05-26",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2605.27276"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.27276v2"
     }
   },
   "selfharness2026": {
@@ -139,19 +139,19 @@
     "release": {
       "value": "2026-06-08",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2606.09498"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.09498v3"
     }
   },
   "dgm2025": {
     "category": "Self-Modification and Meta-Level Improvement",
     "kind": "paper",
-    "summary": "Maintains an archive of coding agents that can modify their own implementations and produce improved descendants. Selection uses performance and lineage information, providing an example of open-ended evolution in which improved agents participate in later modifications.",
+    "summary": "Publication/version: ICLR 2026; the evidence notes retain the inspected arXiv version 2505.22954v3. Maintains an archive of coding agents that can modify their own implementations and produce improved descendants. Selection uses performance and lineage information, providing an example of open-ended evolution in which improved agents participate in later modifications.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2025-05-29",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2505.22954v3"
     }
   },
@@ -163,7 +163,7 @@
     "release": {
       "value": "2026-03-19",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2603.19461v1"
     }
   },
@@ -175,7 +175,7 @@
     "release": {
       "value": "2026-07-15",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2607.13683v2"
     }
   },
@@ -187,8 +187,8 @@
     "release": {
       "value": "2026-07-17",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2607.15524"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.15524v1"
     }
   },
   "hsi2026": {
@@ -199,7 +199,7 @@
     "release": {
       "value": "2026-08-09",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2608.08466v1"
     }
   },
@@ -211,7 +211,7 @@
     "release": {
       "value": "2026-08-03",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2608.02276v1"
     }
   },
@@ -223,7 +223,7 @@
     "release": {
       "value": "2026-08-27",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2608.27311v1"
     }
   },
@@ -307,8 +307,8 @@
     "release": {
       "value": "2026-07-14",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2607.12227"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.12227v3"
     }
   },
   "one_recipe2026": {
@@ -319,8 +319,8 @@
     "release": {
       "value": "2026-08-10",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2608.10178"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.10178v1"
     }
   },
   "evolutionary_safety2026": {
@@ -331,8 +331,8 @@
     "release": {
       "value": "2026-09-25",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2609.31186"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.31186v1"
     }
   },
   "robotics_rsi_limits2026": {
@@ -355,8 +355,8 @@
     "release": {
       "value": "2026-01-29",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2601.21557"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2601.21557v2"
     }
   },
   "metan2026": {
@@ -398,36 +398,36 @@
   "sica2025": {
     "category": "Self-Modification and Meta-Level Improvement",
     "kind": "paper",
-    "summary": "Builds a coding agent that iteratively improves its own implementation. It selects the next meta-agent from an archive using a utility that includes performance, runtime, and cost.",
+    "summary": "Publication/version: An earlier SICA version appeared at the ICLR 2025 Workshop on Scaling Self-Improving Foundation Models; the detailed evidence here uses arXiv:2504.15228v2. Builds a coding agent that iteratively improves its own implementation. It selects the next meta-agent from an archive using a utility that includes performance, runtime, and cost.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2025-04-21",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2504.15228v2"
     }
   },
   "adas2024": {
     "category": "Prompt, Workflow, and Program Optimization",
     "kind": "paper",
-    "summary": "Uses a meta-agent to search for agentic systems represented in code. It automates the design of task agents; evolution of the target system does not by itself imply that the meta-agent changes.",
+    "summary": "Publication/version: ICLR 2025; the evidence notes retain the inspected arXiv version 2408.08435v2. Uses a meta-agent to search for agentic systems represented in code. It automates the design of task agents; evolution of the target system does not by itself imply that the meta-agent changes.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2024-08-15",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2408.08435"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2408.08435v2"
     }
   },
   "aflow2024": {
     "category": "Prompt, Workflow, and Program Optimization",
     "kind": "paper",
-    "summary": "Searches over executable agent workflows and evaluates candidate workflows on tasks. Its workflow-level search and mixed parent-selection strategy help distinguish outer system design from task-time reasoning search.",
+    "summary": "Publication/version: ICLR 2025; the evidence notes retain the inspected arXiv version 2410.10762v4. Searches over executable agent workflows and evaluates candidate workflows on tasks. Its workflow-level search and mixed parent-selection strategy help distinguish outer system design from task-time reasoning search.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2024-10-14",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2410.10762v4"
     }
   },
@@ -458,13 +458,13 @@
   "gepa2025": {
     "category": "Prompt, Workflow, and Program Optimization",
     "kind": "paper",
-    "summary": "Evolves prompts through reflection on execution feedback and combines useful candidates through Pareto-aware search. It is relevant to proposal generation, feedback reuse, and prompt-level optimization.",
+    "summary": "Publication/version: ICLR 2026; the evidence notes retain the inspected arXiv version 2507.19457v2. Evolves prompts through reflection on execution feedback and combines useful candidates through Pareto-aware search. It is relevant to proposal generation, feedback reuse, and prompt-level optimization.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2025-07-25",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2507.19457"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2507.19457v2"
     }
   },
   "mass2025": {
@@ -530,24 +530,24 @@
   "react2022": {
     "category": "Agent Architectures and Harness Infrastructure",
     "kind": "paper",
-    "summary": "Interleaves language-model reasoning with actions and observations. It supplies a manually designed execution-loop baseline against which persistent harness modifications can be compared.",
+    "summary": "Publication/version: ICLR 2023; the recorded manuscript is arXiv:2210.03629v3. Interleaves language-model reasoning with actions and observations. It supplies a manually designed execution-loop baseline against which persistent harness modifications can be compared.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2022-10-06",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2210.03629"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2210.03629v3"
     }
   },
   "sweagent2024": {
     "category": "Agent Architectures and Harness Infrastructure",
     "kind": "paper",
-    "summary": "Designs an agent-computer interface for software engineering, including repository navigation, editing, and feedback. It demonstrates the importance of interface design; editing a task repository is distinct from editing that interface.",
+    "summary": "Publication/version: NeurIPS 2024; the evidence notes retain the inspected arXiv version 2405.15793v3. Designs an agent-computer interface for software engineering, including repository navigation, editing, and feedback. It demonstrates the importance of interface design; editing a task repository is distinct from editing that interface.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2024-05-06",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2405.15793v3"
     }
   },
@@ -763,8 +763,8 @@
     "release": {
       "value": "2026-02-10",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2603.03329"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2603.03329v1"
     }
   },
   "safeevolve2026": {
@@ -847,8 +847,8 @@
     "release": {
       "value": "2026-09-29",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2609.37834"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.37834v1"
     }
   },
   "helix2026": {
@@ -859,8 +859,8 @@
     "release": {
       "value": "2026-08-14",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2608.13951"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.13951v1"
     }
   },
   "arbor2026": {
@@ -895,7 +895,7 @@
     "release": {
       "value": "2026-09-25",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.30967v1"
     }
   },
@@ -907,8 +907,8 @@
     "release": {
       "value": "2026-08-31",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2609.00196"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.00196v1"
     }
   },
   "metabench_harness2026": {
@@ -931,8 +931,8 @@
     "release": {
       "value": "2026-06-12",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2606.14249"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.14249v3"
     }
   },
   "ace2025": {
@@ -955,7 +955,7 @@
     "release": {
       "value": "2026-09-14",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.14858v1"
     }
   },
@@ -967,8 +967,8 @@
     "release": {
       "value": "2025-09-29",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2509.25140"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2509.25140v2"
     }
   },
   "tot2023": {
@@ -1003,14 +1003,14 @@
     "release": {
       "value": "2026-07-09",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2607.08124v1"
     }
   },
   "dynamic_cheatsheet2025": {
     "category": "Memory, Context, Skills, and Experience Reuse",
     "kind": "paper",
-    "summary": "Accumulates an adaptive memory of useful information and strategies during test-time learning. The persistent cheatsheet provides a lightweight update surface outside model weights.",
+    "summary": "Publication: EACL 2026, Volume 1: Long Papers, pp.\\ 7080–7106. The reference uses the ACL Anthology record; the summary's source remains arXiv:2504.07952v1. Accumulates an adaptive memory of useful information and strategies during test-time learning. The persistent cheatsheet provides a lightweight update surface outside model weights.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2025-04-10",
@@ -1027,20 +1027,8 @@
     "release": {
       "value": "2025-04-09",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2504.07079"
-    }
-  },
-  "darwinx2026": {
-    "category": "Harness Optimization and Search Workflows",
-    "kind": "paper",
-    "summary": "Uses natural-selection-inspired search over multiple harness lineages, with archives and recombination. It is relevant to population search and the reuse of improvements across branches.",
-    "added_on": "2026-10-03",
-    "release": {
-      "value": "2026-07-31",
-      "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2608.07545"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2504.07079v1"
     }
   },
   "frontiereng2026": {
@@ -1063,8 +1051,8 @@
     "release": {
       "value": "2026-08-10",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2608.09096"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.09096v2"
     }
   },
   "envharness2026": {
@@ -1135,7 +1123,7 @@
     "release": {
       "value": "2026-05-11",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2605.09998v1"
     }
   },
@@ -1159,8 +1147,8 @@
     "release": {
       "value": "2026-05-13",
       "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2605.13941"
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.13941v1"
     }
   },
   "adaptive_autoharness2026": {
@@ -1183,7 +1171,7 @@
     "release": {
       "value": "2026-06-04",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2606.05922v3"
     }
   },
@@ -1219,7 +1207,7 @@
     "release": {
       "value": "2025-10-24",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2510.21614v3"
     }
   },
@@ -1255,7 +1243,7 @@
     "release": {
       "value": "2026-07-06",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2607.05297v1"
     }
   },
@@ -1339,7 +1327,7 @@
     "release": {
       "value": "2026-08-03",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2608.01918v1"
     }
   },
@@ -1351,7 +1339,7 @@
     "release": {
       "value": "2026-08-06",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2608.06301v1"
     }
   },
@@ -1471,7 +1459,7 @@
     "release": {
       "value": "2023-10-03",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2310.02304v3"
     }
   },
@@ -1507,7 +1495,7 @@
     "release": {
       "value": "2026-09-22",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.26457v1"
     }
   },
@@ -1519,7 +1507,7 @@
     "release": {
       "value": "2026-07-14",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2607.14159v1"
     }
   },
@@ -1567,7 +1555,7 @@
     "release": {
       "value": "2026-09-29",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.38372v1"
     }
   },
@@ -1591,7 +1579,7 @@
     "release": {
       "value": "2026-09-01",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.00829v1"
     }
   },
@@ -1619,18 +1607,6 @@
       "source": "https://arxiv.org/abs/2609.36892v1"
     }
   },
-  "evolvenet2026": {
-    "category": "Harness Optimization and Search Workflows",
-    "kind": "paper",
-    "summary": "Distributes a shared harness to deployments that evolve it on local workloads, then combines program adaptations and redistributes the result. Scope-typed, evidence-guided aggregation addresses conflicts between independently edited programs. It directly broadens update integration from selecting one candidate to composing distributed experience. Keeping workloads local is a system design choice, not by itself a formal privacy guarantee.",
-    "added_on": "2026-10-03",
-    "release": {
-      "value": "2026-08-05",
-      "precision": "day",
-      "basis": "First arXiv submission",
-      "source": "https://arxiv.org/abs/2608.04968v1"
-    }
-  },
   "skillopt2026": {
     "category": "Memory, Context, Skills, and Experience Reuse",
     "kind": "paper",
@@ -1639,7 +1615,7 @@
     "release": {
       "value": "2026-05-22",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2605.23904v2"
     }
   },
@@ -1687,7 +1663,7 @@
     "release": {
       "value": "2026-09-27",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.33146v1"
     }
   },
@@ -1699,7 +1675,7 @@
     "release": {
       "value": "2026-09-27",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.33378v1"
     }
   },
@@ -1735,7 +1711,7 @@
     "release": {
       "value": "2026-04-22",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2604.21003v3"
     }
   },
@@ -1747,7 +1723,7 @@
     "release": {
       "value": "2026-09-30",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.40169v1"
     }
   },
@@ -1771,7 +1747,7 @@
     "release": {
       "value": "2026-09-30",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2610.00383v1"
     }
   },
@@ -1783,7 +1759,7 @@
     "release": {
       "value": "2026-09-29",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.37950v1"
     }
   },
@@ -1819,7 +1795,7 @@
     "release": {
       "value": "2026-10-01",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2610.00906v1"
     }
   },
@@ -1867,7 +1843,7 @@
     "release": {
       "value": "2026-07-17",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2607.22688v1"
     }
   },
@@ -1879,7 +1855,7 @@
     "release": {
       "value": "2026-04-22",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2604.20938v1"
     }
   },
@@ -1915,7 +1891,7 @@
     "release": {
       "value": "2026-09-30",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.39765v1"
     }
   },
@@ -1939,7 +1915,7 @@
     "release": {
       "value": "2026-09-02",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.02074v1"
     }
   },
@@ -1975,7 +1951,7 @@
     "release": {
       "value": "2026-09-28",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.36043v1"
     }
   },
@@ -2011,7 +1987,7 @@
     "release": {
       "value": "2026-09-24",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.29773v1"
     }
   },
@@ -2071,7 +2047,7 @@
     "release": {
       "value": "2025-12-21",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2512.18746v1"
     }
   },
@@ -2095,7 +2071,7 @@
     "release": {
       "value": "2025-12-11",
       "precision": "day",
-      "basis": "First arXiv submission",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2512.10696v1"
     }
   },
@@ -2131,7 +2107,7 @@
     "release": {
       "value": "2026-09-29",
       "precision": "day",
-      "basis": "First submission recorded in literature map",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2609.38291v1"
     }
   },
@@ -2174,12 +2150,12 @@
   "hasp2026": {
     "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
     "kind": "paper",
-    "summary": "Represents skills as executable Program Functions that activate in relevant failure states, modify actions, or inject context. These functions support inference-time intervention, training supervision, and controlled skill growth from remaining failures, with executable validation and teacher review. The evolving objects are primarily task-execution skills. They should be distinguished from meta-skills that implement the improvement procedure itself, such as the context-engineering skills evolved by MCE.",
+    "summary": "Publication: Accepted to EMNLP 2026 (main conference), as confirmed by the authors' publication lists; final proceedings metadata is not yet confirmed. The summary uses arXiv v2. Represents skills as executable Program Functions that activate in relevant failure states, modify actions, or inject context. These functions support inference-time intervention, training supervision, and controlled skill growth from remaining failures, with executable validation and teacher review. The evolving objects are primarily task-execution skills. They should be distinguished from meta-skills that implement the improvement procedure itself, such as the context-engineering skills evolved by MCE.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2026-05-18",
       "precision": "day",
-      "basis": "First submission recorded in literature map",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
       "source": "https://arxiv.org/abs/2605.17734v2"
     }
   },
@@ -2241,6 +2217,738 @@
       "precision": "day",
       "basis": "First submission recorded in literature map",
       "source": "https://arxiv.org/abs/2605.25665v1"
+    }
+  },
+  "darwinx2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Uses natural-selection-inspired search over multiple harness lineages, with archives and recombination. It is relevant to population search and the reuse of improvements across branches.",
+    "added_on": "2026-10-03",
+    "release": {
+      "value": "2026-07-31",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.07545v1"
+    }
+  },
+  "evolvenet2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Distributes a shared harness to deployments that evolve it on local workloads, then combines program adaptations and redistributes the result. Scope-typed, evidence-guided aggregation addresses conflicts between independently edited programs. It directly broadens update integration from selecting one candidate to composing distributed experience. Keeping workloads local is a system design choice, not by itself a formal privacy guarantee.",
+    "added_on": "2026-10-03",
+    "release": {
+      "value": "2026-08-05",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.04968v1"
+    }
+  },
+  "selfevolving_coding_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 4 August 2026; checked arXiv v4, revised 24 September 2026. Sources checked 2026-10-04. Organizes persistent coding-agent improvement by the object that evolves, the timing of evolution, and code-specific feedback. It covers changes to frameworks, memory, skills/tools, components, workflows, and environments. Its harness-evolution and harness-co-evolution discussions substantially overlap our coding coverage; coding trajectories, repository context, and executable feedback motivate its domain-specific analysis.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08",
+      "precision": "month",
+      "basis": "arXiv identifier month; exact day not recorded",
+      "source": "https://arxiv.org/abs/2608.03392v4"
+    }
+  },
+  "task_completion_harness_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 14 June 2026; checked arXiv v1. Sources checked 2026-10-04. Studies task-completing agents through the interaction between the foundation model and its execution harness. It separates observation, context, control, action, state, and verification, then relates task properties and domain pressures to harness configurations. It also discusses evaluation, generalization, and model–harness co-evolution. These are runtime responsibilities, whereas our Section 2 describes roles in the process that improves a harness. \\surveygroupAutomated Agent and Workflow Design",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-06-14",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.20683v1"
+    }
+  },
+  "adas_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Submitted 1 June and posted 2 June 2026; checked Preprints.org v1 (not peer-reviewed). Sources checked 2026-10-04. Classifies 33 automated-design methods by optimization target, search strategy, representation, and feedback signal. It connects prompt, compound-system, workflow, modular, and code-level search, discussing expressiveness, searchability, evaluation cost, transfer, and safety. Its stated emphasis is design-time scaffold optimization around largely frozen models, with weight training covered where it borders scaffold search.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://www.preprints.org/manuscript/202606.0238/v1"
+    }
+  },
+  "workflow_optimization_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 23 March 2026; checked arXiv v1. Sources checked 2026-10-04. Reviews agentic computation graphs through when structure is determined, what is optimized, and which feedback guides optimization. It distinguishes reusable workflow templates, run-specific realized graphs, and execution traces, and compares static scaffold optimization with dynamic workflow construction or revision. This distinction helps avoid treating every runtime workflow change as an inherited self-improvement.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-03-23",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2603.22386v1"
+    }
+  },
+  "experience_selfimprovement_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Author-released manuscript dated 25 June 2026; OpenReview manuscript; metadata and text checked against the author-released repository PDF. Sources checked 2026-10-04. Treats the runtime harness as infrastructure for capturing and reusing experience. It reviews skills, memory, executable environments, parameter-side consolidation through training, and meta-level control, alongside evaluation and safety. This is a close conceptual predecessor: it already connects mutable harness surfaces to experience-driven improvement and meta-evolution.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://openreview.net/forum?id=IUltZSgLMm"
+    }
+  },
+  "agent_systems_harness_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Author-released manuscript dated 18 May 2026; OpenReview manuscript; metadata and text checked against the author-released repository PDF. Sources checked 2026-10-04. Reviews harness components including agent workflows, memory systems, skill libraries, and multi-agent orchestration. It relates harness design to model adaptation and training, and organizes evaluation across software engineering, deep research, tool use, computer use, and scientific discovery. It therefore supplies both architectural and domain-level context for harness optimization.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://openreview.net/forum?id=nM5tDHrQsx"
+    }
+  },
+  "midharness2026": {
+    "category": "Task-Time Search and Output Refinement (Adjacent Work)",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 30 September 2026; checked arXiv v1, including Sections 2 and 4.3. Sources checked 2026-10-04. Samples several candidate actions from the same interaction history and uses a verifier to choose one before execution. The model-call wrapper implements listwise, pointwise, or pairwise selection while retaining the underlying generator and execution harness. A trained variant distills pairwise judgments into a verifier with the action generator still fixed.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09",
+      "precision": "month",
+      "basis": "arXiv identifier month; exact day not recorded",
+      "source": "https://arxiv.org/abs/2609.39982v1"
+    }
+  },
+  "wu_rsi_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Preprints.org version 1, submitted 29 September and posted 30 September 2026; not peer-reviewed. Sources checked 2026-10-04. Organizes RSI around automated design of AI infrastructure and repair or optimization of existing systems. It compares update targets, feedback, inheritance, and external control across self-training, memory, agent design, editable improvers, and automated research. Crucially, it distinguishes task gains and retained capabilities from improvement in the procedure that produces later updates; repeated optimization alone is insufficient evidence for that stronger claim.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://www.preprints.org/manuscript/202609.2680/v1"
+    }
+  },
+  "openrsi_index": {
+    "category": "Official Benchmark and Implementation Resources",
+    "kind": "resource",
+    "summary": "Source/version: Official website, introduction, and repository; Preview v0.1, accessed 2026-10-04. No publication date or standalone research-paper record was verified; this is a supplemental resource, not an additional paper within the October 1 cutoff. Packages research tasks from open projects for agents to improve under fixed budgets and evaluation contracts. The official RSI Harness separates a persistent working container from a fresh judging container for each submission. Its scope spans model-development tasks rather than uniformly measuring agent-harness evolution. The ACE playbook inspection-and-repair task is directly relevant to our editable-context discussion: it changes reusable advice for a frozen Qwen model on Formula reasoning problems.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": null,
+      "precision": "unknown",
+      "basis": "No publication date recorded",
+      "source": "https://index.openrsi.foundation/"
+    }
+  },
+  "mltoolbench2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Constructs diagnostic tools from recurring failures in ML development, reruns tasks to test candidate tools, and trains tool use through SFT and RL. SPICE supplies turn-level feedback from the likelihood difference under privileged solution context. Classified as interface construction coupled to task-policy training, not established recursive self-modification of the tool constructor. Relevant to Section 2.5 and the ML-development domain.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-29",
+      "precision": "day",
+      "basis": "First submission recorded in literature map",
+      "source": "https://arxiv.org/abs/2609.36679v2"
+    }
+  },
+  "pbsd2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Replaces direct teacher-distribution matching with a reward-regularized preference objective for on-policy self-distillation. Evaluates mathematical reasoning and tool use. Classified as adjacent model-level learning: it does not establish that its training data originate from an evolved harness or that the harness is autonomously rewritten. Provides a boundary comparison for Section 2.5.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-05-06",
+      "precision": "day",
+      "basis": "First submission recorded in literature map",
+      "source": "https://arxiv.org/abs/2605.05040v2"
+    }
+  },
+  "servicecontrol2026": {
+    "category": "Agent Architectures and Harness Infrastructure",
+    "kind": "paper",
+    "summary": "Routes routine service sessions to a baseline path and operationally coupled requests to stronger control, combining conflict-aware communication with reconsideration before backend writes. Evaluated on retail and airline tasks from tau-squared-bench. Classified as task-time harness architecture, not a cross-round harness-evolution method. Its routing and pre-write verification provide concrete design examples for the conversational-agent domain.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-07-01",
+      "precision": "day",
+      "basis": "First submission recorded in literature map",
+      "source": "https://arxiv.org/abs/2607.01426v1"
+    }
+  },
+  "curveshift2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Distinguishes shifts in overall performance from changes in the difficulty-response curve. Highlights model–harness confounding in agentic evaluations and uses scaffold-free LiveCodeBench to examine a residual hard-task effect. Classified as evaluation methodology rather than harness evolution; its cleaner identification is specific to competitive programming. Relevant to attribution and evidence boundaries in Section 3.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-07-31",
+      "precision": "day",
+      "basis": "First submission recorded in literature map",
+      "source": "https://arxiv.org/abs/2608.00355v1"
+    }
+  },
+  "chan2026intelligenceexplosion": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Examines whether AI R&D automation could accelerate progress through feedback between improved AI systems and further software advances. It assesses preliminary evidence, bottlenecks, societal risks, and policy responses. The authors emphasize uncertainty; this is a background analysis, not an implemented harness-evolution method. Source locations: Introduction (p.~2), mechanism and frictions (pp.~3–5), and policy implications (pp.~6–8).",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-28",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.36054v1"
+    }
+  },
+  "lean_coevolution2026": {
+    "category": "Self-Modification and Meta-Level Improvement",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2607.17352v1, first submitted 2026-07-19; checked 2026-10-05. Evolves Lean-agent workflow code and tools with a fixed verifier and changing curriculum. The accepted lineage emphasizes compiler-guided repair and checked lemma names.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-07-19",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.17352v1"
+    }
+  },
+  "mermaidflow2025": {
+    "category": "Prompt, Workflow, and Program Optimization",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2025-05-29; checked arXiv version 1. Sources checked 2026-10-05. Publication: ICML 2025 Workshop on Multi-Agent Systems in the Era of Foundation Models (MAS), a non-archival workshop. This is distinct from main-conference publication. The summary uses arXiv v1. Evolves typed Mermaid workflow graphs with mutation and crossover before translating them into executable Python. On HumanEval, Section 5.4 combines a testing node from one parent with a diverse ensemble from another. Appendix B separately publishes GSM8K, MATH, HumanEval and MBPP workflow artifacts. These are searched compositions of available operators; their use does not establish that the optimizer itself evolves.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2025-05-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2505.22967v1"
+    }
+  },
+  "sew2025": {
+    "category": "Prompt, Workflow, and Program Optimization",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2025-05-24; checked arXiv version 2. Sources checked 2026-10-05. Jointly changes workflow topology and agent prompts for HumanEval, MBPP and LiveCodeBench. Section 5.5 identifies task-parsing and code-rewriting workflows as effective families. Appendix A.2 separates structural templates from prompt evolution; the latter includes off-task creative-writing text. We retain the work as a workflow-optimization precedent, but do not turn its illustrative templates into an independently verified final harness diff or equate an LLM review label with executed tests.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2025-05",
+      "precision": "month",
+      "basis": "arXiv identifier month; exact day not recorded",
+      "source": "https://arxiv.org/abs/2505.18646v2"
+    }
+  },
+  "maas2025": {
+    "category": "Prompt, Workflow, and Program Optimization",
+    "kind": "paper",
+    "summary": "Publication/version: ICML 2025; the evidence notes retain the inspected arXiv version 2502.04180v2. Source/version: First submitted 2025-02-06; checked arXiv version 2. Sources checked 2026-10-05. Learns an agentic supernet from which query-dependent architectures are sampled. Its code and math experiments include HumanEval, GSM8K and MATH. Section 4.4 illustrates difficulty-dependent depth and early exit. The persistent learned object is an architecture distribution and its operators, rather than one final universal workflow; this is a controller-optimization route, not evidence of autonomous recursive source-code rewriting.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2025-02-06",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2502.04180v2"
+    }
+  },
+  "hyevo2026": {
+    "category": "Prompt, Workflow, and Program Optimization",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-03-20; checked arXiv version 1. Sources checked 2026-10-05. Searches hybrid graphs containing LLM reasoning nodes and deterministic code nodes through multiple evolutionary islands. Evaluations cover GSM8K, MATH, MultiArith, HumanEval and MBPP. Figure 4 shows a lineage combining deeper reasoning with format checking and conditional correction. That illustrative lineage is not assigned to every benchmark. The paper supports jointly searching topology and node logic, while task-specific retained artifacts remain the appropriate unit for domain claims.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-03-20",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2603.19639v1"
+    }
+  },
+  "flowevo2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Source/version: Checked arXiv version 2, revised 2026-08-20. The landing page reports an April first-submission date despite the July identifier; no first-month trend is inferred from this inconsistent metadata. Sources checked 2026-10-05. Compiles successful workflows into persistent executable skills and retrieves them either for direct reuse or to guide new workflow generation. Evaluated on ALFWorld, HumanEval, MBPP, GSM8K and MATH-500. Appendix A freezes the MBPP skill bank to separate reuse from continued learning. The paper's detailed direct-replay and curation traces concern ALFWorld; those results must not be attributed to mathematical solving. For code and math, the paper emphasizes skill-conditioned generation. This is persistent skill accumulation under a specified management procedure, not proof that the management procedure evolves.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-04-18",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.21596v2"
+    }
+  },
+  "codeskill2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-05-25; checked arXiv version 2. Sources checked 2026-10-05. Trains a skill-management policy using quality and execution feedback from a frozen downstream coding agent. The bank combines task-level procedures with event-triggered recovery guidance, evaluated on EnvBench, SWE-bench Verified and Terminal-Bench 2. Appendix D gives concrete Maven build-diagnosis and missing-test-jar skills. The learned manager and the skills it maintains are different update objects; whole-bank improvements do not establish the individual effect of each skill example.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-05-25",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.25430v2"
+    }
+  },
+  "gse2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-08-06; checked arXiv version 1. Sources checked 2026-10-05. Globalized Skill Evolution jointly maintains skill contents and a Skill Relation Graph, consolidating local updates and replaying historical cases before integration. Evaluations use OpenHands and mini-SWE-agent on bug-revealing test generation and false-positive report filtering. Figure 3 abstracts local rules into value-triggered versus state-triggered diagnosis linked to test construction; a second case consolidates nullability reasoning. These tasks broaden repository engineering beyond patch repair. The simplified cases illustrate learned guidance rather than isolated causal estimates.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-06",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.06153v1"
+    }
+  },
+  "skillforge2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-08-19; checked arXiv version 1. Sources checked 2026-10-05. Acquires project-specific skills by solving synthetic repository issues before handling real issues, grounding the resulting knowledge in repository entities. The Django case in Section IV-E contrasts exponent-based patching with skill-guided precision semantics and boundary checks. This is proactive skill acquisition and reuse, not an online source-code rewrite of the repair agent. Its case-level test outcomes should not be interpreted as an ablation of every instruction.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-19",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.18933v1"
+    }
+  },
+  "aibuildai2_2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-05-27; checked arXiv version 1. Sources checked 2026-10-05. Uses a hierarchical knowledge system for autonomous ML engineering: high-level instructions and an index point to detailed knowledge documents. Post-run builders extract takeaways from working directories and update the relevant instructions; a separate stream incorporates new external material. Evaluations include MLE-bench and live competitions. The evolving object is reusable knowledge, distinct from the trained task model or ensemble produced by the agent. The reported architecture describes continual updates, but the reviewed text does not isolate the gain of a particular retained post-run document.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-05-27",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.27873v1"
+    }
+  },
+  "wda2026": {
+    "category": "Prompt, Workflow, and Program Optimization",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-09-26; checked arXiv version 1. Sources checked 2026-10-05. Workflow-Designing Agents jointly optimize refinement instructions and stage structure, using SPLIT to distribute accumulated instructions across stages. LiveBench Math is one of five evaluation settings. Appendices A.3 and A.13 identify selected two-stage and three-stage mathematical pipelines for different backbones, with search ancestry and calibration/test separation. More stages do not uniformly reduce inference calls; this is learned fixed-per-task refinement, not input-adaptive stopping or verified formal proof.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-26",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.32458v1"
+    }
+  },
+  "skillevolean2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-10-01; checked arXiv version 1. Sources checked 2026-10-05. Evolves Lean-proving skills comprising a root policy, reference resources and examples. Progressive updates use successful/failed trajectories; concept-guided mutation broadens search when sampled proofs all fail. Evaluations cover miniF2F, PutnamBench, IMO 2025 and USAMO 2026. The reviewed manuscript specifies editable files and update algorithms but does not supply a complete final before/after skill diff. Section 3.3 explicitly labels its cost table as design targets and assumptions; these entries are not empirical efficiency results. The work is retained with this distinction between method evidence and artifact-level evidence.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10",
+      "precision": "month",
+      "basis": "arXiv identifier month; exact day not recorded",
+      "source": "https://arxiv.org/abs/2610.01799v2"
+    }
+  },
+  "evotrainer2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2026-06-02; checked arXiv version 2. Sources checked 2026-10-05. Co-evolves LLM policies and the training-side harness used to interpret rollouts and decide interventions. Mathematical reasoning, competitive-programming generation and repository engineering provide distinct diagnostic needs. Section 3.3 describes metric expansion, specialized analyzers, backtests and evidence retrieval; trajectory analysis includes rejecting misleading high scores caused by leakage. This belongs to workflow extensions and training infrastructure, not a fixed-model inference-harness comparison.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-06",
+      "precision": "month",
+      "basis": "arXiv identifier month; exact day not recorded",
+      "source": "https://arxiv.org/abs/2606.03108v2"
+    }
+  },
+  "agentevo2026": {
+    "category": "Prompt, Workflow, and Program Optimization",
+    "kind": "paper",
+    "summary": "Source/version: Publisher version; published online 2026-05-22, volume 12, article 208. Sources checked 2026-10-05. Optimizes executable workflows with a Pareto archive and adaptive exploration, refinement and crossover, explicitly balancing quality and token cost. Evaluates GSM8K, MATH, HumanEval and MBPP. It extends archive-based workflow search with pruning and recombination. The paper's prose gives an imprecise pass@1 definition, so we do not reuse its code-generation scores without checking the evaluation implementation; no dataset-specific final edit sequence is inferred from the search algorithm alone.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://doi.org/10.1007/s40747-026-02325-0"
+    }
+  },
+  "drevo2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Cross-domain harness search; classification evidence. Source/version: First submitted 2026-07-29; arXiv v1, checked 2026-10-05. Recalibrates accumulated evidence against the current harness before distilling a targeted search intent. Experiments include legal and symptom classification with held-out tests, and coding adaptation on reused benchmark suites. The reviewed text reports classifier evolution but does not expose a complete task-specific final classifier diff. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-07-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.26722v1"
+    }
+  },
+  "taskcoevolve2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Validation-task selection; classification harness evolution. Source/version: First submitted 2026-08-20; arXiv v2, checked 2026-10-05. Uses adaptive validation-task selection to reduce evaluation cost in Meta-Harness search. The published selected classifier combines word-bigram and character n-gram TF-IDF retrieval, rank fusion and label-diversity control. This shared artifact is evaluated across Law, Symptom2Disease and USPTO; those datasets are not three independent discoveries. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-20",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.20169v2"
+    }
+  },
+  "hase2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Coupled model–harness evolution; classification. Source/version: First submitted 2026-07-04; arXiv v1, checked 2026-10-05. Co-evolves model weights and external harness components. Symptom2Disease cases show retrieval-tool and memory revisions beyond recency-based examples. Training-time retry traces, committed phase-boundary files and frozen final evaluation are distinct; full gains cannot be attributed to harness edits alone. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-07-04",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.03935v1"
+    }
+  },
+  "hcl2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Continual harness evolution; QA, games and visual perception. Source/version: First submitted 2026-08-19; arXiv v1, checked 2026-10-05. Keeps the model frozen while updating task interfaces, memory, capabilities and routing. Current-task and historical-anchor tests control commitment. Experiments span textual and visual task streams, ALFWorld and Minecraft. It supplies persistent harness-evolution evidence, but detailed final artifacts are not equally exposed for every task. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-19",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.19013v1"
+    }
+  },
+  "zetta2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Embodied execution; critic and recovery-code evolution. Source/version: First submitted 2026-08-17; arXiv v1, checked 2026-10-05. Evolves runtime critics and recovery skills around a frozen VLA. A published manipulation case adds pregrasp, bounded alternative regrasp and supported placement. Validation and regression gates govern persistent updates. Critics propose interventions rather than directly declaring official task success. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-17",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.16590v1"
+    }
+  },
+  "harnesspai2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Embodied execution; program and skill evolution. Source/version: First submitted 2026-09-24; arXiv v1, checked 2026-10-05. Uses executable programs around action primitives, fixing the program within a rollout and revising it between rollouts. Failures become reusable node-local skills; the published basket-placement case concerns geometric targeting. Expert-data collection and subsequent policy fine-tuning form a separate extension. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-24",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.29166v1"
+    }
+  },
+  "shaper2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Embodied planning; skill and context-code evolution. Source/version: First submitted 2026-08-11; arXiv v1, checked 2026-10-05. Evolves persistent planner instructions and executable context builders with fixed model parameters. VLABench artifacts show actor-compatible commands, recent-state emphasis and stagnation cues. ESI-Bench separately adds evidence-directed active perception. The paper provides explicit before/after artifacts. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-11",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.11350v1"
+    }
+  },
+  "comfyclaw2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Visual generation; persistent skill evolution. Source/version: First submitted 2026-07-02; arXiv v1, checked 2026-10-05. Builds ComfyUI workflows and distills cross-run traces and verifier feedback into reusable skills. The skill library changes across tasks; the typed graph editor, rollback mechanism and region verifier are supplied infrastructure. Published usage statistics identify consulted recipes but do not isolate each skill's causal contribution. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-07-02",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.01709v1"
+    }
+  },
+  "autoref2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Visual generation; executable harness search. Source/version: First submitted 2026-09-28; arXiv v1, checked 2026-10-05. Searches over reusable multi-reference image-generation programs while keeping the models fixed. Its selected lineage adds grounded prompts, diverse drafts and failure-aware selection; direct-editing variants are discarded. Appendix D identifies the retained path, separating harness search from inference-time candidate generation. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-28",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.35530v1"
+    }
+  },
+  "videoweaver2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Visual generation; composition and creator-skill evolution. Source/version: First submitted 2026-06-06; arXiv v2, checked 2026-10-05. Evaluates long-video production and updates reusable composition skills from execution and output feedback. It also evolves category-local creator skills and merges them for transfer. Fixed foundation skills, frozen held-out evaluation and limited-example target-category adaptation are distinct components. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-06-06",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.08091v2"
+    }
+  },
+  "cineforge2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Visual generation; cross-story production-policy evolution. Source/version: First submitted 2026-08-30; arXiv v1, checked 2026-10-05. Organizes long-video production and converts recurring cross-story failures into bounded policy patches. Fresh replay and paired stochastic evaluation gate updates; read-only checkpoint evaluation uses a fixed unseen story set and frozen reviewer. The relevant persistent object is the production policy, not a repaired individual video. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.29621v1"
+    }
+  },
+  "vidharness2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Visual understanding; executable harness search. Source/version: First submitted 2026-09-29; arXiv v1, checked 2026-10-05. Searches video-agent programs with MCTS and uncertainty-aware multi-fidelity validation, then routes queries to budget-specialized harnesses. Frozen VLM and constrained video/transcript APIs delimit the edit space. The paper reports validation trajectories and generalization; final per-tool diffs are less explicit than the search procedure. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.38413v1"
+    }
+  },
+  "videoevolve2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Visual understanding; temporal-grounding harness evolution. Source/version: First submitted 2026-10-01; arXiv v1, checked 2026-10-05. Preserves stage interfaces while evolving grounding instructions and code. Published retained behavior adds repeated-occurrence and boundary tests plus conditional extra predictions with median aggregation. Both recovery and regression cases are documented, limiting claims of uniform benefit from more calls. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-01",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.01766v1"
+    }
+  },
+  "proverinterface2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Formal proving; executable prover-interface evolution. Source/version: First submitted 2026-09-30; arXiv v1, checked 2026-10-05. Grows a compiler-only MCP interface through empirically selected changes, including interactive proof-state control and candidate trials. Retained and rejected features are documented separately. Rocq test results and Lean-port cost/coverage trade-offs support bounded interface evolution, with human setup and review. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.39544v1"
+    }
+  },
+  "proofevolve2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: Formal proving; persistent verified proof-resource evolution. Source/version: First submitted 2026-08-26; arXiv v1, checked 2026-10-05. Adds kernel-checked schemas to a cross-problem library. Inclusion concerns that persistent resource, not evolution of one proof DAG. Typed recombination and the separate LeanWorkbook retrieval experiment provide different evidence; neither demonstrates recursive rewriting of the outer optimizer. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-08-26",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.26334v1"
+    }
+  },
+  "disco2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Classification: ML engineering; task-oriented skill evolution around a fixed runtime. Source/version: First submitted 2026-09-02; arXiv v1, checked 2026-10-05. Iteratively revises repository-grounded research skills using trial-execution feedback, then supplies the retained guidance to later MLE-bench runs. Inclusion concerns this refinement loop, not the static skill collection. Construction cost and task exposure must be distinguished from downstream execution. Survey placement: Section 4 and its category-organized evidence appendix.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-02",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.02749v1"
+    }
+  },
+  "comprehensive_selfevolving_survey2025": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 10 August 2025; checked arXiv v2, revised 31 August 2025. Sources checked 2026-10-10. Organizes agent evolution around system inputs, the agent system, the environment, and optimizers. It reviews updates to models, prompts, memory, tools, workflows, and multi-agent communication, then examines domain-specific adaptation and evaluation. This earlier survey already links component changes with programming, biomedicine, and finance; domain coverage alone is therefore not a sufficient novelty claim for our survey. Role and placement: Broad related survey; Introduction and Section 2. Compare its component-oriented synthesis with our extraction of realized harness edits and their evidential status. Evidence checked: Abstract and Introduction; arXiv v2 PDF.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2025-08-10",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2508.07407"
+    }
+  },
+  "ai4ai_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Preprints.org v1, posted 28 August 2026; not peer-reviewed. Sources checked 2026-10-10. Examines whether agents can carry AI improvement from an idea to a verified result. Its composition-gap analysis separates strong individual components from reliable end-to-end research. The harness chapter covers execution, persistence, governance, and self-modification, distinguishing fixed runtimes, external optimization, self-modification, and model–harness coupling. Its ownership and evidence analysis substantially overlaps our discussion of recursive scope. Role and placement: Close related survey; Introduction and Section 3. Differentiate our cross-domain, artifact-level evidence synthesis rather than claiming that prior reviews omit harness evolution. Evidence checked: Sections 1, 5, and 6; publisher full text.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://www.preprints.org/manuscript/202608.2108/v1"
+    }
+  },
+  "reliable_selfevolving_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Preprints.org v1, posted 11 September 2026; not peer-reviewed. Sources checked 2026-10-10. Classifies self-evolution by the deepest active update target: output, model, scaffold, improver, or criterion. It pairs these targets with a reliability ladder that asks whether evidence and oversight remain outside the corresponding update boundary. This supplies a close comparison for separating self-modification authority from demonstrated improvement. Role and placement: Close related survey; Introduction, Section 3, and the safety discussion. Its L0–L4 labels describe different categories from the L1–L5 framework adopted in our manuscript; level numbers must not be equated. Evidence checked: Abstract, Introduction, and the cross-level reliability synthesis; publisher full text.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://www.preprints.org/manuscript/202609.0913/v1"
+    }
+  },
+  "systematic_coevolution_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: SSRN record posted 5 May 2026, manuscript dated 22 April 2026. The author repository also links a TechRxiv version; these are one work, not two studies. Sources checked 2026-10-10. Organizes the field into model-centric evolution, environment-centric evolution, and their co-evolution. The author-maintained taxonomy places knowledge and experience reuse, modular architectures, and agent topologies within the environment-centric branch. This broad use of environment extends beyond a task simulator and should not be silently substituted for our narrower target-harness definition. Role and placement: Related survey; Introduction and Section 2.5. Provides a comparison for model–environment coupling, not an independent experimental harness-evolution case. Evidence checked: SSRN abstract and author-maintained taxonomy. Full manuscript retrieval was blocked in this pass; detailed claims remain unchecked. \\surveygroupHarness Architecture and Engineering",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "Bibliographic publication year (first public release unknown)",
+      "source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6626878"
+    }
+  },
+  "graph_selfevolving_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Checked arXiv v1. The primary record reports 10 June 2026; dates are taken from the record rather than inferred from the identifier. Sources checked 2026-10-10. Uses typed graph transformations to relate changes to components and features, connection topology, active subgraphs, and cross-component co-evolution. Memory structures and workflows become comparable editable structures, with provenance and rollback relevant to retaining graph changes. The perspective covers a broader space than persistent harness improvement: a runtime graph change does not by itself establish an inherited improvement. Role and placement: Related survey; Section 2 workflow, search, and memory discussions. Use the graph representation as a comparison axis, not evidence that all graph transformations constitute RSI. Evidence checked: Introduction and the graph-transformation taxonomy; arXiv HTML. \\surveygroupDomain-Specific and Evaluation Surveys",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-06-10",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.18104"
+    }
+  },
+  "safety_selfevolution_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Checked arXiv v1; the primary record reports 8 September 2026. Sources checked 2026-10-10. Introduces SAVER: Substrate, Adaptation, Violation, Exposure, and Response. Its central object is the transition through which experience becomes reusable influence. A previously legitimate memory, skill, or workflow can become unsafe when its authority, persistence, or scope expands. The survey calls for tracking affected descendants and evaluating recovery after adaptation resumes, extending beyond static response safety. Role and placement: Safety-focused related survey; the safety and evaluation discussion. Particularly relevant to retained harness state and the limits of one-round acceptance checks. Evidence checked: Introduction, SAVER framework, and longitudinal evaluation discussion; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-08",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.00093"
+    }
+  },
+  "humanoid_selfevolution_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: Checked arXiv v1; the primary record reports 2 September 2026. Sources checked 2026-10-10. Reviews post-deployment changes to a humanoid's policy, perception, memory, workflow, and body through self-learning, adaptation, optimization, and generation. It distinguishes fast task execution from slower retained updates and synthesizes safety constraints on admissible changes. This broad embodied scope includes weight and morphology changes that fall outside our core harness corpus. Role and placement: Embodied-domain and safety background; Section 4 and the safety discussion. Its conceptual safety organization is not an experimentally evolved harness artifact. Evidence checked: Sections 2.2, 7, and 8; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-09-02",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.13236"
+    }
+  },
+  "ec_trustworthy_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2 October 2026; checked arXiv v1. Sources checked 2026-10-10. Connects evolutionary attacks, evolutionary defenses, and trustworthy self-evolving systems. For persistent updates, it distinguishes restricting the admissible search space, selecting updates with safety-aware feedback, and coupling adaptive attackers and defenders. This helps connect search and retention decisions to trustworthiness while preserving the distinction between one-off adversarial search and inherited system change. Role and placement: Adjacent methodological survey; Sections 2.2 and 5. It supports discussion of search constraints and safe retention, not a new target-agent evolution result. Evidence checked: Sections II-A, III-C, and VII; arXiv HTML. \\surveygroupConceptual Frameworks and Position Papers",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-02",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.02996"
+    }
+  },
+  "mesh_harness2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 4 October 2026; checked arXiv v1. Sources checked 2026-10-10. Maintains role-specific pools of interchangeable modules, scores their combinations with full-covariance LinUCB, and uses mixed-start coordinate ascent to choose complete harnesses for evaluation. Traces guide local code proposals. Crucially, Appendix D.5 reports that final text, math, and coding harnesses use initial-pool implementations; the final ScienceWorld harness includes a newly refreshed planner. These are distinct contributions of composition selection and newly authored code, not uniformly new evolved modules. Role and placement: Core harness-search method; Section 2.2. Candidate for cross-domain extraction in Section 4; matched candidate-evaluation budgets do not imply matched token costs. Evidence checked: Section 4 and Appendix D.3–D.5; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-04",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.05300"
+    }
+  },
+  "cig2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 4 October 2026; checked arXiv v1. Sources checked 2026-10-10. Externalizes optimization history as linked Evidence, Hypothesis, Intervention, and Outcome nodes. Local proposer operations inspect and revise this shared state instead of reconstructing the full experimental logic from raw logs. A reported text-task case preserves both recovery on one dataset and failure of the joint objective, so later proposals can use a scoped assessment rather than a binary success narrative. Role and placement: Core optimization-memory and direction-guidance method; Sections 2.3–2.4. This graph belongs to the improvement process, not the target agent's task memory. The title does not establish general causal identification or evolution of the controller itself. Evidence checked: Sections 3.2–3.4 and 4.6; Appendix A.9; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-04",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.05039"
+    }
+  },
+  "sorsi2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 5 October 2026; checked arXiv v2, revised 6 October 2026. Sources checked 2026-10-10. Detects recurring failures, opposing edits, and expectation mismatches, then executes diagnostic probes before proposing further workflow changes. Persistent inquiry records retain hypotheses, negative evidence, pending checks, and monitoring status across rounds. Lean 4 and Verus experiments compare this process with naive RSI under a matched search-time budget. The method directly addresses repeated parameter toggling without resolving the underlying workflow failure. Role and placement: Core diagnosis-guided workflow improvement; Sections 2.3–2.4 and formal-verification evidence in Section 4. Second-order diagnosis is not automatically evidence that the improvement algorithm rewrites itself. Evidence checked: Sections 4–6; Appendices B and D.3–D.6; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-05",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.05701"
+    }
+  },
+  "verse2026": {
+    "category": "Self-Modification and Meta-Level Improvement",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 2 October 2026; checked arXiv v1. Sources checked 2026-10-10. Allows a harness optimizer to revise its own prompts, tools, hooks, skills, and notes while also modifying an executor harness, with both model weights fixed. Draft execution, failure replay, and perturbation provide verification. Appendix L documents optimizer-written artifacts, including batch failure triage and hooks that require draft verification. These artifacts belong to the optimizer; they must not be presented as capabilities evolved in the target coding agent. Role and placement: Core bounded improver self-modification; Sections 2.4 and 3. The reported verification ablation and concrete optimizer artifacts make it particularly relevant to recursive scope; they do not establish unrestricted RSI. Evidence checked: Sections 2.3, 3.1, and 4.3; Appendix L; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-02",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.02616"
+    }
+  },
+  "mass_rsi2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 8 October 2026; checked arXiv v1. Sources checked 2026-10-10. Alternates task-specific multi-agent workflow search with supervised fine-tuning on selected execution traces. Search edits role specifications, handoffs, and information routing under structural constraints; the updated model then serves as executor, optimizer, and evaluator in the next cycle. Two reported cycles and behavioral audits examine internalization of delegation and code handoffs, including behavior under bare task prompts. Role and placement: Workflow–model coupling; Section 2.5 and bounded recursive-scope comparison in Section 3. Distinguish training-time, task-specific teacher workflows from a single persistent deployment harness. Self-evaluation during search and external test evaluation play different roles. Evidence checked: Section 3 and Sections 5.1–5.2; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-08",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.12176"
+    }
+  },
+  "emho2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 6 October 2026; checked arXiv v1. Sources checked 2026-10-10. Optimizes a frozen embodied model's harness from trajectories and revision history. Reported edits carry blocked-action feedback into replanning, detect valid but repetitive actions, track manipulation phases, and choose vision tools according to the current uncertainty. EMHO-Merge uses episode-level gains and losses to refine when shared behaviors apply across subtasks. Navigation and manipulation examples provide concrete domain-specific changes beyond generic recovery prompts. Role and placement: Core embodied harness evolution; Section 4 candidate. Qualitative trajectory changes and overall system gains must remain separate from isolated causal effects of individual edits. Evidence checked: Sections 3 and 5; Appendices D and E; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-06",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.08432"
+    }
+  },
+  "worldabduct2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Source/version: First submitted 8 October 2026; checked arXiv v1. Sources checked 2026-10-10. WorldAbduct diagnoses execution gaps, proposes harness changes or hidden-rule hypotheses, and tests the latter before retaining them in E-Ledger's static world layer. Its appendix audits final rules against task-critical triggers and side effects in World of Workflows. The code-approval architecture is a designed starting mechanism; verified rules and their applicable conditions are the retained products of evolution. ScienceWorld and DiscoveryWorld provide additional settings. Role and placement: Core environment-knowledge and harness adaptation; Sections 2.3–2.4 and Section 4 candidate. Separate transient task state from rules retained across tasks, and distinguish partially correct rule scope from fully verified facts. Evidence checked: Section 3.3; Appendices A.3, C, and D; arXiv HTML.",
+    "added_on": "2026-10-10",
+    "release": {
+      "value": "2026-10-08",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.11552"
     }
   }
 }

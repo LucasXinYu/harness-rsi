@@ -1,6 +1,6 @@
 # Maintaining Harness RSI
 
-This repository is the literature companion to an ongoing survey. The homepage and GitHub README show aggregate publication trends and collection updates. The research atlas will explain editable harnesses and evolved mechanisms across domains once findings are ready. Individual paper records remain in the source data; the manuscript stays in Overleaf.
+This repository is the literature companion to an ongoing survey. The homepage and GitHub README show aggregate publication trends and collection updates. The research atlas presents selected before/after changes, outcomes and limits across four task domains. Individual paper records remain in the source data; the manuscript stays in Overleaf.
 
 ## Add or correct a paper
 
@@ -13,7 +13,7 @@ python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY
 python3 -m unittest discover -s tests
 python3 scripts/catalog.py check
 git diff
-git add data docs/catalog.json docs/stats.json docs/assets/publication-timeline.svg README.md
+git add data docs/catalog.json docs/stats.json docs/literature.bib docs/assets/publication-timeline.svg docs/assets/collection-growth.svg README.md
 git commit -m "Update literature collection"
 git push
 ```
@@ -26,7 +26,7 @@ The GitHub issue template accepts paper suggestions and corrections. Contributio
 
 | Field or file | Meaning |
 | :-- | :-- |
-| `data/literature.bib` | Bibliographic identity and source URL, copied from the survey bibliography. |
+| `data/literature.bib` | Bibliographic identity and source URL, selected from the survey bibliography using Literature Map membership; extra manuscript references and aliases are excluded. |
 | `data/annotations.json` | One annotation per citation key: primary category, record kind, method summary, release date with provenance, and first-added date. |
 | `kind: paper` | A paper or manuscript in the literature map, including surveys, adjacent methods, and benchmarks. This is not a claim of peer review or RSI capability. |
 | `kind: resource` | An official benchmark page, code resource, or implementation reference, counted separately from papers. |
@@ -42,11 +42,11 @@ Versions of the same arXiv record are one work. Preprint and published versions 
 
 ## Read the charts correctly
 
-**Publication timeline:** the website defaults to monthly counts and offers a cumulative view and year selector. The GitHub README shows monthly counts for the search-cutoff year. Earlier years contribute to a later year’s cumulative opening total. Only months through the search cutoff appear; a partially covered final month is marked. A zero means no included records for that month, not that no relevant work was published. Year-only and undated papers are excluded from these charts but retained in the collection total.
+**Publication timeline:** the website defaults to cumulative counts and offers monthly counts and a year selector. The GitHub README shows cumulative growth, with monthly counts in an expandable section. Earlier years contribute to a later year’s cumulative opening total. Only months through the search cutoff appear; a partially covered final month is marked. A zero means no included records for that month, not that no relevant work was published. Year-only and undated papers are excluded from these charts but retained in the collection total.
 
 These plots describe the entire survey collection, including adjacent methods, surveys, benchmarks, and supporting work. They are not a field-wide census or a count of direct Harness RSI methods. Official resources are excluded from paper counts. `docs/stats.json` contains only aggregate counts, publication-month series, update dates, and collection snapshots; the homepage does not load individual paper records.
 
-**Collection history:** dated corpus snapshots beginning with the initial import. There is initially one point. Future additions and removals produce real collection-history points. Never substitute publication dates or BibTeX access dates for historical collection dates.
+**Collection history:** dated corpus snapshots beginning with the initial import. The baseline and subsequent imports are retained. Additions and removals produce real collection-history points. Never substitute publication dates or BibTeX access dates for historical collection dates.
 
 ## Build, preview, and validate
 
@@ -61,31 +61,34 @@ python3 -m http.server 8000 --directory docs
 
 Open `http://localhost:8000` for the standalone research homepage. Its domain tabs work without a backend. All assets are local, including the Manrope typeface (SIL Open Font License in `docs/assets/fonts/`). There are no analytics, remote font requests, or API keys.
 
-The homepage is a scaffold: editable scope, evolved mechanisms, and evidence remain empty until the domain studies are ready. `docs/project.json` contains the planned domain names and empty `findings` arrays, plus null arXiv and website URLs. The renderer intentionally displays empty states; presenting findings will require an evidence-backed study view. Do not fill it with inferred results, placeholder scores, or invented links. The aggregate activity section is populated from the actual bibliography. Keep domain findings empty until source-supported content is ready. Counts and the data-update date come from the import pipeline, not the date of a website redesign.
+## Update domain findings
 
-The validation workflow checks source consistency, identifiers, date precision, snapshot totals, and generated-file freshness. These checks do **not** verify a paper’s scientific claims; reading the primary sources remains necessary.
+`docs/project.json` contains four domain summaries, 12 selected observations and three cross-domain comparisons. Each observation provides:
 
-## Add research figures
+- Task setting and the concrete before/after change.
+- An observed outcome and an evidence type (case, full-system result, ablation, or transfer).
+- A limit on interpretation, especially component attribution and portability.
+- Primary-source citation keys, links and section or artifact locators.
 
-The website uses the same visual identity as the repository cover. Its figure gallery supports a full-width figure and pairs of smaller figures, descriptive captions, source links, lazy loading, and a keyboard-accessible image viewer with zoom, download, and Escape to close.
+Read the relevant source before editing these fields. Supplied architecture, proposed changes, intermediate discoveries and retained modifications are not interchangeable. A task answer or generated image is not automatically a reusable harness artifact. Do not turn an overall score increase into a component-level causal claim.
 
-Keep `figures` in `docs/project.json` empty until a research figure is ready. For each approved figure, add an image under `docs/assets/figures/` and an entry with:
+The build checks count consistency, source identity and comparison-to-evidence links. It does **not** verify scientific claims. Cases cited in the manuscript but not in the curated Literature Map may appear in `additional_finding_sources` with an explicit scope note. They are excluded from collection statistics until formally imported into the Map.
 
-- `id`: stable figure identifier.
-- `title`: short descriptive title.
-- `src`: local path such as `assets/figures/workflow.svg`.
-- `alt`: description of the information conveyed by the figure.
-- `caption`: scope, interpretation, and relevant context.
-- `layout`: `wide` for a full-width figure, or `standard` for a half-width figure.
-- `source_url`: an optional HTTPS link to the primary source.
+The evidence summary is frozen separately from the working collection: the 95 category–source records cover four domains, 62 research papers and one benchmark resource through October 1, 2026. The homepage exposes selected synthesis, not the complete 95-record release. Updating bibliography counts does not automatically extend that evidence cutoff or add new observations. Do not imply independent discoveries when a source appears in several categories.
 
-Use SVG for diagrams and PNG, WebP, AVIF, or JPEG for raster images. Preserve the source's aspect ratio and ensure text remains legible when enlarged. Add only original figures or material you have permission to redistribute, and retain attribution. Do not use illustrative placeholders as evidence. The recursive ribbon in the header is original project artwork, separate from research findings. Its parametric source lives in `scripts/identity.py`; run it to regenerate the artwork and cover.
+Run `python3 scripts/catalog.py build` after changing findings or contributors so the README stays synchronized. The cumulative/monthly SVG charts, JSON and downloadable BibTeX are generated; edit their source data, not generated output.
 
-Contributor names, roles, and descriptions live in `docs/project.json` and appear on the website and in the generated README. Xin (Lucas) Yu (GitHub: LucasXinYu) leads the project. Codex is credited as an OpenAI AI assistant for assisted work, rather than as a human researcher or a scholarly author. Run `python3 scripts/catalog.py build` after changing contributor information.
+## Visual design and attribution
+
+Preserve the light violet project identity, local Manrope typeface and responsive layouts. The cross-domain visual comparison is accessible HTML connected to the same findings data as the atlas. Its cells link to source-bearing evidence disclosures; do not replace them with an untraceable illustration. Keep the page focused on findings and aggregate trends rather than a paper directory.
+
+New research figures should be original, source-linked SVG diagrams or appropriately attributed reusable artwork. Check labels at desktop and mobile sizes, and provide informative alternative text. The recursive ribbon is project artwork, not a scientific finding; its editable source lives in `scripts/identity.py`.
+
+Contributor names and roles are stored in `docs/project.json`. Xin (Lucas) Yu leads research direction and editorial decisions; Codex is credited as an OpenAI AI assistant, not as a human researcher or scholarly author.
 
 ## GitHub hosting
 
-The README displays aggregate counts, a monthly SVG chart, and collection updates, without enumerating papers. The `docs/` folder is also a complete static website.
+The README displays aggregate counts, cumulative and monthly SVG charts, and collection updates, without enumerating papers. The `docs/` folder is also a complete static website.
 
 The repository starts private. Website deployment is a separate, manual action: after deciding to publish the collection, set GitHub Pages to use GitHub Actions and run **Publish literature website**. That workflow refuses to run on a private repository. It deploys only `docs/`. No automatic web-publication or literature-discovery schedule is configured. The official-project branding identifies this repository as the project home; it does not imply that the survey has been published or accepted.
 

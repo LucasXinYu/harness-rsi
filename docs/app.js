@@ -3,11 +3,18 @@ const byId = id => document.getElementById(id);
 let domains = [];
 let activeDomain = '';
 
+function element(tag, className, content) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (content !== undefined) node.textContent = content;
+  return node;
+}
+
 function selectDomain(id, focus = false) {
   const domain = domains.find(item => item.id === id);
   if (!domain) return;
   activeDomain = id;
-  document.querySelectorAll('[role="tab"]').forEach(tab => {
+  document.querySelectorAll('#domain-tabs [role="tab"]').forEach(tab => {
     const selected = tab.dataset.domain === id;
     tab.setAttribute('aria-selected', String(selected));
     tab.tabIndex = selected ? 0 : -1;
@@ -15,7 +22,95 @@ function selectDomain(id, focus = false) {
   });
   byId('domain-title').textContent = domain.name;
   byId('domain-panel').setAttribute('aria-labelledby', `tab-${id}`);
-  byId('domain-status').textContent = `${domain.name}: findings and evidence will be added here.`;
+  byId('domain-subtitle').textContent = domain.subtitle;
+  byId('domain-overline').textContent = `${domain.records} CATEGORY–SOURCE RECORDS · ${domain.subcategories} SUBCATEGORIES`;
+  byId('domain-scope').replaceChildren(...domain.scope.map(label => element('span', '', label)));
+  byId('domain-findings').replaceChildren(...domain.findings.map((finding, index) => {
+    const card = element('article', 'finding-card');
+    card.id = `finding-${domain.id}-${finding.id}`;
+    const top = element('div', 'finding-top');
+    top.append(element('span', 'finding-index', `OBSERVATION ${String(index+1).padStart(2,'0')}`), element('h4', '', finding.title), element('p', 'finding-tasks', finding.tasks));
+    const pair = element('div', 'change-pair');
+    ['before', 'after'].forEach((phase, index) => {
+      if (index) pair.append(element('div', 'change-arrow', '↓'));
+      const state = element('div', `change-state ${phase}`);
+      state.append(element('span', '', phase.toUpperCase()), element('p', '', finding[phase]));
+      pair.append(state);
+    });
+    const observation = element('div', 'finding-observation');
+    observation.append(element('span', 'evidence-badge', finding.evidence_type), element('p', '', finding.result));
+    const evidence = element('details', 'finding-evidence');
+    evidence.append(element('summary', '', `${finding.sources.length} source${finding.sources.length > 1 ? 's' : ''} · evidence & limits`), element('p', '', finding.limit));
+    const sources = element('ul');
+    finding.sources.forEach(source => {
+      const li = element('li');
+      const link = element('a', '', `${source.name} ↗`);
+      if (new URL(source.url).protocol !== 'https:') throw new Error('Expected a primary HTTPS source.');
+      link.href = source.url;
+      li.append(link, element('small', '', source.locator));
+      sources.append(li);
+    });
+    evidence.append(sources);
+    card.append(top, pair, observation, evidence);
+    return card;
+  }));
+  byId('domain-status').textContent = `${domain.name}: ${domain.findings.length} selected findings displayed.`;
+}
+
+function showFinding(domainId, findingId, scroll = true) {
+  selectDomain(domainId);
+  const card = byId(`finding-${domainId}-${findingId}`);
+  if (!card) return;
+  card.querySelector('details').open = true;
+  if (scroll) {
+    card.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block:'start'});
+    card.tabIndex = -1;
+    card.focus({preventScroll: true});
+  }
+}
+
+function renderInsights(insights) {
+  const labels = ['Interfaces', 'Decision evidence', 'Recovery'];
+  const tabs = byId('insight-tabs');
+  function select(index, focus = false) {
+    [...tabs.children].forEach((tab, i) => {
+      tab.setAttribute('aria-selected', String(i === index));
+      tab.tabIndex = i === index ? 0 : -1;
+      if (focus && i === index) tab.focus();
+    });
+    const insight = insights[index];
+    const panel = byId('insight-panel');
+    panel.setAttribute('aria-labelledby', `insight-tab-${insight.id}`);
+    const heading = element('div', 'insight-heading');
+    heading.append(element('h3', '', insight.title), element('p', '', insight.summary));
+    const grid = element('div', 'comparison-grid');
+    insight.cells.forEach(cell => {
+      const domain = domains.find(d => d.id === cell.domain);
+      const link = element('a', 'comparison-cell');
+      link.href = `#finding-${cell.domain}-${cell.finding}`;
+      link.append(element('span', 'cell-domain', domain.name.toUpperCase()), element('strong', '', cell.label), element('p', '', cell.detail), element('span', 'cell-link', 'Explore the evidence ↗'));
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        history.replaceState(null, '', link.hash);
+        showFinding(cell.domain, cell.finding);
+      });
+      grid.append(link);
+    });
+    panel.replaceChildren(heading, element('p', 'comparison-question', insight.question), grid);
+  }
+  insights.forEach((insight, index) => {
+    const tab = element('button', 'insight-tab');
+    tab.type = 'button'; tab.id = `insight-tab-${insight.id}`;
+    tab.setAttribute('role','tab'); tab.setAttribute('aria-controls','insight-panel');
+    tab.append(element('span', '', `0${index+1}`), document.createTextNode(labels[index]));
+    tab.addEventListener('click', () => select(index));
+    tab.addEventListener('keydown', event => {
+      const next = {'ArrowRight': (index+1)%insights.length, 'ArrowLeft': (index+insights.length-1)%insights.length, 'Home':0, 'End':insights.length-1}[event.key];
+      if (next !== undefined) { event.preventDefault(); select(next, true); }
+    });
+    tabs.append(tab);
+  });
+  select(0);
 }
 
 function renderDomains() {
@@ -76,13 +171,24 @@ async function init() {
     domains = project.domains;
     if (!Array.isArray(domains) || !domains.length) throw new Error('No domains configured.');
     renderDomains();
+    const e = project.evidence;
+    byId('evidence-numbers').replaceChildren(...[[e.records,'category–source records'],[e.papers,'research papers'],[e.subcategories,'task subcategories'],[domains.length,'domains']].map(([value,label]) => {
+      const item = element('div'); item.append(element('strong','',value),element('span','',label)); return item;
+    }));
+    byId('evidence-scope').textContent = `Domain evidence cutoff: ${e.cutoff} · Plus ${e.resources} benchmark resource. Records can share a source and include reporting gaps; they are not independent effects. The larger literature collection below has a later search horizon.`;
+    renderInsights(project.insights);
+    const restoreFinding = () => {
+      const match = location.hash.match(/^#finding-([^-]+)-(.+)$/);
+      if (match) showFinding(match[1], match[2]);
+    };
+    restoreFinding();
+    window.addEventListener('hashchange', restoreFinding);
     renderContributors(project.contributors || []);
-    renderFigures(project.figures || []);
     setFutureLink('paper-action', project.arxiv_url, 'arXiv paper');
     setFutureLink('paper-resource', project.arxiv_url, 'Read the survey');
-    setFutureLink('site-resource', project.website_url, 'Visit the research website');
+
     const narrow = window.matchMedia('(max-width: 760px)');
-    const orientation = () => byId('domain-tabs').setAttribute('aria-orientation', narrow.matches ? 'horizontal' : 'vertical');
+    const orientation = () => byId('domain-tabs').setAttribute('aria-orientation', 'horizontal');
     orientation();
     narrow.addEventListener('change', orientation);
   } catch (error) {
@@ -93,7 +199,7 @@ async function init() {
 init();
 
 let collectionStats;
-let chartView = 'monthly';
+let chartView = 'cumulative';
 const monthName = key => new Date(`${key}-01T12:00:00Z`).toLocaleString('en-US', { month: 'short', timeZone: 'UTC' });
 const svgElement = (tag, attributes, text) => {
   const element = document.createElementNS('http://www.w3.org/2000/svg', tag);
@@ -299,51 +405,6 @@ function openFigure(figure) {
   document.body.style.overflow = 'hidden';
   byId('viewer-stage').scrollTop = 0;
   byId('viewer-stage').scrollLeft = 0;
-}
-
-function renderFigures(figures) {
-  if (!figures.length) return;
-  const gallery = byId('figure-gallery');
-  gallery.classList.add('populated');
-  gallery.replaceChildren();
-  figures.forEach((figure, index) => {
-    const article = document.createElement('article');
-    article.className = `figure-reservation${figure.layout === 'wide' ? ' figure-wide' : ''}`;
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'figure-image-button';
-    button.setAttribute('aria-label', `Expand figure: ${figure.title}`);
-    const image = document.createElement('img');
-    image.src = figureAsset(figure.src);
-    image.alt = figure.alt;
-    image.loading = 'lazy';
-    image.decoding = 'async';
-    button.append(image);
-    button.addEventListener('click', () => openFigure(figure));
-    const caption = document.createElement('div');
-    caption.className = 'figure-caption';
-    const number = document.createElement('span');
-    number.textContent = String(index + 1).padStart(2, '0');
-    const copy = document.createElement('div');
-    const title = document.createElement('h3');
-    title.textContent = figure.title;
-    const description = document.createElement('p');
-    description.textContent = figure.caption;
-    copy.append(title, description);
-    if (figure.source_url) {
-      const source = new URL(figure.source_url);
-      if (source.protocol !== 'https:') throw new Error('Figure sources must use HTTPS.');
-      const link = document.createElement('a');
-      link.href = source.href;
-      link.className = 'figure-source';
-      link.textContent = 'Source ↗';
-      copy.append(link);
-    }
-    caption.append(number, copy);
-    article.append(button, caption);
-    gallery.append(article);
-  });
-  document.querySelector('.figure-section .atlas-note').textContent = 'Select a figure to enlarge it. Captions and source links accompany each figure.';
 }
 
 byId('expand-lens').addEventListener('click', () => openFigure({

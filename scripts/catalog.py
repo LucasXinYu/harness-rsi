@@ -135,8 +135,15 @@ def import_sources(source, date):
     bib = (source/'literature.bib').read_text()
     entries = bib_entries(bib)
     mapped = map_entries((source/'literature_map.tex').read_text())
-    if {e['id'] for e in entries} != set(mapped):
-        raise ValueError('BibTeX and literature map keys differ')
+    missing = set(mapped) - {e['id'] for e in entries}
+    if missing:
+        raise ValueError('Literature Map references missing from BibTeX: ' + ', '.join(sorted(missing)))
+    # The manuscript bibliography also contains supporting references and aliases.
+    # Membership of this collection is defined by the curated Literature Map.
+    entries = [e for e in entries if e['id'] in mapped]
+    selected_bib = '\n\n'.join('@'+e['bib_type']+'{'+e['id']+',\n'+
+        '\n'.join('  '+k+' = {'+v+'},' for k,v in e.items() if k not in ('id','bib_type'))+'\n}'
+        for e in entries)+'\n'
     previous_path = ROOT/'data/annotations.json'
     previous = read_json(previous_path) if previous_path.exists() else {}
     history_path = ROOT/'data/history.json'
@@ -156,7 +163,7 @@ def import_sources(source, date):
             'added_on': previous.get(key, {}).get('added_on', min(earlier_seen) if earlier_seen else date),
             'release': previous.get(key, {}).get('release') or release_date(e, m['source_note'], metadata.get(key, {})),
         }
-    (ROOT/'data/literature.bib').write_text(bib)
+    (ROOT/'data/literature.bib').write_text(selected_bib)
     write_json(previous_path, annotations)
     snapshot = {'date': date, 'paper_ids': sorted(k for k,a in annotations.items() if a['kind']=='paper'),
                 'resource_ids': sorted(k for k,a in annotations.items() if a['kind']=='resource')}
@@ -276,39 +283,115 @@ def svg_timeline(stats, cutoff):
     return '\n'.join(out)+'\n'
 
 
+def validate_project(project, records):
+    """Check traceability and aggregate consistency, not scientific claim truth."""
+    evidence, domains = project['evidence'], project['domains']
+    catalog = {r['id']: r for r in records}
+    for source in project.get('additional_finding_sources', []):
+        if source['id'] in catalog or not source.get('note') or not source['url'].startswith('https://'):
+            raise ValueError('Invalid additional finding source')
+        catalog[source['id']] = source
+    if sum(d['records'] for d in domains) != evidence['records']:
+        raise ValueError('Domain record totals disagree with evidence summary')
+    if sum(d['subcategories'] for d in domains) != evidence['subcategories']:
+        raise ValueError('Subcategory totals disagree with evidence summary')
+    dt.date.fromisoformat(evidence['cutoff'])
+    identities = set()
+    for domain in domains:
+        for finding in domain['findings']:
+            identity = (domain['id'], finding['id'])
+            if identity in identities:
+                raise ValueError('Duplicate finding identity')
+            identities.add(identity)
+            for field in ('before','after','result','evidence_type','limit'):
+                if not finding.get(field):
+                    raise ValueError('Missing finding evidence: '+field)
+            if not finding['sources']:
+                raise ValueError('Finding needs source evidence')
+            for source in finding['sources']:
+                if source['key'] not in catalog or not source['locator']:
+                    raise ValueError('Missing source or evidence locator: '+source['key'])
+                if source['url'] != catalog[source['key']]['url']:
+                    raise ValueError('Finding source URL differs from bibliography: '+source['key'])
+    for insight in project['insights']:
+        for cell in insight['cells']:
+            if (cell['domain'],cell['finding']) not in identities:
+                raise ValueError('Cross-domain comparison points to missing evidence')
+
+
+def svg_cumulative(stats, cutoff):
+    year = cutoff[:4]
+    rows = [r for r in publication_series(stats, cutoff) if r['month'].startswith(year)]
+    left, top, width, height = 60, 104, 884, 182
+    maximum = max(50, ((rows[-1]['cumulative']+49)//50)*50)
+    points = [(left+width*i/max(1,len(rows)-1), top+height*(1-r['cumulative']/maximum)) for i,r in enumerate(rows)]
+    line = ' '.join(f'{x:.1f},{y:.1f}' for x,y in points)
+    desc = '; '.join(f'{r["month"]}: {r["cumulative"]}' for r in rows)
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="366" viewBox="0 0 1000 366" role="img" aria-labelledby="title desc">',
+        '<title id="title">Cumulative collected literature by publication month</title>',
+        '<desc id="desc">'+html.escape(desc)+'. Only papers with known months. Earlier years included.</desc>',
+        '<rect width="1000" height="366" rx="16" fill="#faf8fd"/>',
+        '<g font-family="Arial,sans-serif" fill="#382c49">',
+        '<text x="30" y="35" font-size="21">A growing literature collection</text>',
+        f'<text x="30" y="61" font-size="13" fill="#8c7c9b">{year} · Cumulative by release month · Search through {cutoff}</text>',
+        f'<text x="945" y="37" text-anchor="end" font-size="24">{stats["papers"]} papers</text>',
+        f'<text x="945" y="61" text-anchor="end" font-size="12" fill="#8c7c9b">{stats["resources"]} resources tracked separately</text>']
+    for i in range(5):
+        y = top+height*(1-i/4)
+        out += [f'<path d="M{left} {y}h{width}" stroke="#e9e3f0"/>',f'<text x="{left-10}" y="{y+4}" text-anchor="end" font-size="11" fill="#9787a5">{maximum*i/4:g}</text>']
+    out += [f'<polygon points="{left},{top+height} {line} {left+width},{top+height}" fill="#e8def6"/>',f'<polyline points="{line}" fill="none" stroke="#8764b5" stroke-width="2.5"/>']
+    for row,(x,y) in zip(rows,points):
+        label = dt.date.fromisoformat(row['month']+'-01').strftime('%b')+('*' if row['partial'] else '')
+        out += [f'<circle cx="{x}" cy="{y}" r="4" fill="#8764b5"/>',f'<text x="{x}" y="{y-12}" text-anchor="middle" font-size="11">{row["cumulative"]}</text>',f'<text x="{x}" y="{top+height+23}" text-anchor="middle" font-size="11" fill="#9787a5">{label}</text>']
+    out += [f'<text x="30" y="345" font-size="11" fill="#8c7c9b">{stats["monthly_coverage"]}/{stats["papers"]} papers have known months. * Partial month. Collection coverage, not a census or count of achieved RSI.</text></g></svg>']
+    return '\n'.join(out)+'\n'
+
+
 def markdown(stats, config, project):
-    lines = ['![Harness RSI — A living research atlas](docs/assets/project-banner.svg)', '',
-             '<p align="center">A survey and visual atlas of <strong>agent harness optimization and recursive self-improvement.</strong><br><sub>Official project repository · Research in progress</sub></p>', '',
-             '<p align="center"><a href="#living-collection">Collection activity</a> · <a href="#research-atlas">Research atlas</a> · <a href="#contributors">Contributors</a> · <a href="CONTRIBUTING.md">Contribute</a></p>', '',
-             '## Research atlas', '',
-             'We study **what an agent can change in its harness, what mechanisms emerge, and what evidence supports those changes** across task domains. The website is the visual companion: domain studies, annotated figures, and an evolving picture of the collected literature.', '',
-             'Explore editable components, evolved mechanisms, and supporting evidence by domain. The visual atlas and figure library are in preparation; publication trends are already available.', '',
-             '**Project links:** arXiv paper — forthcoming · Public website — forthcoming · [Bibliography data](data/literature.bib) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)', '',
-             '## Living collection', '',
-             f'**{stats["papers"]} papers & manuscripts** · **{stats["resources"]} official resources** · Updated **{config["updated_on"]}**', '',
-             '![Collected papers by publication month](docs/assets/publication-timeline.svg)', '',
-             f'The survey collection includes related methods, surveys, and benchmarks. **{stats["monthly_coverage"]}/{stats["papers"]} papers** have known release months and appear in these charts. Official resources are counted separately. Search through **{config["search_cutoff"]}**.', '',
-             '<details>', '<summary>How to read the statistics</summary>', '',
-             'The chart uses first arXiv submission where available and bibliographic publication dates otherwise. These counts describe our collection, not a census of the field or a count of methods that achieve RSI. Monthly and cumulative views exclude papers without month-level dates. The final month stops at the search cutoff.', '',
-             'Publication dates and collection updates are different: the snapshots below record actual imports. The first snapshot is the baseline; earlier collection activity has not been reconstructed. Future imports extend this history, and removals can reduce the total.', '',
-             '[Full data and date methodology](CONTRIBUTING.md#data-definitions)', '', '</details>', '',
-             '### Collection updates', '',
-             '| Collection snapshot | Papers | Official resources |', '| :-- | --: | --: |']
+    evidence = project['evidence']
+    lines = ['![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)', '',
+        '<p align="center"><strong>What actually evolves around the model?</strong><br>A survey and visual companion on agent harness optimization and recursive self-improvement.<br><sub>Official project repository · Research in progress · Manuscript forthcoming</sub></p>', '',
+        '<p align="center"><a href="#what-the-survey-finds">Findings</a> · <a href="#across-four-domains">Domain atlas</a> · <a href="#living-collection">Living collection</a> · <a href="#contributors">Contributors</a></p>', '',
+        'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The evidence follows concrete interfaces, parsers, context-handling rules, recovery branches and persistent skills—not just optimization algorithms or benchmark scores.', '',
+        f'**{evidence["records"]} category–source records · {evidence["papers"]} research papers + {evidence["resources"]} benchmark resource · {evidence["subcategories"]} task subcategories · {len(project["domains"])} domains**', '',
+        f'Domain evidence cutoff: **{evidence["cutoff"]}**. A record is one source within one task subcategory. Records can share a source and include incomplete reporting; these are not 95 independent effects. Selected synthesis is available in this repository; the full manuscript and record collection are forthcoming.', '',
+        '## What the survey finds', '']
+    for insight in project['insights']:
+        lines += ['**'+insight['title']+'** '+insight['summary'], '']
+    lines += ['## Across four domains', '', '| Domain | Concrete changes highlighted | Records |', '| :-- | :-- | --: |']
+    for domain in project['domains']:
+        lines += ['| '+domain['name']+' | '+' '.join(f['title'] for f in domain['findings'])+' | '+str(domain['records'])+' |']
+    lines += ['', '### A few results—and what they establish', '']
+    for domain_id, finding_id in [('coding','bounded-context'),('interactive','physical-recovery'),('visual','composition-selection')]:
+        finding = next(f for d in project['domains'] if d['id']==domain_id for f in d['findings'] if f['id']==finding_id)
+        references = ', '.join('['+x['name']+']('+x['url']+')' for x in finding['sources'])
+        lines += ['- **'+finding['evidence_type']+'.** '+finding['result']+' '+finding['limit']+' Sources: '+references+'.']
+    lines += ['', 'The interactive atlas contains 12 selected observations with before/after descriptions, source links, evidence types and reporting limits. It compares changes across papers without attributing a full-system gain to an individual edit.', '',
+        '[Explore the structured findings](docs/project.json) · [Download BibTeX](data/literature.bib) · [Catalog and date provenance](docs/catalog.json)', '',
+        '## Living collection', '',
+        f'**{stats["papers"]} papers & manuscripts** · **{stats["resources"]} official resources** · Updated **{config["updated_on"]}**', '',
+        '![Cumulative collected literature by release month](docs/assets/collection-growth.svg)', '',
+        f'The working literature collection is broader and newer than the frozen domain evidence above. It includes surveys, adjacent methods, benchmarks and supporting work. Search through **{config["search_cutoff"]}**; **{stats["monthly_coverage"]}/{stats["papers"]}** papers have known release months. Resources are excluded from paper counts.', '',
+        '<details><summary>Monthly publication counts and counting methodology</summary>', '',
+        '![Monthly collected literature](docs/assets/publication-timeline.svg)', '',
+        'First arXiv submission is used when available; otherwise the recorded bibliographic date or identifier month is used. Date provenance is retained per entry. Year-only records remain in the total but are excluded from monthly and cumulative charts. These are collection statistics, not a field-wide census or a count of methods achieving RSI.', '',
+        'Publication dates differ from collection dates. The snapshots below record actual imports. We do not reconstruct collection history before the initial snapshot. Removals can reduce totals. [Data definitions](CONTRIBUTING.md#data-definitions).', '', '</details>', '',
+        '### Collection updates', '', '| Snapshot | Papers | Resources |', '| :-- | --: | --: |']
     lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history'][-5:]]
-    lines += ['', '## Contributors', '', '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
+    lines += ['', '## Website', '',
+        'The standalone site lives in `docs/`: domain tabs, evidence-linked comparisons, monthly/cumulative charts, source disclosures and local artwork. The manuscript link will be added when available.', '',
+        '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
+        'Open http://localhost:8000. Public hosting is not yet enabled; updating this repository does not itself publish GitHub Pages.', '',
+        '## Contributors', '', '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
     for person in project.get('contributors', []):
         name = f'[{person["name"]}]({person["url"]})' if person.get('url') else person['name']
         lines += [f'| {name} | {person["role"]} | {person["description"]} |']
-    lines += ['', '## Run the website', '',
-              'A static website with local assets. No API keys, analytics, or third-party build dependencies.', '',
-              '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
-              'Open http://localhost:8000. Figure assets and captions are managed through `docs/project.json`; see the [figure guide](CONTRIBUTING.md#add-research-figures).', '',
-              '## Keep it growing', '',
-              '[Suggest a paper or correction](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Report a website issue](https://github.com/LucasXinYu/harness-rsi/issues/new?template=website.yml)', '',
-              'Update the survey bibliography and Literature Map, then import them. One build refreshes the website statistics, chart, and this README together.', '',
-              '```sh', 'python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD',
-              'python3 -m unittest discover -s tests', 'python3 scripts/catalog.py check', '```', '',
-              'See [CONTRIBUTING.md](CONTRIBUTING.md) for verification, attribution, figures, and update policies.', '']
+    lines += ['', '## Keep it growing', '',
+        'Import the current survey bibliography and Literature Map. Map membership defines the collection; extra manuscript references and citation aliases are not automatically counted.', '',
+        '```sh', 'python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD',
+        'python3 -m unittest discover -s tests', 'python3 scripts/catalog.py check', '```', '',
+        'The build updates website statistics, downloadable data, charts and this README together. Source-linked findings live in `docs/project.json` and are revised separately from collection counts.', '',
+        '[Suggest a paper or correction](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Contribution guide](CONTRIBUTING.md) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)', '']
     return '\n'.join(lines)
 
 
@@ -325,11 +408,14 @@ def outputs():
         if current != history[-1][kind+'_ids']:
             raise ValueError('Latest snapshot does not match current corpus; run import')
     stats = statistics(records, history)
+    validate_project(read_json(ROOT/'docs/project.json'), records)
     dataset = {'config':config, 'stats':stats, 'records':records}
     return {ROOT/'README.md': markdown(stats, config, read_json(ROOT/'docs/project.json')),
             ROOT/'docs/stats.json': json.dumps(public_statistics(stats, config), ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/catalog.json': json.dumps(dataset, ensure_ascii=False, indent=2)+'\n',
-            ROOT/'docs/assets/publication-timeline.svg': svg_timeline(stats, config['search_cutoff'])}
+            ROOT/'docs/assets/publication-timeline.svg': svg_timeline(stats, config['search_cutoff']),
+            ROOT/'docs/assets/collection-growth.svg': svg_cumulative(stats, config['search_cutoff']),
+            ROOT/'docs/literature.bib': (ROOT/'data/literature.bib').read_text()}
 
 
 def main():

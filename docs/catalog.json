@@ -1,28 +1,29 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-10-01",
-    "updated_on": "2026-10-03",
+    "search_cutoff": "2026-10-10",
+    "updated_on": "2026-10-10",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
-    "source_sha256": "a847d24a3af6ae4f4d8a27668648a7f1f7a69981cd74f1ff07a38699641fa6b3"
+    "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 177,
-    "resources": 10,
+    "papers": 235,
+    "resources": 11,
     "categories": {
-      "Surveys, Definitions, and Conceptual Frameworks": 12,
-      "Harness Optimization and Search Workflows": 35,
-      "Model and Policy Training, Harness Co-Evolution, and Distillation": 12,
-      "Self-Modification and Meta-Level Improvement": 13,
-      "Memory, Context, Skills, and Experience Reuse": 22,
+      "Surveys, Definitions, and Conceptual Frameworks": 28,
+      "Harness Optimization and Search Workflows": 38,
+      "Model and Policy Training, Harness Co-Evolution, and Distillation": 16,
+      "Self-Modification and Meta-Level Improvement": 15,
+      "Memory, Context, Skills, and Experience Reuse": 28,
       "Benchmarks for Harness Optimization and Adaptation": 5,
-      "Generalization, Evaluation Methodology, and Safety": 24,
-      "Agent Architectures and Harness Infrastructure": 20,
-      "Prompt, Workflow, and Program Optimization": 14,
-      "Task-Time Search and Output Refinement (Adjacent Work)": 4,
+      "Generalization, Evaluation Methodology, and Safety": 25,
+      "Agent Architectures and Harness Infrastructure": 21,
+      "Prompt, Workflow, and Program Optimization": 20,
+      "Task-Time Search and Output Refinement (Adjacent Work)": 5,
       "Downstream Task Benchmarks": 16,
-      "Official Benchmark and Implementation Resources": 10
+      "Official Benchmark and Implementation Resources": 11,
+      "Additional Task-Domain Harness Evolution": 18
     },
     "monthly": {
       "2022-10": 1,
@@ -41,25 +42,26 @@
       "2024-08": 2,
       "2024-09": 1,
       "2024-10": 2,
-      "2025-02": 2,
+      "2025-02": 3,
       "2025-04": 4,
-      "2025-05": 2,
+      "2025-05": 4,
       "2025-06": 2,
       "2025-07": 5,
+      "2025-08": 1,
       "2025-09": 1,
       "2025-10": 3,
       "2025-11": 1,
       "2025-12": 2,
       "2026-01": 3,
       "2026-02": 1,
-      "2026-03": 2,
-      "2026-04": 5,
-      "2026-05": 11,
-      "2026-06": 7,
-      "2026-07": 16,
-      "2026-08": 21,
-      "2026-09": 56,
-      "2026-10": 1
+      "2026-03": 4,
+      "2026-04": 6,
+      "2026-05": 14,
+      "2026-06": 11,
+      "2026-07": 22,
+      "2026-08": 30,
+      "2026-09": 67,
+      "2026-10": 11
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -70,13 +72,13 @@
       "2026-07": 5,
       "2026-08": 6,
       "2026-09": 13,
-      "2026-10": 1
+      "2026-10": 4
     },
-    "monthly_coverage": 173,
+    "monthly_coverage": 223,
     "date_precision": {
-      "month": 2,
-      "day": 171,
-      "year": 3,
+      "month": 7,
+      "day": 216,
+      "year": 11,
       "unknown": 1
     },
     "history": [
@@ -84,6 +86,11 @@
         "date": "2026-10-03",
         "papers": 177,
         "resources": 10
+      },
+      {
+        "date": "2026-10-10",
+        "papers": 235,
+        "resources": 11
       }
     ]
   },
@@ -139,12 +146,12 @@
       "arxiv": "2607.07663",
       "category": "Surveys, Definitions, and Conceptual Frameworks",
       "kind": "paper",
-      "summary": "Reviews the progression from bounded self-refinement to autonomous research loops, including self-evaluation and feedback-driven revision. It helps distinguish local corrections from broader improvement processes.",
+      "summary": "Source/version: Existing entry rechecked against arXiv v2, revised 6 September 2026; not a new addition. Organizes improvement by its target—deployment behavior, trained policy, evaluation, or the research process—and by the degree of loop closure. It contrasts bounded refinement with broader recursive claims and analyzes the verification signals that support them. Its discussion already includes harness-level improvement and grounding constraints.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2026-07-08",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2607.07663"
       }
     },
@@ -191,12 +198,12 @@
     {
       "id": "selfevolving_survey2025",
       "title": "A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence",
-      "authors": "Gao, Huan-ang and Geng, Jiayi and Hua, Wenyue and Hu, Mengkang and Juan, Xinzhe and Liu, Hongzhang and Liu, Shilong and Qiu, Jiahao and Qi, Xuan and Wu, Yiran and Wang, Hongru and Xiao, Han and Zhou, Yuhang and Zhang, Shaokun and Zhang, Jiayi and Xiang, Jinyu and Fang, Yixiong and Zhao, Qiwen and Liu, Dongrui and Ren, Qihan and Qian, Cheng and Wang, Zhenhailong and Hu, Minda and Wang, Huazheng and Wu, Qingyun and Ji, Heng and Wang, Mengdi",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2507.21046v4",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2507.21046",
-      "arxiv": "2507.21046",
+      "authors": "Gao, Huan-ang and Geng, Jiayi and Hua, Wenyue and Hu, Mengkang and Juan, Xinzhe and Liu, Hongzhang and Liu, Shilong and Qiu, Jiahao and Qi, Xuan and Ren, Qihan and Wu, Yiran and Wang, Hongru and Xiao, Han and Zhou, Yuhang and Zhang, Shaokun and Zhang, Jiayi and Xiang, Jinyu and Fang, Yixiong and Zhao, Qiwen and Liu, Dongrui and Qian, Cheng and Wang, Zhenhailong and Hu, Minda and Wang, Huazheng and Wu, Qingyun and Ji, Heng and Wang, Mengdi",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=CTr3bovS5F",
+      "venue": "Transactions on Machine Learning Research",
+      "doi": null,
+      "arxiv": null,
       "category": "Surveys, Definitions, and Conceptual Frameworks",
       "kind": "paper",
       "summary": "Organizes self-evolving agents around what evolves, when evolution occurs, how it proceeds, and where it is applied. This broad taxonomy contextualizes our focus on the harness and its improvement controller.",
@@ -204,19 +211,19 @@
       "release": {
         "value": "2025-07-28",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2507.21046"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2507.21046v4"
       }
     },
     {
       "id": "metaharness2026",
       "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
-      "authors": "Lee, Yoonho and Nair, Roshen and Zhang, Qizheng and Lee, Kangwook and Khattab, Omar and Finn, Chelsea",
+      "authors": "Lee, Yoonho and Nair, Roshen Sanjay and Zhang, Qizheng and Lee, Kangwook and Khattab, Omar and Finn, Chelsea",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2603.28052v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2603.28052",
-      "arxiv": "2603.28052",
+      "url": "https://openreview.net/forum?id=tmbOUyFx3R",
+      "venue": "Third Conference on Language Modeling",
+      "doi": null,
+      "arxiv": null,
       "category": "Harness Optimization and Search Workflows",
       "kind": "paper",
       "summary": "Optimizes executable harnesses using access to candidate code, scores, and execution traces stored in a filesystem history. It illustrates end-to-end harness search with a fixed outer optimization procedure, including classification and mathematics applications.",
@@ -224,7 +231,7 @@
       "release": {
         "value": "2026-03-30",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2603.28052v1"
       }
     },
@@ -244,7 +251,7 @@
       "release": {
         "value": "2026-04-28",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2604.25850v4"
       }
     },
@@ -253,7 +260,7 @@
       "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
       "authors": "Xia, Peng and Han, Rujun and Wang, Zifeng and Chen, Yanfei and Zhuang, Yufan and Lee, Yoonho and Huang, Chengsong and Yu, Han and CuiZhu, Zhongying and Ming, Yifei and Yao, Huaxiu and Gokturk, Burak and Pfister, Tomas and Lee, Chen-Yu",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2609.24972v2",
+      "url": "https://arxiv.org/abs/2609.24972v3",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2609.24972",
       "arxiv": "2609.24972",
@@ -264,7 +271,7 @@
       "release": {
         "value": "2026-09-21",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.24972v2"
       }
     },
@@ -284,8 +291,8 @@
       "release": {
         "value": "2026-09-14",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2609.14857"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.14857v1"
       }
     },
     {
@@ -299,13 +306,13 @@
       "arxiv": "2605.27276",
       "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
       "kind": "paper",
-      "summary": "Combines updates to an agent's harness with updates to model weights. It expands the improvement target beyond runtime software and provides a case for examining how the two update channels interact.",
+      "summary": "Combines Feedback-Agent revisions of task-specific harnesses with subsequent model-weight updates. For MAGIC denoising hyperparameter optimization, the paper reports a batched configuration driver and a parser organizing parameter–score pairs during harness iteration; the model is fixed in that phase. This supplies an experiment-interface case for Section 4, distinct from MLE-bench evaluation. The report does not establish final-version retention or isolated effects of these tools; later GRPO updates and output postprocessing are not counted as harness changes. Source: Sections 6.2–6.3.3 and 7.2.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2026-05-26",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2605.27276"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2605.27276v2"
       }
     },
     {
@@ -324,27 +331,27 @@
       "release": {
         "value": "2026-06-08",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2606.09498"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2606.09498v3"
       }
     },
     {
       "id": "dgm2025",
-      "title": "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents",
+      "title": "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents",
       "authors": "Zhang, Jenny and Hu, Shengran and Lu, Cong and Lange, Robert and Clune, Jeff",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2505.22954v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2505.22954",
-      "arxiv": "2505.22954",
+      "year": "2026",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/aa5f5e6eb6f613ec412f1d948dfa21a5-Paper-Conference.pdf",
+      "venue": "International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Self-Modification and Meta-Level Improvement",
       "kind": "paper",
-      "summary": "Maintains an archive of coding agents that can modify their own implementations and produce improved descendants. Selection uses performance and lineage information, providing an example of open-ended evolution in which improved agents participate in later modifications.",
+      "summary": "Publication/version: ICLR 2026; the evidence notes retain the inspected arXiv version 2505.22954v3. Maintains an archive of coding agents that can modify their own implementations and produce improved descendants. Selection uses performance and lineage information, providing an example of open-ended evolution in which improved agents participate in later modifications.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2025-05-29",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2505.22954v3"
       }
     },
@@ -364,7 +371,7 @@
       "release": {
         "value": "2026-03-19",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2603.19461v1"
       }
     },
@@ -384,7 +391,7 @@
       "release": {
         "value": "2026-07-15",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2607.13683v2"
       }
     },
@@ -404,8 +411,8 @@
       "release": {
         "value": "2026-07-17",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2607.15524"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2607.15524v1"
       }
     },
     {
@@ -424,7 +431,7 @@
       "release": {
         "value": "2026-08-09",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2608.08466v1"
       }
     },
@@ -444,7 +451,7 @@
       "release": {
         "value": "2026-08-03",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2608.02276v1"
       }
     },
@@ -464,7 +471,7 @@
       "release": {
         "value": "2026-08-27",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2608.27311v1"
       }
     },
@@ -593,10 +600,10 @@
       "title": "Rethinking the Evaluation of Harness Evolution for Agents",
       "authors": "Wang, Yike and Zhu, Huaisheng and Hu, Zhengyu and Yuan, Yige and Chen, Zhengyu and Senthil, Shakti and Hajishirzi, Hannaneh and Tsvetkov, Yulia and Dasigi, Pradeep and Xiao, Teng",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2607.12227v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2607.12227",
-      "arxiv": "2607.12227",
+      "url": "https://openreview.net/forum?id=WVAeeSlVim",
+      "venue": "COLM 2026 The 2nd Workshop on Lifelong Agents: Learning, Aligning, and Evolving",
+      "doi": null,
+      "arxiv": null,
       "category": "Generalization, Evaluation Methodology, and Safety",
       "kind": "paper",
       "summary": "Examines evaluation of harness evolution under matched feedback and inference budgets and held-out testing. It helps separate benefits of an improved harness from benefits of additional search or compute.",
@@ -604,8 +611,8 @@
       "release": {
         "value": "2026-07-14",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2607.12227"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2607.12227v3"
       }
     },
     {
@@ -613,10 +620,10 @@
       "title": "One Recipe, Many Harnesses: What Self-Evolution Encodes Across Languages and Models",
       "authors": "Yang, Siqi and Yang, Qianlan and Wang, Yu-Xiong and Pujar, Saurabh and Hirzel, Martin",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2608.10178v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2608.10178",
-      "arxiv": "2608.10178",
+      "url": "https://openreview.net/forum?id=jabJQtnOtH",
+      "venue": "NeurIPS 2026 Workshop on Towards Test-Time Continual Learning Agents",
+      "doi": null,
+      "arxiv": null,
       "category": "Generalization, Evaluation Methodology, and Safety",
       "kind": "paper",
       "summary": "Studies what evolved harnesses encode and how their improvements transfer across programming languages and base models. It supplies evidence relevant to the scope of harness generalization.",
@@ -624,8 +631,8 @@
       "release": {
         "value": "2026-08-10",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2608.10178"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.10178v1"
       }
     },
     {
@@ -644,8 +651,8 @@
       "release": {
         "value": "2026-09-25",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2609.31186"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.31186v1"
       }
     },
     {
@@ -673,10 +680,10 @@
       "title": "Meta Context Engineering via Agentic Skill Evolution",
       "authors": "Ye, Haoran and He, Xuning and Arak, Vincent and Dong, Haonan and Song, Guojie",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2601.21557v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2601.21557",
-      "arxiv": "2601.21557",
+      "url": "https://openreview.net/forum?id=P1jHroBS5E",
+      "venue": "Forty-third International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
       "category": "Self-Modification and Meta-Level Improvement",
       "kind": "paper",
       "summary": "Evolves context-engineering skills at a meta level and executes those skills to optimize context artifacts at a base level. Agentic crossover uses prior skills and their outcomes, while a fixed (1+1) evolutionary strategy controls the outer loop. Unlike growth of task-execution skills alone, the editable skills implement an improvement procedure, making this a direct reference for partial meta-level improvement.",
@@ -684,8 +691,8 @@
       "release": {
         "value": "2026-01-29",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2601.21557"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2601.21557v2"
       }
     },
     {
@@ -753,18 +760,18 @@
       "title": "A Self-Improving Coding Agent",
       "authors": "Robeyns, Maxime and Szummer, Martin and Aitchison, Laurence",
       "year": "2025",
-      "url": "https://arxiv.org/abs/2504.15228v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2504.15228",
-      "arxiv": "2504.15228",
+      "url": "https://openreview.net/forum?id=rShJCyLsOr",
+      "venue": "ICLR 2025 Workshop on Scaling Self-Improving Foundation Models without Human Supervision",
+      "doi": null,
+      "arxiv": null,
       "category": "Self-Modification and Meta-Level Improvement",
       "kind": "paper",
-      "summary": "Builds a coding agent that iteratively improves its own implementation. It selects the next meta-agent from an archive using a utility that includes performance, runtime, and cost.",
+      "summary": "Publication/version: An earlier SICA version appeared at the ICLR 2025 Workshop on Scaling Self-Improving Foundation Models; the detailed evidence here uses arXiv:2504.15228v2. Builds a coding agent that iteratively improves its own implementation. It selects the next meta-agent from an archive using a utility that includes performance, runtime, and cost.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2025-04-21",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2504.15228v2"
       }
     },
@@ -772,51 +779,51 @@
       "id": "adas2024",
       "title": "Automated Design of Agentic Systems",
       "authors": "Hu, Shengran and Lu, Cong and Clune, Jeff",
-      "year": "2024",
-      "url": "https://arxiv.org/abs/2408.08435v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2408.08435",
-      "arxiv": "2408.08435",
+      "year": "2025",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf",
+      "venue": "International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
-      "summary": "Uses a meta-agent to search for agentic systems represented in code. It automates the design of task agents; evolution of the target system does not by itself imply that the meta-agent changes.",
+      "summary": "Publication/version: ICLR 2025; the evidence notes retain the inspected arXiv version 2408.08435v2. Uses a meta-agent to search for agentic systems represented in code. It automates the design of task agents; evolution of the target system does not by itself imply that the meta-agent changes.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2024-08-15",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2408.08435"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2408.08435v2"
       }
     },
     {
       "id": "aflow2024",
       "title": "AFlow: Automating Agentic Workflow Generation",
-      "authors": "Zhang, Jiayi and Xiang, Jinyu and Yu, Zhaoyang and Teng, Fengwei and Chen, Xionghui and Chen, Jiaqi and Zhuge, Mingchen and Cheng, Xin and Hong, Sirui and Wang, Jinlin and Zheng, Bingnan and Liu, Bang and Luo, Yuyu and Wu, Chenglin",
-      "year": "2024",
-      "url": "https://arxiv.org/abs/2410.10762v4",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2410.10762",
-      "arxiv": "2410.10762",
+      "authors": "Zhang, Jiayi and Xiang, Jinyu and Yu, Zhaoyang and Teng, Fengwei and Chen, XiongHui and Chen, Jiaqi and Zhuge, Mingchen and Cheng, Xin and Hong, Sirui and Wang, Jinlin and Zheng, Bingnan and Liu, Bang and Luo, Yuyu and Wu, Chenglin",
+      "year": "2025",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5492ecbce4439401798dcd2c90be94cd-Paper-Conference.pdf",
+      "venue": "International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
-      "summary": "Searches over executable agent workflows and evaluates candidate workflows on tasks. Its workflow-level search and mixed parent-selection strategy help distinguish outer system design from task-time reasoning search.",
+      "summary": "Publication/version: ICLR 2025; the evidence notes retain the inspected arXiv version 2410.10762v4. Searches over executable agent workflows and evaluates candidate workflows on tasks. Its workflow-level search and mixed parent-selection strategy help distinguish outer system design from task-time reasoning search.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2024-10-14",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2410.10762v4"
       }
     },
     {
       "id": "dspy2023",
-      "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines",
-      "authors": "Khattab, Omar and Singhvi, Arnav and Maheshwari, Paridhi and Zhang, Zhiyuan and Santhanam, Keshav and Vardhamanan, Sri and Haq, Saiful and Sharma, Ashutosh and Joshi, Thomas T. and Moazam, Hanna and Miller, Heather and Zaharia, Matei and Potts, Christopher",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2310.03714v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2310.03714",
-      "arxiv": "2310.03714",
+      "title": "DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines",
+      "authors": "Khattab, Omar and Singhvi, Arnav and Maheshwari, Paridhi and Zhang, Zhiyuan and Santhanam, Keshav and A, Sri Vardhamanan and Haq, Saiful and Sharma, Ashutosh and Joshi, Thomas T. and Moazam, Hanna and Miller, Heather and Zaharia, Matei and Potts, Christopher",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=sY5N0zY5Od",
+      "venue": "The Twelfth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
       "summary": "Expresses language-model pipelines as declarative programs and compiles them using task feedback. It provides an early framework for optimizing prompts and examples within reusable pipelines.",
@@ -830,13 +837,13 @@
     },
     {
       "id": "textgrad2024",
-      "title": "TextGrad: Automatic \"Differentiation\" via Text",
-      "authors": "Yuksekgonul, Mert and Bianchi, Federico and Boen, Joseph and Liu, Sheng and Huang, Zhi and Guestrin, Carlos and Zou, James",
-      "year": "2024",
-      "url": "https://arxiv.org/abs/2406.07496v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2406.07496",
-      "arxiv": "2406.07496",
+      "title": "Optimizing generative AI by backpropagating language model feedback",
+      "authors": "Yuksekgonul, Mert and Bianchi, Federico and Boen, Joseph and Liu, Sheng and Lu, Pan and Huang, Zhi and Guestrin, Carlos and Zou, James",
+      "year": "2025",
+      "url": "https://www.nature.com/articles/s41586-025-08661-4",
+      "venue": "Nature",
+      "doi": "10.1038/s41586-025-08661-4",
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
       "summary": "Propagates natural-language feedback through computation graphs to optimize textual variables. It offers an analogue of gradient-based optimization for prompts and other language-based components.",
@@ -851,32 +858,32 @@
     {
       "id": "gepa2025",
       "title": "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning",
-      "authors": "Agrawal, Lakshya A and Tan, Shangyin and Soylu, Dilara and Ziems, Noah and Khare, Rishi and Opsahl-Ong, Krista and Singhvi, Arnav and Shandilya, Herumb and Ryan, Michael J and Jiang, Meng and Potts, Christopher and Sen, Koushik and Dimakis, Alexandros G. and Stoica, Ion and Klein, Dan and Zaharia, Matei and Khattab, Omar",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2507.19457v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2507.19457",
-      "arxiv": "2507.19457",
+      "authors": "Agrawal, Lakshya A and Tan, Shangyin and Soylu, Dilara and Ziems, Noah and Khare, Rishi and Opsahl-Ong, Krista and Singhvi, Arnav and Shandilya, Herumb and Ryan, Michael J and Jiang, Meng and Potts, Christopher and Sen, Koushik and Dimakis, Alex and Stoica, Ion and Klein, Dan and Zaharia, Matei and Khattab, Omar",
+      "year": "2026",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/0e9e708b6f48e14fd0ac29e167413f76-Paper-Conference.pdf",
+      "venue": "International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
-      "summary": "Evolves prompts through reflection on execution feedback and combines useful candidates through Pareto-aware search. It is relevant to proposal generation, feedback reuse, and prompt-level optimization.",
+      "summary": "Publication/version: ICLR 2026; the evidence notes retain the inspected arXiv version 2507.19457v2. Evolves prompts through reflection on execution feedback and combines useful candidates through Pareto-aware search. It is relevant to proposal generation, feedback reuse, and prompt-level optimization.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2025-07-25",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2507.19457"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2507.19457v2"
       }
     },
     {
       "id": "mass2025",
       "title": "Multi-Agent Design: Optimizing Agents with Better Prompts and Topologies",
-      "authors": "Zhou, Han and Wan, Xingchen and Sun, Ruoxi and Palangi, Hamid and Iqbal, Shariq and Vulić, Ivan and Korhonen, Anna and Arık, Sercan Ö.",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2502.02533v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2502.02533",
-      "arxiv": "2502.02533",
+      "authors": "Zhou, Han and Wan, Xingchen and Sun, Ruoxi and Palangi, Hamid and Iqbal, Shariq and Vulić, Ivan and Korhonen, Anna and Arik, Sercan O",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=I05H9RUzHB",
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
       "summary": "Optimizes multi-agent systems through both agent prompts and communication topology. It shows why local instructions and system-level structure should be considered together.",
@@ -890,13 +897,13 @@
     },
     {
       "id": "reflexion2023",
-      "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
-      "authors": "Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu",
+      "title": "Reflexion: language agents with verbal reinforcement learning",
+      "authors": "Shinn, Noah and Cassano, Federico and Gopinath, Ashwin and Narasimhan, Karthik R and Yao, Shunyu",
       "year": "2023",
-      "url": "https://arxiv.org/abs/2303.11366v4",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2303.11366",
-      "arxiv": "2303.11366",
+      "url": "https://openreview.net/forum?id=vAElhFcKW6",
+      "venue": "Thirty-seventh Conference on Neural Information Processing Systems",
+      "doi": null,
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Uses verbal feedback and episodic memory to improve an agent across attempts without updating model weights. It illustrates feedback reuse, while leaving stronger claims about optimizer self-modification separate.",
@@ -913,10 +920,10 @@
       "title": "Self-Refine: Iterative Refinement with Self-Feedback",
       "authors": "Madaan, Aman and Tandon, Niket and Gupta, Prakhar and Hallinan, Skyler and Gao, Luyu and Wiegreffe, Sarah and Alon, Uri and Dziri, Nouha and Prabhumoye, Shrimai and Yang, Yiming and Gupta, Shashank and Majumder, Bodhisattwa Prasad and Hermann, Katherine and Welleck, Sean and Yazdanbakhsh, Amir and Clark, Peter",
       "year": "2023",
-      "url": "https://arxiv.org/abs/2303.17651v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2303.17651",
-      "arxiv": "2303.17651",
+      "url": "https://openreview.net/forum?id=S37hOerQLB",
+      "venue": "Thirty-seventh Conference on Neural Information Processing Systems",
+      "doi": null,
+      "arxiv": null,
       "category": "Task-Time Search and Output Refinement (Adjacent Work)",
       "kind": "paper",
       "summary": "Alternates generation, self-feedback, and refinement to improve an output. The revised object is primarily the current answer, which distinguishes it from persistent changes to an agent harness.",
@@ -932,11 +939,11 @@
       "id": "voyager2023",
       "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
       "authors": "Wang, Guanzhi and Xie, Yuqi and Jiang, Yunfan and Mandlekar, Ajay and Xiao, Chaowei and Zhu, Yuke and Fan, Linxi and Anandkumar, Anima",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2305.16291v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2305.16291",
-      "arxiv": "2305.16291",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=ehfRiF0R3a",
+      "venue": "Transactions on Machine Learning Research",
+      "doi": null,
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Builds an open-ended Minecraft agent with an expanding library of executable skills. Skill retrieval and composition support reuse, while recursive modification of the skill-learning procedure is a separate question.",
@@ -952,11 +959,11 @@
       "id": "toolmakers2023",
       "title": "Large Language Models as Tool Makers",
       "authors": "Cai, Tianle and Wang, Xuezhi and Ma, Tengyu and Chen, Xinyun and Zhou, Denny",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2305.17126v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2305.17126",
-      "arxiv": "2305.17126",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=qV83K9d5WB",
+      "venue": "The Twelfth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Uses language models to construct and cache reusable tools for solving tasks. It provides a mechanism for extending an agent's capabilities through persistent executable artifacts.",
@@ -972,51 +979,51 @@
       "id": "react2022",
       "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
       "authors": "Yao, Shunyu and Zhao, Jeffrey and Yu, Dian and Du, Nan and Shafran, Izhak and Narasimhan, Karthik and Cao, Yuan",
-      "year": "2022",
-      "url": "https://arxiv.org/abs/2210.03629v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2210.03629",
-      "arxiv": "2210.03629",
+      "year": "2023",
+      "url": "https://openreview.net/forum?id=WE_vluYUL-X",
+      "venue": "International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Agent Architectures and Harness Infrastructure",
       "kind": "paper",
-      "summary": "Interleaves language-model reasoning with actions and observations. It supplies a manually designed execution-loop baseline against which persistent harness modifications can be compared.",
+      "summary": "Publication/version: ICLR 2023; the recorded manuscript is arXiv:2210.03629v3. Interleaves language-model reasoning with actions and observations. It supplies a manually designed execution-loop baseline against which persistent harness modifications can be compared.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2022-10-06",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2210.03629"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2210.03629v3"
       }
     },
     {
       "id": "sweagent2024",
       "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
-      "authors": "Yang, John and Jimenez, Carlos E. and Wettig, Alexander and Lieret, Kilian and Yao, Shunyu and Narasimhan, Karthik and Press, Ofir",
+      "authors": "Yang, John and Jimenez, Carlos and Wettig, Alexander and Lieret, Kilian and Yao, Shunyu and Narasimhan, Karthik and Press, Ofir",
       "year": "2024",
-      "url": "https://arxiv.org/abs/2405.15793v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2405.15793",
-      "arxiv": "2405.15793",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/5a7c947568c1b1328ccc5230172e1e7c-Paper-Conference.pdf",
+      "venue": "Advances in Neural Information Processing Systems",
+      "doi": "10.52202/079017-1601",
+      "arxiv": null,
       "category": "Agent Architectures and Harness Infrastructure",
       "kind": "paper",
-      "summary": "Designs an agent-computer interface for software engineering, including repository navigation, editing, and feedback. It demonstrates the importance of interface design; editing a task repository is distinct from editing that interface.",
+      "summary": "Publication/version: NeurIPS 2024; the evidence notes retain the inspected arXiv version 2405.15793v3. Designs an agent-computer interface for software engineering, including repository navigation, editing, and feedback. It demonstrates the importance of interface design; editing a task repository is distinct from editing that interface.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2024-05-06",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2405.15793v3"
       }
     },
     {
       "id": "ape2022",
-      "title": "Large Language Models Are Human-Level Prompt Engineers",
+      "title": "Large Language Models are Human-Level Prompt Engineers",
       "authors": "Zhou, Yongchao and Muresanu, Andrei Ioan and Han, Ziwen and Paster, Keiran and Pitis, Silviu and Chan, Harris and Ba, Jimmy",
-      "year": "2022",
-      "url": "https://arxiv.org/abs/2211.01910v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2211.01910",
-      "arxiv": "2211.01910",
+      "year": "2023",
+      "url": "https://openreview.net/forum?id=92gvk82DE-",
+      "venue": "The Eleventh International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
       "summary": "Generates instruction candidates with language models and selects them using evaluation results. It establishes an automatic prompt-engineering baseline for later harness optimization methods.",
@@ -1032,11 +1039,11 @@
       "id": "opro2023",
       "title": "Large Language Models as Optimizers",
       "authors": "Yang, Chengrun and Wang, Xuezhi and Lu, Yifeng and Liu, Hanxiao and Le, Quoc V. and Zhou, Denny and Chen, Xinyun",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2309.03409v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2309.03409",
-      "arxiv": "2309.03409",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=Bb4VGOWELI",
+      "venue": "The Twelfth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
       "summary": "Uses a language model as an optimizer conditioned on earlier candidates and their scores. It provides a simple history-driven proposal-and-evaluation loop, including prompt optimization.",
@@ -1110,13 +1117,13 @@
     },
     {
       "id": "swebench2023",
-      "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
-      "authors": "Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2310.06770v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2310.06770",
-      "arxiv": "2310.06770",
+      "title": "SWE-bench: Can Language Models Resolve Real-world Github Issues?",
+      "authors": "Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik R",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=VTF8yNQM66",
+      "venue": "The Twelfth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates repository-level software repair using real GitHub issues and tests. It supplies a coding task environment on which agents or evolved harnesses can be assessed.",
@@ -1131,12 +1138,12 @@
     {
       "id": "gaia2023",
       "title": "GAIA: a benchmark for General AI Assistants",
-      "authors": "Mialon, Grégoire and Fourrier, Clémentine and Swift, Craig and Wolf, Thomas and LeCun, Yann and Scialom, Thomas",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2311.12983v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2311.12983",
-      "arxiv": "2311.12983",
+      "authors": "Mialon, Grégoire and Fourrier, Clémentine and Wolf, Thomas and LeCun, Yann and Scialom, Thomas",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=fibxvahvs3",
+      "venue": "The Twelfth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates general assistants on questions requiring reasoning, information gathering, and tool use. It provides downstream tasks for studying broad agent capabilities.",
@@ -1152,11 +1159,11 @@
       "id": "mlagentbench2023",
       "title": "MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation",
       "authors": "Huang, Qian and Vora, Jian and Liang, Percy and Leskovec, Jure",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2310.03302v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2310.03302",
-      "arxiv": "2310.03302",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=1Fs1LvjYQW",
+      "venue": "Forty-first International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates language agents on machine-learning experimentation tasks. It measures execution of research workflows rather than directly measuring self-modification of those workflows.",
@@ -1172,11 +1179,11 @@
       "id": "webarena2023",
       "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
       "authors": "Zhou, Shuyan and Xu, Frank F. and Zhu, Hao and Zhou, Xuhui and Lo, Robert and Sridhar, Abishek and Cheng, Xianyi and Ou, Tianyue and Bisk, Yonatan and Fried, Daniel and Alon, Uri and Neubig, Graham",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2307.13854v4",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2307.13854",
-      "arxiv": "2307.13854",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=oKn9c6ytLx",
+      "venue": "The Twelfth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Provides realistic web environments and tasks for autonomous agents. It supports assessment of navigation, interaction, and multi-step web task completion.",
@@ -1190,13 +1197,13 @@
     },
     {
       "id": "workarena2024",
-      "title": "WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?",
-      "authors": "Drouin, Alexandre and Gasse, Maxime and Caccia, Massimo and Laradji, Issam H. and Del Verme, Manuel and Marty, Tom and Boisvert, Léo and Thakkar, Megh and Cappart, Quentin and Vazquez, David and Chapados, Nicolas and Lacoste, Alexandre",
+      "title": "WorkArena: How Capable are Web Agents at Solving Common Knowledge Work Tasks?",
+      "authors": "Drouin, Alexandre and Gasse, Maxime and Caccia, Massimo and Laradji, Issam H. and Del Verme, Manuel and Marty, Tom and Vazquez, David and Chapados, Nicolas and Lacoste, Alexandre",
       "year": "2024",
-      "url": "https://arxiv.org/abs/2403.07718v5",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2403.07718",
-      "arxiv": "2403.07718",
+      "url": "https://openreview.net/forum?id=BRfqYrikdo",
+      "venue": "Forty-first International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Benchmarks agents on enterprise knowledge-work tasks in ServiceNow. It supplies an application environment for studying reliable workplace interaction.",
@@ -1213,10 +1220,10 @@
       "title": "AppWorld: A Controllable World of Apps and People for Benchmarking Interactive Coding Agents",
       "authors": "Trivedi, Harsh and Khot, Tushar and Hartmann, Mareike and Manku, Ruskin and Dong, Vinty and Li, Edward and Gupta, Shashank and Sabharwal, Ashish and Balasubramanian, Niranjan",
       "year": "2024",
-      "url": "https://arxiv.org/abs/2407.18901v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2407.18901",
-      "arxiv": "2407.18901",
+      "url": "https://aclanthology.org/2024.acl-long.850/",
+      "venue": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "doi": "10.18653/v1/2024.acl-long.850",
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Provides a controllable world of applications, people, and APIs for interactive coding agents. Tasks require coordinated actions across applications and executable evaluation of resulting state.",
@@ -1231,12 +1238,12 @@
     {
       "id": "taubench2024",
       "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
-      "authors": "Yao, Shunyu and Shinn, Noah and Razavi, Pedram and Narasimhan, Karthik",
-      "year": "2024",
-      "url": "https://arxiv.org/abs/2406.12045v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2406.12045",
-      "arxiv": "2406.12045",
+      "authors": "Yao, Shunyu and Shinn, Noah and Razavi, Pedram and Narasimhan, Karthik R",
+      "year": "2025",
+      "url": "https://openreview.net/forum?id=roNSXZpUDN",
+      "venue": "The Thirteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates tool-agent-user interaction in service domains with policies and task constraints. It measures reliable completion of conversations that involve tool calls.",
@@ -1250,13 +1257,13 @@
     },
     {
       "id": "tau2bench2025",
-      "title": "τ^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
-      "authors": "Barres, Victor and Dong, Honghua and Ray, Soham and Si, Xujie and Narasimhan, Karthik",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2506.07982v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2506.07982",
-      "arxiv": "2506.07982",
+      "title": "\\\\textbackslashtau\\textasciicircum2\\-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
+      "authors": "Barres, Victor and Dong, Honghua and Ray, Soham and Si, Xujie and Narasimhan, Karthik R",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=OC2z7iSQKa",
+      "venue": "Forty-third International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Extends conversational evaluation to a dual-control environment where both the user and agent can act. It tests coordination as well as the agent's own tool use.",
@@ -1271,12 +1278,12 @@
     {
       "id": "mlebench2024",
       "title": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
-      "authors": "Chan, Jun Shern and Chowdhury, Neil and Jaffe, Oliver and Aung, James and Sherburn, Dane and Mays, Evan and Starace, Giulio and Liu, Kevin and Maksin, Leon and Patwardhan, Tejal and Weng, Lilian and Mądry, Aleksander",
-      "year": "2024",
-      "url": "https://arxiv.org/abs/2410.07095v6",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2410.07095",
-      "arxiv": "2410.07095",
+      "authors": "Chan, Jun Shern and Chowdhury, Neil and Jaffe, Oliver and Aung, James and Sherburn, Dane and Mays, Evan and Starace, Giulio and Liu, Kevin and Maksin, Leon and Patwardhan, Tejal and Mądry, Aleksander and Weng, Lilian",
+      "year": "2025",
+      "url": "https://openreview.net/forum?id=6s5uXNWGIh",
+      "venue": "The Thirteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates machine-learning engineering using competition-style tasks and performance objectives. It supplies an environment for comparing experimentation and model-development agents.",
@@ -1292,11 +1299,11 @@
       "id": "agentbench2023",
       "title": "AgentBench: Evaluating LLMs as Agents",
       "authors": "Liu, Xiao and Yu, Hao and Zhang, Hanchen and Xu, Yifan and Lei, Xuanyu and Lai, Hanyu and Gu, Yu and Ding, Hangliang and Men, Kaiwen and Yang, Kejuan and Zhang, Shudan and Deng, Xiang and Zeng, Aohan and Du, Zhengxiao and Zhang, Chenhui and Shen, Sheng and Zhang, Tianjun and Su, Yu and Sun, Huan and Huang, Minlie and Dong, Yuxiao and Tang, Jie",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2308.03688v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2308.03688",
-      "arxiv": "2308.03688",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=zAdUB0aCTQ",
+      "venue": "The Twelfth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates language-model agents across multiple interactive environments. It offers broad capability coverage useful for distinguishing task performance from improvement-mechanism capability.",
@@ -1310,13 +1317,13 @@
     },
     {
       "id": "autogen2023",
-      "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+      "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversations",
       "authors": "Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Li, Beibin and Zhu, Erkang and Jiang, Li and Zhang, Xiaoyun and Zhang, Shaokun and Liu, Jiale and Awadallah, Ahmed Hassan and White, Ryen W and Burger, Doug and Wang, Chi",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2308.08155v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2308.08155",
-      "arxiv": "2308.08155",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=BAakY1hNKS",
+      "venue": "First Conference on Language Modeling",
+      "doi": null,
+      "arxiv": null,
       "category": "Agent Architectures and Harness Infrastructure",
       "kind": "paper",
       "summary": "Provides a framework for coordinating agents through conversation and configurable interaction patterns. It is infrastructure for building multi-agent workflows rather than, by itself, a recursive improvement method.",
@@ -1333,10 +1340,10 @@
       "title": "Absolute Zero: Reinforced Self-play Reasoning with Zero Data",
       "authors": "Zhao, Andrew and Wu, Yiran and Yue, Yang and Wu, Tong and Xu, Quentin and Yue, Yang and Lin, Matthieu and Wang, Shenzhi and Wu, Qingyun and Zheng, Zilong and Huang, Gao",
       "year": "2025",
-      "url": "https://arxiv.org/abs/2505.03335v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2505.03335",
-      "arxiv": "2505.03335",
+      "url": "https://openreview.net/forum?id=neZSGqhxDa",
+      "venue": "The Thirty-ninth Annual Conference on Neural Information Processing Systems",
+      "doi": null,
+      "arxiv": null,
       "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
       "kind": "paper",
       "summary": "Uses reinforced self-play to generate tasks and learn from verifiable rewards without an external task dataset. It is adjacent model/data evolution, rather than direct evidence of editing a harness optimizer.",
@@ -1351,12 +1358,12 @@
     {
       "id": "autoharness2026",
       "title": "AutoHarness: improving LLM agents by automatically synthesizing a code harness",
-      "authors": "Lou, Xinghua and Lázaro-Gredilla, Miguel and Dedieu, Antoine and Wendelken, Carter and Lehrach, Wolfgang and Murphy, Kevin P.",
+      "authors": "Lou, Xinghua and Lázaro-Gredilla, Miguel and Dedieu, Antoine and Wendelken, Carter and Lehrach, Wolfgang and Murphy, Kevin",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2603.03329v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2603.03329",
-      "arxiv": "2603.03329",
+      "url": "https://openreview.net/forum?id=g9rEYVNn5T",
+      "venue": "ICLR 2026 Workshop on Recursive Self-Improvement",
+      "doi": null,
+      "arxiv": null,
       "category": "Harness Optimization and Search Workflows",
       "kind": "paper",
       "summary": "Synthesizes executable harness code using feedback from task environments. It illustrates automatic construction of the software controlling an agent, including game settings.",
@@ -1364,8 +1371,8 @@
       "release": {
         "value": "2026-02-10",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2603.03329"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2603.03329v1"
       }
     },
     {
@@ -1504,8 +1511,8 @@
       "release": {
         "value": "2026-09-29",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2609.37834"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.37834v1"
       }
     },
     {
@@ -1524,8 +1531,8 @@
       "release": {
         "value": "2026-08-14",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2608.13951"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.13951v1"
       }
     },
     {
@@ -1553,10 +1560,10 @@
       "title": "Code-to-Harness: Distilling Black-Box Optimizers from Self-Play",
       "authors": "Wu, Yi and Ren, Zheng and Hu, Zhiyu and Wang, Haochen and Chang, Daryl and Wei, Li and Wang, Ting and Li, Zhen and Gupta, Pooja and Jindal, Nitin and Heldt, Lukasz",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2609.09468v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2609.09468",
-      "arxiv": "2609.09468",
+      "url": "https://openreview.net/forum?id=LynZ1vTZ8A",
+      "venue": "OPT 2026: Optimization for Machine Learning (NeurIPS 2026 Workshop)",
+      "doi": null,
+      "arxiv": null,
       "category": "Prompt, Workflow, and Program Optimization",
       "kind": "paper",
       "summary": "Repeatedly writes and evaluates optimizer programs on development objectives, then distills the program and practice record into a reusable textual harness. The distilled harness is frozen before evaluation. This is transfer from executable practice, rather than continued recursive editing during deployment.",
@@ -1574,8 +1581,8 @@
       "authors": "Mukherjee, Subhojyoti and Tanjim, Md Mehrab",
       "year": "2026",
       "url": "https://arxiv.org/abs/2609.30967v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2609.30967",
+      "venue": "Advances in Neural Information Processing Systems",
+      "doi": null,
       "arxiv": "2609.30967",
       "category": "Harness Optimization and Search Workflows",
       "kind": "paper",
@@ -1584,7 +1591,7 @@
       "release": {
         "value": "2026-09-25",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.30967v1"
       }
     },
@@ -1604,8 +1611,8 @@
       "release": {
         "value": "2026-08-31",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2609.00196"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.00196v1"
       }
     },
     {
@@ -1644,19 +1651,19 @@
       "release": {
         "value": "2026-06-12",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2606.14249"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2606.14249v3"
       }
     },
     {
       "id": "ace2025",
       "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
       "authors": "Zhang, Qizheng and Hu, Changran and Upasani, Shubhangi and Ma, Boyuan and Hong, Fenglu and Kamanuru, Vamsidhar and Rainton, Jay and Wu, Chen and Ji, Mengmeng and Li, Hanchen and Thakker, Urmish and Zou, James and Olukotun, Kunle",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2510.04618v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2510.04618",
-      "arxiv": "2510.04618",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=eC4ygDs02R",
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Maintains and incrementally refines a context playbook using experience. It treats accumulated context as an evolving artifact that can influence subsequent task execution.",
@@ -1673,7 +1680,7 @@
       "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
       "authors": "Zheng, Tong and Wu, Xidong and Zhang, Zheng and He, Zhankui and Zhang, Chaoyi and Coleman, Benjamin and Wei, Ruoqiao and Bai, Di and Liu, Haolin and Liu, Rui and Wang, Xue and Zhuan, Yue and Kang, Wang-Cheng and Xiang, Renkai and Huang, Heng and Cheng, Xinwu and Guo, Yunsong",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2609.14858v1",
+      "url": "https://arxiv.org/abs/2609.14858v2",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2609.14858",
       "arxiv": "2609.14858",
@@ -1684,19 +1691,19 @@
       "release": {
         "value": "2026-09-14",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.14858v1"
       }
     },
     {
       "id": "reasoningbank2025",
       "title": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory",
-      "authors": "Ouyang, Siru and Yan, Jun and Hsu, I-Hung and Chen, Yanfei and Jiang, Ke and Wang, Zifeng and Han, Rujun and Le, Long T. and Daruki, Samira and Tang, Xiangru and Tirumalashetty, Vishy and Lee, George and Rofouei, Mahsan and Lin, Hangfei and Han, Jiawei and Lee, Chen-Yu and Pfister, Tomas",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2509.25140v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2509.25140",
-      "arxiv": "2509.25140",
+      "authors": "Ouyang, Siru and Yan, Jun and Hsu, I-Hung and Chen, Yanfei and Jiang, Ke and Wang, Zifeng and Han, Rujun and Le, Long and Daruki, Samira and Tang, Xiangru and Tirumalashetty, Vishy and Lee, George and Rofouei, Mahsan and Lin, Hangfei and Han, Jiawei and Lee, Chen-Yu and Pfister, Tomas",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=jL7fwchScm",
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Distills reusable reasoning lessons from successful and failed trajectories into memory. Later retrieval reuses those lessons to support new tasks.",
@@ -1704,19 +1711,19 @@
       "release": {
         "value": "2025-09-29",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2509.25140"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2509.25140v2"
       }
     },
     {
       "id": "tot2023",
       "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
-      "authors": "Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak and Griffiths, Thomas L. and Cao, Yuan and Narasimhan, Karthik",
+      "authors": "Yao, Shunyu and Yu, Dian and Zhao, Jeffrey and Shafran, Izhak and Griffiths, Thomas L. and Cao, Yuan and Narasimhan, Karthik R",
       "year": "2023",
-      "url": "https://arxiv.org/abs/2305.10601v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2305.10601",
-      "arxiv": "2305.10601",
+      "url": "https://openreview.net/forum?id=5Xc1ecxO1h",
+      "venue": "Thirty-seventh Conference on Neural Information Processing Systems",
+      "doi": null,
+      "arxiv": null,
       "category": "Task-Time Search and Output Refinement (Adjacent Work)",
       "kind": "paper",
       "summary": "Searches over intermediate thoughts using generation, evaluation, and branching. The search object is a task-solving trajectory, rather than a version of the persistent agent harness.",
@@ -1730,13 +1737,13 @@
     },
     {
       "id": "lats2023",
-      "title": "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models",
+      "title": "Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models",
       "authors": "Zhou, Andy and Yan, Kai and Shlapentokh-Rothman, Michal and Wang, Haohan and Wang, Yu-Xiong",
-      "year": "2023",
-      "url": "https://arxiv.org/abs/2310.04406v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2310.04406",
-      "arxiv": "2310.04406",
+      "year": "2024",
+      "url": "https://openreview.net/forum?id=njwv9BsGHF",
+      "venue": "Forty-first International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
       "category": "Task-Time Search and Output Refinement (Adjacent Work)",
       "kind": "paper",
       "summary": "Combines reasoning, actions, reflection, and Monte Carlo tree search within task execution. It is a comparison point for search mechanisms, not direct evidence of a self-modifying optimizer.",
@@ -1764,7 +1771,7 @@
       "release": {
         "value": "2026-07-09",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2607.08124v1"
       }
     },
@@ -1772,14 +1779,14 @@
       "id": "dynamic_cheatsheet2025",
       "title": "Dynamic Cheatsheet: Test-Time Learning with Adaptive Memory",
       "authors": "Suzgun, Mirac and Yuksekgonul, Mert and Bianchi, Federico and Jurafsky, Dan and Zou, James",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2504.07952v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2504.07952",
-      "arxiv": "2504.07952",
+      "year": "2026",
+      "url": "https://aclanthology.org/2026.eacl-long.333/",
+      "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "doi": "10.18653/v1/2026.eacl-long.333",
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
-      "summary": "Accumulates an adaptive memory of useful information and strategies during test-time learning. The persistent cheatsheet provides a lightweight update surface outside model weights.",
+      "summary": "Publication: EACL 2026, Volume 1: Long Papers, pp.\\ 7080–7106. The reference uses the ACL Anthology record; the summary's source remains arXiv:2504.07952v1. Accumulates an adaptive memory of useful information and strategies during test-time learning. The persistent cheatsheet provides a lightweight update surface outside model weights.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2025-04-10",
@@ -1804,28 +1811,8 @@
       "release": {
         "value": "2025-04-09",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2504.07079"
-      }
-    },
-    {
-      "id": "darwinx2026",
-      "title": "DarwinX: Evolving Agent Harnesses Through Natural Selection",
-      "authors": "Zhang, Yifan and Dai, Yutong and Tan, Juntao and Yang, Luyu and Mullur, Rishi and Hoang, Thai and Hu, Zhiyuan and Zhu, James and Mui, Phil and Savarese, Silvio and Xu, Ran and Chen, Zeyuan",
-      "year": "2026",
-      "url": "https://arxiv.org/abs/2608.07545v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2608.07545",
-      "arxiv": "2608.07545",
-      "category": "Harness Optimization and Search Workflows",
-      "kind": "paper",
-      "summary": "Uses natural-selection-inspired search over multiple harness lineages, with archives and recombination. It is relevant to population search and the reuse of improvements across branches.",
-      "added_on": "2026-10-03",
-      "release": {
-        "value": "2026-07-31",
-        "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2608.07545"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2504.07079v1"
       }
     },
     {
@@ -1864,8 +1851,8 @@
       "release": {
         "value": "2026-08-10",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2608.09096"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.09096v2"
       }
     },
     {
@@ -1891,12 +1878,12 @@
     {
       "id": "engdesign2025",
       "title": "Toward Engineering AGI: Benchmarking the Engineering Design Capabilities of LLMs",
-      "authors": "Guo, Xingang and Li, Yaxin and Kong, Xiangyi and Jiang, Yilan and Zhao, Xiayu and Gong, Zhihua and Zhang, Yufan and Li, Daixuan and Sang, Tianle and Zhu, Beixiao and Jun, Gregory and Huang, Yingbing and Liu, Yiqi and Xue, Yuqi and Kundu, Rahul Dev and Lim, Qi Jian and Zhao, Yizhou and Granger, Luke Alexander and Younis, Mohamed Badr and Keivan, Darioush and Sabharwal, Nippun and Sinha, Shreyanka and Agarwal, Prakhar and Vandyck, Kojo and Mai, Hanlin and Wang, Zichen and Venkatesh, Aditya and Barik, Ayush and Yang, Jiankun and Yue, Chongying and He, Jingjie and Wang, Libin and Xu, Licheng and Chen, Hao and Wang, Jinwen and Xu, Liujun and Shetty, Rushabh and Guo, Ziheng and Song, Dahui and Jha, Manvi and Liang, Weijie and Yan, Weiman and Zhang, Bryan and Karnoor, Sahil Bhandary and Zhang, Jialiang and Pandya, Rutva and Gong, Xinyi and Ganesh, Mithesh Ballae and Shi, Feize and Xu, Ruiling and Zhang, Yifan and Ouyang, Yanfeng and Qin, Lianhui and Rosenbaum, Elyse and Snyder, Corey and Seiler, Peter and Dullerud, Geir and Zhang, Xiaojia Shelly and Cheng, Zuofu and Hanumolu, Pavan Kumar and Huang, Jian and Kulkarni, Mayank and Namazifar, Mahdi and Zhang, Huan and Hu, Bin",
+      "authors": "Guo, Xingang and Li, Yaxin and Kong, XiangYi and JIANG, YILAN and Zhao, Xiayu and Gong, Zhihua and Zhang, Yufan and Li, Daixuan and Sang, Tianle and Zhu, Beixiao and Jun, Gregory and Huang, Yingbing and Liu, Yiqi and Xue, Yuqi and Kundu, Rahul Dev and Lim, Qi and Zhao, Yizhou and Granger, Luke and Younis, Mohamed and Keivan, Darioush and Sabharwal, Nippun and Sinha, Shreyanka and Agarwal, Prakhar and Vandyck, Kojo and Mai, Hanlin and Wang, Zichen and Venkatesh, Aditya and Barik, Ayush and Yang, Jiankun and Yue, Chongying and He, Jingjie and Wang, Libin and Xu, Licheng and Chen, Hao and Wang, Jinwen and Xu, Liujun and Shetty, Rushabh and Guo, Ziheng and Song, Dahui and Jha, Manvi and Liang, Weijie and Yan, Weiman and Zhang, Bryan and Bhandary Karnoor, Sahil and Zhang, Jialiang and Pandya, Rutva and Gong, Xinyi and Ganesh, Mithesh and Shi, Feize and Xu, Ruiling and Zhang, Yifan and Ouyang, Yanfeng and Qin, Lianhui and Rosenbaum, Elyse and Snyder, Corey and Seiler, Peter and Dullerud, Geir and Zhang, Xiaojia and Cheng, Zuofu and Hanumolu, Pavan Kumar and Huang, Jian and Kulkarni, Mayank and Namazifar, Mahdi and Zhang, Huan and Hu, Bin",
       "year": "2025",
-      "url": "https://arxiv.org/abs/2509.16204v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2509.16204",
-      "arxiv": "2509.16204",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/664f777548205fb6e0cbb0965e8d2e16-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "venue": "Advances in Neural Information Processing Systems",
+      "doi": "10.52202/085713-2372",
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Benchmarks language models on engineering-design problems. It provides task objectives and constraints for studying design-oriented agents and their transfer.",
@@ -1931,12 +1918,12 @@
     {
       "id": "gdpval2025",
       "title": "GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
-      "authors": "Patwardhan, Tejal and Dias, Rachel and Proehl, Elizabeth and Kim, Grace and Wang, Michele and Watkins, Olivia and Fishman, Simón Posada and Aljubeh, Marwan and Thacker, Phoebe and Fauconnet, Laurance and Kim, Natalie S. and Chao, Patrick and Miserendino, Samuel and Chabot, Gildas and Li, David and Sharman, Michael and Barr, Alexandra and Glaese, Amelia and Tworek, Jerry",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2510.04374v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2510.04374",
-      "arxiv": "2510.04374",
+      "authors": "Patwardhan, Tejal and Dias, Rachel and Proehl, Elizabeth and Kim, Grace and Wang, Michele and Watkins, Olivia and Fishman, Simón Posada and Aljubeh, Marwan and Thacker, Phoebe and Fauconnet, Laurance and Kim, Natalie S. and Miserendino, Samuel and Chabot, Gildas and Li, David and Chao, Patrick and Sharman, Michael and Barr, Alexandra and Glaese, Amelia and Tworek, Jerry",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=hcuEdq6eKD",
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates model performance on economically valuable work tasks. Its professional deliverables provide a downstream setting for testing workspace agents.",
@@ -1984,7 +1971,7 @@
       "release": {
         "value": "2026-05-11",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2605.09998v1"
       }
     },
@@ -2024,19 +2011,19 @@
       "release": {
         "value": "2026-05-13",
         "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2605.13941"
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2605.13941v1"
       }
     },
     {
       "id": "adaptive_autoharness2026",
-      "title": "Adaptive Auto-Harness: Sustained Self-Improvement for Agentic System Deployment on Open-Ended Task Streams",
+      "title": "Adaptive Auto-Harness: Sustained Self-Improvement on Open-Ended Task Streams",
       "authors": "Liu, Zewen and Shi, Zhan and Sang, Yisi and He, Bing and Lin, Minhua and Wei, Tianxin and Wang, Dakuo and Dumoulin, Benoit and Jin, Wei and Lu, Hanqing",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2606.01770v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2606.01770",
-      "arxiv": "2606.01770",
+      "url": "https://openreview.net/forum?id=UDdlNs6TxU",
+      "venue": "NeurIPS 2026 Workshop on Continual Learning for Enterprise AI Agents",
+      "doi": null,
+      "arxiv": null,
       "category": "Harness Optimization and Search Workflows",
       "kind": "paper",
       "summary": "Studies continued deployment on open-ended task streams through evolution and routing among multiple harnesses. It is relevant to sustained adaptation, but open-ended tasks alone do not establish general recursive capability.",
@@ -2054,8 +2041,8 @@
       "authors": "Pan, Wenbo and Liu, Shujie and Lin, Chin-Yew and Zeng, Jingying and Tang, Xianfeng and Zhou, Xiangyang and Lu, Yan and Jia, Xiaohua",
       "year": "2026",
       "url": "https://arxiv.org/abs/2606.05922v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2606.05922",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+      "doi": null,
       "arxiv": "2606.05922",
       "category": "Harness Optimization and Search Workflows",
       "kind": "paper",
@@ -2064,7 +2051,7 @@
       "release": {
         "value": "2026-06-04",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2606.05922v3"
       }
     },
@@ -2111,12 +2098,12 @@
     {
       "id": "hgm2025",
       "title": "Huxley-Gödel Machine: Human-Level Coding Agent Development by an Approximation of the Optimal Self-Improving Machine",
-      "authors": "Wang, Wenyi and Piękos, Piotr and Nanbo, Li and Laakom, Firas and Chen, Yimeng and Ostaszewski, Mateusz and Zhuge, Mingchen and Schmidhuber, Jürgen",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2510.21614v3",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2510.21614",
-      "arxiv": "2510.21614",
+      "authors": "Wang, Wenyi and Pi\\kekos, Piotr and Nanbo, Li and Laakom, Firas and Chen, Yimeng and Ostaszewski, Mateusz and Zhuge, Mingchen and Schmidhuber, Jürgen",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=T0EiEuhOOL",
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Self-Modification and Meta-Level Improvement",
       "kind": "paper",
       "summary": "Organizes coding-agent development through lineages, clade productivity, and Thompson-sampling-based parent selection. It separates expansion from evaluation and studies self-modification, while retaining fixed parts of the search controller.",
@@ -2124,19 +2111,19 @@
       "release": {
         "value": "2025-10-24",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2510.21614v3"
       }
     },
     {
       "id": "terminalbench2026",
       "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
-      "authors": "Merrill, Mike A. and Shaw, Alexander G. and Carlini, Nicholas and Li, Boxuan and Raj, Harsh and Bercovich, Ivan and Shi, Lin and Shin, Jeong Yeon and Walshe, Thomas and Buchanan, E. Kelly and Shen, Junhong and Ye, Guanghao and Lin, Haowei and Poulos, Jason and Wang, Maoyu and Nezhurina, Marianna and Jitsev, Jenia and Lu, Di and Mastromichalakis, Orfeas Menis and Xu, Zhiwei and Chen, Zizhao and Liu, Yue and Zhang, Robert and Chen, Leon Liangyu and Kashyap, Anurag and Uslu, Jan-Lucas and Li, Jeffrey and Wu, Jianbo and Yan, Minghao and Bian, Song and Sharma, Vedang and Sun, Ke and Dillmann, Steven and Anand, Akshay and Lanpouthakoun, Andrew and Koopah, Bardia and Hu, Changran and Guha, Etash and Dreiman, Gabriel H. S. and Zhu, Jiacheng and Krauth, Karl and Zhong, Li and Muennighoff, Niklas and Amanfu, Robert and Tan, Shangyin and Pimpalgaonkar, Shreyas and Aggarwal, Tushar and Lin, Xiangning and Lan, Xin and Zhao, Xuandong and Liang, Yiqing and Wang, Yuanli and Wang, Zilong and Zhou, Changzhi and Heineman, David and Liu, Hange and Trivedi, Harsh and Yang, John and Lin, Junhong and Shetty, Manish and Yang, Michael and Omi, Nabil and Raoof, Negin and Li, Shanda and Zhuo, Terry Yue and Lin, Wuwei and Dai, Yiwei and Wang, Yuxin and Chai, Wenhao and Zhou, Shang and Wahdany, Dariush and She, Ziyu and Hu, Jiaming and Dong, Zhikang and Zhu, Yuxuan and Cui, Sasha and Saiyed, Ahson and Kolbeinsson, Arinbjörn and Hu, Jesse and Rytting, Christopher Michael and Marten, Ryan and Wang, Yixin and Dimakis, Alex and Konwinski, Andy and Schmidt, Ludwig",
+      "authors": "Merrill, Mike A. and Shaw, Alexander Glenn and Carlini, Nicholas and Li, Boxuan and Raj, Harsh and Bercovich, Ivan and Shi, Lin and Shin, Jeong Yeon and Walshe, Thomas and Buchanan, E. Kelly and Shen, Junhong and Ye, Guanghao and Lin, Haowei and Poulos, Jason and Wang, Maoyu and Nezhurina, Marianna and Lu, Di and Mastromichalakis, Orfeas Menis and Xu, Zhiwei and Chen, Zizhao and Liu, Yue and Zhang, Robert and Chen, Leon Liangyu and Kashyap, Anurag and Uslu, Jan-Lucas and Li, Jeffrey and Wu, Jianbo and Yan, Minghao and Bian, Song and Sharma, Vedang and Sun, Ke and Dillmann, Steven and Anand, Akshay and Lanpouthakoun, Andrew and Koopah, Bardia and Hu, Changran and Guha, Etash Kumar and Dreiman, Gabriel H. S. and Zhu, Jiacheng and Krauth, Karl and Zhong, Li and Muennighoff, Niklas and Amanfu, Robert Kwesi and Tan, Shangyin and Pimpalgaonkar, Shreyas and Aggarwal, Tushar and Lin, Xiangning and Lan, Xin and Zhao, Xuandong and Liang, Yiqing and Wang, Yuanli and Wang, Zilong and Zhou, Changzhi and Heineman, David and Liu, Hange and Trivedi, Harsh and Yang, John and Lin, Junhong and Shetty, Manish and Yang, Michael and Omi, Nabil and Raoof, Negin and Li, Shanda and Zhuo, Terry Yue and Lin, Wuwei and Dai, Yiwei and Wang, Yuxin and Chai, Wenhao and Zhou, Shang and Wahdany, Dariush and She, Ziyu and Hu, Jiaming and Dong, Zhikang and Zhu, Yuxuan and Cui, Sasha and Saiyed, Ahson and Kolbeinsson, Arinbjörn and Rytting, Christopher Michael and Marten, Ryan and Wang, Yixin and Jitsev, Jenia and Dimakis, Alex and Konwinski, Andy and Schmidt, Ludwig",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2601.11868v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2601.11868",
-      "arxiv": "2601.11868",
+      "url": "https://openreview.net/forum?id=a7Qa4CcHak",
+      "venue": "The Fourteenth International Conference on Learning Representations",
+      "doi": null,
+      "arxiv": null,
       "category": "Downstream Task Benchmarks",
       "kind": "paper",
       "summary": "Evaluates agents on difficult command-line tasks in realistic terminal environments. Task and benchmark versions must be specified when comparing coding-harness results.",
@@ -2152,11 +2139,11 @@
       "id": "awm2024",
       "title": "Agent Workflow Memory",
       "authors": "Wang, Zora Zhiruo and Mao, Jiayuan and Fried, Daniel and Neubig, Graham",
-      "year": "2024",
-      "url": "https://arxiv.org/abs/2409.07429v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2409.07429",
-      "arxiv": "2409.07429",
+      "year": "2025",
+      "url": "https://proceedings.mlr.press/v267/wang25bx.html",
+      "venue": "Forty-second International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Induces reusable workflows from experience and retrieves them during web-agent execution. It links procedural memory to repeated task performance.",
@@ -2184,7 +2171,7 @@
       "release": {
         "value": "2026-07-06",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2607.05297v1"
       }
     },
@@ -2273,7 +2260,7 @@
       "title": "Agent Harness for Large Language Model Agents: A Survey",
       "authors": "Meng, Qianyu and Wang, Yanan and Chen, Liyi and Li, Yihang and Wu, Wei and Jiang, Wenyuan and Wang, Qimeng and Lu, Chengqiang and Gao, Yan and Wu, Yi and Hu, Yao",
       "year": "2026",
-      "url": "https://www.preprints.org/manuscript/202604.0428",
+      "url": "https://www.preprints.org/manuscript/202604.0428/v3",
       "venue": "Manuscript / official resource",
       "doi": null,
       "arxiv": null,
@@ -2324,7 +2311,7 @@
       "release": {
         "value": "2026-08-03",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2608.01918v1"
       }
     },
@@ -2344,7 +2331,7 @@
       "release": {
         "value": "2026-08-06",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2608.06301v1"
       }
     },
@@ -2533,8 +2520,8 @@
       "title": "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation",
       "authors": "Zelikman, Eric and Lorch, Eliana and Mackey, Lester and Kalai, Adam Tauman",
       "year": "2024",
-      "url": "https://arxiv.org/abs/2310.02304v3",
-      "venue": "Conference on Language Modeling (COLM)",
+      "url": "https://openreview.net/forum?id=46Zgqo4QIU",
+      "venue": "First Conference on Language Modeling",
       "doi": null,
       "arxiv": null,
       "category": "Self-Modification and Meta-Level Improvement",
@@ -2544,7 +2531,7 @@
       "release": {
         "value": "2023-10-03",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2310.02304v3"
       }
     },
@@ -2604,7 +2591,7 @@
       "release": {
         "value": "2026-09-22",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.26457v1"
       }
     },
@@ -2624,7 +2611,7 @@
       "release": {
         "value": "2026-07-14",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2607.14159v1"
       }
     },
@@ -2651,12 +2638,12 @@
     {
       "id": "agenttreesearch2024",
       "title": "Tree Search for Language Model Agents",
-      "authors": "Koh, Jing Yu and McAleer, Stephen and Fried, Daniel and Salakhutdinov, Ruslan",
-      "year": "2024",
-      "url": "https://arxiv.org/abs/2407.01476v1",
-      "venue": "arXiv preprint",
+      "authors": "Koh, Jing Yu and McAleer, Stephen Marcus and Fried, Daniel and Salakhutdinov, Ruslan",
+      "year": "2025",
+      "url": "https://openreview.net/forum?id=QF0N3x2XVm",
+      "venue": "Transactions on Machine Learning Research",
       "doi": null,
-      "arxiv": "2407.01476",
+      "arxiv": null,
       "category": "Task-Time Search and Output Refinement (Adjacent Work)",
       "kind": "paper",
       "summary": "Applies best-first search over actions in interactive web environments. It provides a task-level search reference for distinguishing planning within one task from search over persistent harness implementations.",
@@ -2704,7 +2691,7 @@
       "release": {
         "value": "2026-09-29",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.38372v1"
       }
     },
@@ -2744,7 +2731,7 @@
       "release": {
         "value": "2026-09-01",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.00829v1"
       }
     },
@@ -2789,26 +2776,6 @@
       }
     },
     {
-      "id": "evolvenet2026",
-      "title": "EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement",
-      "authors": "Nie, Jun and Zhang, Yonggang and Cai, Qianshu and Cheung, Yiu-ming and Tian, Xinmei and Han, Bo",
-      "year": "2026",
-      "url": "https://arxiv.org/abs/2608.04968v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2608.04968",
-      "arxiv": "2608.04968",
-      "category": "Harness Optimization and Search Workflows",
-      "kind": "paper",
-      "summary": "Distributes a shared harness to deployments that evolve it on local workloads, then combines program adaptations and redistributes the result. Scope-typed, evidence-guided aggregation addresses conflicts between independently edited programs. It directly broadens update integration from selecting one candidate to composing distributed experience. Keeping workloads local is a system design choice, not by itself a formal privacy guarantee.",
-      "added_on": "2026-10-03",
-      "release": {
-        "value": "2026-08-05",
-        "precision": "day",
-        "basis": "First arXiv submission",
-        "source": "https://arxiv.org/abs/2608.04968v1"
-      }
-    },
-    {
       "id": "skillopt2026",
       "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
       "authors": "Yang, Yifan and Gong, Ziyang and Huang, Weiquan and Yang, Qihao and Zhou, Ziwei and Huang, Zisu and Li, Yan and Gao, Xuemei and Dai, Qi and Liu, Bei and Qiu, Kai and Yang, Yuqing and Chen, Dongdong and Yang, Xue and Luo, Chong",
@@ -2824,7 +2791,7 @@
       "release": {
         "value": "2026-05-22",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2605.23904v2"
       }
     },
@@ -2904,7 +2871,7 @@
       "release": {
         "value": "2026-09-27",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.33146v1"
       }
     },
@@ -2924,7 +2891,7 @@
       "release": {
         "value": "2026-09-27",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.33378v1"
       }
     },
@@ -2984,7 +2951,7 @@
       "release": {
         "value": "2026-04-22",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2604.21003v3"
       }
     },
@@ -3004,7 +2971,7 @@
       "release": {
         "value": "2026-09-30",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.40169v1"
       }
     },
@@ -3044,7 +3011,7 @@
       "release": {
         "value": "2026-09-30",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2610.00383v1"
       }
     },
@@ -3064,7 +3031,7 @@
       "release": {
         "value": "2026-09-29",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.37950v1"
       }
     },
@@ -3124,7 +3091,7 @@
       "release": {
         "value": "2026-10-01",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2610.00906v1"
       }
     },
@@ -3151,12 +3118,12 @@
     {
       "id": "coevolving_correction2026",
       "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
-      "authors": "Yu, Zhou and Bi, Bin and Pentyala, Shiva Kumar and Mehrotra, Shubham and Chaudhuri, Sougata and Bhagavath, Shilpa and Chen, Zeyuan and Xu, Ran and Mui, Phil and Zhu, James and Asur, Sitaram",
+      "authors": "Yu, Zhou and Bi, Bin and Pentyala, Shiva Kumar and Mehrotra, Shubham and Chaudhuri, Sougata and Bhagavath, Shilpa and Chen, Zeyuan and Xu, Ran and Zhu, James and Asur, Sitaram and Mui, Phil L",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2609.09134v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2609.09134",
-      "arxiv": "2609.09134",
+      "url": "https://openreview.net/forum?id=jgc0U3zRFp",
+      "venue": "NeurIPS 2026 Workshop on Continual Learning for Enterprise AI Agents",
+      "doi": null,
+      "arxiv": null,
       "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
       "kind": "paper",
       "summary": "Finds that copying full expert trajectories can degrade a weaker model operating under its evolved harness. It instead identifies a failing turn in the weaker model's own rollout and requests a localized expert correction for training. The enterprise-task study makes model–harness compatibility a concrete issue in joint evolution, rather than assuming weight and harness improvements add independently.",
@@ -3190,13 +3157,13 @@
     },
     {
       "id": "coharness2026",
-      "title": "Co-Harness: Co-Evolving Harnesses and Model Weights for LLM Agents",
+      "title": "Co-Harness: Co-Evolving Harnesses and Model for Agents",
       "authors": "Chen, Zhengyu and Xiao, Teng and Zhu, Huaisheng and Yuan, Yige and Zhang, Luan and Wang, Jingang",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2607.22688v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2607.22688",
-      "arxiv": "2607.22688",
+      "url": "https://openreview.net/forum?id=qDC8LmkpSR",
+      "venue": "COLM 2026 The 2nd Workshop on Lifelong Agents: Learning, Aligning, and Evolving",
+      "doi": null,
+      "arxiv": null,
       "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
       "kind": "paper",
       "summary": "Alternates harness optimization with model fine-tuning for AI research agents. A HarnessCritic diagnoses failed trajectories and proposes validated local changes; the updated harness generates trajectories for subsequent weight updates. It is a direct joint-optimization reference, useful for contrasting co-evolution with one-way harness distillation and purely frozen-model harness search.",
@@ -3204,7 +3171,7 @@
       "release": {
         "value": "2026-07-17",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2607.22688v1"
       }
     },
@@ -3224,7 +3191,7 @@
       "release": {
         "value": "2026-04-22",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2604.20938v1"
       }
     },
@@ -3284,7 +3251,7 @@
       "release": {
         "value": "2026-09-30",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.39765v1"
       }
     },
@@ -3324,7 +3291,7 @@
       "release": {
         "value": "2026-09-02",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.02074v1"
       }
     },
@@ -3384,7 +3351,7 @@
       "release": {
         "value": "2026-09-28",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.36043v1"
       }
     },
@@ -3430,10 +3397,10 @@
     },
     {
       "id": "envrethink2026",
-      "title": "Breaking the Environment Wall: Evolving LLM Agent Environments for Recursive Self-Improvement",
-      "authors": "Wu, Yukai and Yang, Yuanjing and Zhou, Le and Han, Shaokun and Wang, Haoyu and Tang, Zirui and Zheng, Weihuang and Pan, Maxm and Zhou, Xuanhe and Wu, Fan",
+      "title": "Breaking the Environment Wall: A Unified Framework for Preparing and Evolving Agent-Native Environments",
+      "authors": "Wu, Yukai and Yang, Yuanjing and Zhou, Le and Han, Shaokun and Wang, Haoyu and Tang, Zirui and Zhu, Xuzhou and Zheng, Weihuang and Pan, Maxm and Zhou, Xuanhe and Wu, Fan",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2609.29773v1",
+      "url": "https://arxiv.org/abs/2609.29773v2",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2609.29773",
       "arxiv": "2609.29773",
@@ -3444,7 +3411,7 @@
       "release": {
         "value": "2026-09-24",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.29773v1"
       }
     },
@@ -3513,7 +3480,7 @@
       "title": "Cost-Aware Optimization for Agentic Query Execution",
       "authors": "Nie, Lunyiu and Xia, Yilin and Liu, Yiren and Jermaine, Christopher and Chaudhuri, Swarat",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2606.03152v1",
+      "url": "https://arxiv.org/abs/2606.03152v2",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2606.03152",
       "arxiv": "2606.03152",
@@ -3531,12 +3498,12 @@
     {
       "id": "memevolve2025",
       "title": "MemEvolve: Meta-Evolution of Agent Memory Systems",
-      "authors": "Zhang, Guibin and Ren, Haotian and Zhan, Chong and Zhou, Zhenhong and Wang, Junhao and Zhu, He and Zhou, Wangchunshu and Yan, Shuicheng",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2512.18746v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2512.18746",
-      "arxiv": "2512.18746",
+      "authors": "Zhang, Guibin and Ren, Haotian and Zhan, Chong and Wang, Junhao and Zhu, He and Zhou, Wangchunshu and Yan, Shuicheng",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=qpkG0eKx4v",
+      "venue": "Forty-third International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Jointly evolves experiential knowledge and memory architecture. EvolveLab exposes encoding, storage, retrieval, and management as a modular design space. It provides a direct predecessor for memory-system evolution and distinguishes changes to stored experience from changes to the mechanism that manages it.",
@@ -3544,7 +3511,7 @@
       "release": {
         "value": "2025-12-21",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2512.18746v1"
       }
     },
@@ -3553,7 +3520,7 @@
       "title": "Evo-Memory: Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory",
       "authors": "Wei, Tianxin and Sachdeva, Noveen and Coleman, Benjamin and He, Zhankui and Bei, Yuanchen and Ning, Xuying and Ai, Mengting and Li, Yunzhe and He, Jingrui and Chi, Ed H. and Wang, Chi and Chen, Shuo and Pereira, Fernando and Kang, Wang-Cheng and Cheng, Derek Zhiyuan",
       "year": "2025",
-      "url": "https://arxiv.org/abs/2511.20857v1",
+      "url": "https://arxiv.org/abs/2511.20857v2",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2511.20857",
       "arxiv": "2511.20857",
@@ -3572,11 +3539,11 @@
       "id": "reme2025",
       "title": "Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution",
       "authors": "Cao, Zouying and Deng, Jiaji and Yu, Li and Zhou, Weikang and Liu, Zhaoyang and Ding, Bolin and Zhao, Hai",
-      "year": "2025",
-      "url": "https://arxiv.org/abs/2512.10696v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2512.10696",
-      "arxiv": "2512.10696",
+      "year": "2026",
+      "url": "https://aclanthology.org/2026.findings-acl.829/",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "doi": "10.18653/v1/2026.findings-acl.829",
+      "arxiv": null,
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "ReMe distills success patterns, failure triggers, and comparative experience; retrieves through scenario-aware indexing; and refines the pool by adding useful memories and pruning outdated ones. It supports lifecycle-level memory management and procedural experience reuse. ReMe is distinct from the ReMem baseline in Evo-Memory.",
@@ -3584,7 +3551,7 @@
       "release": {
         "value": "2025-12-11",
         "precision": "day",
-        "basis": "First arXiv submission",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2512.10696v1"
       }
     },
@@ -3644,7 +3611,7 @@
       "release": {
         "value": "2026-09-29",
         "precision": "day",
-        "basis": "First submission recorded in literature map",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2609.38291v1"
       }
     },
@@ -3673,10 +3640,10 @@
       "title": "Stop Comparing LLM Agents Without Disclosing the Harness",
       "authors": "Zhang, Yunbei and Wang, Janet and Ge, Yingqiang and Xu, Weijie and Hamm, Jihun and Reddy, Chandan K.",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2605.23950v1",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2605.23950",
-      "arxiv": "2605.23950",
+      "url": "https://openreview.net/forum?id=ffKHSraOIK",
+      "venue": "ICML 2026 Second Workshop on Agents in the Wild: Safety, Security, and Beyond",
+      "doi": null,
+      "arxiv": null,
       "category": "Generalization, Evaluation Methodology, and Safety",
       "kind": "paper",
       "summary": "Argues that agent comparisons should disclose their harness and separate model effects from system effects. Its binding-constraint thesis concerns particular long-horizon settings with comparably capable models. This is a methodological position supporting transparent comparison; it should not be cited as experimental proof that harness design universally dominates model capability.",
@@ -3714,17 +3681,17 @@
       "authors": "Liu, Hongjun and Ming, Yifei and Joty, Shafiq and Zhao, Chen",
       "year": "2026",
       "url": "https://arxiv.org/abs/2605.17734v2",
-      "venue": "arXiv preprint",
-      "doi": "10.48550/arXiv.2605.17734",
+      "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+      "doi": null,
       "arxiv": "2605.17734",
       "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
       "kind": "paper",
-      "summary": "Represents skills as executable Program Functions that activate in relevant failure states, modify actions, or inject context. These functions support inference-time intervention, training supervision, and controlled skill growth from remaining failures, with executable validation and teacher review. The evolving objects are primarily task-execution skills. They should be distinguished from meta-skills that implement the improvement procedure itself, such as the context-engineering skills evolved by MCE.",
+      "summary": "Publication: Accepted to EMNLP 2026 (main conference), as confirmed by the authors' publication lists; final proceedings metadata is not yet confirmed. The summary uses arXiv v2. Represents skills as executable Program Functions that activate in relevant failure states, modify actions, or inject context. These functions support inference-time intervention, training supervision, and controlled skill growth from remaining failures, with executable validation and teacher review. The evolving objects are primarily task-execution skills. They should be distinguished from meta-skills that implement the improvement procedure itself, such as the context-engineering skills evolved by MCE.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2026-05-18",
         "precision": "day",
-        "basis": "First submission recorded in literature map",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2605.17734v2"
       }
     },
@@ -3826,6 +3793,1226 @@
         "precision": "day",
         "basis": "First submission recorded in literature map",
         "source": "https://arxiv.org/abs/2605.25665v1"
+      }
+    },
+    {
+      "id": "darwinx2026",
+      "title": "DarwinX: Evolving Agent Harnesses Through Natural Selection",
+      "authors": "Zhang, Yifan and Dai, Yutong and Tan, Juntao and Yang, Luyu and Mullur, Rishi and Hoang, Thai and Hu, Zhiyuan and Zhu, James and Mui, Phil and Savarese, Silvio and Xu, Ran and Chen, Zeyuan",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.07545v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.07545",
+      "arxiv": "2608.07545",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Uses natural-selection-inspired search over multiple harness lineages, with archives and recombination. It is relevant to population search and the reuse of improvements across branches.",
+      "added_on": "2026-10-03",
+      "release": {
+        "value": "2026-07-31",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.07545v1"
+      }
+    },
+    {
+      "id": "evolvenet2026",
+      "title": "EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement",
+      "authors": "Nie, Jun and Zhang, Yonggang and Cai, Qianshu and Cheung, Yiu-ming and Tian, Xinmei and Han, Bo",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.04968v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.04968",
+      "arxiv": "2608.04968",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Distributes a shared harness to deployments that evolve it on local workloads, then combines program adaptations and redistributes the result. Scope-typed, evidence-guided aggregation addresses conflicts between independently edited programs. It directly broadens update integration from selecting one candidate to composing distributed experience. Keeping workloads local is a system design choice, not by itself a formal privacy guarantee.",
+      "added_on": "2026-10-03",
+      "release": {
+        "value": "2026-08-05",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.04968v1"
+      }
+    },
+    {
+      "id": "selfevolving_coding_survey2026",
+      "title": "Self-Evolving Coding Agents",
+      "authors": "Zhou, Hao and Hu, Haichuan and Luo, Tianyu and Shang, Ye and Fang, Chunrong and Chen, Zhenyu and Xiao, Liang and Zhang, Quanjun",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.03392v4",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.03392",
+      "arxiv": "2608.03392",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 4 August 2026; checked arXiv v4, revised 24 September 2026. Sources checked 2026-10-04. Organizes persistent coding-agent improvement by the object that evolves, the timing of evolution, and code-specific feedback. It covers changes to frameworks, memory, skills/tools, components, workflows, and environments. Its harness-evolution and harness-co-evolution discussions substantially overlap our coding coverage; coding trajectories, repository context, and executable feedback motivate its domain-specific analysis.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08",
+        "precision": "month",
+        "basis": "arXiv identifier month; exact day not recorded",
+        "source": "https://arxiv.org/abs/2608.03392v4"
+      }
+    },
+    {
+      "id": "task_completion_harness_survey2026",
+      "title": "From Question Answering to Task Completion: A Survey on Agent System and Harness Design",
+      "authors": "Guo, Jianyuan and Hao, Zhiwei and Wang, Chengcheng and Fan, Cheng and Luo, Tingzhang and Li, Hongguang and Gao, Ying and Mei, Hefei and Peng, Jiankun and Xu, Rongjian and Dong, Minjing and Wu, Han and Zheng, Mengyu and Han, Kai and Wang, Shiqi and Xu, Chang and Wang, Yunhe",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2606.20683v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2606.20683",
+      "arxiv": "2606.20683",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 14 June 2026; checked arXiv v1. Sources checked 2026-10-04. Studies task-completing agents through the interaction between the foundation model and its execution harness. It separates observation, context, control, action, state, and verification, then relates task properties and domain pressures to harness configurations. It also discusses evaluation, generalization, and model–harness co-evolution. These are runtime responsibilities, whereas our Section 2 describes roles in the process that improves a harness. \\surveygroupAutomated Agent and Workflow Design",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-06-14",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2606.20683v1"
+      }
+    },
+    {
+      "id": "adas_survey2026",
+      "title": "Automated Design of Agentic Systems: A Survey of Algorithms for Searching, Optimizing, and Evolving LLM Agents, Workflows, and Prompts",
+      "authors": "Mad\\vzar, Maksim and Mekterović, Igor",
+      "year": "2026",
+      "url": "https://www.preprints.org/manuscript/202606.0238/v1",
+      "venue": "Manuscript / official resource",
+      "doi": null,
+      "arxiv": null,
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Submitted 1 June and posted 2 June 2026; checked Preprints.org v1 (not peer-reviewed). Sources checked 2026-10-04. Classifies 33 automated-design methods by optimization target, search strategy, representation, and feedback signal. It connects prompt, compound-system, workflow, modular, and code-level search, discussing expressiveness, searchability, evaluation cost, transfer, and safety. Its stated emphasis is design-time scaffold optimization around largely frozen models, with weight training covered where it borders scaffold search.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://www.preprints.org/manuscript/202606.0238/v1"
+      }
+    },
+    {
+      "id": "workflow_optimization_survey2026",
+      "title": "From Static Templates to Dynamic Runtime Graphs: A Survey of Workflow Optimization for LLM Agents",
+      "authors": "Yue, Ling and Bhandari, Kushal Raj and Ko, Ching-Yun and Patel, Dhaval and Lin, Shuxin and Zhou, Nianjun and Gao, Jianxi and Chen, Pin-Yu and Pan, Shaowu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2603.22386v1",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+      "doi": null,
+      "arxiv": "2603.22386",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 23 March 2026; checked arXiv v1. Sources checked 2026-10-04. Reviews agentic computation graphs through when structure is determined, what is optimized, and which feedback guides optimization. It distinguishes reusable workflow templates, run-specific realized graphs, and execution traces, and compares static scaffold optimization with dynamic workflow construction or revision. This distinction helps avoid treating every runtime workflow change as an inherited self-improvement.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-03-23",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2603.22386v1"
+      }
+    },
+    {
+      "id": "experience_selfimprovement_survey2026",
+      "title": "Self-Improving Agents in the Era of Experience: A Survey of Self- to Meta-Evolution",
+      "authors": "Jiang, Che and Zhong, Jincheng and Fu, Yu and Tian, Kai and Yang, Junlin and Zhao, Kaikai and Wang, Yuchong and Luo, Tianwei and Wang, Weizhi and Zuo, Yuxin and Jia, Guoli and Lv, Xingtai and Lei, Dianqiao and Zeng, Sihang and Wang, Yuru and Yuan, Zhenzhao and Long, Xinwei and Hua, Ermo and Ren, Can and Jiang, Xin and Xie, Shulei and Zheng, Yuanchun and Sun, Youbang and Qi, Biqing and Ding, Ning and Zhang, Kaiyan and Zhou, Bowen",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=IUltZSgLMm",
+      "venue": "Manuscript / official resource",
+      "doi": null,
+      "arxiv": null,
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Author-released manuscript dated 25 June 2026; OpenReview manuscript; metadata and text checked against the author-released repository PDF. Sources checked 2026-10-04. Treats the runtime harness as infrastructure for capturing and reusing experience. It reviews skills, memory, executable environments, parameter-side consolidation through training, and meta-level control, alongside evaluation and safety. This is a close conceptual predecessor: it already connects mutable harness surfaces to experience-driven improvement and meta-evolution.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://openreview.net/forum?id=IUltZSgLMm"
+      }
+    },
+    {
+      "id": "agent_systems_harness_survey2026",
+      "title": "Agent Systems with Harness Engineering",
+      "authors": "Tang, Xinyu and Peng, Han and Chen, Guoxin and Shi, Yuze and Su, Zitao and Liu, Peiyu and Zhao, Wayne Xin and Li, Yawen and Xue, Zhe",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=nM5tDHrQsx",
+      "venue": "Manuscript / official resource",
+      "doi": null,
+      "arxiv": null,
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Author-released manuscript dated 18 May 2026; OpenReview manuscript; metadata and text checked against the author-released repository PDF. Sources checked 2026-10-04. Reviews harness components including agent workflows, memory systems, skill libraries, and multi-agent orchestration. It relates harness design to model adaptation and training, and organizes evaluation across software engineering, deep research, tool use, computer use, and scientific discovery. It therefore supplies both architectural and domain-level context for harness optimization.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://openreview.net/forum?id=nM5tDHrQsx"
+      }
+    },
+    {
+      "id": "midharness2026",
+      "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+      "authors": "Kang, Minki and Hachiuma, Ryo and Zhang, Shaokun and Radhakrishnan, Subhashree and Fu, Yonggan and Jiang, Jindong and Liu, Mingjie and Hosseini-Asl, Ehsan and Dong, Yi and Wang, Yu-Chiang Frank and Lee, Byung-Kwan",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.39982v1",
+      "venue": "arXiv preprint",
+      "doi": null,
+      "arxiv": "2609.39982",
+      "category": "Task-Time Search and Output Refinement (Adjacent Work)",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 30 September 2026; checked arXiv v1, including Sections 2 and 4.3. Sources checked 2026-10-04. Samples several candidate actions from the same interaction history and uses a verifier to choose one before execution. The model-call wrapper implements listwise, pointwise, or pairwise selection while retaining the underlying generator and execution harness. A trained variant distills pairwise judgments into a verifier with the action generator still fixed.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09",
+        "precision": "month",
+        "basis": "arXiv identifier month; exact day not recorded",
+        "source": "https://arxiv.org/abs/2609.39982v1"
+      }
+    },
+    {
+      "id": "wu_rsi_survey2026",
+      "title": "Recursive Self-Improvement in AI: A Survey",
+      "authors": "Wu, Hao and Xu, Fan and Zhang, Fan and Xu, Zhipeng and Zhang, Yongheng and Li, Yinghui and Zhao, Yizhou and Zhao, Penghao and Yao, Weiran and Li, Zengxiang and Gao, Yuan and Gao, Zhangyang and Wang, Hanbin and Tao, Ruihan and Wang, Wenjie and Li, Qi and Fang, Junfeng and Ma, Xingjun and Li, Qiankun and Luo, Xiao and Zheng, Yefeng and Liu, Zhiwei and Wang, Stephen and Wang, Kun and Liu, Yang and Jiang, Yugang and Wang, Liang and Liu, Nan and Yu, Philip S. and Xiong, Caiming and Yang, Qiang and Wen, Qingsong",
+      "year": "2026",
+      "url": "https://www.preprints.org/manuscript/202609.2680/v1",
+      "venue": "Manuscript / official resource",
+      "doi": null,
+      "arxiv": null,
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Preprints.org version 1, submitted 29 September and posted 30 September 2026; not peer-reviewed. Sources checked 2026-10-04. Organizes RSI around automated design of AI infrastructure and repair or optimization of existing systems. It compares update targets, feedback, inheritance, and external control across self-training, memory, agent design, editable improvers, and automated research. Crucially, it distinguishes task gains and retained capabilities from improvement in the procedure that produces later updates; repeated optimization alone is insufficient evidence for that stronger claim.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://www.preprints.org/manuscript/202609.2680/v1"
+      }
+    },
+    {
+      "id": "openrsi_index",
+      "title": "OpenRSI Index",
+      "authors": "OpenRSI Foundation",
+      "year": "n.d.",
+      "url": "https://index.openrsi.foundation/",
+      "venue": "Manuscript / official resource",
+      "doi": null,
+      "arxiv": null,
+      "category": "Official Benchmark and Implementation Resources",
+      "kind": "resource",
+      "summary": "Source/version: Official website, introduction, and repository; Preview v0.1, accessed 2026-10-04. No publication date or standalone research-paper record was verified; this is a supplemental resource, not an additional paper within the October 1 cutoff. Packages research tasks from open projects for agents to improve under fixed budgets and evaluation contracts. The official RSI Harness separates a persistent working container from a fresh judging container for each submission. Its scope spans model-development tasks rather than uniformly measuring agent-harness evolution. The ACE playbook inspection-and-repair task is directly relevant to our editable-context discussion: it changes reusable advice for a frozen Qwen model on Formula reasoning problems.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": null,
+        "precision": "unknown",
+        "basis": "No publication date recorded",
+        "source": "https://index.openrsi.foundation/"
+      }
+    },
+    {
+      "id": "mltoolbench2026",
+      "title": "MLToolBench: Learning Tool-Augmented Agents for Machine Learning Development",
+      "authors": "Yu, Xin and Zhang, Lizhu and Bai, Jiamu and Wu, Yanhong and Wang, Zellux and Li, Serena and Li, Weiwei and Xue, Lingzhou and Fan, Xiangjun and Peng, Bo",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.36679v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.36679",
+      "arxiv": "2609.36679",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Constructs diagnostic tools from recurring failures in ML development, reruns tasks to test candidate tools, and trains tool use through SFT and RL. SPICE supplies turn-level feedback from the likelihood difference under privileged solution context. Classified as interface construction coupled to task-policy training, not established recursive self-modification of the tool constructor. Relevant to Section 2.5 and the ML-development domain.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-29",
+        "precision": "day",
+        "basis": "First submission recorded in literature map",
+        "source": "https://arxiv.org/abs/2609.36679v2"
+      }
+    },
+    {
+      "id": "pbsd2026",
+      "title": "Preference-Based Self-Distillation: Beyond KL Matching via Reward Regularization",
+      "authors": "Yu, Xin and Liao, Liuchen and Zhang, Yiwen and Yu, Yingchen and Xue, Lingzhou and Guo, Qinzhen",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2605.05040v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2605.05040",
+      "arxiv": "2605.05040",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Replaces direct teacher-distribution matching with a reward-regularized preference objective for on-policy self-distillation. Evaluates mathematical reasoning and tool use. Classified as adjacent model-level learning: it does not establish that its training data originate from an evolved harness or that the harness is autonomously rewritten. Provides a boundary comparison for Section 2.5.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-05-06",
+        "precision": "day",
+        "basis": "First submission recorded in literature map",
+        "source": "https://arxiv.org/abs/2605.05040v2"
+      }
+    },
+    {
+      "id": "servicecontrol2026",
+      "title": "When Should Service Agents Reconsider? Difficulty-Routed Control in Customer-Service Operations",
+      "authors": "Chen, Qian and Liu, Chengyuan and Yu, Xin",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2607.01426v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2607.01426",
+      "arxiv": "2607.01426",
+      "category": "Agent Architectures and Harness Infrastructure",
+      "kind": "paper",
+      "summary": "Routes routine service sessions to a baseline path and operationally coupled requests to stronger control, combining conflict-aware communication with reconsideration before backend writes. Evaluated on retail and airline tasks from tau-squared-bench. Classified as task-time harness architecture, not a cross-round harness-evolution method. Its routing and pre-write verification provide concrete design examples for the conversational-agent domain.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-07-01",
+        "precision": "day",
+        "basis": "First submission recorded in literature map",
+        "source": "https://arxiv.org/abs/2607.01426v1"
+      }
+    },
+    {
+      "id": "curveshift2026",
+      "title": "CurveShift: Is Agent Progress Scalar? Separating Level from Shape",
+      "authors": "Xing, Hanwen and Wang, Pengyun and Meng, BingXu and Alhamoud, Kumail and Li, Xiang and Wang, Jicheng and Yu, Xin and Han, Xinyang and Li, Xiaomin and Torr, Philip and Hao, Yuexing",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.00355v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.00355",
+      "arxiv": "2608.00355",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Distinguishes shifts in overall performance from changes in the difficulty-response curve. Highlights model–harness confounding in agentic evaluations and uses scaffold-free LiveCodeBench to examine a residual hard-task effect. Classified as evaluation methodology rather than harness evolution; its cleaner identification is specific to competitive programming. Relevant to attribution and evidence boundaries in Section 3.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-07-31",
+        "precision": "day",
+        "basis": "First submission recorded in literature map",
+        "source": "https://arxiv.org/abs/2608.00355v1"
+      }
+    },
+    {
+      "id": "chan2026intelligenceexplosion",
+      "title": "What if automating AI R&D triggers an intelligence explosion?",
+      "authors": "Chan, Alan and Winter, Christoph and Barto, Andrew and Pachocki, Jakub and Hinton, Geoffrey and Horvitz, Eric and Bengio, Yoshua and Song, Dawn and Clark, Jack and Greaves, Hilary and Korinek, Anton and Hammond, Samuel and Graepel, Thore and Bariach, Ben and Torr, Philip H. S. and McIlraith, Sheila A. and Clune, Jeff and Manning, Sam and Sastry, Girish and Davidson, Tom and Eth, Daniel and Mindermann, Sören",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.36054v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.36054",
+      "arxiv": "2609.36054",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Examines whether AI R&D automation could accelerate progress through feedback between improved AI systems and further software advances. It assesses preliminary evidence, bottlenecks, societal risks, and policy responses. The authors emphasize uncertainty; this is a background analysis, not an implemented harness-evolution method. Source locations: Introduction (p.~2), mechanism and frictions (pp.~3–5), and policy implications (pp.~6–8).",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-28",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.36054v1"
+      }
+    },
+    {
+      "id": "lean_coevolution2026",
+      "title": "Self-Modifying Lean Proof Agents with Verifier-Grounded Benchmark Coevolution",
+      "authors": "Li, Yuqing and Wu, Zeguan and Gan, Yu and Liu, Junyu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2607.17352v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2607.17352",
+      "arxiv": "2607.17352",
+      "category": "Self-Modification and Meta-Level Improvement",
+      "kind": "paper",
+      "summary": "Source/version: arXiv:2607.17352v1, first submitted 2026-07-19; checked 2026-10-05. Evolves Lean-agent workflow code and tools with a fixed verifier and changing curriculum. The accepted lineage emphasizes compiler-guided repair and checked lemma names.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-07-19",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2607.17352v1"
+      }
+    },
+    {
+      "id": "mermaidflow2025",
+      "title": "MermaidFlow: Redefining Agentic Workflow Generation via Safety-Constrained Evolutionary Programming",
+      "authors": "Zheng, Chengqi and Chen, Jianda and Lyu, Yueming and Ng, Wen Zheng Terence and Zhang, Haopeng and Ong, Yew-Soon and Tsang, Ivor and Yin, Haiyan",
+      "year": "2025",
+      "url": "https://arxiv.org/abs/2505.22967v1",
+      "venue": "ICML 2025 Workshop on Multi-Agent Systems in the Era of Foundation Models: Opportunities, Challenges and Futures",
+      "doi": "10.48550/arXiv.2505.22967",
+      "arxiv": "2505.22967",
+      "category": "Prompt, Workflow, and Program Optimization",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2025-05-29; checked arXiv version 1. Sources checked 2026-10-05. Publication: ICML 2025 Workshop on Multi-Agent Systems in the Era of Foundation Models (MAS), a non-archival workshop. This is distinct from main-conference publication. The summary uses arXiv v1. Evolves typed Mermaid workflow graphs with mutation and crossover before translating them into executable Python. On HumanEval, Section 5.4 combines a testing node from one parent with a diverse ensemble from another. Appendix B separately publishes GSM8K, MATH, HumanEval and MBPP workflow artifacts. These are searched compositions of available operators; their use does not establish that the optimizer itself evolves.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2025-05-29",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2505.22967v1"
+      }
+    },
+    {
+      "id": "sew2025",
+      "title": "SEW: Self-Evolving Agentic Workflows for Automated Code Generation",
+      "authors": "Liu, Siwei and Fang, Jinyuan and Zhou, Han and Wang, Yingxu and Meng, Zaiqiao",
+      "year": "2025",
+      "url": "https://arxiv.org/abs/2505.18646v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2505.18646",
+      "arxiv": "2505.18646",
+      "category": "Prompt, Workflow, and Program Optimization",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2025-05-24; checked arXiv version 2. Sources checked 2026-10-05. Jointly changes workflow topology and agent prompts for HumanEval, MBPP and LiveCodeBench. Section 5.5 identifies task-parsing and code-rewriting workflows as effective families. Appendix A.2 separates structural templates from prompt evolution; the latter includes off-task creative-writing text. We retain the work as a workflow-optimization precedent, but do not turn its illustrative templates into an independently verified final harness diff or equate an LLM review label with executed tests.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2025-05",
+        "precision": "month",
+        "basis": "arXiv identifier month; exact day not recorded",
+        "source": "https://arxiv.org/abs/2505.18646v2"
+      }
+    },
+    {
+      "id": "maas2025",
+      "title": "Multi-agent Architecture Search via Agentic Supernet",
+      "authors": "Zhang, Guibin and Niu, Luyang and Fang, Junfeng and Wang, Kun and Bai, Lei and Wang, Xiang",
+      "year": "2025",
+      "url": "https://proceedings.mlr.press/v267/zhang25bi.html",
+      "venue": "Proceedings of the 42nd International Conference on Machine Learning",
+      "doi": null,
+      "arxiv": null,
+      "category": "Prompt, Workflow, and Program Optimization",
+      "kind": "paper",
+      "summary": "Publication/version: ICML 2025; the evidence notes retain the inspected arXiv version 2502.04180v2. Source/version: First submitted 2025-02-06; checked arXiv version 2. Sources checked 2026-10-05. Learns an agentic supernet from which query-dependent architectures are sampled. Its code and math experiments include HumanEval, GSM8K and MATH. Section 4.4 illustrates difficulty-dependent depth and early exit. The persistent learned object is an architecture distribution and its operators, rather than one final universal workflow; this is a controller-optimization route, not evidence of autonomous recursive source-code rewriting.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2025-02-06",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2502.04180v2"
+      }
+    },
+    {
+      "id": "hyevo2026",
+      "title": "HyEvo: Self-Evolving Hybrid Agentic Workflows for Efficient Reasoning",
+      "authors": "Xu, Beibei and Ye, Yutong and Shen, Chuyun and Zhou, Yingbo and Chen, Cheng and Chen, Mingsong",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2603.19639v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2603.19639",
+      "arxiv": "2603.19639",
+      "category": "Prompt, Workflow, and Program Optimization",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-03-20; checked arXiv version 1. Sources checked 2026-10-05. Searches hybrid graphs containing LLM reasoning nodes and deterministic code nodes through multiple evolutionary islands. Evaluations cover GSM8K, MATH, MultiArith, HumanEval and MBPP. Figure 4 shows a lineage combining deeper reasoning with format checking and conditional correction. That illustrative lineage is not assigned to every benchmark. The paper supports jointly searching topology and node logic, while task-specific retained artifacts remain the appropriate unit for domain claims.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-03-20",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2603.19639v1"
+      }
+    },
+    {
+      "id": "flowevo2026",
+      "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+      "authors": "Ren, Zeyu and Yue, Ling and Li, Ran and Wang, Yishu and Xu, Shengxiang and Liu, Hanmo and Pan, Shaowu and Di, Shimin",
+      "year": "2026",
+      "url": "https://openreview.net/forum?id=hU2N7IIkcE",
+      "venue": "Third Conference on Language Modeling (COLM)",
+      "doi": "10.48550/arXiv.2607.21596",
+      "arxiv": null,
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Source/version: Checked arXiv version 2, revised 2026-08-20. The landing page reports an April first-submission date despite the July identifier; no first-month trend is inferred from this inconsistent metadata. Sources checked 2026-10-05. Compiles successful workflows into persistent executable skills and retrieves them either for direct reuse or to guide new workflow generation. Evaluated on ALFWorld, HumanEval, MBPP, GSM8K and MATH-500. Appendix A freezes the MBPP skill bank to separate reuse from continued learning. The paper's detailed direct-replay and curation traces concern ALFWorld; those results must not be attributed to mathematical solving. For code and math, the paper emphasizes skill-conditioned generation. This is persistent skill accumulation under a specified management procedure, not proof that the management procedure evolves.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-04-18",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2607.21596v2"
+      }
+    },
+    {
+      "id": "codeskill2026",
+      "title": "CODESKILL: Learning Self-Evolving Skills for Coding Agents",
+      "authors": "Li, Yanzhou and Zhang, Yiran and Zhang, Xiaoyu and Liu, Xiaoxia and Liu, Yang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2605.25430v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2605.25430",
+      "arxiv": "2605.25430",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-05-25; checked arXiv version 2. Sources checked 2026-10-05. Trains a skill-management policy using quality and execution feedback from a frozen downstream coding agent. The bank combines task-level procedures with event-triggered recovery guidance, evaluated on EnvBench, SWE-bench Verified and Terminal-Bench 2. Appendix D gives concrete Maven build-diagnosis and missing-test-jar skills. The learned manager and the skills it maintains are different update objects; whole-bank improvements do not establish the individual effect of each skill example.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-05-25",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2605.25430v2"
+      }
+    },
+    {
+      "id": "gse2026",
+      "title": "Learning Globally Reusable Skills for Coding Agents",
+      "authors": "Yang, Chen and Tian, Jiashuo and Wang, Ziqi and Liu, Xinyin and Ye, Meiru and Chen, Junjie",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.06153v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.06153",
+      "arxiv": "2608.06153",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-08-06; checked arXiv version 1. Sources checked 2026-10-05. Globalized Skill Evolution jointly maintains skill contents and a Skill Relation Graph, consolidating local updates and replaying historical cases before integration. Evaluations use OpenHands and mini-SWE-agent on bug-revealing test generation and false-positive report filtering. Figure 3 abstracts local rules into value-triggered versus state-triggered diagnosis linked to test construction; a second case consolidates nullability reasoning. These tasks broaden repository engineering beyond patch repair. The simplified cases illustrate learned guidance rather than isolated causal estimates.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-06",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.06153v1"
+      }
+    },
+    {
+      "id": "skillforge2026",
+      "title": "SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution",
+      "authors": "Chen, Silin and Li, Han and Gu, Xiaodong and Shi, Yuling and Guan, Haibing",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.18933v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.18933",
+      "arxiv": "2608.18933",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-08-19; checked arXiv version 1. Sources checked 2026-10-05. Acquires project-specific skills by solving synthetic repository issues before handling real issues, grounding the resulting knowledge in repository entities. The Django case in Section IV-E contrasts exponent-based patching with skill-guided precision semantics and boundary checks. This is proactive skill acquisition and reuse, not an online source-code rewrite of the repair agent. Its case-level test outcomes should not be interpreted as an ablation of every instruction.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-19",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.18933v1"
+      }
+    },
+    {
+      "id": "aibuildai2_2026",
+      "title": "AIBuildAI-2: A Knowledge-Enhanced Agent for Automatically Building AI Models",
+      "authors": "Zhang, Ruiyi and Qin, Peijia and Cao, Qi and Zhang, Li and Xie, Pengtao",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2605.27873v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2605.27873",
+      "arxiv": "2605.27873",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-05-27; checked arXiv version 1. Sources checked 2026-10-05. Uses a hierarchical knowledge system for autonomous ML engineering: high-level instructions and an index point to detailed knowledge documents. Post-run builders extract takeaways from working directories and update the relevant instructions; a separate stream incorporates new external material. Evaluations include MLE-bench and live competitions. The evolving object is reusable knowledge, distinct from the trained task model or ensemble produced by the agent. The reported architecture describes continual updates, but the reviewed text does not isolate the gain of a particular retained post-run document.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-05-27",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2605.27873v1"
+      }
+    },
+    {
+      "id": "wda2026",
+      "title": "Streamlined Reflective Evolution for Task-Adaptive Self-Refinement Pipelines",
+      "authors": "Zhou, Xiaofan and Cheng, Lu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.32458v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.32458",
+      "arxiv": "2609.32458",
+      "category": "Prompt, Workflow, and Program Optimization",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-09-26; checked arXiv version 1. Sources checked 2026-10-05. Workflow-Designing Agents jointly optimize refinement instructions and stage structure, using SPLIT to distribute accumulated instructions across stages. LiveBench Math is one of five evaluation settings. Appendices A.3 and A.13 identify selected two-stage and three-stage mathematical pipelines for different backbones, with search ancestry and calibration/test separation. More stages do not uniformly reduce inference calls; this is learned fixed-per-task refinement, not input-adaptive stopping or verified formal proof.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-26",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.32458v1"
+      }
+    },
+    {
+      "id": "skillevolean2026",
+      "title": "SkillEvoLean: Mutation-enhanced skill evolution for Lean provers",
+      "authors": "Zhou, Kuo and Yang, Zixiong and Zhang, Lu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.01799v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.01799",
+      "arxiv": "2610.01799",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-10-01; checked arXiv version 1. Sources checked 2026-10-05. Evolves Lean-proving skills comprising a root policy, reference resources and examples. Progressive updates use successful/failed trajectories; concept-guided mutation broadens search when sampled proofs all fail. Evaluations cover miniF2F, PutnamBench, IMO 2025 and USAMO 2026. The reviewed manuscript specifies editable files and update algorithms but does not supply a complete final before/after skill diff. Section 3.3 explicitly labels its cost table as design targets and assumptions; these entries are not empirical efficiency results. The work is retained with this distinction between method evidence and artifact-level evidence.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10",
+        "precision": "month",
+        "basis": "arXiv identifier month; exact day not recorded",
+        "source": "https://arxiv.org/abs/2610.01799v2"
+      }
+    },
+    {
+      "id": "evotrainer2026",
+      "title": "EvoTrainer: Co-Evolving LLM Policies and Training Harnesses for Autonomous Agentic Reinforcement Learning",
+      "authors": "Chen, Guhong and Shi, Yingcheng and Li, Yongbin and Li, Binhua and Xu, Xander and Wei, Hu and Ni, Shiwen and Yang, Min and Ye, Jieping",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2606.03108v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2606.03108",
+      "arxiv": "2606.03108",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2026-06-02; checked arXiv version 2. Sources checked 2026-10-05. Co-evolves LLM policies and the training-side harness used to interpret rollouts and decide interventions. Mathematical reasoning, competitive-programming generation and repository engineering provide distinct diagnostic needs. Section 3.3 describes metric expansion, specialized analyzers, backtests and evidence retrieval; trajectory analysis includes rejecting misleading high scores caused by leakage. This belongs to workflow extensions and training infrastructure, not a fixed-model inference-harness comparison.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-06",
+        "precision": "month",
+        "basis": "arXiv identifier month; exact day not recorded",
+        "source": "https://arxiv.org/abs/2606.03108v2"
+      }
+    },
+    {
+      "id": "agentevo2026",
+      "title": "AgentEvo: cost-aware agentic workflow generation via adaptive multi-stage evolution",
+      "authors": "Xiao, Bo and Liu, Haiyang and Wang, Yitong and Hou, Yanning and Xu, Ke and Zhang, Xingyi",
+      "year": "2026",
+      "url": "https://doi.org/10.1007/s40747-026-02325-0",
+      "venue": "Complex & Intelligent Systems",
+      "doi": "10.1007/s40747-026-02325-0",
+      "arxiv": null,
+      "category": "Prompt, Workflow, and Program Optimization",
+      "kind": "paper",
+      "summary": "Source/version: Publisher version; published online 2026-05-22, volume 12, article 208. Sources checked 2026-10-05. Optimizes executable workflows with a Pareto archive and adaptive exploration, refinement and crossover, explicitly balancing quality and token cost. Evaluates GSM8K, MATH, HumanEval and MBPP. It extends archive-based workflow search with pruning and recombination. The paper's prose gives an imprecise pass@1 definition, so we do not reuse its code-generation scores without checking the evaluation implementation; no dataset-specific final edit sequence is inferred from the search algorithm alone.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://doi.org/10.1007/s40747-026-02325-0"
+      }
+    },
+    {
+      "id": "drevo2026",
+      "title": "DREvo: Distilling Recalibrated Historical Experience for Harness Self-Evolution",
+      "authors": "Guo, Hanghui and Shi, Weijie and Chen, Zhangze and Xu, Shengxiang and Wang, Yishu and Zhang, Yimei and Ni, Wangze and Zhu, Jia and Di, Shimin",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2607.26722v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2607.26722",
+      "arxiv": "2607.26722",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Cross-domain harness search; classification evidence. Source/version: First submitted 2026-07-29; arXiv v1, checked 2026-10-05. Recalibrates accumulated evidence against the current harness before distilling a targeted search intent. Experiments include legal and symptom classification with held-out tests, and coding adaptation on reused benchmark suites. The reviewed text reports classifier evolution but does not expose a complete task-specific final classifier diff. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-07-29",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2607.26722v1"
+      }
+    },
+    {
+      "id": "taskcoevolve2026",
+      "title": "Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection",
+      "authors": "Miyai, Atsuyuki and Aizawa, Kiyoharu and Yamasaki, Toshihiko",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.20169v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.20169",
+      "arxiv": "2608.20169",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Validation-task selection; classification harness evolution. Source/version: First submitted 2026-08-20; arXiv v2, checked 2026-10-05. Uses adaptive validation-task selection to reduce evaluation cost in Meta-Harness search. The published selected classifier combines word-bigram and character n-gram TF-IDF retrieval, rank fusion and label-diversity control. This shared artifact is evaluated across Law, Symptom2Disease and USPTO; those datasets are not three independent discoveries. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-20",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.20169v2"
+      }
+    },
+    {
+      "id": "hase2026",
+      "title": "Harness-Aware Self-Evolving: Co-Evolving Model Weights, Harness, and Task Solutions",
+      "authors": "Luo, Haochen and Huang, Yi and Luo, Sichun and Liu, Fengyuan and Li, Lei and Hu, Zefa and Feng, Junlan and Liu, Qi",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2607.03935v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2607.03935",
+      "arxiv": "2607.03935",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Coupled model–harness evolution; classification. Source/version: First submitted 2026-07-04; arXiv v1, checked 2026-10-05. Co-evolves model weights and external harness components. Symptom2Disease cases show retrieval-tool and memory revisions beyond recency-based examples. Training-time retry traces, committed phase-boundary files and frozen final evaluation are distinct; full gains cannot be attributed to harness edits alone. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-07-04",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2607.03935v1"
+      }
+    },
+    {
+      "id": "hcl2026",
+      "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+      "authors": "Kang, Borui and Gu, Jinrui and Lv, Junhan and Li, Wenbin and Wang, Lei and Gao, Yang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.19013v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.19013",
+      "arxiv": "2608.19013",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Continual harness evolution; QA, games and visual perception. Source/version: First submitted 2026-08-19; arXiv v1, checked 2026-10-05. Keeps the model frozen while updating task interfaces, memory, capabilities and routing. Current-task and historical-anchor tests control commitment. Experiments span textual and visual task streams, ALFWorld and Minecraft. It supplies persistent harness-evolution evidence, but detailed final artifacts are not equally exposed for every task. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-19",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.19013v1"
+      }
+    },
+    {
+      "id": "zetta2026",
+      "title": "Zetta \\zeta: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+      "authors": "Ding, Xin and Mi, Liang and Huang, Mingzhe and Wang, Zixuan and Zhang, Chao and Hao, Zixu and Chen, Fu and Li, Xiangyu and Zheng, Yikai and Guo, Yaoyu and Wang, Weijun and Li, Kun and Wu, Hao and Liu, Yunxin and Cao, Ting",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.16590v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.16590",
+      "arxiv": "2608.16590",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Embodied execution; critic and recovery-code evolution. Source/version: First submitted 2026-08-17; arXiv v1, checked 2026-10-05. Evolves runtime critics and recovery skills around a frozen VLA. A published manipulation case adds pregrasp, bounded alternative regrasp and supported placement. Validation and regression gates govern persistent updates. Critics propose interventions rather than directly declaring official task success. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-17",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.16590v1"
+      }
+    },
+    {
+      "id": "harnesspai2026",
+      "title": "HarnessPAI: An Evolving Harness for Physical AI",
+      "authors": "Wang, Xin and Wu, Wenhao and Zhang, Menghao and Wang, Zhi and Shao, Kun and Luan, Jian and Li, Yang and Li, Qing and Gu, Shangding and Zhou, Huichi and Shi, Shuqing and Ni, Fei and Lu, Shuo and Meng, Weicheng and Li, Kang and Wu, Jin and Zhao, Kang and Guo, Shangmin and Li, Gen and Tang, Yongqiang and Zhang, Zhizhong and Xie, Yuan and Qu, Heng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.29166v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.29166",
+      "arxiv": "2609.29166",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Embodied execution; program and skill evolution. Source/version: First submitted 2026-09-24; arXiv v1, checked 2026-10-05. Uses executable programs around action primitives, fixing the program within a rollout and revising it between rollouts. Failures become reusable node-local skills; the published basket-placement case concerns geometric targeting. Expert-data collection and subsequent policy fine-tuning form a separate extension. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-24",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.29166v1"
+      }
+    },
+    {
+      "id": "shaper2026",
+      "title": "Self-Evolving Embodied Agents via Skill-Harness Evolution",
+      "authors": "Wang, Peidong and Ma, Zhiming and Chang, Ying and Luo, Xufang and Zhang, Yiqun and Wang, Zihan and Yang, Xiaocui and Feng, Shi and Yang, Yuqing and Li, Dongsheng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.11350v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.11350",
+      "arxiv": "2608.11350",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Embodied planning; skill and context-code evolution. Source/version: First submitted 2026-08-11; arXiv v1, checked 2026-10-05. Evolves persistent planner instructions and executable context builders with fixed model parameters. VLABench artifacts show actor-compatible commands, recent-state emphasis and stagnation cues. ESI-Bench separately adds evidence-directed active perception. The paper provides explicit before/after artifacts. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-11",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.11350v1"
+      }
+    },
+    {
+      "id": "comfyclaw2026",
+      "title": "COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows",
+      "authors": "Li, Zongxia and Liu, Dawei and Liu, Fuxiao and Zhou, Yuhang and Wu, Xiyang and Chen, Jingxi and Xie, Jing and Wu, Xiaomin and Sun, Lichao",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2607.01709v1",
+      "venue": "ECCV 2026 Workshop on Multimodal Large Language Models for Unified Comprehension and Generation",
+      "doi": "10.48550/arXiv.2607.01709",
+      "arxiv": "2607.01709",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Visual generation; persistent skill evolution. Source/version: First submitted 2026-07-02; arXiv v1, checked 2026-10-05. Builds ComfyUI workflows and distills cross-run traces and verifier feedback into reusable skills. The skill library changes across tasks; the typed graph editor, rollback mechanism and region verifier are supplied infrastructure. Published usage statistics identify consulted recipes but do not isolate each skill's causal contribution. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-07-02",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2607.01709v1"
+      }
+    },
+    {
+      "id": "autoref2026",
+      "title": "AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation",
+      "authors": "Oshima, Yuta and Onoda, Ku and Iwasawa, Yusuke and Suzuki, Masahiro and Matsuo, Yutaka and Furuta, Hiroki",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.35530v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.35530",
+      "arxiv": "2609.35530",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Visual generation; executable harness search. Source/version: First submitted 2026-09-28; arXiv v1, checked 2026-10-05. Searches over reusable multi-reference image-generation programs while keeping the models fixed. Its selected lineage adds grounded prompts, diverse drafts and failure-aware selection; direct-editing variants are discarded. Appendix D identifies the retained path, separating harness search from inference-time candidate generation. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-28",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.35530v1"
+      }
+    },
+    {
+      "id": "videoweaver2026",
+      "title": "VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation",
+      "authors": "Wei, Jianhui and Zhang, Yan and Tan, Jie and Zhu, Hengchuan and Zhang, Xiaotian and Chen, Ziyi and Zhang, Daoan and Xu, Wei and Jin, Yeying and Liu, Zuozhu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2606.08091v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2606.08091",
+      "arxiv": "2606.08091",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Visual generation; composition and creator-skill evolution. Source/version: First submitted 2026-06-06; arXiv v2, checked 2026-10-05. Evaluates long-video production and updates reusable composition skills from execution and output feedback. It also evolves category-local creator skills and merges them for transfer. Fixed foundation skills, frozen held-out evaluation and limited-example target-category adaptation are distinct components. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-06-06",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2606.08091v2"
+      }
+    },
+    {
+      "id": "cineforge2026",
+      "title": "CineForge: Self-Improving Agents for Long-Horizon Video Generation",
+      "authors": "Liu, Junxiang and Wang, Lin and Shi, Haiyu and Ma, Hongxu and Yang, Xiaoyu and Chen, Chunjie and Xu, Xiaoxiao and Zhan, Kaiqiao and Wang, Boao and Shi, Shuizhou and Zhu, Tianyun and Li, Jie and Li, Jiangtong",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.29621v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.29621",
+      "arxiv": "2608.29621",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Visual generation; cross-story production-policy evolution. Source/version: First submitted 2026-08-30; arXiv v1, checked 2026-10-05. Organizes long-video production and converts recurring cross-story failures into bounded policy patches. Fresh replay and paired stochastic evaluation gate updates; read-only checkpoint evaluation uses a fixed unseen story set and frozen reviewer. The relevant persistent object is the production policy, not a repaired individual video. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-30",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.29621v1"
+      }
+    },
+    {
+      "id": "vidharness2026",
+      "title": "VidHarness: Evolving Agent Harnesses for Cost-Efficient Long Video Understanding",
+      "authors": "Liang, Susan and Wu, Jianmin and Dong, Daxiang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.38413v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.38413",
+      "arxiv": "2609.38413",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Visual understanding; executable harness search. Source/version: First submitted 2026-09-29; arXiv v1, checked 2026-10-05. Searches video-agent programs with MCTS and uncertainty-aware multi-fidelity validation, then routes queries to budget-specialized harnesses. Frozen VLM and constrained video/transcript APIs delimit the edit space. The paper reports validation trajectories and generalization; final per-tool diffs are less explicit than the search procedure. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-29",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.38413v1"
+      }
+    },
+    {
+      "id": "videoevolve2026",
+      "title": "VideoEvolve: Evolving Agent Harnesses for Video Temporal Grounding",
+      "authors": "Luo, Bingjun and Fan, Yuhuan and Guo, Jialin and Li, Siqi",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.01766v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.01766",
+      "arxiv": "2610.01766",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Visual understanding; temporal-grounding harness evolution. Source/version: First submitted 2026-10-01; arXiv v1, checked 2026-10-05. Preserves stage interfaces while evolving grounding instructions and code. Published retained behavior adds repeated-occurrence and boundary tests plus conditional extra predictions with median aggregation. Both recovery and regression cases are documented, limiting claims of uniform benefit from more calls. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-01",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.01766v1"
+      }
+    },
+    {
+      "id": "proverinterface2026",
+      "title": "Growing an Agent/Prover Interface: Evolutionary Tool Design for Cost-Efficient Theorem Proving in Rocq and Lean",
+      "authors": "Viennot, Jules and Baudart, Guillaume and Lelarge, Marc",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.39544v3",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.39544",
+      "arxiv": "2609.39544",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Formal proving; executable prover-interface evolution. Source/version: First submitted 2026-09-30; arXiv v1, checked 2026-10-05. Grows a compiler-only MCP interface through empirically selected changes, including interactive proof-state control and candidate trials. Retained and rejected features are documented separately. Rocq test results and Lean-port cost/coverage trade-offs support bounded interface evolution, with human setup and review. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-30",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.39544v1"
+      }
+    },
+    {
+      "id": "proofevolve2026",
+      "title": "ProofEvolve: Neuro-Symbolic Evolution for Formal Automated Theorem Proving",
+      "authors": "Ye, Wenqian and Guan, Ziwei and Xie, Eric and Liu, Bohan and Modi, Shivani and Zhang, Buyun and Wen, Ellie Dingqiao and Kautz, Henry and Zhang, Aidong",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.26334v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.26334",
+      "arxiv": "2608.26334",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: Formal proving; persistent verified proof-resource evolution. Source/version: First submitted 2026-08-26; arXiv v1, checked 2026-10-05. Adds kernel-checked schemas to a cross-problem library. Inclusion concerns that persistent resource, not evolution of one proof DAG. Typed recombination and the separate LeanWorkbook retrieval experiment provide different evidence; neither demonstrates recursive rewriting of the outer optimizer. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-08-26",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.26334v1"
+      }
+    },
+    {
+      "id": "disco2026",
+      "title": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+      "authors": "Chen, Jianlyu and Hu, Yuyang and Qian, Hongjin and Liu, Jiawei and Wei, Wenqing and Chen, Xiaolong and Lian, Defu and Dou, Zhicheng and Li, Chaozhuo and Ye, Qiwei and Liu, Zheng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.02749v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.02749",
+      "arxiv": "2609.02749",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Classification: ML engineering; task-oriented skill evolution around a fixed runtime. Source/version: First submitted 2026-09-02; arXiv v1, checked 2026-10-05. Iteratively revises repository-grounded research skills using trial-execution feedback, then supplies the retained guidance to later MLE-bench runs. Inclusion concerns this refinement loop, not the static skill collection. Construction cost and task exposure must be distinguished from downstream execution. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-02",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.02749v1"
+      }
+    },
+    {
+      "id": "comprehensive_selfevolving_survey2025",
+      "title": "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems",
+      "authors": "Fang, Jinyuan and Peng, Yanwen and Zhang, Xi and Wang, Yingxu and Yi, Xinhao and Zhang, Guibin and Xu, Yi and Wu, Bin and Liu, Siwei and Li, Zihao and Ren, Zhaochun and Aletras, Nikos and Wang, Xi and Zhou, Han and Meng, Zaiqiao",
+      "year": "2025",
+      "url": "https://arxiv.org/abs/2508.07407v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2508.07407",
+      "arxiv": "2508.07407",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 10 August 2025; checked arXiv v2, revised 31 August 2025. Sources checked 2026-10-10. Organizes agent evolution around system inputs, the agent system, the environment, and optimizers. It reviews updates to models, prompts, memory, tools, workflows, and multi-agent communication, then examines domain-specific adaptation and evaluation. This earlier survey already links component changes with programming, biomedicine, and finance; domain coverage alone is therefore not a sufficient novelty claim for our survey. Role and placement: Broad related survey; Introduction and Section 2. Compare its component-oriented synthesis with our extraction of realized harness edits and their evidential status. Evidence checked: Abstract and Introduction; arXiv v2 PDF.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2025-08-10",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2508.07407"
+      }
+    },
+    {
+      "id": "ai4ai_survey2026",
+      "title": "AI4AI Survey: From Long-Horizon Agents to Recursive Self-Improvement—Definitions, Reliable Horizons, and Open Problems",
+      "authors": "Wu, Kai and Lyu, Hao and Luo, Zhen and Wang, Chaofan and Ye, Siyu and Lin, Jinghao and Ji, Xiaozhong and Jiang, Boyuan and Wang, Shengzhi and Wang, Zihan and Ye, Yiwen and Wang, Hao and Wang, Zimu and Liu, Wenzhe and Wang, Ruobing and Cai, Kai and Xiong, Mingliang and Fang, Wen and Liu, Mingqing and Zhang, Yifan and Yang, Lei and Hu, Xiaobin and Liu, Qingwen",
+      "year": "2026",
+      "url": "https://www.preprints.org/manuscript/202608.2108/v1",
+      "venue": "Manuscript / official resource",
+      "doi": "10.20944/preprints202608.2108.v1",
+      "arxiv": null,
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Preprints.org v1, posted 28 August 2026; not peer-reviewed. Sources checked 2026-10-10. Examines whether agents can carry AI improvement from an idea to a verified result. Its composition-gap analysis separates strong individual components from reliable end-to-end research. The harness chapter covers execution, persistence, governance, and self-modification, distinguishing fixed runtimes, external optimization, self-modification, and model–harness coupling. Its ownership and evidence analysis substantially overlaps our discussion of recursive scope. Role and placement: Close related survey; Introduction and Section 3. Differentiate our cross-domain, artifact-level evidence synthesis rather than claiming that prior reviews omit harness evolution. Evidence checked: Sections 1, 5, and 6; publisher full text.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://www.preprints.org/manuscript/202608.2108/v1"
+      }
+    },
+    {
+      "id": "reliable_selfevolving_survey2026",
+      "title": "Diving into Reliable Self-Evolving Agents: A Survey",
+      "authors": "Wang, Kaiqi and Hou, Wenjin and Yan, Yuchen and Jia, Hongrui and Zhong, Zhisheng and Ren, Botao and Chen, Yifei and Zhang, Songyang and Shen, Yongliang and Xiao, Jun and Yang, Yi and Zhuang, Yueting and Fan, Hehe",
+      "year": "2026",
+      "url": "https://www.preprints.org/manuscript/202609.0913/v1",
+      "venue": "Manuscript / official resource",
+      "doi": null,
+      "arxiv": null,
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Preprints.org v1, posted 11 September 2026; not peer-reviewed. Sources checked 2026-10-10. Classifies self-evolution by the deepest active update target: output, model, scaffold, improver, or criterion. It pairs these targets with a reliability ladder that asks whether evidence and oversight remain outside the corresponding update boundary. This supplies a close comparison for separating self-modification authority from demonstrated improvement. Role and placement: Close related survey; Introduction, Section 3, and the safety discussion. Its L0–L4 labels describe different categories from the L1–L5 framework adopted in our manuscript; level numbers must not be equated. Evidence checked: Abstract, Introduction, and the cross-level reliability synthesis; publisher full text.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://www.preprints.org/manuscript/202609.0913/v1"
+      }
+    },
+    {
+      "id": "systematic_coevolution_survey2026",
+      "title": "A Systematic Survey of Self-Evolving Agents: From Model-Centric to Environment-Driven Co-Evolution",
+      "authors": "Xiang, Zhishang and Yang, Chengyi and Chen, Zerui and Wei, Zhimin and Tang, Yunbo and Teng, Zongpei and Peng, Zexi and Li, Zongxia and Huang, Chengsong and He, Yicheng and Yang, Chang and Wang, Xinrun and Huang, Xiao and Zhang, Qinggang and Su, Jinsong",
+      "year": "2026",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6626878",
+      "venue": "Manuscript / official resource",
+      "doi": "10.2139/ssrn.6626878",
+      "arxiv": null,
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: SSRN record posted 5 May 2026, manuscript dated 22 April 2026. The author repository also links a TechRxiv version; these are one work, not two studies. Sources checked 2026-10-10. Organizes the field into model-centric evolution, environment-centric evolution, and their co-evolution. The author-maintained taxonomy places knowledge and experience reuse, modular architectures, and agent topologies within the environment-centric branch. This broad use of environment extends beyond a task simulator and should not be silently substituted for our narrower target-harness definition. Role and placement: Related survey; Introduction and Section 2.5. Provides a comparison for model–environment coupling, not an independent experimental harness-evolution case. Evidence checked: SSRN abstract and author-maintained taxonomy. Full manuscript retrieval was blocked in this pass; detailed claims remain unchecked. \\surveygroupHarness Architecture and Engineering",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026",
+        "precision": "year",
+        "basis": "Bibliographic publication year (first public release unknown)",
+        "source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6626878"
+      }
+    },
+    {
+      "id": "graph_selfevolving_survey2026",
+      "title": "Self-Evolving Agents as Dynamic Graph Transformation: A Survey and New Perspective",
+      "authors": "Xu, Yuanyuan and Zhang, Wenjie and Chen, Yin and Lin, Xuemin and Zhang, Ying",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.18104v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.18104",
+      "arxiv": "2608.18104",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Checked arXiv v1. The primary record reports 10 June 2026; dates are taken from the record rather than inferred from the identifier. Sources checked 2026-10-10. Uses typed graph transformations to relate changes to components and features, connection topology, active subgraphs, and cross-component co-evolution. Memory structures and workflows become comparable editable structures, with provenance and rollback relevant to retaining graph changes. The perspective covers a broader space than persistent harness improvement: a runtime graph change does not by itself establish an inherited improvement. Role and placement: Related survey; Section 2 workflow, search, and memory discussions. Use the graph representation as a comparison axis, not evidence that all graph transformations constitute RSI. Evidence checked: Introduction and the graph-transformation taxonomy; arXiv HTML. \\surveygroupDomain-Specific and Evaluation Surveys",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-06-10",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2608.18104"
+      }
+    },
+    {
+      "id": "safety_selfevolution_survey2026",
+      "title": "Safety in Self-Evolving Agents: A Survey",
+      "authors": "Chen, Jiahao and Feng, Zhou and Ma, Oubo and Yan, Yichen and Lin, Ruixiao and Zhang, Hangtao and Du, Linkang and An, Hengyu and Yang, Yong and Liu, Jun and Li, Junhao and Xu, Naen and Zhou, Chunyi and Su, Yuan and Jin, Zehao and Ma, Qianli and Qi, Leyi and Wang, Yiming and Ma, Zhe and Pu, Yuwen and Du, Mengyao and Song, Yuanyi and Huang, Enhao and Fu, Zhihui and Wang, Jun and Li, Jinfeng and Chen, Yuefeng and Xue, Hui and Li, Yiming and Du, Tianyu and Ji, Shouling",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.00093v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.00093",
+      "arxiv": "2610.00093",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Checked arXiv v1; the primary record reports 8 September 2026. Sources checked 2026-10-10. Introduces SAVER: Substrate, Adaptation, Violation, Exposure, and Response. Its central object is the transition through which experience becomes reusable influence. A previously legitimate memory, skill, or workflow can become unsafe when its authority, persistence, or scope expands. The survey calls for tracking affected descendants and evaluating recovery after adaptation resumes, extending beyond static response safety. Role and placement: Safety-focused related survey; the safety and evaluation discussion. Particularly relevant to retained harness state and the limits of one-round acceptance checks. Evidence checked: Introduction, SAVER framework, and longitudinal evaluation discussion; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-08",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.00093"
+      }
+    },
+    {
+      "id": "humanoid_selfevolution_survey2026",
+      "title": "Self-Evolving AI for Humanoids: Mechanisms, Safety, and Evaluation of Post-Deployment Self-Improvement",
+      "authors": "Nguyen, Loc X. and Raha, Avi Deb and Le, Huy Q. and Huh, Eui-Nam and Niyato, Dusit and Hong, Choong Seon",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2609.13236v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2609.13236",
+      "arxiv": "2609.13236",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: Checked arXiv v1; the primary record reports 2 September 2026. Sources checked 2026-10-10. Reviews post-deployment changes to a humanoid's policy, perception, memory, workflow, and body through self-learning, adaptation, optimization, and generation. It distinguishes fast task execution from slower retained updates and synthesizes safety constraints on admissible changes. This broad embodied scope includes weight and morphology changes that fall outside our core harness corpus. Role and placement: Embodied-domain and safety background; Section 4 and the safety discussion. Its conceptual safety organization is not an experimentally evolved harness artifact. Evidence checked: Sections 2.2, 7, and 8; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-09-02",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2609.13236"
+      }
+    },
+    {
+      "id": "ec_trustworthy_survey2026",
+      "title": "Evolutionary Computation for Trustworthy AI: From Attacks and Defenses to Self-Evolving Era",
+      "authors": "Dong, Junhao and Wang, Chenkai and Lin, Xuanhui and Gong, Mingrong and Wang, Siyu and Wen, Yuqing and Liu, Jiao and Huang, Catherine and Yen, Gary G. and Yao, Xin and Ong, Yew-Soon",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.02996v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.02996",
+      "arxiv": "2610.02996",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2 October 2026; checked arXiv v1. Sources checked 2026-10-10. Connects evolutionary attacks, evolutionary defenses, and trustworthy self-evolving systems. For persistent updates, it distinguishes restricting the admissible search space, selecting updates with safety-aware feedback, and coupling adaptive attackers and defenders. This helps connect search and retention decisions to trustworthiness while preserving the distinction between one-off adversarial search and inherited system change. Role and placement: Adjacent methodological survey; Sections 2.2 and 5. It supports discussion of search constraints and safe retention, not a new target-agent evolution result. Evidence checked: Sections II-A, III-C, and VII; arXiv HTML. \\surveygroupConceptual Frameworks and Position Papers",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-02",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.02996"
+      }
+    },
+    {
+      "id": "mesh_harness2026",
+      "title": "MESH-Harness: Self-Improving Agent Harnesses via Bandit-Guided Compositional Evolution",
+      "authors": "Shang, Zhiwei and Huo, Yu and Gong, Mingrong and Yan, An and Qu, Zikun and Dong, Junhao and Low, Bryan Kian Hsiang and Wu, Chenglin and Dai, Zhongxiang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.05300v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.05300",
+      "arxiv": "2610.05300",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 4 October 2026; checked arXiv v1. Sources checked 2026-10-10. Maintains role-specific pools of interchangeable modules, scores their combinations with full-covariance LinUCB, and uses mixed-start coordinate ascent to choose complete harnesses for evaluation. Traces guide local code proposals. Crucially, Appendix D.5 reports that final text, math, and coding harnesses use initial-pool implementations; the final ScienceWorld harness includes a newly refreshed planner. These are distinct contributions of composition selection and newly authored code, not uniformly new evolved modules. Role and placement: Core harness-search method; Section 2.2. Candidate for cross-domain extraction in Section 4; matched candidate-evaluation budgets do not imply matched token costs. Evidence checked: Section 4 and Appendix D.3–D.5; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-04",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.05300"
+      }
+    },
+    {
+      "id": "cig2026",
+      "title": "Causal Improvement Graph for Agentic Harness Optimization",
+      "authors": "Zhang, Junjie and Liu, Shunyu and Wang, Haoyu and Lin, Ting-En and Li, Yongbin and Tao, Dacheng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.05039v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.05039",
+      "arxiv": "2610.05039",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 4 October 2026; checked arXiv v1. Sources checked 2026-10-10. Externalizes optimization history as linked Evidence, Hypothesis, Intervention, and Outcome nodes. Local proposer operations inspect and revise this shared state instead of reconstructing the full experimental logic from raw logs. A reported text-task case preserves both recovery on one dataset and failure of the joint objective, so later proposals can use a scoped assessment rather than a binary success narrative. Role and placement: Core optimization-memory and direction-guidance method; Sections 2.3–2.4. This graph belongs to the improvement process, not the target agent's task memory. The title does not establish general causal identification or evolution of the controller itself. Evidence checked: Sections 3.2–3.4 and 4.6; Appendix A.9; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-04",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.05039"
+      }
+    },
+    {
+      "id": "sorsi2026",
+      "title": "Second-Order Problem Solving for Recursive Self-Improvement in Formal Verification",
+      "authors": "Jiang, Yuxuan and Vempaty, Aditya and Jagmohan, Ashish",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.05701v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.05701",
+      "arxiv": "2610.05701",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 5 October 2026; checked arXiv v2, revised 6 October 2026. Sources checked 2026-10-10. Detects recurring failures, opposing edits, and expectation mismatches, then executes diagnostic probes before proposing further workflow changes. Persistent inquiry records retain hypotheses, negative evidence, pending checks, and monitoring status across rounds. Lean 4 and Verus experiments compare this process with naive RSI under a matched search-time budget. The method directly addresses repeated parameter toggling without resolving the underlying workflow failure. Role and placement: Core diagnosis-guided workflow improvement; Sections 2.3–2.4 and formal-verification evidence in Section 4. Second-order diagnosis is not automatically evidence that the improvement algorithm rewrites itself. Evidence checked: Sections 4–6; Appendices B and D.3–D.6; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-05",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.05701"
+      }
+    },
+    {
+      "id": "verse2026",
+      "title": "VERSE: Verified Self-Evolving Optimizer for Agent Harnesses",
+      "authors": "Wang, Zekai and Ge, Yingqiang and Wang, Zekun and Wang, Hai and Xu, Yuhui and Frandsen, Joshua and Fu, Shancong and Wilson, Ashia C. and Reddy, Chandan K.",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.02616v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.02616",
+      "arxiv": "2610.02616",
+      "category": "Self-Modification and Meta-Level Improvement",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 2 October 2026; checked arXiv v1. Sources checked 2026-10-10. Allows a harness optimizer to revise its own prompts, tools, hooks, skills, and notes while also modifying an executor harness, with both model weights fixed. Draft execution, failure replay, and perturbation provide verification. Appendix L documents optimizer-written artifacts, including batch failure triage and hooks that require draft verification. These artifacts belong to the optimizer; they must not be presented as capabilities evolved in the target coding agent. Role and placement: Core bounded improver self-modification; Sections 2.4 and 3. The reported verification ablation and concrete optimizer artifacts make it particularly relevant to recursive scope; they do not establish unrestricted RSI. Evidence checked: Sections 2.3, 3.1, and 4.3; Appendix L; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-02",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.02616"
+      }
+    },
+    {
+      "id": "mass_rsi2026",
+      "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+      "authors": "Lee, Hyunin and Xu, Jinglue and Seely, Jeffrey and Lee, Donghyun and Sojoudi, Somayeh and Zaharia, Matei and Tang, Yujin",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.12176v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.12176",
+      "arxiv": "2610.12176",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 8 October 2026; checked arXiv v1. Sources checked 2026-10-10. Alternates task-specific multi-agent workflow search with supervised fine-tuning on selected execution traces. Search edits role specifications, handoffs, and information routing under structural constraints; the updated model then serves as executor, optimizer, and evaluator in the next cycle. Two reported cycles and behavioral audits examine internalization of delegation and code handoffs, including behavior under bare task prompts. Role and placement: Workflow–model coupling; Section 2.5 and bounded recursive-scope comparison in Section 3. Distinguish training-time, task-specific teacher workflows from a single persistent deployment harness. Self-evaluation during search and external test evaluation play different roles. Evidence checked: Section 3 and Sections 5.1–5.2; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-08",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.12176"
+      }
+    },
+    {
+      "id": "emho2026",
+      "title": "EMHO: EMbodied Agent Harness Optimization via Experience Traces",
+      "authors": "Lee, Hyun Jung and Kim, Jungtaek and Jeong, Jongwon and Kam, Tae-Eui and Kim, Donghyun and Lee, Yong Jae",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.08432v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.08432",
+      "arxiv": "2610.08432",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 6 October 2026; checked arXiv v1. Sources checked 2026-10-10. Optimizes a frozen embodied model's harness from trajectories and revision history. Reported edits carry blocked-action feedback into replanning, detect valid but repetitive actions, track manipulation phases, and choose vision tools according to the current uncertainty. EMHO-Merge uses episode-level gains and losses to refine when shared behaviors apply across subtasks. Navigation and manipulation examples provide concrete domain-specific changes beyond generic recovery prompts. Role and placement: Core embodied harness evolution; Section 4 candidate. Qualitative trajectory changes and overall system gains must remain separate from isolated causal effects of individual edits. Evidence checked: Sections 3 and 5; Appendices D and E; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-06",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.08432"
+      }
+    },
+    {
+      "id": "worldabduct2026",
+      "title": "Safe, Persistent, and Evolving Agent Harness for Understanding Partially Observable Worlds",
+      "authors": "Gao, Yisen and Guo, Yue and Zong, Qing and Guo, Yiwen and Song, Yangqiu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.11552v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.11552",
+      "arxiv": "2610.11552",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Source/version: First submitted 8 October 2026; checked arXiv v1. Sources checked 2026-10-10. WorldAbduct diagnoses execution gaps, proposes harness changes or hidden-rule hypotheses, and tests the latter before retaining them in E-Ledger's static world layer. Its appendix audits final rules against task-critical triggers and side effects in World of Workflows. The code-approval architecture is a designed starting mechanism; verified rules and their applicable conditions are the retained products of evolution. ScienceWorld and DiscoveryWorld provide additional settings. Role and placement: Core environment-knowledge and harness adaptation; Sections 2.3–2.4 and Section 4 candidate. Separate transient task state from rules retained across tasks, and distinguish partially correct rule scope from fully verified facts. Evidence checked: Section 3.3; Appendices A.3, C, and D; arXiv HTML.",
+      "added_on": "2026-10-10",
+      "release": {
+        "value": "2026-10-08",
+        "precision": "day",
+        "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+        "source": "https://arxiv.org/abs/2610.11552"
       }
     }
   ]

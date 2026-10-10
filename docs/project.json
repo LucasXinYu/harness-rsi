@@ -6,43 +6,406 @@
   "domains": [
     {
       "id": "coding",
-      "name": "Coding & terminal",
-      "findings": []
+      "name": "Coding",
+      "subtitle": "Executable artifacts, precise edits and verifiable delivery.",
+      "records": 36,
+      "subcategories": 4,
+      "scope": [
+        "Program generation & editing",
+        "Repository engineering",
+        "Terminal tasks",
+        "ML engineering"
+      ],
+      "findings": [
+        {
+          "id": "route-edits",
+          "title": "Keep the edit payload intact.",
+          "tasks": "Program editing · Terminal · ML engineering",
+          "before": "A multiline file-write call is rejected and its code is sent to the shell.",
+          "after": "Dispatch by editing-command name and preserve the remaining text as the file payload. Related updates normalize editor inputs or return structured experiment results.",
+          "result": "ModularRSI reports 36 → 25 mean interaction steps across three successful runs per version. SICA and SIA address other edit and experiment interfaces.",
+          "evidence_type": "Case comparison",
+          "limit": "Concurrent edits prevent attributing the step reduction to dispatch alone. SICA reports implemented updates; final retention is not confirmed.",
+          "sources": [
+            {
+              "key": "modularrsi2026",
+              "name": "ModularRSI",
+              "url": "https://arxiv.org/abs/2609.14857v1",
+              "locator": "Appendix D.4; Listings 7–9; version-specific Go repair case"
+            },
+            {
+              "key": "sica2025",
+              "name": "SICA",
+              "url": "https://openreview.net/forum?id=rShJCyLsOr",
+              "locator": "Appendix D, updates 6 and 10"
+            },
+            {
+              "key": "sia2026",
+              "name": "SIA",
+              "url": "https://arxiv.org/abs/2605.27276v2",
+              "locator": "ML experiment driver and parameter–score interface"
+            }
+          ]
+        },
+        {
+          "id": "bounded-context",
+          "title": "Read the region, not the whole world.",
+          "tasks": "Repository repair · Terminal · ML engineering",
+          "before": "Whole-file views and long tool returns consume the working context.",
+          "after": "Use line-range reads and unique-string replacement; keep the head and tail of long outputs; shorten older returns. ML agents can retain bounded experiment summaries.",
+          "result": "The complete Multi-task Self-Harness recovers 7 of 12 SWE-Bench Pro tasks where the seed exceeds the input limit.",
+          "evidence_type": "Whole-harness result",
+          "limit": "This is not a truncation-only ablation. DGM, SICA and AIDE² offer complementary implementations rather than a shared evaluated patch.",
+          "sources": [
+            {
+              "key": "dgm2025",
+              "name": "DGM",
+              "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/aa5f5e6eb6f613ec412f1d948dfa21a5-Paper-Conference.pdf",
+              "locator": "Agent tool evolution and editing-tool case analysis"
+            },
+            {
+              "key": "sica2025",
+              "name": "SICA",
+              "url": "https://openreview.net/forum?id=rShJCyLsOr",
+              "locator": "Appendix D, updates 8, 13 and 14"
+            },
+            {
+              "key": "multitask_selfharness2026",
+              "name": "Multi-task Self-Harness",
+              "url": "https://arxiv.org/abs/2609.38372v1",
+              "locator": "SWE-Bench Pro input-limit recovery analysis"
+            },
+            {
+              "key": "aide2_2026",
+              "name": "AIDE²",
+              "url": "https://arxiv.org/abs/2609.26457v1",
+              "locator": "Discovered search strategies and bounded experiment summaries"
+            }
+          ]
+        },
+        {
+          "id": "typed-recovery",
+          "title": "Recover from the failure that actually happened.",
+          "tasks": "Program generation · Repository repair · Terminal",
+          "before": "An empty patch, a failed test and a missing dependency all look like an unfinished task.",
+          "after": "Retry empty patches, send test failures to repair, install missing dependencies before debugging source, and protect already validated outputs.",
+          "result": "Self-Harness’s paired Astropy case progresses from syntax-only checking to executable verification; all four previously failing FAIL-TO-PASS tests pass.",
+          "evidence_type": "Paired case",
+          "limit": "The Astropy result is a whole-harness comparison. Retry paths and artifact protection come from distinct studies and settings.",
+          "sources": [
+            {
+              "key": "dgm2025",
+              "name": "DGM",
+              "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/aa5f5e6eb6f613ec412f1d948dfa21a5-Paper-Conference.pdf",
+              "locator": "Empty-patch recovery case"
+            },
+            {
+              "key": "tthe2026",
+              "name": "TTHE",
+              "url": "https://arxiv.org/abs/2607.08124v1",
+              "locator": "Conditional verification and patch retries"
+            },
+            {
+              "key": "aflow2024",
+              "name": "AFlow",
+              "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5492ecbce4439401798dcd2c90be94cd-Paper-Conference.pdf",
+              "locator": "Program-testing and repair workflow"
+            },
+            {
+              "key": "selfharness2026",
+              "name": "Self-Harness",
+              "url": "https://arxiv.org/abs/2606.09498v3",
+              "locator": "Appendix B.2; Figure 16, GLM Astropy case"
+            },
+            {
+              "key": "ahe2026",
+              "name": "AHE",
+              "url": "https://arxiv.org/abs/2604.25850v4",
+              "locator": "Appendix C.1–C.2; shell-guard and completion cases"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "math",
-      "name": "Math & formal reasoning",
-      "findings": []
+      "id": "reasoning",
+      "name": "Reasoning & information",
+      "subtitle": "Interpretations, competing answers and machine-checkable proofs.",
+      "records": 33,
+      "subcategories": 7,
+      "scope": [
+        "Mathematics",
+        "Formal proving",
+        "Classification",
+        "Question answering"
+      ],
+      "findings": [
+        {
+          "id": "interpretation",
+          "title": "Check the question before computing the answer.",
+          "tasks": "Arithmetic · Document-grounded QA",
+          "before": "Calculation can proceed from a mistaken interpretation of the problem or source document.",
+          "after": "Revise a structured problem representation, or specify operands, denominators and corpus checks before calculating. AFlow instead verifies a selected answer computationally.",
+          "result": "The reusable change is where checking enters the computation: before interpretation is fixed, or after a candidate answer exists.",
+          "evidence_type": "Artifact comparison",
+          "limit": "These observations locate different verification stages; they do not isolate causal performance gains.",
+          "sources": [
+            {
+              "key": "adas2024",
+              "name": "ADAS",
+              "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf",
+              "locator": "Discovered arithmetic agent and structured problem representation"
+            },
+            {
+              "key": "harnessevolve2026",
+              "name": "HarnessEvolve",
+              "url": "https://arxiv.org/abs/2609.00829v1",
+              "locator": "OfficeQA skill analysis"
+            },
+            {
+              "key": "aflow2024",
+              "name": "AFlow",
+              "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5492ecbce4439401798dcd2c90be94cd-Paper-Conference.pdf",
+              "locator": "Arithmetic answer-verification workflow"
+            }
+          ]
+        },
+        {
+          "id": "discriminating-evidence",
+          "title": "Retrieve the evidence that separates answers.",
+          "tasks": "Classification · Memory-grounded QA",
+          "before": "More similar examples need not resolve the distinction between competing labels or answers.",
+          "after": "Retrieve same-label confirmers and competing-label challengers; mix word- and character-based rankings; activate name-stripped queries and multi-hop decomposition.",
+          "result": "EvolveMem’s repeated-evolution ablations lose LoCoMo F1 when either query mechanism is removed.",
+          "evidence_type": "Procedure ablation",
+          "limit": "The ablation concerns the evolution procedure, not one fixed checkpoint. A classifier reused across datasets is one artifact, not independent discoveries.",
+          "sources": [
+            {
+              "key": "metaharness2026",
+              "name": "Meta-Harness",
+              "url": "https://openreview.net/forum?id=tmbOUyFx3R",
+              "locator": "Draft-verification and selected single-call classifier analyses"
+            },
+            {
+              "key": "taskcoevolve2026",
+              "name": "Task-CoEvolve",
+              "url": "https://arxiv.org/abs/2608.20169v2",
+              "locator": "Classification retrieval and repeated-label discounting"
+            },
+            {
+              "key": "mce2026",
+              "name": "MCE",
+              "url": "https://openreview.net/forum?id=P1jHroBS5E",
+              "locator": "Legal-act and symptom-specific routing"
+            },
+            {
+              "key": "evolvemem2026",
+              "name": "EvolveMem",
+              "url": "https://arxiv.org/abs/2605.13941v1",
+              "locator": "LoCoMo ablations of query preprocessing and decomposition"
+            }
+          ]
+        },
+        {
+          "id": "proof-state",
+          "title": "Make a failed proof actionable.",
+          "tasks": "Formal proving · Lean and Rocq",
+          "before": "Whole-file compilation gives limited support for testing and revising a local proof step.",
+          "after": "Add persistent proof states, rollback and local trials; use bounded Lean repairs and verify lemma names and signatures.",
+          "result": "A richer Lean helper-lemma branch encounters context and assembly failures. A heavily used Rocq lemma-search proposal is rejected without accuracy gains.",
+          "evidence_type": "Positive and negative cases",
+          "limit": "More tools and more decomposition do not reliably yield completed proofs; final status matters as much as tool usage.",
+          "sources": [
+            {
+              "key": "lean_coevolution2026",
+              "name": "Lean co-evolution",
+              "url": "https://arxiv.org/abs/2607.17352v1",
+              "locator": "Evolved repair and helper-lemma lineage analysis"
+            },
+            {
+              "key": "proverinterface2026",
+              "name": "Prover-interface evolution",
+              "url": "https://arxiv.org/abs/2609.39544v3",
+              "locator": "Persistent state, rollback, local trials and rejected lemma search"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "classification",
-      "name": "Text classification",
-      "findings": []
+      "id": "interactive",
+      "name": "Interactive & embodied",
+      "subtitle": "Actions whose consequences change the next state.",
+      "records": 17,
+      "subcategories": 4,
+      "scope": [
+        "Browser interaction",
+        "Application & service workflows",
+        "Game playing",
+        "Robotic manipulation"
+      ],
+      "findings": [
+        {
+          "id": "action-binding",
+          "title": "Bind an action to the right object.",
+          "tasks": "Browser tasks · Application workflows",
+          "before": "A textbox lookup is ambiguous, or an API action is attempted without authentication.",
+          "after": "Restrict the lookup to its confirmation dialog; supply login guidance and restate prerequisites after repeated authorization errors.",
+          "result": "SkillWeaver retains an executable selector patch. LiteEvo’s prompt-plus-processor bundle outperforms either component alone in AppWorld.",
+          "evidence_type": "Retained patch / bundle comparison",
+          "limit": "The bundle result does not isolate the login reminder. Object selection and prerequisites are different repairs to action execution.",
+          "sources": [
+            {
+              "key": "skillweaver2025",
+              "name": "SkillWeaver",
+              "url": "https://arxiv.org/abs/2504.07079v1",
+              "locator": "Deletion-confirmation dialog API-repair case"
+            },
+            {
+              "key": "liteevo2026",
+              "name": "LiteEvo",
+              "url": "https://arxiv.org/abs/2609.33146v1",
+              "locator": "Appendix B.1–B.2; AppWorld Table 2"
+            }
+          ]
+        },
+        {
+          "id": "decision-support",
+          "title": "Turn task rules into executable checks.",
+          "tasks": "Game playing",
+          "before": "The agent must track admissible actions and evaluate competing moves during interaction.",
+          "after": "Synthesize game-specific legality code or reusable probability calculations; use expected value to choose between raising and calling.",
+          "result": "AutoHarness constrains admissible actions. A selected DemoEvolve Liar’s Dice variant changes when the agent calls rather than raises.",
+          "evidence_type": "Artifact comparison",
+          "limit": "AutoHarness’s outer action/retry loop is supplied architecture. The evolved legality code must not be confused with that inherited loop.",
+          "sources": [
+            {
+              "key": "autoharness2026",
+              "name": "AutoHarness",
+              "url": "https://openreview.net/forum?id=g9rEYVNn5T",
+              "locator": "Game-specific legality-code evolution"
+            },
+            {
+              "key": "che2026demoevolve",
+              "name": "DemoEvolve",
+              "url": "https://arxiv.org/abs/2605.24539v2",
+              "locator": "Liar’s Dice artifact and selected expected-value variant"
+            }
+          ]
+        },
+        {
+          "id": "physical-recovery",
+          "title": "Recover from the observed physical state.",
+          "tasks": "Robotic manipulation",
+          "before": "Placement can fail because the grasp is unstable or the target geometry is misestimated.",
+          "after": "Add bounded regrasp, memory of failed geometries and support checks; alternatively correct the basket target from upper-rim points while keeping the controller.",
+          "result": "Zetta’s cumulative stack transfers unchanged to three related tasks: mean success rises from 64% to 84%.",
+          "evidence_type": "Related-task transfer",
+          "limit": "The result does not isolate individual recovery branches or establish transfer to other domains. HarnessPAI supplies a complementary state-estimation repair.",
+          "sources": [
+            {
+              "key": "zetta2026",
+              "name": "Zetta",
+              "url": "https://arxiv.org/abs/2608.16590v1",
+              "locator": "Placement lineage and three-task unchanged-stack transfer"
+            },
+            {
+              "key": "harnesspai2026",
+              "name": "HarnessPAI",
+              "url": "https://arxiv.org/abs/2609.29166v1",
+              "locator": "Basket upper-rim target correction case"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "workspaces",
-      "name": "Web & professional workflows",
-      "findings": []
-    },
-    {
-      "id": "science",
-      "name": "ML & scientific discovery",
-      "findings": []
-    },
-    {
-      "id": "engineering",
-      "name": "Engineering design",
-      "findings": []
-    },
-    {
-      "id": "embodied",
-      "name": "Embodied agents",
-      "findings": []
-    },
-    {
-      "id": "multimodal",
-      "name": "Multimodal agents",
-      "findings": []
+      "id": "visual",
+      "name": "Visual understanding & generation",
+      "subtitle": "Grounded observations and reusable composition procedures.",
+      "records": 9,
+      "subcategories": 5,
+      "scope": [
+        "Video understanding",
+        "Temporal grounding",
+        "Image perception & QA",
+        "Image generation",
+        "Video production"
+      ],
+      "findings": [
+        {
+          "id": "observation-links",
+          "title": "Keep claims attached to observations.",
+          "tasks": "Video understanding · Reference-based generation",
+          "before": "A text conclusion alone can lose which frame, event or input reference supports it.",
+          "after": "Store frame-linked findings, uncertainty and entity/event relations; bind requested subjects and scene elements to specific image references.",
+          "result": "Video-RSI’s full evolved harness moves MLVU accuracy from 62.4% to 72.9% while using fewer frames.",
+          "evidence_type": "Whole-harness result",
+          "limit": "This does not isolate the graph’s contribution or establish lower total compute. AutoRef addresses reference binding in a different task.",
+          "sources": [
+            {
+              "key": "videorsi2026",
+              "name": "Video-RSI",
+              "url": "https://arxiv.org/abs/2609.37950v1",
+              "locator": "Sections 4.2–4.5; Table 2"
+            },
+            {
+              "key": "autoref2026",
+              "name": "AutoRef",
+              "url": "https://arxiv.org/abs/2609.35530v1",
+              "locator": "Sections 4–5; reference-binding lineage"
+            }
+          ]
+        },
+        {
+          "id": "visual-recheck",
+          "title": "Recheck the interval with the same frames.",
+          "tasks": "Temporal grounding",
+          "before": "One generic prediction from 64 uniform frames can miss repeated events or interval boundaries.",
+          "after": "Add event-boundary checks, trigger extra predictions conditionally and aggregate endpoints by medians.",
+          "result": "VideoEvolve improves a kettle case, but a light-switch regression persists despite additional calls.",
+          "evidence_type": "Single-study finding",
+          "limit": "All configurations use the same frames. Additional reasoning costs compute and can preserve the same mistaken interpretation.",
+          "sources": [
+            {
+              "key": "videoevolve2026",
+              "name": "VideoEvolve",
+              "url": "https://arxiv.org/abs/2610.01766v1",
+              "locator": "Sections 4.1 and 4.4–4.5; Figure 3; Table 3"
+            }
+          ]
+        },
+        {
+          "id": "composition-selection",
+          "title": "Compare drafts against concrete failure conditions.",
+          "tasks": "Image generation · Video production",
+          "before": "Draft selection can overlook reference-specific failures or depend on presentation order.",
+          "after": "Generate subject-led and background-led drafts, check hard failures and require a tied challenger to win in both orders. Other work retains composition recipes or production skills.",
+          "result": "At a fixed three-image budget, AutoRef’s held-out average falls from 7.37 to 6.93 when its combined failure-aware selector is replaced.",
+          "evidence_type": "Combined-component ablation",
+          "limit": "The ablation does not isolate order swapping. Reusable selection and composition procedures are the harness artifacts; a generated image is not.",
+          "sources": [
+            {
+              "key": "autoref2026",
+              "name": "AutoRef",
+              "url": "https://arxiv.org/abs/2609.35530v1",
+              "locator": "Section 6.5; Table 4; Appendices D and H.2"
+            },
+            {
+              "key": "comfyclaw2026",
+              "name": "COMFYCLAW",
+              "url": "https://arxiv.org/abs/2607.01709v1",
+              "locator": "Sections 3.4–4; Appendix C, Table 8"
+            },
+            {
+              "key": "videoweaver2026",
+              "name": "VideoWeaver",
+              "url": "https://arxiv.org/abs/2606.08091v2",
+              "locator": "Section 4.2; Sections 5.2–5.3; Appendix C"
+            }
+          ]
+        }
+      ]
     }
   ],
   "figures": [],
@@ -60,6 +423,122 @@
       "description": "Assistance with implementation, visualization, literature organization, and editing.",
       "url": null,
       "kind": "ai"
+    }
+  ],
+  "description": "From harness optimization to recursive self-improvement: a survey of reusable changes around language model agents.",
+  "evidence": {
+    "cutoff": "2026-10-01",
+    "records": 95,
+    "papers": 62,
+    "resources": 1,
+    "subcategories": 20,
+    "unit": "A source study within a task subcategory. Records are not independent effects; they include reporting gaps.",
+    "release": "Selected synthesis is available here. The full manuscript and record collection are forthcoming."
+  },
+  "insights": [
+    {
+      "id": "interfaces",
+      "title": "Repair the connection, not just the reasoning.",
+      "summary": "Some gains come from making an existing intention reach the right tool, object or observation. A higher task score need not mean a new reasoning capability.",
+      "question": "Where does an intended operation lose its meaning?",
+      "cells": [
+        {
+          "domain": "coding",
+          "finding": "route-edits",
+          "label": "Command → intact payload",
+          "detail": "Route a multiline file edit to the editor, not the shell."
+        },
+        {
+          "domain": "reasoning",
+          "finding": "interpretation",
+          "label": "Question → correct operands",
+          "detail": "Resolve the problem representation before calculation."
+        },
+        {
+          "domain": "interactive",
+          "finding": "action-binding",
+          "label": "Action → intended object",
+          "detail": "Scope a textbox lookup to its confirmation dialog."
+        },
+        {
+          "domain": "visual",
+          "finding": "observation-links",
+          "label": "Claim → source observation",
+          "detail": "Keep findings linked to frames or input references."
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "title": "More context and more tools are not enough.",
+      "summary": "Useful additions resolve a pending decision. Rejected tools and failed branches matter alongside successful changes; these cases do not establish a universal preference for smaller harnesses.",
+      "question": "What information could change the next decision?",
+      "cells": [
+        {
+          "domain": "coding",
+          "finding": "bounded-context",
+          "label": "Relevant code region",
+          "detail": "Read locally and bound long tool returns."
+        },
+        {
+          "domain": "reasoning",
+          "finding": "discriminating-evidence",
+          "label": "Competing explanations",
+          "detail": "Retrieve label challengers, not only similar examples."
+        },
+        {
+          "domain": "interactive",
+          "finding": "decision-support",
+          "label": "Legality and value",
+          "detail": "Compute admissibility and compare action values."
+        },
+        {
+          "domain": "visual",
+          "finding": "observation-links",
+          "label": "Evidence provenance",
+          "detail": "Query linked observations before acquiring more frames."
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "title": "A retry rule carries conditions for reuse.",
+      "summary": "Recovery depends on a detectable failure, observable state and an available corrective action. Transfer between related placement tasks is documented; cross-domain analogies remain hypotheses.",
+      "question": "What must be true for this recovery to work?",
+      "cells": [
+        {
+          "domain": "coding",
+          "finding": "typed-recovery",
+          "label": "Empty patch / failed test",
+          "detail": "Choose retry, repair or environment setup by failure type."
+        },
+        {
+          "domain": "reasoning",
+          "finding": "proof-state",
+          "label": "A local proof failure",
+          "detail": "Restore a proof state and test a bounded revision."
+        },
+        {
+          "domain": "interactive",
+          "finding": "physical-recovery",
+          "label": "Grasp and support state",
+          "detail": "Regrasp or correct target geometry before release."
+        },
+        {
+          "domain": "visual",
+          "finding": "visual-recheck",
+          "label": "Ambiguous event boundary",
+          "detail": "Recheck the interval; repeated interpretation can still fail."
+        }
+      ]
+    }
+  ],
+  "additional_finding_sources": [
+    {
+      "id": "che2026demoevolve",
+      "title": "DemoEvolve: Demonstration-Guided Harness Evolution under Sparse Feedback",
+      "url": "https://arxiv.org/abs/2605.24539v2",
+      "note": "Cited in the domain evidence; not yet an entry in the curated Literature Map snapshot. Excluded from collection statistics."
     }
   ]
 }
