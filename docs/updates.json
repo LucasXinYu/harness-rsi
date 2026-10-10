@@ -1,0 +1,31 @@
+{
+  "commitment": "We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.",
+  "cadence": "Updates follow the availability and verification of new evidence. Collection imports and evidence revisions are dated separately; prior versions remain in repository history.",
+  "steps": [
+    {
+      "title": "Find & screen",
+      "text": "Track new papers and revisions; distinguish target-harness changes from optimizer design, model training and background work."
+    },
+    {
+      "title": "Trace the change",
+      "text": "Record the setting, seed, actual edit, result and source location. Keep missing artifacts, regressions and transfer conditions visible."
+    },
+    {
+      "title": "Revise & release",
+      "text": "Update the benchmark records and comparisons, document corrections, and publish a dated data version alongside the collection history."
+    }
+  ],
+  "releases": [
+    {
+      "id": "evidence-2026-10-10",
+      "date": "2026-10-10",
+      "title": "Benchmark evidence, opened up",
+      "changes": [
+        "Added all 95 domain records with setting/seed, reported changes and evidence limits.",
+        "Added 27 comparison lenses and benchmark/setting filters across four domains.",
+        "Separated transfer settings, single-source observations and reporting gaps; clarified that ModularRSI’s detailed Go result is external to Terminal-Bench."
+      ],
+      "records": 95
+    }
+  ]
+}

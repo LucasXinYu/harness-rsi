@@ -1,0 +1,2182 @@
+{
+  "cutoff": "2026-10-01",
+  "benchmarks": [
+    {
+      "id": "livecodebench",
+      "name": "LiveCodeBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "aider-polyglot",
+      "name": "Aider Polyglot",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "ds-1000",
+      "name": "DS-1000",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "mbpp",
+      "name": "MBPP",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "evoagentbench-livecode",
+      "name": "EvoAgentBench LiveCode",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "humaneval",
+      "name": "HumanEval",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "swe-bench-dgm-200-task-setting",
+      "name": "SWE-bench (DGM 200-task setting)",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "swe-bench-verified",
+      "name": "SWE-bench Verified",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "swe-bench-pro",
+      "name": "SWE-Bench Pro",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "deepswe",
+      "name": "DeepSWE",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "swe-bench-lite",
+      "name": "SWE-bench Lite",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "multi-swe-bench",
+      "name": "Multi-SWE-Bench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "envbench",
+      "name": "EnvBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "multi-swe-bench-java-test-generation",
+      "name": "Multi-SWE-Bench (Java test generation)",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "industrialbugs",
+      "name": "IndustrialBugs",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "swe-bench-skillforge-django-case",
+      "name": "SWE-bench (SkillForge Django case)",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "terminal-bench-2-0",
+      "name": "Terminal-Bench 2.0",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "go-repair-modularrsi-case",
+      "name": "Go repair (ModularRSI case)",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "terminal-bench-2-1",
+      "name": "Terminal-Bench 2.1",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "terminal-bench-2-x-minor-unspecified",
+      "name": "Terminal-Bench 2.x (minor unspecified)",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "mle-bench-lite22",
+      "name": "MLE-bench Lite22",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "magic-denoising",
+      "name": "MAGIC denoising",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "mle-bench",
+      "name": "MLE-bench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "live-ml-competitions",
+      "name": "Live ML competitions",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "mgsm",
+      "name": "MGSM",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "gsm8k",
+      "name": "GSM8K",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "math-500",
+      "name": "MATH-500",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "math-level-5",
+      "name": "MATH (level 5)",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "olympiadbench",
+      "name": "OlympiadBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "omni-math",
+      "name": "Omni-MATH",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "imo-answerbench",
+      "name": "IMO-AnswerBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "imo-proofbench",
+      "name": "IMO-ProofBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "arxivmath",
+      "name": "ArXivMath",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "aime24-co-harness-reported-setting",
+      "name": "AIME24 (Co-Harness reported setting)",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "evoagentbench-omni-math",
+      "name": "EvoAgentBench Omni-MATH",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "math",
+      "name": "MATH",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "olympiad-math-mixture-study",
+      "name": "Olympiad math (Mixture study)",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "livebench-math",
+      "name": "LiveBench Math",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "dapo-math-17k",
+      "name": "DAPO-Math-17K",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "aime-2024",
+      "name": "AIME 2024",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "aime-2025",
+      "name": "AIME 2025",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "minif2f-valid",
+      "name": "miniF2F-valid",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "putnambench",
+      "name": "PutnamBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "minif2f-test",
+      "name": "miniF2F-test",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "rsi-exam-lean",
+      "name": "RSI-Exam Lean",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "minif2f-rocq",
+      "name": "miniF2F-Rocq",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "putnambench-lean-interface-port",
+      "name": "PutnamBench (Lean interface port)",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "leanworkbook",
+      "name": "LeanWorkbook",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "compositional-proof-study",
+      "name": "Compositional proof study",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "lawbench",
+      "name": "LawBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "symptom2disease",
+      "name": "Symptom2Disease",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "locomo",
+      "name": "LoCoMo",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "membench",
+      "name": "MemBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "longmemeval",
+      "name": "LongMemEval",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "memoryagentbench",
+      "name": "MemoryAgentBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "personamind",
+      "name": "PersonaMind",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "officeqa",
+      "name": "OfficeQA",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "musique",
+      "name": "MuSiQue",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "hotpotqa",
+      "name": "HotpotQA",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "taskcraft",
+      "name": "TaskCraft",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "gaia",
+      "name": "GAIA",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "webwalkerqa",
+      "name": "WebWalkerQA",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "xbench-deepsearch",
+      "name": "xBench-DeepSearch",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "searchqa",
+      "name": "SearchQA",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "webarena",
+      "name": "WebArena",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "webarena-infinity",
+      "name": "WebArena-Infinity",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "webshop",
+      "name": "WebShop",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "appworld",
+      "name": "AppWorld",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "tau2-bench-telecom",
+      "name": "τ²-Bench Telecom",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "tau-bench",
+      "name": "τ-bench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "tau3-bench",
+      "name": "τ³-Bench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "harvey-lab",
+      "name": "Harvey LAB",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "jobbench",
+      "name": "JobBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "gdpval",
+      "name": "GDPval",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "apex-agents",
+      "name": "APEX-Agents",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "textarena",
+      "name": "TextArena",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "pok-mon-red-emerald",
+      "name": "Pokémon Red / Emerald",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "liar-s-dice",
+      "name": "Liar’s Dice",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "balatro",
+      "name": "Balatro",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "slay-the-spire-2",
+      "name": "Slay the Spire 2",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "minecraft-curriculum",
+      "name": "Minecraft curriculum",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "libero-pro",
+      "name": "LIBERO-Pro",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "robocasa",
+      "name": "RoboCasa",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "pnp-sink-cabinet-toaster",
+      "name": "PnP-Sink / Cabinet / Toaster",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "vlabench",
+      "name": "VLABench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "simplerenv-bridge",
+      "name": "SimplerEnv Bridge",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "real-world-manipulation",
+      "name": "Real-world manipulation",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "lvbench",
+      "name": "LVBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "video-mme",
+      "name": "Video-MME",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "longvideobench",
+      "name": "LongVideoBench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "egoschema",
+      "name": "EgoSchema",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "mlvu",
+      "name": "MLVU",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "video-holmes",
+      "name": "Video-Holmes",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "video-mmmu",
+      "name": "Video-MMMU",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "mmvu",
+      "name": "MMVU",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "charades-sta",
+      "name": "Charades-STA",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "activitynet",
+      "name": "ActivityNet",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "qvhighlights",
+      "name": "QVHighlights",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "rextime",
+      "name": "ReXTime",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "timelens-bench",
+      "name": "TimeLens-Bench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "coco-detection-captioning",
+      "name": "COCO detection / captioning",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "refcoco",
+      "name": "RefCOCO",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "vqav2",
+      "name": "VQAv2",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "multibanana",
+      "name": "MultiBanana",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "omnicontext",
+      "name": "OmniContext",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "geneval-2",
+      "name": "GenEval 2",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "dpg-bench",
+      "name": "DPG-Bench",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "oneig",
+      "name": "OneIG",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "t2i-compbench",
+      "name": "T2I-CompBench++",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "wise",
+      "name": "WISE",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "long-video-production-videoweaver",
+      "name": "Long-video production (VideoWeaver)",
+      "kind": "study-specific setting"
+    },
+    {
+      "id": "cinescope",
+      "name": "CineScope",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "animeshooter",
+      "name": "AnimeShooter",
+      "kind": "benchmark / suite"
+    },
+    {
+      "id": "vistorybench",
+      "name": "ViStoryBench",
+      "kind": "benchmark / suite"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "pattern-1",
+      "title": "Replace whole-file operations with targeted, recoverable edits.",
+      "lesson": "The reusable change is the editing interface. A particular program or patch remains a task output; retention and causal effects must be checked separately.",
+      "cases": [
+        {
+          "record": "program-generation-and-editing--sica2025",
+          "change": "SICA extends whole-file overwrites with diff/range edits, input normalization and local AST navigation. These are reported updates; final-winner retention is unresolved."
+        },
+        {
+          "record": "program-generation-and-editing--dgm2025",
+          "change": "DGM adds insertion, replacement, range editing and undo, then resets between attempts and replays the chosen patch."
+        }
+      ]
+    },
+    {
+      "id": "pattern-2",
+      "title": "Make verification a branch of the reusable program.",
+      "lesson": "Compare what triggers a check, what happens on failure and whether the repaired answer is checked again. These are different control decisions.",
+      "cases": [
+        {
+          "record": "program-generation-and-editing--tthe2026",
+          "change": "TTHE keeps a cheap solve path and invokes verification and repair after exposed public-test failures."
+        },
+        {
+          "record": "program-generation-and-editing--aflow2024",
+          "change": "AFlow’s MBPP workflow generates three candidates, selects one, tests it and sends failures to a repair prompt. Its listing returns the repaired candidate without a further test call."
+        },
+        {
+          "record": "program-generation-and-editing--mermaidflow2025",
+          "change": "MermaidFlow’s HumanEval crossover inherits a testing node from one parent and a more diverse ensemble from the other; the illustrated child is not automatically the final winner."
+        }
+      ]
+    },
+    {
+      "id": "pattern-3",
+      "title": "Give repository edits a smaller and more precise interface.",
+      "lesson": "Local reads, structured editing and targeted initial retrieval address different sources of wasted repository context.",
+      "cases": [
+        {
+          "record": "repository-level-software-engineering--dgm2025",
+          "change": "DGM adds line-range views and unique-string replacement to its whole-file starting interface."
+        },
+        {
+          "record": "repository-level-software-engineering--sica2025",
+          "change": "SICA evolves diff/range editing and targeted AST operations around its inherited context manager."
+        },
+        {
+          "record": "repository-level-software-engineering--mixture_branches2026",
+          "change": "A Mixture candidate ranks files from issue identifiers and injects bounded source/test content before the first action. Structured replacement is already present in its parent."
+        }
+      ]
+    },
+    {
+      "id": "pattern-4",
+      "title": "Keep long tool returns from exhausting the working context.",
+      "lesson": "Information reduction needs a way to obtain missing detail again. Full-version recovery results do not isolate the compression rule.",
+      "cases": [
+        {
+          "record": "repository-level-software-engineering--multitask_selfharness2026",
+          "change": "Multi-task Self-Harness caps very long outputs at their head and tail and shortens older returns. Its selected version solves 7 of 12 SWE-Bench Pro tasks where the seed hits the input limit; this is not a SWE-bench Verified result.",
+          "change_by_benchmark": {
+            "swe-bench-verified": "Multi-task Self-Harness’s bounded-output version is transferred unchanged to 100 SWE-bench Verified tasks. This evaluates reuse of the complete harness; the 7-of-12 overflow-recovery example belongs to SWE-Bench Pro.",
+            "deepswe": "The same Multi-task Self-Harness lineage is transferred unchanged to 53 DeepSWE tasks. The record provides no second concrete DeepSWE lineage or isolated effect of output trimming."
+          }
+        },
+        {
+          "record": "repository-level-software-engineering--sica2025",
+          "change": "SICA reduces returned diff context and parses only relevant code regions, rather than processing every entire file."
+        }
+      ]
+    },
+    {
+      "id": "pattern-5",
+      "title": "Route patch failures to the right kind of recovery.",
+      "lesson": "An empty diff, a dependency error and a failing assertion call for different actions. Instructions that request a check are distinct from code that enforces it.",
+      "cases": [
+        {
+          "record": "repository-level-software-engineering--dgm2025",
+          "change": "DGM rejects empty, unparsable or heuristic test-only patches; it resets the workspace, explains the failure and allows another attempt."
+        },
+        {
+          "record": "repository-level-software-engineering--tthe2026",
+          "change": "TTHE reruns an empty-patch attempt with reproduce–localize–repair–retest guidance and a larger budget."
+        },
+        {
+          "record": "repository-level-software-engineering--selfharness2026",
+          "change": "Self-Harness’s GLM instructions separate missing-package recovery from source debugging. In its paired Astropy case, dependency repair enables all four previously failing tests to pass."
+        },
+        {
+          "record": "repository-level-software-engineering--rho2026",
+          "change": "RHO adds an executed helper for toolchain discovery, lightweight language checks and custom verification commands."
+        },
+        {
+          "record": "repository-level-software-engineering--one_recipe2026",
+          "change": "OneRecipe injects language-specific compilation/testing reminders when recent activity suggests testing or submission."
+        },
+        {
+          "record": "repository-level-software-engineering--codeskill2026",
+          "change": "CODESKILL’s reusable Maven guidance separates environment, configuration and dependency failures and checks a missing test-jar before retrying.",
+          "benchmarks": []
+        }
+      ]
+    },
+    {
+      "id": "pattern-6",
+      "title": "Turn a repair example into conditional guidance.",
+      "lesson": "The reusable artifact is a rule about responsibility, interfaces or failure conditions—not a remembered patch to one repository.",
+      "cases": [
+        {
+          "record": "repository-level-software-engineering--harnesscompass2026",
+          "change": "HarnessCompass retains guidance for tracing responsibility along execution paths and checking affected callers of shared interfaces."
+        },
+        {
+          "record": "repository-level-software-engineering--gse2026",
+          "change": "GSE consolidates project-specific rules into distinctions such as value-triggered versus state-triggered defects."
+        },
+        {
+          "record": "repository-level-software-engineering--skillforge2026",
+          "change": "SkillForge’s Django guidance uses the existing Decimal pipeline and precision-dependent equivalence instead of a narrow exponent heuristic."
+        }
+      ]
+    },
+    {
+      "id": "pattern-7",
+      "title": "Repair the connection between a tool call and its payload.",
+      "lesson": "Before adding more reasoning, check whether the intended action reaches the correct tool unchanged. The detailed Go case is external to Terminal-Bench.",
+      "cases": [
+        {
+          "record": "terminal-based-engineering-tasks--modularrsi2026",
+          "change": "ModularRSI reports command-name dispatch that preserves multiline file contents instead of sending them to the shell. Mean steps drop 36 → 25 in its external Go case; concurrent edits and incomplete historical artifacts limit attribution.",
+          "benchmarks": [
+            "go-repair-modularrsi-case"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pattern-8",
+      "title": "Check completion without destroying or repeatedly rechecking it.",
+      "lesson": "Delivery rules need a trigger and a stopping condition. Paired mechanisms, advisory skills and executable guards provide different evidence.",
+      "cases": [
+        {
+          "record": "terminal-based-engineering-tasks--ahe2026",
+          "change": "AHE hardens a destructive-action guard and surfaces its warning before the next action. The configure-git-webserver case changes from 0/2 to 2/2 successful rollouts after the paired edits."
+        },
+        {
+          "record": "terminal-based-engineering-tasks--selfharness2026",
+          "change": "Self-Harness adds early artifact creation and model-specific limits or error-triggered middleware."
+        },
+        {
+          "record": "terminal-based-engineering-tasks--mixture_branches2026",
+          "change": "A Mixture candidate uses a persistent one-time flag so later completion signals do not reopen the same verification request."
+        },
+        {
+          "record": "terminal-based-engineering-tasks--rrsi2026",
+          "change": "RRSI accepts bounded completion-audit and nonblocking-polling guidance together in R0-A; final retention is unknown."
+        },
+        {
+          "record": "terminal-based-engineering-tasks--darwinx2026",
+          "change": "DarwinX retains a bundle of skills for explicit acceptance conditions, artifact checks and rechecking after changes."
+        },
+        {
+          "record": "terminal-based-engineering-tasks--rho2026",
+          "change": "RHO’s terminal playbook checks requirements and container-side paths. Its generated terminal scripts are not executed in the reported trajectories."
+        }
+      ]
+    },
+    {
+      "id": "pattern-9",
+      "title": "Put environment state where the next action can use it.",
+      "lesson": "Bootstrap observations and later context reduction solve different visibility problems; the scope of each source remains separate.",
+      "cases": [
+        {
+          "record": "terminal-based-engineering-tasks--metaharness2026",
+          "change": "Meta-Harness injects a bounded environment snapshot before the first model call; the timeout and silent failure keep the probe from blocking execution."
+        },
+        {
+          "record": "terminal-based-engineering-tasks--multitask_selfharness2026",
+          "change": "Multi-task Self-Harness bounds tool returns, preserves opening/recent history and starts a fresh-context filesystem review at the first stop decision."
+        }
+      ]
+    },
+    {
+      "id": "pattern-10",
+      "title": "Evolve how experiments are run and represented.",
+      "lesson": "These are complementary ML cases, not multiple demonstrations of one common algorithm. The produced model is distinct from the persistent experiment harness.",
+      "cases": [
+        {
+          "record": "machine-learning-engineering--aide2_2026",
+          "change": "AIDE² evolves strategy arms, cross-arm forks, bounded experiment summaries and recurring-error signatures. MLE-bench Lite22 evaluates frozen transfer; it never participates in evolutionary selection."
+        },
+        {
+          "record": "machine-learning-engineering--sia2026",
+          "change": "SIA adds a batched MAGIC configuration driver and a parser returning parameter–score pairs; final code retention and per-tool effects are unconfirmed."
+        },
+        {
+          "record": "machine-learning-engineering--aibuildai2_2026",
+          "change": "AIBuildAI-2 turns working directories into categorized takeaways and revises retrieval pointers; a complete evaluated before/after document is not provided."
+        },
+        {
+          "record": "machine-learning-engineering--disco2026",
+          "change": "DisCo revises competition-specific operational guidance from diagnostic runs, then freezes it around a fixed Codex controller."
+        }
+      ]
+    },
+    {
+      "id": "pattern-11",
+      "title": "Decide what gets checked before a numerical answer is returned.",
+      "lesson": "Intermediate-representation review and candidate-solution checks operate at different points. More calls are not independently validated improvements.",
+      "cases": [
+        {
+          "record": "arithmetic-word-problems--adas2024",
+          "change": "ADAS’s documented example reviews and revises a problem representation before final reasoning; its name does not establish visual input processing."
+        },
+        {
+          "record": "arithmetic-word-problems--aflow2024",
+          "change": "AFlow generates five GSM8K solutions, selects one and performs computational review with a fallback."
+        },
+        {
+          "record": "arithmetic-word-problems--mermaidflow2025",
+          "change": "MermaidFlow generates computational candidates before selection as well, then refines and formats the chosen answer."
+        }
+      ]
+    },
+    {
+      "id": "pattern-12",
+      "title": "Match mathematical diversity to a concrete checking procedure.",
+      "lesson": "A reusable solution pipeline specifies how candidates differ and how disagreement is resolved; it is not just an instruction to think longer.",
+      "cases": [
+        {
+          "record": "competition-and-advanced-mathematics--aflow2024",
+          "change": "AFlow’s selected MATH program combines a rewritten program output with three textual alternatives."
+        },
+        {
+          "record": "competition-and-advanced-mathematics--mermaidflow2025",
+          "change": "MermaidFlow combines five distinct solver/outline responses with a programmatic result, then refines the selection; the operator family is related to AFlow."
+        },
+        {
+          "record": "competition-and-advanced-mathematics--mixture_branches2026",
+          "change": "A Mixture candidate separates constructive answers from necessary conditions and handles agreement with a challenge, disagreement with a concrete check."
+        },
+        {
+          "record": "competition-and-advanced-mathematics--wda2026",
+          "change": "WDA selects model-specific two- or three-stage pipelines. These are fixed pipelines, not per-question adaptive depth."
+        }
+      ]
+    },
+    {
+      "id": "pattern-13",
+      "title": "Change the evidence or runtime at the observed mathematical bottleneck.",
+      "lesson": "Model-dependent recovery, retrieval and co-training are not interchangeable sources of a gain.",
+      "cases": [
+        {
+          "record": "competition-and-advanced-mathematics--metaharness2026",
+          "change": "Meta-Harness routes example retrieval by mathematical subject, with contrasting treatments for combinatorics, geometry and number theory."
+        },
+        {
+          "record": "competition-and-advanced-mathematics--coharness2026",
+          "change": "Co-Harness repairs interpreter launch/cleanup, batches inference and restores thinking on follow-up turns before ensembling; inconsistent counts/times limit quantitative interpretation."
+        },
+        {
+          "record": "competition-and-advanced-mathematics--harnessbank2026",
+          "change": "HarnessBank disables runaway thinking for one backbone but increases reasoning for another; the full Qwen stack rises from 54.3% to 66.0% on its test setting."
+        },
+        {
+          "record": "competition-and-advanced-mathematics--whale2026",
+          "change": "WHALE’s effective tool use appears in a co-evolved model–harness pair. The trace does not identify a harness-only cause."
+        }
+      ]
+    },
+    {
+      "id": "pattern-14",
+      "title": "Preserve checker-usable proof state and repair locally.",
+      "lesson": "The interface can improve even while a richer proof plan fails. New tools are useful only if their outputs remain valid in the active proof context.",
+      "cases": [
+        {
+          "record": "formal-theorem-proving--lean_coevolution2026",
+          "change": "Self-modifying Lean agents add bounded compiler repair and checked lemma names; a richer auxiliary-lemma branch fails to outperform the simpler winning repair route."
+        },
+        {
+          "record": "formal-theorem-proving--rsiexam_lean2026",
+          "change": "RSI-Exam optimizer runs fix nested-proof extraction and revise diagnostics under fixed call/check budgets; visible checkpoint improvements are not hidden-test results."
+        },
+        {
+          "record": "formal-theorem-proving--proverinterface2026",
+          "change": "The evolved Rocq interface adds persistent sessions, rollback and bounded candidate trials. A heavily used lemma-search tool is rejected without an accuracy gain."
+        }
+      ]
+    },
+    {
+      "id": "pattern-15",
+      "title": "Retrieve evidence that distinguishes competing labels.",
+      "lesson": "These mechanisms distinguish competing labels through contrasting examples or task-specific discriminator guidance. A shared classifier evaluated twice is one artifact, not two discoveries.",
+      "cases": [
+        {
+          "record": "legal-charge-classification--metaharness2026",
+          "change": "Meta-Harness explores same-label confirmers versus competing-label challengers and a separate one-call label-coverage program."
+        },
+        {
+          "record": "legal-charge-classification--mce2026",
+          "change": "MCE’s legal context decomposes acts and adds warnings for multiple-act cases; its context-engineer skill is a separate optimizer-side object."
+        },
+        {
+          "record": "legal-charge-classification--taskcoevolve2026",
+          "change": "Task-CoEvolve combines word/character retrieval and discounts already-covered labels."
+        },
+        {
+          "record": "symptom-to-disease-classification--metaharness2026",
+          "change": "Meta-Harness reuses its classification frontier on symptom descriptions; the legal and symptom records are not independent discoveries."
+        },
+        {
+          "record": "symptom-to-disease-classification--mce2026",
+          "change": "MCE retrieves relevant discriminator sections for symptom patterns and falls back to its full guide when no condition matches."
+        },
+        {
+          "record": "symptom-to-disease-classification--taskcoevolve2026",
+          "change": "Task-CoEvolve’s shared classifier balances lexical matching with label coverage on Symptom2Disease."
+        },
+        {
+          "record": "symptom-to-disease-classification--hase2026",
+          "change": "HASE revises lexical retrieval and label-grouped memory, alongside model-weight updates; the complete gain is not harness-only."
+        }
+      ]
+    },
+    {
+      "id": "pattern-16",
+      "title": "Change how a question reaches relevant stored evidence.",
+      "lesson": "Separate the inherited memory architecture from the methods actually revised. Procedure ablations and fixed-checkpoint edit tests answer different questions.",
+      "cases": [
+        {
+          "record": "qa-over-supplied-records--evolvemem2026",
+          "change": "EvolveMem activates dormant name-stripped retrieval and multi-hop decomposition and adds low-confidence verification."
+        },
+        {
+          "record": "qa-over-supplied-records--memcodex2026",
+          "change": "MemCodex rewrites construction, indexing, retrieval and routing within an existing hierarchy; adaptive depth is already part of the seed."
+        }
+      ]
+    },
+    {
+      "id": "pattern-17",
+      "title": "Fix the statistic and operands before calculating.",
+      "lesson": "This is a documented OfficeQA skill example, not an established multi-paper pattern or an enforced runtime gate.",
+      "cases": [
+        {
+          "record": "qa-over-supplied-records--harnessevolve2026",
+          "change": "HarnessEvolve expands financial-metrics guidance to distinguish share changes from growth rates, specify denominators and verify constants/revisions against the corpus."
+        }
+      ]
+    },
+    {
+      "id": "pattern-18",
+      "title": "Keep web experience usable after the original task.",
+      "lesson": "Memory-program changes and task-runner edits address different parts of web work. Transductive scores and answer exposure must stay visible.",
+      "cases": [
+        {
+          "record": "open-web-information-seeking--memevolve2025",
+          "change": "MemEvolve’s Cerebra distills reusable tools/knowledge and maintains working memory; WebWalkerQA and xBench test transfer from TaskCraft."
+        },
+        {
+          "record": "open-web-information-seeking--harnessx2026",
+          "change": "HarnessX ships prompt, processor, configuration and tool revisions for blocked sources and reasoning/parsing failures."
+        },
+        {
+          "record": "open-web-information-seeking--liteevo2026",
+          "change": "LiteEvo selects composed prompt/processor changes, but its GAIA report documents answer-copy exposure; the score is not clean unseen-question evidence."
+        }
+      ]
+    },
+    {
+      "id": "pattern-19",
+      "title": "Bind browser actions to the intended object and navigation state.",
+      "lesson": "Executable selectors and advisory web procedures are different artifacts; an unused added tool is not evidence of a successful capability.",
+      "cases": [
+        {
+          "record": "browser-mediated-interaction--skillweaver2025",
+          "change": "SkillWeaver replaces a global textbox selector with a deletion-dialog-scoped textbox and confirmation button."
+        },
+        {
+          "record": "browser-mediated-interaction--wei2026evo",
+          "change": "Evo-Harness compiles web feedback into reusable task-type procedures, including auto-label and email-handling instructions."
+        },
+        {
+          "record": "browser-mediated-interaction--harnessx2026",
+          "change": "HarnessX reduces search/pagination loops with prompt/configuration changes. Its color-matching tool has zero measured hit-rate."
+        }
+      ]
+    },
+    {
+      "id": "pattern-20",
+      "title": "Make action prerequisites explicit in service workflows.",
+      "lesson": "Check what runs before an action, rather than assuming that adding a tool repairs the workflow.",
+      "cases": [
+        {
+          "record": "application-and-service-workflows--liteevo2026",
+          "change": "LiteEvo adds login/credential guidance and repeats login steps after two authorization errors. AppWorld’s 67.7% full-harness pass@2 versus 63.1% prompt-only is a bundle comparison."
+        },
+        {
+          "record": "application-and-service-workflows--harnessx2026",
+          "change": "HarnessX ships ordering and premature-action rules for τ³-Bench; no tool edits ship in the reported service runs."
+        },
+        {
+          "record": "application-and-service-workflows--scholarevolve2026",
+          "change": "ScholarEvolve selects benchmark/backbone-specific combinations of tool-interface, context, skill and reasoning modules; their source-method names denote provenance."
+        }
+      ]
+    },
+    {
+      "id": "pattern-21",
+      "title": "Turn game state into executable admissibility and value checks.",
+      "lesson": "Synthesized checks belong to the evolved harness; a supplied retry loop does not. A game-specific policy is not automatically a general playing strategy.",
+      "cases": [
+        {
+          "record": "game-playing--autoharness2026",
+          "change": "AutoHarness synthesizes legality functions around an existing action/retry loop, including chess-coordinate and attack-detection logic."
+        },
+        {
+          "record": "game-playing--che2026demoevolve",
+          "change": "DemoEvolve’s Liar’s Dice variant parses state, computes claim probabilities and legal raises, and switches to calling when its expected-value margin warrants it. That case is not a Balatro mechanism.",
+          "benchmarks": [
+            "liar-s-dice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pattern-22",
+      "title": "Recover using the observed geometry and grasp state.",
+      "lesson": "Reuse depends on observable failure states and available corrective actions. Frozen related-task transfer supports the complete stack, not every branch.",
+      "cases": [
+        {
+          "record": "robot-manipulation--zetta2026",
+          "change": "Zetta adds bounded regrasp, failed-grasp memory, stability checks and support-before-release. Its unchanged stack averages 64% → 84% on three related placement tasks.",
+          "benchmarks": [
+            "robocasa",
+            "pnp-sink-cabinet-toaster"
+          ]
+        },
+        {
+          "record": "robot-manipulation--harnesspai2026",
+          "change": "HarnessPAI corrects basket targeting using upper-rim medians with a sparse-point fallback, keeping the placement servo unchanged.",
+          "benchmarks": []
+        },
+        {
+          "record": "robot-manipulation--robot_harness_distillation2026",
+          "change": "Recursive Harness Distillation revises intervention guidance for occlusion, weak/empty grasps and support checks; teacher-guided and self-refined playbooks produce different outcomes."
+        }
+      ]
+    },
+    {
+      "id": "pattern-23",
+      "title": "Make commands and context match the fixed robot actor.",
+      "lesson": "A high-level planner can change without changing low-level policy weights. This record supports one concrete implementation.",
+      "cases": [
+        {
+          "record": "robot-manipulation--shaper2026",
+          "change": "SHAPER emits exact entity names and actor-compatible primitives, emphasizes current images/recent state, compresses old rounds and exposes stagnation."
+        }
+      ]
+    },
+    {
+      "id": "pattern-24",
+      "title": "Preserve the link between visual claims and observations.",
+      "lesson": "Fewer inspected frames are not automatically lower total compute. Search trajectories alone do not reveal a final sampling rule.",
+      "cases": [
+        {
+          "record": "video-question-answering--videorsi2026",
+          "change": "Video-RSI adds frame-linked findings, uncertainty, relations over existing observations and duplicate-aware occurrence counting; its deployed graph queries consume no new frames."
+        }
+      ]
+    },
+    {
+      "id": "pattern-25",
+      "title": "Recheck temporal boundaries without assuming extra calls will fix them.",
+      "lesson": "One source supplies both a positive case and a persistent regression. This is evidence of a conditional trade-off, not a universal improvement.",
+      "cases": [
+        {
+          "record": "temporal-grounding--videoevolve2026",
+          "change": "VideoEvolve uses the same 64 frames, conditionally makes more predictions and aggregates endpoints by medians. A kettle interval improves; the light-switch error persists with additional calls."
+        }
+      ]
+    },
+    {
+      "id": "pattern-26",
+      "title": "Encode reference and composition failures in reusable procedures.",
+      "lesson": "Selection logic, skill documents and localized policy changes are different persistent artifacts. A generated image itself is not the harness.",
+      "cases": [
+        {
+          "record": "image-generation--autoref2026",
+          "change": "AutoRef binds references, produces subject-/background-led drafts and applies failure-aware, order-swapped selection. Replacing the combined selector lowers the MultiBanana four-reference held-out average 7.37 → 6.93 at a fixed three-image budget.",
+          "change_by_benchmark": {
+            "omnicontext": "AutoRef binds prompt elements to references, generates complementary drafts and selects against hard failures and presentation-order effects. The quoted 7.37 → 6.93 selector ablation belongs to MultiBanana, not OmniContext."
+          }
+        },
+        {
+          "record": "image-generation--comfyclaw2026",
+          "change": "COMFYCLAW learns reusable spatial/count and attribute-binding skills; its verifier and rollback tools are supplied architecture."
+        },
+        {
+          "record": "image-generation--evogen_harness2026",
+          "change": "EvoGen-Harness illustrates localized counting, spatial, attribute and action–object changes; illustrative possible patches are not exact retained diffs."
+        }
+      ]
+    },
+    {
+      "id": "pattern-27",
+      "title": "Retain a production procedure across stories or categories.",
+      "lesson": "The papers specify persistent policy/skill updates more clearly than every final instruction diff. Coverage should not be mistaken for a fully extracted common recipe.",
+      "cases": [
+        {
+          "record": "video-production--videoweaver2026",
+          "change": "VideoWeaver revises reusable composition skills and their creator instructions, freezes skills for held-out cases and merges creators for unseen categories."
+        },
+        {
+          "record": "video-production--cineforge2026",
+          "change": "CineForge admits stage-local textual policy changes using replay; read-only checkpoint evaluation and a fixed audit reviewer separate testing from adaptation."
+        }
+      ]
+    }
+  ],
+  "records": {
+    "program-generation-and-editing--sica2025": {
+      "benchmarks": [
+        {
+          "id": "livecodebench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "program-generation-and-editing--tthe2026": {
+      "benchmarks": [
+        {
+          "id": "livecodebench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "program-generation-and-editing--dgm2025": {
+      "benchmarks": [
+        {
+          "id": "aider-polyglot",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "program-generation-and-editing--evolvenet2026": {
+      "benchmarks": [
+        {
+          "id": "ds-1000",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "program-generation-and-editing--aflow2024": {
+      "benchmarks": [
+        {
+          "id": "mbpp",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "program-generation-and-editing--harnessbank2026": {
+      "benchmarks": [
+        {
+          "id": "evoagentbench-livecode",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "program-generation-and-editing--mermaidflow2025": {
+      "benchmarks": [
+        {
+          "id": "humaneval",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "program-generation-and-editing--flowevo2026": {
+      "benchmarks": [
+        {
+          "id": "humaneval",
+          "role": "study"
+        },
+        {
+          "id": "mbpp",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "repository-level-software-engineering--dgm2025": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-dgm-200-task-setting",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--sica2025": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-verified",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--multitask_selfharness2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-pro",
+          "role": "study"
+        },
+        {
+          "id": "swe-bench-verified",
+          "role": "transfer"
+        },
+        {
+          "id": "deepswe",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--selfharness2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-verified",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--tthe2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-verified",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--harnesscompass2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-verified",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--ahe2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-verified",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--darwinx2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-verified",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--mixture_branches2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-lite",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--rho2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-pro",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--one_recipe2026": {
+      "benchmarks": [
+        {
+          "id": "multi-swe-bench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--codeskill2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-verified",
+          "role": "study"
+        },
+        {
+          "id": "envbench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--gse2026": {
+      "benchmarks": [
+        {
+          "id": "multi-swe-bench-java-test-generation",
+          "role": "study"
+        },
+        {
+          "id": "industrialbugs",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "repository-level-software-engineering--skillforge2026": {
+      "benchmarks": [
+        {
+          "id": "swe-bench-skillforge-django-case",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--metaharness2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-0",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--ahe2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-0",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--modularrsi2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-0",
+          "role": "transfer"
+        },
+        {
+          "id": "go-repair-modularrsi-case",
+          "role": "case"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--selfharness2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-0",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--mixture_branches2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-0",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--multitask_selfharness2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-1",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--rrsi2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-1",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--darwinx2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-1",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--rho2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-x-minor-unspecified",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "terminal-based-engineering-tasks--codeskill2026": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-x-minor-unspecified",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "machine-learning-engineering--aide2_2026": {
+      "benchmarks": [
+        {
+          "id": "mle-bench-lite22",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "machine-learning-engineering--sia2026": {
+      "benchmarks": [
+        {
+          "id": "magic-denoising",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "machine-learning-engineering--aibuildai2_2026": {
+      "benchmarks": [
+        {
+          "id": "mle-bench",
+          "role": "study"
+        },
+        {
+          "id": "live-ml-competitions",
+          "role": "setting"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "machine-learning-engineering--disco2026": {
+      "benchmarks": [
+        {
+          "id": "mle-bench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "arithmetic-word-problems--adas2024": {
+      "benchmarks": [
+        {
+          "id": "mgsm",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "arithmetic-word-problems--aflow2024": {
+      "benchmarks": [
+        {
+          "id": "gsm8k",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "arithmetic-word-problems--mermaidflow2025": {
+      "benchmarks": [
+        {
+          "id": "gsm8k",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "arithmetic-word-problems--flowevo2026": {
+      "benchmarks": [
+        {
+          "id": "gsm8k",
+          "role": "study"
+        },
+        {
+          "id": "math-500",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "competition-and-advanced-mathematics--aflow2024": {
+      "benchmarks": [
+        {
+          "id": "math-level-5",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "competition-and-advanced-mathematics--metaharness2026": {
+      "benchmarks": [
+        {
+          "id": "olympiadbench",
+          "role": "study"
+        },
+        {
+          "id": "omni-math",
+          "role": "study"
+        },
+        {
+          "id": "imo-answerbench",
+          "role": "transfer"
+        },
+        {
+          "id": "imo-proofbench",
+          "role": "transfer"
+        },
+        {
+          "id": "arxivmath",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "competition-and-advanced-mathematics--coharness2026": {
+      "benchmarks": [
+        {
+          "id": "aime24-co-harness-reported-setting",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "competition-and-advanced-mathematics--harnessbank2026": {
+      "benchmarks": [
+        {
+          "id": "evoagentbench-omni-math",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "competition-and-advanced-mathematics--mermaidflow2025": {
+      "benchmarks": [
+        {
+          "id": "math",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "competition-and-advanced-mathematics--mixture_branches2026": {
+      "benchmarks": [
+        {
+          "id": "olympiad-math-mixture-study",
+          "role": "setting"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "competition-and-advanced-mathematics--wda2026": {
+      "benchmarks": [
+        {
+          "id": "livebench-math",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "competition-and-advanced-mathematics--whale2026": {
+      "benchmarks": [
+        {
+          "id": "dapo-math-17k",
+          "role": "study"
+        },
+        {
+          "id": "aime-2024",
+          "role": "evaluation"
+        },
+        {
+          "id": "aime-2025",
+          "role": "evaluation"
+        }
+      ],
+      "evidence_status": "Joint model–harness evidence"
+    },
+    "formal-theorem-proving--lean_coevolution2026": {
+      "benchmarks": [
+        {
+          "id": "minif2f-valid",
+          "role": "study"
+        },
+        {
+          "id": "putnambench",
+          "role": "study"
+        },
+        {
+          "id": "minif2f-test",
+          "role": "evaluation"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "formal-theorem-proving--rsiexam_lean2026": {
+      "benchmarks": [
+        {
+          "id": "rsi-exam-lean",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Benchmark-hosted observation"
+    },
+    "formal-theorem-proving--proverinterface2026": {
+      "benchmarks": [
+        {
+          "id": "minif2f-rocq",
+          "role": "evaluation"
+        },
+        {
+          "id": "putnambench-lean-interface-port",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "formal-theorem-proving--proofevolve2026": {
+      "benchmarks": [
+        {
+          "id": "leanworkbook",
+          "role": "study"
+        },
+        {
+          "id": "compositional-proof-study",
+          "role": "setting"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "legal-charge-classification--metaharness2026": {
+      "benchmarks": [
+        {
+          "id": "lawbench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "legal-charge-classification--mce2026": {
+      "benchmarks": [
+        {
+          "id": "lawbench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "legal-charge-classification--taskcoevolve2026": {
+      "benchmarks": [
+        {
+          "id": "lawbench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "legal-charge-classification--drevo2026": {
+      "benchmarks": [
+        {
+          "id": "lawbench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "symptom-to-disease-classification--metaharness2026": {
+      "benchmarks": [
+        {
+          "id": "symptom2disease",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "symptom-to-disease-classification--mce2026": {
+      "benchmarks": [
+        {
+          "id": "symptom2disease",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "symptom-to-disease-classification--taskcoevolve2026": {
+      "benchmarks": [
+        {
+          "id": "symptom2disease",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "symptom-to-disease-classification--drevo2026": {
+      "benchmarks": [
+        {
+          "id": "symptom2disease",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "symptom-to-disease-classification--hase2026": {
+      "benchmarks": [
+        {
+          "id": "symptom2disease",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Joint model–harness evidence"
+    },
+    "qa-over-supplied-records--evolvemem2026": {
+      "benchmarks": [
+        {
+          "id": "locomo",
+          "role": "study"
+        },
+        {
+          "id": "membench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "qa-over-supplied-records--memcodex2026": {
+      "benchmarks": [
+        {
+          "id": "locomo",
+          "role": "study"
+        },
+        {
+          "id": "longmemeval",
+          "role": "study"
+        },
+        {
+          "id": "memoryagentbench",
+          "role": "study"
+        },
+        {
+          "id": "personamind",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "qa-over-supplied-records--harnessevolve2026": {
+      "benchmarks": [
+        {
+          "id": "officeqa",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "qa-over-supplied-records--hcl2026": {
+      "benchmarks": [
+        {
+          "id": "musique",
+          "role": "study"
+        },
+        {
+          "id": "hotpotqa",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "open-web-information-seeking--memevolve2025": {
+      "benchmarks": [
+        {
+          "id": "taskcraft",
+          "role": "study"
+        },
+        {
+          "id": "gaia",
+          "role": "study"
+        },
+        {
+          "id": "webwalkerqa",
+          "role": "transfer"
+        },
+        {
+          "id": "xbench-deepsearch",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "open-web-information-seeking--harnessx2026": {
+      "benchmarks": [
+        {
+          "id": "gaia",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "open-web-information-seeking--liteevo2026": {
+      "benchmarks": [
+        {
+          "id": "gaia",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "open-web-information-seeking--harnessevolve2026": {
+      "benchmarks": [
+        {
+          "id": "searchqa",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "browser-mediated-interaction--skillweaver2025": {
+      "benchmarks": [
+        {
+          "id": "webarena",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "browser-mediated-interaction--wei2026evo": {
+      "benchmarks": [
+        {
+          "id": "webarena-infinity",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "browser-mediated-interaction--liteevo2026": {
+      "benchmarks": [
+        {
+          "id": "webshop",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "browser-mediated-interaction--harnessx2026": {
+      "benchmarks": [
+        {
+          "id": "webshop",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "application-and-service-workflows--liteevo2026": {
+      "benchmarks": [
+        {
+          "id": "appworld",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "application-and-service-workflows--scholarevolve2026": {
+      "benchmarks": [
+        {
+          "id": "appworld",
+          "role": "study"
+        },
+        {
+          "id": "tau2-bench-telecom",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "application-and-service-workflows--wei2026evo": {
+      "benchmarks": [
+        {
+          "id": "tau-bench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "application-and-service-workflows--harnessx2026": {
+      "benchmarks": [
+        {
+          "id": "tau3-bench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "application-and-service-workflows--rrsi2026": {
+      "benchmarks": [
+        {
+          "id": "harvey-lab",
+          "role": "study"
+        },
+        {
+          "id": "jobbench",
+          "role": "transfer"
+        },
+        {
+          "id": "gdpval",
+          "role": "transfer"
+        },
+        {
+          "id": "apex-agents",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "game-playing--autoharness2026": {
+      "benchmarks": [
+        {
+          "id": "textarena",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "game-playing--continualharness2026": {
+      "benchmarks": [
+        {
+          "id": "pok-mon-red-emerald",
+          "role": "setting"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "game-playing--che2026demoevolve": {
+      "benchmarks": [
+        {
+          "id": "liar-s-dice",
+          "role": "study"
+        },
+        {
+          "id": "balatro",
+          "role": "study"
+        },
+        {
+          "id": "slay-the-spire-2",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "game-playing--hcl2026": {
+      "benchmarks": [
+        {
+          "id": "minecraft-curriculum",
+          "role": "setting"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "robot-manipulation--zetta2026": {
+      "benchmarks": [
+        {
+          "id": "libero-pro",
+          "role": "study"
+        },
+        {
+          "id": "robocasa",
+          "role": "study"
+        },
+        {
+          "id": "pnp-sink-cabinet-toaster",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "robot-manipulation--shaper2026": {
+      "benchmarks": [
+        {
+          "id": "vlabench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "robot-manipulation--harnesspai2026": {
+      "benchmarks": [
+        {
+          "id": "libero-pro",
+          "role": "study"
+        },
+        {
+          "id": "robocasa",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "robot-manipulation--robot_harness_distillation2026": {
+      "benchmarks": [
+        {
+          "id": "simplerenv-bridge",
+          "role": "study"
+        },
+        {
+          "id": "real-world-manipulation",
+          "role": "setting"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "video-question-answering--videorsi2026": {
+      "benchmarks": [
+        {
+          "id": "lvbench",
+          "role": "study"
+        },
+        {
+          "id": "video-mme",
+          "role": "transfer"
+        },
+        {
+          "id": "longvideobench",
+          "role": "transfer"
+        },
+        {
+          "id": "egoschema",
+          "role": "transfer"
+        },
+        {
+          "id": "mlvu",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "video-question-answering--vidharness2026": {
+      "benchmarks": [
+        {
+          "id": "longvideobench",
+          "role": "study"
+        },
+        {
+          "id": "video-mme",
+          "role": "study"
+        },
+        {
+          "id": "video-holmes",
+          "role": "study"
+        },
+        {
+          "id": "video-mmmu",
+          "role": "transfer"
+        },
+        {
+          "id": "mmvu",
+          "role": "transfer"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "temporal-grounding--videoevolve2026": {
+      "benchmarks": [
+        {
+          "id": "charades-sta",
+          "role": "study"
+        },
+        {
+          "id": "activitynet",
+          "role": "study"
+        },
+        {
+          "id": "qvhighlights",
+          "role": "study"
+        },
+        {
+          "id": "rextime",
+          "role": "study"
+        },
+        {
+          "id": "timelens-bench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "image-perception-and-question-answering--hcl2026": {
+      "benchmarks": [
+        {
+          "id": "coco-detection-captioning",
+          "role": "study"
+        },
+        {
+          "id": "refcoco",
+          "role": "study"
+        },
+        {
+          "id": "vqav2",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "image-generation--autoref2026": {
+      "benchmarks": [
+        {
+          "id": "multibanana",
+          "role": "study"
+        },
+        {
+          "id": "omnicontext",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "image-generation--comfyclaw2026": {
+      "benchmarks": [
+        {
+          "id": "geneval-2",
+          "role": "study"
+        },
+        {
+          "id": "dpg-bench",
+          "role": "study"
+        },
+        {
+          "id": "oneig",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "image-generation--evogen_harness2026": {
+      "benchmarks": [
+        {
+          "id": "geneval-2",
+          "role": "study"
+        },
+        {
+          "id": "t2i-compbench",
+          "role": "study"
+        },
+        {
+          "id": "wise",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Concrete artifact described"
+    },
+    "video-production--videoweaver2026": {
+      "benchmarks": [
+        {
+          "id": "long-video-production-videoweaver",
+          "role": "setting"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    },
+    "video-production--cineforge2026": {
+      "benchmarks": [
+        {
+          "id": "cinescope",
+          "role": "study"
+        },
+        {
+          "id": "animeshooter",
+          "role": "study"
+        },
+        {
+          "id": "vistorybench",
+          "role": "study"
+        }
+      ],
+      "evidence_status": "Update procedure / partial artifact"
+    }
+  }
+}

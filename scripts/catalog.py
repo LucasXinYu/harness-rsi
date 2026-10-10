@@ -347,14 +347,59 @@ def svg_cumulative(stats, cutoff):
     return '\n'.join(out)+'\n'
 
 
-def markdown(stats, config, project):
+def validate_evidence(data, project, catalog_records):
+    """Fail on broken provenance, mismatched coverage or cross-setting assignments."""
+    dt.date.fromisoformat(data['updated_on'])
+    dt.date.fromisoformat(data['cutoff'])
+    records = {r['id']: r for r in data['records']}
+    benchmarks = {b['id']: b for b in data['benchmarks']}
+    sources = {r['id'] for r in catalog_records} | {r['id'] for r in project.get('additional_finding_sources', [])}
+    if len(records) != len(data['records']) or len(benchmarks) != len(data['benchmarks']):
+        raise ValueError('Duplicate evidence identity')
+    if len(records) != project['evidence']['records']:
+        raise ValueError('Evidence coverage total differs from manuscript snapshot')
+    if len({r['key'] for r in records.values()}) != project['evidence']['papers'] + project['evidence']['resources']:
+        raise ValueError('Evidence source count differs from manuscript snapshot')
+    for domain in project['domains']:
+        rows = [r for r in records.values() if r['domain'] == domain['id']]
+        if len(rows) != domain['records'] or len({r['category_id'] for r in rows}) != domain['subcategories']:
+            raise ValueError('Domain evidence counts disagree')
+    used_benchmarks = set()
+    for record in records.values():
+        if record['key'] not in sources or not record['sources'] or not record['sections']:
+            raise ValueError('Unresolved evidence source: '+record['id'])
+        for source in record['sources']:
+            if not source['url'].startswith('https://') or not source['locator']:
+                raise ValueError('Evidence requires primary URL and locator')
+        for setting in record['benchmarks']:
+            if setting['id'] not in benchmarks or setting['role'] not in ('study','transfer','evaluation','case','setting'):
+                raise ValueError('Unresolved benchmark or setting role')
+            used_benchmarks.add(setting['id'])
+    if used_benchmarks != set(benchmarks):
+        raise ValueError('Benchmark has no supporting record')
+    if len({p['id'] for p in data['patterns']}) != len(data['patterns']):
+        raise ValueError('Duplicate pattern identity')
+    for pattern in data['patterns']:
+        if not pattern['cases'] or not pattern['lesson']:
+            raise ValueError('Pattern lacks evidence')
+        for case in pattern['cases']:
+            if case['record'] not in records or not case['change']:
+                raise ValueError('Pattern points to missing evidence')
+            allowed = {b['id'] for b in records[case['record']]['benchmarks']}
+            if not set(case.get('benchmarks', [])) <= allowed:
+                raise ValueError('Pattern claims an unsupported benchmark scope')
+            if not set(case.get('change_by_benchmark', {})) <= allowed:
+                raise ValueError('Benchmark-specific text has an unsupported scope')
+
+
+def markdown(stats, config, project, evidence_data, updates):
     evidence = project['evidence']
     lines = ['![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)', '',
         '<p align="center"><strong>What actually evolves around the model?</strong><br>A survey and visual companion on agent harness optimization and recursive self-improvement.<br><sub>Official project repository · Research in progress · Manuscript forthcoming</sub></p>', '',
         '<p align="center"><a href="#what-the-survey-finds">Findings</a> · <a href="#across-four-domains">Domain atlas</a> · <a href="#living-collection">Living collection</a> · <a href="#contributors">Contributors</a></p>', '',
         'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The evidence follows concrete interfaces, parsers, context-handling rules, recovery branches and persistent skills—not just optimization algorithms or benchmark scores.', '',
         f'**{evidence["records"]} category–source records · {evidence["papers"]} research papers + {evidence["resources"]} benchmark resource · {evidence["subcategories"]} task subcategories · {len(project["domains"])} domains**', '',
-        f'Domain evidence cutoff: **{evidence["cutoff"]}**. A record is one source within one task subcategory. Records can share a source and include incomplete reporting; these are not 95 independent effects. Selected synthesis is available in this repository; the full manuscript and record collection are forthcoming.', '',
+        f'Domain evidence cutoff: **{evidence["cutoff"]}**. A record is one source within one task subcategory. Records can share a source and include incomplete reporting; these are not 95 independent effects. All 95 domain records are available in the benchmark explorer and downloadable data. The manuscript is forthcoming.', '',
         '## What the survey finds', '']
     for insight in project['insights']:
         lines += ['**'+insight['title']+'** '+insight['summary'], '']
@@ -366,8 +411,14 @@ def markdown(stats, config, project):
         finding = next(f for d in project['domains'] if d['id']==domain_id for f in d['findings'] if f['id']==finding_id)
         references = ', '.join('['+x['name']+']('+x['url']+')' for x in finding['sources'])
         lines += ['- **'+finding['evidence_type']+'.** '+finding['result']+' '+finding['limit']+' Sources: '+references+'.']
-    lines += ['', 'The interactive atlas contains 12 selected observations with before/after descriptions, source links, evidence types and reporting limits. It compares changes across papers without attributing a full-system gain to an individual edit.', '',
-        '[Explore the structured findings](docs/project.json) · [Download BibTeX](data/literature.bib) · [Catalog and date provenance](docs/catalog.json)', '',
+    lines += ['', '## Benchmark evidence explorer', '',
+        f'The website pairs **12 domain observations** with **{len(evidence_data["patterns"])} comparison lenses** and **{len(evidence_data["records"])} source records**. Filter by domain, subcategory and benchmark/setting; read the concrete change alongside its seed, outcome, primary-source location and reporting limits.', '',
+        'Examples include empty-patch recovery and dependency-aware verification in repository repair; bounded completion checks in terminal tasks; contrasting-label retrieval in classification; and failure-aware draft selection in image generation. These are source-grounded comparisons, not prescriptions that every benchmark shares the same solution.', '',
+        'Single-source observations are identified. Transfers retain their original discovery setting. Where a source reports an evolution experiment without a final artifact, the explorer shows the gap rather than inventing a common pattern. Full-system improvements are not attributed to individual edits.', '',
+        '[Download all domain evidence](docs/evidence.json) · [Selected domain findings](docs/project.json) · [Download BibTeX](data/literature.bib) · [Catalog and date provenance](docs/catalog.json)', '',
+        '### A living companion, beyond the paper', '', updates['commitment'], '',
+        updates['cadence'], '',
+        f'Latest evidence release: **{evidence_data["updated_on"]}**. [Dated changes](docs/updates.json). Collection updates below track bibliography membership separately from evidence revisions.', '',
         '## Living collection', '',
         f'**{stats["papers"]} papers & manuscripts** · **{stats["resources"]} official resources** · Updated **{config["updated_on"]}**', '',
         '![Cumulative collected literature by release month](docs/assets/collection-growth.svg)', '',
@@ -379,7 +430,7 @@ def markdown(stats, config, project):
         '### Collection updates', '', '| Snapshot | Papers | Resources |', '| :-- | --: | --: |']
     lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history'][-5:]]
     lines += ['', '## Website', '',
-        'The standalone site lives in `docs/`: domain tabs, evidence-linked comparisons, monthly/cumulative charts, source disclosures and local artwork. The manuscript link will be added when available.', '',
+        'The standalone site lives in `docs/`: domain tabs, benchmark filters, a detailed evidence notebook, comparisons, monthly/cumulative charts and dated release notes. The manuscript link will be added when available.', '',
         '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
         'Open http://localhost:8000. Public hosting is not yet enabled; updating this repository does not itself publish GitHub Pages.', '',
         '## Contributors', '', '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
@@ -390,7 +441,12 @@ def markdown(stats, config, project):
         'Import the current survey bibliography and Literature Map. Map membership defines the collection; extra manuscript references and citation aliases are not automatically counted.', '',
         '```sh', 'python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD',
         'python3 -m unittest discover -s tests', 'python3 scripts/catalog.py check', '```', '',
-        'The build updates website statistics, downloadable data, charts and this README together. Source-linked findings live in `docs/project.json` and are revised separately from collection counts.', '',
+        'The build updates website statistics, downloadable data, charts and this README together. Source-linked findings live in `docs/project.json`. Benchmark assignments and comparative notes live in `data/evidence_annotations.json`; imported domain records live in `docs/evidence.json`. They are revised separately from collection counts.', '',
+        'After reviewing changed records and benchmark assignments:', '',
+        '```sh', 'python3 scripts/import_evidence.py --source /path/to/section4_supp.tex --date YYYY-MM-DD',
+        '# Add a dated entry to docs/updates.json describing the actual changes.',
+        'python3 scripts/catalog.py build', 'python3 -m unittest discover -s tests',
+        'node tests/evidence_model_test.mjs', 'python3 scripts/catalog.py check', '```', '',
         '[Suggest a paper or correction](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Contribution guide](CONTRIBUTING.md) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)', '']
     return '\n'.join(lines)
 
@@ -408,9 +464,13 @@ def outputs():
         if current != history[-1][kind+'_ids']:
             raise ValueError('Latest snapshot does not match current corpus; run import')
     stats = statistics(records, history)
-    validate_project(read_json(ROOT/'docs/project.json'), records)
+    project = read_json(ROOT/'docs/project.json')
+    evidence_data = read_json(ROOT/'docs/evidence.json')
+    updates = read_json(ROOT/'docs/updates.json')
+    validate_project(project, records)
+    validate_evidence(evidence_data, project, records)
     dataset = {'config':config, 'stats':stats, 'records':records}
-    return {ROOT/'README.md': markdown(stats, config, read_json(ROOT/'docs/project.json')),
+    return {ROOT/'README.md': markdown(stats, config, project, evidence_data, updates),
             ROOT/'docs/stats.json': json.dumps(public_statistics(stats, config), ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/catalog.json': json.dumps(dataset, ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/assets/publication-timeline.svg': svg_timeline(stats, config['search_cutoff']),

@@ -8,7 +8,7 @@ We trace **what changed in the target-agent harness, what that change accomplish
 
 **95 category–source records · 62 research papers + 1 benchmark resource · 20 task subcategories · 4 domains**
 
-Domain evidence cutoff: **2026-10-01**. A record is one source within one task subcategory. Records can share a source and include incomplete reporting; these are not 95 independent effects. Selected synthesis is available in this repository; the full manuscript and record collection are forthcoming.
+Domain evidence cutoff: **2026-10-01**. A record is one source within one task subcategory. Records can share a source and include incomplete reporting; these are not 95 independent effects. All 95 domain records are available in the benchmark explorer and downloadable data. The manuscript is forthcoming.
 
 ## What the survey finds
 
@@ -33,9 +33,23 @@ Domain evidence cutoff: **2026-10-01**. A record is one source within one task s
 - **Related-task transfer.** Zetta’s cumulative stack transfers unchanged to three related tasks: mean success rises from 64% to 84%. The result does not isolate individual recovery branches or establish transfer to other domains. HarnessPAI supplies a complementary state-estimation repair. Sources: [Zetta](https://arxiv.org/abs/2608.16590v1), [HarnessPAI](https://arxiv.org/abs/2609.29166v1).
 - **Combined-component ablation.** At a fixed three-image budget, AutoRef’s held-out average falls from 7.37 to 6.93 when its combined failure-aware selector is replaced. The ablation does not isolate order swapping. Reusable selection and composition procedures are the harness artifacts; a generated image is not. Sources: [AutoRef](https://arxiv.org/abs/2609.35530v1), [COMFYCLAW](https://arxiv.org/abs/2607.01709v1), [VideoWeaver](https://arxiv.org/abs/2606.08091v2).
 
-The interactive atlas contains 12 selected observations with before/after descriptions, source links, evidence types and reporting limits. It compares changes across papers without attributing a full-system gain to an individual edit.
+## Benchmark evidence explorer
 
-[Explore the structured findings](docs/project.json) · [Download BibTeX](data/literature.bib) · [Catalog and date provenance](docs/catalog.json)
+The website pairs **12 domain observations** with **27 comparison lenses** and **95 source records**. Filter by domain, subcategory and benchmark/setting; read the concrete change alongside its seed, outcome, primary-source location and reporting limits.
+
+Examples include empty-patch recovery and dependency-aware verification in repository repair; bounded completion checks in terminal tasks; contrasting-label retrieval in classification; and failure-aware draft selection in image generation. These are source-grounded comparisons, not prescriptions that every benchmark shares the same solution.
+
+Single-source observations are identified. Transfers retain their original discovery setting. Where a source reports an evolution experiment without a final artifact, the explorer shows the gap rather than inventing a common pattern. Full-system improvements are not attributed to individual edits.
+
+[Download all domain evidence](docs/evidence.json) · [Selected domain findings](docs/project.json) · [Download BibTeX](data/literature.bib) · [Catalog and date provenance](docs/catalog.json)
+
+### A living companion, beyond the paper
+
+We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.
+
+Updates follow the availability and verification of new evidence. Collection imports and evidence revisions are dated separately; prior versions remain in repository history.
+
+Latest evidence release: **2026-10-10**. [Dated changes](docs/updates.json). Collection updates below track bibliography membership separately from evidence revisions.
 
 ## Living collection
 
@@ -64,7 +78,7 @@ Publication dates differ from collection dates. The snapshots below record actua
 
 ## Website
 
-The standalone site lives in `docs/`: domain tabs, evidence-linked comparisons, monthly/cumulative charts, source disclosures and local artwork. The manuscript link will be added when available.
+The standalone site lives in `docs/`: domain tabs, benchmark filters, a detailed evidence notebook, comparisons, monthly/cumulative charts and dated release notes. The manuscript link will be added when available.
 
 ```sh
 python3 -m http.server 8000 --directory docs
@@ -89,6 +103,17 @@ python3 -m unittest discover -s tests
 python3 scripts/catalog.py check
 ```
 
-The build updates website statistics, downloadable data, charts and this README together. Source-linked findings live in `docs/project.json` and are revised separately from collection counts.
+The build updates website statistics, downloadable data, charts and this README together. Source-linked findings live in `docs/project.json`. Benchmark assignments and comparative notes live in `data/evidence_annotations.json`; imported domain records live in `docs/evidence.json`. They are revised separately from collection counts.
+
+After reviewing changed records and benchmark assignments:
+
+```sh
+python3 scripts/import_evidence.py --source /path/to/section4_supp.tex --date YYYY-MM-DD
+# Add a dated entry to docs/updates.json describing the actual changes.
+python3 scripts/catalog.py build
+python3 -m unittest discover -s tests
+node tests/evidence_model_test.mjs
+python3 scripts/catalog.py check
+```
 
 [Suggest a paper or correction](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Contribution guide](CONTRIBUTING.md) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)

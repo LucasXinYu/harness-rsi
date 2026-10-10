@@ -111,6 +111,54 @@ class CatalogTests(unittest.TestCase):
         for path,expected in c.outputs().items():
             self.assertEqual(path.read_text(),expected,str(path))
 
+    def test_benchmark_evidence_scope_and_export_consistency(self):
+        data=c.read_json(c.ROOT/'docs/evidence.json')
+        project=c.read_json(c.ROOT/'docs/project.json')
+        records=c.load_catalog()
+        c.validate_evidence(data,project,records)
+        annotations=c.read_json(c.ROOT/'data/evidence_annotations.json')
+        self.assertEqual(data['patterns'],annotations['patterns'])
+        self.assertEqual(data['benchmarks'],annotations['benchmarks'])
+        self.assertEqual({r['id'] for r in data['records']},set(annotations['records']))
+        for record in data['records']:
+            for field,value in annotations['records'][record['id']].items():
+                self.assertEqual(record[field],value)
+        bad=copy.deepcopy(data)
+        bad['patterns'][0]['cases'][0]['benchmarks']=['imaginary-benchmark']
+        with self.assertRaisesRegex(ValueError,'unsupported benchmark'):
+            c.validate_evidence(bad,project,records)
+        bad=copy.deepcopy(data)
+        bad['records'][0]['sources'][0]['locator']=''
+        with self.assertRaisesRegex(ValueError,'locator'):
+            c.validate_evidence(bad,project,records)
+        bad=copy.deepcopy(data)
+        bad['records'][0]['key']='invented-paper'
+        with self.assertRaises(ValueError):
+            c.validate_evidence(bad,project,records)
+
+    def test_evidence_records_keep_important_attribution_limits(self):
+        data=c.read_json(c.ROOT/'docs/evidence.json')
+        records={r['id']:r for r in data['records']}
+        modular=records['terminal-based-engineering-tasks--modularrsi2026']
+        self.assertEqual(next(b['role'] for b in modular['benchmarks'] if b['id']=='terminal-bench-2-0'),'transfer')
+        self.assertIn('not Terminal-Bench test cases',modular['sections'][-1]['text'])
+        rho=records['terminal-based-engineering-tasks--rho2026']
+        self.assertEqual(rho['benchmarks'][0]['id'],'terminal-bench-2-x-minor-unspecified')
+        self.assertIn('do not run those scripts',rho['sections'][-1]['text'])
+        aide=records['machine-learning-engineering--aide2_2026']
+        self.assertEqual(aide['benchmarks'][0]['role'],'transfer')
+        self.assertIn('never enters evolutionary selection',aide['sections'][-1]['text'])
+
+    def test_evidence_release_is_dated_and_matches_the_snapshot(self):
+        data=c.read_json(c.ROOT/'docs/evidence.json')
+        updates=c.read_json(c.ROOT/'docs/updates.json')
+        latest=updates['releases'][0]
+        self.assertEqual(latest['date'],data['updated_on'])
+        self.assertEqual(latest['records'],len(data['records']))
+        for release in updates['releases']:
+            c.dt.date.fromisoformat(release['date'])
+            self.assertTrue(release['changes'])
+
 
 if __name__=='__main__':
     unittest.main()

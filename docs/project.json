@@ -23,7 +23,7 @@
           "tasks": "Program editing · Terminal · ML engineering",
           "before": "A multiline file-write call is rejected and its code is sent to the shell.",
           "after": "Dispatch by editing-command name and preserve the remaining text as the file payload. Related updates normalize editor inputs or return structured experiment results.",
-          "result": "ModularRSI reports 36 → 25 mean interaction steps across three successful runs per version. SICA and SIA address other edit and experiment interfaces.",
+          "result": "On an external Go repair task, ModularRSI reports 36 → 25 mean interaction steps across three successful runs per version. SICA and SIA address other edit and experiment interfaces.",
           "evidence_type": "Case comparison",
           "limit": "Concurrent edits prevent attributing the step reduction to dispatch alone. SICA reports implemented updates; final retention is not confirmed.",
           "sources": [
@@ -433,7 +433,7 @@
     "resources": 1,
     "subcategories": 20,
     "unit": "A source study within a task subcategory. Records are not independent effects; they include reporting gaps.",
-    "release": "Selected synthesis is available here. The full manuscript and record collection are forthcoming."
+    "release": "All 95 domain records are available in the benchmark explorer and downloadable evidence data. The manuscript is forthcoming."
   },
   "insights": [
     {
@@ -539,6 +539,12 @@
       "title": "DemoEvolve: Demonstration-Guided Harness Evolution under Sparse Feedback",
       "url": "https://arxiv.org/abs/2605.24539v2",
       "note": "Cited in the domain evidence; not yet an entry in the curated Literature Map snapshot. Excluded from collection statistics."
+    },
+    {
+      "id": "wei2026evo",
+      "title": "Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents",
+      "url": "https://arxiv.org/abs/2608.15071v2",
+      "note": "Cited in the domain evidence; absent from the curated Literature Map snapshot. Excluded from collection statistics."
     }
   ]
 }

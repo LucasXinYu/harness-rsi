@@ -95,3 +95,17 @@ The repository starts private. Website deployment is a separate, manual action: 
 ## File boundaries
 
 Do not add unpublished manuscript drafts, local audit ledgers, credentials, Overleaf exports, or downloaded paper PDFs. Repository-specific files stay here; they do not get imported into the Overleaf project. The repository currently has no blanket license grant; source papers retain their original rights.
+
+
+## Updating benchmark evidence
+
+The benchmark explorer is a companion to the domain evidence, not a leaderboard. Keep each study's seed, evaluation setting, actual artifact and attribution limits together.
+
+1. Review the source manuscript and the relevant primary paper or released artifact. Update the domain record before changing a synthesis.
+2. Maintain explicit benchmark memberships in `data/evidence_annotations.json`. Distinguish transfer, evaluation and case settings. Do not infer a concrete mechanism for every dataset named by a paper.
+3. Add comparison notes only where a record supports them. Use a note's optional `benchmarks` list to restrict it to supported settings; an empty list makes a note visible only at the broader category level. A Liar's Dice case, for example, must not become a Balatro discovery.
+4. Import the reviewed appendix with `python3 scripts/import_evidence.py --source /path/to/section4_supp.tex --date YYYY-MM-DD`. Its sibling `literature.bib` supplies manuscript references. The importer refuses an unreviewed new record until its benchmark assignment exists.
+5. Update `docs/updates.json` with the actual date, additions, corrections or changed conclusions. Preserve previous entries. Update the snapshot totals and cutoff in `docs/project.json` when the underlying evidence set changes. Bibliography imports have their own collection history.
+6. Run the Python tests, `node tests/evidence_model_test.mjs`, `python3 scripts/catalog.py build` and `python3 scripts/catalog.py check`. Check the rendered site, then commit the data and interface together. Repository history retains earlier evidence versions.
+
+`docs/evidence.json` contains the export date, source-file hash, all domain records, primary-source locators and curated comparisons. A source repeated across subcategories is not an independent replication. Benchmark/setting labels include study-specific cases and transfer suites; their number is not the number of independent evolution experiments. Tests verify structural consistency and attribution boundaries; they do not replace reading the primary evidence.
