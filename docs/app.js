@@ -183,6 +183,7 @@ async function init() {
     };
     restoreFinding();
     window.addEventListener('hashchange', restoreFinding);
+    renderPaperAuthors(project.paper);
     renderContributors(project.contributors || []);
     setFutureLink('paper-action', project.arxiv_url, 'arXiv paper');
     setFutureLink('paper-resource', project.arxiv_url, 'Read the survey');
@@ -349,6 +350,18 @@ async function initStatistics() {
 }
 initStatistics();
 
+
+function renderPaperAuthors(paper) {
+  const list = byId('paper-authors');
+  list.replaceChildren();
+  paper.authors.forEach(name => {
+    const item = document.createElement('li');
+    item.textContent = name;
+    list.append(item);
+  });
+  byId('paper-affiliation').textContent = paper.affiliation;
+  byId('paper-location').textContent = paper.location;
+}
 
 // Contributors describe project assistance, not scholarly authorship.
 function renderContributors(contributors) {

@@ -396,7 +396,7 @@ def markdown(stats, config, project, evidence_data, updates):
     evidence = project['evidence']
     lines = ['![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)', '',
         '<p align="center"><strong>What actually evolves around the model?</strong><br>A survey and visual companion on agent harness optimization and recursive self-improvement.<br><sub>Official project repository · Research in progress · Manuscript forthcoming</sub></p>', '',
-        '<p align="center"><a href="#what-the-survey-finds">Findings</a> · <a href="#across-four-domains">Domain atlas</a> · <a href="#living-collection">Living collection</a> · <a href="#contributors">Contributors</a></p>', '',
+        '<p align="center"><a href="#what-the-survey-finds">Findings</a> · <a href="#across-four-domains">Domain atlas</a> · <a href="#living-collection">Living collection</a> · <a href="#authors">Authors</a> · <a href="#contributors">Contributors</a></p>', '',
         'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The evidence follows concrete interfaces, parsers, context-handling rules, recovery branches and persistent skills—not just optimization algorithms or benchmark scores.', '',
         f'**{evidence["records"]} category–source records · {evidence["papers"]} research papers + {evidence["resources"]} benchmark resource · {evidence["subcategories"]} task subcategories · {len(project["domains"])} domains**', '',
         f'Domain evidence cutoff: **{evidence["cutoff"]}**. A record is one source within one task subcategory. Records can share a source and include incomplete reporting; these are not 95 independent effects. All 95 domain records are available in the benchmark explorer and downloadable data. The manuscript is forthcoming.', '',
@@ -433,7 +433,14 @@ def markdown(stats, config, project, evidence_data, updates):
         'The standalone site lives in `docs/`: an interactive harness diagram, source-linked result spotlights, a five-stage workflow explorer, domain comparisons, benchmark shortcuts, a detailed evidence notebook, monthly/cumulative charts and dated release notes. A reading guide distinguishes whole-system outcomes, ablations and transfer. The manuscript link will be added when available.', '',
         '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
         'Open http://localhost:8000. Public hosting is not yet enabled; updating this repository does not itself publish GitHub Pages.', '',
-        '## Contributors', '', '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
+        '## Authors', '',
+        '**'+project['paper']['title']+'**', '',
+        ' · '.join(project['paper']['authors']), '',
+        project['paper']['affiliation']+'<br>', project['paper']['location'], '',
+        'The arXiv identifier and citation will be added when the preprint is available.', '',
+        '## Contributors', '',
+        'Project development and assistance are listed separately from the survey authors above.', '',
+        '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
     for person in project.get('contributors', []):
         name = f'[{person["name"]}]({person["url"]})' if person.get('url') else person['name']
         lines += [f'| {name} | {person["role"]} | {person["description"]} |']

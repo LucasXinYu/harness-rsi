@@ -2,7 +2,7 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A survey and visual companion on agent harness optimization and recursive self-improvement.<br><sub>Official project repository · Research in progress · Manuscript forthcoming</sub></p>
 
-<p align="center"><a href="#what-the-survey-finds">Findings</a> · <a href="#across-four-domains">Domain atlas</a> · <a href="#living-collection">Living collection</a> · <a href="#contributors">Contributors</a></p>
+<p align="center"><a href="#what-the-survey-finds">Findings</a> · <a href="#across-four-domains">Domain atlas</a> · <a href="#living-collection">Living collection</a> · <a href="#authors">Authors</a> · <a href="#contributors">Contributors</a></p>
 
 We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The evidence follows concrete interfaces, parsers, context-handling rules, recovery branches and persistent skills—not just optimization algorithms or benchmark scores.
 
@@ -86,7 +86,20 @@ python3 -m http.server 8000 --directory docs
 
 Open http://localhost:8000. Public hosting is not yet enabled; updating this repository does not itself publish GitHub Pages.
 
+## Authors
+
+**From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents**
+
+Xin Yu · Chengyuan Liu · Wenxin Long · Haochen Zhang · Lingzhou Xue
+
+Department of Statistics, The Pennsylvania State University<br>
+University Park, PA 16802, USA
+
+The arXiv identifier and citation will be added when the preprint is available.
+
 ## Contributors
+
+Project development and assistance are listed separately from the survey authors above.
 
 | Contributor | Role | Contribution |
 | :-- | :-- | :-- |

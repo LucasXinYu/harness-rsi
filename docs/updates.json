@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "project-authors-2026-10-10",
+      "date": "2026-10-10",
+      "kind": "website",
+      "title": "Meet the survey authors",
+      "changes": [
+        "Added the five confirmed manuscript authors, in order, and their shared Penn State Statistics affiliation to the website and repository homepage.",
+        "Separated survey authorship from project development and AI assistance. The preprint link remains forthcoming.",
+        "Project information update only; no new literature search or evidence revision is claimed."
+      ],
+      "records": 95
+    },
+    {
       "id": "website-spatial-2026-10-10",
       "date": "2026-10-10",
       "kind": "website",

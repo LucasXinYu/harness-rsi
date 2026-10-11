@@ -3,6 +3,18 @@
   "status": "in_preparation",
   "arxiv_url": null,
   "website_url": null,
+  "paper": {
+    "title": "From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents",
+    "authors": [
+      "Xin Yu",
+      "Chengyuan Liu",
+      "Wenxin Long",
+      "Haochen Zhang",
+      "Lingzhou Xue"
+    ],
+    "affiliation": "Department of Statistics, The Pennsylvania State University",
+    "location": "University Park, PA 16802, USA"
+  },
   "domains": [
     {
       "id": "coding",
