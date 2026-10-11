@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "website-spatial-2026-10-10",
+      "date": "2026-10-10",
+      "kind": "website",
+      "title": "Explore the editable layer",
+      "changes": [
+        "Added an interactive spatial cover with four selectable harness surfaces and direct links to their evidence.",
+        "Opened four domain gateways and refined the result spotlights; animation supports pause and reduced-motion preferences.",
+        "Presentation update only: evidence counts, original findings and the paper snapshot are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "website-observatory-2026-10-10",
       "date": "2026-10-10",
       "kind": "website",

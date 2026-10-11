@@ -22,6 +22,7 @@
     $('surface-description').textContent=description;
     $('surface-source').href=`#finding-${target}`;
     document.querySelector('.hero-art').dataset.surface=tab.dataset.surface;
+    document.dispatchEvent(new CustomEvent('harness-surface', {detail:tab.dataset.surface}));
     if(focus) tab.focus();
   }
   function tabKeys(event,index,length,select) {
@@ -61,6 +62,14 @@
     {domain:'visual',finding:'composition-selection',value:'7.37 vs 6.93',unit:'held-out average score',label:'How drafts are selected matters.',setting:'AutoRef · fixed three-image budget',description:'The average falls when the combined failure-aware selector is replaced.',limit:'Combined-component ablation; it does not isolate order swapping.'}
   ];
   fetch('project.json').then(r=>{if(!r.ok)throw Error('Project data unavailable');return r.json();}).then(project=>{
+    const portalLabels={coding:['⌘','Coding','Programs · patches · experiments'],reasoning:['∴','Reasoning','Proofs · retrieval · decisions'],interactive:['↗','Interactive','Browsers · services · robotics'],visual:['◈','Visual','Images · video · generation']};
+    $('domain-portals').replaceChildren(...project.domains.map(domain=>{
+      const [icon,label,description]=portalLabels[domain.id],a=el('a','domain-portal');
+      a.dataset.domain=domain.id;a.href=`#benchmarks?domain=${domain.id}&category=all&setting=all`;
+      a.append(el('span','portal-icon',icon));const copy=el('div','portal-copy');
+      copy.append(el('strong','',label),el('span','',description),el('small','',`${domain.records} evidence records · ${domain.subcategories} subcategories`));
+      a.append(copy,el('span','portal-arrow','↗'));return a;
+    }));
     $('hero-records').textContent=project.evidence.records;$('hero-cutoff').textContent=project.evidence.cutoff;$('hero-cutoff').dateTime=project.evidence.cutoff;
     $('result-cards').replaceChildren(...cases.map((item,index)=>{
       const finding=project.domains.find(d=>d.id===item.domain)?.findings.find(f=>f.id===item.finding);
