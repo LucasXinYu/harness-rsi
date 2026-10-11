@@ -430,7 +430,7 @@ def markdown(stats, config, project, evidence_data, updates):
         '### Collection updates', '', '| Snapshot | Papers | Resources |', '| :-- | --: | --: |']
     lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history'][-5:]]
     lines += ['', '## Website', '',
-        'The standalone site lives in `docs/`: domain tabs, benchmark filters, a detailed evidence notebook, comparisons, monthly/cumulative charts and dated release notes. The manuscript link will be added when available.', '',
+        'The standalone site lives in `docs/`: an interactive harness diagram, source-linked result spotlights, a five-stage workflow explorer, domain comparisons, benchmark shortcuts, a detailed evidence notebook, monthly/cumulative charts and dated release notes. A reading guide distinguishes whole-system outcomes, ablations and transfer. The manuscript link will be added when available.', '',
         '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
         'Open http://localhost:8000. Public hosting is not yet enabled; updating this repository does not itself publish GitHub Pages.', '',
         '## Contributors', '', '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']

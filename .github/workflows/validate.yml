@@ -17,5 +17,6 @@ jobs:
       - run: python3 -m unittest discover -s tests
       - run: python3 scripts/catalog.py check
       - run: node --check docs/app.js
+      - run: node --check docs/observatory.js
       - run: node --input-type=module --check < docs/benchmarks.js
       - run: node tests/evidence_model_test.mjs

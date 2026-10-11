@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="430" viewBox="0 0 580 430" fill="none">
+<title>The editable layer around a language model</title>
+<desc>Tools, context, memory and control surround a task-executing model. The lines show conceptual relationships, not a specific execution order.</desc>
+<defs>
+ <radialGradient id="halo"><stop stop-color="#49dac7" stop-opacity=".17"/><stop offset="1" stop-color="#49dac7" stop-opacity="0"/></radialGradient>
+ <linearGradient id="arc" x1="92" y1="70" x2="462" y2="338" gradientUnits="userSpaceOnUse"><stop stop-color="#85ffe5"/><stop offset=".54" stop-color="#40a5e2"/><stop offset="1" stop-color="#ae96ff"/></linearGradient>
+ <linearGradient id="core" x1="244" y1="159" x2="338" y2="253" gradientUnits="userSpaceOnUse"><stop stop-color="#182e3b"/><stop offset="1" stop-color="#0b1526"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+ <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#5a8aaa" stroke-opacity=".075"/></pattern>
+</defs>
+<path fill="url(#grid)" d="M20 25H560V400H20z"/>
+<circle cx="290" cy="208" r="197" fill="url(#halo)"/>
+<g stroke="#80b7cf" stroke-opacity=".2"><path d="M290 29V68M290 347V386M71 208H115M465 208H509"/><circle cx="290" cy="208" r="176" stroke-dasharray="1 9"/><circle cx="290" cy="208" r="153"/><ellipse cx="290" cy="208" rx="231" ry="112" transform="rotate(-27 290 208)"/><ellipse cx="290" cy="208" rx="209" ry="139" transform="rotate(31 290 208)"/></g>
+<circle cx="290" cy="208" r="128" stroke="url(#arc)" stroke-width="1.4" stroke-dasharray="122 18 16 12"/>
+<path d="M178 146L244 184M337 181L416 139M181 283L245 234M336 234L415 278" stroke="url(#arc)" stroke-opacity=".6"/>
+<g stroke="url(#arc)" stroke-width="1.2"><path d="M290 146L344 177V239L290 270L236 239V177Z" fill="#0c1826"/><path d="M290 157L334 182V234L290 260L246 234V182Z" fill="url(#core)"/></g>
+<path d="M277 208L290 185L303 208L290 231Z" fill="#77e9dc" fill-opacity=".15" stroke="#8affe5"/>
+<circle cx="290" cy="208" r="4" fill="#aefff0"/>
+<g font-family="Arial, sans-serif" text-anchor="middle"><text x="290" y="302" fill="#e4f8fa" font-size="16" font-weight="700" letter-spacing="3">MODEL</text><text x="290" y="321" fill="#93a8ba" font-size="10" letter-spacing="1">TASK EXECUTION</text></g>
+<g fill="#0c1624" stroke="#345563"><rect x="39" y="95" width="139" height="54" rx="7"/><rect x="405" y="95" width="139" height="54" rx="7"/><rect x="42" y="271" width="139" height="54" rx="7"/><rect x="405" y="271" width="139" height="54" rx="7"/></g>
+<g font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.1"><text x="58" y="118" fill="#89ebd9">TOOL I/O</text><text x="424" y="118" fill="#99caff">CONTEXT</text><text x="61" y="294" fill="#bfadff">MEMORY</text><text x="424" y="294" fill="#ffc08b">CONTROL</text></g>
+<g font-family="Arial, sans-serif" font-size="10" fill="#a6b4c7"><text x="58" y="135">Parse · route · execute</text><text x="424" y="135">Read · select · compress</text><text x="61" y="311">Store · retrieve · update</text><text x="424" y="311">Check · branch · recover</text></g>
+<g fill="#7bffe2"><circle cx="178" cy="146" r="3"/><circle cx="405" cy="139" r="3"/><circle cx="164" cy="186" r="3"/><circle cx="403" cy="270" r="3"/></g>
+<g fill="#b6a5ff"><circle cx="181" cy="283" r="3"/><circle cx="414" cy="176" r="3"/></g>
+<path d="M192 52H228M192 52V70M387 365H353M387 365V347" stroke="#6edccc" stroke-opacity=".5"/>
+<g font-family="monospace" font-size="9" fill="#819aaa" letter-spacing="1.5"><text x="212" y="28">REUSABLE SOFTWARE LAYER</text><text x="196" y="400">OBSERVE / REVISE / EVALUATE</text></g>
+</svg>

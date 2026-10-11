@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "website-observatory-2026-10-10",
+      "date": "2026-10-10",
+      "kind": "website",
+      "title": "A closer look at the evolving harness",
+      "changes": [
+        "Redesigned the homepage with an interactive harness diagram, three source-linked result spotlights, and an explorable improvement workflow.",
+        "Added benchmark shortcuts and a reading guide for attribution, evidence strength and reuse conditions.",
+        "This is a presentation update: the 95 domain records, 235 collected papers and original evidence cutoff are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "evidence-2026-10-10",
       "date": "2026-10-10",
       "title": "Benchmark evidence, opened up",
