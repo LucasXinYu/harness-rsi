@@ -1,6 +1,6 @@
 {
   "commitment": "We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.",
-  "cadence": "Updates follow the availability and verification of new evidence. Collection imports and evidence revisions are dated separately; prior versions remain in repository history.",
+  "cadence": "Updates are maintained by the project team after source verification. Literature membership, evidence revisions and website changes have separate dates. There is no automated claim of a complete or continuously refreshed search.",
   "steps": [
     {
       "title": "Find & screen",
@@ -16,6 +16,18 @@
     }
   ],
   "releases": [
+    {
+      "id": "comparison-studio-2026-10-11",
+      "date": "2026-10-11",
+      "kind": "website",
+      "title": "Compare mechanisms, not just domain labels",
+      "changes": [
+        "Added a two-domain comparison studio for interface repairs, decision evidence and recovery, with concrete processing diagrams and linked evidence.",
+        "Added separate paper, collection and website dates, plus explicit curation and correction policies.",
+        "Reworked the repository overview around the survey’s questions, deliverables and maintenance commitments. This presentation update adds no studies or experimental findings."
+      ],
+      "records": 95
+    },
     {
       "id": "project-authors-2026-10-10",
       "date": "2026-10-10",
@@ -61,7 +73,26 @@
         "Added 27 comparison lenses and benchmark/setting filters across four domains.",
         "Separated transfer settings, single-source observations and reporting gaps; clarified that ModularRSI’s detailed Go result is external to Terminal-Bench."
       ],
-      "records": 95
+      "records": 95,
+      "kind": "evidence"
+    }
+  ],
+  "policy": [
+    {
+      "title": "Trace every substantive change",
+      "text": "New evidence identifies a task setting, starting harness, reusable edit, observed result and primary-source location. Reporting gaps remain explicit."
+    },
+    {
+      "title": "Keep versions and units distinct",
+      "text": "A revised paper updates its source record. One artifact evaluated on several settings is not counted as several independent discoveries."
+    },
+    {
+      "title": "Publish corrections with context",
+      "text": "A correction records what changed and why. Conflicting code, unclear retention and negative results remain attached to the original setting."
+    },
+    {
+      "title": "Preserve the paper snapshot",
+      "text": "The frozen survey cutoff stays identifiable. A bibliography import or website redesign does not silently extend the evidence collection."
     }
   ]
 }

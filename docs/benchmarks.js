@@ -159,19 +159,40 @@ async function initBenchmarks() {
 }
 
 async function initMaintenance() {
-  const updates=await loadJSON('updates.json');
+  const [updates,stats,evidence]=await Promise.all(['updates.json','stats.json','evidence.json'].map(loadJSON));
   $('maintenance-commitment').textContent=updates.commitment;
   $('maintenance-cadence').textContent=updates.cadence;
+  const website=updates.releases.find(release=>release.kind==='website');
+  const versions=[
+    ['PAPER EVIDENCE',evidence.cutoff,`${evidence.records.length} category–source records`, `Frozen survey cutoff · exported ${evidence.updated_on}`,'evidence.json'],
+    ['LITERATURE COLLECTION',stats.search_cutoff,`${stats.papers} collected papers`, `Search horizon · collection updated ${stats.updated_on}`,'catalog.json'],
+    ['WEBSITE PRESENTATION',website.date,'Latest presentation update', 'Interface and editorial updates; evidence dates stay separate.','updates.json']
+  ];
+  $('maintenance-versions').replaceChildren(...versions.map(([label,date,title,description,url])=>{
+    const card=node('a','version-card');card.href=url;
+    const time=node('time','',date);time.dateTime=date;
+    card.append(node('span','eyebrow',label),time,node('strong','',title),node('small','',description));return card;
+  }));
   $('maintenance-steps').replaceChildren(...updates.steps.map((step,index)=>{
     const item=node('article');item.append(node('span','',`0${index+1}`),node('h3','',step.title),node('p','',step.text));return item;
   }));
-  $('evidence-releases').replaceChildren(...updates.releases.map(release=>{
+  $('maintenance-policy').replaceChildren(...updates.policy.map(policy=>{
+    const item=node('article');item.append(node('h3','',policy.title),node('p','',policy.text));return item;
+  }));
+  const releases=updates.releases.map(release=>{
     const item=node('article','evidence-release');
     const date=node('time','',release.date);date.dateTime=release.date;
-    item.append(date,node('h3','',release.title));
+    const kind=node('span','release-kind',release.kind==='evidence'?'EVIDENCE RELEASE':'WEBSITE UPDATE');
+    const heading=node('h3','',release.title);heading.append(kind);
+    item.append(date,heading);
     const list=node('ul');release.changes.forEach(change=>list.append(node('li','',change)));
     item.append(list);return item;
-  }));
+  });
+  $('evidence-releases').replaceChildren(...releases.slice(0,2));
+  if(releases.length>2){
+    const older=node('details','older-releases');older.append(node('summary','',`Previous updates (${releases.length-2})`),...releases.slice(2));
+    $('evidence-releases').append(older);
+  }
 }
 
 initBenchmarks().catch(error=>{console.error(error);$('benchmark-error').hidden=false;});

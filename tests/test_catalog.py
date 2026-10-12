@@ -101,6 +101,14 @@ class CatalogTests(unittest.TestCase):
         bad['domains'][0]['findings'][0]['sources'][0]['url']='https://example.org/wrong-paper'
         with self.assertRaisesRegex(ValueError,'differs'):
             c.validate_project(bad,records)
+        bad=copy.deepcopy(project)
+        del bad['insights'][0]['comparison']['axes']['coding']
+        with self.assertRaisesRegex(ValueError,'same domains'):
+            c.validate_project(bad,records)
+        bad=copy.deepcopy(project)
+        bad['insights'][0]['cells'].append(bad['insights'][0]['cells'][0])
+        with self.assertRaisesRegex(ValueError,'exactly one'):
+            c.validate_project(bad,records)
 
     def test_current_corpus_totals_and_generated_output(self):
         records=c.load_catalog()
@@ -152,12 +160,20 @@ class CatalogTests(unittest.TestCase):
     def test_evidence_release_is_dated_and_matches_the_snapshot(self):
         data=c.read_json(c.ROOT/'docs/evidence.json')
         updates=c.read_json(c.ROOT/'docs/updates.json')
-        latest=updates['releases'][0]
-        self.assertEqual(latest['date'],data['updated_on'])
-        self.assertEqual(latest['records'],len(data['records']))
-        for release in updates['releases']:
-            c.dt.date.fromisoformat(release['date'])
-            self.assertTrue(release['changes'])
+        c.validate_updates(updates,data)
+        # A newer UI release must not force a fabricated evidence/export date.
+        newer=copy.deepcopy(updates)
+        tomorrow=(c.dt.date.fromisoformat(updates['releases'][0]['date'])+c.dt.timedelta(days=1)).isoformat()
+        newer['releases'].insert(0,{'id':'ui-only','date':tomorrow,'kind':'website','changes':['Presentation only.'],'records':len(data['records'])})
+        c.validate_updates(newer,data)
+        wrong=copy.deepcopy(updates)
+        next(r for r in wrong['releases'] if r['kind']=='evidence')['records']+=1
+        with self.assertRaisesRegex(ValueError,'exported snapshot'):
+            c.validate_updates(wrong,data)
+        wrong=copy.deepcopy(updates)
+        wrong['releases'].reverse()
+        with self.assertRaisesRegex(ValueError,'newest first'):
+            c.validate_updates(wrong,data)
 
 
 if __name__=='__main__':

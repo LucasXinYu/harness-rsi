@@ -1,47 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">
 <title id="title">Collected papers by publication month · 2026</title>
 <desc id="desc">2026-01: 3; 2026-02: 1; 2026-03: 4; 2026-04: 6; 2026-05: 14; 2026-06: 11; 2026-07: 22; 2026-08: 30; 2026-09: 67; 2026-10: 11 (partial month). Counts describe the survey collection, including related work, not all papers in the field.</desc>
-<rect width="1000" height="390" rx="12" fill="#fcfaff"/>
-<g font-family="Arial,sans-serif" font-size="13" fill="#302638">
-<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9785a6">2026 · Search through 2026-10-10</text>
-<path d="M64 305.0h895" stroke="#eae2f2"/>
-<text x="52" y="309.0" text-anchor="end" fill="#9785a6">0</text>
-<path d="M64 250.0h895" stroke="#eae2f2"/>
-<text x="52" y="254.0" text-anchor="end" fill="#9785a6">17.5</text>
-<path d="M64 195.0h895" stroke="#eae2f2"/>
-<text x="52" y="199.0" text-anchor="end" fill="#9785a6">35</text>
-<path d="M64 140.0h895" stroke="#eae2f2"/>
-<text x="52" y="144.0" text-anchor="end" fill="#9785a6">52.5</text>
-<path d="M64 85.0h895" stroke="#eae2f2"/>
-<text x="52" y="89.0" text-anchor="end" fill="#9785a6">70</text>
-<rect x="83.7" y="295.6" width="50.1" height="9.4" rx="3" fill="#9775d2"/>
+<rect width="1000" height="390" rx="12" fill="#0c1521"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="#e9f2f6">
+<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9eb3c6">2026 · Search through 2026-10-10</text>
+<path d="M64 305.0h895" stroke="#283b4b"/>
+<text x="52" y="309.0" text-anchor="end" fill="#9eb3c6">0</text>
+<path d="M64 250.0h895" stroke="#283b4b"/>
+<text x="52" y="254.0" text-anchor="end" fill="#9eb3c6">17.5</text>
+<path d="M64 195.0h895" stroke="#283b4b"/>
+<text x="52" y="199.0" text-anchor="end" fill="#9eb3c6">35</text>
+<path d="M64 140.0h895" stroke="#283b4b"/>
+<text x="52" y="144.0" text-anchor="end" fill="#9eb3c6">52.5</text>
+<path d="M64 85.0h895" stroke="#283b4b"/>
+<text x="52" y="89.0" text-anchor="end" fill="#9eb3c6">70</text>
+<rect x="83.7" y="295.6" width="50.1" height="9.4" rx="3" fill="#8ec6ff"/>
 <text x="108.8" y="285.6" text-anchor="middle">3</text>
-<text x="108.8" y="329" text-anchor="middle" fill="#9785a6">Jan</text>
-<rect x="173.2" y="301.9" width="50.1" height="3.1" rx="3" fill="#9775d2"/>
+<text x="108.8" y="329" text-anchor="middle" fill="#9eb3c6">Jan</text>
+<rect x="173.2" y="301.9" width="50.1" height="3.1" rx="3" fill="#8ec6ff"/>
 <text x="198.2" y="291.9" text-anchor="middle">1</text>
-<text x="198.2" y="329" text-anchor="middle" fill="#9785a6">Feb</text>
-<rect x="262.7" y="292.4" width="50.1" height="12.6" rx="3" fill="#9775d2"/>
+<text x="198.2" y="329" text-anchor="middle" fill="#9eb3c6">Feb</text>
+<rect x="262.7" y="292.4" width="50.1" height="12.6" rx="3" fill="#8ec6ff"/>
 <text x="287.8" y="282.4" text-anchor="middle">4</text>
-<text x="287.8" y="329" text-anchor="middle" fill="#9785a6">Mar</text>
-<rect x="352.2" y="286.1" width="50.1" height="18.9" rx="3" fill="#9775d2"/>
+<text x="287.8" y="329" text-anchor="middle" fill="#9eb3c6">Mar</text>
+<rect x="352.2" y="286.1" width="50.1" height="18.9" rx="3" fill="#8ec6ff"/>
 <text x="377.2" y="276.1" text-anchor="middle">6</text>
-<text x="377.2" y="329" text-anchor="middle" fill="#9785a6">Apr</text>
-<rect x="441.7" y="261.0" width="50.1" height="44.0" rx="3" fill="#9775d2"/>
+<text x="377.2" y="329" text-anchor="middle" fill="#9eb3c6">Apr</text>
+<rect x="441.7" y="261.0" width="50.1" height="44.0" rx="3" fill="#8ec6ff"/>
 <text x="466.8" y="251.0" text-anchor="middle">14</text>
-<text x="466.8" y="329" text-anchor="middle" fill="#9785a6">May</text>
-<rect x="531.2" y="270.4" width="50.1" height="34.6" rx="3" fill="#9775d2"/>
+<text x="466.8" y="329" text-anchor="middle" fill="#9eb3c6">May</text>
+<rect x="531.2" y="270.4" width="50.1" height="34.6" rx="3" fill="#8ec6ff"/>
 <text x="556.2" y="260.4" text-anchor="middle">11</text>
-<text x="556.2" y="329" text-anchor="middle" fill="#9785a6">Jun</text>
-<rect x="620.7" y="235.9" width="50.1" height="69.1" rx="3" fill="#9775d2"/>
+<text x="556.2" y="329" text-anchor="middle" fill="#9eb3c6">Jun</text>
+<rect x="620.7" y="235.9" width="50.1" height="69.1" rx="3" fill="#8ec6ff"/>
 <text x="645.8" y="225.9" text-anchor="middle">22</text>
-<text x="645.8" y="329" text-anchor="middle" fill="#9785a6">Jul</text>
-<rect x="710.2" y="210.7" width="50.1" height="94.3" rx="3" fill="#9775d2"/>
+<text x="645.8" y="329" text-anchor="middle" fill="#9eb3c6">Jul</text>
+<rect x="710.2" y="210.7" width="50.1" height="94.3" rx="3" fill="#8ec6ff"/>
 <text x="735.2" y="200.7" text-anchor="middle">30</text>
-<text x="735.2" y="329" text-anchor="middle" fill="#9785a6">Aug</text>
-<rect x="799.7" y="94.4" width="50.1" height="210.6" rx="3" fill="#9775d2"/>
+<text x="735.2" y="329" text-anchor="middle" fill="#9eb3c6">Aug</text>
+<rect x="799.7" y="94.4" width="50.1" height="210.6" rx="3" fill="#8ec6ff"/>
 <text x="824.8" y="84.4" text-anchor="middle">67</text>
-<text x="824.8" y="329" text-anchor="middle" fill="#9785a6">Sep</text>
-<rect x="889.2" y="270.4" width="50.1" height="34.6" rx="3" fill="#ba866d"/>
+<text x="824.8" y="329" text-anchor="middle" fill="#9eb3c6">Sep</text>
+<rect x="889.2" y="270.4" width="50.1" height="34.6" rx="3" fill="#ffc080"/>
 <text x="914.2" y="260.4" text-anchor="middle">11</text>
-<text x="914.2" y="329" text-anchor="middle" fill="#9785a6">Oct*</text>
-<text x="28" y="368" fill="#9785a6">* Partial month. Known release months: 223/235 papers. Official resources are excluded.</text></g></svg>
+<text x="914.2" y="329" text-anchor="middle" fill="#9eb3c6">Oct*</text>
+<text x="28" y="368" fill="#9eb3c6">* Partial month. Known release months: 223/235 papers. Official resources are excluded.</text></g></svg>

@@ -1,0 +1,47 @@
+name: Correct or extend evidence
+description: Report an attribution, scope, result or source-location issue in the research atlas.
+title: '[Evidence] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Please provide primary-source evidence. Keep the benchmark, source version and actual retained artifact distinct. Repository access is currently limited to collaborators.'
+  - type: input
+    id: record
+    attributes:
+      label: Record or finding ID
+      description: Use the evidence record ID (subcategory--citationkey), finding ID, or a precise page location.
+    validations:
+      required: true
+  - type: input
+    id: setting
+    attributes:
+      label: Affected domain and benchmark / setting
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What needs correction?
+      options:
+        - Seed versus evolved capability
+        - Proposed versus retained change
+        - Outcome or causal attribution
+        - Benchmark or transfer scope
+        - Source version or evidence locator
+        - Cross-study comparison or missing evidence
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Primary source and exact location
+      description: Include the URL, version/date, section/table/figure or code file and commit where possible. Please do not upload copyrighted PDFs.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Current statement and proposed correction
+      description: Explain what the evidence supports, what it does not, and any uncertainty that remains.
+    validations:
+      required: true

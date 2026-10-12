@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="642" viewBox="0 0 1120 642" role="img" aria-labelledby="title desc">
+<title id="title">Shared questions, task-specific harness edits</title>
+<desc id="desc">A four-domain comparison of interfaces, decision evidence and recovery. Each cell shows a selected harness edit and its input-to-intended-output relation. These are separate examples, not a combined pipeline or tested transfer.</desc>
+<rect width="1120" height="642" rx="12" fill="#0c1521"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="30" y="34" font-size="10" letter-spacing="1.7" fill="#79ead3">THE COMPARISON AT A GLANCE</text>
+<text x="30" y="75" font-size="29" fill="#e9f2f6">Shared questions. Task-specific edits.</text>
+<text x="30" y="102" font-size="13" fill="#a3b3c5">Read across a domain; compare down a question. The underlying changes stay linked to their sources.</text>
+<text x="210" y="145" font-size="12" fill="#b7cbdc">Interface: what must stay intact?</text>
+<text x="506" y="145" font-size="12" fill="#b7cbdc">Evidence: what changes a decision?</text>
+<text x="802" y="145" font-size="12" fill="#b7cbdc">Recovery: what triggers a retry?</text>
+<text x="30" y="193" font-size="15" font-weight="600" fill="#79ead3">Coding</text>
+<text x="30" y="246" font-size="10" fill="#8ea7bc">36 category–source records</text>
+<rect x="202" y="162" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M203 167V249" stroke="#79ead3" stroke-width="2"/>
+<text x="217" y="191" font-size="16" fill="#79ead3">Command dispatch</text>
+<text x="217" y="215" font-size="12" fill="#b8c9d8">Multiline edit → Intact file</text>
+<text x="217" y="232" font-size="12" fill="#b8c9d8">payload</text>
+<rect x="498" y="162" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M499 167V249" stroke="#79ead3" stroke-width="2"/>
+<text x="513" y="191" font-size="16" fill="#79ead3">Bounded reading</text>
+<text x="513" y="215" font-size="12" fill="#b8c9d8">Large tool return → Relevant code</text>
+<text x="513" y="232" font-size="12" fill="#b8c9d8">region</text>
+<rect x="794" y="162" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M795 167V249" stroke="#79ead3" stroke-width="2"/>
+<text x="809" y="191" font-size="16" fill="#79ead3">Typed recovery</text>
+<text x="809" y="215" font-size="12" fill="#b8c9d8">Patch or test signal → Rechecked</text>
+<text x="809" y="232" font-size="12" fill="#b8c9d8">patch</text>
+<text x="30" y="297" font-size="15" font-weight="600" fill="#b6a4ff">Reasoning &amp;</text>
+<text x="30" y="318" font-size="15" font-weight="600" fill="#b6a4ff">information</text>
+<text x="30" y="350" font-size="10" fill="#8ea7bc">33 category–source records</text>
+<rect x="202" y="266" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M203 271V353" stroke="#b6a4ff" stroke-width="2"/>
+<text x="217" y="295" font-size="16" fill="#b6a4ff">Representation check</text>
+<text x="217" y="319" font-size="12" fill="#b8c9d8">Problem or document → Specified</text>
+<text x="217" y="336" font-size="12" fill="#b8c9d8">operands</text>
+<rect x="498" y="266" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M499 271V353" stroke="#b6a4ff" stroke-width="2"/>
+<text x="513" y="295" font-size="16" fill="#b6a4ff">Contrastive retrieval</text>
+<text x="513" y="319" font-size="12" fill="#b8c9d8">Plausible labels → Distinguishing</text>
+<text x="513" y="336" font-size="12" fill="#b8c9d8">evidence</text>
+<rect x="794" y="266" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M795 271V353" stroke="#b6a4ff" stroke-width="2"/>
+<text x="809" y="295" font-size="16" fill="#b6a4ff">State + local trial</text>
+<text x="809" y="319" font-size="12" fill="#b8c9d8">Failed proof step → Checker</text>
+<text x="809" y="336" font-size="12" fill="#b8c9d8">feedback</text>
+<text x="30" y="401" font-size="15" font-weight="600" fill="#ffc080">Interactive &amp;</text>
+<text x="30" y="422" font-size="15" font-weight="600" fill="#ffc080">embodied</text>
+<text x="30" y="454" font-size="10" fill="#8ea7bc">17 category–source records</text>
+<rect x="202" y="370" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M203 375V457" stroke="#ffc080" stroke-width="2"/>
+<text x="217" y="399" font-size="16" fill="#ffc080">Scoped selector</text>
+<text x="217" y="423" font-size="12" fill="#b8c9d8">Ambiguous textbox → Intended form</text>
+<text x="217" y="440" font-size="12" fill="#b8c9d8">control</text>
+<rect x="498" y="370" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M499 375V457" stroke="#ffc080" stroke-width="2"/>
+<text x="513" y="399" font-size="16" fill="#ffc080">Executable checks</text>
+<text x="513" y="423" font-size="12" fill="#b8c9d8">Candidate moves → Legality and</text>
+<text x="513" y="440" font-size="12" fill="#b8c9d8">value</text>
+<rect x="794" y="370" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M795 375V457" stroke="#ffc080" stroke-width="2"/>
+<text x="809" y="399" font-size="16" fill="#ffc080">Bounded regrasp</text>
+<text x="809" y="423" font-size="12" fill="#b8c9d8">Unstable placement → Support check</text>
+<text x="30" y="505" font-size="15" font-weight="600" fill="#8ec6ff">Visual understanding</text>
+<text x="30" y="526" font-size="15" font-weight="600" fill="#8ec6ff">&amp; generation</text>
+<text x="30" y="558" font-size="10" fill="#8ea7bc">9 category–source records</text>
+<rect x="202" y="474" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M203 479V561" stroke="#8ec6ff" stroke-width="2"/>
+<text x="217" y="503" font-size="16" fill="#8ec6ff">Evidence binding</text>
+<text x="217" y="527" font-size="12" fill="#b8c9d8">Frames or references → Supported</text>
+<text x="217" y="544" font-size="12" fill="#b8c9d8">visual claim</text>
+<rect x="498" y="474" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M499 479V561" stroke="#8ec6ff" stroke-width="2"/>
+<text x="513" y="503" font-size="16" fill="#8ec6ff">Linked evidence state</text>
+<text x="513" y="527" font-size="12" fill="#b8c9d8">Video observations → Frame-level</text>
+<text x="513" y="544" font-size="12" fill="#b8c9d8">support</text>
+<rect x="794" y="474" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>
+<path d="M795 479V561" stroke="#8ec6ff" stroke-width="2"/>
+<text x="809" y="503" font-size="16" fill="#8ec6ff">Conditional recheck</text>
+<text x="809" y="527" font-size="12" fill="#b8c9d8">Uncertain boundary → Revised</text>
+<text x="809" y="544" font-size="12" fill="#b8c9d8">interval</text>
+<path d="M30 591H1090" stroke="#304559"/>
+<text x="30" y="615" font-size="11" fill="#9eb3c6">Selected mechanisms and intended outputs · Comparative synthesis, not evidence of cross-domain transfer</text>
+</g></svg>

@@ -478,7 +478,54 @@
           "label": "Claim → source observation",
           "detail": "Keep findings linked to frames or input references."
         }
-      ]
+      ],
+      "comparison": {
+        "shared_move": "Preserve the link between an intended operation and the object it should act on.",
+        "difference": "The representation boundary changes with the task: command payloads, problem variables, interface objects or visual observations.",
+        "questions": [
+          "What identifies the intended object?",
+          "Where can the representation lose information?",
+          "What observation confirms the correct binding?"
+        ],
+        "axes": {
+          "coding": {
+            "pipeline": [
+              "Multiline edit",
+              "Command dispatch",
+              "Intact file payload"
+            ],
+            "artifact": "Tool dispatcher / input parser",
+            "boundary": "Preserve the code text when handing an editing request to the tool."
+          },
+          "reasoning": {
+            "pipeline": [
+              "Problem or document",
+              "Representation check",
+              "Specified operands"
+            ],
+            "artifact": "Problem representation / checking instructions",
+            "boundary": "Fix the interpretation or operand selection before relying on a calculation."
+          },
+          "interactive": {
+            "pipeline": [
+              "Ambiguous textbox",
+              "Scoped selector",
+              "Intended form control"
+            ],
+            "artifact": "Reusable browser function",
+            "boundary": "Bind the action to a control inside the intended dialog."
+          },
+          "visual": {
+            "pipeline": [
+              "Frames or references",
+              "Evidence binding",
+              "Supported visual claim"
+            ],
+            "artifact": "Observation memory / reference-binding instructions",
+            "boundary": "Keep the frame or reference identity attached to the interpretation."
+          }
+        }
+      }
     },
     {
       "id": "evidence",
@@ -510,7 +557,54 @@
           "label": "Evidence provenance",
           "detail": "Query linked observations before acquiring more frames."
         }
-      ]
+      ],
+      "comparison": {
+        "shared_move": "Make the next decision depend on relevant, distinguishable evidence.",
+        "difference": "Relevant evidence can be a smaller code region, a competing explanation, an executable task rule or a traceable observation. These require different retrieval and checking procedures.",
+        "questions": [
+          "Which pending decision needs evidence?",
+          "What would distinguish competing actions or answers?",
+          "Does the added information change the decision or only increase cost?"
+        ],
+        "axes": {
+          "coding": {
+            "pipeline": [
+              "Large tool return",
+              "Bounded reading",
+              "Relevant code region"
+            ],
+            "artifact": "File-reading tools / output handling",
+            "boundary": "Control how much code and execution output enters the working context."
+          },
+          "reasoning": {
+            "pipeline": [
+              "Plausible labels",
+              "Contrastive retrieval",
+              "Distinguishing evidence"
+            ],
+            "artifact": "Retrieval and query procedures",
+            "boundary": "Bring in challengers as well as examples that confirm a candidate label."
+          },
+          "interactive": {
+            "pipeline": [
+              "Candidate moves",
+              "Executable checks",
+              "Legality and value"
+            ],
+            "artifact": "Game-specific code / decision helpers",
+            "boundary": "Turn a task rule or probability calculation into something the agent can execute."
+          },
+          "visual": {
+            "pipeline": [
+              "Video observations",
+              "Linked evidence state",
+              "Frame-level support"
+            ],
+            "artifact": "Frame-linked memory / evidence access",
+            "boundary": "Preserve where a finding came from and access supporting observations."
+          }
+        }
+      }
     },
     {
       "id": "recovery",
@@ -542,7 +636,54 @@
           "label": "Ambiguous event boundary",
           "detail": "Recheck the interval; repeated interpretation can still fail."
         }
-      ]
+      ],
+      "comparison": {
+        "shared_move": "Condition the next attempt on an observable failure and an available corrective action.",
+        "difference": "A software artifact can be rechecked, a proof state can be restored, and a physical state must be observed again. Repeated visual interpretation can preserve the original mistake.",
+        "questions": [
+          "Can the failure be detected reliably?",
+          "Can the relevant state be restored or observed?",
+          "Can the correction be checked within the task budget?"
+        ],
+        "axes": {
+          "coding": {
+            "pipeline": [
+              "Patch or test signal",
+              "Typed recovery",
+              "Rechecked patch"
+            ],
+            "artifact": "Retry / repair / setup branches",
+            "boundary": "Distinguish an absent edit, an incorrect program and an environment problem."
+          },
+          "reasoning": {
+            "pipeline": [
+              "Failed proof step",
+              "State + local trial",
+              "Checker feedback"
+            ],
+            "artifact": "Proof-state interface / bounded repair",
+            "boundary": "Make local proof revisions inspectable; richer tool use may still fail to finish the proof."
+          },
+          "interactive": {
+            "pipeline": [
+              "Unstable placement",
+              "Bounded regrasp",
+              "Support check"
+            ],
+            "artifact": "Manipulation recovery / state estimation",
+            "boundary": "Observe grasp and target geometry before applying a corrective action."
+          },
+          "visual": {
+            "pipeline": [
+              "Uncertain boundary",
+              "Conditional recheck",
+              "Revised interval"
+            ],
+            "artifact": "Prediction control / endpoint aggregation",
+            "boundary": "Revisit ambiguous temporal boundaries using the same sampled frames; regressions can persist."
+          }
+        }
+      }
     }
   ],
   "additional_finding_sources": [

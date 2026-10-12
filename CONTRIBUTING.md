@@ -1,6 +1,28 @@
 # Maintaining Harness RSI
 
-This repository is the literature companion to an ongoing survey. The homepage and GitHub README show aggregate publication trends and collection updates. The research atlas presents selected before/after changes, outcomes and limits across four task domains. Individual paper records remain in the source data; the manuscript stays in Overleaf.
+This repository is the literature companion to an ongoing survey. The homepage and GitHub README explain the survey’s three questions: how improvement works, whether the improver changes too, and what concrete harness mechanisms emerge. They combine aggregate collection trends, a two-domain comparison studio and a benchmark evidence notebook. Individual paper records remain in the source data; the manuscript stays in Overleaf.
+
+## Maintenance and corrections
+
+Updates are manually curated after checking primary sources. There is no automatic discovery service or promised fixed publication schedule. Keep three states separate:
+
+| Update | Record the change here | Do not silently change |
+| :-- | :-- | :-- |
+| Literature membership or metadata | `data/annotations.json`, bibliography import, `data/history.json` | Paper evidence cutoff or domain findings |
+| Domain evidence or a comparative conclusion | Reviewed evidence records, annotations, findings and an `evidence` release in `docs/updates.json` | Historical versions, original discovery setting or evidence limits |
+| Interface, presentation or project information | Site source and a `website` release in `docs/updates.json` | Search horizon or evidence export date |
+
+Release entries use a unique ID, actual date, `kind`, a concise description and the current evidence record count. Keep newest entries first and preserve earlier ones. The latest **evidence** release matches the evidence export date; the latest release overall may be a newer website update. Keep the manuscript cutoff identifiable even when the living collection grows.
+
+For an evidence correction:
+
+1. Identify the record ID (`subcategory--citationkey`) or finding ID, affected benchmark and precise sentence. Use the [evidence correction form](https://github.com/LucasXinYu/harness-rsi/issues/new?template=evidence.yml).
+2. Supply a primary-source URL, version and locator. State whether the problem concerns the seed, actual edit, final retention, result attribution or transfer setting. Mark uncertain facts as unresolved.
+3. Check the evidence record **and every selected finding/comparison that relies on it**. A source correction may require narrowing a pattern even if the bibliography stays unchanged.
+4. Record the correction, its reason and affected IDs in the release note and commit. Keep negative results and reporting gaps. Do not delete them solely to simplify the story.
+5. Run validation and inspect the changed interface. Structural checks do not establish scientific truth; a maintainer must read the source and approve the interpretation.
+
+Repository issues are currently available to collaborators. Public hosting and broader contributions require an explicit publication decision. A push alone must not change visibility.
 
 ## Add or correct a paper
 
@@ -56,6 +78,9 @@ Python 3.11 or later is sufficient; no third-party packages are needed.
 python3 scripts/catalog.py build
 python3 -m unittest discover -s tests
 python3 scripts/catalog.py check
+node tests/evidence_model_test.mjs
+node --check docs/app.js
+node --input-type=module --check < docs/benchmarks.js
 python3 -m http.server 8000 --directory docs
 ```
 
@@ -74,15 +99,15 @@ Read the relevant source before editing these fields. Supplied architecture, pro
 
 The build checks count consistency, source identity and comparison-to-evidence links. It does **not** verify scientific claims. Cases cited in the manuscript but not in the curated Literature Map may appear in `additional_finding_sources` with an explicit scope note. They are excluded from collection statistics until formally imported into the Map.
 
-The evidence summary is frozen separately from the working collection: the 95 category–source records cover four domains, 62 research papers and one benchmark resource through October 1, 2026. The homepage exposes selected synthesis, not the complete 95-record release. Updating bibliography counts does not automatically extend that evidence cutoff or add new observations. Do not imply independent discoveries when a source appears in several categories.
+The evidence summary is frozen separately from the working collection: the 95 category–source records cover four domains, 62 research papers and one benchmark resource through October 1, 2026. The website exposes all 95 records in the benchmark explorer and downloadable JSON, alongside 12 selected observations and 27 comparison lenses. Updating bibliography counts does not automatically extend that evidence cutoff or add new observations. Do not imply independent discoveries when a source appears in several categories.
 
 Run `python3 scripts/catalog.py build` after changing findings or contributors so the README stays synchronized. The cumulative/monthly SVG charts, JSON and downloadable BibTeX are generated; edit their source data, not generated output.
 
 ## Visual design and attribution
 
-Preserve the light violet project identity, local Manrope typeface and responsive layouts. The cross-domain visual comparison is accessible HTML connected to the same findings data as the atlas. Its cells link to source-bearing evidence disclosures; do not replace them with an untraceable illustration. Keep the page focused on findings and aggregate trends rather than a paper directory.
+Preserve the dark navy project identity, cyan/blue/violet/amber domain accents, local Manrope typeface and responsive layouts. The cross-domain comparison is accessible HTML connected to the same findings data as the atlas. Its diagrams label the final node as an intended output; these schematics are not extra measured results or demonstrations of transfer. Its cells link to source-bearing evidence disclosures; do not replace them with an untraceable illustration. Keep the page focused on findings and aggregate trends rather than a paper directory.
 
-New research figures should be original, source-linked SVG diagrams or appropriately attributed reusable artwork. Check labels at desktop and mobile sizes, and provide informative alternative text. The recursive ribbon is project artwork, not a scientific finding; its editable source lives in `scripts/identity.py`.
+New research figures should be original, source-linked SVG diagrams or appropriately attributed reusable artwork. Check labels at desktop and mobile sizes, and provide informative alternative text. The animated spatial cover is project artwork, not a scientific result; its source lives in `docs/harness-field.js`. The older ribbon generator in `scripts/identity.py` also rewrites the banner and favicon; do not run it to update the current identity. The README mechanism map is generated from the same comparison data as the website, through `scripts/catalog.py`.
 
 Contributor names and roles are stored in `docs/project.json`. Xin (Lucas) Yu leads research direction and editorial decisions; Codex is credited as an OpenAI AI assistant, not as a human researcher or scholarly author.
 

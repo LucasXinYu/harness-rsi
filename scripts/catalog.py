@@ -263,23 +263,23 @@ def svg_timeline(stats, cutoff):
     out = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">',
            f'<title id="title">Collected papers by publication month · {year}</title>',
            '<desc id="desc">'+html.escape('; '.join(f'{r["month"]}: {r["papers"]}'+(' (partial month)' if r['partial'] else '') for r in rows))+'. Counts describe the survey collection, including related work, not all papers in the field.</desc>',
-           '<rect width="1000" height="390" rx="12" fill="#fcfaff"/>',
-           '<g font-family="Arial,sans-serif" font-size="13" fill="#302638">',
-           f'<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9785a6">{year} · Search through {cutoff}</text>']
+           '<rect width="1000" height="390" rx="12" fill="#0c1521"/>',
+           '<g font-family="Arial,sans-serif" font-size="13" fill="#e9f2f6">',
+           f'<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9eb3c6">{year} · Search through {cutoff}</text>']
     for i in range(5):
         value = maximum*i/4
         y = top+ploth-ploth*i/4
-        out += [f'<path d="M{left} {y}h{plotw}" stroke="#eae2f2"/>', f'<text x="{left-12}" y="{y+4}" text-anchor="end" fill="#9785a6">{value:g}</text>']
+        out += [f'<path d="M{left} {y}h{plotw}" stroke="#283b4b"/>', f'<text x="{left-12}" y="{y+4}" text-anchor="end" fill="#9eb3c6">{value:g}</text>']
     for i,row in enumerate(rows):
         x = left + slot * (i+.5)
         h = ploth * row['papers'] / maximum
-        color = '#ba866d' if row['partial'] else '#9775d2'
+        color = '#ffc080' if row['partial'] else '#8ec6ff'
         label = dt.date.fromisoformat(row['month']+'-01').strftime('%b') + ('*' if row['partial'] else '')
         out += [f'<rect x="{x-slot*.28:.1f}" y="{top+ploth-h:.1f}" width="{slot*.56:.1f}" height="{h:.1f}" rx="3" fill="{color}"/>',
                 f'<text x="{x:.1f}" y="{top+ploth-h-10:.1f}" text-anchor="middle">{row["papers"]}</text>',
-                f'<text x="{x:.1f}" y="{top+ploth+24}" text-anchor="middle" fill="#9785a6">{label}</text>']
+                f'<text x="{x:.1f}" y="{top+ploth+24}" text-anchor="middle" fill="#9eb3c6">{label}</text>']
     note = '* Partial month. ' if any(r['partial'] for r in rows) else ''
-    out += [f'<text x="28" y="368" fill="#9785a6">{note}Known release months: {stats["monthly_coverage"]}/{stats["papers"]} papers. Official resources are excluded.</text></g></svg>']
+    out += [f'<text x="28" y="368" fill="#9eb3c6">{note}Known release months: {stats["monthly_coverage"]}/{stats["papers"]} papers. Official resources are excluded.</text></g></svg>']
     return '\n'.join(out)+'\n'
 
 
@@ -317,6 +317,70 @@ def validate_project(project, records):
         for cell in insight['cells']:
             if (cell['domain'],cell['finding']) not in identities:
                 raise ValueError('Cross-domain comparison points to missing evidence')
+        domain_ids = {d['id'] for d in domains}
+        comparison = insight.get('comparison', {})
+        if {cell['domain'] for cell in insight['cells']} != domain_ids or len(insight['cells']) != len(domains):
+            raise ValueError('Comparison needs exactly one observation per domain')
+        if set(comparison.get('axes', {})) != domain_ids:
+            raise ValueError('Comparison axes must cover the same domains as its evidence')
+        if not all(comparison.get(k) for k in ('shared_move', 'difference', 'questions')):
+            raise ValueError('Comparison needs a shared function, differences and reuse questions')
+        for axis in comparison['axes'].values():
+            if len(axis.get('pipeline', [])) != 3 or not all(axis['pipeline']) or not axis.get('artifact') or not axis.get('boundary'):
+                raise ValueError('Incomplete comparison mechanism')
+
+
+def validate_updates(updates, evidence):
+    releases = updates['releases']
+    if not releases or len({r['id'] for r in releases}) != len(releases):
+        raise ValueError('Release IDs must be present and unique')
+    dates = []
+    for release in releases:
+        dates.append(dt.date.fromisoformat(release['date']))
+        if release.get('kind') not in ('website', 'evidence') or not release['changes']:
+            raise ValueError('Release needs a kind and description')
+    if dates != sorted(dates, reverse=True):
+        raise ValueError('Release dates must be newest first')
+    latest = next((r for r in releases if r['kind'] == 'evidence'), None)
+    if not latest or latest['date'] != evidence['updated_on'] or latest['records'] != len(evidence['records']):
+        raise ValueError('Latest evidence release must match the exported snapshot')
+    if not any(r['kind'] == 'website' for r in releases):
+        raise ValueError('Missing website release date')
+
+
+def svg_mechanisms(project):
+    """A compact repository overview generated from the website's comparison data."""
+    import textwrap
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="642" viewBox="0 0 1120 642" role="img" aria-labelledby="title desc">',
+        '<title id="title">Shared questions, task-specific harness edits</title>',
+        '<desc id="desc">A four-domain comparison of interfaces, decision evidence and recovery. Each cell shows a selected harness edit and its input-to-intended-output relation. These are separate examples, not a combined pipeline or tested transfer.</desc>',
+        '<rect width="1120" height="642" rx="12" fill="#0c1521"/>',
+        '<g font-family="Arial,Helvetica,sans-serif">',
+        '<text x="30" y="34" font-size="10" letter-spacing="1.7" fill="#79ead3">THE COMPARISON AT A GLANCE</text>',
+        '<text x="30" y="75" font-size="29" fill="#e9f2f6">Shared questions. Task-specific edits.</text>',
+        '<text x="30" y="102" font-size="13" fill="#a3b3c5">Read across a domain; compare down a question. The underlying changes stay linked to their sources.</text>']
+    headers = ['Interface: what must stay intact?', 'Evidence: what changes a decision?', 'Recovery: what triggers a retry?']
+    for i, header in enumerate(headers):
+        x = 210 + 296*i
+        out.append(f'<text x="{x}" y="145" font-size="12" fill="#b7cbdc">{html.escape(header)}</text>')
+    colors = ['#79ead3', '#b6a4ff', '#ffc080', '#8ec6ff']
+    for row, domain in enumerate(project['domains']):
+        y = 162 + row*104
+        color = colors[row]
+        for n, line in enumerate(textwrap.wrap(domain['name'], 21)):
+            out.append(f'<text x="30" y="{y+31+n*21}" font-size="15" font-weight="600" fill="{color}">{html.escape(line)}</text>')
+        out.append(f'<text x="30" y="{y+84}" font-size="10" fill="#8ea7bc">{domain["records"]} category–source records</text>')
+        for col, insight in enumerate(project['insights']):
+            x = 202 + 296*col
+            a,edit,b = insight['comparison']['axes'][domain['id']]['pipeline']
+            out += [f'<rect x="{x}" y="{y}" width="281" height="92" rx="5" fill="#142231" stroke="#304559"/>',
+                f'<path d="M{x+1} {y+5}V{y+87}" stroke="{color}" stroke-width="2"/>',
+                f'<text x="{x+15}" y="{y+29}" font-size="16" fill="{color}">{html.escape(edit)}</text>']
+            for n,line in enumerate(textwrap.wrap(a+' → '+b, 34)):
+                out.append(f'<text x="{x+15}" y="{y+53+n*17}" font-size="12" fill="#b8c9d8">{html.escape(line)}</text>')
+    out += ['<path d="M30 591H1090" stroke="#304559"/>',
+        '<text x="30" y="615" font-size="11" fill="#9eb3c6">Selected mechanisms and intended outputs · Comparative synthesis, not evidence of cross-domain transfer</text>', '</g></svg>']
+    return '\n'.join(out)+'\n'
 
 
 def svg_cumulative(stats, cutoff):
@@ -330,20 +394,20 @@ def svg_cumulative(stats, cutoff):
     out = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="366" viewBox="0 0 1000 366" role="img" aria-labelledby="title desc">',
         '<title id="title">Cumulative collected literature by publication month</title>',
         '<desc id="desc">'+html.escape(desc)+'. Only papers with known months. Earlier years included.</desc>',
-        '<rect width="1000" height="366" rx="16" fill="#faf8fd"/>',
-        '<g font-family="Arial,sans-serif" fill="#382c49">',
+        '<rect width="1000" height="366" rx="16" fill="#0c1521"/>',
+        '<g font-family="Arial,sans-serif" fill="#e9f2f6">',
         '<text x="30" y="35" font-size="21">A growing literature collection</text>',
-        f'<text x="30" y="61" font-size="13" fill="#8c7c9b">{year} · Cumulative by release month · Search through {cutoff}</text>',
+        f'<text x="30" y="61" font-size="13" fill="#9eb3c6">{year} · Cumulative by release month · Search through {cutoff}</text>',
         f'<text x="945" y="37" text-anchor="end" font-size="24">{stats["papers"]} papers</text>',
-        f'<text x="945" y="61" text-anchor="end" font-size="12" fill="#8c7c9b">{stats["resources"]} resources tracked separately</text>']
+        f'<text x="945" y="61" text-anchor="end" font-size="12" fill="#9eb3c6">{stats["resources"]} resources tracked separately</text>']
     for i in range(5):
         y = top+height*(1-i/4)
-        out += [f'<path d="M{left} {y}h{width}" stroke="#e9e3f0"/>',f'<text x="{left-10}" y="{y+4}" text-anchor="end" font-size="11" fill="#9787a5">{maximum*i/4:g}</text>']
-    out += [f'<polygon points="{left},{top+height} {line} {left+width},{top+height}" fill="#e8def6"/>',f'<polyline points="{line}" fill="none" stroke="#8764b5" stroke-width="2.5"/>']
+        out += [f'<path d="M{left} {y}h{width}" stroke="#283b4b"/>',f'<text x="{left-10}" y="{y+4}" text-anchor="end" font-size="11" fill="#9eb3c6">{maximum*i/4:g}</text>']
+    out += [f'<polygon points="{left},{top+height} {line} {left+width},{top+height}" fill="#133632"/>',f'<polyline points="{line}" fill="none" stroke="#79ead3" stroke-width="2.5"/>']
     for row,(x,y) in zip(rows,points):
         label = dt.date.fromisoformat(row['month']+'-01').strftime('%b')+('*' if row['partial'] else '')
-        out += [f'<circle cx="{x}" cy="{y}" r="4" fill="#8764b5"/>',f'<text x="{x}" y="{y-12}" text-anchor="middle" font-size="11">{row["cumulative"]}</text>',f'<text x="{x}" y="{top+height+23}" text-anchor="middle" font-size="11" fill="#9787a5">{label}</text>']
-    out += [f'<text x="30" y="345" font-size="11" fill="#8c7c9b">{stats["monthly_coverage"]}/{stats["papers"]} papers have known months. * Partial month. Collection coverage, not a census or count of achieved RSI.</text></g></svg>']
+        out += [f'<circle cx="{x}" cy="{y}" r="4" fill="#79ead3"/>',f'<text x="{x}" y="{y-12}" text-anchor="middle" font-size="11">{row["cumulative"]}</text>',f'<text x="{x}" y="{top+height+23}" text-anchor="middle" font-size="11" fill="#9eb3c6">{label}</text>']
+    out += [f'<text x="30" y="345" font-size="11" fill="#9eb3c6">{stats["monthly_coverage"]}/{stats["papers"]} papers have known months. * Partial month. Collection coverage, not a census or count of achieved RSI.</text></g></svg>']
     return '\n'.join(out)+'\n'
 
 
@@ -394,67 +458,79 @@ def validate_evidence(data, project, catalog_records):
 
 def markdown(stats, config, project, evidence_data, updates):
     evidence = project['evidence']
+    website = next(r for r in updates['releases'] if r['kind']=='website')
     lines = ['![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)', '',
-        '<p align="center"><strong>What actually evolves around the model?</strong><br>A survey and visual companion on agent harness optimization and recursive self-improvement.<br><sub>Official project repository · Research in progress · Manuscript forthcoming</sub></p>', '',
-        '<p align="center"><a href="#what-the-survey-finds">Findings</a> · <a href="#across-four-domains">Domain atlas</a> · <a href="#living-collection">Living collection</a> · <a href="#authors">Authors</a> · <a href="#contributors">Contributors</a></p>', '',
-        'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The evidence follows concrete interfaces, parsers, context-handling rules, recovery branches and persistent skills—not just optimization algorithms or benchmark scores.', '',
+        '<p align="center"><strong>What actually evolves around the model?</strong><br>The research companion to our survey of harness optimization and recursive self-improvement.<br><sub>Private project preview · Manuscript forthcoming · Public hosting not enabled</sub></p>', '',
+        '<p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>', '',
+        'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.', '',
         f'**{evidence["records"]} category–source records · {evidence["papers"]} research papers + {evidence["resources"]} benchmark resource · {evidence["subcategories"]} task subcategories · {len(project["domains"])} domains**', '',
-        f'Domain evidence cutoff: **{evidence["cutoff"]}**. A record is one source within one task subcategory. Records can share a source and include incomplete reporting; these are not 95 independent effects. All 95 domain records are available in the benchmark explorer and downloadable data. The manuscript is forthcoming.', '',
-        '## What the survey finds', '']
+        '## What we study', '',
+        '| Question | What this project provides |', '| :-- | :-- |',
+        '| **How is a harness improved?** | A comparison of editable components, proposers, evaluators, search and optimization history. The site explains how these parts interact. |',
+        '| **Does the improver change too?** | A distinction between optimizing a task harness and reusing revised improvement capabilities in later rounds. Task gains alone do not establish general RSI. |',
+        '| **What actually emerges?** | Task-organized records of seed capabilities, reported failures, concrete edits, outcomes and limits; comparisons of recurring functions and domain-specific implementations. |', '',
+        'The website lets readers move from a research question to a concrete mechanism, then to benchmark-specific evidence and its primary source. It accompanies the survey with inspectable data and an interface for comparison.', '',
+        '## Compare the mechanisms', '',
+        '![Four domains compared through concrete interface, evidence and recovery edits](docs/assets/mechanism-map.svg)', '',
+        'The interactive site lets you choose **any two domains** and switch between interfaces, decision evidence and recovery. Each comparison reveals the actual editable artifact, before/after behavior, reported result, source location and conditions for reuse. The diagram shows selected mechanisms and intended outputs; it does not claim that these changes compose into one pipeline or transfer across domains.', '']
     for insight in project['insights']:
         lines += ['**'+insight['title']+'** '+insight['summary'], '']
-    lines += ['## Across four domains', '', '| Domain | Concrete changes highlighted | Records |', '| :-- | :-- | --: |']
-    for domain in project['domains']:
-        lines += ['| '+domain['name']+' | '+' '.join(f['title'] for f in domain['findings'])+' | '+str(domain['records'])+' |']
-    lines += ['', '### A few results—and what they establish', '']
-    for domain_id, finding_id in [('coding','bounded-context'),('interactive','physical-recovery'),('visual','composition-selection')]:
-        finding = next(f for d in project['domains'] if d['id']==domain_id for f in d['findings'] if f['id']==finding_id)
-        references = ', '.join('['+x['name']+']('+x['url']+')' for x in finding['sources'])
-        lines += ['- **'+finding['evidence_type']+'.** '+finding['result']+' '+finding['limit']+' Sources: '+references+'.']
-    lines += ['', '## Benchmark evidence explorer', '',
-        f'The website pairs **12 domain observations** with **{len(evidence_data["patterns"])} comparison lenses** and **{len(evidence_data["records"])} source records**. Filter by domain, subcategory and benchmark/setting; read the concrete change alongside its seed, outcome, primary-source location and reporting limits.', '',
-        'Examples include empty-patch recovery and dependency-aware verification in repository repair; bounded completion checks in terminal tasks; contrasting-label retrieval in classification; and failure-aware draft selection in image generation. These are source-grounded comparisons, not prescriptions that every benchmark shares the same solution.', '',
-        'Single-source observations are identified. Transfers retain their original discovery setting. Where a source reports an evolution experiment without a final artifact, the explorer shows the gap rather than inventing a common pattern. Full-system improvements are not attributed to individual edits.', '',
-        '[Download all domain evidence](docs/evidence.json) · [Selected domain findings](docs/project.json) · [Download BibTeX](data/literature.bib) · [Catalog and date provenance](docs/catalog.json)', '',
-        '### A living companion, beyond the paper', '', updates['commitment'], '',
-        updates['cadence'], '',
-        f'Latest evidence release: **{evidence_data["updated_on"]}**. [Dated changes](docs/updates.json). Collection updates below track bibliography membership separately from evidence revisions.', '',
+    lines += ['<details><summary>Representative observations and their sources</summary>', '',
+        '| Domain | A concrete observation | Evidence boundary |', '| :-- | :-- | :-- |']
+    selections = [('coding','bounded-context'),('reasoning','proof-state'),('interactive','physical-recovery'),('visual','visual-recheck')]
+    for domain_id, finding_id in selections:
+        domain = next(d for d in project['domains'] if d['id']==domain_id)
+        finding = next(f for f in domain['findings'] if f['id']==finding_id)
+        refs = ', '.join('['+x['name']+']('+x['url']+')' for x in finding['sources'])
+        lines += ['| '+domain['name']+' | '+finding['result']+' '+refs+' | '+finding['limit']+' |']
+    lines += ['', '</details>', '', '## Evidence you can trace', '',
+        f'**{len(evidence_data["records"])} records** connect **{evidence["subcategories"]} task subcategories** to concrete studies. The benchmark explorer adds **{len(evidence_data["patterns"])} comparison lenses** and **12 selected domain observations**. Filter by domain, subcategory and benchmark/setting, then inspect the seed, actual edit, outcome and original evidence.', '',
+        '**A record follows this chain:** task and seed → reported problem → reusable harness edit → observed result → primary-source location and limitations.', '',
+        f'The frozen survey evidence covers work through **{evidence["cutoff"]}**. A record is one source within one subcategory: records may share a paper, include negative results or expose missing artifacts. They are not {evidence["records"]} independent effects. Full-system gains are not attributed to individual edits without supporting evidence. A transfer evaluation retains its original discovery setting.', '',
+        '| Inspect or download | Contents |', '| :-- | :-- |',
+        '| [Full evidence export](docs/evidence.json) | All domain records, benchmark memberships, comparisons and source locations |',
+        '| [Selected findings and comparisons](docs/project.json) | Before/after changes, outcomes, evidence types and limits |',
+        '| [Bibliography](data/literature.bib) / [catalog](docs/catalog.json) | Source identities, classification and publication-date provenance |',
+        '| [Update history](docs/updates.json) / [data definitions](CONTRIBUTING.md#data-definitions) | Dated releases, counting rules and curation process |', '',
+        '## Maintenance and versions', '', updates['commitment'], '',
+        '| State | Date | What it means |', '| :-- | :-- | :-- |',
+        f'| **Frozen paper evidence** | {evidence["cutoff"]} | {evidence["records"]} category–source records; evidence export dated {evidence_data["updated_on"]} |',
+        f'| **Living literature collection** | {config["search_cutoff"]} | Search horizon; {stats["papers"]} papers and {stats["resources"]} official resources; collection updated {config["updated_on"]} |',
+        f'| **Website presentation** | {website["date"]} | {website["title"]}; this update adds no studies or experimental findings |', '',
+        '**Our maintenance commitments**', '']
+    lines += ['- **'+policy['title']+'.** '+policy['text'] for policy in updates['policy']]
+    lines += ['', updates['cadence'], '',
+        'The workflow is **find and screen → trace the actual change → revise comparisons → validate and record a dated release**. A website redesign does not create a new evidence snapshot. An added bibliography entry does not automatically become evidence for a domain finding.', '',
+        '[Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Correct an evidence record](https://github.com/LucasXinYu/harness-rsi/issues/new?template=evidence.yml) · [Curation and contribution guide](CONTRIBUTING.md). Issue access is currently limited to repository collaborators.', '',
         '## Living collection', '',
-        f'**{stats["papers"]} papers & manuscripts** · **{stats["resources"]} official resources** · Updated **{config["updated_on"]}**', '',
+        f'**{stats["papers"]} collected papers & manuscripts** · **{stats["resources"]} official resources** · Collection updated **{config["updated_on"]}**', '',
         '![Cumulative collected literature by release month](docs/assets/collection-growth.svg)', '',
-        f'The working literature collection is broader and newer than the frozen domain evidence above. It includes surveys, adjacent methods, benchmarks and supporting work. Search through **{config["search_cutoff"]}**; **{stats["monthly_coverage"]}/{stats["papers"]}** papers have known release months. Resources are excluded from paper counts.', '',
-        '<details><summary>Monthly publication counts and counting methodology</summary>', '',
+        f'This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **{stats["monthly_coverage"]}/{stats["papers"]}** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.', '',
+        '<details><summary>Monthly counts and actual collection updates</summary>', '',
         '![Monthly collected literature](docs/assets/publication-timeline.svg)', '',
-        'First arXiv submission is used when available; otherwise the recorded bibliographic date or identifier month is used. Date provenance is retained per entry. Year-only records remain in the total but are excluded from monthly and cumulative charts. These are collection statistics, not a field-wide census or a count of methods achieving RSI.', '',
-        'Publication dates differ from collection dates. The snapshots below record actual imports. We do not reconstruct collection history before the initial snapshot. Removals can reduce totals. [Data definitions](CONTRIBUTING.md#data-definitions).', '', '</details>', '',
-        '### Collection updates', '', '| Snapshot | Papers | Resources |', '| :-- | --: | --: |']
+        'Publication dates use the first arXiv submission where available, then recorded bibliographic dates or identifier months. Provenance is retained per entry. The latest plotted month may be incomplete. These dates differ from the import dates below; collection history is never reconstructed from publication dates.', '',
+        '| Collection snapshot | Papers | Resources |', '| :-- | --: | --: |']
     lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history'][-5:]]
-    lines += ['', '## Website', '',
-        'The standalone site lives in `docs/`: an interactive harness diagram, source-linked result spotlights, a five-stage workflow explorer, domain comparisons, benchmark shortcuts, a detailed evidence notebook, monthly/cumulative charts and dated release notes. A reading guide distinguishes whole-system outcomes, ablations and transfer. The manuscript link will be added when available.', '',
+    lines += ['', '</details>', '', '## Preview the website', '',
+        'The standalone site lives in `docs/`: an interactive harness cover, source-linked result spotlights, workflow explorer, two-domain comparison studio, benchmark evidence notebook, collection charts and dated maintenance notes. Assets and data are served locally; no account, API key or analytics are required.', '',
         '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
-        'Open http://localhost:8000. Public hosting is not yet enabled; updating this repository does not itself publish GitHub Pages.', '',
-        '## Authors', '',
-        '**'+project['paper']['title']+'**', '',
+        'Open http://localhost:8000. Public hosting is not enabled. Pushing repository changes does not publish GitHub Pages; the deployment workflow remains a separate manual action.', '',
+        '## Authors', '', '**'+project['paper']['title']+'**', '',
         ' · '.join(project['paper']['authors']), '',
         project['paper']['affiliation']+'<br>', project['paper']['location'], '',
-        'The arXiv identifier and citation will be added when the preprint is available.', '',
-        '## Contributors', '',
-        'Project development and assistance are listed separately from the survey authors above.', '',
+        'The arXiv identifier and citation will be added when the preprint is available. Project branding does not imply publication or acceptance.', '',
+        '## Contributors', '', 'Project development and assistance are separate from scholarly authorship.', '',
         '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
     for person in project.get('contributors', []):
         name = f'[{person["name"]}]({person["url"]})' if person.get('url') else person['name']
         lines += [f'| {name} | {person["role"]} | {person["description"]} |']
-    lines += ['', '## Keep it growing', '',
-        'Import the current survey bibliography and Literature Map. Map membership defines the collection; extra manuscript references and citation aliases are not automatically counted.', '',
+    lines += ['', '<details><summary>Maintainer quick start</summary>', '',
+        'Import the reviewed survey bibliography and Literature Map with an actual collection-update date. Map membership determines the collection; extra manuscript references and aliases do not automatically count.', '',
         '```sh', 'python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD',
-        'python3 -m unittest discover -s tests', 'python3 scripts/catalog.py check', '```', '',
-        'The build updates website statistics, downloadable data, charts and this README together. Source-linked findings live in `docs/project.json`. Benchmark assignments and comparative notes live in `data/evidence_annotations.json`; imported domain records live in `docs/evidence.json`. They are revised separately from collection counts.', '',
-        'After reviewing changed records and benchmark assignments:', '',
-        '```sh', 'python3 scripts/import_evidence.py --source /path/to/section4_supp.tex --date YYYY-MM-DD',
-        '# Add a dated entry to docs/updates.json describing the actual changes.',
         'python3 scripts/catalog.py build', 'python3 -m unittest discover -s tests',
         'node tests/evidence_model_test.mjs', 'python3 scripts/catalog.py check', '```', '',
-        '[Suggest a paper or correction](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Contribution guide](CONTRIBUTING.md) · [Validation](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml)', '']
+        'The build synchronizes this README, diagrams, statistics and downloadable bibliography. Findings live in `docs/project.json`; benchmark assignments and comparative notes live in `data/evidence_annotations.json`. These are edited separately from bibliography counts. Follow the [evidence update procedure](CONTRIBUTING.md#updating-benchmark-evidence), add a dated release note, review the rendered site and commit the source and generated files together.', '',
+        '[Validation workflow](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml) · [Contribution guide](CONTRIBUTING.md)', '', '</details>', '']
     return '\n'.join(lines)
 
 
@@ -476,8 +552,10 @@ def outputs():
     updates = read_json(ROOT/'docs/updates.json')
     validate_project(project, records)
     validate_evidence(evidence_data, project, records)
+    validate_updates(updates, evidence_data)
     dataset = {'config':config, 'stats':stats, 'records':records}
     return {ROOT/'README.md': markdown(stats, config, project, evidence_data, updates),
+            ROOT/'docs/assets/mechanism-map.svg': svg_mechanisms(project),
             ROOT/'docs/stats.json': json.dumps(public_statistics(stats, config), ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/catalog.json': json.dumps(dataset, ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/assets/publication-timeline.svg': svg_timeline(stats, config['search_cutoff']),

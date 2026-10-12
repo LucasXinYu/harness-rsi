@@ -72,7 +72,74 @@ function showFinding(domainId, findingId, scroll = true) {
 function renderInsights(insights) {
   const labels = ['Interfaces', 'Decision evidence', 'Recovery'];
   const tabs = byId('insight-tabs');
+  let pair = ['coding', 'interactive'];
+  let active = 0;
+  function renderPair(insight) {
+    const studio = byId('comparison-studio');
+    const intro = element('div', 'studio-intro');
+    intro.append(element('span', 'eyebrow', 'COMPARE TWO DOMAINS'), element('h4', '', 'Same question. Different mechanisms.'));
+    const controls = element('div', 'studio-controls');
+    pair.forEach((id, side) => {
+      const label = element('label', '', side === 0 ? 'First domain' : 'Second domain');
+      const select = element('select');
+      select.id = `compare-domain-${side}`;
+      domains.forEach(domain => {
+        const option = element('option', '', domain.name);
+        option.value = domain.id; option.selected = domain.id === id;
+        select.append(option);
+      });
+      select.addEventListener('change', () => {
+        const previous = pair[side]; pair[side] = select.value;
+        if (pair[0] === pair[1]) pair[1-side] = previous;
+        renderPair(insights[active]);
+        byId(`compare-domain-${side}`).focus({preventScroll:true});
+        byId('comparison-status').textContent = `Comparing ${pair.map(id => domains.find(d => d.id === id).name).join(' and ')}: ${labels[active]}.`;
+      });
+      label.append(select); controls.append(label);
+    });
+    const toolbar = element('div', 'studio-toolbar'); toolbar.append(intro, controls);
+    const common = element('div', 'studio-common');
+    common.append(element('span', 'eyebrow', 'SHARED FUNCTION'), element('p', '', insight.comparison.shared_move));
+    const cards = element('div', 'studio-pair');
+    pair.forEach(id => {
+      const domain = domains.find(d => d.id === id);
+      const cell = insight.cells.find(c => c.domain === id);
+      const finding = domain.findings.find(f => f.id === cell.finding);
+      const axis = insight.comparison.axes[id];
+      const card = element('article', 'studio-card'); card.dataset.domain = id;
+      const heading = element('div', 'studio-domain');
+      heading.append(element('span', '', domain.name), element('span', 'studio-source-count', `${finding.sources.length} linked sources`));
+      const pipeline = element('ol', 'mechanism-flow');
+      axis.pipeline.forEach((step, i) => {
+        const item = element('li');
+        item.append(element('span', '', ['INPUT / SIGNAL','HARNESS EDIT','INTENDED OUTPUT'][i]), element('strong', '', step));
+        pipeline.append(item);
+      });
+      const artifact = element('div', 'studio-artifact');
+      artifact.append(element('span', 'eyebrow', 'WHAT CHANGES'), element('h5', '', axis.artifact), element('p', '', axis.boundary));
+      const detail = element('details', 'studio-evidence');
+      detail.append(element('summary', '', 'Reported change, outcome & sources'));
+      [['Before',finding.before],['After',finding.after],[finding.evidence_type,finding.result],['Interpretation limit',finding.limit]].forEach(([title,text]) => {
+        const block=element('div','studio-evidence-block');block.append(element('strong','',title),element('p','',text));detail.append(block);
+      });
+      const sources = element('ul', 'studio-sources');
+      finding.sources.forEach(source => {
+        const li=element('li'), a=element('a','',`${source.name} ↗`);a.href=source.url;
+        li.append(a,element('small','',source.locator));sources.append(li);
+      });
+      detail.append(sources);
+      const link = element('a','studio-trace','Open the full observation ↗');link.href=`#finding-${id}-${finding.id}`;
+      card.append(heading,pipeline,artifact,element('span','evidence-badge',finding.evidence_type),detail,link);cards.append(card);
+    });
+    const takeaway = element('div', 'studio-takeaway');
+    const contrast=element('div');contrast.append(element('span','eyebrow','WHY THE IMPLEMENTATIONS DIFFER'),element('p','',insight.comparison.difference));
+    const reuse=element('div');reuse.append(element('span','eyebrow','QUESTIONS BEFORE REUSE'));
+    const questions=element('ul');insight.comparison.questions.forEach(q=>questions.append(element('li','',q)));reuse.append(questions);
+    takeaway.append(contrast,reuse);
+    studio.replaceChildren(toolbar,common,cards,takeaway,element('p','studio-note','Diagrams summarize selected mechanisms and their intended outputs. Evidence panels distinguish reported outcomes, ablations and unresolved limits. The cross-domain comparison is our synthesis; it does not demonstrate transfer.'));
+  }
   function select(index, focus = false) {
+    active = index;
     [...tabs.children].forEach((tab, i) => {
       tab.setAttribute('aria-selected', String(i === index));
       tab.tabIndex = i === index ? 0 : -1;
@@ -84,6 +151,8 @@ function renderInsights(insights) {
     const heading = element('div', 'insight-heading');
     heading.append(element('h3', '', insight.title), element('p', '', insight.summary));
     const grid = element('div', 'comparison-grid');
+    const overview = element('details', 'comparison-overview');
+    overview.append(element('summary', '', 'See this mechanism across all four domains'));
     insight.cells.forEach(cell => {
       const domain = domains.find(d => d.id === cell.domain);
       const link = element('a', 'comparison-cell');
@@ -96,7 +165,10 @@ function renderInsights(insights) {
       });
       grid.append(link);
     });
-    panel.replaceChildren(heading, element('p', 'comparison-question', insight.question), grid);
+    overview.append(grid);
+    const studio = element('div','comparison-studio');studio.id='comparison-studio';
+    panel.replaceChildren(heading, element('p', 'comparison-question', insight.question), studio, overview);
+    renderPair(insight);
   }
   insights.forEach((insight, index) => {
     const tab = element('button', 'insight-tab');
