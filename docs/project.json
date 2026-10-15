@@ -2,7 +2,7 @@
   "title": "Harness RSI",
   "status": "in_preparation",
   "arxiv_url": null,
-  "website_url": null,
+  "website_url": "https://lucasxinyu.github.io/harness-rsi/",
   "paper": {
     "title": "From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents",
     "authors": [
@@ -699,5 +699,6 @@
       "url": "https://arxiv.org/abs/2608.15071v2",
       "note": "Cited in the domain evidence; absent from the curated Literature Map snapshot. Excluded from collection statistics."
     }
-  ]
+  ],
+  "website_status": "public"
 }

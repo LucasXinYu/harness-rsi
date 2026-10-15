@@ -22,7 +22,7 @@ For an evidence correction:
 4. Record the correction, its reason and affected IDs in the release note and commit. Keep negative results and reporting gaps. Do not delete them solely to simplify the story.
 5. Run validation and inspect the changed interface. Structural checks do not establish scientific truth; a maintainer must read the source and approve the interpretation.
 
-Repository issues are currently available to collaborators. Public hosting and broader contributions require an explicit publication decision. A push alone must not change visibility.
+The repository and website are public. Community paper suggestions and source-backed corrections are welcome through repository issues. Maintainers review evidence before updating the atlas.
 
 ## Add or correct a paper
 
@@ -115,7 +115,7 @@ Contributor names and roles are stored in `docs/project.json`. Xin (Lucas) Yu le
 
 The README displays aggregate counts, cumulative and monthly SVG charts, and collection updates, without enumerating papers. The `docs/` folder is also a complete static website.
 
-The repository starts private. Website deployment is a separate, manual action: after deciding to publish the collection, set GitHub Pages to use GitHub Actions and run **Publish literature website**. That workflow refuses to run on a private repository. It deploys only `docs/`. No automatic web-publication or literature-discovery schedule is configured. The official-project branding identifies this repository as the project home; it does not imply that the survey has been published or accepted.
+The public website is hosted at https://lucasxinyu.github.io/harness-rsi/. GitHub Pages uses GitHub Actions: changes to `docs/` or the publication workflow on `main` trigger validation and deployment. Maintainers can also run **Publish literature website** manually. The workflow deploys only `docs/` and refuses to run on a private repository. Literature discovery and evidence verification remain manually curated; deployment does not extend the research cutoff. The official-project branding identifies this repository as the project home; it does not imply that the survey has been published or accepted.
 
 ## File boundaries
 

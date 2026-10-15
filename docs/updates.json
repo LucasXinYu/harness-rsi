@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "public-launch-2026-10-15",
+      "date": "2026-10-15",
+      "kind": "website",
+      "title": "The research atlas is public",
+      "changes": [
+        "Opened the project repository and interactive website to all readers, with public paper-suggestion and evidence-correction forms.",
+        "Enabled validated website deployment from the main branch and added the public homepage link to the repository.",
+        "Public release only: the evidence snapshot, literature-search horizon and research findings are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "comparison-studio-2026-10-11",
       "date": "2026-10-11",
       "kind": "website",

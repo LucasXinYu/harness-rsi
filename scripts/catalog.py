@@ -460,7 +460,8 @@ def markdown(stats, config, project, evidence_data, updates):
     evidence = project['evidence']
     website = next(r for r in updates['releases'] if r['kind']=='website')
     lines = ['![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)', '',
-        '<p align="center"><strong>What actually evolves around the model?</strong><br>The research companion to our survey of harness optimization and recursive self-improvement.<br><sub>Private project preview · Manuscript forthcoming · Public hosting not enabled</sub></p>', '',
+        '<p align="center"><strong>What actually evolves around the model?</strong><br>The research companion to our survey of harness optimization and recursive self-improvement.<br><sub>Public research atlas · Source-linked evidence · Maintained by the project team</sub></p>', '',
+        '<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/"><strong>Explore the interactive website ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>', '',
         '<p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>', '',
         'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.', '',
         f'**{evidence["records"]} category–source records · {evidence["papers"]} research papers + {evidence["resources"]} benchmark resource · {evidence["subcategories"]} task subcategories · {len(project["domains"])} domains**', '',
@@ -501,7 +502,7 @@ def markdown(stats, config, project, evidence_data, updates):
     lines += ['- **'+policy['title']+'.** '+policy['text'] for policy in updates['policy']]
     lines += ['', updates['cadence'], '',
         'The workflow is **find and screen → trace the actual change → revise comparisons → validate and record a dated release**. A website redesign does not create a new evidence snapshot. An added bibliography entry does not automatically become evidence for a domain finding.', '',
-        '[Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Correct an evidence record](https://github.com/LucasXinYu/harness-rsi/issues/new?template=evidence.yml) · [Curation and contribution guide](CONTRIBUTING.md). Issue access is currently limited to repository collaborators.', '',
+        '[Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Correct an evidence record](https://github.com/LucasXinYu/harness-rsi/issues/new?template=evidence.yml) · [Curation and contribution guide](CONTRIBUTING.md). Community suggestions and source-backed corrections are welcome.', '',
         '## Living collection', '',
         f'**{stats["papers"]} collected papers & manuscripts** · **{stats["resources"]} official resources** · Collection updated **{config["updated_on"]}**', '',
         '![Cumulative collected literature by release month](docs/assets/collection-growth.svg)', '',
@@ -511,10 +512,11 @@ def markdown(stats, config, project, evidence_data, updates):
         'Publication dates use the first arXiv submission where available, then recorded bibliographic dates or identifier months. Provenance is retained per entry. The latest plotted month may be incomplete. These dates differ from the import dates below; collection history is never reconstructed from publication dates.', '',
         '| Collection snapshot | Papers | Resources |', '| :-- | --: | --: |']
     lines += [f'| {h["date"]} | {h["papers"]} | {h["resources"]} |' for h in stats['history'][-5:]]
-    lines += ['', '</details>', '', '## Preview the website', '',
+    lines += ['', '</details>', '', '## Website and local preview', '',
+        '**Visit [lucasxinyu.github.io/harness-rsi](https://lucasxinyu.github.io/harness-rsi/)** — no sign-in required.', '',
         'The standalone site lives in `docs/`: an interactive harness cover, source-linked result spotlights, workflow explorer, two-domain comparison studio, benchmark evidence notebook, collection charts and dated maintenance notes. Assets and data are served locally; no account, API key or analytics are required.', '',
         '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
-        'Open http://localhost:8000. Public hosting is not enabled. Pushing repository changes does not publish GitHub Pages; the deployment workflow remains a separate manual action.', '',
+        'Open http://localhost:8000 for a local preview. Validated website changes pushed to `main` deploy to GitHub Pages; maintainers can also run the publication workflow manually.', '',
         '## Authors', '', '**'+project['paper']['title']+'**', '',
         ' · '.join(project['paper']['authors']), '',
         project['paper']['affiliation']+'<br>', project['paper']['location'], '',

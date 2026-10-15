@@ -4,7 +4,7 @@ title: '[Evidence] '
 body:
   - type: markdown
     attributes:
-      value: 'Please provide primary-source evidence. Keep the benchmark, source version and actual retained artifact distinct. Repository access is currently limited to collaborators.'
+      value: 'Please provide primary-source evidence. Keep the benchmark, source version and actual retained artifact distinct. Community corrections and additions are welcome.'
   - type: input
     id: record
     attributes:

@@ -1,6 +1,8 @@
 ![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)
 
-<p align="center"><strong>What actually evolves around the model?</strong><br>The research companion to our survey of harness optimization and recursive self-improvement.<br><sub>Private project preview · Manuscript forthcoming · Public hosting not enabled</sub></p>
+<p align="center"><strong>What actually evolves around the model?</strong><br>The research companion to our survey of harness optimization and recursive self-improvement.<br><sub>Public research atlas · Source-linked evidence · Maintained by the project team</sub></p>
+
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/"><strong>Explore the interactive website ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
 <p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
@@ -64,7 +66,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-10 | Search horizon; 235 papers and 11 official resources; collection updated 2026-10-10 |
-| **Website presentation** | 2026-10-11 | Compare mechanisms, not just domain labels; this update adds no studies or experimental findings |
+| **Website presentation** | 2026-10-15 | The research atlas is public; this update adds no studies or experimental findings |
 
 **Our maintenance commitments**
 
@@ -77,7 +79,7 @@ Updates are maintained by the project team after source verification. Literature
 
 The workflow is **find and screen → trace the actual change → revise comparisons → validate and record a dated release**. A website redesign does not create a new evidence snapshot. An added bibliography entry does not automatically become evidence for a domain finding.
 
-[Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Correct an evidence record](https://github.com/LucasXinYu/harness-rsi/issues/new?template=evidence.yml) · [Curation and contribution guide](CONTRIBUTING.md). Issue access is currently limited to repository collaborators.
+[Suggest a paper](https://github.com/LucasXinYu/harness-rsi/issues/new?template=paper.yml) · [Correct an evidence record](https://github.com/LucasXinYu/harness-rsi/issues/new?template=evidence.yml) · [Curation and contribution guide](CONTRIBUTING.md). Community suggestions and source-backed corrections are welcome.
 
 ## Living collection
 
@@ -100,7 +102,9 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 </details>
 
-## Preview the website
+## Website and local preview
+
+**Visit [lucasxinyu.github.io/harness-rsi](https://lucasxinyu.github.io/harness-rsi/)** — no sign-in required.
 
 The standalone site lives in `docs/`: an interactive harness cover, source-linked result spotlights, workflow explorer, two-domain comparison studio, benchmark evidence notebook, collection charts and dated maintenance notes. Assets and data are served locally; no account, API key or analytics are required.
 
@@ -108,7 +112,7 @@ The standalone site lives in `docs/`: an interactive harness cover, source-linke
 python3 -m http.server 8000 --directory docs
 ```
 
-Open http://localhost:8000. Public hosting is not enabled. Pushing repository changes does not publish GitHub Pages; the deployment workflow remains a separate manual action.
+Open http://localhost:8000 for a local preview. Validated website changes pushed to `main` deploy to GitHub Pages; maintainers can also run the publication workflow manually.
 
 ## Authors
 
