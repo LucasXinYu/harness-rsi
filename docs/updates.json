@@ -24,6 +24,7 @@
       "changes": [
         "Scheduled daily AI-assisted discovery with primary-source checks, version deduplication and weekly searches for overlooked studies.",
         "Documented incremental bibliography updates, validation, automatic commits and pushes, and verification of the deployed website.",
+        "Added explicit non-interactive publication checks and recovery guidance, separating search completion, push, deployment and scheduled-run verification.",
         "Maintenance setup only: this release adds no papers or findings and does not advance the existing search horizon or frozen evidence cutoff."
       ],
       "records": 95
@@ -117,6 +118,10 @@
     {
       "title": "Preserve the paper snapshot",
       "text": "The frozen survey cutoff stays identifiable. A bibliography import or website redesign does not silently extend the evidence collection."
+    },
+    {
+      "title": "Verify publication and recover failures",
+      "text": "Updates are complete only after validation, a matching remote commit and a successful website deployment. Failed searches or publications retain separate status and are retried; neither a schedule nor an authentication test counts as a completed update."
     }
   ]
 }

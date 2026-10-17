@@ -55,6 +55,21 @@ The daily schedule runs in the maintainer's local Codex session. The computer mu
 5. **Update and publish.** Follow the incremental procedure above. Rebuild the README, aggregate charts, site data and downloadable bibliography; validate, inspect the diff, commit and push relevant changes. Verify the matching Pages run and public data before recording publication as complete. For substantive evidence revisions, preserve the original snapshot and publish a separately dated version with source-backed comparisons.
 6. **Record the outcome accurately.** Keep completed-search and publication status separate. Do not fabricate a search cutoff, new publication date, growth point or empty commit when nothing qualifies. Retain pending candidates and specific failure details for the next run. No manuscript or Overleaf edits are part of this routine.
 
+### Verify unattended publication
+
+Run from the repository checkout. Confirm that `origin` is the expected project and that the current branch is `main`. After reviewing and committing only the intended changes, use non-interactive authentication so an expired credential fails instead of leaving the run waiting for input:
+
+```sh
+GIT_TERMINAL_PROMPT=0 git -c core.sshCommand='ssh -o BatchMode=yes -o ConnectTimeout=15' push --dry-run origin main
+GIT_TERMINAL_PROMPT=0 git -c core.sshCommand='ssh -o BatchMode=yes -o ConnectTimeout=15' push origin main
+GIT_TERMINAL_PROMPT=0 git -c core.sshCommand='ssh -o BatchMode=yes -o ConnectTimeout=15' ls-remote origin refs/heads/main
+git rev-parse HEAD
+```
+
+The remote and local commit IDs must match. Check the Pages run for that same commit and the changed public site data before marking publication complete. A dry run verifies authentication and push negotiation, but does not publish a commit. A successful manual publication does not establish that a scheduled run can start, write files or complete unattended.
+
+After a folder move, verify the scheduled chat's actual working directory and write access, not just the project's sidebar name. Keep separate local status fields for the completed literature search, commit/push, deployment, and scheduled-run test. If any stage fails, record the specific failure and resume that stage on the next run; do not advance research dates or create duplicate commits to mask a failure.
+
 ## Data definitions
 
 | Field or file | Meaning |

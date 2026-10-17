@@ -74,6 +74,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 - **Keep versions and units distinct.** A revised paper updates its source record. One artifact evaluated on several settings is not counted as several independent discoveries.
 - **Publish corrections with context.** A correction records what changed and why. Conflicting code, unclear retention and negative results remain attached to the original setting.
 - **Preserve the paper snapshot.** The frozen survey cutoff stays identifiable. A bibliography import or website redesign does not silently extend the evidence collection.
+- **Verify publication and recover failures.** Updates are complete only after validation, a matching remote commit and a successful website deployment. Failed searches or publications retain separate status and are retried; neither a schedule nor an authentication test counts as a completed update.
 
 AI-assisted literature searches are scheduled daily at 09:00 Pacific time. Verified additions and corrections update the bibliography, collection charts, repository overview and website after validation. Literature, evidence and presentation retain separate dates; a scheduled search does not guarantee new studies or complete coverage.
 
