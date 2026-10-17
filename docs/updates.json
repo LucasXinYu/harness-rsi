@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "literature-update-2026-10-17",
+      "date": "2026-10-17",
+      "kind": "website",
+      "title": "First daily literature update",
+      "changes": [
+        "Added 13 primary-source-checked preprints to the living collection: 11 harness, skill, memory or improver methods, plus two separately categorized infrastructure and reliability studies.",
+        "Recorded first-submission dates and v1 method locators. Skill-V and EvoAlloc were first submitted on October 8 and are newly collected older papers, not new publications today. Other additions were first submitted October 10–15.",
+        "Extended the completed search horizon from October 10 to October 17, with overlapping discovery queries and unresolved candidates retained for later screening. Updated collection statistics and downloads; the 95-record frozen evidence snapshot and its cutoff are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "daily-maintenance-2026-10-16",
       "date": "2026-10-16",
       "kind": "website",

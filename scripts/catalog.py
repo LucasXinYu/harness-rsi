@@ -497,7 +497,7 @@ def markdown(stats, config, project, evidence_data, updates):
         '| State | Date | What it means |', '| :-- | :-- | :-- |',
         f'| **Frozen paper evidence** | {evidence["cutoff"]} | {evidence["records"]} category–source records; evidence export dated {evidence_data["updated_on"]} |',
         f'| **Living literature collection** | {config["search_cutoff"]} | Search horizon; {stats["papers"]} papers and {stats["resources"]} official resources; collection updated {config["updated_on"]} |',
-        f'| **Website presentation** | {website["date"]} | {website["title"]}; this update adds no studies or experimental findings |', '',
+        f'| **Website update** | {website["date"]} | {website["title"]}; see [release notes](docs/updates.json) for the scope of this update |', '',
         '**Our maintenance commitments**', '']
     lines += ['- **'+policy['title']+'.** '+policy['text'] for policy in updates['policy']]
     lines += ['', updates['cadence'], '',
