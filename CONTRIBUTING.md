@@ -4,11 +4,11 @@ This repository is the literature companion to an ongoing survey. The homepage a
 
 ## Maintenance and corrections
 
-Updates are manually curated after checking primary sources. There is no automatic discovery service or promised fixed publication schedule. Keep three states separate:
+AI-assisted literature searches are scheduled daily at 09:00 America/Los_Angeles. Publication follows primary-source verification, duplicate checks and repository validation; a scheduled search does not guarantee a new paper or complete coverage. The local updating agent commits and pushes verified changes, and GitHub Pages deploys the website. Keep three states separate:
 
 | Update | Record the change here | Do not silently change |
 | :-- | :-- | :-- |
-| Literature membership or metadata | `data/annotations.json`, bibliography import, `data/history.json` | Paper evidence cutoff or domain findings |
+| Literature membership or metadata | `data/literature.bib`, `data/annotations.json`, `data/history.json`, `data/config.json` | Paper evidence cutoff or domain findings |
 | Domain evidence or a comparative conclusion | Reviewed evidence records, annotations, findings and an `evidence` release in `docs/updates.json` | Historical versions, original discovery setting or evidence limits |
 | Interface, presentation or project information | Site source and a `website` release in `docs/updates.json` | Search horizon or evidence export date |
 
@@ -20,39 +20,50 @@ For an evidence correction:
 2. Supply a primary-source URL, version and locator. State whether the problem concerns the seed, actual edit, final retention, result attribution or transfer setting. Mark uncertain facts as unresolved.
 3. Check the evidence record **and every selected finding/comparison that relies on it**. A source correction may require narrowing a pattern even if the bibliography stays unchanged.
 4. Record the correction, its reason and affected IDs in the release note and commit. Keep negative results and reporting gaps. Do not delete them solely to simplify the story.
-5. Run validation and inspect the changed interface. Structural checks do not establish scientific truth; a maintainer must read the source and approve the interpretation.
+5. Run validation and inspect the changed interface. Structural checks do not establish scientific truth; the updating agent or maintainer must read the primary source, locate the supporting evidence and preserve attribution limits.
 
-The repository and website are public. Community paper suggestions and source-backed corrections are welcome through repository issues. Maintainers review evidence before updating the atlas.
+The repository and website are public. Community paper suggestions and source-backed corrections are welcome through repository issues. Source verification is required before updating the atlas; human maintainers remain responsible for research and editorial decisions.
 
 ## Add or correct a paper
 
 Check the primary source, identify the principal contribution, and distinguish harness changes from task outputs, model training, and supporting infrastructure. Record a concise description of the mechanism and its relevance. A title containing “RSI” does not establish recursive improvement of the optimizer.
 
-For the current workflow, update `literature.bib` and `literature_map.tex` in the survey workspace, then import them:
+For incremental updates, edit `data/literature.bib` and the matching `data/annotations.json` entry directly. Preserve existing keys and first-added dates. On a membership change, append a dated snapshot of sorted `paper_ids` and `resource_ids` to `data/history.json`, or replace that day's snapshot if one already exists. Update `data/config.json` with the actual collection-update date; extend its search horizon only after completing the search.
 
 ```sh
-python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD
+python3 scripts/catalog.py build
 python3 -m unittest discover -s tests
+node tests/evidence_model_test.mjs
 python3 scripts/catalog.py check
 git diff
-git add data docs/catalog.json docs/stats.json docs/literature.bib docs/assets/publication-timeline.svg docs/assets/collection-growth.svg README.md
-git commit -m "Update literature collection"
-git push
 ```
 
-Use the actual collection-update date. The import rebuilds the README, chart, and website data. It preserves each record’s original `added_on` and release-date annotation. If correcting a release date, edit that record in `data/annotations.json`, include the primary-source URL and date basis, and rebuild with `python3 scripts/catalog.py build`.
+Stage only the reviewed source files and their generated outputs, commit with a descriptive message, and push to `origin main`. Confirm that the remote commit and Pages deployment succeeded. If correcting a release date, include the primary-source URL and date basis before rebuilding. A metadata-only correction does not create a collection-growth point.
+
+The legacy `catalog.py import --source /path/to/overleaf-project` command **replaces collection membership with the source Literature Map**. It is for a deliberate, reviewed reconciliation, not daily updates: running it against an older manuscript can remove newer website entries. Compare both collections and retain reviewed additions before using it.
 
 The GitHub issue template accepts paper suggestions and corrections. Contributions should give the title, primary-source link, suggested category, and a short explanation of relevance. Do not upload copyrighted paper PDFs.
+
+## Daily literature update procedure
+
+The daily schedule runs in the maintainer's local Codex session. The computer must be awake, Codex running, network access available and Git authentication valid. GitHub Actions handles validation and publication after a push; it does not perform the literature search itself. A missed or failed run must not be presented as a successful search.
+
+1. **Resume safely.** Read the prior run record, inspect local changes, fetch the remote branch and fast-forward only when safe. Retry an unfinished push or deployment before creating duplicate additions. Never reset unrelated work or force-push.
+2. **Search with overlap.** Start from the last completed search horizon, overlapping seven days to catch indexing delays. On Mondays, also check related surveys and citations of core studies for older omissions. Search harness optimization/evolution, recursive self-improvement, agent workflow search, and evolving tools, skills, memory and context. Save the actual queries, source URLs and date range in local run records outside this public repository.
+3. **Verify and screen.** Prefer arXiv, OpenReview, ACL Anthology, official proceedings and author-released papers/code. Confirm identity, first release and any formal venue. Deduplicate preprint/published versions by identifiers and title/authors. Separate reusable harness or improver changes from single-task outputs and weight-only training; label related surveys and background methods accordingly. Keep uncertain candidates pending.
+4. **Extract only supported claims.** Read the source before adding a mechanism summary or result. Concrete findings require a section, appendix, figure or implementation locator. Preserve the task setting, seed, actual change, retention status and attribution limits. New collection entries do not automatically expand the frozen domain-evidence snapshot.
+5. **Update and publish.** Follow the incremental procedure above. Rebuild the README, aggregate charts, site data and downloadable bibliography; validate, inspect the diff, commit and push relevant changes. Verify the matching Pages run and public data before recording publication as complete. For substantive evidence revisions, preserve the original snapshot and publish a separately dated version with source-backed comparisons.
+6. **Record the outcome accurately.** Keep completed-search and publication status separate. Do not fabricate a search cutoff, new publication date, growth point or empty commit when nothing qualifies. Retain pending candidates and specific failure details for the next run. No manuscript or Overleaf edits are part of this routine.
 
 ## Data definitions
 
 | Field or file | Meaning |
 | :-- | :-- |
-| `data/literature.bib` | Bibliographic identity and source URL, selected from the survey bibliography using Literature Map membership; extra manuscript references and aliases are excluded. |
+| `data/literature.bib` | Bibliographic identity and source URL. The baseline came from the survey Literature Map; subsequent verified additions are maintained here. Extra manuscript references and aliases are not automatically included. |
 | `data/annotations.json` | One annotation per citation key: primary category, record kind, method summary, release date with provenance, and first-added date. |
 | `kind: paper` | A paper or manuscript in the literature map, including surveys, adjacent methods, and benchmarks. This is not a claim of peer review or RSI capability. |
 | `kind: resource` | An official benchmark page, code resource, or implementation reference, counted separately from papers. |
-| `category` | The primary thematic contribution inherited from the Literature Map. Each record has one category so category totals do not double-count. |
+| `category` | The primary thematic contribution, using the Literature Map's taxonomy for both baseline and later additions. Each record has one category so category totals do not double-count. |
 | `release.value` | First arXiv submission where available; arXiv identifier month as fallback; otherwise the bibliographic publication date. It is not the date a revised version appeared. Venue-based fallbacks can be later than an unrecorded preprint. |
 | `release.precision` | `day`, `month`, `year`, or `unknown`. Month/year values remain partial dates. No first-of-month/year date is fabricated. |
 | `release.source` / `release.basis` | Evidence URL and description of the recorded date. Initial dates come from existing source checks and Literature Map notes. |
@@ -115,7 +126,7 @@ Contributor names and roles are stored in `docs/project.json`. Xin (Lucas) Yu le
 
 The README displays aggregate counts, cumulative and monthly SVG charts, and collection updates, without enumerating papers. The `docs/` folder is also a complete static website.
 
-The public website is hosted at https://lucasxinyu.github.io/harness-rsi/. GitHub Pages uses GitHub Actions: changes to `docs/` or the publication workflow on `main` trigger validation and deployment. Maintainers can also run **Publish literature website** manually. The workflow deploys only `docs/` and refuses to run on a private repository. Literature discovery and evidence verification remain manually curated; deployment does not extend the research cutoff. The official-project branding identifies this repository as the project home; it does not imply that the survey has been published or accepted.
+The public website is hosted at https://lucasxinyu.github.io/harness-rsi/. GitHub Pages uses GitHub Actions: changes to `docs/` or the publication workflow on `main` trigger validation and deployment. Maintainers can also run **Publish literature website** manually. The workflow deploys only `docs/` and refuses to run on a private repository. Daily discovery and source verification follow the procedure above; deployment alone does not extend the research cutoff. The official-project branding identifies this repository as the project home; it does not imply that the survey has been published or accepted.
 
 ## File boundaries
 

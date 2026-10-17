@@ -66,7 +66,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-10 | Search horizon; 235 papers and 11 official resources; collection updated 2026-10-10 |
-| **Website presentation** | 2026-10-15 | The research atlas is public; this update adds no studies or experimental findings |
+| **Website presentation** | 2026-10-16 | Daily literature discovery is scheduled; this update adds no studies or experimental findings |
 
 **Our maintenance commitments**
 
@@ -75,7 +75,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 - **Publish corrections with context.** A correction records what changed and why. Conflicting code, unclear retention and negative results remain attached to the original setting.
 - **Preserve the paper snapshot.** The frozen survey cutoff stays identifiable. A bibliography import or website redesign does not silently extend the evidence collection.
 
-Updates are maintained by the project team after source verification. Literature membership, evidence revisions and website changes have separate dates. There is no automated claim of a complete or continuously refreshed search.
+AI-assisted literature searches are scheduled daily at 09:00 Pacific time. Verified additions and corrections update the bibliography, collection charts, repository overview and website after validation. Literature, evidence and presentation retain separate dates; a scheduled search does not guarantee new studies or complete coverage.
 
 The workflow is **find and screen → trace the actual change → revise comparisons → validate and record a dated release**. A website redesign does not create a new evidence snapshot. An added bibliography entry does not automatically become evidence for a domain finding.
 
@@ -136,10 +136,9 @@ Project development and assistance are separate from scholarly authorship.
 
 <details><summary>Maintainer quick start</summary>
 
-Import the reviewed survey bibliography and Literature Map with an actual collection-update date. Map membership determines the collection; extra manuscript references and aliases do not automatically count.
+Follow the [daily literature update procedure](CONTRIBUTING.md#daily-literature-update-procedure). Incremental updates edit `data/literature.bib` and `data/annotations.json`, with actual membership snapshots and dates. Do not reimport an older Overleaf collection over newer entries.
 
 ```sh
-python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD
 python3 scripts/catalog.py build
 python3 -m unittest discover -s tests
 node tests/evidence_model_test.mjs

@@ -1,10 +1,10 @@
 {
   "commitment": "We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.",
-  "cadence": "Updates are maintained by the project team after source verification. Literature membership, evidence revisions and website changes have separate dates. There is no automated claim of a complete or continuously refreshed search.",
+  "cadence": "AI-assisted literature searches are scheduled daily at 09:00 Pacific time. Verified additions and corrections update the bibliography, collection charts, repository overview and website after validation. Literature, evidence and presentation retain separate dates; a scheduled search does not guarantee new studies or complete coverage.",
   "steps": [
     {
       "title": "Find & screen",
-      "text": "Track new papers and revisions; distinguish target-harness changes from optimizer design, model training and background work."
+      "text": "Search daily for new studies and revisions, with overlapping date windows; verify primary sources and distinguish reusable harness changes from model training and background work."
     },
     {
       "title": "Trace the change",
@@ -12,10 +12,22 @@
     },
     {
       "title": "Revise & release",
-      "text": "Update the benchmark records and comparisons, document corrections, and publish a dated data version alongside the collection history."
+      "text": "Rebuild the collection and website, validate changes, and push a traceable commit. Revise benchmark comparisons only when new evidence supports them; preserve the paper snapshot."
     }
   ],
   "releases": [
+    {
+      "id": "daily-maintenance-2026-10-16",
+      "date": "2026-10-16",
+      "kind": "website",
+      "title": "Daily literature discovery is scheduled",
+      "changes": [
+        "Scheduled daily AI-assisted discovery with primary-source checks, version deduplication and weekly searches for overlooked studies.",
+        "Documented incremental bibliography updates, validation, automatic commits and pushes, and verification of the deployed website.",
+        "Maintenance setup only: this release adds no papers or findings and does not advance the existing search horizon or frozen evidence cutoff."
+      ],
+      "records": 95
+    },
     {
       "id": "public-launch-2026-10-15",
       "date": "2026-10-15",

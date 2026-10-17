@@ -527,9 +527,8 @@ def markdown(stats, config, project, evidence_data, updates):
         name = f'[{person["name"]}]({person["url"]})' if person.get('url') else person['name']
         lines += [f'| {name} | {person["role"]} | {person["description"]} |']
     lines += ['', '<details><summary>Maintainer quick start</summary>', '',
-        'Import the reviewed survey bibliography and Literature Map with an actual collection-update date. Map membership determines the collection; extra manuscript references and aliases do not automatically count.', '',
-        '```sh', 'python3 scripts/catalog.py import --source /path/to/overleaf-project --date YYYY-MM-DD',
-        'python3 scripts/catalog.py build', 'python3 -m unittest discover -s tests',
+        'Follow the [daily literature update procedure](CONTRIBUTING.md#daily-literature-update-procedure). Incremental updates edit `data/literature.bib` and `data/annotations.json`, with actual membership snapshots and dates. Do not reimport an older Overleaf collection over newer entries.', '',
+        '```sh', 'python3 scripts/catalog.py build', 'python3 -m unittest discover -s tests',
         'node tests/evidence_model_test.mjs', 'python3 scripts/catalog.py check', '```', '',
         'The build synchronizes this README, diagrams, statistics and downloadable bibliography. Findings live in `docs/project.json`; benchmark assignments and comparative notes live in `data/evidence_annotations.json`. These are edited separately from bibliography counts. Follow the [evidence update procedure](CONTRIBUTING.md#updating-benchmark-evidence), add a dated release note, review the rendered site and commit the source and generated files together.', '',
         '[Validation workflow](https://github.com/LucasXinYu/harness-rsi/actions/workflows/validate.yml) · [Contribution guide](CONTRIBUTING.md)', '', '</details>', '']
