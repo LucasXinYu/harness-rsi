@@ -1,7 +1,7 @@
 {
   "title": "Harness RSI",
-  "search_cutoff": "2026-10-17",
-  "updated_on": "2026-10-17",
+  "search_cutoff": "2026-10-18",
+  "updated_on": "2026-10-18",
   "repository_url": "https://github.com/LucasXinYu/harness-rsi",
   "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
   "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"

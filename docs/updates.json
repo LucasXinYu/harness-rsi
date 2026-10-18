@@ -17,6 +17,19 @@
   ],
   "releases": [
     {
+      "id": "literature-update-2026-10-18",
+      "date": "2026-10-18",
+      "kind": "website",
+      "title": "Workflow reuse and skill-generalization literature update",
+      "changes": [
+        "Newly collected five existing studies after primary-source screening: CB-Orchestrator, LAWA, DAGO, InFlowOp and Generalizable Skill Optimization. These are newly collected older works, not five newly published papers.",
+        "Separated reusable workflow search and skill-generalization evidence from InFlowOp, which is categorized as adjacent task-time workflow repair rather than a retained cross-task harness discovery.",
+        "Deduplicated workshop and arXiv versions of CB-Orchestrator and DAGO as one study each. Their exact earliest public posting dates remain unresolved and are recorded with year precision instead of treating October arXiv dates as first publication.",
+        "Completed overlapping targeted discovery for October 10-18 and retained unresolved candidates locally. Refreshed collection statistics and downloads; the 95-record evidence snapshot, manuscript cutoff and benchmark findings are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "literature-update-2026-10-17",
       "date": "2026-10-17",
       "kind": "website",

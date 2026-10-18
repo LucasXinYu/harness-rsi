@@ -3106,5 +3106,65 @@
       "basis": "First arXiv submission; primary record and v1 methods checked 2026-10-17",
       "source": "https://arxiv.org/abs/2610.21887"
     }
+  },
+  "cborchestrator2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Builds a reusable pool of executable workflows by generating operator compositions and revising failed candidates with execution feedback, then learns a query-conditioned contextual-bandit selector over that pool. Workflow construction, selector learning, and query-time routing are distinct stages; selecting a stored workflow does not establish recursive redesign of the optimizer. Source: arXiv:2610.13064v1, Sections 3.1-3.4 and Appendix A.11. A 2026 ICML workshop version is also confirmed; the exact earliest public posting date remains unresolved.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "2026 workshop version confirmed on the corresponding author's publication list and linked manuscript; first public posting date unresolved. The later first arXiv submission was 2026-10-09 and is not asserted to be the first public release.",
+      "source": "https://daizhongxiang.github.io/publications.html"
+    }
+  },
+  "lawa2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "LAWA optimizes reusable multi-agent workflow graphs for recurring queries. It edits dependencies and agent composition through parallel rewiring, node removal, and node permutation, ranks candidates by makespan, and filters them with a learned graph-performance evaluator. A trained graph generator can supply initial workflows. The evaluator's performance-preservation filter is a prediction rather than a guarantee of unchanged measured task accuracy; generator/evaluator training and workflow-structure optimization remain separate. Source: arXiv:2610.14481v1, Sections 3.1-3.5 and Algorithm 1.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-10-10",
+      "precision": "day",
+      "basis": "First arXiv submission; no earlier public version verified",
+      "source": "https://arxiv.org/abs/2610.14481"
+    }
+  },
+  "dago2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "DAGO maintains an archive of executable workflow code and prompts with multi-parent lineage. A diagonal LinUCB-style surrogate selects proposed parent combinations; an LLM fuses the selected workflows, and the child's validation score updates the selector before the child joins the archive. The archive supports subsequent reuse, but lineage topology is not itself an input to the arm scorer and the supplied fusion/search procedure is not shown rewriting itself. Source: arXiv:2610.05284v1, Sections 3-4. The separately linked workshop manuscript describes an earlier formulation; the summary follows the inspected arXiv version, not an assumed identical algorithm across versions.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026",
+      "precision": "year",
+      "basis": "2026 workshop version confirmed on the corresponding author's publication list and linked manuscript; first public posting date unresolved. The first arXiv submission was 2026-10-04 and is not asserted to be the first public release.",
+      "source": "https://daizhongxiang.github.io/publications.html"
+    }
+  },
+  "inflowop2026": {
+    "category": "Task-Time Search and Output Refinement (Adjacent Work)",
+    "kind": "paper",
+    "summary": "InFlowOp constructs task decompositions and agent assignments using a shared competence/latency cost model, then checks subtask contracts during execution. At a fault it first attempts a permitted low-cost reassignment, or re-decomposes the faulty subtask, preserving completed work. This is included as adjacent task-time workflow control: the inspected mechanism does not establish that a revised controller or workflow is retained and improves later independent tasks. Source: arXiv:2610.01017v2, Sections 3.1-3.2; not counted as a verified reusable-harness discovery.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-10-01",
+      "precision": "day",
+      "basis": "First arXiv submission; latest inspected revision v2 dated 2026-10-02",
+      "source": "https://arxiv.org/abs/2610.01017"
+    }
+  },
+  "gso2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Examines whether training improvements in self-evolving skills transfer to held-out tasks, separating final-skill quality from individual-edit effects. Its Generalizable Skill Optimization retains a six-part metaskill that guides per-task skill construction, while discarding task-specific files, columns, and output details after each task. Candidate revisions change one metaskill part and are accepted through validation executions rather than a content-only judge. This is relevant to reusable improvement guidance and generalization, not evidence that any reported whole-system gain is caused by a single rule. Source: arXiv:2609.39148v2, Sections 3-4.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-09-30",
+      "precision": "day",
+      "basis": "First arXiv submission; latest inspected revision v2 dated 2026-10-07",
+      "source": "https://arxiv.org/abs/2609.39148"
+    }
   }
 }
