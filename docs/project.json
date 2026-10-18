@@ -28,8 +28,8 @@
       {
         "name": "Wenxin Long",
         "role": "Co-first author",
-        "github_url": null,
-        "identity_sources": ["https://lingzhou-xue.github.io/group.html"]
+        "github_url": "https://github.com/VivLon",
+        "identity_sources": ["https://science.psu.edu/stat/people/wbl5283", "https://github.com/VivLon/spVelo/blob/main/setup.py", "https://github.com/VivLon/spVelo/commit/909db4caea261dbe34270ef23b18f6c6751567c1", "https://lingzhou-xue.github.io/group.html"]
       },
       {
         "name": "Haochen Zhang",

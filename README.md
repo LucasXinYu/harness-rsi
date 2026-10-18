@@ -80,7 +80,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-18 | Search horizon; 258 papers and 11 official resources; collection updated 2026-10-18 |
-| **Website update** | 2026-10-18 | Survey author roles and verified GitHub profiles; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-10-18 | Verified Wenxin Long's GitHub profile through PSU identity sources; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -139,7 +139,7 @@ Open http://localhost:8000 for a local preview. Validated website changes pushed
 | :-- | :-- | :-- |
 | Xin Yu | Co-first author · Project Lead | [@LucasXinYu](https://github.com/LucasXinYu) |
 | Chengyuan Liu | Co-first author | [@PsyduckBelly](https://github.com/PsyduckBelly) |
-| Wenxin Long | Co-first author | Awaiting confirmation |
+| Wenxin Long | Co-first author | [@VivLon](https://github.com/VivLon) |
 | Haochen Zhang | Co-first author | [@hczhang1024](https://github.com/hczhang1024) |
 | Lingzhou Xue | Corresponding author | [@lingzhou-xue](https://github.com/lingzhou-xue) |
 

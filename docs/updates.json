@@ -17,6 +17,17 @@
   ],
   "releases": [
     {
+      "id": "wenxin-github-confirmed-2026-10-18",
+      "date": "2026-10-18",
+      "kind": "website",
+      "title": "Verified Wenxin Long's GitHub profile through PSU identity sources",
+      "changes": [
+        "Confirmed Wenxin Long's GitHub account as VivLon: the PSU Statistics directory email matches the named author email in spVelo's setup.py and public commits attributed to VivLon.",
+        "Added the verified profile link to the repository overview and homepage. All five authors now have GitHub links; author order, roles, literature and frozen evidence are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "author-profiles-2026-10-18",
       "date": "2026-10-18",
       "kind": "website",
