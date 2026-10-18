@@ -286,6 +286,14 @@ def svg_timeline(stats, cutoff):
 
 def validate_project(project, records):
     """Check traceability and aggregate consistency, not scientific claim truth."""
+    profiles = project['paper']['author_profiles']
+    if [person['name'] for person in profiles] != project['paper']['authors']:
+        raise ValueError('Author profiles must match manuscript author order')
+    for person in profiles:
+        if not person.get('role') or not person.get('identity_sources'):
+            raise ValueError('Author profile requires role and identity sources')
+        if person.get('github_url') and not re.fullmatch(r'https://github\.com/[A-Za-z0-9-]+', person['github_url']):
+            raise ValueError('Author GitHub URL must identify a profile')
     evidence, domains = project['evidence'], project['domains']
     catalog = {r['id']: r for r in records}
     for source in project.get('additional_finding_sources', []):
@@ -525,10 +533,15 @@ def markdown(stats, config, project, evidence_data, updates):
         '```sh', 'python3 -m http.server 8000 --directory docs', '```', '',
         'Open http://localhost:8000 for a local preview. Validated website changes pushed to `main` deploy to GitHub Pages; maintainers can also run the publication workflow manually.', '',
         '## Authors', '', '**'+project['paper']['title']+'**', '',
-        ' · '.join(project['paper']['authors']), '',
+        '| Author | Role | GitHub |', '| :-- | :-- | :-- |']
+    for person in project['paper']['author_profiles']:
+        account = f'[@{person["github_url"].rsplit("/", 1)[-1]}]({person["github_url"]})' if person.get('github_url') else 'Awaiting confirmation'
+        lines += [f'| {person["name"]} | {person["role"]} | {account} |']
+    lines += ['', project['paper']['authorship_note'], '',
+        f'Correspondence: [{project["paper"]["corresponding_email"]}](mailto:{project["paper"]["corresponding_email"]})', '',
         project['paper']['affiliation']+'<br>', project['paper']['location'], '',
         'The arXiv identifier and citation will be added when the preprint is available. Project branding does not imply publication or acceptance.', '',
-        '## Contributors', '', 'Project development and assistance are separate from scholarly authorship.', '',
+        '## Contributors', '', 'The five survey authors are listed above with their research roles and verified GitHub links. Project development and AI assistance are listed separately below. GitHub’s automatic Contributors graph reflects attributed commits, not the manuscript author list.', '',
         '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
     for person in project.get('contributors', []):
         name = f'[{person["name"]}]({person["url"]})' if person.get('url') else person['name']

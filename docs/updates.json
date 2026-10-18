@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "author-profiles-2026-10-18",
+      "date": "2026-10-18",
+      "kind": "website",
+      "title": "Survey author roles and verified GitHub profiles",
+      "changes": [
+        "Listed all five survey authors in manuscript order on the repository overview and homepage, preserving co-first authorship, Project Lead, and corresponding-author roles and contact email.",
+        "Linked verified GitHub profiles for Xin Yu, Chengyuan Liu, Haochen Zhang and Lingzhou Xue. Wenxin Long remains listed without a GitHub link pending identity confirmation.",
+        "Kept research authorship separate from project and AI assistance; did not fabricate commits or alter GitHub's automatic contribution graph. Literature and frozen evidence are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "dataset-pilot-2026-10-18",
       "date": "2026-10-18",
       "kind": "website",

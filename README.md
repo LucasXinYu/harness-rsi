@@ -80,7 +80,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-18 | Search horizon; 258 papers and 11 official resources; collection updated 2026-10-18 |
-| **Website update** | 2026-10-18 | Evidence dataset v0.1.0 and supplementary literature screening; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-10-18 | Survey author roles and verified GitHub profiles; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -135,7 +135,17 @@ Open http://localhost:8000 for a local preview. Validated website changes pushed
 
 **From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents**
 
-Xin Yu · Chengyuan Liu · Wenxin Long · Haochen Zhang · Lingzhou Xue
+| Author | Role | GitHub |
+| :-- | :-- | :-- |
+| Xin Yu | Co-first author · Project Lead | [@LucasXinYu](https://github.com/LucasXinYu) |
+| Chengyuan Liu | Co-first author | [@PsyduckBelly](https://github.com/PsyduckBelly) |
+| Wenxin Long | Co-first author | Awaiting confirmation |
+| Haochen Zhang | Co-first author | [@hczhang1024](https://github.com/hczhang1024) |
+| Lingzhou Xue | Corresponding author | [@lingzhou-xue](https://github.com/lingzhou-xue) |
+
+Xin Yu, Chengyuan Liu, Wenxin Long and Haochen Zhang contributed equally. Xin Yu is the Project Lead; Lingzhou Xue is the corresponding author.
+
+Correspondence: [lzxue@psu.edu](mailto:lzxue@psu.edu)
 
 Department of Statistics, The Pennsylvania State University<br>
 University Park, PA 16802, USA
@@ -144,7 +154,7 @@ The arXiv identifier and citation will be added when the preprint is available. 
 
 ## Contributors
 
-Project development and assistance are separate from scholarly authorship.
+The five survey authors are listed above with their research roles and verified GitHub links. Project development and AI assistance are listed separately below. GitHub’s automatic Contributors graph reflects attributed commits, not the manuscript author list.
 
 | Contributor | Role | Contribution |
 | :-- | :-- | :-- |

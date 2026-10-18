@@ -12,6 +12,19 @@ spec.loader.exec_module(c)
 
 
 class CatalogTests(unittest.TestCase):
+    def test_author_profiles_preserve_order_and_safe_profile_links(self):
+        project=c.read_json(c.ROOT/'docs/project.json')
+        records=c.load_catalog()
+        c.validate_project(project,records)
+        bad=copy.deepcopy(project)
+        bad['paper']['author_profiles'].reverse()
+        with self.assertRaisesRegex(ValueError,'author order'):
+            c.validate_project(bad,records)
+        bad=copy.deepcopy(project)
+        bad['paper']['author_profiles'][0]['github_url']='https://github.com/user/repository'
+        with self.assertRaisesRegex(ValueError,'profile'):
+            c.validate_project(bad,records)
+
     def test_nested_bib_fields_and_duplicates(self):
         source = '@misc{x,\n title = {{A {Nested} Title}},\n url = {https://example.org/x},\n year = {2026}\n}\n'
         self.assertEqual(c.plain(c.bib_entries(source)[0]['title']), 'A Nested Title')

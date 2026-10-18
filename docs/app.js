@@ -237,7 +237,7 @@ function setFutureLink(id, url, label) {
 
 async function init() {
   try {
-    const response = await fetch('project.json');
+    const response = await fetch('project.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Project configuration unavailable.');
     const project = await response.json();
     domains = project.domains;
@@ -426,13 +426,33 @@ initStatistics();
 function renderPaperAuthors(paper) {
   const list = byId('paper-authors');
   list.replaceChildren();
-  paper.authors.forEach(name => {
+  const profiles = paper.author_profiles || paper.authors.map(name => ({ name, role: '', github_url: null }));
+  profiles.forEach(person => {
     const item = document.createElement('li');
-    item.textContent = name;
+    const name = document.createElement('a');
+    name.textContent = person.name;
+    if (person.github_url) name.href = person.github_url;
+    else name.removeAttribute('href');
+    const role = document.createElement('span');
+    role.className = 'author-role';
+    role.textContent = person.role;
+    const account = document.createElement('span');
+    account.className = 'author-account';
+    account.textContent = person.github_url ? `@${new URL(person.github_url).pathname.slice(1)} ↗` : 'GitHub account awaiting confirmation';
+    if (person.github_url) name.append(account);
+    item.append(name, role);
+    if (!person.github_url) item.append(account);
     list.append(item);
   });
   byId('paper-affiliation').textContent = paper.affiliation;
   byId('paper-location').textContent = paper.location;
+  byId('paper-authorship-note').textContent = paper.authorship_note || '';
+  const contact = byId('paper-contact');
+  contact.hidden = !paper.corresponding_email;
+  if (paper.corresponding_email) {
+    contact.href = `mailto:${paper.corresponding_email}`;
+    contact.textContent = `Correspondence: ${paper.corresponding_email}`;
+  }
 }
 
 // Contributors describe project assistance, not scholarly authorship.
