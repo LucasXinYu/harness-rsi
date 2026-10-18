@@ -1,6 +1,6 @@
 ![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)
 
-<p align="center"><strong>What actually evolves around the model?</strong><br>The research companion to our survey of harness optimization and recursive self-improvement.<br><sub>Public research atlas · Source-linked evidence · Maintained by the project team</sub></p>
+<p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
 <p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/"><strong>Explore the interactive website ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
@@ -43,6 +43,20 @@ The interactive site lets you choose **any two domains** and switch between inte
 
 </details>
 
+## Evidence dataset
+
+**Harness RSI Evidence Dataset v0.1.0** packages the unchanged 95 category–source records with an additive structured-annotation pilot. It is not a dataset of 95 independent interventions.
+
+**4/95 records screened · 6 scoped signals · 91 not yet reviewed for outcome/retention labels.** Regressions, no-gain proposals, mixed trade-offs and usage-only observations remain distinct. This selected pilot cannot estimate a failure rate; missing labels are not evidence of no failures.
+
+[Explore the dataset](https://lucasxinyu.github.io/harness-rsi/#dataset) · [Dataset card](DATASET_CARD.md) · [JSON](docs/dataset/v0.1.0/dataset.json) · [JSONL](docs/dataset/v0.1.0/records.jsonl) · [CSV](docs/dataset/v0.1.0/records.csv) · [Schema](docs/dataset/v0.1.0/schema.json) · [Checksums](docs/dataset/v0.1.0/checksums.json) · [Citation](docs/dataset/v0.1.0/citation.bib)
+
+The annotations are AI-assisted screening of existing curated text, not a fresh independent audit of all primary papers. Scope, exact supporting record excerpts and primary-source locators accompany each signal. **No dataset-specific reuse license has been granted.** See the card for provenance, missingness, intended uses and rights.
+
+```sh
+python3 examples/inspect_dataset.py --outcome regression
+```
+
 ## Evidence you can trace
 
 **95 records** connect **20 task subcategories** to concrete studies. The benchmark explorer adds **27 comparison lenses** and **12 selected domain observations**. Filter by domain, subcategory and benchmark/setting, then inspect the seed, actual edit, outcome and original evidence.
@@ -65,8 +79,8 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-10-18 | Search horizon; 253 papers and 11 official resources; collection updated 2026-10-18 |
-| **Website update** | 2026-10-18 | Workflow reuse and skill-generalization literature update; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-10-18 | Search horizon; 258 papers and 11 official resources; collection updated 2026-10-18 |
+| **Website update** | 2026-10-18 | Evidence dataset v0.1.0 and supplementary literature screening; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -84,11 +98,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**253 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-18**
+**258 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-18**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **239/253** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **244/258** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -101,7 +115,7 @@ Publication dates use the first arXiv submission where available, then recorded 
 | 2026-10-03 | 177 | 10 |
 | 2026-10-10 | 235 | 11 |
 | 2026-10-17 | 248 | 11 |
-| 2026-10-18 | 253 | 11 |
+| 2026-10-18 | 258 | 11 |
 
 </details>
 

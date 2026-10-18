@@ -3166,5 +3166,65 @@
       "basis": "First arXiv submission; latest inspected revision v2 dated 2026-10-07",
       "source": "https://arxiv.org/abs/2609.39148"
     }
+  },
+  "harnesssr2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "HarnessSR optimizes reusable symbolic-regression agent harnesses while holding model weights and underlying equation-search algorithms fixed. It first searches role instructions and demonstrations, then jointly searches workflow parameters and prompt assignments, and finally refines instructions using execution feedback. The selected harness is frozen for new equation-discovery tasks. Tool-specific interfaces guide PySR or an LLM equation generator; the discovered equations are task outputs, distinct from retained workflow and instruction changes. Source: arXiv:2610.16966v1, Sections 3.1-3.5 and Appendix G.2.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-10-12",
+      "precision": "day",
+      "basis": "First arXiv submission; version 1 inspected; no earlier public version or formal venue verified",
+      "source": "https://arxiv.org/abs/2610.16966"
+    }
+  },
+  "harnessttt2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Trains a separate harness-proposer adapter from budgeted scientific-discovery rollouts while keeping the executor model frozen. Proposals can alter system prompts, skills, executable tools, middleware and control settings, subject to validation before execution. Incumbent solutions, selected harnesses and an experience digest persist across rounds. This combines proposer-policy learning with external harness search; it is not a weights-fixed optimizer, and better task programs alone are not harness revisions. Source: arXiv:2610.17370v1, Section 3 and Appendix C.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-10-12",
+      "precision": "day",
+      "basis": "First arXiv submission; version 1 inspected; no earlier public version or formal venue verified",
+      "source": "https://arxiv.org/abs/2610.17370"
+    }
+  },
+  "harnessnet2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Coordinates code-level revisions to multiple agents' forward harnesses through hierarchical backward feedback. Each Agentron contains a frozen foundation model, a modifiable local harness and a frozen local optimizer; downstream feedback and local execution traces guide the next harness revision. A task-aware initializer builds starting harnesses on a supplied network backbone. The editable objects are local execution, context and interface code, not the local optimizers or the network topology. Source: arXiv:2610.15221v1, Sections 3.1-3.3 and Algorithms 1-4.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-10-10",
+      "precision": "day",
+      "basis": "First arXiv submission; version 1 inspected; no earlier public version or formal venue verified",
+      "source": "https://arxiv.org/abs/2610.15221"
+    }
+  },
+  "harness_squared2026": {
+    "category": "Self-Modification and Meta-Level Improvement",
+    "kind": "paper",
+    "summary": "Separates task-level harness exploration from cross-task updates to an improvement library. Task-level Propose-Probe-Compose tests and composes changes to eight file-mounted harness components through parallel or sequential recursion. After a task, reusable harnesses and lessons from refinement update the improvement harness and condition later proposals. Each new task starts from a common execution harness rather than simply inheriting the last task's runtime. The models remain frozen; recursive task exploration and persistent improvement-guidance updates are distinct mechanisms. Source: arXiv:2610.14224v1, Sections 2.1-2.3 and Appendix D.3.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-10-09",
+      "precision": "day",
+      "basis": "First arXiv submission; version 1 inspected; no earlier public version or formal venue verified",
+      "source": "https://arxiv.org/abs/2610.14224"
+    }
+  },
+  "workflowops2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Uses a persistent agent-collaboration transition matrix derived from successful workflow histories to guide later DAG construction. Capability matching detects uncovered requirements and can create specialists, expanding the agent pool and its collaboration prior. Historical priors are soft guidance layered on hard task dependencies; the current task's generated workflow is not itself evidence that the supplied orchestration algorithm has evolved. This is training-free reuse and expansion of orchestration state, not model-weight learning. Source: arXiv:2610.07860v1, Sections 3-4.",
+    "added_on": "2026-10-18",
+    "release": {
+      "value": "2026-10-06",
+      "precision": "day",
+      "basis": "First arXiv submission; version 1 inspected; no earlier public version or formal venue verified",
+      "source": "https://arxiv.org/abs/2610.07860"
+    }
   }
 }

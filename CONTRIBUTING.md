@@ -1,6 +1,16 @@
 # Maintaining Harness RSI
 
-This repository is the literature companion to an ongoing survey. The homepage and GitHub README explain the survey’s three questions: how improvement works, whether the improver changes too, and what concrete harness mechanisms emerge. They combine aggregate collection trends, a two-domain comparison studio and a benchmark evidence notebook. Individual paper records remain in the source data; the manuscript stays in Overleaf.
+This repository publishes a source-traceable evidence dataset and research atlas accompanying an ongoing survey. The homepage and GitHub README explain the survey’s three questions: how improvement works, whether the improver changes too, and what concrete harness mechanisms emerge. They combine aggregate collection trends, a two-domain comparison studio and a benchmark evidence notebook. Individual paper records remain in the source data; the manuscript stays in Overleaf.
+
+## Evidence dataset releases
+
+Read `DATASET_CARD.md` before interpreting the additive outcome/retention annotations. `data/dataset.json` defines the release version, date, frozen-input hash, provenance and rights status. `data/dataset_annotations.json` holds scoped signals linked to exact excerpts of the unchanged curated records. `scripts/dataset.py` validates this layer and is called by `catalog.py build/check`; do not edit generated exports directly.
+
+Preserve all 95 category-source units and their IDs. Signals are not independent interventions. Label `not_reviewed` and null separately from verified `not_reported`; do not auto-fill positive or negative outcomes from keywords. Outcome, final retention, usage and component attribution are distinct. Unknown benchmark applicability must remain empty, not expand to all benchmark memberships. An existing record excerpt provides a traceable annotation basis, not proof of a fresh independent primary-source audit.
+
+For a new release, preserve the previously published versioned files, bump the dataset version, update the card and coverage, review every new label and locator, and publish a dated release note. Do not rebase the frozen-source hash or overwrite a published version to hide changed evidence. Bibliography additions alone do not change dataset membership. No dataset-specific license is granted without explicit maintainer approval.
+
+Run the Python tests, `node tests/dataset_model_test.mjs`, and `node --input-type=module --check < docs/dataset.js` in addition to the standard checks. Use `python3 examples/inspect_dataset.py --outcome regression` to verify that downloads are practically inspectable.
 
 ## Maintenance and corrections
 

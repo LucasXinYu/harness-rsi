@@ -17,6 +17,20 @@
   ],
   "releases": [
     {
+      "id": "dataset-pilot-2026-10-18",
+      "date": "2026-10-18",
+      "kind": "website",
+      "title": "Evidence dataset v0.1.0 and supplementary literature screening",
+      "changes": [
+        "Published a versioned additive dataset view of the unchanged 95 category-source records, with JSON, JSONL, CSV, schema, checksums, citation and a dataset card. Dataset units are not independent interventions.",
+        "Added a selected structured-annotation pilot: four records, six scoped signals, with explicit outcome, retention, attribution and source links. The other 91 records remain unreviewed for these labels; no failure-rate or complete-annotation claim is made.",
+        "Added homepage dataset downloads and outcome comparisons, distinguishing regressions, no-gain proposals, trade-offs and usage observations. No dataset-specific reuse license is granted.",
+        "Newly collected five previously omitted papers: HarnessSR, HarnessTTT, HarnessNet, Harness^2 and WorkflowOps, first submitted October 6-12. Total living collection: 258 papers and 11 resources; ten papers newly collected across today’s two updates.",
+        "Bibliography additions do not extend the frozen evidence cutoff, its 95 records, or the submission manuscript. Unresolved candidates remain in local screening notes."
+      ],
+      "records": 95
+    },
+    {
       "id": "literature-update-2026-10-18",
       "date": "2026-10-18",
       "kind": "website",

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">
 <title id="title">Collected papers by publication month · 2026</title>
-<desc id="desc">2026-01: 3; 2026-02: 1; 2026-03: 4; 2026-04: 6; 2026-05: 14; 2026-06: 11; 2026-07: 22; 2026-08: 30; 2026-09: 68; 2026-10: 26 (partial month). Counts describe the survey collection, including related work, not all papers in the field.</desc>
+<desc id="desc">2026-01: 3; 2026-02: 1; 2026-03: 4; 2026-04: 6; 2026-05: 14; 2026-06: 11; 2026-07: 22; 2026-08: 30; 2026-09: 68; 2026-10: 31 (partial month). Counts describe the survey collection, including related work, not all papers in the field.</desc>
 <rect width="1000" height="390" rx="12" fill="#0c1521"/>
 <g font-family="Arial,sans-serif" font-size="13" fill="#e9f2f6">
 <text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9eb3c6">2026 · Search through 2026-10-18</text>
@@ -41,7 +41,7 @@
 <rect x="799.7" y="91.3" width="50.1" height="213.7" rx="3" fill="#8ec6ff"/>
 <text x="824.8" y="81.3" text-anchor="middle">68</text>
 <text x="824.8" y="329" text-anchor="middle" fill="#9eb3c6">Sep</text>
-<rect x="889.2" y="223.3" width="50.1" height="81.7" rx="3" fill="#ffc080"/>
-<text x="914.2" y="213.3" text-anchor="middle">26</text>
+<rect x="889.2" y="207.6" width="50.1" height="97.4" rx="3" fill="#ffc080"/>
+<text x="914.2" y="197.6" text-anchor="middle">31</text>
 <text x="914.2" y="329" text-anchor="middle" fill="#9eb3c6">Oct*</text>
-<text x="28" y="368" fill="#9eb3c6">* Partial month. Known release months: 239/253 papers. Official resources are excluded.</text></g></svg>
+<text x="28" y="368" fill="#9eb3c6">* Partial month. Known release months: 244/258 papers. Official resources are excluded.</text></g></svg>

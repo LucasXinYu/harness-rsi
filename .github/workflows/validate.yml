@@ -21,3 +21,5 @@ jobs:
       - run: node --check docs/harness-field.js
       - run: node --input-type=module --check < docs/benchmarks.js
       - run: node tests/evidence_model_test.mjs
+      - run: node --input-type=module --check < docs/dataset.js
+      - run: node tests/dataset_model_test.mjs

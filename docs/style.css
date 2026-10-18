@@ -97,6 +97,35 @@
 .studio-takeaway ul{padding-left:16px;margin:9px 0 0}
 .studio-takeaway li+li{margin-top:5px}
 .studio-note{font:9px/1.9 var(--mono);color:#8fa6bc;padding:0 28px;margin:24px 0}
+.dataset-section{border-top:1px solid var(--line);scroll-margin-top:90px}
+.dataset-release{display:grid;gap:12px;padding:24px;border:1px solid #395267;border-radius:8px;background:linear-gradient(120deg,#152737,#101924)}
+.dataset-release>span{font:11px var(--mono);color:var(--green)}
+.dataset-release>strong{font-size:20px;line-height:1.6;font-weight:550}
+.dataset-release>p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.dataset-downloads{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.dataset-downloads a{border:1px solid #42596c;border-radius:4px;padding:11px 15px;font:11px var(--mono);color:var(--green)}
+.dataset-downloads a:hover{background:#1a3037}
+.dataset-boundary{font-size:12px;line-height:1.9;color:#b8c7d6;max-width:950px}
+.dataset-toolbar{display:flex;gap:24px;justify-content:space-between;align-items:end;margin:30px 0 20px}
+.dataset-toolbar label{display:grid;gap:10px;font:11px var(--mono);color:#abc4d6;min-width:260px}
+.dataset-toolbar select{font-family:inherit;font-size:13px;color:#e4edf4;background:#142230;border:1px solid #42596c;padding:12px;max-width:100%}
+.dataset-toolbar p{font-size:11px;line-height:1.8;color:var(--muted)}
+.dataset-signals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.dataset-signal{min-width:0;padding:24px;border:1px solid var(--line);border-radius:6px;background:#101b28}
+.dataset-signal h3{font-size:17px;line-height:1.5;margin:16px 0 12px;overflow-wrap:anywhere}
+.dataset-signal p,.dataset-proof{font-size:12px;line-height:1.9;color:#b5c6d5}
+.dataset-signal .dataset-scope{color:#8fadc5}
+.dataset-signal .dataset-detail{font:10px/1.8 var(--mono);color:#9baec2}
+.dataset-badge{display:inline-block;font:10px/1.5 var(--mono);color:#9de5cf;border:1px solid #3e6c63;border-radius:4px;padding:6px 9px}
+.outcome-regression{color:#ffb8aa;border-color:#895c57}.outcome-no_gain,.outcome-mixed{color:#ffcf94;border-color:#89704c}.outcome-not_assessed{color:#bdb7dd;border-color:#625e7a}
+.dataset-proof{padding:14px 0;border-top:1px solid var(--line)}
+.dataset-proof summary,.dataset-method summary{cursor:pointer;color:var(--green)}
+.dataset-proof blockquote{margin:16px 0;border-left:2px solid #536980;padding-left:14px}
+.dataset-proof a,.dataset-record-link{font-size:11px;color:var(--green)}
+.dataset-record-link{display:inline-block;margin-top:12px}
+.dataset-method{margin-top:24px;font-size:12px;line-height:1.9;color:var(--muted)}
+#dataset-error{padding:15px;border:1px solid #895c57;color:#ffb8aa}
+@media(max-width:700px){.dataset-signals{grid-template-columns:1fr}.dataset-toolbar{align-items:stretch;flex-direction:column;gap:10px}.dataset-toolbar label{min-width:0}.dataset-release{padding:20px}.dataset-release>strong{font-size:17px}.dataset-signal{padding:20px}.dataset-downloads{gap:8px}.dataset-downloads a{font-size:10px;padding:10px}}
 .comparison-overview{margin-top:22px}
 .comparison-overview>summary{font-size:11px;line-height:1.8;color:#adc5d8;cursor:pointer;padding:10px 0}
 .comparison-overview .comparison-grid{margin-top:15px}

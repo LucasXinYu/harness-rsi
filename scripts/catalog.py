@@ -6,6 +6,7 @@ import calendar
 import datetime as dt
 import hashlib
 import html
+import importlib.util
 import json
 from pathlib import Path
 import re
@@ -460,7 +461,7 @@ def markdown(stats, config, project, evidence_data, updates):
     evidence = project['evidence']
     website = next(r for r in updates['releases'] if r['kind']=='website')
     lines = ['![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)', '',
-        '<p align="center"><strong>What actually evolves around the model?</strong><br>The research companion to our survey of harness optimization and recursive self-improvement.<br><sub>Public research atlas · Source-linked evidence · Maintained by the project team</sub></p>', '',
+        '<p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>', '',
         '<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/"><strong>Explore the interactive website ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>', '',
         '<p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>', '',
         'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.', '',
@@ -484,7 +485,13 @@ def markdown(stats, config, project, evidence_data, updates):
         finding = next(f for f in domain['findings'] if f['id']==finding_id)
         refs = ', '.join('['+x['name']+']('+x['url']+')' for x in finding['sources'])
         lines += ['| '+domain['name']+' | '+finding['result']+' '+refs+' | '+finding['limit']+' |']
-    lines += ['', '</details>', '', '## Evidence you can trace', '',
+    lines += ['', '</details>', '', '## Evidence dataset', '',
+        '**Harness RSI Evidence Dataset v0.1.0** packages the unchanged 95 category–source records with an additive structured-annotation pilot. It is not a dataset of 95 independent interventions.', '',
+        '**4/95 records screened · 6 scoped signals · 91 not yet reviewed for outcome/retention labels.** Regressions, no-gain proposals, mixed trade-offs and usage-only observations remain distinct. This selected pilot cannot estimate a failure rate; missing labels are not evidence of no failures.', '',
+        '[Explore the dataset](https://lucasxinyu.github.io/harness-rsi/#dataset) · [Dataset card](DATASET_CARD.md) · [JSON](docs/dataset/v0.1.0/dataset.json) · [JSONL](docs/dataset/v0.1.0/records.jsonl) · [CSV](docs/dataset/v0.1.0/records.csv) · [Schema](docs/dataset/v0.1.0/schema.json) · [Checksums](docs/dataset/v0.1.0/checksums.json) · [Citation](docs/dataset/v0.1.0/citation.bib)', '',
+        'The annotations are AI-assisted screening of existing curated text, not a fresh independent audit of all primary papers. Scope, exact supporting record excerpts and primary-source locators accompany each signal. **No dataset-specific reuse license has been granted.** See the card for provenance, missingness, intended uses and rights.', '',
+        '```sh', 'python3 examples/inspect_dataset.py --outcome regression', '```', '',
+        '## Evidence you can trace', '',
         f'**{len(evidence_data["records"])} records** connect **{evidence["subcategories"]} task subcategories** to concrete studies. The benchmark explorer adds **{len(evidence_data["patterns"])} comparison lenses** and **12 selected domain observations**. Filter by domain, subcategory and benchmark/setting, then inspect the seed, actual edit, outcome and original evidence.', '',
         '**A record follows this chain:** task and seed → reported problem → reusable harness edit → observed result → primary-source location and limitations.', '',
         f'The frozen survey evidence covers work through **{evidence["cutoff"]}**. A record is one source within one subcategory: records may share a paper, include negative results or expose missing artifacts. They are not {evidence["records"]} independent effects. Full-system gains are not attributed to individual edits without supporting evidence. A transfer evaluation retains its original discovery setting.', '',
@@ -543,6 +550,12 @@ def outputs():
     for a,b in zip(history,history[1:]):
         if a['date'] >= b['date']:
             raise ValueError('Snapshot dates must increase')
+    added_dates = {record['id']: record['added_on'] for record in records}
+    for snapshot in history:
+        for kind in ('paper', 'resource'):
+            for key in snapshot[kind + '_ids']:
+                if key in added_dates and added_dates[key] > snapshot['date']:
+                    raise ValueError('Snapshot predates first collection date: ' + key)
     for kind in ('paper','resource'):
         current = sorted(r['id'] for r in records if r['kind']==kind)
         if current != history[-1][kind+'_ids']:
@@ -555,7 +568,11 @@ def outputs():
     validate_evidence(evidence_data, project, records)
     validate_updates(updates, evidence_data)
     dataset = {'config':config, 'stats':stats, 'records':records}
-    return {ROOT/'README.md': markdown(stats, config, project, evidence_data, updates),
+    dataset_spec = importlib.util.spec_from_file_location('harness_dataset', ROOT/'scripts/dataset.py')
+    dataset_module = importlib.util.module_from_spec(dataset_spec)
+    dataset_spec.loader.exec_module(dataset_module)
+    return {**dataset_module.dataset_outputs(ROOT),
+            ROOT/'README.md': markdown(stats, config, project, evidence_data, updates),
             ROOT/'docs/assets/mechanism-map.svg': svg_mechanisms(project),
             ROOT/'docs/stats.json': json.dumps(public_statistics(stats, config), ensure_ascii=False, indent=2)+'\n',
             ROOT/'docs/catalog.json': json.dumps(dataset, ensure_ascii=False, indent=2)+'\n',

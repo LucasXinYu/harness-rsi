@@ -1,7 +1,7 @@
 {
-  "papers": 253,
+  "papers": 258,
   "resources": 11,
-  "monthly_coverage": 239,
+  "monthly_coverage": 244,
   "search_cutoff": "2026-10-18",
   "updated_on": "2026-10-18",
   "timeline": [
@@ -349,8 +349,8 @@
     },
     {
       "month": "2026-10",
-      "papers": 26,
-      "cumulative": 239,
+      "papers": 31,
+      "cumulative": 244,
       "partial": true
     }
   ],
@@ -372,7 +372,7 @@
     },
     {
       "date": "2026-10-18",
-      "papers": 253,
+      "papers": 258,
       "resources": 11
     }
   ]

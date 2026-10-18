@@ -1,0 +1,96 @@
+{
+  "temporal-grounding--videoevolve2026": {
+    "signals": [
+      {
+        "id": "kettle-recovery",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "illustrative_case",
+        "components": ["instructions", "control"],
+        "benchmark_ids": [],
+        "scope": "Figure 3 kettle example; the frozen record does not assign this example to one of its five benchmark memberships.",
+        "summary": "A recovered interval is reported for the kettle case, not a dataset-wide component effect.",
+        "section": "Evidence and limits",
+        "evidence_quote": "Figure 3 shows a recovered kettle interval.",
+        "source_index": 0
+      },
+      {
+        "id": "light-switch-regression",
+        "outcome": "regression",
+        "retention": "not_assessed",
+        "attribution": "illustrative_case",
+        "components": ["instructions", "control"],
+        "benchmark_ids": [],
+        "scope": "Figure 3 light-switch example only; not assigned to a specific benchmark in this annotation.",
+        "summary": "The instruction variant moves a correct interval to an incorrect one; extra calls do not recover it.",
+        "section": "Evidence and limits",
+        "evidence_quote": "Extra calls therefore do not recover this instruction-level regression.",
+        "source_index": 0
+      }
+    ]
+  },
+  "formal-theorem-proving--proverinterface2026": {
+    "signals": [
+      {
+        "id": "rejected-lemma-search",
+        "outcome": "no_gain",
+        "retention": "rejected",
+        "attribution": "reported_proposal_test",
+        "components": ["tools"],
+        "benchmark_ids": [],
+        "scope": "Lemma-search proposal in interface evolution; no benchmark-specific effect size assigned.",
+        "summary": "Frequent use does not establish benefit: the lemma-search proposal is rejected without an accuracy gain.",
+        "section": "Seed and retained changes",
+        "evidence_quote": "A heavily used lemma-search proposal yields no accuracy gain and is rejected; exemplar retrieval is also rejected.",
+        "source_index": 0
+      },
+      {
+        "id": "lean-port-tradeoff",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": ["tools", "control"],
+        "benchmark_ids": ["putnambench-lean-interface-port"],
+        "scope": "Lean port on the reported PutnamBench subset, compared with lean-lsp-mcp.",
+        "summary": "Lower cost/time per solve coexists with fewer solved problems; this is not uniformly better performance.",
+        "section": "Outcome and limits",
+        "evidence_quote": "Its Lean port lowers cost/time per solve on a PutnamBench subset, but solves fewer problems than lean-lsp-mcp.",
+        "source_index": 0
+      }
+    ]
+  },
+  "browser-mediated-interaction--harnessx2026": {
+    "signals": [
+      {
+        "id": "unused-color-tool",
+        "outcome": "not_assessed",
+        "retention": "not_assessed",
+        "attribution": "usage_observation",
+        "components": ["tools"],
+        "benchmark_ids": ["webshop"],
+        "scope": "Color-matching tool in the reported WebShop run.",
+        "summary": "Zero measured hit-rate is a usage observation, not an isolated demonstration of a performance regression or null effect.",
+        "section": "Reported evolution",
+        "evidence_quote": "The added color-matching tool has zero measured hit-rate in the reported run.",
+        "source_index": 0
+      }
+    ]
+  },
+  "machine-learning-engineering--aide2_2026": {
+    "signals": [
+      {
+        "id": "whole-runtime-transfer",
+        "outcome": "improvement",
+        "retention": "retained",
+        "attribution": "full_system_comparison",
+        "components": ["context", "control"],
+        "benchmark_ids": ["mle-bench-lite22"],
+        "scope": "AIDE85 versus AIDE0 on MLE-bench Lite22; not a claim that AIDE85 beats every intermediate checkpoint.",
+        "summary": "The complete retained runtime improves over the ancestor; individual edits are not causally isolated, and AIDE47 scores higher on this benchmark.",
+        "section": "Evidence and limits",
+        "evidence_quote": "These are whole-runtime transfer results, not module ablations, and AIDE47 scores higher on this benchmark (0.730 ± 0.005).",
+        "source_index": 0
+      }
+    ]
+  }
+}

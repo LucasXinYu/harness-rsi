@@ -1,0 +1,17 @@
+{
+  "name": "Harness RSI Evidence Dataset",
+  "version": "0.1.0",
+  "annotations_sha256": "056dadb12881581310e4a01c500e2c4c5f7c8980ecd0e4650bfa114eded2dfc8",
+  "released_on": "2026-10-18",
+  "unit": "category-source record; not an individual intervention or independent experiment",
+  "frozen_evidence_sha256": "b0d5a4ae1ccae267f147af5480f8461d9be7092f25f966e8934614f9fcb9edb2",
+  "annotation_basis": "AI-assisted manual screening of the existing curated evidence text. Structured signals link to exact excerpts of that text and inherit its primary-source locators. This release is not a new independent primary-source audit or experimental reproduction.",
+  "license_status": "No dataset-specific reuse license has been granted. Public access is not a blanket license; source materials retain their own rights.",
+  "limitations": [
+    "Outcome and retention screening is partial and not a representative sample. Unscreened records are not negative-free records.",
+    "One record can contain several differently scoped signals. Signals are not independent trials and must not be used to estimate an intervention success rate.",
+    "Unreported failures cannot be recovered from the source literature; this dataset does not eliminate publication or survivorship bias.",
+    "A null field means not assessed in this annotation pass, not absent or not reported in the original paper.",
+    "A frozen task set alone does not isolate component-level causality; models, budgets, selection access and combined changes also matter."
+  ]
+}
