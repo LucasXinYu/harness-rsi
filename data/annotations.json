@@ -1,4 +1,76 @@
 {
+  "muse2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "MUSE retains strategic, procedural and tool-use memories around a fixed planning-execution and reflection architecture, without model finetuning. Successful subtask trajectories become reusable procedures; failed attempts trigger diagnosis and replanning, while post-task distillation updates broader guidance. The retained memories, not one completed productivity task, are the reusable harness artifacts. Source: published ACL Findings paper, Sections 2.1-2.4; preprint and proceedings are one study despite changed title and author list.",
+    "added_on": "2026-10-19",
+    "release": {
+      "value": "2025-10-09",
+      "precision": "day",
+      "basis": "First arXiv submission 2510.08002v1 under Learning on the Job; author publication page links that preprint to the renamed ACL Findings 2026 paper; final metadata follows published PDF",
+      "source": "https://arxiv.org/abs/2510.08002"
+    }
+  },
+  "contda2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "ContDa maintains reusable tool documentation as APIs change. Offline relation-guided probing refines descriptions of new tools; relation-aware adjustment groups overlapping tools and adds selection preferences and fallback guidance. Online agents then use the revised documents without parameter training. The tool changes are supplied by the evaluation environment, whereas document revisions are the optimized harness surface; discovery gains do not imply zero forgetting. Source: ACL Findings 2026, Section 4 and Appendix A.8-A.9.",
+    "added_on": "2026-10-19",
+    "release": {
+      "value": "2026-07",
+      "precision": "month",
+      "basis": "ACL Anthology proceedings month; no earlier public preprint verified, so this is a publication-month fallback, not a verified exact first posting date",
+      "source": "https://aclanthology.org/2026.findings-acl.1082/"
+    }
+  },
+  "agentfactory_subagents2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "AgentFactory accumulates executable Python subagents in a persistent skill library. A meta-agent allocates tools, creates missing subagents and revises reused ones from execution feedback in task-isolated workspaces; successful subagents are promoted to the shared library and can be exported. Built-in orchestration primitives and tool skills remain fixed. Reusable subagent code is distinct from a task answer and from autonomous rewriting of the supplied meta-agent. Source: ACL 2026 System Demonstrations, Sections 3.1-3.4.",
+    "added_on": "2026-10-19",
+    "release": {
+      "value": "2026-03-18",
+      "precision": "day",
+      "basis": "First arXiv submission 2603.18000v1; final published ACL demonstration paper and preprint deduplicated as one study",
+      "source": "https://arxiv.org/abs/2603.18000"
+    }
+  },
+  "failure_feedback_directedness2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Evaluates whether failure-guided harness revisions repair their targeted failure rather than merely benefiting after population selection. Public DGM logs show no detectable target-specific advantage in 145 eligible modifications; controlled instruction and helper-code experiments distinguish target repair, collateral breakage and held-out net change. Effects vary with model, editable scope and repairable failure mechanism. This is an evaluation study, not proof that feedback never helps or that all DGM gains are invalid. Source: arXiv:2610.14662v1, Sections 3-5 and 7.4.",
+    "added_on": "2026-10-19",
+    "release": {
+      "value": "2026-10-10",
+      "precision": "day",
+      "basis": "First arXiv submission; primary submission history lists v1 only when checked, despite a secondary index claiming a later update; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.14662"
+    }
+  },
+  "rsi_two_perspectives2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "A survey organizing agent self-improvement through nine dimensions grouped into update targets, updater organization, schedule and scope, and feedback and acceptance. It connects these design choices to established learning mechanisms and distinguishes online, offline and offline-to-online evaluation. Its taxonomy includes parameter learning alongside memory, skills and code; inclusion here is conceptual background, not an additional demonstrated harness intervention or benchmark finding. Source: arXiv:2610.14625v1, Sections 3-5.",
+    "added_on": "2026-10-19",
+    "release": {
+      "value": "2026-10-10",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.14625"
+    }
+  },
+  "evoharness_rl2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "EvoHarness-RL supplies a Belief-Progress-Experience interface and trains the acting policy through supervised initialization and cost-aware GRPO to choose harness access. Episode-local state differs from reusable Experience: the experience bank is fixed within a rollout batch, then consolidated from outcomes, trajectories and proposed notes using Add, Update, Archive or Skip. The policy weights and persistent experience evolve, not the supplied interface or optimizer code. Source: arXiv:2608.05446v2, Sections 2.1-2.3 and Appendix I.2; workshop acceptance is author-reported.",
+    "added_on": "2026-10-19",
+    "release": {
+      "value": "2026-08-05",
+      "precision": "day",
+      "basis": "First arXiv submission v1; current v2 revised 2026-10-05 with changed title and author list; author-reported acceptance to LLA at COLM 2026 workshop, not a main-conference claim",
+      "source": "https://arxiv.org/abs/2608.05446"
+    }
+  },
   "agent_eval_survey2025": {
     "category": "Surveys, Definitions, and Conceptual Frameworks",
     "kind": "paper",

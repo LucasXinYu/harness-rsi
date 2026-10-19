@@ -1,23 +1,23 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-10-18",
-    "updated_on": "2026-10-18",
+    "search_cutoff": "2026-10-19",
+    "updated_on": "2026-10-19",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 258,
+    "papers": 264,
     "resources": 11,
     "categories": {
-      "Surveys, Definitions, and Conceptual Frameworks": 28,
-      "Harness Optimization and Search Workflows": 44,
-      "Model and Policy Training, Harness Co-Evolution, and Distillation": 18,
+      "Surveys, Definitions, and Conceptual Frameworks": 29,
+      "Harness Optimization and Search Workflows": 45,
+      "Model and Policy Training, Harness Co-Evolution, and Distillation": 19,
       "Self-Modification and Meta-Level Improvement": 18,
-      "Memory, Context, Skills, and Experience Reuse": 33,
+      "Memory, Context, Skills, and Experience Reuse": 35,
       "Benchmarks for Harness Optimization and Adaptation": 5,
-      "Generalization, Evaluation Methodology, and Safety": 27,
+      "Generalization, Evaluation Methodology, and Safety": 28,
       "Agent Architectures and Harness Infrastructure": 22,
       "Prompt, Workflow, and Program Optimization": 20,
       "Task-Time Search and Output Refinement (Adjacent Work)": 6,
@@ -49,19 +49,19 @@
       "2025-07": 5,
       "2025-08": 1,
       "2025-09": 1,
-      "2025-10": 3,
+      "2025-10": 4,
       "2025-11": 1,
       "2025-12": 2,
       "2026-01": 3,
       "2026-02": 1,
-      "2026-03": 4,
+      "2026-03": 5,
       "2026-04": 6,
       "2026-05": 14,
       "2026-06": 11,
-      "2026-07": 22,
-      "2026-08": 30,
+      "2026-07": 23,
+      "2026-08": 31,
       "2026-09": 68,
-      "2026-10": 31
+      "2026-10": 33
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -69,15 +69,15 @@
       "2026-04": 2,
       "2026-05": 1,
       "2026-06": 5,
-      "2026-07": 5,
+      "2026-07": 6,
       "2026-08": 6,
       "2026-09": 13,
       "2026-10": 8
     },
-    "monthly_coverage": 244,
+    "monthly_coverage": 250,
     "date_precision": {
-      "month": 7,
-      "day": 237,
+      "month": 8,
+      "day": 242,
       "year": 13,
       "unknown": 1
     },
@@ -100,6 +100,11 @@
       {
         "date": "2026-10-18",
         "papers": 258,
+        "resources": 11
+      },
+      {
+        "date": "2026-10-19",
+        "papers": 264,
         "resources": 11
       }
     ]
@@ -5483,6 +5488,126 @@
         "precision": "day",
         "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
         "source": "https://arxiv.org/abs/2610.11552"
+      }
+    },
+    {
+      "id": "muse2026",
+      "title": "Towards Self-Evolving Agents: Enabling Autonomy through Interactive Experience Refinement",
+      "authors": "Yang, Cheng and Yang, Xuemeng and Wen, Licheng and Fu, Daocheng and Mei, Jianbiao and Wu, Rong and Cai, Pinlong and Shen, Yufan and Deng, Nianchen and Xu, Jia and Shi, Botian and Qiao, Yu and Li, Haifeng",
+      "year": "2026",
+      "url": "https://aclanthology.org/2026.findings-acl.1522/",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "doi": "10.18653/v1/2026.findings-acl.1522",
+      "arxiv": "2510.08002",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "MUSE retains strategic, procedural and tool-use memories around a fixed planning-execution and reflection architecture, without model finetuning. Successful subtask trajectories become reusable procedures; failed attempts trigger diagnosis and replanning, while post-task distillation updates broader guidance. The retained memories, not one completed productivity task, are the reusable harness artifacts. Source: published ACL Findings paper, Sections 2.1-2.4; preprint and proceedings are one study despite changed title and author list.",
+      "added_on": "2026-10-19",
+      "release": {
+        "value": "2025-10-09",
+        "precision": "day",
+        "basis": "First arXiv submission 2510.08002v1 under Learning on the Job; author publication page links that preprint to the renamed ACL Findings 2026 paper; final metadata follows published PDF",
+        "source": "https://arxiv.org/abs/2510.08002"
+      }
+    },
+    {
+      "id": "contda2026",
+      "title": "Beyond Static Toolsets: Self-Evolving LLM Tool Agents via Continual Documentation Adaptation",
+      "authors": "Wu, Bin and Meij, Edgar and Yilmaz, Emine",
+      "year": "2026",
+      "url": "https://aclanthology.org/2026.findings-acl.1082/",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "doi": "10.18653/v1/2026.findings-acl.1082",
+      "arxiv": null,
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "ContDa maintains reusable tool documentation as APIs change. Offline relation-guided probing refines descriptions of new tools; relation-aware adjustment groups overlapping tools and adds selection preferences and fallback guidance. Online agents then use the revised documents without parameter training. The tool changes are supplied by the evaluation environment, whereas document revisions are the optimized harness surface; discovery gains do not imply zero forgetting. Source: ACL Findings 2026, Section 4 and Appendix A.8-A.9.",
+      "added_on": "2026-10-19",
+      "release": {
+        "value": "2026-07",
+        "precision": "month",
+        "basis": "ACL Anthology proceedings month; no earlier public preprint verified, so this is a publication-month fallback, not a verified exact first posting date",
+        "source": "https://aclanthology.org/2026.findings-acl.1082/"
+      }
+    },
+    {
+      "id": "agentfactory_subagents2026",
+      "title": "AgentFactory: A Self-Evolving Framework Through Executable Subagent Accumulation and Reuse",
+      "authors": "Zhang, Zhang and Lu, Shuqi and Qian, Hongjin and He, Di and Liu, Zheng",
+      "year": "2026",
+      "url": "https://aclanthology.org/2026.acl-demo.81/",
+      "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+      "doi": "10.18653/v1/2026.acl-demo.81",
+      "arxiv": "2603.18000",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "AgentFactory accumulates executable Python subagents in a persistent skill library. A meta-agent allocates tools, creates missing subagents and revises reused ones from execution feedback in task-isolated workspaces; successful subagents are promoted to the shared library and can be exported. Built-in orchestration primitives and tool skills remain fixed. Reusable subagent code is distinct from a task answer and from autonomous rewriting of the supplied meta-agent. Source: ACL 2026 System Demonstrations, Sections 3.1-3.4.",
+      "added_on": "2026-10-19",
+      "release": {
+        "value": "2026-03-18",
+        "precision": "day",
+        "basis": "First arXiv submission 2603.18000v1; final published ACL demonstration paper and preprint deduplicated as one study",
+        "source": "https://arxiv.org/abs/2603.18000"
+      }
+    },
+    {
+      "id": "failure_feedback_directedness2026",
+      "title": "Does Failure Feedback Direct Agent Self-Modification?",
+      "authors": "He, Rong",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.14662v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.14662",
+      "arxiv": "2610.14662",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Evaluates whether failure-guided harness revisions repair their targeted failure rather than merely benefiting after population selection. Public DGM logs show no detectable target-specific advantage in 145 eligible modifications; controlled instruction and helper-code experiments distinguish target repair, collateral breakage and held-out net change. Effects vary with model, editable scope and repairable failure mechanism. This is an evaluation study, not proof that feedback never helps or that all DGM gains are invalid. Source: arXiv:2610.14662v1, Sections 3-5 and 7.4.",
+      "added_on": "2026-10-19",
+      "release": {
+        "value": "2026-10-10",
+        "precision": "day",
+        "basis": "First arXiv submission; primary submission history lists v1 only when checked, despite a secondary index claiming a later update; no formal venue verified",
+        "source": "https://arxiv.org/abs/2610.14662"
+      }
+    },
+    {
+      "id": "rsi_two_perspectives2026",
+      "title": "From Existing Methods to New Research Ideas: Two Perspectives on Recursive Self-Improvement",
+      "authors": "Zhou, Leijun and Yu, Yanke and Liu, Zhihao and Xiang, Qu and Hu, Tiancheng and Dong, Yiru and Wu, Yihan and Xiang, Yangxi and Wu, Xuejun and Chen, Xi and Qian, Buyue and Zheng, Yaowei and Hu, Junhao",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.14625v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.14625",
+      "arxiv": "2610.14625",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "A survey organizing agent self-improvement through nine dimensions grouped into update targets, updater organization, schedule and scope, and feedback and acceptance. It connects these design choices to established learning mechanisms and distinguishes online, offline and offline-to-online evaluation. Its taxonomy includes parameter learning alongside memory, skills and code; inclusion here is conceptual background, not an additional demonstrated harness intervention or benchmark finding. Source: arXiv:2610.14625v1, Sections 3-5.",
+      "added_on": "2026-10-19",
+      "release": {
+        "value": "2026-10-10",
+        "precision": "day",
+        "basis": "First arXiv submission; v1 inspected; no formal venue verified",
+        "source": "https://arxiv.org/abs/2610.14625"
+      }
+    },
+    {
+      "id": "evoharness_rl2026",
+      "title": "EvoHarness-RL: Learning Runtime Harness Coordination for Self-Evolving Agents",
+      "authors": "Ning, Xuying and Fu, Dongqi and Wei, Tianxin and Bei, Yuanchen and Yang, Xiyuan and Xu, Wujiang and Song, Yueqi and Li, Bingxuan and Li, Zihao and Zeng, Hanqing and Shen, Xiang and Wang, Yajuan and Wu, Yifan and Wang, Qifan and Liu, Jiayi and Li, Hong and Xia, Yinglong and Fan, Xiangjun and Tong, Hanghang and He, Jingrui",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.05446v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.05446",
+      "arxiv": "2608.05446",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "EvoHarness-RL supplies a Belief-Progress-Experience interface and trains the acting policy through supervised initialization and cost-aware GRPO to choose harness access. Episode-local state differs from reusable Experience: the experience bank is fixed within a rollout batch, then consolidated from outcomes, trajectories and proposed notes using Add, Update, Archive or Skip. The policy weights and persistent experience evolve, not the supplied interface or optimizer code. Source: arXiv:2608.05446v2, Sections 2.1-2.3 and Appendix I.2; workshop acceptance is author-reported.",
+      "added_on": "2026-10-19",
+      "release": {
+        "value": "2026-08-05",
+        "precision": "day",
+        "basis": "First arXiv submission v1; current v2 revised 2026-10-05 with changed title and author list; author-reported acceptance to LLA at COLM 2026 workshop, not a main-conference claim",
+        "source": "https://arxiv.org/abs/2608.05446"
       }
     }
   ]

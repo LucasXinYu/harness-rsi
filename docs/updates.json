@@ -17,6 +17,19 @@
   ],
   "releases": [
     {
+      "id": "literature-update-2026-10-19",
+      "date": "2026-10-19",
+      "kind": "website",
+      "title": "Monday literature backfill: reusable memories, tool documentation and failure-aware evaluation",
+      "changes": [
+        "Newly collected six existing studies after overlapping discovery and Monday survey/core-paper reference follow-up: MUSE, ContDa, AgentFactory executable subagents, EvoHarness-RL, Does Failure Feedback Direct Agent Self-Modification?, and Two Perspectives on Recursive Self-Improvement. These are newly collected works, not six papers published today.",
+        "Merged MUSE's differently titled 2025 preprint and final ACL Findings paper, and AgentFactory's preprint and ACL demonstration version, as one study each. EvoHarness-RL uses its current v2 title and authors and is categorized as policy training plus external-experience evolution; its workshop acceptance is author-reported.",
+        "Kept ContDa's release at verified proceedings-month precision because an earlier posting was not verified. Mem2Evolve remains pending while its earlier OpenReview posting date is unresolved.",
+        "Living collection now contains 264 papers and 11 resources; search horizon advances to October 19. The frozen 95-record evidence set, dataset v0.1.0 annotations and submission manuscript remain unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "wenxin-github-confirmed-2026-10-18",
       "date": "2026-10-18",
       "kind": "website",
