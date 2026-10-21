@@ -155,7 +155,7 @@ The public website is hosted at https://lucasxinyu.github.io/harness-rsi/. GitHu
 
 ## File boundaries
 
-Do not add unpublished manuscript drafts, local audit ledgers, credentials, Overleaf exports, or downloaded paper PDFs. Repository-specific files stay here; they do not get imported into the Overleaf project. The repository currently has no blanket license grant; source papers retain their original rights.
+Do not add private manuscript drafts, local audit ledgers, credentials, Overleaf exports, or third-party paper PDFs. The maintainer-authorized public author preprint is the explicit exception: `docs/paper/Harness_RSI_Preprint_2026-10-19.pdf`, also linked from the README and website. Preserve this dated PDF; publish later manuscript versions under new dated filenames and update the links without overwriting the earlier version. It is not peer-reviewed and does not imply platform posting or acceptance. Repository-specific files stay here; they do not get imported into the Overleaf project. The repository currently has no blanket license grant; source papers retain their original rights.
 
 
 ## Updating benchmark evidence

@@ -1,9 +1,11 @@
 {
   "title": "Harness RSI",
-  "status": "in_preparation",
+  "status": "author_preprint",
   "arxiv_url": null,
   "website_url": "https://lucasxinyu.github.io/harness-rsi/",
   "paper": {
+    "pdf_url": "https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-19.pdf",
+    "version_date": "2026-10-19",
     "title": "From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents",
     "authors": [
       "Xin Yu",

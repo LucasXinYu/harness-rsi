@@ -257,8 +257,9 @@ async function init() {
     window.addEventListener('hashchange', restoreFinding);
     renderPaperAuthors(project.paper);
     renderContributors(project.contributors || []);
-    setFutureLink('paper-action', project.arxiv_url, 'arXiv paper');
-    setFutureLink('paper-resource', project.arxiv_url, 'Read the survey');
+    const paperUrl = project.paper.pdf_url || project.arxiv_url;
+    setFutureLink('paper-action', paperUrl, 'Read the paper (PDF)');
+    setFutureLink('paper-resource', paperUrl, 'Read the survey (PDF)');
 
     const narrow = window.matchMedia('(max-width: 760px)');
     const orientation = () => byId('domain-tabs').setAttribute('aria-orientation', 'horizontal');

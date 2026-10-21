@@ -12,6 +12,20 @@ spec.loader.exec_module(c)
 
 
 class CatalogTests(unittest.TestCase):
+    def test_public_paper_pdf_is_available_and_scoped(self):
+        project = c.read_json(c.ROOT/'docs/project.json')
+        records = c.load_catalog()
+        c.validate_project(project, records)
+        self.assertTrue(project['paper']['pdf_url'].endswith('.pdf'))
+        bad = copy.deepcopy(project)
+        bad['paper']['pdf_url'] = 'https://example.com/paper.pdf'
+        with self.assertRaisesRegex(ValueError, 'project paper directory'):
+            c.validate_project(bad, records)
+        bad = copy.deepcopy(project)
+        bad['paper']['pdf_url'] = project['website_url'] + 'paper/missing.pdf'
+        with self.assertRaisesRegex(ValueError, 'missing or invalid'):
+            c.validate_project(bad, records)
+
     def test_author_profiles_preserve_order_and_safe_profile_links(self):
         project=c.read_json(c.ROOT/'docs/project.json')
         records=c.load_catalog()

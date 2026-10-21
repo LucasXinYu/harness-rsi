@@ -2,7 +2,9 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/"><strong>Explore the interactive website ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-19.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+
+**Author preprint · 2026-10-19 · Not peer-reviewed.** The publicly shared PDF uses an independent single-column layout, not an ACL template. It is the version submitted to Preprints.org (submission 238951); a platform-issued public link and DOI will be added when available.
 
 <p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
@@ -80,7 +82,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-20 | Search horizon; 269 papers and 11 official resources; collection updated 2026-10-20 |
-| **Website update** | 2026-10-20 | Literature backfill: memory skills, retrieval evolution and harness-training boundaries; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-10-20 | Read the author preprint: public PDF without the ACL template; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -151,7 +153,7 @@ Correspondence: [lzxue@psu.edu](mailto:lzxue@psu.edu)
 Department of Statistics, The Pennsylvania State University<br>
 University Park, PA 16802, USA
 
-The arXiv identifier and citation will be added when the preprint is available. Project branding does not imply publication or acceptance.
+The author-hosted preprint is available above. A platform-issued public link and DOI will be added when available; no journal or conference acceptance is implied.
 
 ## Contributors
 

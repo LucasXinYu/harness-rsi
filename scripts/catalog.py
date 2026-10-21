@@ -286,6 +286,15 @@ def svg_timeline(stats, cutoff):
 
 def validate_project(project, records):
     """Check traceability and aggregate consistency, not scientific claim truth."""
+    pdf_url = project['paper'].get('pdf_url')
+    if pdf_url:
+        prefix = project['website_url'].rstrip('/') + '/paper/'
+        if not pdf_url.startswith(prefix) or not re.fullmatch(r'[A-Za-z0-9_.-]+\.pdf', pdf_url[len(prefix):]):
+            raise ValueError('Paper PDF must use the project paper directory')
+        pdf_path = ROOT/'docs/paper'/pdf_url[len(prefix):]
+        if not pdf_path.is_file() or not pdf_path.read_bytes().startswith(b'%PDF-'):
+            raise ValueError('Paper PDF is missing or invalid')
+        dt.date.fromisoformat(project['paper']['version_date'])
     profiles = project['paper']['author_profiles']
     if [person['name'] for person in profiles] != project['paper']['authors']:
         raise ValueError('Author profiles must match manuscript author order')
@@ -470,7 +479,8 @@ def markdown(stats, config, project, evidence_data, updates):
     website = next(r for r in updates['releases'] if r['kind']=='website')
     lines = ['![Harness RSI — How agent harnesses evolve](docs/assets/project-banner.svg)', '',
         '<p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>', '',
-        '<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/"><strong>Explore the interactive website ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>', '',
+        '<p align="center"><a href="'+html.escape(project['paper']['pdf_url'], quote=True)+'"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>', '',
+        f'**Author preprint · {project["paper"]["version_date"]} · Not peer-reviewed.** The publicly shared PDF uses an independent single-column layout, not an ACL template. It is the version submitted to Preprints.org (submission 238951); a platform-issued public link and DOI will be added when available.', '',
         '<p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>', '',
         'We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.', '',
         f'**{evidence["records"]} category–source records · {evidence["papers"]} research papers + {evidence["resources"]} benchmark resource · {evidence["subcategories"]} task subcategories · {len(project["domains"])} domains**', '',
@@ -540,7 +550,7 @@ def markdown(stats, config, project, evidence_data, updates):
     lines += ['', project['paper']['authorship_note'], '',
         f'Correspondence: [{project["paper"]["corresponding_email"]}](mailto:{project["paper"]["corresponding_email"]})', '',
         project['paper']['affiliation']+'<br>', project['paper']['location'], '',
-        'The arXiv identifier and citation will be added when the preprint is available. Project branding does not imply publication or acceptance.', '',
+        'The author-hosted preprint is available above. A platform-issued public link and DOI will be added when available; no journal or conference acceptance is implied.', '',
         '## Contributors', '', 'The five survey authors are listed above with their research roles and verified GitHub links. Project development and AI assistance are listed separately below. GitHub’s automatic Contributors graph reflects attributed commits, not the manuscript author list.', '',
         '| Contributor | Role | Contribution |', '| :-- | :-- | :-- |']
     for person in project.get('contributors', []):

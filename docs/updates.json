@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "public-author-preprint-2026-10-20",
+      "date": "2026-10-20",
+      "kind": "website",
+      "title": "Read the author preprint: public PDF without the ACL template",
+      "changes": [
+        "Published the maintainer-authorized 19 October 2026 author preprint PDF in the public repository and website. This is the same 71-page independent single-column PDF submitted to Preprints.org, not an ACL review or preprint template.",
+        "Added working paper-reading links to the repository overview, website hero and project resources. The author-hosted preprint is not peer-reviewed; no platform-issued DOI or journal/conference acceptance is claimed.",
+        "Preserved all five authors, equal-contribution and Project Lead roles, corresponding-author email, and the paper’s October 1 evidence cutoff. Literature membership, search horizon, 95-record frozen evidence and dataset v0.1.0 are unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "literature-update-2026-10-20",
       "date": "2026-10-20",
       "kind": "website",
