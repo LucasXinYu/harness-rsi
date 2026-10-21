@@ -79,8 +79,8 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-10-19 | Search horizon; 264 papers and 11 official resources; collection updated 2026-10-19 |
-| **Website update** | 2026-10-19 | Monday literature backfill: reusable memories, tool documentation and failure-aware evaluation; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-10-20 | Search horizon; 269 papers and 11 official resources; collection updated 2026-10-20 |
+| **Website update** | 2026-10-20 | Literature backfill: memory skills, retrieval evolution and harness-training boundaries; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -98,11 +98,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**264 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-19**
+**269 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-20**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **250/264** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **255/269** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -112,11 +112,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-10-03 | 177 | 10 |
 | 2026-10-10 | 235 | 11 |
 | 2026-10-17 | 248 | 11 |
 | 2026-10-18 | 258 | 11 |
 | 2026-10-19 | 264 | 11 |
+| 2026-10-20 | 269 | 11 |
 
 </details>
 

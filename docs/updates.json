@@ -17,6 +17,19 @@
   ],
   "releases": [
     {
+      "id": "literature-update-2026-10-20",
+      "date": "2026-10-20",
+      "kind": "website",
+      "title": "Literature backfill: memory skills, retrieval evolution and harness-training boundaries",
+      "changes": [
+        "Newly collected five previously released works: MemSkill, ERSkill, SESA, Harness Evolution Hits a Ceiling, and Self-Evolving Agent Harness. These are newly collected papers, not five papers published today.",
+        "Separated reusable memory-construction and retrieval programs from trained controllers and solver policies; categorized the self-evolving harness definition paper as conceptual background rather than an empirical benchmark discovery.",
+        "Checked current arXiv versions; ERSkill author Guangxu Zhu follows the primary full text rather than its misspelled abstract metadata. MemSkill NeurIPS 2026 acceptance remains explicitly author-reported.",
+        "Living collection now contains 269 papers and 11 resources; targeted overlapping search through October 20. Frozen 95-record evidence, dataset v0.1.0, and submission manuscript remain unchanged."
+      ],
+      "records": 95
+    },
+    {
       "id": "literature-update-2026-10-19",
       "date": "2026-10-19",
       "kind": "website",

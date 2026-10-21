@@ -1,21 +1,21 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-10-19",
-    "updated_on": "2026-10-19",
+    "search_cutoff": "2026-10-20",
+    "updated_on": "2026-10-20",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 264,
+    "papers": 269,
     "resources": 11,
     "categories": {
-      "Surveys, Definitions, and Conceptual Frameworks": 29,
+      "Surveys, Definitions, and Conceptual Frameworks": 30,
       "Harness Optimization and Search Workflows": 45,
-      "Model and Policy Training, Harness Co-Evolution, and Distillation": 19,
+      "Model and Policy Training, Harness Co-Evolution, and Distillation": 21,
       "Self-Modification and Meta-Level Improvement": 18,
-      "Memory, Context, Skills, and Experience Reuse": 35,
+      "Memory, Context, Skills, and Experience Reuse": 37,
       "Benchmarks for Harness Optimization and Adaptation": 5,
       "Generalization, Evaluation Methodology, and Safety": 28,
       "Agent Architectures and Harness Infrastructure": 22,
@@ -53,15 +53,15 @@
       "2025-11": 1,
       "2025-12": 2,
       "2026-01": 3,
-      "2026-02": 1,
+      "2026-02": 2,
       "2026-03": 5,
       "2026-04": 6,
       "2026-05": 14,
       "2026-06": 11,
-      "2026-07": 23,
-      "2026-08": 31,
+      "2026-07": 24,
+      "2026-08": 32,
       "2026-09": 68,
-      "2026-10": 33
+      "2026-10": 35
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -74,10 +74,10 @@
       "2026-09": 13,
       "2026-10": 8
     },
-    "monthly_coverage": 250,
+    "monthly_coverage": 255,
     "date_precision": {
       "month": 8,
-      "day": 242,
+      "day": 247,
       "year": 13,
       "unknown": 1
     },
@@ -105,6 +105,11 @@
       {
         "date": "2026-10-19",
         "papers": 264,
+        "resources": 11
+      },
+      {
+        "date": "2026-10-20",
+        "papers": 269,
         "resources": 11
       }
     ]
@@ -5608,6 +5613,106 @@
         "precision": "day",
         "basis": "First arXiv submission v1; current v2 revised 2026-10-05 with changed title and author list; author-reported acceptance to LLA at COLM 2026 workshop, not a main-conference claim",
         "source": "https://arxiv.org/abs/2608.05446"
+      }
+    },
+    {
+      "id": "memskill2026",
+      "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+      "authors": "Zhang, Haozhen and Long, Quanyu and Bao, Jianzhu and Feng, Tao and Zhang, Weizhi and Yue, Haodong and Wang, Wenya",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2602.02474v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2602.02474",
+      "arxiv": "2602.02474",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "MemSkill evolves reusable instructions for constructing memories, not just the memories themselves. A trained controller selects skills for text spans, a fixed LLM executor applies them, and a fixed designer revises or adds skills from representative hard cases. The initial bank contains Insert, Update, Delete and Skip. Controller learning and external skill-bank evolution are separate update targets; this is not a wholly weight-free system. Source: arXiv:2602.02474v2, Sections 3.2-3.5. NeurIPS 2026 acceptance is author-reported in the official repository.",
+      "added_on": "2026-10-20",
+      "release": {
+        "value": "2026-02-02",
+        "precision": "day",
+        "basis": "First arXiv submission from primary submission history; inspected current v2; arXiv v2, revised 2026-05-24; NeurIPS 2026 acceptance is author-reported in the official repository, not independently verified against proceedings",
+        "source": "https://arxiv.org/abs/2602.02474"
+      }
+    },
+    {
+      "id": "erskill2026",
+      "title": "ERSkill: Evolving for Skill-Guided Adaptive Memory Retrieval",
+      "authors": "Chen, Haolong and Zhang, Liang and Li, Zhuo and Xue, Lei and Zhu, Guangxu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2608.12720v2",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2608.12720",
+      "arxiv": "2608.12720",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "ERSkill evolves executable retrieval programs composed of fixed primitives and trains a query-to-skill router. An experience trie records explored paths, including rejected candidates; separate capability and deployment frontiers distinguish oracle usefulness from routed validation performance. Deployment can retain the prior frontier rather than expose every generated skill. Router weights and reusable retrieval skills co-evolve, while the primitive interface is supplied. Source: arXiv:2608.12720v2, Sections 2.3-2.4 and Appendix B. No formal venue verified; Guangxu Zhu follows the full-text author line.",
+      "added_on": "2026-10-20",
+      "release": {
+        "value": "2026-08-13",
+        "precision": "day",
+        "basis": "First arXiv submission from primary submission history; inspected current v2; arXiv v2, revised 2026-09-28; final author spelling Guangxu Zhu follows the primary full text rather than abstract metadata Guanrxu Zhu; no formal venue verified",
+        "source": "https://arxiv.org/abs/2608.12720"
+      }
+    },
+    {
+      "id": "sesa2026",
+      "title": "Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember",
+      "authors": "Fu, Zenghuang and Li, Zhaoyang and Ai, Qiuyuan and Wu, Haoyu and Wu, Minghui and Zhao, Chenxu and Wang, Ante and He, Guannan and Wang, Changwei",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2607.29468v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2607.29468",
+      "arxiv": "2607.29468",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "SESA couples proposer-solver self-play training with a persistent solver-only skill bank. Informative failures are consolidated into reusable guidance, deduplicated and committed between training steps; non-seed skills can be evicted when observed hurt exceeds helpfulness. The changed solver and memory alter future problem-generation rewards. Model-policy learning and external memory evolution are both present; memory-free and memory-enabled evaluations distinguish parametric carryover from retrieval benefits. Source: arXiv:2607.29468v1, Method: Self-Play Optimization, Frontier Shaping and Failure Distillation. No formal venue verified.",
+      "added_on": "2026-10-20",
+      "release": {
+        "value": "2026-07-31",
+        "precision": "day",
+        "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; no later arXiv version or formal venue verified",
+        "source": "https://arxiv.org/abs/2607.29468"
+      }
+    },
+    {
+      "id": "harness_ceiling2026",
+      "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+      "authors": "Tian, Yuan and Hu, Bing and Wang, Hao and Lu, Binghang and Wu, Fang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.11655v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.11655",
+      "arxiv": "2610.11655",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Studies when fixed-model harness revision and subsequent trajectory finetuning address different failures. A proposer edits prompt files, policy parameters, middleware and tools; admission checks compare candidate scores and regression indicators against fresh anchors. Crossed seed/evolved harness and base/trained model evaluations separate runtime changes from learned carryover on DeepPlanning and WebArena-Lite. The failure taxonomy and admission procedure are supplied, not evolved. Findings are benchmark- and model-dependent, not a universal ceiling on harness improvement. Source: arXiv:2610.11655v1, Sections 3-6 and Appendices B-C, E-F.",
+      "added_on": "2026-10-20",
+      "release": {
+        "value": "2026-10-08",
+        "precision": "day",
+        "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; no later arXiv version or formal venue verified",
+        "source": "https://arxiv.org/abs/2610.11655"
+      }
+    },
+    {
+      "id": "self_evolving_agent_harness2026",
+      "title": "Self-Evolving Agent Harness",
+      "authors": "Wei, Chuyang and Guan, Haoxiang and Zhu, Minghang and Zhou, Kexin and He, Jiyan and Zhou, Xiren and Chen, Huanhuan and Shen, Yifei",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.18813v1",
+      "venue": "arXiv preprint",
+      "doi": "10.48550/arXiv.2610.18813",
+      "arxiv": "2610.18813",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Defines harness self-evolution through feedback-driven updates that persist across runs with fixed model weights. Its taxonomy distinguishes interpreted-state updates from executable tool/code revisions, repository/runtime control changes and plugin composition. Appending logs or compacting context under unchanged rules does not itself satisfy the definition; changing the updater adds another recursive level. The frozen final assessment is outside the edit boundary. Included as conceptual background, not an additional demonstrated evolved-harness benchmark result. Source: arXiv:2610.18813v1, Sections 2-3. No formal venue verified.",
+      "added_on": "2026-10-20",
+      "release": {
+        "value": "2026-10-13",
+        "precision": "day",
+        "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; conceptual framework and related-work synthesis, not a new benchmark intervention; no formal venue verified",
+        "source": "https://arxiv.org/abs/2610.18813"
       }
     }
   ]

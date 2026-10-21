@@ -3298,5 +3298,65 @@
       "basis": "First arXiv submission; version 1 inspected; no earlier public version or formal venue verified",
       "source": "https://arxiv.org/abs/2610.07860"
     }
+  },
+  "memskill2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "MemSkill evolves reusable instructions for constructing memories, not just the memories themselves. A trained controller selects skills for text spans, a fixed LLM executor applies them, and a fixed designer revises or adds skills from representative hard cases. The initial bank contains Insert, Update, Delete and Skip. Controller learning and external skill-bank evolution are separate update targets; this is not a wholly weight-free system. Source: arXiv:2602.02474v2, Sections 3.2-3.5. NeurIPS 2026 acceptance is author-reported in the official repository.",
+    "added_on": "2026-10-20",
+    "release": {
+      "value": "2026-02-02",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v2; arXiv v2, revised 2026-05-24; NeurIPS 2026 acceptance is author-reported in the official repository, not independently verified against proceedings",
+      "source": "https://arxiv.org/abs/2602.02474"
+    }
+  },
+  "erskill2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "ERSkill evolves executable retrieval programs composed of fixed primitives and trains a query-to-skill router. An experience trie records explored paths, including rejected candidates; separate capability and deployment frontiers distinguish oracle usefulness from routed validation performance. Deployment can retain the prior frontier rather than expose every generated skill. Router weights and reusable retrieval skills co-evolve, while the primitive interface is supplied. Source: arXiv:2608.12720v2, Sections 2.3-2.4 and Appendix B. No formal venue verified; Guangxu Zhu follows the full-text author line.",
+    "added_on": "2026-10-20",
+    "release": {
+      "value": "2026-08-13",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v2; arXiv v2, revised 2026-09-28; final author spelling Guangxu Zhu follows the primary full text rather than abstract metadata Guanrxu Zhu; no formal venue verified",
+      "source": "https://arxiv.org/abs/2608.12720"
+    }
+  },
+  "sesa2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "SESA couples proposer-solver self-play training with a persistent solver-only skill bank. Informative failures are consolidated into reusable guidance, deduplicated and committed between training steps; non-seed skills can be evicted when observed hurt exceeds helpfulness. The changed solver and memory alter future problem-generation rewards. Model-policy learning and external memory evolution are both present; memory-free and memory-enabled evaluations distinguish parametric carryover from retrieval benefits. Source: arXiv:2607.29468v1, Method: Self-Play Optimization, Frontier Shaping and Failure Distillation. No formal venue verified.",
+    "added_on": "2026-10-20",
+    "release": {
+      "value": "2026-07-31",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; no later arXiv version or formal venue verified",
+      "source": "https://arxiv.org/abs/2607.29468"
+    }
+  },
+  "harness_ceiling2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Studies when fixed-model harness revision and subsequent trajectory finetuning address different failures. A proposer edits prompt files, policy parameters, middleware and tools; admission checks compare candidate scores and regression indicators against fresh anchors. Crossed seed/evolved harness and base/trained model evaluations separate runtime changes from learned carryover on DeepPlanning and WebArena-Lite. The failure taxonomy and admission procedure are supplied, not evolved. Findings are benchmark- and model-dependent, not a universal ceiling on harness improvement. Source: arXiv:2610.11655v1, Sections 3-6 and Appendices B-C, E-F.",
+    "added_on": "2026-10-20",
+    "release": {
+      "value": "2026-10-08",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; no later arXiv version or formal venue verified",
+      "source": "https://arxiv.org/abs/2610.11655"
+    }
+  },
+  "self_evolving_agent_harness2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Defines harness self-evolution through feedback-driven updates that persist across runs with fixed model weights. Its taxonomy distinguishes interpreted-state updates from executable tool/code revisions, repository/runtime control changes and plugin composition. Appending logs or compacting context under unchanged rules does not itself satisfy the definition; changing the updater adds another recursive level. The frozen final assessment is outside the edit boundary. Included as conceptual background, not an additional demonstrated evolved-harness benchmark result. Source: arXiv:2610.18813v1, Sections 2-3. No formal venue verified.",
+    "added_on": "2026-10-20",
+    "release": {
+      "value": "2026-10-13",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; conceptual framework and related-work synthesis, not a new benchmark intervention; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.18813"
+    }
   }
 }

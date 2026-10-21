@@ -1,9 +1,9 @@
 {
-  "papers": 264,
+  "papers": 269,
   "resources": 11,
-  "monthly_coverage": 250,
-  "search_cutoff": "2026-10-19",
-  "updated_on": "2026-10-19",
+  "monthly_coverage": 255,
+  "search_cutoff": "2026-10-20",
+  "updated_on": "2026-10-20",
   "timeline": [
     {
       "month": "2022-01",
@@ -301,56 +301,56 @@
     },
     {
       "month": "2026-02",
-      "papers": 1,
-      "cumulative": 59,
+      "papers": 2,
+      "cumulative": 60,
       "partial": false
     },
     {
       "month": "2026-03",
       "papers": 5,
-      "cumulative": 64,
+      "cumulative": 65,
       "partial": false
     },
     {
       "month": "2026-04",
       "papers": 6,
-      "cumulative": 70,
+      "cumulative": 71,
       "partial": false
     },
     {
       "month": "2026-05",
       "papers": 14,
-      "cumulative": 84,
+      "cumulative": 85,
       "partial": false
     },
     {
       "month": "2026-06",
       "papers": 11,
-      "cumulative": 95,
+      "cumulative": 96,
       "partial": false
     },
     {
       "month": "2026-07",
-      "papers": 23,
-      "cumulative": 118,
+      "papers": 24,
+      "cumulative": 120,
       "partial": false
     },
     {
       "month": "2026-08",
-      "papers": 31,
-      "cumulative": 149,
+      "papers": 32,
+      "cumulative": 152,
       "partial": false
     },
     {
       "month": "2026-09",
       "papers": 68,
-      "cumulative": 217,
+      "cumulative": 220,
       "partial": false
     },
     {
       "month": "2026-10",
-      "papers": 33,
-      "cumulative": 250,
+      "papers": 35,
+      "cumulative": 255,
       "partial": true
     }
   ],
@@ -378,6 +378,11 @@
     {
       "date": "2026-10-19",
       "papers": 264,
+      "resources": 11
+    },
+    {
+      "date": "2026-10-20",
+      "papers": 269,
       "resources": 11
     }
   ]
