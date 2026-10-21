@@ -2,6 +2,8 @@
 
 This targeted supplement connects ten studies already in the living bibliography. It is not an exhaustive new census, a new manuscript release, or a dataset expansion. Some studies were first released before October 1: newly collected does not mean newly published. Mechanisms below follow the inspected primary-source versions; results have not been independently reproduced here.
 
+**Subsequent reading-version release (October 20):** the [revised GitHub PDF](paper/Harness_RSI_Preprint_2026-10-20.pdf) now incorporates these ten studies in its main text and dated appendix (74 pages, 128 references). The [October 19 PDF](paper/Harness_RSI_Preprint_2026-10-19.pdf) remains archived. The original website-only synthesis described below did not replace that PDF; this separately logged reading-version release updates the default link without changing submitted manuscripts or the frozen dataset.
+
 ## Three separate timelines
 
 | Object | Date or version | Scope |

@@ -22,7 +22,8 @@ class CatalogTests(unittest.TestCase):
         for key in keys:
             self.assertIn(key, annotations)
             self.assertIn('`'+key+'`', supplement)
-        self.assertEqual(project['paper']['version_date'], '2026-10-19')
+        self.assertGreaterEqual(project['paper']['version_date'], '2026-10-20')
+        self.assertTrue((c.ROOT/'docs/paper/Harness_RSI_Preprint_2026-10-19.pdf').is_file())
         self.assertIn('not an exhaustive new census, a new manuscript release', supplement)
         self.assertIn('cannot recover unreported failures', supplement)
 

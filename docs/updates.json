@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "revised-author-preprint-2026-10-20",
+      "date": "2026-10-20",
+      "kind": "website",
+      "title": "Revised GitHub reading PDF: ten studies added in a non-ACL layout",
+      "changes": [
+        "Published the 74-page October 20 author reading version with 128 references, adding Harness² and nine related studies to the main text and a dated source-traceable appendix. The PDF uses an independent single-column article layout, not the ACL template.",
+        "Switched README and website reading links to the revised PDF; retained the October 19 dated PDF as an archive. This release does not update ARR, Overleaf or Preprints.org submission files and does not claim platform publication or peer review.",
+        "Preserved the October 1 frozen evidence, all 95 category–source records, dataset v0.1.0, bibliography membership and search horizon. Targeted literature synthesis through October 20 is separate from frozen benchmark evidence."
+      ],
+      "records": 95
+    },
+    {
       "id": "literature-synthesis-2026-10-20",
       "date": "2026-10-20",
       "kind": "website",

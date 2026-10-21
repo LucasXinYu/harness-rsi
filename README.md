@@ -2,9 +2,9 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-19.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-20.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
-**Author preprint · 2026-10-19 · Not peer-reviewed.** The publicly shared PDF uses an independent single-column layout, not an ACL template. It is the version submitted to Preprints.org (submission 238951); a platform-issued public link and DOI will be added when available.
+**Author preprint · 2026-10-20 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This 74-page revision adds ten studies and a dated literature supplement through October 20; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 reading copy / original Preprints.org submission version](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) remains archived; a platform-issued public link and DOI will be added when available.
 
 <p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
@@ -78,13 +78,13 @@ The frozen survey evidence covers work through **2026-10-01**. A record is one s
 
 We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.
 
-**Literature synthesis through October 20, 2026.** [Read the dated comparison supplement](docs/LITERATURE_UPDATE_2026-10-20.md): Harness² and recursive reuse; failure-aware evaluation and held-out generalization; memory procedures versus model training. These ten sources are already in the bibliography. This is a website synthesis, not a new paper or evidence-dataset release. The October 19 public PDF and submitted manuscripts are unchanged.
+**Literature synthesis through October 20, 2026.** [Read the dated comparison supplement](docs/LITERATURE_UPDATE_2026-10-20.md): Harness² and recursive reuse; failure-aware evaluation and held-out generalization; memory procedures versus model training. These ten sources are already in the bibliography and are now discussed in the revised GitHub reading PDF. The earlier PDF is preserved; submitted manuscripts and the evidence dataset are unchanged.
 
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-20 | Search horizon; 269 papers and 11 official resources; collection updated 2026-10-20 |
-| **Website update** | 2026-10-20 | Dated synthesis: recursive reuse, regressions and memory-training boundaries; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-10-20 | Revised GitHub reading PDF: ten studies added in a non-ACL layout; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
