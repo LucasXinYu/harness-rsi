@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "literature-synthesis-2026-10-20",
+      "date": "2026-10-20",
+      "kind": "website",
+      "title": "Dated synthesis: recursive reuse, regressions and memory-training boundaries",
+      "changes": [
+        "Connected ten already-collected studies in a source-linked comparison supplement checked through October 20, with inspected versions, method locations and attribution limits.",
+        "Distinguished task-local harness search from retained improvement guidance, target repair from net gains and collateral breakage, and memory content from reusable memory procedures and trained policies.",
+        "Kept the October 19 public PDF and submitted manuscripts unchanged. Frozen October 1 evidence, 95 records, dataset v0.1.0, collection membership and search horizon are unchanged; no new benchmark discovery or complete failure denominator is claimed."
+      ],
+      "records": 95
+    },
+    {
       "id": "public-author-preprint-2026-10-20",
       "date": "2026-10-20",
       "kind": "website",

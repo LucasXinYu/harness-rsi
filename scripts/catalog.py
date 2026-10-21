@@ -519,6 +519,7 @@ def markdown(stats, config, project, evidence_data, updates):
         '| [Bibliography](data/literature.bib) / [catalog](docs/catalog.json) | Source identities, classification and publication-date provenance |',
         '| [Update history](docs/updates.json) / [data definitions](CONTRIBUTING.md#data-definitions) | Dated releases, counting rules and curation process |', '',
         '## Maintenance and versions', '', updates['commitment'], '',
+        '**Literature synthesis through October 20, 2026.** [Read the dated comparison supplement](docs/LITERATURE_UPDATE_2026-10-20.md): Harness² and recursive reuse; failure-aware evaluation and held-out generalization; memory procedures versus model training. These ten sources are already in the bibliography. This is a website synthesis, not a new paper or evidence-dataset release. The October 19 public PDF and submitted manuscripts are unchanged.', '',
         '| State | Date | What it means |', '| :-- | :-- | :-- |',
         f'| **Frozen paper evidence** | {evidence["cutoff"]} | {evidence["records"]} category–source records; evidence export dated {evidence_data["updated_on"]} |',
         f'| **Living literature collection** | {config["search_cutoff"]} | Search horizon; {stats["papers"]} papers and {stats["resources"]} official resources; collection updated {config["updated_on"]} |',

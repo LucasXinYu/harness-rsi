@@ -12,6 +12,20 @@ spec.loader.exec_module(c)
 
 
 class CatalogTests(unittest.TestCase):
+    def test_dated_synthesis_preserves_public_paper_and_catalog_scope(self):
+        project = c.read_json(c.ROOT/'docs/project.json')
+        annotations = c.read_json(c.ROOT/'data/annotations.json')
+        supplement = (c.ROOT/'docs/LITERATURE_UPDATE_2026-10-20.md').read_text()
+        keys = ['harness_squared2026', 'rsiflow2026', 'harmonyharness2026',
+                'failure_feedback_directedness2026', 'gso2026', 'harness_ceiling2026',
+                'memskill2026', 'erskill2026', 'sesa2026', 'self_evolving_agent_harness2026']
+        for key in keys:
+            self.assertIn(key, annotations)
+            self.assertIn('`'+key+'`', supplement)
+        self.assertEqual(project['paper']['version_date'], '2026-10-19')
+        self.assertIn('not an exhaustive new census, a new manuscript release', supplement)
+        self.assertIn('cannot recover unreported failures', supplement)
+
     def test_public_paper_pdf_is_available_and_scoped(self):
         project = c.read_json(c.ROOT/'docs/project.json')
         records = c.load_catalog()

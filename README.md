@@ -78,11 +78,13 @@ The frozen survey evidence covers work through **2026-10-01**. A record is one s
 
 We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.
 
+**Literature synthesis through October 20, 2026.** [Read the dated comparison supplement](docs/LITERATURE_UPDATE_2026-10-20.md): Harness² and recursive reuse; failure-aware evaluation and held-out generalization; memory procedures versus model training. These ten sources are already in the bibliography. This is a website synthesis, not a new paper or evidence-dataset release. The October 19 public PDF and submitted manuscripts are unchanged.
+
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-20 | Search horizon; 269 papers and 11 official resources; collection updated 2026-10-20 |
-| **Website update** | 2026-10-20 | Read the author preprint: public PDF without the ACL template; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-10-20 | Dated synthesis: recursive reuse, regressions and memory-training boundaries; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
