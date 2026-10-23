@@ -6,11 +6,19 @@
 
 **Author preprint · 2026-10-20 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This 74-page revision adds ten studies and a dated literature supplement through October 20; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 reading copy / original Preprints.org submission version](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) remains archived; a platform-issued public link and DOI will be added when available.
 
-<p align="center"><a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
+<p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
 We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.
 
 **95 category–source records · 62 research papers + 1 benchmark resource · 20 task subcategories · 4 domains**
+
+## Video overview
+
+https://github.com/user-attachments/assets/0e9ac11f-9b77-4d50-b94d-86f829bbab5d
+
+**[▶ Watch the full 90-second overview](https://github.com/LucasXinYu/harness-rsi/blob/main/docs/assets/harness-rsi-overview.mp4)**
+
+90-second silent video · Inline preview: 720 × 900 · [Download the original 1080 × 1350 MP4 (20.8 MB)](https://github.com/LucasXinYu/harness-rsi/raw/refs/heads/main/docs/assets/harness-rsi-overview.mp4)
 
 ## What we study
 
@@ -84,7 +92,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-20 | Search horizon; 269 papers and 11 official resources; collection updated 2026-10-20 |
-| **Website update** | 2026-10-20 | Revised GitHub reading PDF: ten studies added in a non-ACL layout; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-10-22 | 90-second project overview video in the README; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
