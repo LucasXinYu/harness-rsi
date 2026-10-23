@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "project-video-2026-10-22",
+      "date": "2026-10-22",
+      "kind": "website",
+      "title": "90-second project overview video in the README",
+      "changes": [
+        "Added the maintainer-selected 90-second silent Harness RSI overview video, preserving the original 1080 × 1350 MP4 without recompression.",
+        "Added a video section and navigation link to the generated README, with a full-length 720 × 900 inline preview and original-file download links.",
+        "Preserved literature membership, research dates, frozen evidence, dataset v0.1.0 and manuscript versions."
+      ],
+      "records": 95
+    },
+    {
       "id": "revised-author-preprint-2026-10-20",
       "date": "2026-10-20",
       "kind": "website",
