@@ -1130,7 +1130,7 @@
   "envharness2026": {
     "category": "Agent Architectures and Harness Infrastructure",
     "kind": "paper",
-    "summary": "Adds environment-side wrappers and task shaping to support agent learning. Its editable object is the environment harness, which should be distinguished from the task-solving agent's own controller.",
+    "summary": "Environment-side wrappers reshape interactions to provide richer training signals while preserving underlying environment logic. The task-solving agent's own harness remains unchanged. Treat this as environment scaling for agent training, not optimization of the task agent's harness. Source: arXiv:2608.19880; positioning clarified by the author.",
     "added_on": "2026-10-03",
     "release": {
       "value": "2026-08-20",
@@ -3357,6 +3357,90 @@
       "precision": "day",
       "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; conceptual framework and related-work synthesis, not a new benchmark intervention; no formal venue verified",
       "source": "https://arxiv.org/abs/2610.18813"
+    }
+  },
+  "mad_rsi2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2610.28201v1, Sections 3, 4.1–4.2 and 7. Optimizes a shared harness using failure trajectories from several fixed executors. Model diversity supplies search evidence; evaluation distinguishes population coverage from success shared across models. Transfer to additional models is a separate test. Cost comparisons aggregate independently optimized baselines, and savings are not uniform across tasks. This does not establish continual adaptation to arbitrary model or data shifts.",
+    "added_on": "2026-10-24",
+    "release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.28201"
+    }
+  },
+  "harness_delta_attribution2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2610.22466v1, Sections 3–5; Appendix C. Combines a compute-matched seed with neutralization of detected benchmark shortcuts to decompose search-set gains. Undetected or entangled shortcuts can remain: the residual is an upper bound on generalizable improvement, not demonstrated transfer. Held-out tests and human-reviewed intervention choices remain necessary. This is an attribution protocol rather than a new harness optimizer.",
+    "added_on": "2026-10-24",
+    "release": {
+      "value": "2026-10-15",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.22466"
+    }
+  },
+  "harness_scaling2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2610.29458v1, Sections 3.1–3.3 and 4.1–4.3. Trains a policy across a structured subset of a factorized harness space, balancing component realizations and pairwise combinations. Nearby configurations provide controlled variation for each task. Tests distinguish unseen combinations from external black-box harnesses. The learned object is the policy; a supplied design of diverse harnesses is not itself an evolved optimizer or weight-free RSI.",
+    "added_on": "2026-10-24",
+    "release": {
+      "value": "2026-10-21",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.29458"
+    }
+  },
+  "harnessadapt_rl2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2610.28069v1, Sections 3.1–3.3, 4.4–4.6; Appendices 9.4 and 9.8. HarnessAdapt-RL alternates policy training with teacher-proposed tool and hook edits for software repair. Matched rollouts accept a bundle when pass or trainable rate improves without lowering the other; this finite-sample gate is not a significance test. Deployment retains evolved tools and hooks but removes training skills. Bundle comparisons and single training runs limit component attribution and retraining uncertainty.",
+    "added_on": "2026-10-24",
+    "release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.28069"
+    }
+  },
+  "continual_learners2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2610.25858v1, Sections 3 and 4.1–4.4; Appendices B–D. Evaluates ReasoningBank, GEPA and Meta-Harness under topic, workflow, domain and compound task drift. Frozen checkpoints expose acquisition, interference and forgetting. Shared prompt/workspace edits can overwrite earlier behavior; similarity retrieval can collide when similar queries require incompatible workflows. Results concern the tested implementations and streams, not a proof that all self-evolving agents fail continual learning.",
+    "added_on": "2026-10-24",
+    "release": {
+      "value": "2026-10-19",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.25858"
+    }
+  },
+  "verifier_recoverability2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2610.27465v1, Sections 2–5; Appendix E. Proposes an admission rule combining measured verifier agreement with restoration of stored prior versions. Platform diagnostics and controlled airline tasks distinguish a functioning judge from constant-score collapse and stored rollback from regenerated undo. Restoring code cannot undo effects incurred while a change was live. The study does not supply a universal verifier threshold or a general safety guarantee.",
+    "added_on": "2026-10-24",
+    "release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.27465"
+    }
+  },
+  "sera2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Source/version: arXiv:2610.29560v1, Sections 3.2–3.3 and 4; Appendices A.1 and B.3. SERA revises planning guidance, assessment criteria and control rules around a fixed VLA executor. The selected harness is frozen before RoboMME testing; episode context still changes during execution. Selection includes permitted development fallbacks, not only freshly validated candidates. The reported simulation result is not evidence of unrestricted online self-modification, physical-robot transfer or an evolved improvement procedure.",
+    "added_on": "2026-10-24",
+    "release": {
+      "value": "2026-10-21",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.29560"
     }
   }
 }
