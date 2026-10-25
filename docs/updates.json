@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "paper-citation-page-2026-10-24",
+      "date": "2026-10-24",
+      "kind": "website",
+      "title": "Dedicated paper page with scholarly metadata and version-specific citations",
+      "changes": [
+        "Added a static paper page with the complete author-written abstract, all five authors, contribution roles, version date and a direct PDF link. Scholarly citation metadata describes the October 20 author reading version.",
+        "Added downloadable BibTeX for the October 20 author version and the separate Preprints.org v1 DOI record, with explicit version labels. Linked the paper page from the homepage and generated README.",
+        "Preserved the manuscripts, literature membership and dates, frozen October 1 evidence and dataset v0.1.0. Search-engine indexing remains external and is not guaranteed."
+      ],
+      "records": 95
+    },
+    {
       "id": "literature-2026-10-24",
       "date": "2026-10-24",
       "kind": "website",
