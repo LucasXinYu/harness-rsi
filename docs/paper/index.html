@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents</title>
+  <meta name="description" content="Full abstract, authors, PDF, version history and BibTeX for the Harness RSI survey of language model agents.">
+  <link rel="canonical" href="https://lucasxinyu.github.io/harness-rsi/paper/">
+  <!-- These fields describe the October 20 author reading version, not Preprints.org v1. -->
+  <meta name="citation_title" content="From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents">
+  <meta name="citation_author" content="Xin Yu">
+  <meta name="citation_author" content="Chengyuan Liu">
+  <meta name="citation_author" content="Wenxin Long">
+  <meta name="citation_author" content="Haochen Zhang">
+  <meta name="citation_author" content="Lingzhou Xue">
+  <meta name="citation_publication_date" content="2026/10/20">
+  <meta name="citation_pdf_url" content="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-20.pdf">
+  <meta name="citation_abstract_html_url" content="https://lucasxinyu.github.io/harness-rsi/paper/">
+  <meta name="citation_language" content="en">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://lucasxinyu.github.io/harness-rsi/paper/">
+  <meta property="og:title" content="From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents">
+  <meta property="og:description" content="Read the full abstract and author preprint, inspect versions, and download BibTeX. By Xin Yu, Chengyuan Liu, Wenxin Long, Haochen Zhang and Lingzhou Xue.">
+  <meta name="theme-color" content="#080d16">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <style>
+    @font-face{font-family:Manrope;src:url('../assets/fonts/Manrope-Variable.ttf') format('truetype');font-weight:200 800;font-display:swap}
+    :root{color-scheme:dark;font-family:Manrope,Arial,sans-serif;color:#e9f2f6;background:#080d16}
+    *{box-sizing:border-box}body{margin:0}a{color:#79ead3;text-underline-offset:3px}a:hover{color:#b3fff0}a:focus-visible{outline:2px solid #79ead3;outline-offset:5px}
+    .wrap{max-width:1080px;margin:auto;padding:0 28px}header{border-bottom:1px solid #253344}nav{display:flex;justify-content:space-between;gap:20px;padding-top:18px!important;padding-bottom:18px!important;font-size:13px}
+    main{padding-top:25px!important;padding-bottom:36px!important}h1{font-size:clamp(24px,3vw,34px);line-height:1.25;letter-spacing:-.7px;margin:0 0 14px}h2{font-size:21px;margin:0 0 12px}h3{font-size:16px;margin:0 0 10px}p{line-height:1.7;margin:10px 0}.authors{font-size:16px;line-height:1.8}.muted,.roles{color:#a3b3c5;font-size:13px}.roles{margin:5px 0}.status{font-size:13px;color:#ffc080}
+    .actions{display:flex;flex-wrap:wrap;gap:10px 22px;margin:16px 0 22px;font-size:14px}.abstract{font-size:15px;line-height:1.85}.abstract h2{font-size:18px}.section{margin-top:28px;padding-top:24px;border-top:1px solid #253344}.versions{padding-left:22px;font-size:14px;line-height:1.8}.versions li{margin:12px 0}.citation{padding:20px;background:#101925;border:1px solid #253344;border-radius:6px;margin-top:16px}.citation p{font-size:13px;color:#a3b3c5}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;line-height:1.65;margin-bottom:0}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}footer{border-top:1px solid #253344;padding-top:18px!important;padding-bottom:24px!important;font-size:12px;color:#a3b3c5}sup{font-size:10px}
+    @media(max-width:600px){.wrap{padding-left:20px;padding-right:20px}main{padding-top:22px!important}.authors{font-size:14px}.abstract{font-size:14px}.citation{padding:14px}nav{font-size:12px}.actions{gap:12px 18px}}
+    @media print{:root{color:#111;background:white}a{color:#111}.citation{background:white;border-color:#aaa}.muted,.roles,.citation p,footer,.status{color:#333}nav{display:none}.wrap{max-width:none}}
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="Project navigation"><a href="../">← Harness RSI research atlas</a><a href="https://github.com/LucasXinYu/harness-rsi">GitHub</a></nav></header>
+  <main class="wrap">
+    <article aria-labelledby="paper-title">
+      <h1 id="paper-title">From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents</h1>
+      <p class="authors">Xin Yu<sup>*,†</sup> · Chengyuan Liu<sup>*</sup> · Wenxin Long<sup>*</sup> · Haochen Zhang<sup>*</sup> · Lingzhou Xue<sup>‡</sup></p>
+      <p class="roles">Department of Statistics, The Pennsylvania State University, University Park, PA 16802, USA<br>* Equal contribution. † Project Lead. ‡ Corresponding author: <a href="mailto:lzxue@psu.edu">lzxue@psu.edu</a></p>
+      <p class="status">Author preprint · Revised <time datetime="2026-10-20">20 October 2026</time> · 74 pages · Not peer-reviewed</p>
+      <div class="actions"><a href="Harness_RSI_Preprint_2026-10-20.pdf">Read the paper (PDF) ↗</a><a href="#cite">Cite this paper ↓</a><a href="https://doi.org/10.20944/preprints202610.2293.v1">Preprints.org v1 ↗</a></div>
+      <section class="abstract" aria-labelledby="abstract-title">
+        <h2 id="abstract-title">Abstract</h2>
+        <p>Language-model agents rely on harnesses that govern tool use, context, memory, and execution. Understanding automated harness revision requires connecting improvement methods to the reusable functionality they produce. This survey examines three linked perspectives: improvement workflows, recursive scope, and concrete modifications across task domains. We compare search strategies, memory management, edit guidance, and integration with model training, and use an existing five-level framework to distinguish harness optimization from recursive self-improvement. Across coding, reasoning and information processing, interactive and embodied tasks, and visual tasks, we trace reported changes from starting capabilities to outcomes. Our synthesis identifies repairs at model–environment interfaces, cases where added tools and context fail to help, and conditions constraining recovery reuse. Cross-domain analogies motivate, rather than establish, transfer. We distinguish task-performance gains from improved subsequent optimization and identify priorities in reliable evaluation, attribution, transfer, and safety.</p>
+      </section>
+      <section class="section" aria-labelledby="versions-title">
+        <h2 id="versions-title">Versions and scope</h2>
+        <ul class="versions">
+          <li><strong>This page: author reading version, 20 October 2026.</strong> The <a href="Harness_RSI_Preprint_2026-10-20.pdf">74-page PDF</a> adds ten studies and a dated literature supplement through October 20. Its frozen domain evidence remains through October 1. The abstract and scholarly metadata on this page describe this version.</li>
+          <li><strong>Preprints.org v1, posted 23 October 2026.</strong> A separately posted version with DOI <a href="https://doi.org/10.20944/preprints202610.2293.v1">10.20944/preprints202610.2293.v1</a>. Use its DOI citation when referring to that version. It is not the October 20 revised reading PDF.</li>
+          <li><strong>Archived author reading version, 19 October 2026.</strong> The <a href="Harness_RSI_Preprint_2026-10-19.pdf">71-page PDF</a> is the original Preprints.org submission copy.</li>
+        </ul>
+        <p class="muted">The <a href="../#activity">living literature collection</a> is updated separately from these manuscripts. Website updates do not change a paper’s version date or evidence cutoff.</p>
+      </section>
+      <section id="cite" class="section" aria-labelledby="cite-title">
+        <h2 id="cite-title">Citation and BibTeX</h2>
+        <p>Choose the citation for the version you read. All five authors are listed in manuscript order.</p>
+        <div class="citation">
+          <h3>Preprints.org v1 · DOI citation</h3>
+          <p>Posted 23 October 2026; not peer-reviewed. <a href="preprints-v1.bib" download>Download BibTeX</a> · <a href="https://doi.org/10.20944/preprints202610.2293.v1">Open DOI record</a></p>
+          <pre><code>@misc{yu2026harnessrsi_preprints_v1,
+  title = {From Harness Optimization to Recursive Self-Improvement:
+           A Survey of Language Model Agents},
+  author = {Yu, Xin and Liu, Chengyuan and Long, Wenxin and
+            Zhang, Haochen and Xue, Lingzhou},
+  year = {2026},
+  month = oct,
+  doi = {10.20944/preprints202610.2293.v1},
+  url = {https://doi.org/10.20944/preprints202610.2293.v1},
+  note = {Preprints.org, version 1, posted October 23, 2026.
+          Not peer-reviewed}
+}</code></pre>
+        </div>
+        <div class="citation">
+          <h3>Author reading version · 20 October 2026</h3>
+          <p>Matches the PDF linked at the top of this page. <a href="citation.bib" download>Download BibTeX</a></p>
+          <pre><code>@misc{yu2026harnessrsi_author_20261020,
+  title = {From Harness Optimization to Recursive Self-Improvement:
+           A Survey of Language Model Agents},
+  author = {Yu, Xin and Liu, Chengyuan and Long, Wenxin and
+            Zhang, Haochen and Xue, Lingzhou},
+  year = {2026},
+  month = oct,
+  url = {https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-20.pdf},
+  note = {Author preprint, revised October 20, 2026, 74 pages.
+          Not peer-reviewed; distinct from Preprints.org v1}
+}</code></pre>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="wrap">Paper page added <time datetime="2026-10-24">24 October 2026</time>. <a href="../#maintenance">Project updates</a> · <a href="https://github.com/LucasXinYu/harness-rsi/issues/new?template=evidence.yml">Report a correction</a></footer>
+</body>
+</html>

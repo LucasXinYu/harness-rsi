@@ -122,6 +122,10 @@ python3 -m http.server 8000 --directory docs
 
 Open `http://localhost:8000` for the standalone research homepage. Its domain tabs work without a backend. All assets are local, including the Manrope typeface (SIL Open Font License in `docs/assets/fonts/`). There are no analytics, remote font requests, or API keys.
 
+## Paper page and citation metadata
+
+`docs/paper/index.html` is the static scholarly landing page. Keep its complete abstract, author order, version date, `citation_*` tags and PDF link consistent with the same manuscript version and `docs/project.json`. Update both displayed BibTeX blocks and their downloadable `.bib` files together. The October 20 author reading version and Preprints.org v1 are distinct: the v1 DOI must not be assigned to the revised reading PDF. Preserve dated PDFs and disclose version differences. Add a website release note for presentation changes; do not advance manuscript or evidence dates.
+
 ## Update domain findings
 
 `docs/project.json` contains four domain summaries, 12 selected observations and three cross-domain comparisons. Each observation provides:
