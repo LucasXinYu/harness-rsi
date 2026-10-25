@@ -2,7 +2,7 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-20.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-20.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
 **Author preprint · 2026-10-20 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This 74-page revision adds ten studies and a dated literature supplement through October 20; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 reading copy / original Preprints.org submission version](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) remains archived; [Preprints.org v1](https://www.preprints.org/manuscript/202610.2293), posted October 23, is available under DOI [10.20944/preprints202610.2293.v1](https://doi.org/10.20944/preprints202610.2293.v1).
 
@@ -94,7 +94,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-10-24 | Search horizon; 276 papers and 11 official resources; collection updated 2026-10-24 |
-| **Website update** | 2026-10-24 | Seven studies: model transfer, continual adaptation, attribution and robot planning; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-10-24 | Dedicated paper page with scholarly metadata and version-specific citations; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
