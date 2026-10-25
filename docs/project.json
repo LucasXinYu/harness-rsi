@@ -19,37 +19,56 @@
         "name": "Xin Yu",
         "role": "Co-first author · Project Lead",
         "github_url": "https://github.com/LucasXinYu",
-        "identity_sources": ["https://github.com/LucasXinYu"]
+        "identity_sources": [
+          "https://github.com/LucasXinYu"
+        ]
       },
       {
         "name": "Chengyuan Liu",
         "role": "Co-first author",
         "github_url": "https://github.com/PsyduckBelly",
-        "identity_sources": ["https://www.linkedin.com/in/chengyuan-liu", "https://github.com/PsyduckBelly", "https://science.psu.edu/stat/people/cjl6934"]
+        "identity_sources": [
+          "https://www.linkedin.com/in/chengyuan-liu",
+          "https://github.com/PsyduckBelly",
+          "https://science.psu.edu/stat/people/cjl6934"
+        ]
       },
       {
         "name": "Wenxin Long",
         "role": "Co-first author",
         "github_url": "https://github.com/VivLon",
-        "identity_sources": ["https://science.psu.edu/stat/people/wbl5283", "https://github.com/VivLon/spVelo/blob/main/setup.py", "https://github.com/VivLon/spVelo/commit/909db4caea261dbe34270ef23b18f6c6751567c1", "https://lingzhou-xue.github.io/group.html"]
+        "identity_sources": [
+          "https://science.psu.edu/stat/people/wbl5283",
+          "https://github.com/VivLon/spVelo/blob/main/setup.py",
+          "https://github.com/VivLon/spVelo/commit/909db4caea261dbe34270ef23b18f6c6751567c1",
+          "https://lingzhou-xue.github.io/group.html"
+        ]
       },
       {
         "name": "Haochen Zhang",
         "role": "Co-first author",
         "github_url": "https://github.com/hczhang1024",
-        "identity_sources": ["https://hczhang1024.github.io/", "https://github.com/hczhang1024"]
+        "identity_sources": [
+          "https://hczhang1024.github.io/",
+          "https://github.com/hczhang1024"
+        ]
       },
       {
         "name": "Lingzhou Xue",
         "role": "Corresponding author",
         "github_url": "https://github.com/lingzhou-xue",
-        "identity_sources": ["https://lingzhou-xue.github.io/index.html", "https://github.com/lingzhou-xue"]
+        "identity_sources": [
+          "https://lingzhou-xue.github.io/index.html",
+          "https://github.com/lingzhou-xue"
+        ]
       }
     ],
     "authorship_note": "Xin Yu, Chengyuan Liu, Wenxin Long and Haochen Zhang contributed equally. Xin Yu is the Project Lead; Lingzhou Xue is the corresponding author.",
     "corresponding_email": "lzxue@psu.edu",
     "affiliation": "Department of Statistics, The Pennsylvania State University",
-    "location": "University Park, PA 16802, USA"
+    "location": "University Park, PA 16802, USA",
+    "preprint_url": "https://www.preprints.org/manuscript/202610.2293",
+    "doi": "10.20944/preprints202610.2293.v1"
   },
   "domains": [
     {

@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "literature-2026-10-24",
+      "date": "2026-10-24",
+      "kind": "website",
+      "title": "Seven studies: model transfer, continual adaptation, attribution and robot planning",
+      "changes": [
+        "Added seven verified primary-source records, bringing the living collection to 276 papers and 11 official resources. Search was targeted, with overlap to October 13, and is not exhaustive.",
+        "Added source-located comparisons of cross-model harness reuse, drift and forgetting, compute/shortcut attribution, model–harness training and robot planning. Clarified environment-side training in EnvHarness.",
+        "Linked the posted Preprints.org version. Preserved the October 1 domain snapshot, all 95 evidence records, dataset v0.1.0 and both public reading PDFs."
+      ],
+      "records": 95
+    },
+    {
       "id": "project-video-2026-10-22",
       "date": "2026-10-22",
       "kind": "website",
