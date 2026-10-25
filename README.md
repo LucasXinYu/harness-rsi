@@ -4,9 +4,11 @@
 
 <p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-20.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
-**Author preprint · 2026-10-20 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This 74-page revision adds ten studies and a dated literature supplement through October 20; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 reading copy / original Preprints.org submission version](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) remains archived; a platform-issued public link and DOI will be added when available.
+**Author preprint · 2026-10-20 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This 74-page revision adds ten studies and a dated literature supplement through October 20; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 reading copy / original Preprints.org submission version](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) remains archived; [Preprints.org v1](https://www.preprints.org/manuscript/202610.2293), posted October 23, is available under DOI [10.20944/preprints202610.2293.v1](https://doi.org/10.20944/preprints202610.2293.v1).
 
 <p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
+
+**October 24 literature update:** Seven verified additions cover model transfer, continual adaptation, attribution, training and robotic planning. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-10-24.md). The frozen dataset and October 20 reading PDF are unchanged.
 
 We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.
 
@@ -91,8 +93,8 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-10-20 | Search horizon; 269 papers and 11 official resources; collection updated 2026-10-20 |
-| **Website update** | 2026-10-22 | 90-second project overview video in the README; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-10-24 | Search horizon; 276 papers and 11 official resources; collection updated 2026-10-24 |
+| **Website update** | 2026-10-24 | Seven studies: model transfer, continual adaptation, attribution and robot planning; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -110,11 +112,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**269 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-20**
+**276 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-24**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **255/269** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **262/276** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -124,11 +126,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-10-10 | 235 | 11 |
 | 2026-10-17 | 248 | 11 |
 | 2026-10-18 | 258 | 11 |
 | 2026-10-19 | 264 | 11 |
 | 2026-10-20 | 269 | 11 |
+| 2026-10-24 | 276 | 11 |
 
 </details>
 
@@ -163,7 +165,7 @@ Correspondence: [lzxue@psu.edu](mailto:lzxue@psu.edu)
 Department of Statistics, The Pennsylvania State University<br>
 University Park, PA 16802, USA
 
-The author-hosted preprint is available above. A platform-issued public link and DOI will be added when available; no journal or conference acceptance is implied.
+The author-hosted reading copy and [Preprints.org v1](https://www.preprints.org/manuscript/202610.2293) are available. DOI: [10.20944/preprints202610.2293.v1](https://doi.org/10.20944/preprints202610.2293.v1). Neither version implies peer review or acceptance.
 
 ## Contributors
 
