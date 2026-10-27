@@ -2,13 +2,13 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-20.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-27.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
-**Author preprint · 2026-10-20 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This 74-page revision adds ten studies and a dated literature supplement through October 20; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 reading copy / original Preprints.org submission version](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) remains archived; [Preprints.org v1](https://www.preprints.org/manuscript/202610.2293), posted October 23, is available under DOI [10.20944/preprints202610.2293.v1](https://doi.org/10.20944/preprints202610.2293.v1).
+**Author preprint · 2026-10-27 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This revision integrates six newly collected studies and the October 24 manuscript update, with contextual synthesis through October 27; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 submission-era copy](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) and [October 20 reading copy](docs/paper/Harness_RSI_Preprint_2026-10-20.pdf) remain archived; [Preprints.org v1](https://www.preprints.org/manuscript/202610.2293), posted October 23, is available under DOI [10.20944/preprints202610.2293.v1](https://doi.org/10.20944/preprints202610.2293.v1).
 
 <p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
-**October 24 literature update:** Seven verified additions cover model transfer, continual adaptation, attribution, training and robotic planning. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-10-24.md). The frozen dataset and October 20 reading PDF are unchanged.
+**October 27 literature and manuscript update:** Six verified additions cover executor-specific harnesses, fallback routing, memory policies, skill distillation and evaluator validity. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-10-27.md). The updated reading PDF includes the October 24 draft; frozen evidence and submitted platform versions remain unchanged.
 
 We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.
 
@@ -88,13 +88,13 @@ The frozen survey evidence covers work through **2026-10-01**. A record is one s
 
 We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.
 
-**Literature synthesis through October 20, 2026.** [Read the dated comparison supplement](docs/LITERATURE_UPDATE_2026-10-20.md): Harness² and recursive reuse; failure-aware evaluation and held-out generalization; memory procedures versus model training. These ten sources are already in the bibliography and are now discussed in the revised GitHub reading PDF. The earlier PDF is preserved; submitted manuscripts and the evidence dataset are unchanged.
+**Literature synthesis through October 27, 2026.** [Read the latest comparison supplement](docs/LITERATURE_UPDATE_2026-10-27.md): what transfers, where retained experience acts, and how an evolving evaluator stays anchored. Earlier [October 20](docs/LITERATURE_UPDATE_2026-10-20.md) and [October 24](docs/LITERATURE_UPDATE_2026-10-24.md) syntheses remain traceable. Earlier PDFs, submitted manuscripts and the evidence dataset are preserved.
 
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-10-24 | Search horizon; 276 papers and 11 official resources; collection updated 2026-10-24 |
-| **Website update** | 2026-10-24 | Dedicated paper page with scholarly metadata and version-specific citations; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-10-27 | Search horizon; 282 papers and 11 official resources; collection updated 2026-10-27 |
+| **Website update** | 2026-10-27 | Six studies and a revised author PDF: persistent experience, specialization and evaluator validity; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -112,11 +112,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**276 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-24**
+**282 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-27**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **262/276** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **268/282** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -126,11 +126,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-10-17 | 248 | 11 |
 | 2026-10-18 | 258 | 11 |
 | 2026-10-19 | 264 | 11 |
 | 2026-10-20 | 269 | 11 |
 | 2026-10-24 | 276 | 11 |
+| 2026-10-27 | 282 | 11 |
 
 </details>
 

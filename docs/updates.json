@@ -17,6 +17,19 @@
   ],
   "releases": [
     {
+      "id": "literature-and-manuscript-2026-10-27",
+      "date": "2026-10-27",
+      "kind": "website",
+      "title": "Six studies and a revised author PDF: persistent experience, specialization and evaluator validity",
+      "changes": [
+        "Added six full-text-verified studies (first posted October 18–22), bringing the collection to 282 papers and 11 official resources. Targeted searching through October 27 overlaps the previous horizon by seven days; coverage is not exhaustive.",
+        "Integrated comparisons of executor-specific harnesses, fallback routing, trained memory selection, skill distillation and externally anchored evaluator evolution into the main manuscript and a dated supplement. Existing categories cover the additions.",
+        "Published the October 27 author reading PDF, including the previously unpublished October 24 manuscript update. Updated PDF links, scholarly metadata and version-specific BibTeX; preserved the October 19 and 20 PDFs. This does not replace ARR or Preprints.org v1.",
+        "Preserved the October 1 domain-evidence cutoff, all 95 category–source records and dataset v0.1.0. Bibliography additions are contextual comparisons, not six new frozen evidence records."
+      ],
+      "records": 95
+    },
+    {
       "id": "paper-citation-page-2026-10-24",
       "date": "2026-10-24",
       "kind": "website",

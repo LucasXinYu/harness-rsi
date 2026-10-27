@@ -9,6 +9,7 @@ __pycache__/
 *.pdf
 !docs/paper/Harness_RSI_Preprint_2026-10-19.pdf
 !docs/paper/Harness_RSI_Preprint_2026-10-20.pdf
+!docs/paper/Harness_RSI_Preprint_2026-10-27.pdf
 *.zip
 paper.tex
 notes/

@@ -3442,5 +3442,77 @@
       "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
       "source": "https://arxiv.org/abs/2610.29560"
     }
+  },
+  "riseharness2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Revises prompts and executable interaction logic around a fixed terminal-agent model, task protocol and verifier. Contrasting successful and failed runs of the same task exposes agent and internal harness traces; a handbook maps symptoms to editable responsibilities. Acceptance uses repeated development runs; independent behavior checks are optional, not universal. Each model is adapted separately before cross-benchmark testing. Swapping final harnesses between models underperforms their own adapted versions, so cross-benchmark reuse does not establish cross-model portability. Noisy selection and combined edits limit component attribution. Source: arXiv:2610.27435v1, Sections 3.1–3.5, 4.4; Appendices A.4, B, D.4 and E.",
+    "added_on": "2026-10-27",
+    "release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.27435v1"
+    }
+  },
+  "oo_harness2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Builds a hierarchy of specialized harness subclasses by reusing and overriding parent behavior, retaining design and routing lessons from proposal outcomes. Acceptance targets a discovered task cluster; it is not an all-task regression guarantee. The hierarchy and lessons are frozen before held-out testing, while routing uses the task and observable base execution without the hidden grader. On the disjoint-application-family test the router chooses the base harness for every task: this supports fallback preservation, not transfer of the specialized subclasses. Single-run ablations limit causal isolation of inheritance and added search. Source: arXiv:2610.28380v1, Sections 3.1–3.5, 5.1 and 5.3; limitations.",
+    "added_on": "2026-10-27",
+    "release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.28380v1"
+    }
+  },
+  "herd2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Evolves external textual skills, distills a teacher with privileged skills and verified answers into a new LoRA adapter, and merges the adapter into the task model. Prior-checkpoint and original-model anchors constrain drift; bounded residual examples serve as probes rather than replay training targets. The skill writer remains a fixed base checkpoint, and deployment uses model weights without the skills. Evaluation uses one model with known task boundaries and verified training answers. This is continual parameter learning coupled to harness evolution, not weight-free memory RSI or a demonstrated self-evolving skill writer. Source: arXiv:2610.31401v1, Sections 2.2–2.4 and 3.1–3.3; limitations.",
+    "added_on": "2026-10-27",
+    "release": {
+      "value": "2026-10-22",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.31401v1"
+    }
+  },
+  "mccl2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Proposes a substrate–asset–policy taxonomy and distinguishes inner-loop memory-state updates from outer-loop changes to memory-management policy. Its evaluation framework separates retention, adaptation and transfer using stateful/reset comparisons, delayed re-probes, interference and explicit budgets. The scaling discussion and evaluation protocol are conceptual proposals, not new benchmark evidence that memory universally produces continual learning. It supplies a vocabulary and test design for assessing retained improvement guidance, rather than an additional demonstrated harness intervention. Source: arXiv:2610.29357v1, Sections 2, 3.5 and 4.",
+    "added_on": "2026-10-27",
+    "release": {
+      "value": "2026-10-21",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.29357v1"
+    }
+  },
+  "beam2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Maintains reusable memories and trains a context-dependent Bayesian memory-value estimator with LoRA and a Beta head while holding the task-executing model fixed. Semantic retrieval and Thompson sampling select memories; post-task leave-one-out counterfactual feedback updates their predicted value for future tasks. Thus fixed executor weights do not mean that every learned component is weight-free. Cross-task initialization from MATH500 to AIME includes further target adaptation, not unchanged zero-shot transfer. Consecutive-stream gains alone do not establish retention against forgetting, and counterfactual evaluation has a separate compute cost. Source: arXiv:2610.25119v1, Methodology (memory formation, belief representation and update); Experiments (cross-task transfer); Appendix A.",
+    "added_on": "2026-10-27",
+    "release": {
+      "value": "2026-10-18",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.25119v1"
+    }
+  },
+  "verievolve2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Builds executable evaluators from instruction-grounded positive, negative and adversarial end states, freezes an evaluator during workflow search, and revises it between searches using counterfactual pairs and cumulative regression cases. The external MCPMark verifier is hidden from model roles but used for admission, calibration and reference outcomes; the process is not verifier-free. The controlled study concerns filesystem tasks, and agreement on generated challenges is distinct from held-out agreement. A single search campaign without a fixed-budget search control limits attribution of gains specifically to evaluator evolution. Source: arXiv:2610.29005v1, Sections 3, 4.1–4.3 and 5–7; limitations.",
+    "added_on": "2026-10-27",
+    "release": {
+      "value": "2026-10-21",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.29005v1"
+    }
   }
 }
