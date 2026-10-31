@@ -8,7 +8,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--outcome', choices=['improvement', 'regression', 'no_gain', 'mixed', 'not_assessed'])
     parser.add_argument('--path', type=Path, default=Path(__file__).resolve().parents[1] /
-                        'docs/dataset/v0.1.0/dataset.json')
+                        'docs/dataset/v0.2.0/dataset.json')
     arguments = parser.parse_args()
     dataset = json.loads(arguments.path.read_text())
     metadata = dataset['metadata']
