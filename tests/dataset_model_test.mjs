@@ -17,4 +17,7 @@ for (const {record, signal} of selectSignals(dataset)) {
   assert(signal.benchmark_ids.every(id => record.benchmarks.some(benchmark => benchmark.id === id)));
 }
 assert.equal(selectSignals(dataset, 'regression')[0].signal.benchmark_ids.length, 0);
+const current = JSON.parse(readFileSync(new URL('../docs/dataset/v0.2.0/dataset.json', import.meta.url)));
+assert.equal(selectSignals(current).length, 24);
+for (const {record} of selectSignals(current)) assert.equal(recordLink(record), `dataset/#${encodeURIComponent(record.id)}`);
 console.log('Validated dataset filtering, partial coverage, and signal-scope boundaries.');
