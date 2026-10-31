@@ -17,6 +17,19 @@
   ],
   "releases": [
     {
+      "id": "dataset-release-2026-10-31",
+      "date": "2026-10-31",
+      "kind": "website",
+      "title": "Evidence dataset v0.2.0: expanded records, source checks and scoped open license",
+      "records": 95,
+      "changes": [
+        "Released dataset v0.2.0 with 113 category-source records, 81 works, 28 targeted primary-source checks and 24 scoped signals. The frozen 95-record survey atlas remains separate.",
+        "Added three verified bibliography works (The Trinity, Selm and the Physical AI RSI survey); targeted search through October 31, not exhaustive.",
+        "Migrated six evidence records to revised sources, corrected the HarnessX hit-rate interpretation, and disclosed inherited versus newly checked records.",
+        "Added normalized exports, strict schema validation, a curation protocol, screening/correction ledgers and a dataset browser. Project-owned annotations and compilation are CC BY 4.0; third-party rights are excluded. Independent human adjudication remains pending."
+      ]
+    },
+    {
       "id": "literature-and-manuscript-2026-10-27",
       "date": "2026-10-27",
       "kind": "website",

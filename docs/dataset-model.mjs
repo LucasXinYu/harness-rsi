@@ -5,6 +5,7 @@ export function selectSignals(dataset, outcome = 'all') {
 }
 
 export function recordLink(record) {
+  if (record.provenance) return `dataset/#${encodeURIComponent(record.id)}`;
   const parameters = new URLSearchParams({domain: record.domain, category: record.category_id, setting: 'all'});
   return `#benchmarks?${parameters}`;
 }
