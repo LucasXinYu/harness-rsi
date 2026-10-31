@@ -1,0 +1,45 @@
+record_id,control
+program-generation-and-editing--tthe2026,reported within-study comparison; combined edits remain possible
+program-generation-and-editing--evolvenet2026,reported within-study comparison; combined edits remain possible
+repository-level-software-engineering--tthe2026,reported within-study comparison; combined edits remain possible
+terminal-based-engineering-tasks--modularrsi2026,reported within-study comparison; combined edits remain possible
+terminal-based-engineering-tasks--rrsi2026,reported within-study comparison; combined edits remain possible
+machine-learning-engineering--aide2_2026,benchmark-specific protocol in Table 2
+formal-theorem-proving--proverinterface2026,same Lean comparison subset for cost/time
+browser-mediated-interaction--harnessx2026,reported WebShop run
+robot-manipulation--harnesspai2026,reported within-study comparison; combined edits remain possible
+temporal-grounding--videoevolve2026,same illustrated query
+qa-over-supplied-records--memskill2026,same backbone within ablation
+qa-over-supplied-records--memskill2026,same LoCoMo evaluation protocol
+qa-over-supplied-records--erskill2026,LoCoMo-trained transfer configuration identified by table marker
+open-web-information-seeking--sesa2026,same Qwen3-4B backbone in leave-one-out comparison
+open-web-information-seeking--sesa2026,other pipeline components held fixed
+multi-domain-agent-evaluation--mad_rsi2026,shared queries across executor models
+multi-domain-agent-evaluation--mad_rsi2026,matched sampling configurations
+robot-manipulation--sera2026,same reported RoboMME evaluation setting
+terminal-based-engineering-tasks--riseharness2026,fixed executor per evolution run
+terminal-based-engineering-tasks--riseharness2026,frozen transferred harness
+terminal-based-engineering-tasks--riseharness2026,four runs per task in transfer table
+application-and-service-workflows--oo_harness2026,same frozen catalogue in routing ablation
+application-and-service-workflows--oo_harness2026,same executor and grader
+multi-domain-agent-evaluation--herd2026,one fixed base model across comparison
+multi-domain-agent-evaluation--herd2026,known task boundaries
+multi-domain-agent-evaluation--herd2026,verified training answers
+competition-and-advanced-mathematics--beam2026,task executor held fixed
+application-and-service-workflows--verievolve2026,external verifier hidden from model roles
+application-and-service-workflows--verievolve2026,fixed evaluator within each workflow-search run
+multi-domain-agent-evaluation--trinity2026,same base harness in Table 2
+multi-domain-agent-evaluation--trinity2026,fixed backbone
+application-and-service-workflows--selm2026,same target model and harness within each cell
+application-and-service-workflows--selm2026,same scorer
+application-and-service-workflows--harness_ceiling2026,same split across conditions
+application-and-service-workflows--harness_ceiling2026,official tools and scorer unchanged
+multi-domain-agent-evaluation--harness_delta_attribution2026,fixed executor within comparison
+multi-domain-agent-evaluation--harness_delta_attribution2026,explicit compute matching
+application-and-service-workflows--harness_scaling2026,factorized harness definitions
+application-and-service-workflows--harness_scaling2026,reported GRPO/PPO training configurations
+repository-level-software-engineering--harnessadapt_rl2026,fixed R2E-Gym-Lite training subset
+repository-level-software-engineering--harnessadapt_rl2026,single Qwen3.5-9B base model
+multi-domain-agent-evaluation--continual_learners2026,frozen task models
+multi-domain-agent-evaluation--continual_learners2026,explicit stream ordering
+application-and-service-workflows--verifier_recoverability2026,controlled tau2-bench airline/retail experiments

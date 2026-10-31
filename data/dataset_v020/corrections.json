@@ -1,0 +1,165 @@
+[
+  {
+    "record_id": "program-generation-and-editing--tthe2026",
+    "type": "source_version_update",
+    "before": [
+      {
+        "name": "TTHE (v1)",
+        "url": "https://arxiv.org/html/2607.08124v1",
+        "locator": "§4.4–4.5; §5.1,5.6; Appendix Figure5"
+      }
+    ],
+    "after": [
+      {
+        "name": "TTHE: verification only after exposed failures",
+        "url": "https://arxiv.org/html/2607.08124v2",
+        "locator": "Sections 4–5; Figure 5; Appendix A",
+        "first_release_date": "2026-07-09",
+        "source_version_date": "2026-10-12",
+        "source_version": "2607.08124v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ],
+    "reason": "Rechecked the mechanism in the revised primary source; locator migrated. Original release preserved."
+  },
+  {
+    "record_id": "program-generation-and-editing--evolvenet2026",
+    "type": "source_version_update",
+    "before": [
+      {
+        "name": "EvolveNet (v1)",
+        "url": "https://arxiv.org/html/2608.04968v1",
+        "locator": "§6.1–6.9; Appendix D"
+      }
+    ],
+    "after": [
+      {
+        "name": "EvolveNet: separating library-specific and shared behavior",
+        "url": "https://arxiv.org/html/2608.04968v2",
+        "locator": "Section 5.4; Appendix I.5 and Table 3",
+        "first_release_date": "2026-08-05",
+        "source_version_date": "2026-10-11",
+        "source_version": "2608.04968v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ],
+    "reason": "Rechecked the mechanism in the revised primary source; locator migrated. Original release preserved."
+  },
+  {
+    "record_id": "repository-level-software-engineering--tthe2026",
+    "type": "source_version_update",
+    "before": [
+      {
+        "name": "TTHE (v1)",
+        "url": "https://arxiv.org/html/2607.08124v1",
+        "locator": "§4.4–4.5; §5.1,5.6; Appendix Figure5"
+      }
+    ],
+    "after": [
+      {
+        "name": "TTHE: treating an empty patch as a rerun condition",
+        "url": "https://arxiv.org/html/2607.08124v2",
+        "locator": "Sections 4–5; Figure 5; Appendix A",
+        "first_release_date": "2026-07-09",
+        "source_version_date": "2026-10-12",
+        "source_version": "2607.08124v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ],
+    "reason": "Rechecked the mechanism in the revised primary source; locator migrated. Original release preserved."
+  },
+  {
+    "record_id": "terminal-based-engineering-tasks--modularrsi2026",
+    "type": "source_version_update",
+    "before": [
+      {
+        "name": "ModularRSI (v1)",
+        "url": "https://arxiv.org/html/2609.14857v1",
+        "locator": "§4,5.3,6.1,6.4"
+      },
+      {
+        "name": "ModularRSI (v1)",
+        "url": "https://arxiv.org/html/2609.14857v1",
+        "locator": "Appendix D.2–D.4; Tables 10, Listings 7–9"
+      }
+    ],
+    "after": [
+      {
+        "name": "ModularRSI: correcting tool dispatch and completion state",
+        "url": "https://arxiv.org/html/2609.14857v2",
+        "locator": "Case-study appendix; Positive case; Listing 10",
+        "first_release_date": "2026-09-14",
+        "source_version_date": "2026-10-09",
+        "source_version": "2609.14857v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ],
+    "reason": "Rechecked the mechanism in the revised primary source; locator migrated. Original release preserved."
+  },
+  {
+    "record_id": "terminal-based-engineering-tasks--rrsi2026",
+    "type": "source_version_update",
+    "before": [
+      {
+        "name": "RRSI (v2)",
+        "url": "https://arxiv.org/html/2609.24972v2",
+        "locator": "§4.1,4.3; Appendix C; Appendix D.1 Table 5"
+      },
+      {
+        "name": "RRSI (v2)",
+        "url": "https://arxiv.org/html/2609.24972v2",
+        "locator": "Appendix E Table 6 (Coding R0-A,R0-B,R8-B)"
+      }
+    ],
+    "after": [
+      {
+        "name": "RRSI: bounding audits and waiting behavior",
+        "url": "https://arxiv.org/html/2609.24972v3",
+        "locator": "Section 4.1; Appendix F Table 8",
+        "first_release_date": "2026-09-21",
+        "source_version_date": "2026-10-04",
+        "source_version": "2609.24972v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ],
+    "reason": "Rechecked the mechanism in the revised primary source; locator migrated. Original release preserved."
+  },
+  {
+    "record_id": "robot-manipulation--harnesspai2026",
+    "type": "source_version_update",
+    "before": [
+      {
+        "name": "HarnessPAI",
+        "url": "https://arxiv.org/abs/2609.29166v1",
+        "locator": "Sections 4.4–5.4; Appendix C"
+      }
+    ],
+    "after": [
+      {
+        "name": "HarnessPAI",
+        "url": "https://arxiv.org/html/2609.29166v2",
+        "locator": "Section 4 and appendix skill align-object-to-basket-mouth",
+        "first_release_date": "2026-09-24",
+        "source_version_date": "2026-10-21",
+        "source_version": "2609.29166v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ],
+    "reason": "Rechecked the mechanism in the revised primary source; locator migrated. Original release preserved."
+  },
+  {
+    "record_id": "browser-mediated-interaction--harnessx2026",
+    "type": "scientific_correction",
+    "old_signal_id": "unused-color-tool",
+    "new_signal_id": "color-tool-zero-hit-rate",
+    "reason": "Tasks-flipped/predicted was incorrectly labeled a usage observation. Correct to scoped no-gain, without causal attribution.",
+    "source_url": "https://arxiv.org/html/2606.14249v3",
+    "locator": "Section 12.1 Figure 8; Section 12.3 Figure 10"
+  }
+]

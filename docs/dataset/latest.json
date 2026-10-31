@@ -1,6 +1,8 @@
 {
-  "version": "0.1.0",
-  "released_on": "2026-10-18",
-  "path": "dataset/v0.1.0/dataset.json",
-  "sha256": "f9a0c4ae38adf70eac5a2b6b1c53daa0afc34b25c45912b176f166dd9084d353"
+  "version": "0.2.0",
+  "status": "released",
+  "prepared_on": "2026-10-31",
+  "released_on": "2026-10-31",
+  "path": "dataset/v0.2.0/dataset.json",
+  "sha256": "2a415c34b2320d0ac2efa6cd98a7423ed7bbd0293c6e29fcd5b8570133efa1de"
 }

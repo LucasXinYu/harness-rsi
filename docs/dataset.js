@@ -20,9 +20,9 @@ async function initDataset() {
   const root = pointer.path.replace('dataset.json', '');
   document.getElementById('dataset-version').textContent = `v${metadata.version} · released ${metadata.released_on}`;
   document.getElementById('dataset-coverage').textContent =
-    `${metadata.record_count} category–source records · ${metadata.distinct_source_count} distinct sources · evidence through ${metadata.evidence_cutoff}`;
+    `${metadata.record_count} category–source records · ${metadata.distinct_source_count} distinct sources · targeted search through ${metadata.literature_search_through ?? metadata.evidence_cutoff}`;
   document.getElementById('dataset-screening').textContent =
-    `${metadata.screened_record_count}/${metadata.record_count} records screened for structured signals · ${metadata.signal_count} scoped observations · ${metadata.unreviewed_record_count} not yet reviewed`;
+    `${metadata.screened_record_count}/${metadata.record_count} records have structured signals · ${metadata.signal_count} scoped observations · ${metadata.primary_checked_record_count ?? 0} targeted primary checks · ${metadata.legacy_record_count ?? metadata.unreviewed_record_count} inherited records`;
   for (const link of document.querySelectorAll('[data-dataset-file]')) {
     link.href = root + link.dataset.datasetFile;
   }
@@ -39,7 +39,7 @@ async function initDataset() {
       const proof = element('details', 'dataset-proof');
       proof.append(element('summary', '', 'Trace this annotation'));
       proof.append(element('blockquote', '', signal.evidence_quote));
-      proof.append(element('p', 'dataset-detail', 'Excerpt of the curated record, not a newly verified quotation from the paper.'));
+      proof.append(element('p', 'dataset-detail', 'Excerpt of our curated record. Primary-text anchors and review scope are available in the linked record and versioned data.'));
       const primary = element('a', '', `${signal.primary_source.name} ↗`);
       primary.href = signal.primary_source.url;
       proof.append(primary, element('p', 'dataset-detail', signal.primary_source.locator));

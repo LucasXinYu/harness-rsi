@@ -16,10 +16,13 @@ jobs:
           python-version: '3.11'
       - run: python3 -m unittest discover -s tests
       - run: python3 scripts/catalog.py check
+      - run: python3 -m pip install -r requirements-validation.txt
+      - run: python3 scripts/validate_dataset.py
       - run: node --check docs/app.js
       - run: node --check docs/observatory.js
       - run: node --check docs/harness-field.js
       - run: node --input-type=module --check < docs/benchmarks.js
       - run: node tests/evidence_model_test.mjs
       - run: node --input-type=module --check < docs/dataset.js
+      - run: node --check docs/dataset/inspect.js
       - run: node tests/dataset_model_test.mjs
