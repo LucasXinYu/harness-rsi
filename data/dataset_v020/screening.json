@@ -1,0 +1,149 @@
+[
+  {
+    "key": "memskill2026",
+    "url": "https://arxiv.org/abs/2602.02474",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "erskill2026",
+    "url": "https://arxiv.org/abs/2608.12720",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "sesa2026",
+    "url": "https://arxiv.org/abs/2607.29468",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "harness_ceiling2026",
+    "url": "https://arxiv.org/abs/2610.11655",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "self_evolving_agent_harness2026",
+    "url": "https://arxiv.org/abs/2610.18813",
+    "decision": "context_only",
+    "reason": "Conceptual framework retained in bibliography; not counted as an empirical intervention.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "mad_rsi2026",
+    "url": "https://arxiv.org/abs/2610.28201",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "harness_delta_attribution2026",
+    "url": "https://arxiv.org/abs/2610.22466",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "harness_scaling2026",
+    "url": "https://arxiv.org/abs/2610.29458",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "harnessadapt_rl2026",
+    "url": "https://arxiv.org/abs/2610.28069",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "continual_learners2026",
+    "url": "https://arxiv.org/abs/2610.25858",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "verifier_recoverability2026",
+    "url": "https://arxiv.org/abs/2610.27465",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "sera2026",
+    "url": "https://arxiv.org/abs/2610.29560",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "riseharness2026",
+    "url": "https://arxiv.org/abs/2610.27435v1",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "oo_harness2026",
+    "url": "https://arxiv.org/abs/2610.28380v1",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "herd2026",
+    "url": "https://arxiv.org/abs/2610.31401v1",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "mccl2026",
+    "url": "https://arxiv.org/abs/2610.29357v1",
+    "decision": "context_only",
+    "reason": "Conceptual framework retained in bibliography; not counted as an empirical intervention.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "beam2026",
+    "url": "https://arxiv.org/abs/2610.25119v1",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "verievolve2026",
+    "url": "https://arxiv.org/abs/2610.29005v1",
+    "decision": "included",
+    "reason": "Concrete mechanism and scoped evaluation extracted from primary text.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "trinity2026",
+    "url": "https://arxiv.org/abs/2610.36077v1",
+    "decision": "included",
+    "reason": "New primary-source extraction.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "selm2026",
+    "url": "https://arxiv.org/abs/2610.24630v1",
+    "decision": "included",
+    "reason": "New primary-source extraction.",
+    "screened_on": "2026-10-31"
+  },
+  {
+    "key": "physical_rsi_survey2026",
+    "url": "https://arxiv.org/abs/2610.38266v1",
+    "decision": "context_only",
+    "reason": "Full-text mechanism/evaluation inspected; survey stays contextual.",
+    "screened_on": "2026-10-31"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "Harness RSI Evidence Dataset",
+  "version": "0.2.0",
+  "status": "released",
+  "prepared_on": "2026-10-31",
+  "released_on": "2026-10-31",
+  "literature_search_through": "2026-10-31",
+  "legacy_evidence_cutoff": "2026-10-01",
+  "unit": "category-source record; not an independent intervention",
+  "annotation_basis": "Targeted AI-assisted primary-source checks plus explicitly labeled inherited narrative curation. Human adjudication pending.",
+  "license_status": "CC BY 4.0 applies only to project-owned original annotations and compilation, with explicit maintainer authorization on 2026-10-31. Third-party materials retain their original rights; see LICENSE-DATA.md.",
+  "inputs_sha256": {
+    "records.json": "6c743fa5af727028ca98b5ac113b516cf2930a6b4c33d5287c9d772e8a948f44",
+    "sources.json": "53e172bc481fb2bdaab3f8cee6bdfcee9763c39f9af9184753390815f548b089",
+    "screening.json": "359d7f04a58e0318afcfddbd25e095bf78f9a7122d2e5823b4064024b2b2a10d",
+    "corrections.json": "1dfa5d9d67f07fa660365bf7887d35395b35df1de4fb962e559a5f4724ebbf8d",
+    "search-log.json": "50485b2893e615538a09418c55a74ba16b97006ac1fd45e91d076762de617385"
+  },
+  "frozen_v010_sha256": {
+    "docs/dataset/v0.1.0/citation.bib": "981e6decec361b790a44b6f8fd39a17dae668c435eed9a7d8a56e33c9bfecd05",
+    "docs/dataset/v0.1.0/records.jsonl": "03b5f74e0cc3e0e52c4e58ba088e68ecd804a9f4b1426e9141d9e5deb2ad5dc4",
+    "docs/dataset/v0.1.0/schema.json": "ec2d5d77f254b137e70e032163db0c0a366f11b3cd8d930dfc6621b7dd2d46fa",
+    "docs/dataset/v0.1.0/checksums.json": "9b894fc9182ecef98ef3b8929707136a098bbd5a06891e63499e7eb1b7138327",
+    "docs/dataset/v0.1.0/DATASET_CARD.md": "23f01ffedd919a0df04d099f26189715db9d983f375acdb6ef7725552711ad4f",
+    "docs/dataset/v0.1.0/records.csv": "0f2b3e71a4850761546ee0b810c1e62d3e7765ace91357fc69b8b6d3413f6bfb",
+    "docs/dataset/v0.1.0/dataset.json": "f9a0c4ae38adf70eac5a2b6b1c53daa0afc34b25c45912b176f166dd9084d353"
+  },
+  "limitations": [
+    "Targeted literature search, not an exhaustive systematic review.",
+    "Legacy records not re-audited in this release retain explicit inherited status.",
+    "No independent dual annotation, agreement statistic, or experimental reproduction.",
+    "Signals and category-source records share studies and are not independent effects.",
+    "Review status is provenance, not an ordinal scientific-quality score.",
+    "Training boundary and transfer regimes are extracted per setting, not inferred from paper titles."
+  ],
+  "license": {
+    "id": "cc-by-4.0",
+    "scope": "Project-owned original annotations and compilation only; third-party material excluded.",
+    "notice": "LICENSE-DATA.md",
+    "authorized_on": "2026-10-31"
+  }
+}
