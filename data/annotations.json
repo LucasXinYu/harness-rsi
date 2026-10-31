@@ -3514,5 +3514,41 @@
       "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
       "source": "https://arxiv.org/abs/2610.29005v1"
     }
+  },
+  "trinity2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Couples verified environment generation with inherited harness modules and capability-aware routing around a frozen backbone. The combined result cannot be attributed to modules alone. Routing updates experience sequentially; it is not stateless independent evaluation. Source: Sections 3.1–3.6, 4.1–4.2; Table 2; Section 7",
+    "added_on": "2026-10-31",
+    "release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; full-text mechanism and author list inspected",
+      "source": "https://arxiv.org/abs/2610.36077v1"
+    }
+  },
+  "selm2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Maintains a bounded skill library through validated CRUD updates, utility-aware retrieval and retirement of ineffective skill names. Retirement blocks exact names, not semantic duplicates. Cross-benchmark warm-start transfer is left for future work. Source: Sections 3–4, 5.1, 5.3; Table 2; Appendix E",
+    "added_on": "2026-10-31",
+    "release": {
+      "value": "2026-10-17",
+      "precision": "day",
+      "basis": "First arXiv submission; full-text mechanism and author list inspected",
+      "source": "https://arxiv.org/abs/2610.24630v1"
+    }
+  },
+  "physical_rsi_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Conceptual survey distinguishing persistent capability, inherited improvement procedures and measured improver gains in physical AI. Its L0–L3 rubric requires matched starts, budgets and independent tests for stronger recursion claims; it is not a new empirical intervention. Source: Sections 2–3, Figure 1 and evaluation discussion.",
+    "added_on": "2026-10-31",
+    "release": {
+      "value": "2026-10-28",
+      "precision": "day",
+      "basis": "First arXiv submission; full-text mechanism and author list inspected",
+      "source": "https://arxiv.org/abs/2610.38266v1"
+    }
   }
 }
