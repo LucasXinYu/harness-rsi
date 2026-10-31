@@ -49,6 +49,12 @@ def validate_annotations(evidence, annotations):
 
 
 def dataset_outputs(root):
+    if (root / 'data/dataset_v020/release.json').exists():
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('dataset_v020', root / 'scripts/dataset_v020.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module.outputs(root)
     evidence_bytes = (root / 'docs/evidence.json').read_bytes()
     evidence = json.loads(evidence_bytes)
     config = json.loads((root / 'data/dataset.json').read_text())
