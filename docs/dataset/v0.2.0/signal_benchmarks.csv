@@ -1,0 +1,13 @@
+signal_id,benchmark_id
+machine-learning-engineering--aide2_2026::whole-runtime-transfer,mle-bench-lite22
+formal-theorem-proving--proverinterface2026::lean-port-tradeoff,putnambench-lean-interface-port
+browser-mediated-interaction--harnessx2026::color-tool-zero-hit-rate,webshop
+qa-over-supplied-records--memskill2026::scoped-evaluation,locomo
+qa-over-supplied-records--erskill2026::scoped-evaluation,longmemeval
+robot-manipulation--sera2026::scoped-evaluation,robomme
+terminal-based-engineering-tasks--riseharness2026::scoped-evaluation,terminal-bench-2-1
+multi-domain-agent-evaluation--herd2026::scoped-evaluation,trace-plus17
+application-and-service-workflows--verievolve2026::scoped-evaluation,mcpmark-filesystem
+application-and-service-workflows--selm2026::scoped-evaluation,spreadsheetbench
+application-and-service-workflows--harness_ceiling2026::scoped-evaluation,deepplanning
+repository-level-software-engineering--harnessadapt_rl2026::scoped-evaluation,swe-bench-verified

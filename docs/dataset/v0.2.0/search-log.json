@@ -1,0 +1,368 @@
+{
+  "documented_on": "2026-10-31",
+  "search_type": "targeted_discovery_and_reference_following",
+  "exhaustive": false,
+  "query_log_completeness": "Partial retrospective reconstruction; the following queries are confirmed from this run, not all searches or result pages.",
+  "queries": [
+    {
+      "date": "2026-10-31",
+      "service": "web search",
+      "query": "site:arxiv.org harness evolution October 29 30 31 2026"
+    },
+    {
+      "date": "2026-10-31",
+      "service": "web search",
+      "query": "site:arxiv.org continual recursive self improvement memory October 2026 29 30"
+    },
+    {
+      "date": "2026-10-31",
+      "service": "web search",
+      "query": "site:openreview.net agent harness memory self improvement 2026"
+    }
+  ],
+  "other_inputs": [
+    "Existing 282-paper bibliography and 95-record frozen evidence corpus",
+    "Freshness audit of pinned arXiv revisions on October 30, 2026",
+    "Targeted primary-text retrieval for 18 empirical additions, three contextual candidates and existing-record corrections"
+  ],
+  "result_denominator": null,
+  "denominator_reason": "Complete ranked search pages and deduplicated total hits were not archived; no recall or PRISMA denominator is claimed.",
+  "screening_ledger": "screening.json",
+  "primary_artifacts": [
+    {
+      "version": "2608.04968v1",
+      "url": "https://arxiv.org/html/2608.04968v1",
+      "status": "downloaded",
+      "sha256": "b7fd7972ba8d8ec216471fc8400abe7eef6a4fa78f07284aaaac7e71a6f68cec",
+      "characters": 85617
+    },
+    {
+      "version": "2608.04968v2",
+      "url": "https://arxiv.org/html/2608.04968v2",
+      "status": "downloaded",
+      "sha256": "acb979f6eb06dde3bc1c3556c35db3cb9642436ff96a5aca669d2d83ef0a2458",
+      "characters": 109878
+    },
+    {
+      "version": "2609.24972v2",
+      "url": "https://arxiv.org/html/2609.24972v2",
+      "status": "downloaded",
+      "sha256": "9700c39d8b0ff2054d2850fa563922f33f527bc6a8600971d527f75e1bba8972",
+      "characters": 77711
+    },
+    {
+      "version": "2609.24972v3",
+      "url": "https://arxiv.org/html/2609.24972v3",
+      "status": "downloaded",
+      "sha256": "60749d4fa0a13ca745108df3e3ed6d686919acbe3f7723b149aa98ff28847ac8",
+      "characters": 87713
+    },
+    {
+      "version": "2607.08124v1",
+      "url": "https://arxiv.org/html/2607.08124v1",
+      "status": "downloaded",
+      "sha256": "cf9833728ffb63d8a15e4eca72183f2e28bfd07f4bf021dd3ec4a51226312ae1",
+      "characters": 60323
+    },
+    {
+      "version": "2607.08124v2",
+      "url": "https://arxiv.org/html/2607.08124v2",
+      "status": "downloaded",
+      "sha256": "cb85f20cd6383bfe370c1555d06ec09ad810fb54e20fac1896939b1bd0127e8b",
+      "characters": 84463
+    },
+    {
+      "version": "2609.29166v1",
+      "url": "https://arxiv.org/html/2609.29166v1",
+      "status": "downloaded",
+      "sha256": "dad61c4edaec6fe01548549553dec05615458f80392c3536bdee4e2e47eb19b1",
+      "characters": 137527
+    },
+    {
+      "version": "2609.29166v2",
+      "url": "https://arxiv.org/html/2609.29166v2",
+      "status": "downloaded",
+      "sha256": "55e3bd9222260740b4f4d5097040de85292327416eebff9774e96911ac3574ed",
+      "characters": 138677
+    },
+    {
+      "version": "2609.14857v1",
+      "url": "https://arxiv.org/html/2609.14857v1",
+      "status": "downloaded",
+      "sha256": "5c32604de98a688aefa5bcf82d80bc036e11aafea6d2031faae5e0dcdccaed27",
+      "characters": 78770
+    },
+    {
+      "version": "2609.14857v2",
+      "url": "https://arxiv.org/html/2609.14857v2",
+      "status": "downloaded",
+      "sha256": "0729454957ba4913db9c1c9e1f0fb032784aa7d2865f832e9461358fa8d2e85e",
+      "characters": 80989
+    },
+    {
+      "version": "2606.14249v3",
+      "url": "https://arxiv.org/html/2606.14249v3",
+      "status": "downloaded",
+      "sha256": "b5afd68d9958107a21d16ff0b30ba7dd885e5154a6bc3218d13facc41c80a90c",
+      "characters": 145480
+    },
+    {
+      "version": "2609.26457v1",
+      "url": "https://arxiv.org/html/2609.26457v1",
+      "status": "downloaded",
+      "sha256": "b24fc47ac0e95f8643cbdb4890c1d1865b186760ca68442644088c2c25ffd2b0",
+      "characters": 99645
+    },
+    {
+      "version": "2609.39544v3",
+      "url": "https://arxiv.org/html/2609.39544v3",
+      "status": "downloaded",
+      "sha256": "52e0cd3419a5e7c82e28f02b778f2cefa83302ed1ed0407f640d4087242f45fe",
+      "characters": 60256
+    },
+    {
+      "version": "2610.01766v1",
+      "url": "https://arxiv.org/html/2610.01766v1",
+      "status": "downloaded",
+      "sha256": "edfb80044c2b2d19c644abe6a156b7c33a5f7eb04dd6d2a7dd1c991a53fe4e6f",
+      "characters": 40069
+    },
+    {
+      "version": "2610.36077v1",
+      "url": "https://arxiv.org/html/2610.36077v1",
+      "status": "downloaded",
+      "sha256": "e5fedaf7ae2f0b934743e532a8ec9fe160515266b6983318c160a042e03b57d7",
+      "characters": 105328
+    },
+    {
+      "version": "2610.38266v1",
+      "url": "https://arxiv.org/html/2610.38266v1",
+      "status": "downloaded",
+      "sha256": "96620a9bd5890e63dd1d4149167f954b8b8179a0825058db61497e11dc3d200b",
+      "characters": 173510
+    },
+    {
+      "version": "2610.24630v1",
+      "url": "https://arxiv.org/html/2610.24630v1",
+      "status": "downloaded",
+      "sha256": "bcd3883816b127d4841fc09ba3aeb3b82e5eba33704922368e4a2ee833faf525",
+      "characters": 57989
+    },
+    {
+      "version": "2602.02474v1",
+      "url": "https://arxiv.org/html/2602.02474v1",
+      "status": "downloaded",
+      "sha256": "0ebfe905d0d178b15b0d89d9962f3ad5c6a4a8646726fdee4b6f052493c0345b",
+      "characters": 82702
+    },
+    {
+      "version": "2608.12720v1",
+      "url": "https://arxiv.org/html/2608.12720v1",
+      "status": "downloaded",
+      "sha256": "067e7f8f78e45b51ab9a952da69a7a5322db7e75f4095c1f677af689fb872767",
+      "characters": 94176
+    },
+    {
+      "version": "2607.29468v1",
+      "url": "https://arxiv.org/html/2607.29468v1",
+      "status": "downloaded",
+      "sha256": "9cecd36e4c244f3b262e6fc7d1d4c21bbfbe38026cb62c6eb8128e1303a9ede8",
+      "characters": 45479
+    },
+    {
+      "version": "2610.11655v1",
+      "url": "https://arxiv.org/html/2610.11655v1",
+      "status": "downloaded",
+      "sha256": "8e146ba9cfb15ddefceaa59286fbc0b5349ed8f79c1382991f0e1ac62881e0e8",
+      "characters": 81878
+    },
+    {
+      "version": "2610.18813v1",
+      "url": "https://arxiv.org/html/2610.18813v1",
+      "status": "downloaded",
+      "sha256": "d4b4049129dc8688cba7c960845e49f17d84a9ae20326f03dbc6fa373bb92a60",
+      "characters": 18924
+    },
+    {
+      "version": "2610.28201v1",
+      "url": "https://arxiv.org/html/2610.28201v1",
+      "status": "downloaded",
+      "sha256": "8203db23179031aa5e65596712cb5fd4dae0789cdaae6949922b9cacf56247f5",
+      "characters": 31666
+    },
+    {
+      "version": "2610.22466v1",
+      "url": "https://arxiv.org/html/2610.22466v1",
+      "status": "downloaded",
+      "sha256": "ba914937307086c625fd4465bfe0a3d971c6025e26279db5e3f4c651f5576683",
+      "characters": 65489
+    },
+    {
+      "version": "2610.29458v1",
+      "url": "https://arxiv.org/html/2610.29458v1",
+      "status": "downloaded",
+      "sha256": "111445c47936a1782a7fcd6075f6148cec87a23edad1232e1d83bb741c5177b3",
+      "characters": 66932
+    },
+    {
+      "version": "2610.28069v1",
+      "url": "https://arxiv.org/html/2610.28069v1",
+      "status": "downloaded",
+      "sha256": "6d1bc4a7d1206cef51bb698ea81755c7513227d2c6c954023c77608247ae186b",
+      "characters": 122377
+    },
+    {
+      "version": "2610.25858v1",
+      "url": "https://arxiv.org/html/2610.25858v1",
+      "status": "downloaded",
+      "sha256": "54c18f131d41851a989e415b09624a48dee10ac0f1ed6a500487a4969069b425",
+      "characters": 77133
+    },
+    {
+      "version": "2610.27465v1",
+      "url": "https://arxiv.org/html/2610.27465v1",
+      "status": "downloaded",
+      "sha256": "bf39f30162b4386026144607806b025b1a2cf61bc109c5e895df186f064ea483",
+      "characters": 49554
+    },
+    {
+      "version": "2610.29560v1",
+      "url": "https://arxiv.org/html/2610.29560v1",
+      "status": "downloaded",
+      "sha256": "ec3d76f5dad211af4040d359d9b2f1405c8fe31947e3a6efa024d836e904ed22",
+      "characters": 56578
+    },
+    {
+      "version": "2610.27435v1",
+      "url": "https://arxiv.org/html/2610.27435v1",
+      "status": "downloaded",
+      "sha256": "56f766a32f77f99498c941e55c40b85e4546010456c26422156446b296576dd2",
+      "characters": 122499
+    },
+    {
+      "version": "2610.28380v1",
+      "url": "https://arxiv.org/html/2610.28380v1",
+      "status": "downloaded",
+      "sha256": "ab3774ffd2d6ef7af9b88bd00aa6071f6503ea0ea97206fa618b0e6f467adc44",
+      "characters": 72038
+    },
+    {
+      "version": "2610.31401v1",
+      "url": "https://arxiv.org/html/2610.31401v1",
+      "status": "downloaded",
+      "sha256": "f6109f4f6e5398d821b33ad23db38c8dce2bee726cdf4dc5dbcbc9968cc52117",
+      "characters": 96174
+    },
+    {
+      "version": "2610.29357v1",
+      "url": "https://arxiv.org/html/2610.29357v1",
+      "status": "downloaded",
+      "sha256": "30655ddadb2b88ce164f95870ed6d0fc8ee56f70cd84d95cbce048e87c673b55",
+      "characters": 197417
+    },
+    {
+      "version": "2610.25119v1",
+      "url": "https://arxiv.org/html/2610.25119v1",
+      "status": "downloaded",
+      "sha256": "5af2d28b9f5625a793e19cabef12d6d8d83a966ba24d7e071e12856696b606f7",
+      "characters": 61067
+    },
+    {
+      "version": "2610.29005v1",
+      "url": "https://arxiv.org/html/2610.29005v1",
+      "status": "downloaded",
+      "sha256": "304ebd14a1d1941a4ea8038be5ec04279a9c243fa2cacc59fa66fb521db4d9af",
+      "characters": 103760
+    }
+  ],
+  "metadata_retrieval": {
+    "service": "arXiv Atom API",
+    "date": "2026-10-31",
+    "mode": "exact pinned version lookup",
+    "versions": [
+      "2504.15228v2",
+      "2608.20169v2",
+      "2608.15071v2",
+      "2606.05922v3",
+      "2605.25430v2",
+      "2609.33378v1",
+      "2609.38413v1",
+      "2609.24972v3",
+      "2608.04968v1",
+      "2608.04968v2",
+      "2610.22466v1",
+      "2607.08124v2",
+      "2609.29166v1",
+      "2610.29005v1",
+      "2610.29560v1",
+      "2610.28380v1",
+      "2610.28201v1",
+      "2610.28069v1",
+      "2609.14857v1",
+      "2610.25119v1",
+      "2610.31401v1",
+      "2505.22967v1",
+      "2603.28052v1",
+      "2605.09998v1",
+      "2608.01918v1",
+      "2609.26457v1",
+      "2608.29621v1",
+      "2609.32458v1",
+      "2608.19013v2",
+      "2610.01766v1",
+      "2607.13683v2",
+      "2607.26722v2",
+      "2610.00383v1",
+      "2609.33146v1",
+      "2609.37950v1",
+      "2608.07545v1",
+      "2609.29166v2",
+      "2610.29357v1",
+      "2610.18813v1",
+      "2608.16590v1",
+      "2610.36077v1",
+      "2610.29458v1",
+      "2505.22954v3",
+      "2602.02474v1",
+      "2410.10762v4",
+      "2607.03935v1",
+      "2608.06153v1",
+      "2609.00196v1",
+      "2608.26334v1",
+      "2608.12720v1",
+      "2609.35530v1",
+      "2606.08091v2",
+      "2610.11655v1",
+      "2609.39544v3",
+      "2606.14249v3",
+      "2609.39765v1",
+      "2610.25858v1",
+      "2610.27435v1",
+      "2504.07079v1",
+      "2604.25850v4",
+      "2607.17352v1",
+      "2608.18933v1",
+      "2606.09498v3",
+      "2607.29468v1",
+      "2609.37834v1",
+      "2609.38372v1",
+      "2609.02749v1",
+      "2607.01709v1",
+      "2605.13941v1",
+      "2605.27873v1",
+      "2605.27276v2",
+      "2608.11350v2",
+      "2609.00829v1",
+      "2608.10178v1",
+      "2609.14857v2",
+      "2607.08124v1",
+      "2609.24972v2",
+      "2605.24539v2",
+      "2609.40169v1",
+      "2610.24630v1",
+      "2610.27465v1",
+      "2610.38266v1"
+    ],
+    "limitations": "Metadata checks do not imply full-text claim verification. Non-arXiv source revision dates can remain unknown."
+  }
+}
