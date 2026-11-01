@@ -71,7 +71,7 @@ def schema():
                      'scope': string, 'primary_support': support}, 'additionalProperties': False}
     })
     return {'$schema': 'https://json-schema.org/draft/2020-12/schema',
-            'title': 'Harness RSI evidence record v0.2', 'type': 'object',
+            'title': 'Harness RSI evidence record schema', 'type': 'object',
             'required': list(props), 'properties': props, 'additionalProperties': False}
 
 def validate(records, sources):
@@ -118,6 +118,8 @@ def outputs(root):
         if digest((d/name).read_bytes()) != expected: raise ValueError('Unreviewed input change: '+name)
     for path, expected in config['frozen_v010_sha256'].items():
         if digest((root/path).read_bytes()) != expected: raise ValueError('Published v0.1.0 modified: '+path)
+    for path, expected in config.get('frozen_v020_sha256', {}).items():
+        if digest((root/path).read_bytes()) != expected: raise ValueError('Published v0.2.0 modified: '+path)
     records, sources = read(d/'records.json'), read(d/'sources.json')
     validate(records, sources)
     checked = sum(r['review']['status']=='primary_source_checked' for r in records)
@@ -128,7 +130,7 @@ def outputs(root):
             'signal_count': sum(len(r['signals']) for r in records),
             'evidence_cutoff': config['literature_search_through'],
             'evidence_cutoff_meaning': 'Targeted search horizon, not a universal primary-review date; see per-record dates.'}
-    meta.pop('inputs_sha256'); meta.pop('frozen_v010_sha256')
+    meta.pop('inputs_sha256'); meta.pop('frozen_v010_sha256'); meta.pop('frozen_v020_sha256', None)
     dataset = {'metadata': meta, 'records': records}
     release = root/'docs/dataset'/('v'+config['version'])
     files = {release/'dataset.json': dumps(dataset), release/'records.jsonl': ''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in records),
@@ -190,7 +192,7 @@ def outputs(root):
     checked_ids={r['id'] for r in records if r['review']['status']=='primary_source_checked'}
     columns=tables['records.csv'][1]
     files[release/'primary-checked.flat.jsonl']=''.join(json.dumps({k:r.get(k) for k in columns},ensure_ascii=False)+'\n' for r in flatrecords if r['id'] in checked_ids)
-    files[release/'citation.bib']='@misc{harness_rsi_evidence_v020,\n  title = {Harness RSI Evidence Dataset},\n  author = {{Harness RSI project team}},\n  year = {2026},\n  version = {'+config['version']+'},\n  url = {https://huggingface.co/datasets/lucas1026/harness-rsi-evidence},\n  note = {Versioned source-traceable curation; AI-assisted review coverage disclosed in the dataset card}\n}\n'
+    files[release/'citation.bib']='@misc{harness_rsi_evidence_v'+config['version'].replace('.','')+',\n  title = {Harness RSI Evidence Dataset},\n  author = {{Harness RSI project team}},\n  year = {2026},\n  version = {'+config['version']+'},\n  url = {https://huggingface.co/datasets/lucas1026/harness-rsi-evidence},\n  note = {Versioned source-traceable curation; AI-assisted review coverage disclosed in the dataset card}\n}\n'
     files[release/'checksums.json']=dumps({p.name:digest(text.encode()) for p,text in sorted(files.items())})
     pointer={'version':config['version'],'status':config['status'],'prepared_on':config['prepared_on'],'released_on':config['released_on'],
              'path':'dataset/v'+config['version']+'/dataset.json','sha256':digest(files[release/'dataset.json'].encode())}
