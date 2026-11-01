@@ -7,9 +7,12 @@ from pathlib import Path
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--outcome', choices=['improvement', 'regression', 'no_gain', 'mixed', 'not_assessed'])
-    parser.add_argument('--path', type=Path, default=Path(__file__).resolve().parents[1] /
-                        'docs/dataset/v0.2.0/dataset.json')
+    parser.add_argument('--path', type=Path, help='Pinned dataset JSON; defaults to the current release pointer.')
     arguments = parser.parse_args()
+    if arguments.path is None:
+        docs = Path(__file__).resolve().parents[1] / 'docs'
+        pointer = json.loads((docs / 'dataset/latest.json').read_text())
+        arguments.path = docs / pointer['path']
     dataset = json.loads(arguments.path.read_text())
     metadata = dataset['metadata']
     print(f"{metadata['name']} v{metadata['version']}: {metadata['screened_record_count']}/"
