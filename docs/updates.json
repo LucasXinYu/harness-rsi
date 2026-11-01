@@ -17,6 +17,19 @@
   ],
   "releases": [
     {
+      "id": "dataset-literature-2026-11-01",
+      "date": "2026-11-01",
+      "kind": "website",
+      "title": "20 literature additions and evidence dataset v0.3.0",
+      "records": 95,
+      "changes": [
+        "Added 20 primary-text-inspected papers, bringing the bibliography to 305 papers and 11 resources. Targeted search through November 1 returned 118 unique candidates; 96 keyword hits remain unscreened.",
+        "Released dataset v0.3.0: 132 records, 100 works, 47 targeted primary checks and 32 scoped observations. Added 19 records; 85 inherited records and zero human-adjudicated records remain explicit.",
+        "Distinguished meta-skill evolution, evolving rubrics, trained memory selectors, unchanged model/data transfer and task-success versus safeguard regressions. Added task categories for combinatorial optimization, navigation and 3D reconstruction.",
+        "Preserved all published v0.1.0/v0.2.0 files, the October 1 survey atlas and the reading PDF. Manuscript and preprint submission are not part of this update."
+      ]
+    },
+    {
       "id": "dataset-release-2026-10-31",
       "date": "2026-10-31",
       "kind": "website",
