@@ -1,0 +1,133 @@
+record_id,status,reviewed_on,reviewer,human_review_status,scope
+program-generation-and-editing--sica2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+program-generation-and-editing--tthe2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+program-generation-and-editing--dgm2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+program-generation-and-editing--evolvenet2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+program-generation-and-editing--aflow2024,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+program-generation-and-editing--harnessbank2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+program-generation-and-editing--mermaidflow2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+program-generation-and-editing--flowevo2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--dgm2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--sica2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--multitask_selfharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--selfharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--tthe2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+repository-level-software-engineering--harnesscompass2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--ahe2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--darwinx2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--mixture_branches2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--rho2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--one_recipe2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--codeskill2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--gse2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+repository-level-software-engineering--skillforge2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--metaharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--ahe2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--modularrsi2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+terminal-based-engineering-tasks--selfharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--mixture_branches2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--multitask_selfharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--rrsi2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+terminal-based-engineering-tasks--darwinx2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--rho2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+terminal-based-engineering-tasks--codeskill2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+machine-learning-engineering--aide2_2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+machine-learning-engineering--sia2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+machine-learning-engineering--aibuildai2_2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+machine-learning-engineering--disco2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+arithmetic-word-problems--adas2024,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+arithmetic-word-problems--aflow2024,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+arithmetic-word-problems--mermaidflow2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+arithmetic-word-problems--flowevo2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--aflow2024,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--metaharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--coharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--harnessbank2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--mermaidflow2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--mixture_branches2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--wda2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+competition-and-advanced-mathematics--whale2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+formal-theorem-proving--lean_coevolution2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+formal-theorem-proving--rsiexam_lean2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+formal-theorem-proving--proverinterface2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+formal-theorem-proving--proofevolve2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+legal-charge-classification--metaharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+legal-charge-classification--mce2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+legal-charge-classification--taskcoevolve2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+legal-charge-classification--drevo2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+symptom-to-disease-classification--metaharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+symptom-to-disease-classification--mce2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+symptom-to-disease-classification--taskcoevolve2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+symptom-to-disease-classification--drevo2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+symptom-to-disease-classification--hase2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+qa-over-supplied-records--evolvemem2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+qa-over-supplied-records--memcodex2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+qa-over-supplied-records--harnessevolve2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+qa-over-supplied-records--hcl2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+open-web-information-seeking--memevolve2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+open-web-information-seeking--harnessx2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+open-web-information-seeking--liteevo2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+open-web-information-seeking--harnessevolve2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+browser-mediated-interaction--skillweaver2025,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+browser-mediated-interaction--wei2026evo,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+browser-mediated-interaction--liteevo2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+browser-mediated-interaction--harnessx2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+application-and-service-workflows--liteevo2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+application-and-service-workflows--scholarevolve2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+application-and-service-workflows--wei2026evo,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+application-and-service-workflows--harnessx2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+application-and-service-workflows--rrsi2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+game-playing--autoharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+game-playing--continualharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+game-playing--che2026demoevolve,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+game-playing--hcl2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+robot-manipulation--zetta2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+robot-manipulation--shaper2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+robot-manipulation--harnesspai2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+robot-manipulation--robot_harness_distillation2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+video-question-answering--videorsi2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+video-question-answering--vidharness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+temporal-grounding--videoevolve2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+image-perception-and-question-answering--hcl2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+image-generation--autoref2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+image-generation--comfyclaw2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+image-generation--evogen_harness2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+video-production--videoweaver2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+video-production--cineforge2026,legacy_curated,,,not_recorded,Inherited narrative curation; not re-audited in this release.
+qa-over-supplied-records--memskill2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+qa-over-supplied-records--erskill2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+open-web-information-seeking--sesa2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+multi-domain-agent-evaluation--mad_rsi2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+robot-manipulation--sera2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+terminal-based-engineering-tasks--riseharness2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+application-and-service-workflows--oo_harness2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+multi-domain-agent-evaluation--herd2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+competition-and-advanced-mathematics--beam2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+application-and-service-workflows--verievolve2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+multi-domain-agent-evaluation--trinity2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+application-and-service-workflows--selm2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+application-and-service-workflows--harness_ceiling2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+multi-domain-agent-evaluation--harness_delta_attribution2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+application-and-service-workflows--harness_scaling2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+repository-level-software-engineering--harnessadapt_rl2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+multi-domain-agent-evaluation--continual_learners2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+application-and-service-workflows--verifier_recoverability2026,primary_source_checked,2026-10-31,Codex (AI-assisted source inspection),pending,"Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
+multi-objective-combinatorial-optimization--hemo2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+application-and-service-workflows--karma2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+machine-learning-engineering--molrsi2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+multi-domain-agent-evaluation--skillcompiler2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+embodied-navigation--evolife2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+machine-learning-engineering--recrsi2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+qa-over-supplied-records--memsteer2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+image-generation--vevo_harness2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+qa-over-supplied-records--calm2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+application-and-service-workflows--masked_erosion2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+browser-mediated-interaction--gepa_curator2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+compositional-3d-reconstruction--sceneevolve2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+multi-domain-agent-evaluation--ruharness2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+repository-level-software-engineering--coharl2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+multi-domain-agent-evaluation--skill_infinity2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+program-generation-and-editing--rsiv_harness2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+qa-over-supplied-records--amie2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+multi-domain-agent-evaluation--multievoskill2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
+multi-domain-agent-evaluation--cle2026,primary_source_checked,2026-11-01,Codex (AI-assisted source inspection),pending,"Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
