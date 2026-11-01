@@ -145,5 +145,145 @@
     "decision": "context_only",
     "reason": "Full-text mechanism/evaluation inspected; survey stays contextual.",
     "screened_on": "2026-10-31"
+  },
+  {
+    "key": "video_harness_survey2026",
+    "url": "https://arxiv.org/abs/2610.40191v1",
+    "decision": "context_only",
+    "reason": "Conceptual survey; not an empirical intervention.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "hemo2026",
+    "url": "https://arxiv.org/abs/2610.40023v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "karma2026",
+    "url": "https://arxiv.org/abs/2610.39884v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "molrsi2026",
+    "url": "https://arxiv.org/abs/2610.39714v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "skillcompiler2026",
+    "url": "https://arxiv.org/abs/2610.39508v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "evolife2026",
+    "url": "https://arxiv.org/abs/2610.39446v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "recrsi2026",
+    "url": "https://arxiv.org/abs/2610.39352v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "memsteer2026",
+    "url": "https://arxiv.org/abs/2610.39276v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "vevo_harness2026",
+    "url": "https://arxiv.org/abs/2610.39158v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "calm2026",
+    "url": "https://arxiv.org/abs/2610.38573v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "masked_erosion2026",
+    "url": "https://arxiv.org/abs/2610.38392v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "gepa_curator2026",
+    "url": "https://arxiv.org/abs/2610.37651v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "sceneevolve2026",
+    "url": "https://arxiv.org/abs/2610.37046v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "ruharness2026",
+    "url": "https://arxiv.org/abs/2610.36826v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "coharl2026",
+    "url": "https://arxiv.org/abs/2610.36469v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "skill_infinity2026",
+    "url": "https://arxiv.org/abs/2610.35434v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "rsiv_harness2026",
+    "url": "https://arxiv.org/abs/2610.35316v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "amie2026",
+    "url": "https://arxiv.org/abs/2610.34977v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "multievoskill2026",
+    "url": "https://arxiv.org/abs/2610.34260v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
+  },
+  {
+    "key": "cle2026",
+    "url": "https://arxiv.org/abs/2610.33956v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
+    "screened_on": "2026-11-01"
   }
 ]

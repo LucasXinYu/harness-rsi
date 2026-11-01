@@ -1,0 +1,2862 @@
+[
+  {
+    "key": "sica2025",
+    "title": "A Self-Improving Coding Agent",
+    "authors": "Robeyns, Maxime and Szummer, Martin and Aitchison, Laurence",
+    "kind": "paper",
+    "arxiv_id": "2504.15228",
+    "doi": null,
+    "first_release": {
+      "value": "2025-04-21",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2504.15228v2"
+    },
+    "sources": [
+      {
+        "name": "SICA (v2)",
+        "url": "https://arxiv.org/html/2504.15228v2",
+        "locator": "§3, §3.1; §4 Figure 3/Table 1; Appendix A–C; Appendix D, updates 6, 8–10, 13–14",
+        "first_release_date": "2025-04-21",
+        "source_version_date": "2025-05-16",
+        "source_version": "2504.15228v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "tthe2026",
+    "title": "TTHE: Test-Time Harness Evolution",
+    "authors": "Nie, Jun and Zhang, Yonggang and Song, Jun and Cai, Qianshu and Yu, Dahai and Guo, Yike and Tian, Xinmei and Han, Bo",
+    "kind": "paper",
+    "arxiv_id": "2607.08124",
+    "doi": "10.48550/arXiv.2607.08124",
+    "first_release": {
+      "value": "2026-07-09",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.08124v1"
+    },
+    "sources": [
+      {
+        "name": "TTHE: verification only after exposed failures",
+        "url": "https://arxiv.org/html/2607.08124v2",
+        "locator": "Sections 4–5; Figure 5; Appendix A",
+        "first_release_date": "2026-07-09",
+        "source_version_date": "2026-10-12",
+        "source_version": "2607.08124v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "TTHE: treating an empty patch as a rerun condition",
+        "url": "https://arxiv.org/html/2607.08124v2",
+        "locator": "Sections 4–5; Figure 5; Appendix A",
+        "first_release_date": "2026-07-09",
+        "source_version_date": "2026-10-12",
+        "source_version": "2607.08124v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "dgm2025",
+    "title": "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents",
+    "authors": "Zhang, Jenny and Hu, Shengran and Lu, Cong and Lange, Robert and Clune, Jeff",
+    "kind": "paper",
+    "arxiv_id": "2505.22954",
+    "doi": null,
+    "first_release": {
+      "value": "2025-05-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2505.22954v3"
+    },
+    "sources": [
+      {
+        "name": "DGM (v3)",
+        "url": "https://arxiv.org/html/2505.22954v3",
+        "locator": "§3–4.4; Appendix C.1, E.2–E.5, F.1–F.2",
+        "first_release_date": "2025-05-29",
+        "source_version_date": "2026-03-12",
+        "source_version": "2505.22954v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "DGM (v3)",
+        "url": "https://arxiv.org/html/2505.22954v3#A6.SS2",
+        "locator": "Appendix F.2: SolutionAttempt/run_tests/forward; tools/edit.py; HTML L3622–4395",
+        "first_release_date": "2025-05-29",
+        "source_version_date": "2026-03-12",
+        "source_version": "2505.22954v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "DGM (v3)",
+        "url": "https://arxiv.org/html/2505.22954v3#A6.SS1",
+        "locator": "Appendix F.1: coding_agent.py is_patch_valid/forward; tools/edit.py; llm_withtools.py summarize_messages; HTML L1747–3620",
+        "first_release_date": "2025-05-29",
+        "source_version_date": "2026-03-12",
+        "source_version": "2505.22954v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "evolvenet2026",
+    "title": "EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement",
+    "authors": "Nie, Jun and Zhang, Yonggang and Cai, Qianshu and Cheung, Yiu-ming and Tian, Xinmei and Han, Bo",
+    "kind": "paper",
+    "arxiv_id": "2608.04968",
+    "doi": "10.48550/arXiv.2608.04968",
+    "first_release": {
+      "value": "2026-08-05",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.04968v1"
+    },
+    "sources": [
+      {
+        "name": "EvolveNet: separating library-specific and shared behavior",
+        "url": "https://arxiv.org/html/2608.04968v2",
+        "locator": "Section 5.4; Appendix I.5 and Table 3",
+        "first_release_date": "2026-08-05",
+        "source_version_date": "2026-10-11",
+        "source_version": "2608.04968v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "aflow2024",
+    "title": "AFlow: Automating Agentic Workflow Generation",
+    "authors": "Zhang, Jiayi and Xiang, Jinyu and Yu, Zhaoyang and Teng, Fengwei and Chen, XiongHui and Chen, Jiaqi and Zhuge, Mingchen and Cheng, Xin and Hong, Sirui and Wang, Jinlin and Zheng, Bingnan and Liu, Bang and Luo, Yuyu and Wu, Chenglin",
+    "kind": "paper",
+    "arxiv_id": "2410.10762",
+    "doi": null,
+    "first_release": {
+      "value": "2024-10-14",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2410.10762v4"
+    },
+    "sources": [
+      {
+        "name": "AFlow (v4)",
+        "url": "https://arxiv.org/pdf/2410.10762v4",
+        "locator": "§4–5; Appendix A.3–A.6; Appendix B.1, optimal MBPP workflow (PDF p.22)",
+        "first_release_date": "2024-10-14",
+        "source_version_date": "2025-04-15",
+        "source_version": "2410.10762v4",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "AFlow",
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5492ecbce4439401798dcd2c90be94cd-Paper-Conference.pdf",
+        "locator": "Section 4; Figures 5–6",
+        "first_release_date": "2024-10-14",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      },
+      {
+        "name": "AFlow",
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/5492ecbce4439401798dcd2c90be94cd-Paper-Conference.pdf",
+        "locator": "Appendix B.1, MATH workflow, PDF p. 21",
+        "first_release_date": "2024-10-14",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "harnessbank2026",
+    "title": "HarnessBank: Semantic Gene-Bank Search with Gated Verification for Agent-Harness Self-Evolution",
+    "authors": "Luo, Xiaotian and Xue, Dizhan and Wang, Fengxingyu and Hu, Chuanrui and Deng, Yafeng",
+    "kind": "paper",
+    "arxiv_id": "2607.13683",
+    "doi": "10.48550/arXiv.2607.13683",
+    "first_release": {
+      "value": "2026-07-15",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.13683v2"
+    },
+    "sources": [
+      {
+        "name": "HarnessBank (v2)",
+        "url": "https://arxiv.org/html/2607.13683v2",
+        "locator": "§4.1–4.2,4.5–4.6; Table1",
+        "first_release_date": "2026-07-15",
+        "source_version_date": "2026-07-30",
+        "source_version": "2607.13683v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "HarnessBank",
+        "url": "https://arxiv.org/abs/2607.13683v2",
+        "locator": "Sections 4.1–4.2, 4.6; Tables 1–2",
+        "first_release_date": "2026-07-15",
+        "source_version_date": "2026-07-30",
+        "source_version": "2607.13683v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "mermaidflow2025",
+    "title": "MermaidFlow: Redefining Agentic Workflow Generation via Safety-Constrained Evolutionary Programming",
+    "authors": "Zheng, Chengqi and Chen, Jianda and Lyu, Yueming and Ng, Wen Zheng Terence and Zhang, Haopeng and Ong, Yew-Soon and Tsang, Ivor and Yin, Haiyan",
+    "kind": "paper",
+    "arxiv_id": "2505.22967",
+    "doi": "10.48550/arXiv.2505.22967",
+    "first_release": {
+      "value": "2025-05-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2505.22967v1"
+    },
+    "sources": [
+      {
+        "name": "MermaidFlow",
+        "url": "https://arxiv.org/abs/2505.22967v1",
+        "locator": "Section 5.4, Figure 4; Appendix B.3",
+        "first_release_date": "2025-05-29",
+        "source_version_date": "2025-05-29",
+        "source_version": "2505.22967v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "MermaidFlow",
+        "url": "https://arxiv.org/abs/2505.22967v1",
+        "locator": "Appendix B.1",
+        "first_release_date": "2025-05-29",
+        "source_version_date": "2025-05-29",
+        "source_version": "2505.22967v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "MermaidFlow",
+        "url": "https://arxiv.org/abs/2505.22967v1",
+        "locator": "Appendix B.2",
+        "first_release_date": "2025-05-29",
+        "source_version_date": "2025-05-29",
+        "source_version": "2505.22967v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "flowevo2026",
+    "title": "FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills",
+    "authors": "Ren, Zeyu and Yue, Ling and Li, Ran and Wang, Yishu and Xu, Shengxiang and Liu, Hanmo and Pan, Shaowu and Di, Shimin",
+    "kind": "paper",
+    "arxiv_id": null,
+    "doi": "10.48550/arXiv.2607.21596",
+    "first_release": {
+      "value": "2026-04-18",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.21596v2"
+    },
+    "sources": [
+      {
+        "name": "FlowEvo",
+        "url": "https://openreview.net/forum?id=hU2N7IIkcE",
+        "locator": "Sections 3–4; Appendix A",
+        "first_release_date": "2026-04-18",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      },
+      {
+        "name": "FlowEvo",
+        "url": "https://openreview.net/forum?id=hU2N7IIkcE",
+        "locator": "Sections 3–4; Appendix D.3",
+        "first_release_date": "2026-04-18",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "multitask_selfharness2026",
+    "title": "Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer",
+    "authors": "Xu, Qiankai",
+    "kind": "paper",
+    "arxiv_id": "2609.38372",
+    "doi": "10.48550/arXiv.2609.38372",
+    "first_release": {
+      "value": "2026-09-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.38372v1"
+    },
+    "sources": [
+      {
+        "name": "Multi-Task Self-Harness (v1)",
+        "url": "https://arxiv.org/html/2609.38372v1",
+        "locator": "§3.2–3.4; §4.1 Table 3; §5.1–5.7 Table 4; Appendix C",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-09-29",
+        "source_version": "2609.38372v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "selfharness2026",
+    "title": "Self-Harness: Harnesses That Improve Themselves",
+    "authors": "Zhang, Hangfan and Zhang, Shao and Li, Kangcong and Zhang, Chen and Chen, Yang and Zhang, Yiqun and Bai, Lei and Hu, Shuyue",
+    "kind": "paper",
+    "arxiv_id": "2606.09498",
+    "doi": "10.48550/arXiv.2606.09498",
+    "first_release": {
+      "value": "2026-06-08",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.09498v3"
+    },
+    "sources": [
+      {
+        "name": "Self-Harness (v3)",
+        "url": "https://arxiv.org/html/2606.09498v3",
+        "locator": "§3.3,4.1; Figure3; Appendix A.2",
+        "first_release_date": "2026-06-08",
+        "source_version_date": "2026-08-20",
+        "source_version": "2606.09498v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "Self-Harness (v3)",
+        "url": "https://arxiv.org/html/2606.09498v3",
+        "locator": "§4.3 Figures5–8; Appendix B.1–B.2",
+        "first_release_date": "2026-06-08",
+        "source_version_date": "2026-08-20",
+        "source_version": "2606.09498v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "harnesscompass2026",
+    "title": "HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses",
+    "authors": "Zhang, Luan and Zhou, Ruochen and Song, Dandan and Chen, Zhengyu and Tian, Yuhang and Yang, Jun and Ma, Huipeng and Li, Chenhao and Feng, Guangyuan and Li, Xudong and Jin, Yizhou and Xu, Yan",
+    "kind": "paper",
+    "arxiv_id": "2608.01918",
+    "doi": null,
+    "first_release": {
+      "value": "2026-08-03",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.01918v1"
+    },
+    "sources": [
+      {
+        "name": "HarnessCompass (v1)",
+        "url": "https://arxiv.org/html/2608.01918v1",
+        "locator": "Experiments Setup; Appendix C Two kinds of accumulated memory",
+        "first_release_date": "2026-08-03",
+        "source_version_date": "2026-08-03",
+        "source_version": "2608.01918v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "ahe2026",
+    "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
+    "authors": "Lin, Jiahang and Liu, Shichun and Pan, Chengjun and Lin, Lizhi and Dou, Shihan and Xi, Zhiheng and Huang, Xuanjing and Yan, Hang and Han, Zhenhua and Gui, Tao and Jiang, Yu-Gang",
+    "kind": "paper",
+    "arxiv_id": "2604.25850",
+    "doi": "10.48550/arXiv.2604.25850",
+    "first_release": {
+      "value": "2026-04-28",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2604.25850v4"
+    },
+    "sources": [
+      {
+        "name": "AHE (v4)",
+        "url": "https://arxiv.org/html/2604.25850v4",
+        "locator": "§4.1–4.4; Appendix A Table 4; B.1",
+        "first_release_date": "2026-04-28",
+        "source_version_date": "2026-05-18",
+        "source_version": "2604.25850v4",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "AHE (v4)",
+        "url": "https://arxiv.org/html/2604.25850v4",
+        "locator": "Appendix C.1–C.2; Figures 8–11; commits 169c34c,4e0aab9,ff0cf3d,9651986,ca35f53,a4a4a29",
+        "first_release_date": "2026-04-28",
+        "source_version_date": "2026-05-18",
+        "source_version": "2604.25850v4",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "darwinx2026",
+    "title": "DarwinX: Evolving Agent Harnesses Through Natural Selection",
+    "authors": "Zhang, Yifan and Dai, Yutong and Tan, Juntao and Yang, Luyu and Mullur, Rishi and Hoang, Thai and Hu, Zhiyuan and Zhu, James and Mui, Phil and Savarese, Silvio and Xu, Ran and Chen, Zeyuan",
+    "kind": "paper",
+    "arxiv_id": "2608.07545",
+    "doi": "10.48550/arXiv.2608.07545",
+    "first_release": {
+      "value": "2026-07-31",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.07545v1"
+    },
+    "sources": [
+      {
+        "name": "DarwinX (v1)",
+        "url": "https://arxiv.org/html/2608.07545v1",
+        "locator": "§3,§8.1 Table6; Appendix B Table8",
+        "first_release_date": "2026-07-31",
+        "source_version_date": "2026-07-31",
+        "source_version": "2608.07545v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "mixture_branches2026",
+    "title": "Mixture of Self-Improving Branches For Agent Harness Optimization",
+    "authors": "Dong, Haoyu and Zhou, Yuhang and Lin, Zihao and Wu, Yifan and Peng, Bo and Wang, Mingyi and Fan, Xiangjun and Zhang, Lizhu and Zhao, Zhuokai",
+    "kind": "paper",
+    "arxiv_id": "2609.37834",
+    "doi": "10.48550/arXiv.2609.37834",
+    "first_release": {
+      "value": "2026-09-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.37834v1"
+    },
+    "sources": [
+      {
+        "name": "Mixture of Self-Improving Branches (v1)",
+        "url": "https://arxiv.org/html/2609.37834v1",
+        "locator": "§4.1; Tables1–4",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-09-29",
+        "source_version": "2609.37834v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "Mixture of Self-Improving Branches (v1)",
+        "url": "https://arxiv.org/html/2609.37834v1",
+        "locator": "Appendix E.3–E.4",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-09-29",
+        "source_version": "2609.37834v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "Mixture of Self-Improving Branches",
+        "url": "https://arxiv.org/abs/2609.37834v1",
+        "locator": "Section 4.3, Figure 2; Appendix E.1–E.2",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-09-29",
+        "source_version": "2609.37834v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "rho2026",
+    "title": "Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference",
+    "authors": "Pan, Wenbo and Liu, Shujie and Lin, Chin-Yew and Zeng, Jingying and Tang, Xianfeng and Zhou, Xiangyang and Lu, Yan and Jia, Xiaohua",
+    "kind": "paper",
+    "arxiv_id": "2606.05922",
+    "doi": null,
+    "first_release": {
+      "value": "2026-06-04",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.05922v3"
+    },
+    "sources": [
+      {
+        "name": "RHO (v3)",
+        "url": "https://arxiv.org/html/2606.05922v3",
+        "locator": "§5 setup; §6.1; Appendix E.1–E.2",
+        "first_release_date": "2026-06-04",
+        "source_version_date": "2026-08-29",
+        "source_version": "2606.05922v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "RHO (v3)",
+        "url": "https://arxiv.org/html/2606.05922v3",
+        "locator": "Appendix H.1–H.2; §6.1",
+        "first_release_date": "2026-06-04",
+        "source_version_date": "2026-08-29",
+        "source_version": "2606.05922v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "one_recipe2026",
+    "title": "One Recipe, Many Harnesses: What Self-Evolution Encodes Across Languages and Models",
+    "authors": "Yang, Siqi and Yang, Qianlan and Wang, Yu-Xiong and Pujar, Saurabh and Hirzel, Martin",
+    "kind": "paper",
+    "arxiv_id": "2608.10178",
+    "doi": null,
+    "first_release": {
+      "value": "2026-08-10",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.10178v1"
+    },
+    "sources": [
+      {
+        "name": "OneRecipe (v1)",
+        "url": "https://arxiv.org/html/2608.10178v1",
+        "locator": "§3.1; §4.3–4.6; Appendices A.6–A.8, B.1–B.3, G, H",
+        "first_release_date": "2026-08-10",
+        "source_version_date": "2026-08-10",
+        "source_version": "2608.10178v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "codeskill2026",
+    "title": "CODESKILL: Learning Self-Evolving Skills for Coding Agents",
+    "authors": "Li, Yanzhou and Zhang, Yiran and Zhang, Xiaoyu and Liu, Xiaoxia and Liu, Yang",
+    "kind": "paper",
+    "arxiv_id": "2605.25430",
+    "doi": "10.48550/arXiv.2605.25430",
+    "first_release": {
+      "value": "2026-05-25",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.25430v2"
+    },
+    "sources": [
+      {
+        "name": "CODESKILL",
+        "url": "https://arxiv.org/abs/2605.25430v2",
+        "locator": "Sections 3–4; Appendix D, Figures 4–5",
+        "first_release_date": "2026-05-25",
+        "source_version_date": "2026-09-25",
+        "source_version": "2605.25430v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "CODESKILL",
+        "url": "https://arxiv.org/abs/2605.25430v2",
+        "locator": "Sections 4.1, 4.3; Appendix C–D",
+        "first_release_date": "2026-05-25",
+        "source_version_date": "2026-09-25",
+        "source_version": "2605.25430v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "gse2026",
+    "title": "Learning Globally Reusable Skills for Coding Agents",
+    "authors": "Yang, Chen and Tian, Jiashuo and Wang, Ziqi and Liu, Xinyin and Ye, Meiru and Chen, Junjie",
+    "kind": "paper",
+    "arxiv_id": "2608.06153",
+    "doi": "10.48550/arXiv.2608.06153",
+    "first_release": {
+      "value": "2026-08-06",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.06153v1"
+    },
+    "sources": [
+      {
+        "name": "GSE",
+        "url": "https://arxiv.org/abs/2608.06153v1",
+        "locator": "Sections 4–5; Figure 3",
+        "first_release_date": "2026-08-06",
+        "source_version_date": "2026-08-06",
+        "source_version": "2608.06153v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "skillforge2026",
+    "title": "SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution",
+    "authors": "Chen, Silin and Li, Han and Gu, Xiaodong and Shi, Yuling and Guan, Haibing",
+    "kind": "paper",
+    "arxiv_id": "2608.18933",
+    "doi": "10.48550/arXiv.2608.18933",
+    "first_release": {
+      "value": "2026-08-19",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.18933v1"
+    },
+    "sources": [
+      {
+        "name": "SkillForge",
+        "url": "https://arxiv.org/abs/2608.18933v1",
+        "locator": "Section IV-E; Figure 6",
+        "first_release_date": "2026-08-19",
+        "source_version_date": "2026-08-19",
+        "source_version": "2608.18933v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "metaharness2026",
+    "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+    "authors": "Lee, Yoonho and Nair, Roshen Sanjay and Zhang, Qizheng and Lee, Kangwook and Khattab, Omar and Finn, Chelsea",
+    "kind": "paper",
+    "arxiv_id": "2603.28052",
+    "doi": null,
+    "first_release": {
+      "value": "2026-03-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2603.28052v1"
+    },
+    "sources": [
+      {
+        "name": "Meta-Harness (v1)",
+        "url": "https://arxiv.org/html/2603.28052v1",
+        "locator": "§4.3; Appendix B.3 / Figure 9",
+        "first_release_date": "2026-03-30",
+        "source_version_date": "2026-03-30",
+        "source_version": "2603.28052v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "Meta-Harness",
+        "url": "https://openreview.net/forum?id=tmbOUyFx3R",
+        "locator": "Section 4.2; Appendix B.2; Appendix C.3",
+        "first_release_date": "2026-03-30",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      },
+      {
+        "name": "Meta-Harness",
+        "url": "https://openreview.net/forum?id=tmbOUyFx3R",
+        "locator": "Section 4.1; Appendix B.1",
+        "first_release_date": "2026-03-30",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "modularrsi2026",
+    "title": "ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement",
+    "authors": "Wu, Siwei and Ren, Jincheng and Li, Yizhi and Li, Haau-Sing and Yang, Chengran and Zhang, Yuxuan and Gu, Weicheng and Yang, Jian and Batista-Navarro, Riza and Zhang, Chuanyi and Liu, Xianglong and Zhou, Ming and Dai, Bryan and Lin, Chenghua",
+    "kind": "paper",
+    "arxiv_id": "2609.14857",
+    "doi": "10.48550/arXiv.2609.14857",
+    "first_release": {
+      "value": "2026-09-14",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.14857v1"
+    },
+    "sources": [
+      {
+        "name": "ModularRSI: correcting tool dispatch and completion state",
+        "url": "https://arxiv.org/html/2609.14857v2",
+        "locator": "Case-study appendix; Positive case; Listing 10",
+        "first_release_date": "2026-09-14",
+        "source_version_date": "2026-10-09",
+        "source_version": "2609.14857v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "rrsi2026",
+    "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+    "authors": "Xia, Peng and Han, Rujun and Wang, Zifeng and Chen, Yanfei and Zhuang, Yufan and Lee, Yoonho and Huang, Chengsong and Yu, Han and CuiZhu, Zhongying and Ming, Yifei and Yao, Huaxiu and Gokturk, Burak and Pfister, Tomas and Lee, Chen-Yu",
+    "kind": "paper",
+    "arxiv_id": "2609.24972",
+    "doi": "10.48550/arXiv.2609.24972",
+    "first_release": {
+      "value": "2026-09-21",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.24972v2"
+    },
+    "sources": [
+      {
+        "name": "RRSI: bounding audits and waiting behavior",
+        "url": "https://arxiv.org/html/2609.24972v3",
+        "locator": "Section 4.1; Appendix F Table 8",
+        "first_release_date": "2026-09-21",
+        "source_version_date": "2026-10-04",
+        "source_version": "2609.24972v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "RRSI",
+        "url": "https://arxiv.org/abs/2609.24972v3",
+        "locator": "Section 4.1; Appendix A; Appendix E",
+        "first_release_date": "2026-09-21",
+        "source_version_date": "2026-10-04",
+        "source_version": "2609.24972v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "aide2_2026",
+    "title": "Recursive self-improvement of AI research agents",
+    "authors": "Srikanth, Dhruv and Zhao, Bingchen and Xu, Dixing and Wu, Yuxiang and Jiang, Zhengyao",
+    "kind": "paper",
+    "arxiv_id": "2609.26457",
+    "doi": null,
+    "first_release": {
+      "value": "2026-09-22",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.26457v1"
+    },
+    "sources": [
+      {
+        "name": "AIDE² (v1)",
+        "url": "https://arxiv.org/html/2609.26457v1",
+        "locator": "§2.1–2.2; §3.2–3.6; Appendix A/Table 2; Appendix D–E",
+        "first_release_date": "2026-09-22",
+        "source_version_date": "2026-09-22",
+        "source_version": "2609.26457v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "sia2026",
+    "title": "SIA: Self Improving AI with Harness & Weight Updates",
+    "authors": "Hebbar, Prannay and Manawat, Yogendra and Verboomen, Samuel and Ivanova, Alesia and Palanimalai, Selvam and Bhatia, Kunal and Baskaran, Vignesh",
+    "kind": "paper",
+    "arxiv_id": "2605.27276",
+    "doi": "10.48550/arXiv.2605.27276",
+    "first_release": {
+      "value": "2026-05-26",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.27276v2"
+    },
+    "sources": [
+      {
+        "name": "SIA (v2)",
+        "url": "https://arxiv.org/html/2605.27276v2",
+        "locator": "§3.2–3.3; §5.3; §6.1 Table 2; §6.2–6.3.3; §7.2",
+        "first_release_date": "2026-05-26",
+        "source_version_date": "2026-05-28",
+        "source_version": "2605.27276v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "aibuildai2_2026",
+    "title": "AIBuildAI-2: A Knowledge-Enhanced Agent for Automatically Building AI Models",
+    "authors": "Zhang, Ruiyi and Qin, Peijia and Cao, Qi and Zhang, Li and Xie, Pengtao",
+    "kind": "paper",
+    "arxiv_id": "2605.27873",
+    "doi": "10.48550/arXiv.2605.27873",
+    "first_release": {
+      "value": "2026-05-27",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.27873v1"
+    },
+    "sources": [
+      {
+        "name": "AIBuildAI-2",
+        "url": "https://arxiv.org/abs/2605.27873v1",
+        "locator": "Figure 1; Methods: Knowledge builder agents and Knowledge system evolution",
+        "first_release_date": "2026-05-27",
+        "source_version_date": "2026-05-27",
+        "source_version": "2605.27873v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "disco2026",
+    "title": "Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills",
+    "authors": "Chen, Jianlyu and Hu, Yuyang and Qian, Hongjin and Liu, Jiawei and Wei, Wenqing and Chen, Xiaolong and Lian, Defu and Dou, Zhicheng and Li, Chaozhuo and Ye, Qiwei and Liu, Zheng",
+    "kind": "paper",
+    "arxiv_id": "2609.02749",
+    "doi": "10.48550/arXiv.2609.02749",
+    "first_release": {
+      "value": "2026-09-02",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.02749v1"
+    },
+    "sources": [
+      {
+        "name": "DisCo",
+        "url": "https://arxiv.org/abs/2609.02749v1",
+        "locator": "Appendix A.2.1",
+        "first_release_date": "2026-09-02",
+        "source_version_date": "2026-09-02",
+        "source_version": "2609.02749v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "adas2024",
+    "title": "Automated Design of Agentic Systems",
+    "authors": "Hu, Shengran and Lu, Cong and Clune, Jeff",
+    "kind": "paper",
+    "arxiv_id": null,
+    "doi": null,
+    "first_release": {
+      "value": "2024-08-15",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2408.08435v2"
+    },
+    "sources": [
+      {
+        "name": "ADAS",
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/36b7acf6f6010652b3f2a433774a66fe-Paper-Conference.pdf",
+        "locator": "Sections 3, 4.2–4.3; Appendix G, Code 6",
+        "first_release_date": "2024-08-15",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "coharness2026",
+    "title": "Co-Harness: Co-Evolving Harnesses and Model for Agents",
+    "authors": "Chen, Zhengyu and Xiao, Teng and Zhu, Huaisheng and Yuan, Yige and Zhang, Luan and Wang, Jingang",
+    "kind": "paper",
+    "arxiv_id": null,
+    "doi": null,
+    "first_release": {
+      "value": "2026-07-17",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.22688v1"
+    },
+    "sources": [
+      {
+        "name": "Co-Harness",
+        "url": "https://openreview.net/forum?id=qDC8LmkpSR",
+        "locator": "Section 4.3; Appendix H",
+        "first_release_date": "2026-07-17",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "wda2026",
+    "title": "Streamlined Reflective Evolution for Task-Adaptive Self-Refinement Pipelines",
+    "authors": "Zhou, Xiaofan and Cheng, Lu",
+    "kind": "paper",
+    "arxiv_id": "2609.32458",
+    "doi": "10.48550/arXiv.2609.32458",
+    "first_release": {
+      "value": "2026-09-26",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.32458v1"
+    },
+    "sources": [
+      {
+        "name": "WDA",
+        "url": "https://arxiv.org/abs/2609.32458v1",
+        "locator": "Section 5; Appendices A.3 and A.13",
+        "first_release_date": "2026-09-26",
+        "source_version_date": "2026-09-26",
+        "source_version": "2609.32458v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "whale2026",
+    "title": "WHALE: A Simple Recipe for Joint Harness-Weight Optimization",
+    "authors": "Kim, Haechan and Lee, Yoonho and Lee, Gisang and Finn, Chelsea and Lee, Kangwook",
+    "kind": "paper",
+    "arxiv_id": "2609.00196",
+    "doi": "10.48550/arXiv.2609.00196",
+    "first_release": {
+      "value": "2026-08-31",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.00196v1"
+    },
+    "sources": [
+      {
+        "name": "WHALE",
+        "url": "https://arxiv.org/abs/2609.00196v1",
+        "locator": "Sections 4–5; Appendices B and D.2",
+        "first_release_date": "2026-08-31",
+        "source_version_date": "2026-08-31",
+        "source_version": "2609.00196v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "lean_coevolution2026",
+    "title": "Self-Modifying Lean Proof Agents with Verifier-Grounded Benchmark Coevolution",
+    "authors": "Li, Yuqing and Wu, Zeguan and Gan, Yu and Liu, Junyu",
+    "kind": "paper",
+    "arxiv_id": "2607.17352",
+    "doi": "10.48550/arXiv.2607.17352",
+    "first_release": {
+      "value": "2026-07-19",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.17352v1"
+    },
+    "sources": [
+      {
+        "name": "Self-modifying Lean agents",
+        "url": "https://arxiv.org/abs/2607.17352v1",
+        "locator": "Sections 3.1, 4.3–4.5; Appendices A, C–D",
+        "first_release_date": "2026-07-19",
+        "source_version_date": "2026-07-19",
+        "source_version": "2607.17352v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "rsiexam_lean2026",
+    "title": "RSI-Exam: Lean 4 Proof-Search LLM Agent Workflow Design",
+    "authors": "RSI-Exam contributors",
+    "kind": "resource",
+    "arxiv_id": null,
+    "doi": null,
+    "first_release": {
+      "value": null,
+      "precision": "unknown",
+      "basis": "No publication date recorded",
+      "source": "https://rsi-exam.ai/tasks/lean_formal_proof_workflow_design.html"
+    },
+    "sources": [
+      {
+        "name": "RSI-Exam",
+        "url": "https://rsi-exam.ai/tasks/lean_formal_proof_workflow_design.html",
+        "locator": "Lean task contract and public rollouts; accessed 2026-10-05",
+        "first_release_date": null,
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "proverinterface2026",
+    "title": "Growing an Agent/Prover Interface: Evolutionary Tool Design for Cost-Efficient Theorem Proving in Rocq and Lean",
+    "authors": "Viennot, Jules and Baudart, Guillaume and Lelarge, Marc",
+    "kind": "paper",
+    "arxiv_id": "2609.39544",
+    "doi": "10.48550/arXiv.2609.39544",
+    "first_release": {
+      "value": "2026-09-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.39544v1"
+    },
+    "sources": [
+      {
+        "name": "Evolved prover interfaces",
+        "url": "https://arxiv.org/abs/2609.39544v3",
+        "locator": "Sections 2–5; Tables 1 and 8",
+        "first_release_date": "2026-09-30",
+        "source_version_date": "2026-10-08",
+        "source_version": "2609.39544v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "proofevolve2026",
+    "title": "ProofEvolve: Neuro-Symbolic Evolution for Formal Automated Theorem Proving",
+    "authors": "Ye, Wenqian and Guan, Ziwei and Xie, Eric and Liu, Bohan and Modi, Shivani and Zhang, Buyun and Wen, Ellie Dingqiao and Kautz, Henry and Zhang, Aidong",
+    "kind": "paper",
+    "arxiv_id": "2608.26334",
+    "doi": "10.48550/arXiv.2608.26334",
+    "first_release": {
+      "value": "2026-08-26",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.26334v1"
+    },
+    "sources": [
+      {
+        "name": "ProofEvolve",
+        "url": "https://arxiv.org/abs/2608.26334v1",
+        "locator": "Sections 3 and 5.6",
+        "first_release_date": "2026-08-26",
+        "source_version_date": "2026-08-26",
+        "source_version": "2608.26334v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "mce2026",
+    "title": "Meta Context Engineering via Agentic Skill Evolution",
+    "authors": "Ye, Haoran and He, Xuning and Arak, Vincent and Dong, Haonan and Song, Guojie",
+    "kind": "paper",
+    "arxiv_id": null,
+    "doi": null,
+    "first_release": {
+      "value": "2026-01-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2601.21557v2"
+    },
+    "sources": [
+      {
+        "name": "MCE",
+        "url": "https://openreview.net/forum?id=P1jHroBS5E",
+        "locator": "Sections 3.1–3.4 and 4.1; Appendix D.4.2–D.4.3",
+        "first_release_date": "2026-01-29",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      },
+      {
+        "name": "MCE",
+        "url": "https://openreview.net/forum?id=P1jHroBS5E",
+        "locator": "Sections 3.1–3.4 and 4.1; Appendix D.3.2–D.3.3",
+        "first_release_date": "2026-01-29",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "taskcoevolve2026",
+    "title": "Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection",
+    "authors": "Miyai, Atsuyuki and Aizawa, Kiyoharu and Yamasaki, Toshihiko",
+    "kind": "paper",
+    "arxiv_id": "2608.20169",
+    "doi": "10.48550/arXiv.2608.20169",
+    "first_release": {
+      "value": "2026-08-20",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.20169v2"
+    },
+    "sources": [
+      {
+        "name": "Task-CoEvolve",
+        "url": "https://arxiv.org/abs/2608.20169v2",
+        "locator": "Experimental setup; Appendix D.1",
+        "first_release_date": "2026-08-20",
+        "source_version_date": "2026-08-24",
+        "source_version": "2608.20169v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "drevo2026",
+    "title": "DREvo: Distilling Recalibrated Historical Experience for Harness Self-Evolution",
+    "authors": "Guo, Hanghui and Shi, Weijie and Chen, Zhangze and Xu, Shengxiang and Wang, Yishu and Zhang, Yimei and Ni, Wangze and Zhu, Jia and Di, Shimin",
+    "kind": "paper",
+    "arxiv_id": "2607.26722",
+    "doi": "10.48550/arXiv.2607.26722",
+    "first_release": {
+      "value": "2026-07-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.26722v1"
+    },
+    "sources": [
+      {
+        "name": "DREvo",
+        "url": "https://arxiv.org/abs/2607.26722v2",
+        "locator": "Experimental Setups; Overall Performance; Robustness Analysis",
+        "first_release_date": "2026-07-29",
+        "source_version_date": "2026-08-12",
+        "source_version": "2607.26722v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "hase2026",
+    "title": "Harness-Aware Self-Evolving: Co-Evolving Model Weights, Harness, and Task Solutions",
+    "authors": "Luo, Haochen and Huang, Yi and Luo, Sichun and Liu, Fengyuan and Li, Lei and Hu, Zefa and Feng, Junlan and Liu, Qi",
+    "kind": "paper",
+    "arxiv_id": "2607.03935",
+    "doi": "10.48550/arXiv.2607.03935",
+    "first_release": {
+      "value": "2026-07-04",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.03935v1"
+    },
+    "sources": [
+      {
+        "name": "HASE",
+        "url": "https://arxiv.org/abs/2607.03935v1",
+        "locator": "Section 4.2.1; Appendices A.1, A.4 and E",
+        "first_release_date": "2026-07-04",
+        "source_version_date": "2026-07-04",
+        "source_version": "2607.03935v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "evolvemem2026",
+    "title": "EvolveMem:Self-Evolving Memory Architecture via AutoResearch for LLM Agents",
+    "authors": "Liu, Jiaqi and Ye, Xinyu and Xia, Peng and Zheng, Zeyu and Xie, Cihang and Ding, Mingyu and Yao, Huaxiu",
+    "kind": "paper",
+    "arxiv_id": "2605.13941",
+    "doi": "10.48550/arXiv.2605.13941",
+    "first_release": {
+      "value": "2026-05-13",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.13941v1"
+    },
+    "sources": [
+      {
+        "name": "EvolveMem",
+        "url": "https://arxiv.org/abs/2605.13941v1",
+        "locator": "Sections 4.1, 4.3 and 4.5; Appendix C.1",
+        "first_release_date": "2026-05-13",
+        "source_version_date": "2026-05-13",
+        "source_version": "2605.13941v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "memcodex2026",
+    "title": "MemCodex: Self-Programming Hierarchical Memory for Language Agents",
+    "authors": "Wang, Xiaoqiang and Liu, Bang",
+    "kind": "paper",
+    "arxiv_id": "2609.39765",
+    "doi": "10.48550/arXiv.2609.39765",
+    "first_release": {
+      "value": "2026-09-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.39765v1"
+    },
+    "sources": [
+      {
+        "name": "MemCodex",
+        "url": "https://arxiv.org/abs/2609.39765v1",
+        "locator": "Sections 2, 4.2–4.3; Figure 5",
+        "first_release_date": "2026-09-30",
+        "source_version_date": "2026-09-30",
+        "source_version": "2609.39765v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "harnessevolve2026",
+    "title": "HarnessEvolve: Learning from Reference Trajectories for Reliable Agent Self-Evolution",
+    "authors": "Jiang, Wen and Chu, Mingmin and Tian, Yimeng and Zhang, Qianxin and Yang, Haofei and Yang, Rui and Liu, Yang and Lv, Tao and Li, Fangming",
+    "kind": "paper",
+    "arxiv_id": "2609.00829",
+    "doi": "10.48550/arXiv.2609.00829",
+    "first_release": {
+      "value": "2026-09-01",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.00829v1"
+    },
+    "sources": [
+      {
+        "name": "HarnessEvolve",
+        "url": "https://arxiv.org/abs/2609.00829v1",
+        "locator": "Section 4.1; Tables 2–3; Appendix Figure 3(a)",
+        "first_release_date": "2026-09-01",
+        "source_version_date": "2026-09-01",
+        "source_version": "2609.00829v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "HarnessEvolve",
+        "url": "https://arxiv.org/abs/2609.00829v1",
+        "locator": "Sections 3–4; Tables 2–3",
+        "first_release_date": "2026-09-01",
+        "source_version_date": "2026-09-01",
+        "source_version": "2609.00829v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "hcl2026",
+    "title": "Harness Continual Learning: Continual Adaptation Beyond Model Parameters",
+    "authors": "Kang, Borui and Gu, Jinrui and Lv, Junhan and Li, Wenbin and Wang, Lei and Gao, Yang",
+    "kind": "paper",
+    "arxiv_id": "2608.19013",
+    "doi": "10.48550/arXiv.2608.19013",
+    "first_release": {
+      "value": "2026-08-19",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.19013v1"
+    },
+    "sources": [
+      {
+        "name": "HCL",
+        "url": "https://arxiv.org/abs/2608.19013v2",
+        "locator": "Sections 4.1 and 4.3.1; Appendix C.1",
+        "first_release_date": "2026-08-19",
+        "source_version_date": "2026-09-30",
+        "source_version": "2608.19013v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "HCL",
+        "url": "https://arxiv.org/abs/2608.19013v2",
+        "locator": "Section 4.2.2; Appendix C.3",
+        "first_release_date": "2026-08-19",
+        "source_version_date": "2026-09-30",
+        "source_version": "2608.19013v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "HCL",
+        "url": "https://arxiv.org/abs/2608.19013v2",
+        "locator": "Section 4.3.2; Appendix B.2, Table 10; Appendix C.2",
+        "first_release_date": "2026-08-19",
+        "source_version_date": "2026-09-30",
+        "source_version": "2608.19013v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "memevolve2025",
+    "title": "MemEvolve: Meta-Evolution of Agent Memory Systems",
+    "authors": "Zhang, Guibin and Ren, Haotian and Zhan, Chong and Wang, Junhao and Zhu, He and Zhou, Wangchunshu and Yan, Shuicheng",
+    "kind": "paper",
+    "arxiv_id": null,
+    "doi": null,
+    "first_release": {
+      "value": "2025-12-21",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2512.18746v1"
+    },
+    "sources": [
+      {
+        "name": "MemEvolve",
+        "url": "https://openreview.net/forum?id=qpkG0eKx4v",
+        "locator": "Section 4; Section 9.1; Figures 8–10",
+        "first_release_date": "2025-12-21",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "harnessx2026",
+    "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+    "authors": "Chen, Tingyang and Lu, Shuo and Zhao, Kang and Meng, Weicheng and Teng, Hanlin and Li, Tianhao and Li, Chao and Liu, Xule and Liang, Jian and Zhang, Zhizhong and Xie, Yuan and Qu, Heng and Shao, Kun and Luan, Jian",
+    "kind": "paper",
+    "arxiv_id": "2606.14249",
+    "doi": "10.48550/arXiv.2606.14249",
+    "first_release": {
+      "value": "2026-06-12",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.14249v3"
+    },
+    "sources": [
+      {
+        "name": "HarnessX",
+        "url": "https://arxiv.org/abs/2606.14249v3",
+        "locator": "Experimental setup; Appendix 12.1",
+        "first_release_date": "2026-06-12",
+        "source_version_date": "2026-07-23",
+        "source_version": "2606.14249v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "HarnessX",
+        "url": "https://arxiv.org/abs/2606.14249v3",
+        "locator": "Experimental setup; Appendix Additional Results, WebShop",
+        "first_release_date": "2026-06-12",
+        "source_version_date": "2026-07-23",
+        "source_version": "2606.14249v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "HarnessX",
+        "url": "https://arxiv.org/abs/2606.14249v3",
+        "locator": "Experimental setup; Appendix Additional Results, τ³-Bench",
+        "first_release_date": "2026-06-12",
+        "source_version_date": "2026-07-23",
+        "source_version": "2606.14249v3",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "liteevo2026",
+    "title": "LiteEvo: Automated, Cost-Efficient Harness Evolution for Generalization to Unseen Tasks",
+    "authors": "Choi, Euntae and Song, Sumin and Yoo, Sungjoo",
+    "kind": "paper",
+    "arxiv_id": "2609.33146",
+    "doi": "10.48550/arXiv.2609.33146",
+    "first_release": {
+      "value": "2026-09-27",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.33146v1"
+    },
+    "sources": [
+      {
+        "name": "LiteEvo",
+        "url": "https://arxiv.org/abs/2609.33146v1",
+        "locator": "Sections 3.1–4; Appendix C.4",
+        "first_release_date": "2026-09-27",
+        "source_version_date": "2026-09-27",
+        "source_version": "2609.33146v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "LiteEvo",
+        "url": "https://arxiv.org/abs/2609.33146v1",
+        "locator": "Section 3.1; Appendix B.1–B.2; benchmark-specific analysis",
+        "first_release_date": "2026-09-27",
+        "source_version_date": "2026-09-27",
+        "source_version": "2609.33146v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "LiteEvo",
+        "url": "https://arxiv.org/abs/2609.33146v1",
+        "locator": "Sections 3.1–3.3; Appendix B.1–B.2; AppWorld evaluation",
+        "first_release_date": "2026-09-27",
+        "source_version_date": "2026-09-27",
+        "source_version": "2609.33146v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "skillweaver2025",
+    "title": "SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills",
+    "authors": "Zheng, Boyuan and Fatemi, Michael Y. and Jin, Xiaolong and Wang, Zora Zhiruo and Gandhi, Apurva and Song, Yueqi and Gu, Yu and Srinivasa, Jayanth and Liu, Gaowen and Neubig, Graham and Su, Yu",
+    "kind": "paper",
+    "arxiv_id": "2504.07079",
+    "doi": "10.48550/arXiv.2504.07079",
+    "first_release": {
+      "value": "2025-04-09",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2504.07079v1"
+    },
+    "sources": [
+      {
+        "name": "SkillWeaver",
+        "url": "https://arxiv.org/abs/2504.07079v1",
+        "locator": "Sections 2.2–2.3; Appendix D.1.2–D.2",
+        "first_release_date": "2025-04-09",
+        "source_version_date": "2025-04-09",
+        "source_version": "2504.07079v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "wei2026evo",
+    "title": "Evo-Harness",
+    "authors": null,
+    "kind": "paper",
+    "arxiv_id": "2608.15071",
+    "doi": null,
+    "first_release": null,
+    "sources": [
+      {
+        "name": "Evo-Harness",
+        "url": "https://arxiv.org/abs/2608.15071v2",
+        "locator": "Sections 3–4; Appendix A; Table 6",
+        "first_release_date": "2026-08-15",
+        "source_version_date": "2026-08-30",
+        "source_version": "2608.15071v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "Evo-Harness",
+        "url": "https://arxiv.org/abs/2608.15071v2",
+        "locator": "Sections 3–4; benchmark and skill analyses",
+        "first_release_date": "2026-08-15",
+        "source_version_date": "2026-08-30",
+        "source_version": "2608.15071v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "scholarevolve2026",
+    "title": "Learning from Research: Toward Lifelong Agent Harness Evolution",
+    "authors": "Yang, Jingbo and Lai, Kwei-Herng and Wang, Xiaowen and Harari, Yaar and Gabrilovich, Evgeniy and Chang, Shiyu",
+    "kind": "paper",
+    "arxiv_id": "2609.40169",
+    "doi": "10.48550/arXiv.2609.40169",
+    "first_release": {
+      "value": "2026-09-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.40169v1"
+    },
+    "sources": [
+      {
+        "name": "ScholarEvolve",
+        "url": "https://arxiv.org/abs/2609.40169v1",
+        "locator": "Section 4; Appendix A; Appendix D.2, Table 8 and final-module listings",
+        "first_release_date": "2026-09-30",
+        "source_version_date": "2026-09-30",
+        "source_version": "2609.40169v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "autoharness2026",
+    "title": "AutoHarness: improving LLM agents by automatically synthesizing a code harness",
+    "authors": "Lou, Xinghua and Lázaro-Gredilla, Miguel and Dedieu, Antoine and Wendelken, Carter and Lehrach, Wolfgang and Murphy, Kevin",
+    "kind": "paper",
+    "arxiv_id": null,
+    "doi": null,
+    "first_release": {
+      "value": "2026-02-10",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2603.03329v1"
+    },
+    "sources": [
+      {
+        "name": "AutoHarness",
+        "url": "https://openreview.net/forum?id=g9rEYVNn5T",
+        "locator": "Sections 3–4; Appendices C–D",
+        "first_release_date": "2026-02-10",
+        "source_version_date": null,
+        "source_version": null,
+        "metadata_checked_on": null,
+        "metadata_basis": "Inherited bibliography; version date not independently checked"
+      }
+    ]
+  },
+  {
+    "key": "continualharness2026",
+    "title": "Continual Harness: Online Adaptation for Self-Improving Foundation Agents",
+    "authors": "Karten, Seth and Zhang, Joel and Upaa Jr, Tersoo and Feng, Ruirong and Li, Wenzhe and Shi, Chengshuai and Jin, Chi and Vodrahalli, Kiran",
+    "kind": "paper",
+    "arxiv_id": "2605.09998",
+    "doi": "10.48550/arXiv.2605.09998",
+    "first_release": {
+      "value": "2026-05-11",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2605.09998v1"
+    },
+    "sources": [
+      {
+        "name": "Continual Harness",
+        "url": "https://arxiv.org/abs/2605.09998v1",
+        "locator": "Sections 2–4; Appendix C",
+        "first_release_date": "2026-05-11",
+        "source_version_date": "2026-05-11",
+        "source_version": "2605.09998v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "che2026demoevolve",
+    "title": "DemoEvolve",
+    "authors": null,
+    "kind": "paper",
+    "arxiv_id": "2605.24539",
+    "doi": null,
+    "first_release": null,
+    "sources": [
+      {
+        "name": "DemoEvolve",
+        "url": "https://arxiv.org/abs/2605.24539v2",
+        "locator": "Sections 4.1–4.3; Appendices B, C and G",
+        "first_release_date": "2026-05-23",
+        "source_version_date": "2026-09-29",
+        "source_version": "2605.24539v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "zetta2026",
+    "title": "Zetta \\zeta: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence",
+    "authors": "Ding, Xin and Mi, Liang and Huang, Mingzhe and Wang, Zixuan and Zhang, Chao and Hao, Zixu and Chen, Fu and Li, Xiangyu and Zheng, Yikai and Guo, Yaoyu and Wang, Weijun and Li, Kun and Wu, Hao and Liu, Yunxin and Cao, Ting",
+    "kind": "paper",
+    "arxiv_id": "2608.16590",
+    "doi": "10.48550/arXiv.2608.16590",
+    "first_release": {
+      "value": "2026-08-17",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.16590v1"
+    },
+    "sources": [
+      {
+        "name": "Zetta",
+        "url": "https://arxiv.org/abs/2608.16590v1",
+        "locator": "Sections 3–4; Appendix C",
+        "first_release_date": "2026-08-17",
+        "source_version_date": "2026-08-17",
+        "source_version": "2608.16590v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "shaper2026",
+    "title": "Self-Evolving Embodied Agents via Skill-Harness Evolution",
+    "authors": "Wang, Peidong and Ma, Zhiming and Chang, Ying and Luo, Xufang and Zhang, Yiqun and Wang, Zihan and Yang, Xiaocui and Feng, Shi and Yang, Yuqing and Li, Dongsheng",
+    "kind": "paper",
+    "arxiv_id": "2608.11350",
+    "doi": "10.48550/arXiv.2608.11350",
+    "first_release": {
+      "value": "2026-08-11",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.11350v1"
+    },
+    "sources": [
+      {
+        "name": "SHAPER",
+        "url": "https://arxiv.org/abs/2608.11350v2",
+        "locator": "Section 4.2; Appendix A.1, Figures A1–A2",
+        "first_release_date": "2026-08-11",
+        "source_version_date": "2026-09-10",
+        "source_version": "2608.11350v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "harnesspai2026",
+    "title": "HarnessPAI: An Evolving Harness for Physical AI",
+    "authors": "Wang, Xin and Wu, Wenhao and Zhang, Menghao and Wang, Zhi and Shao, Kun and Luan, Jian and Li, Yang and Li, Qing and Gu, Shangding and Zhou, Huichi and Shi, Shuqing and Ni, Fei and Lu, Shuo and Meng, Weicheng and Li, Kang and Wu, Jin and Zhao, Kang and Guo, Shangmin and Li, Gen and Tang, Yongqiang and Zhang, Zhizhong and Xie, Yuan and Qu, Heng",
+    "kind": "paper",
+    "arxiv_id": "2609.29166",
+    "doi": "10.48550/arXiv.2609.29166",
+    "first_release": {
+      "value": "2026-09-24",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.29166v1"
+    },
+    "sources": [
+      {
+        "name": "HarnessPAI",
+        "url": "https://arxiv.org/html/2609.29166v2",
+        "locator": "Section 4 and appendix skill align-object-to-basket-mouth",
+        "first_release_date": "2026-09-24",
+        "source_version_date": "2026-10-21",
+        "source_version": "2609.29166v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "robot_harness_distillation2026",
+    "title": "Recursive Harness Distillation across Agents for Robot Manipulation",
+    "authors": "Kim, Seungyeon and Lee, Junhoo and Kim, Minkyu and Kim, Baekseung and Kwak, Nojun",
+    "kind": "paper",
+    "arxiv_id": "2609.33378",
+    "doi": "10.48550/arXiv.2609.33378",
+    "first_release": {
+      "value": "2026-09-27",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.33378v1"
+    },
+    "sources": [
+      {
+        "name": "Recursive Harness Distillation",
+        "url": "https://arxiv.org/abs/2609.33378v1",
+        "locator": "Sections 3.4, 4.3 and 5; Figures 6–7",
+        "first_release_date": "2026-09-27",
+        "source_version_date": "2026-09-27",
+        "source_version": "2609.33378v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "videorsi2026",
+    "title": "Video-RSI: Recursive Self-Improvement of Video Understanding Agents via Harness Evolution",
+    "authors": "Luo, Bingjun and Guo, Jialin and Li, Siqi",
+    "kind": "paper",
+    "arxiv_id": "2609.37950",
+    "doi": "10.48550/arXiv.2609.37950",
+    "first_release": {
+      "value": "2026-09-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.37950v1"
+    },
+    "sources": [
+      {
+        "name": "Video-RSI",
+        "url": "https://arxiv.org/abs/2609.37950v1",
+        "locator": "Sections 4.1, 4.3–4.5; Table 2",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-09-29",
+        "source_version": "2609.37950v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "vidharness2026",
+    "title": "VidHarness: Evolving Agent Harnesses for Cost-Efficient Long Video Understanding",
+    "authors": "Liang, Susan and Wu, Jianmin and Dong, Daxiang",
+    "kind": "paper",
+    "arxiv_id": "2609.38413",
+    "doi": "10.48550/arXiv.2609.38413",
+    "first_release": {
+      "value": "2026-09-29",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.38413v1"
+    },
+    "sources": [
+      {
+        "name": "VidHarness",
+        "url": "https://arxiv.org/abs/2609.38413v1",
+        "locator": "Sections 3–4; Appendix D",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-09-29",
+        "source_version": "2609.38413v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "videoevolve2026",
+    "title": "VideoEvolve: Evolving Agent Harnesses for Video Temporal Grounding",
+    "authors": "Luo, Bingjun and Fan, Yuhuan and Guo, Jialin and Li, Siqi",
+    "kind": "paper",
+    "arxiv_id": "2610.01766",
+    "doi": "10.48550/arXiv.2610.01766",
+    "first_release": {
+      "value": "2026-10-01",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.01766v1"
+    },
+    "sources": [
+      {
+        "name": "VideoEvolve",
+        "url": "https://arxiv.org/abs/2610.01766v1",
+        "locator": "Sections 4.1, 4.4–4.5; Table 3; Figure 3",
+        "first_release_date": "2026-10-01",
+        "source_version_date": "2026-10-01",
+        "source_version": "2610.01766v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "autoref2026",
+    "title": "AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation",
+    "authors": "Oshima, Yuta and Onoda, Ku and Iwasawa, Yusuke and Suzuki, Masahiro and Matsuo, Yutaka and Furuta, Hiroki",
+    "kind": "paper",
+    "arxiv_id": "2609.35530",
+    "doi": "10.48550/arXiv.2609.35530",
+    "first_release": {
+      "value": "2026-09-28",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2609.35530v1"
+    },
+    "sources": [
+      {
+        "name": "AutoRef",
+        "url": "https://arxiv.org/abs/2609.35530v1",
+        "locator": "Sections 4–5 and 6.5; Table 4; Appendices D and H.2",
+        "first_release_date": "2026-09-28",
+        "source_version_date": "2026-09-28",
+        "source_version": "2609.35530v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "comfyclaw2026",
+    "title": "COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows",
+    "authors": "Li, Zongxia and Liu, Dawei and Liu, Fuxiao and Zhou, Yuhang and Wu, Xiyang and Chen, Jingxi and Xie, Jing and Wu, Xiaomin and Sun, Lichao",
+    "kind": "paper",
+    "arxiv_id": "2607.01709",
+    "doi": "10.48550/arXiv.2607.01709",
+    "first_release": {
+      "value": "2026-07-02",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2607.01709v1"
+    },
+    "sources": [
+      {
+        "name": "COMFYCLAW",
+        "url": "https://arxiv.org/abs/2607.01709v1",
+        "locator": "Sections 3.4–4; Table 2; Appendix C, Table 8",
+        "first_release_date": "2026-07-02",
+        "source_version_date": "2026-07-02",
+        "source_version": "2607.01709v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "evogen_harness2026",
+    "title": "EvoGen-Harness: Learning Where and How to Evolve Image-Generation Harnesses",
+    "authors": "Luo, Jiabin and Liu, Yinan and Meng, Chunlei and Guo, Yufei",
+    "kind": "paper",
+    "arxiv_id": "2610.00383",
+    "doi": "10.48550/arXiv.2610.00383",
+    "first_release": {
+      "value": "2026-09-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2610.00383v1"
+    },
+    "sources": [
+      {
+        "name": "EvoGen-Harness",
+        "url": "https://arxiv.org/abs/2610.00383v1",
+        "locator": "Sections 3–4; Appendices B.6–B.7",
+        "first_release_date": "2026-09-30",
+        "source_version_date": "2026-09-30",
+        "source_version": "2610.00383v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "videoweaver2026",
+    "title": "VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation",
+    "authors": "Wei, Jianhui and Zhang, Yan and Tan, Jie and Zhu, Hengchuan and Zhang, Xiaotian and Chen, Ziyi and Zhang, Daoan and Xu, Wei and Jin, Yeying and Liu, Zuozhu",
+    "kind": "paper",
+    "arxiv_id": "2606.08091",
+    "doi": "10.48550/arXiv.2606.08091",
+    "first_release": {
+      "value": "2026-06-06",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2606.08091v2"
+    },
+    "sources": [
+      {
+        "name": "VideoWeaver",
+        "url": "https://arxiv.org/abs/2606.08091v2",
+        "locator": "Section 4.2; Sections 5.2–5.3; Appendix C",
+        "first_release_date": "2026-06-06",
+        "source_version_date": "2026-10-01",
+        "source_version": "2606.08091v2",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "cineforge2026",
+    "title": "CineForge: Self-Improving Agents for Long-Horizon Video Generation",
+    "authors": "Liu, Junxiang and Wang, Lin and Shi, Haiyu and Ma, Hongxu and Yang, Xiaoyu and Chen, Chunjie and Xu, Xiaoxiao and Zhan, Kaiqiao and Wang, Boao and Shi, Shuizhou and Zhu, Tianyun and Li, Jie and Li, Jiangtong",
+    "kind": "paper",
+    "arxiv_id": "2608.29621",
+    "doi": "10.48550/arXiv.2608.29621",
+    "first_release": {
+      "value": "2026-08-30",
+      "precision": "day",
+      "basis": "First submission date from primary-source citation metadata; verified 2026-10-09/10",
+      "source": "https://arxiv.org/abs/2608.29621v1"
+    },
+    "sources": [
+      {
+        "name": "CineForge",
+        "url": "https://arxiv.org/abs/2608.29621v1",
+        "locator": "Sections 3.3 and 5.5; Appendices A.6, B.1.6 and B.3–B.8",
+        "first_release_date": "2026-08-30",
+        "source_version_date": "2026-08-30",
+        "source_version": "2608.29621v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "memskill2026",
+    "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+    "authors": "Zhang, Haozhen and Long, Quanyu and Bao, Jianzhu and Feng, Tao and Zhang, Weizhi and Yue, Haodong and Wang, Wenya",
+    "kind": "paper",
+    "arxiv_id": "2602.02474",
+    "doi": "10.48550/arXiv.2602.02474",
+    "first_release": {
+      "value": "2026-02-02",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v2; arXiv v2, revised 2026-05-24; NeurIPS 2026 acceptance is author-reported in the official repository, not independently verified against proceedings",
+      "source": "https://arxiv.org/abs/2602.02474"
+    },
+    "sources": [
+      {
+        "name": "MemSkill (v1)",
+        "url": "https://arxiv.org/html/2602.02474v1",
+        "locator": "Sections 3.3–3.5, 4.3; Table 2; Appendix A.2",
+        "first_release_date": "2026-02-02",
+        "source_version_date": "2026-02-02",
+        "source_version": "2602.02474v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "erskill2026",
+    "title": "ERSkill: Evolving for Skill-Guided Adaptive Memory Retrieval",
+    "authors": "Chen, Haolong and Zhang, Liang and Li, Zhuo and Xue, Lei and Zhu, Guangxu",
+    "kind": "paper",
+    "arxiv_id": "2608.12720",
+    "doi": "10.48550/arXiv.2608.12720",
+    "first_release": {
+      "value": "2026-08-13",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v2; arXiv v2, revised 2026-09-28; final author spelling Guangxu Zhu follows the primary full text rather than abstract metadata Guanrxu Zhu; no formal venue verified",
+      "source": "https://arxiv.org/abs/2608.12720"
+    },
+    "sources": [
+      {
+        "name": "ERSkill (v1)",
+        "url": "https://arxiv.org/html/2608.12720v1",
+        "locator": "Sections 2.4, 3.1–3.2; Table 1; Appendix F",
+        "first_release_date": "2026-08-13",
+        "source_version_date": "2026-08-13",
+        "source_version": "2608.12720v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "sesa2026",
+    "title": "Self-Play Meets Skill Evolution: Self-Evolving Search Agents that Pose, Solve, and Remember",
+    "authors": "Fu, Zenghuang and Li, Zhaoyang and Ai, Qiuyuan and Wu, Haoyu and Wu, Minghui and Zhao, Chenxu and Wang, Ante and He, Guannan and Wang, Changwei",
+    "kind": "paper",
+    "arxiv_id": "2607.29468",
+    "doi": "10.48550/arXiv.2607.29468",
+    "first_release": {
+      "value": "2026-07-31",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; no later arXiv version or formal venue verified",
+      "source": "https://arxiv.org/abs/2607.29468"
+    },
+    "sources": [
+      {
+        "name": "SESA (v1)",
+        "url": "https://arxiv.org/html/2607.29468v1",
+        "locator": "Method; Evaluation datasets; Tables 1–3; dual-path evaluation",
+        "first_release_date": "2026-07-31",
+        "source_version_date": "2026-07-31",
+        "source_version": "2607.29468v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "mad_rsi2026",
+    "title": "MaD-RSI: Model-as-Data for Recursive Self-Improvement of Agent Harnesses",
+    "authors": "Yu Cui and Hong He and Ruiqing Yue and Sicheng Pan and Zhuoyu Sun and Yifei Liu and Ting Li and Wenzhuo Zhu and Baohan Huang and Haibin Zhang and Cong Zuo",
+    "kind": "paper",
+    "arxiv_id": "2610.28201",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.28201"
+    },
+    "sources": [
+      {
+        "name": "MaD-RSI (v1)",
+        "url": "https://arxiv.org/html/2610.28201v1",
+        "locator": "Sections 3, 4.1–4.2; Tables 1–2; Section 7",
+        "first_release_date": "2026-10-20",
+        "source_version_date": "2026-10-20",
+        "source_version": "2610.28201v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "sera2026",
+    "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
+    "authors": "Tingwen Du and Haoyu Guo and Hanxue Zhang and Xuanxu Wang and Junting Dong and Chao Gao and Mingfei Han and Tao Lu and Mulin Yu and Chunhua Shen and Xiaojun Chang and Zhihui Li",
+    "kind": "paper",
+    "arxiv_id": "2610.29560",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-21",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.29560"
+    },
+    "sources": [
+      {
+        "name": "SERA (v1)",
+        "url": "https://arxiv.org/html/2610.29560v1",
+        "locator": "Sections 3.3, 4.3; Figure 3; Appendix B.3",
+        "first_release_date": "2026-10-21",
+        "source_version_date": "2026-10-21",
+        "source_version": "2610.29560v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "riseharness2026",
+    "title": "Harness Self-Evolution for Long-Horizon Terminal Agents",
+    "authors": "Wang, Ruhan and Shi, Yucheng and Li, Zongxia and Yang, Junyao and Li, Zhongzhi and Yu, Yue and Mi, Haitao and Zhou, Dongruo and Leoweiliang",
+    "kind": "paper",
+    "arxiv_id": "2610.27435",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.27435v1"
+    },
+    "sources": [
+      {
+        "name": "RiseHarness (v1)",
+        "url": "https://arxiv.org/html/2610.27435v1",
+        "locator": "Sections 3.5, 4.1, 4.4; Appendix D.4 Table 6",
+        "first_release_date": "2026-10-20",
+        "source_version_date": "2026-10-20",
+        "source_version": "2610.27435v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "oo_harness2026",
+    "title": "Object-Oriented Harness: Evolving Agent Harnesses through Object-Oriented Design",
+    "authors": "Li, Gaotang and Mishra, Bhavana Dalvi and Ming, Yifei and Chen, Yanfei and CuiZhu, Zhongying and Miculicich, Lesly and Le, Long T. and Meng, Rui and Li, Chun-Liang and Tong, Hanghang and Lee, Chen-Yu and Pfister, Tomas",
+    "kind": "paper",
+    "arxiv_id": "2610.28380",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.28380v1"
+    },
+    "sources": [
+      {
+        "name": "OO-Harness (v1)",
+        "url": "https://arxiv.org/html/2610.28380v1",
+        "locator": "Sections 3.1–3.5, 5.1, 5.3; Figure 7",
+        "first_release_date": "2026-10-20",
+        "source_version_date": "2026-10-20",
+        "source_version": "2610.28380v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "herd2026",
+    "title": "HERD: Harness-Evolving Recursive Distillation for Continual Learning",
+    "authors": "Sun, Xun and Nguyen, Thanh Thi and Vu, Thuy-Trang",
+    "kind": "paper",
+    "arxiv_id": "2610.31401",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-22",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.31401v1"
+    },
+    "sources": [
+      {
+        "name": "HERD (v1)",
+        "url": "https://arxiv.org/html/2610.31401v1",
+        "locator": "Sections 2.2–2.4, 3.1–3.3; Table 1; limitations",
+        "first_release_date": "2026-10-22",
+        "source_version_date": "2026-10-22",
+        "source_version": "2610.31401v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "beam2026",
+    "title": "Memory as Belief: Bayesian Evolution of Memory for Self-Evolving LLM Agents",
+    "authors": "Xu, Yiming and Yang, Qian and Chen, Zihan and Wu, Yuefei and Zeng, Wenhan and Shi, Bin and Dong, Bo",
+    "kind": "paper",
+    "arxiv_id": "2610.25119",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-18",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.25119v1"
+    },
+    "sources": [
+      {
+        "name": "BEAM (v1)",
+        "url": "https://arxiv.org/html/2610.25119v1",
+        "locator": "Methodology; Cross-Task Transferability; Figure 4; Appendix A",
+        "first_release_date": "2026-10-18",
+        "source_version_date": "2026-10-18",
+        "source_version": "2610.25119v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "verievolve2026",
+    "title": "VeriEvolve: Evaluator-First Evolution for Tool-Using Agents",
+    "authors": "Li, Yueshen and Yuksel, Kamer Ali and Tur, Gokhan and Hakkani-Tür, Dilek and Maia, João Pedro",
+    "kind": "paper",
+    "arxiv_id": "2610.29005",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-21",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 full text inspected; no formal venue verified",
+      "source": "https://arxiv.org/abs/2610.29005v1"
+    },
+    "sources": [
+      {
+        "name": "VeriEvolve (v1)",
+        "url": "https://arxiv.org/html/2610.29005v1",
+        "locator": "Sections 4.1–4.3, results; limitations",
+        "first_release_date": "2026-10-21",
+        "source_version_date": "2026-10-21",
+        "source_version": "2610.29005v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "trinity2026",
+    "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+    "authors": "Weidong Tang and Ruiheng Wang and Jingxuan Zhang and Hexin Wang and Haoyuan Chen and Zhengfeiyang Zhang and Yixing Ma and Zichen Jiang and Ziyu Guo and Haodong Li and Zhengbo Jiao and Zhiqing Cui and Xinxiang Yin and Shuo Liang and Zhenglin Wan and Hongzhan Lin and Wangbo Zhao and Kaipeng Zhang and Pengfei Zhou and Odin Zhang and Yang You",
+    "kind": "paper",
+    "arxiv_id": "2610.36077",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; full-text mechanism and author list inspected",
+      "source": "https://arxiv.org/abs/2610.36077v1"
+    },
+    "sources": [
+      {
+        "name": "The Trinity (v1)",
+        "url": "https://arxiv.org/html/2610.36077v1",
+        "locator": "Sections 3.1–3.6, 4.1–4.2; Table 2; Section 7",
+        "first_release_date": "2026-10-26",
+        "source_version_date": "2026-10-26",
+        "source_version": "2610.36077v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "selm2026",
+    "title": "Selm: Self-Evolving Library Management for Multi-Skill Agent Optimization",
+    "authors": "Mengxi Hu and Yuxuan Hu and Jinbo Su and Ke Wang and Honghao Shi and Wenli Wu and Cuiping Li and Hong Chen and Jing Zhang",
+    "kind": "paper",
+    "arxiv_id": "2610.24630",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-17",
+      "precision": "day",
+      "basis": "First arXiv submission; full-text mechanism and author list inspected",
+      "source": "https://arxiv.org/abs/2610.24630v1"
+    },
+    "sources": [
+      {
+        "name": "Selm (v1)",
+        "url": "https://arxiv.org/html/2610.24630v1",
+        "locator": "Sections 3–4, 5.1, 5.3; Table 2; Appendix E",
+        "first_release_date": "2026-10-17",
+        "source_version_date": "2026-10-17",
+        "source_version": "2610.24630v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "harness_ceiling2026",
+    "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+    "authors": "Tian, Yuan and Hu, Bing and Wang, Hao and Lu, Binghang and Wu, Fang",
+    "kind": "paper",
+    "arxiv_id": "2610.11655",
+    "doi": "10.48550/arXiv.2610.11655",
+    "first_release": {
+      "value": "2026-10-08",
+      "precision": "day",
+      "basis": "First arXiv submission from primary submission history; inspected current v1; arXiv v1; no later arXiv version or formal venue verified",
+      "source": "https://arxiv.org/abs/2610.11655"
+    },
+    "sources": [
+      {
+        "name": "Harness Evolution Hits a Ceiling (v1)",
+        "url": "https://arxiv.org/html/2610.11655v1",
+        "locator": "Sections 4.1–4.2; crossed harness/adapter experiments; limitations",
+        "first_release_date": "2026-10-08",
+        "source_version_date": "2026-10-08",
+        "source_version": "2610.11655v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "harness_delta_attribution2026",
+    "title": "Harness-Delta Attribution: Dissecting Gains From Harness Evolution",
+    "authors": "Wenxuan Ding and Qin Lu and Changlong Yu and Sha Li and Shuowei Jin and Xin Liu and Zhenyu Shi and Greg Durrett",
+    "kind": "paper",
+    "arxiv_id": "2610.22466",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-15",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.22466"
+    },
+    "sources": [
+      {
+        "name": "Harness-Delta Attribution (v1)",
+        "url": "https://arxiv.org/html/2610.22466v1",
+        "locator": "Attribution protocol; compute-matching and shortcut-neutralization analyses",
+        "first_release_date": "2026-10-15",
+        "source_version_date": "2026-10-15",
+        "source_version": "2610.22466v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "harness_scaling2026",
+    "title": "Harness Scaling for Generalizable Agentic Reinforcement Learning",
+    "authors": "Fei Bai and Huatong Song and Chuan Hao and Ran Tao and Jian Yang and Bryan Dai and Wayne Xin Zhao and Ji-Rong Wen",
+    "kind": "paper",
+    "arxiv_id": "2610.29458",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-21",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.29458"
+    },
+    "sources": [
+      {
+        "name": "Harness Scaling (v1)",
+        "url": "https://arxiv.org/html/2610.29458v1",
+        "locator": "Sections 3.1–3.2, 4.1; generalization experiments",
+        "first_release_date": "2026-10-21",
+        "source_version_date": "2026-10-21",
+        "source_version": "2610.29458v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "harnessadapt_rl2026",
+    "title": "Training the Whole Agent, Not Just the Model",
+    "authors": "Lingxiao Tang and Wei Tao and Yiwen Guo and Lingfeng Bao",
+    "kind": "paper",
+    "arxiv_id": "2610.28069",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.28069"
+    },
+    "sources": [
+      {
+        "name": "HarnessAdapt-RL (v1)",
+        "url": "https://arxiv.org/html/2610.28069v1",
+        "locator": "Sections 3.1–3.3, 4.1–4.6; Appendix 8.4; limitations",
+        "first_release_date": "2026-10-20",
+        "source_version_date": "2026-10-20",
+        "source_version": "2610.28069v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "continual_learners2026",
+    "title": "Are Self-Evolving Agents Continual Learners?",
+    "authors": "Xiaoyin Chen and Yizheng Huang and Yinglun Xu and Ziyun Zhao and Emmett McQuinn and Julie Liu and Hope Yao",
+    "kind": "paper",
+    "arxiv_id": "2610.25858",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-19",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.25858"
+    },
+    "sources": [
+      {
+        "name": "Are Self-Evolving Agents Continual Learners? (v1)",
+        "url": "https://arxiv.org/html/2610.25858v1",
+        "locator": "Sections 3–4; task-stream configurations and stability/plasticity analysis",
+        "first_release_date": "2026-10-19",
+        "source_version_date": "2026-10-19",
+        "source_version": "2610.25858v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "verifier_recoverability2026",
+    "title": "Recoverability and Verifier Strength: Two Measured Preconditions for Unattended Agent Self-Improvement",
+    "authors": "De Wang and Peng Qi",
+    "kind": "paper",
+    "arxiv_id": "2610.27465",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-20",
+      "precision": "day",
+      "basis": "First arXiv submission; v1 methods and limitations checked 2026-10-24",
+      "source": "https://arxiv.org/abs/2610.27465"
+    },
+    "sources": [
+      {
+        "name": "Recoverability and Verifier Strength (v1)",
+        "url": "https://arxiv.org/html/2610.27465v1",
+        "locator": "Controlled verifier/recoverability experiments; limitations; Appendix D",
+        "first_release_date": "2026-10-20",
+        "source_version_date": "2026-10-20",
+        "source_version": "2610.27465v1",
+        "metadata_checked_on": "2026-10-31",
+        "metadata_basis": "arXiv Atom API, exact version"
+      }
+    ]
+  },
+  {
+    "key": "hemo2026",
+    "title": "HEMO: Harness Self-Evolution for Multi-Objective Combinatorial Optimization",
+    "authors": "Jianghan Zhu and Cong Zhang and Ni Zhang and Yifan Yang and Yew Soon Ong and Zhiguang Cao",
+    "kind": "paper",
+    "arxiv_id": "2610.40023",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.40023v1"
+    },
+    "sources": [
+      {
+        "name": "HEMO (v1)",
+        "url": "https://arxiv.org/html/2610.40023v1",
+        "locator": "Sections IV–V; Limitations; Appendix H",
+        "source_version": "2610.40023v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "karma2026",
+    "title": "KARMA: Training-Free Knowledge-Atomic Harness Evolution for Industrial Advertising Agents",
+    "authors": "Xinhua Miao and Yuanzhen Rong and Weiru Zhang and Xiaoyi Zeng",
+    "kind": "paper",
+    "arxiv_id": "2610.39884",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39884v1"
+    },
+    "sources": [
+      {
+        "name": "KARMA (v1)",
+        "url": "https://arxiv.org/html/2610.39884v1",
+        "locator": "Sections 4.6, 5.1–5.2, 5.5 and 6",
+        "source_version": "2610.39884v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "molrsi2026",
+    "title": "MoLRSI: A Recursive Self-Improving AI agent for Molecular Discovery",
+    "authors": "Yikun Zhang and Xiwei Cheng and Mingze Yuan and Yu Zhang and Brian Shim and Aarti Krishnan and Daniel Rosen and Kunyang Sun and Yingze Wang and Zhenfeng Deng and Botao Yu and Bingxu Liu and David Liu and Tianyu Liu and Yuanqi Du and Nir Hacohen and James J. Collins and Wengong Jin",
+    "kind": "paper",
+    "arxiv_id": "2610.39714",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39714v1"
+    },
+    "sources": [
+      {
+        "name": "MolRSI (v1)",
+        "url": "https://arxiv.org/html/2610.39714v1",
+        "locator": "Discussion; Methods: experience memory, antibiotic evaluation and protein design",
+        "source_version": "2610.39714v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "skillcompiler2026",
+    "title": "Compile Away Uncertainty: Self-Evolving Agent Skills via Programmatic Compilation",
+    "authors": "Chengyu Yang and Yunxiang Zheng and Zongzheng Li and Jiamei Li and Boxun Lan and Xiaoyu Liu and Xiaoyu Zhang and Xiaohong Chen and Ming Hu",
+    "kind": "paper",
+    "arxiv_id": "2610.39508",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39508v1"
+    },
+    "sources": [
+      {
+        "name": "SkillCompiler (v1)",
+        "url": "https://arxiv.org/html/2610.39508v1",
+        "locator": "Sections 3–4; evaluation protocol and limitations",
+        "source_version": "2610.39508v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "evolife2026",
+    "title": "Ask to Evolve: A Unified Harness for Lifelong Embodied Navigation with Hybrid Action Space and Persistent Memory",
+    "authors": "Kai Sheng and Liuyi Wang and Jinlong Li and Haojie Dai and Chengju Liu and Qijun Chen",
+    "kind": "paper",
+    "arxiv_id": "2610.39446",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39446v1"
+    },
+    "sources": [
+      {
+        "name": "EvoLife / Ask to Evolve (v1)",
+        "url": "https://arxiv.org/html/2610.39446v1",
+        "locator": "Sections 3–4; memory-enabled revisit experiments and limitations",
+        "source_version": "2610.39446v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "recrsi2026",
+    "title": "Try Before You Evolve: Ranking-Scored Trials for Recursive Self-Improvement of Recommender Systems",
+    "authors": "Xu Huang and Jiawei Feng and Jiancan Wu",
+    "kind": "paper",
+    "arxiv_id": "2610.39352",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39352v1"
+    },
+    "sources": [
+      {
+        "name": "RecRSI (v1)",
+        "url": "https://arxiv.org/html/2610.39352v1",
+        "locator": "Sections 3.1–4.1; Appendix A and G",
+        "source_version": "2610.39352v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "memsteer2026",
+    "title": "MemSteer: Turning User Histories into Supervision for Agent Memory Optimization",
+    "authors": "Jie Huang and Cuiling Lan and Qize Yu and Xiulian Peng and Yan Lu",
+    "kind": "paper",
+    "arxiv_id": "2610.39276",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39276v1"
+    },
+    "sources": [
+      {
+        "name": "MemSteer (v1)",
+        "url": "https://arxiv.org/html/2610.39276v1",
+        "locator": "Sections 3–4; cross-benchmark and cross-user transfer; limitations",
+        "source_version": "2610.39276v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "vevo_harness2026",
+    "title": "VEvo-Harness: Causally-Guarded Self-Evolving Harness for Agentic Image Generation",
+    "authors": "Yuan Wang and Yuhang Yu and Mengting Chen and Tianrun Xu and Zihao Pan and Xuetao Feng and Wei Li",
+    "kind": "paper",
+    "arxiv_id": "2610.39158",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39158v1"
+    },
+    "sources": [
+      {
+        "name": "VEvo-Harness (v1)",
+        "url": "https://arxiv.org/html/2610.39158v1",
+        "locator": "Sections 3.3–4.3; Figure 4 and Table 3",
+        "source_version": "2610.39158v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "calm2026",
+    "title": "CALM: Conflict-Aware Lifecycle Memory Governance for Long-Horizon Language Agents",
+    "authors": "Chang Li and Xianhao Ou and Xinyan Ma and Hao Li and Haoyuan Xu and Jiafeng Liang and Xiaohan Wang and Jiajun Chai and Guojun Yin and Ming Liu",
+    "kind": "paper",
+    "arxiv_id": "2610.38573",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-28",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.38573v1"
+    },
+    "sources": [
+      {
+        "name": "CALM (v1)",
+        "url": "https://arxiv.org/html/2610.38573v1",
+        "locator": "Sections 3–4; Limitations; Appendix A gate supervision",
+        "source_version": "2610.38573v1",
+        "first_release_date": "2026-10-28",
+        "source_version_date": "2026-10-28",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "masked_erosion2026",
+    "title": "Masked Erosion: How Acceptance Gates Lose Redundant Safeguards in Self-Improving Agents",
+    "authors": "Hau-Sing So and Daixian Liu and Weicai Long",
+    "kind": "paper",
+    "arxiv_id": "2610.38392",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-28",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.38392v1"
+    },
+    "sources": [
+      {
+        "name": "Masked Erosion (v1)",
+        "url": "https://arxiv.org/html/2610.38392v1",
+        "locator": "Sections 3–4.7; Limitations",
+        "source_version": "2610.38392v1",
+        "first_release_date": "2026-10-28",
+        "source_version_date": "2026-10-28",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "gepa_curator2026",
+    "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+    "authors": "Zack Yu and Nicholas Lee and Minjae Lee and Lakshya Agarwal and Luca Manolache and Wonjun Kang and Matei Zaharia and Michael W. Mahoney and Kurt Keutzer and Sehoon Kim and Amir Gholami",
+    "kind": "paper",
+    "arxiv_id": "2610.37651",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.37651v1"
+    },
+    "sources": [
+      {
+        "name": "GEPA-Curator (v1)",
+        "url": "https://arxiv.org/html/2610.37651v1",
+        "locator": "Sections 3–4.1 and 5.3–5.4",
+        "source_version": "2610.37651v1",
+        "first_release_date": "2026-10-27",
+        "source_version_date": "2026-10-27",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "sceneevolve2026",
+    "title": "Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction",
+    "authors": "Haoyu Yao and Chenguo Lin and Ruize Du and Yadong Mu",
+    "kind": "paper",
+    "arxiv_id": "2610.37046",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.37046v1"
+    },
+    "sources": [
+      {
+        "name": "SceneEvolve (v1)",
+        "url": "https://arxiv.org/html/2610.37046v1",
+        "locator": "Sections 3.3, 4.1–4.3; Appendix E",
+        "source_version": "2610.37046v1",
+        "first_release_date": "2026-10-27",
+        "source_version_date": "2026-10-27",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "ruharness2026",
+    "title": "When the Critic Falls Behind: Co-Evolving Rubrics and Harnesses for Continual Agent Self-Improvement",
+    "authors": "Hao Chen and Yukun Yan and Ziyu Han and Ye He and Chuanzhe Guo and Shangzhan Li and Qi Shi and Qingfu Zhu and Maosong Sun and Wanxiang Che",
+    "kind": "paper",
+    "arxiv_id": "2610.36826",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.36826v1"
+    },
+    "sources": [
+      {
+        "name": "RuHarness (v1)",
+        "url": "https://arxiv.org/html/2610.36826v1",
+        "locator": "Sections 3–5; Limitations; Appendix A.1",
+        "source_version": "2610.36826v1",
+        "first_release_date": "2026-10-27",
+        "source_version_date": "2026-10-27",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "coharl2026",
+    "title": "CoHARL: Co-Evolving Agent Policies and Executable Harnesses with Reinforcement Learning",
+    "authors": "Jianwen Chen and Peng Xia and Kaide Zeng and Siwei Han and Zhen-Yu Zhang and Charles Fleming and Xinyu Ye and Huaxiu Yao",
+    "kind": "paper",
+    "arxiv_id": "2610.36469",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.36469v1"
+    },
+    "sources": [
+      {
+        "name": "CoHARL (v1)",
+        "url": "https://arxiv.org/html/2610.36469v1",
+        "locator": "Sections 3–4; Appendices B, C.1 and E",
+        "source_version": "2610.36469v1",
+        "first_release_date": "2026-10-27",
+        "source_version_date": "2026-10-27",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "skill_infinity2026",
+    "title": "Skill$^{\\infty}$: Recursive Self-Improvement for Agent Skill Optimization",
+    "authors": "Wangcheng Tao and Zhanglu Yan and Han Wu and Weng-Fai Wong",
+    "kind": "paper",
+    "arxiv_id": "2610.35434",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.35434v1"
+    },
+    "sources": [
+      {
+        "name": "Skill Infinity (v1)",
+        "url": "https://arxiv.org/html/2610.35434v1",
+        "locator": "Sections 3–4; Limitations; Appendices B and D",
+        "source_version": "2610.35434v1",
+        "first_release_date": "2026-10-26",
+        "source_version_date": "2026-10-26",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "rsiv_harness2026",
+    "title": "RSIV-Harness: A Recursive Self-Improvement Harness Framework for Open-Domain Conversational Text-to-Visualization",
+    "authors": "Jiawei Lu and Chen Zhang and Jinwei Lu and Yuanwei Song and Yuanfeng Song and Raymond Chi-Wing Wong",
+    "kind": "paper",
+    "arxiv_id": "2610.35316",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.35316v1"
+    },
+    "sources": [
+      {
+        "name": "RSIV-Harness (v1)",
+        "url": "https://arxiv.org/html/2610.35316v1",
+        "locator": "Sections 4–5.3; Tables 3–4",
+        "source_version": "2610.35316v1",
+        "first_release_date": "2026-10-26",
+        "source_version_date": "2026-10-26",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "amie2026",
+    "title": "Adaptive Memory Index Evolution for Agents",
+    "authors": "Yuntong Hu and Tongli Su and Yuanfu Sun and Shuo Ma and Qiaoyu Tan and Liang Zhao",
+    "kind": "paper",
+    "arxiv_id": "2610.34977",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.34977v1"
+    },
+    "sources": [
+      {
+        "name": "AMIE (v1)",
+        "url": "https://arxiv.org/html/2610.34977v1",
+        "locator": "Sections 3–4; Appendix A.5",
+        "source_version": "2610.34977v1",
+        "first_release_date": "2026-10-26",
+        "source_version_date": "2026-10-26",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "multievoskill2026",
+    "title": "MultiEvoSkill: Structure-Aware Multi-Agent Skill Evolution for Generalizable Skill Artifacts",
+    "authors": "Kounianhua Du and Jianxing Liu and Ruoshui Shan and Yucheng Zhang and Ke Li and Xing Sun and Weinan Zhang",
+    "kind": "paper",
+    "arxiv_id": "2610.34260",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-25",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.34260v1"
+    },
+    "sources": [
+      {
+        "name": "MultiEvoSkill (v1)",
+        "url": "https://arxiv.org/html/2610.34260v1",
+        "locator": "Sections 3–4; Limitations; Appendix B",
+        "source_version": "2610.34260v1",
+        "first_release_date": "2026-10-25",
+        "source_version_date": "2026-10-25",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "cle2026",
+    "title": "Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents",
+    "authors": "Haoyu Zhao and Sitian Tu and Yuxuan Huang and Huichi Zhou and Zhangyue Yin and Jiahao Huang and Jingyuan Xu and Tianmiao Shi and Jin Shi and Nianxi Zhang and Yangmiao Zhang and Zhuolang Chan and Huiyan Hu and Chenchao Sheng and Yaqing Luo and Yue Chen and Huaxiu Yao and Meng Fang and Jun Wang",
+    "kind": "paper",
+    "arxiv_id": "2610.33956",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-25",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.33956v1"
+    },
+    "sources": [
+      {
+        "name": "Continual Learning Exam (v1)",
+        "url": "https://arxiv.org/html/2610.33956v1",
+        "locator": "Sections 3–4.2; Table 1",
+        "source_version": "2610.33956v1",
+        "first_release_date": "2026-10-25",
+        "source_version_date": "2026-10-25",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  }
+]

@@ -31,7 +31,7 @@ def main():
                     raise ValueError('Primary excerpt not found: '+version)
                 anchor_count+=1
     report={'schema':'passed','records':len(data['records']),'relational_and_manifest_checks':'passed',
-            'frozen_v010':'unchanged','primary_anchor_checks':anchor_count if args.source_cache else 'not_run',
+            'frozen_releases':'unchanged','primary_anchor_checks':anchor_count if args.source_cache else 'not_run',
             'scientific_interpretation':'Requires source inspection; structural validation is not scientific certification.'}
     if args.report:args.report.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))

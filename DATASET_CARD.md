@@ -2,32 +2,34 @@
 
 ## Status and purpose
 
-**v0.2.0 — released October 31, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
+**v0.3.0 — released November 1, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
 
 This resource documents what agent harnesses change, how changes are selected, what outcomes are reported, and what the evidence cannot establish. It is a curated evidence collection, not a new benchmark or a collection of reproduced experiments.
 
 ## Composition and coverage
 
-| Quantity | v0.1.0 | v0.2.0 |
-| --- | ---: | ---: |
-| Category-source records | 95 | 113 |
-| Distinct works | 63 | 81 |
-| Records with structured signals | 4 | 22 |
-| Scoped signals | 6 | 24 |
-| Newly documented primary-source checks | Not claimed | 28 |
-| Inherited records without a new primary audit | 95 | 85 |
-| Populated selection/control fields | 0 | 28 |
-| Independently human-adjudicated records | Not claimed | 0 |
+| Quantity | v0.1.0 | v0.2.0 | v0.3.0 |
+| --- | ---: | ---: | ---: |
+| Category-source records | 95 | 113 | 132 |
+| Distinct works | 63 | 81 | 100 |
+| Records with structured signals | 4 | 22 | 30 |
+| Scoped signals | 6 | 24 | 32 |
+| Documented primary-source checks | Not claimed | 28 | 47 |
+| Inherited records without a new primary audit | 95 | 85 | 85 |
+| Populated selection/control fields | 0 | 28 | 47 |
+| Independently human-adjudicated records | Not claimed | 0 | 0 |
 
-The 81 works comprise 80 papers and one benchmark resource. A paper can appear in several categories; records and signals are not independent experimental effects. Eighteen records were added; six existing records received source-version/mechanism checks without inventing outcome signals. The four original pilot records were checked against primary text.
+The 100 works comprise 99 papers and one benchmark resource. v0.3.0 adds 19 records, eight scoped observations and 11 mechanism/protocol reviews without newly coded outcomes. A paper can appear in several categories; records and signals are not independent effects. Both earlier releases remain byte-for-byte unchanged.
 
-Targeted discovery runs through **October 31, 2026**. The original snapshot retains its **October 1** membership cutoff; new sources and revisions have individual dates. The search horizon does not imply every record was re-audited or the field was exhaustively covered. The broader bibliography is a separate collection.
+Targeted discovery runs through **November 1, 2026**, with a seven-day overlap beginning October 24. This batch's newly included papers were first posted October 25–29. The original survey atlas retains its **October 1** cutoff and 95 records. The broader bibliography now contains 305 papers and 11 resources; it is a separate collection, not the dataset denominator.
 
-The dataset has coding, reasoning, interactive, visual and cross-domain entries. The new cross-domain category holds aggregate comparisons that cannot be assigned to one task category without distortion. The historical four-domain atlas remains separately frozen.
+The dataset spans coding, reasoning, interactive, visual and cross-domain settings. Three task categories distinguish multi-objective combinatorial optimization, embodied navigation and compositional 3D reconstruction; their inclusion/exclusion boundaries are in the protocol. No historical category assignments were changed.
 
 ## Collection and review
 
-See `PROTOCOL.md` for eligibility and scientific distinctions. Discovery uses targeted primary-source search and reference following. `screening.json` records 21 candidate decisions: 18 empirical extractions and three contextual works. A complete search-result denominator was not recorded; no PRISMA completeness or recall estimate is claimed.
+See `PROTOCOL.md` for eligibility and scientific distinctions. This release records three date-bounded arXiv queries yielding 118 unique candidates: two already collected, 20 inspected additions (19 evidence records and one contextual survey), and 96 unscreened keyword hits. The latter are a pending queue, not 96 eligible papers or exclusions. The latest log records query URLs, result counts and pending identities. Prior discovery did not preserve a complete denominator; no corpus-wide PRISMA completeness or recall estimate is claimed.
+
+The official arXiv API was also checked for the 74 arXiv works already in the source registry; none had an update dated October 31 or November 1. This metadata check does not constitute a fresh full-text review of every prior source. `screening.json` retains 41 decisions across releases: 37 included extractions and four contextual works.
 
 Evidence uses pinned papers and locators. First release, inspected revision, metadata check and claim review are distinct dates. Full third-party papers are not distributed. Short support anchors and hashes identify inspected HTML renderings; arXiv can regenerate HTML without changing the PDF version.
 
@@ -35,9 +37,9 @@ Evidence uses pinned papers and locators. First release, inspected revision, met
 
 ## Files and loading
 
-`dataset.json` and `records.jsonl` preserve the nested representation; `schema.json` specifies it. `primary-checked.records.jsonl` contains only the 28 targeted primary-checked records. Six of these are version/mechanism reviews without a structured outcome; use `signals.csv` for the 24 outcome observations. This subset is not independently human-adjudicated.
+`dataset.json` and `records.jsonl` preserve the nested representation; `schema.json` specifies it. `primary-checked.records.jsonl` contains only the 47 targeted primary-checked records. Seventeen have no structured outcome; use `signals.csv` for the 32 scoped observations. This subset is not independently human-adjudicated.
 
-`sources.json`, `screening.json`, `search-log.json`, `corrections.json`, `quality-report.json`, `citation.bib` and `checksums.json` accompany every version. The search log is a partial retrospective record, not a complete search-result archive.
+`sources.json`, `screening.json`, `search-log.json`, `corrections.json`, `quality-report.json`, `citation.bib` and `checksums.json` accompany every version. The v0.3.0 search log preserves its query counts and pending identities; the historical logs remain separately archived.
 
 Normalized tables avoid nested JSON strings inside CSV cells:
 
@@ -52,7 +54,7 @@ Normalized tables avoid nested JSON strings inside CSV cells:
 | `signal_components.csv` | Signal/component relation |
 | `signal_benchmarks.csv` | Explicit signal applicability |
 | `reviews.csv` | Review provenance per record |
-| `review-queue.csv` | 85 primary-source reviews and 28 human-adjudication tasks; reviewer fields are blank |
+| `review-queue.csv` | 85 primary-source reviews and 47 human-adjudication tasks; reviewer fields are blank |
 
 Flat JSONL files for papers, all records, the primary-checked subset and signals support separate HF configurations. The split is called `data`; no training/test partition is invented. Randomly splitting related literature rows would not produce a valid model benchmark.
 
@@ -83,9 +85,9 @@ Retain the versioned files, manifest and HF commit. A moving `main` or `latest.j
 
 ## Corrections
 
-HarnessX's `unused-color-tool` is superseded by `color-tool-zero-hit-rate`: the paper measures affected tasks flipped to success, not tool invocation frequency. Zero is a scoped edit outcome, not an isolated causal test. See arXiv:2606.14249v3, Figures 8 and 10, and `corrections.json`.
+HarnessX's `unused-color-tool` is superseded by `color-tool-zero-hit-rate`: the paper measures affected tasks flipped to success, not tool invocation frequency. Zero is a scoped edit outcome, not an isolated causal test. See the pinned source, Figures 8 and 10, in the versioned `corrections.json`.
 
-EvolveNet, TTHE, ModularRSI, RRSI and HarnessPAI have migrated versions/locators in six records. The old unpinned ModularRSI code observation is not represented as a current code audit. The Lean cost/time comparison is restricted to its common-solved subset. Historical v0.1.0 files remain unchanged; apply these correction notices when interpreting them.
+EvolveNet, TTHE, ModularRSI, RRSI and HarnessPAI have migrated versions/locators in six records. The old unpinned ModularRSI code observation is not represented as a current code audit. The Lean cost/time comparison is restricted to its common-solved subset. Historical v0.1.0 and v0.2.0 files remain unchanged; apply these correction notices when interpreting them.
 
 ## Uses, biases and limitations
 

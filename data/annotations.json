@@ -3550,5 +3550,245 @@
       "basis": "First arXiv submission; full-text mechanism and author list inspected",
       "source": "https://arxiv.org/abs/2610.38266v1"
     }
+  },
+  "video_harness_survey2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Surveys agentic video generation, world modeling and recursive improvement, distinguishing revisions to individual outputs from persistent harness state and generator training. Contextual survey, not an empirical harness intervention. Only the available introduction and conceptual framing were inspected. Source: Abstract; Introduction Sections 1.1–1.2.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.40191v1"
+    }
+  },
+  "hemo2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Revises executable retrieval, parent-selection and candidate-evolution modules, retaining a Pareto archive over solution quality and runtime. Transfers harness code across related optimization tasks; task-specific memory does not transfer. Gains vary by task, and repeated search is costly. Source: Sections IV–V; Limitations; Appendix H.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.40023v1"
+    }
+  },
+  "karma2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Makes bounded atomic edits to six typed knowledge modules; validation gates changes and restores rejected snapshots while executable harness code stays fixed. Offline logged-action agreement is not revenue or fairness. Main settings have one run; repeated validation and source-dependent negative transfer remain limitations. Source: Sections 4.6, 5.1–5.2, 5.5 and 6.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39884v1"
+    }
+  },
+  "molrsi2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Uses solution, refinement and execution memories to guide molecular workflow search, including unsuccessful revisions and reusable repairs. Downstream scientific models are fitted. Some retrospective analyses select by test performance; these are not prospective selection evidence or isolated harness-edit effects. Source: Discussion; Methods: experience memory, antibiotic evaluation and protein design.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39714v1"
+    }
+  },
+  "skillcompiler2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Compiles reliable skill operations into reusable programs and retains LLM reasoning for context-dependent steps. Banks are learned per model/benchmark/seed; development inspected held-out failures, despite frozen banks during reported testing. Source: Sections 3–4; Appendix evaluation protocol.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39508v1"
+    }
+  },
+  "evolife2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Combines hybrid navigation actions, optional guide questions and persistent place/route memory that can be updated or retired. The guide has privileged information. Assisted first visits and interaction-disabled revisits differ in available information; revisiting the same tasks is not held-out transfer or optimizer rewriting. Source: Sections 3–4; memory-enabled revisit experiments and limitations.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39446v1"
+    }
+  },
+  "recrsi2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Diagnoses ranking failures, proposes three recipe edits, ranks short training trials, and fully retrains one candidate; memory records trials and promotion outcomes. Recommender weights are trained. Five rounds and one proposer limit scope; equal full-retraining counts are not equal total compute. Source: Sections 3.1–4.1; Appendix A and G.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39352v1"
+    }
+  },
+  "memsteer2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Generates and audits QA supervision from user histories, then optimizes memory storage, retrieval and context design using diagnosed failure classes. Generated labels can share model errors. Frozen cross-benchmark transfer differs from subsequent personalization using target-history supervision; official-QA comparisons include a disclosed overlap setting. Source: Sections 3–4; cross-benchmark and cross-user transfer; limitations.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39276v1"
+    }
+  },
+  "vevo_harness2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Routes image repairs from visual failure traces and admits reusable skills through paired rendered-image replay, with memory consolidation and a denied-edit buffer. Seed-matched replay supports a local admission comparison, not unrestricted causal validity. Multi-backbone configuration tests alone do not identify unchanged-artifact transfer. Source: Sections 3.3–4.3; Figure 4 and Table 3.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.39158v1"
+    }
+  },
+  "calm2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Separates persistent memory lifecycle states from query-time admission, retaining superseded evidence for historical questions. CALM-ZS is training-free, but CALM trains an auxiliary gate. Results cover LongMemEval-S and non-adversarial LoCoMo; unseen-domain gate generalization remains untested. Source: Sections 3–4; Limitations; Appendix A gate supervision.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-28",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.38573v1"
+    }
+  },
+  "masked_erosion2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Tests whether task-success acceptance gates remove redundant safeguards while observed harm remains low, followed by model-swap evaluation. Most loops plant deletions in two controlled environments. Natural proposals and three GEPA seeds are case studies, not estimates of deployed erosion prevalence. Source: Sections 3–4.7; Limitations.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-28",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.38392v1"
+    }
+  },
+  "gepa_curator2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Curates which training tasks to execute and retrieves reliable prior successes to contextualize reflective prompt edits; extends curation to harness-code search. The prompt variant uses greedy lineage updates with final validation selection. Harness-code extension has one search run per setting; matched actor calls do not equal total cost. Source: Sections 3–4.1 and 5.3–5.4.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.37651v1"
+    }
+  },
+  "sceneevolve2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "A teacher revises tools, middleware, skills and memory around a frozen scene-reconstruction student and fixed semantic action interface. Monotone recorded development scores do not guarantee unseen-scene gains. Search costs are substantial; frontier models can remain stronger. Source: Sections 3.3, 4.1–4.3; Appendix E.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.37046v1"
+    }
+  },
+  "ruharness2026": {
+    "category": "Self-Modification and Meta-Level Improvement",
+    "kind": "paper",
+    "summary": "Co-evolves diagnostic rubrics and harness edits; criterion lifecycle and conservative prioritization track changing failure patterns while the task evaluator stays fixed. Two backbones are optimized separately in one agent framework. A finite benchmark horizon does not establish indefinite adaptation or unchanged cross-model transfer. Source: Sections 3–5; Limitations; Appendix A.1.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.36826v1"
+    }
+  },
+  "coharl2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Alternates policy RL with executable harness search; a scheduled harness pool supplies rollouts and a historical accuracy–cost archive informs proposals. Executor weights change. Similar episode counts exclude proposer and validation overhead; single training runs and possible pretraining contamination limit conclusions. Source: Sections 3–4; Appendices B, C.1 and E.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-27",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.36469v1"
+    }
+  },
+  "skill_infinity2026": {
+    "category": "Self-Modification and Meta-Level Improvement",
+    "kind": "paper",
+    "summary": "Optimizes task skills using an editable meta-skill, then applies the same procedure to that meta-skill; isolated reviews gate candidate eligibility. Automatic verifiers and instruction-following constrain reliability. Cross-harness results should not be read as proof that every task skill transfers unchanged. Source: Sections 3–4; Limitations; Appendices B and D.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.35434v1"
+    }
+  },
+  "rsiv_harness2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Revises a conversational visualization harness from failure traces using anchor checks, protected-record memory and rollback rules. Main experiments perform one evolution round, not long-run continual adaptation. Transfer improves five metrics but lowers execution accuracy by 0.78 points versus the target static harness. Source: Sections 4–5.3; Tables 3–4.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.35316v1"
+    }
+  },
+  "amie2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Updates bounded, memory-ID-specific suppression state after sealing the current context, influencing only later retrievals without rewriting stored content. The main selector trains LoRA/head parameters. LoCoMo supplies fitting/selection data; cross-benchmark transfer moves the fixed policy, not memory-ID state. Candidate-pool reach limits recovery. Source: Sections 3–4; Appendix A.5.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-26",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.34977v1"
+    }
+  },
+  "multievoskill2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Evolves typed skill graphs from heterogeneous execution evidence, debated edits and hierarchical merging; behavioral and structural gates assess the composed candidate. Workflow adapters report node F1, not interactive success. Panel diversity is not unseen-model transfer; a valid DAG or positive selection score does not prove semantic correctness or monotone generalization. Source: Sections 3–4; Limitations; Appendix B.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-25",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.34260v1"
+    }
+  },
+  "cle2026": {
+    "category": "Benchmarks for Harness Optimization and Adaptation",
+    "kind": "paper",
+    "summary": "Evaluates persistent-harness agents across 120 five-level task ladders with hidden rubrics and stateful application services. Two trials jointly change feedback and submission budget. Without a matched per-task memory-reset control, their difference does not isolate retained-experience benefit or recursive optimizer improvement. Source: Sections 3–4.2; Table 1.",
+    "added_on": "2026-11-01",
+    "release": {
+      "value": "2026-10-25",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
+      "source": "https://arxiv.org/abs/2610.33956v1"
+    }
   }
 }

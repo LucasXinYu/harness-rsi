@@ -1,6 +1,6 @@
 # Harness RSI evidence curation protocol
 
-Protocol version 0.2, documented October 31, 2026. This documents a retrospective curation process; it was not preregistered.
+Protocol version 0.3, documented November 1, 2026. This documents a retrospective curation process; it was not preregistered.
 
 ## Research questions and units
 
@@ -35,13 +35,21 @@ For each new signal record its setting, comparison, outcome, retention, attribut
 
 `legacy_curated` means narrative evidence inherited from v0.1.0 without a new primary-text audit in this release. `primary_source_checked` means targeted AI-assisted inspection of the stated claim, protocol and limitations against the pinned source. It does not certify every sentence in the paper or reproduce an experiment. `human_review_status: pending` is explicit: no independent human adjudication or inter-annotator agreement is claimed.
 
-Six source-version migrations are review events, not six invented outcome signals. Each newly extracted empirical record has a scoped signal. Short support excerpts are exact normalized-text anchors; their automatic match is a traceability check, not proof of the interpretation.
+Six source-version migrations are review events, not six invented outcome signals. A mechanism/protocol review can have no coded outcome; absence of a signal is not evidence of no gain. Short support excerpts are exact normalized-text anchors; their automatic match is a traceability check, not proof of the interpretation.
 
 For a human audit, sample by domain, attribution, training boundary and outcome, then have two researchers independently label blinded copies. Adjudicate disagreements with a source locator, retain both original labels, and report denominators and per-field agreement. Do not calculate agreement from two runs of the same assistant or assign human review retroactively.
 
 ## New category boundary
 
 The dataset adds `cross_domain / multi-domain-agent-evaluation` for aggregate claims spanning incompatible task categories: e.g. MaD-RSI's joint executor evaluation, HERD's sequential stream and Trinity's multi-benchmark comparison. A single-domain result such as the Selm SpreadsheetBench ablation remains in its task category. Do not duplicate the same aggregate into several domains. The historical four-domain survey atlas remains a distinct frozen artifact.
+
+v0.3.0 adds three task categories without reclassifying old records:
+
+- `reasoning / multi-objective-combinatorial-optimization`: search procedures for combinatorial solution quality/runtime trade-offs, such as HEMO. Excludes ordinary mathematical question answering and weight-only solvers.
+- `interactive / embodied-navigation`: agent movement and place/route memory, such as EvoLife. Excludes object manipulation and single-image perception.
+- `visual / compositional-3d-reconstruction`: executable scene construction from visual evidence, such as SceneEvolve. Excludes 2D image generation and merely describing a scene.
+
+These are dataset task distinctions, not claims of new RSI mechanisms or a revision of the manuscript taxonomy. Method categories in the bibliography remain unchanged. MolRSI and RecRSI fit machine-learning engineering because they search scientific/recommender training workflows; RSIV fits program generation because it produces executable visualization programs.
 
 ## Analysis and reuse
 
@@ -51,6 +59,6 @@ Primary papers are linked, not redistributed. The release includes project-autho
 
 ## Reproducibility and corrections
 
-Source JSON is authoritative; build exports deterministically, validate JSON Schema and relational constraints, verify frozen-release hashes and compute a complete manifest. Archive corrections with old and new IDs, reason, version and locator. Keep v0.1.0 immutable, including its superseded interpretation, with a visible correction notice in the current release. Publish a versioned release and check the actual downloaded HF/GitHub payload before marking synchronization complete.
+Source JSON is authoritative; build exports deterministically, validate JSON Schema and relational constraints, verify frozen-release hashes and compute a complete manifest. Archive corrections with old and new IDs, reason, version and locator. Keep all published versions immutable, including its superseded interpretation, with a visible correction notice in the current release. Publish a versioned release and check the actual downloaded HF/GitHub payload before marking synchronization complete.
 
 Documentation follows the questions in [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) and the [Hugging Face Dataset Card guidance](https://huggingface.co/docs/hub/datasets-cards); this is not certification by either organization.

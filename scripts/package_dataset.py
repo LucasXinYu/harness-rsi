@@ -33,7 +33,10 @@ def main():
     upload = args.output/'hf-upload'
     upload.mkdir()
     shutil.copytree(ROOT/'docs/dataset'/version, upload/version)
-    shutil.copytree(ROOT/'docs/dataset/v0.1.0', upload/'v0.1.0')
+    for archived in sorted((ROOT/'docs/dataset').glob('v*')):
+        if archived.is_dir() and archived.name != version:
+            shutil.copytree(archived, upload/archived.name)
+    metadata = json.loads((ROOT/'docs/dataset'/version/'dataset.json').read_text())['metadata']
     shutil.copy2(ROOT/'DATASET_PROTOCOL.md', upload/'PROTOCOL.md')
     if config.get('license'):
         shutil.copy2(ROOT/'LICENSE-DATA.md', upload/'LICENSE-DATA.md')
@@ -50,15 +53,15 @@ def main():
         yaml += ['  data_files:', '  - split: data', '    path: ' + version + '/' + filename]
     yaml += ['---', '', '> CC BY 4.0 covers project-owned original annotations and compilation only. '
              'Third-party papers, support excerpts and code retain their rights; see [license scope](LICENSE-DATA.md). '
-             'Default preview: 28 targeted AI-assisted primary checks, not human-adjudicated gold labels.', '',
-             'Versioned files: [' + version + '](' + version + '/). The 85 inherited records are available '
-             'in `all_records` with explicit review status.', '']
+             f"Default preview: {metadata['primary_checked_record_count']} targeted AI-assisted primary checks, not human-adjudicated gold labels.", '',
+             'Versioned files: [' + version + '](https://huggingface.co/datasets/lucas1026/harness-rsi-evidence/tree/main/' + version + '). The 85 inherited records are available '
+             'in `all_records` with explicit review status.', '', '[Survey preprint](https://www.preprints.org/manuscript/202610.2293) · [Atlas](https://lucasxinyu.github.io/harness-rsi/) · [GitHub](https://github.com/LucasXinYu/harness-rsi)', '']
     (upload/'README.md').write_text('\n'.join(yaml) + card)
     (upload/'UPLOAD-NOTES.md').write_text(
         '# Publication checklist\n\n'
         '- Retain the maintainer-authorized scoped license and third-party exclusions.\n'
         '- Upload this folder to lucas1026/harness-rsi-evidence. Preserve existing history.\n'
-        '- Verify the four configurations and their 28 / 113 / 24 / 81 row counts.\n'
+        f"- Verify configurations: {metadata['primary_checked_record_count']} primary checks / {metadata['record_count']} records / {metadata['signal_count']} signals / {metadata['distinct_source_count']} papers.\n"
         '- Download the committed version and verify checksums; record the actual HF commit.\n'
         '- Do not infer publication from this package; record the actual upload and commit.\n')
     source = args.output/'rebuild-source'
@@ -70,7 +73,7 @@ def main():
         shutil.copy2(ROOT/relative, target)
     shutil.copytree(ROOT/'data/dataset_v020', source/'data/dataset_v020')
     # The builder verifies archived bytes before exporting the candidate.
-    for relative in config['frozen_v010_sha256']:
+    for relative in {**config['frozen_v010_sha256'], **config.get('frozen_v020_sha256', {})}:
         target = source/relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT/relative, target)
@@ -91,7 +94,7 @@ def main():
     with zipfile.ZipFile(archive, 'x', compression=zipfile.ZIP_DEFLATED) as out:
         for path in sorted(args.output.rglob('*')):
             if not path.is_file(): continue
-            info = zipfile.ZipInfo(str(path.relative_to(args.output)), (2026, 10, 31, 0, 0, 0))
+            info = zipfile.ZipInfo(str(path.relative_to(args.output)), tuple(map(int, config['prepared_on'].split('-'))) + (0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o100644 << 16
             out.writestr(info, path.read_bytes())
