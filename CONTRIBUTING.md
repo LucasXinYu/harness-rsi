@@ -4,7 +4,7 @@ This repository publishes a source-traceable evidence dataset and research atlas
 
 ## Evidence dataset releases
 
-The current v0.2 release is maintained in `data/dataset_v020/`, built by `scripts/dataset_v020.py` through `catalog.py`. Its `release.json` pins input hashes and every historical v0.1.0 file. The historical `docs/evidence.json`, original annotations and published v0.1.0 remain unchanged. Review new/changed inputs before updating their hashes; a hash change alone is not approval.
+The current release is maintained in `data/dataset_v020/`, built by `scripts/dataset_v020.py` through `catalog.py`. The directory/module name is retained for compatibility. Its `release.json` selects the current version and pins input hashes plus every published v0.1.0 and v0.2.0 file. The historical `docs/evidence.json`, original annotations and published v0.1.0 remain unchanged. Review new/changed inputs before updating their hashes; a hash change alone is not approval.
 
 Read `DATASET_PROTOCOL.md` and the current dataset card. Run `python3 -m pip install -r requirements-validation.txt` and `python3 scripts/validate_dataset.py` in addition to the checks below. A local `--source-cache` argument additionally verifies short primary-source anchors against the inspected HTML hashes. CI does not independently verify scientific interpretations. Candidate exports use `dataset/candidate.json`; `latest.json` changes only when the release state is `released`. Preserve truthful review/rights states and do not report a candidate as the stable public release.
 

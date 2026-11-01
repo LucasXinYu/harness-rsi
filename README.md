@@ -57,11 +57,11 @@ The interactive site lets you choose **any two domains** and switch between inte
 
 ## Evidence dataset
 
-**Harness RSI Evidence Dataset v0.2.0** contains **113 category–source records, 81 distinct works and 24 scoped signals**. Eighteen new records extend the frozen v0.1.0 snapshot; records are not independent interventions.
+**Harness RSI Evidence Dataset v0.3.0** contains **132 category–source records, 100 distinct works and 32 scoped signals**. Nineteen records were added on November 1; earlier dataset releases remain immutable. Records are not independent interventions.
 
-**28 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Six source-version checks do not inflate the signal count.
+**47 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
 
-[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.2.0/dataset.json) · [Normalized CSV](docs/dataset/v0.2.0/records.csv) · [Schema](docs/dataset/v0.2.0/schema.json) · [Quality report](docs/dataset/v0.2.0/quality-report.json) · [Corrections](docs/dataset/v0.2.0/corrections.json)
+[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.3.0/dataset.json) · [Normalized CSV](docs/dataset/v0.3.0/records.csv) · [Schema](docs/dataset/v0.3.0/schema.json) · [Quality report](docs/dataset/v0.3.0/quality-report.json) · [Corrections](docs/dataset/v0.3.0/corrections.json)
 
 This is targeted AI-assisted source inspection, not independent reproduction or exhaustive coverage. **Project-owned annotations and compilation are CC BY 4.0; third-party rights are excluded.** See [the license scope](LICENSE-DATA.md). [Historical v0.1.0](docs/dataset/v0.1.0/dataset.json) is preserved byte-for-byte; its HarnessX hit-rate interpretation is superseded by the correction notice.
 
@@ -88,13 +88,13 @@ The frozen survey evidence covers work through **2026-10-01**. A record is one s
 
 We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.
 
-**Literature synthesis through October 27, 2026.** [Read the latest comparison supplement](docs/LITERATURE_UPDATE_2026-10-27.md): what transfers, where retained experience acts, and how an evolving evaluator stays anchored. Earlier [October 20](docs/LITERATURE_UPDATE_2026-10-20.md) and [October 24](docs/LITERATURE_UPDATE_2026-10-24.md) syntheses remain traceable. Earlier PDFs, submitted manuscripts and the evidence dataset are preserved.
+**Literature synthesis through November 1, 2026.** [Read the latest comparison supplement](docs/LITERATURE_UPDATE_2026-11-01.md): optimizer evolution, memory governance, unchanged transfer and negative evidence. This adds 20 verified papers; 96 keyword hits remain unscreened. The manuscript has not been revised in this dataset release. The [October 27 supplement](docs/LITERATURE_UPDATE_2026-10-27.md) remains available. Earlier [October 20](docs/LITERATURE_UPDATE_2026-10-20.md) and [October 24](docs/LITERATURE_UPDATE_2026-10-24.md) syntheses remain traceable. Earlier PDFs, submitted manuscripts and the evidence dataset are preserved.
 
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-10-31 | Search horizon; 285 papers and 11 official resources; collection updated 2026-10-31 |
-| **Website update** | 2026-10-31 | Evidence dataset v0.2.0: expanded records, source checks and scoped open license; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-11-01 | Search horizon; 305 papers and 11 official resources; collection updated 2026-11-01 |
+| **Website update** | 2026-11-01 | 20 literature additions and evidence dataset v0.3.0; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -112,11 +112,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**285 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-10-31**
+**305 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-01**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **271/285** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **291/305** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -126,11 +126,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-10-19 | 264 | 11 |
 | 2026-10-20 | 269 | 11 |
 | 2026-10-24 | 276 | 11 |
 | 2026-10-27 | 282 | 11 |
 | 2026-10-31 | 285 | 11 |
+| 2026-11-01 | 305 | 11 |
 
 </details>
 
