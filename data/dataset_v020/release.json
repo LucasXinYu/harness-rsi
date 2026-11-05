@@ -1,6 +1,6 @@
 {
   "name": "Harness RSI Evidence Dataset",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "status": "released",
   "prepared_on": "2026-11-04",
   "released_on": "2026-11-04",
@@ -10,10 +10,10 @@
   "annotation_basis": "Targeted AI-assisted primary-source checks plus explicitly labeled inherited narrative curation. Human adjudication pending.",
   "license_status": "CC BY 4.0 applies only to project-owned original annotations and compilation, with explicit maintainer authorization on 2026-10-31. Third-party materials retain their original rights; see LICENSE-DATA.md.",
   "inputs_sha256": {
-    "records.json": "6a9c832ad157b3bf4f6e6b2c14fe296429a6a4f3b60b944d2481794c151864dc",
-    "sources.json": "3420a7336d9f85e3dcd0bc49b40609129aaaeeed182176f32c08491614a5ca52",
+    "records.json": "2ca0bd296cd7cb4d9e1b5d0e4e13583d8e28d8023db61f8dbacf98567b82e677",
+    "sources.json": "8734bf5554990a0ab08b1a55fd0bb72fbc29cd7afa929573363bb56bbd660375",
     "screening.json": "112acf8a5aaaae2e45a5d64e88b7fd55cf6a092c0fe6ef9019989b8a8cb04dc6",
-    "corrections.json": "82bc45b32d94992b980f9aacfff029647c1902b25efb1c0fe2ed543585cc68c9",
+    "corrections.json": "a12915c1244b70300b846721be959cb40ea89b9c1ec49b2b8c93617be0343906",
     "search-log.json": "a80648006daef726590c1197e821b388b5f8ae862cdb2ad926bd38c668cfea43"
   },
   "frozen_v010_sha256": {
@@ -31,7 +31,8 @@
     "No independent dual annotation, agreement statistic, or experimental reproduction.",
     "Signals and category-source records share studies and are not independent effects.",
     "Review status is provenance, not an ordinal scientific-quality score.",
-    "Training boundary and transfer regimes are extracted per setting, not inferred from paper titles."
+    "Training boundary and transfer regimes are extracted per setting, not inferred from paper titles.",
+    "The November 4 factual audit adds scoped corrections; legacy review labels are not automatically promoted by bibliography/abstract checks."
   ],
   "license": {
     "id": "cc-by-4.0",
@@ -98,5 +99,35 @@
     "docs/dataset/v0.3.0/signals.csv": "55818623c97c858c794da85af31d8a04e0aca049727c9580fcdd2d91d5e80315",
     "docs/dataset/v0.3.0/signals.flat.jsonl": "7e6fce775cababdde5d5504b600e380389c88b6cb60a78ffe4e5336dc22edbc8",
     "docs/dataset/v0.3.0/sources.json": "f410bf8b822a990c22b2772b205fbb8a5e69190d217b1ec40681b252492a5a98"
+  },
+  "frozen_v040_sha256": {
+    "docs/dataset/v0.4.0/DATASET_CARD.md": "82004ff5159527209a9cb007c56f22f3439fff7804925137566db0755ca9f7e4",
+    "docs/dataset/v0.4.0/LICENSE-DATA.md": "9a958282688adac227145666ec3b3c3379d40c599b460a23dded7cd40d221c16",
+    "docs/dataset/v0.4.0/PROTOCOL.md": "232bd672551e764ff252bd3ffe6cb360b34a24f6175a617fc5e6bbc3ca100c1c",
+    "docs/dataset/v0.4.0/checksums.json": "c5ea2a7485372534ce12a6499a8cd34e6dfaaa1e518fb85e37534606a2ab48a2",
+    "docs/dataset/v0.4.0/citation.bib": "461a8e95ac6f23efa11f36efaffd965bd3c1bd5aa339564667ccce76615260fa",
+    "docs/dataset/v0.4.0/corrections.json": "82bc45b32d94992b980f9aacfff029647c1902b25efb1c0fe2ed543585cc68c9",
+    "docs/dataset/v0.4.0/dataset.json": "71f67421722b1e48aff158c15c8d2bc109fff69e06b0ad6c06967c20c10b9033",
+    "docs/dataset/v0.4.0/papers.csv": "11db3acf379e4a26ceb57b92ad46fd290b9ef70b5130c33f3b9ad00194792eb9",
+    "docs/dataset/v0.4.0/papers.flat.jsonl": "1462ceb3b68f17ee048978e9601eff65d575633ef8acbe124db7a48ee536d6c8",
+    "docs/dataset/v0.4.0/primary-checked.flat.jsonl": "8374bec78373c4a3b21bd5dbed2463aee98e4043751697ba6d226b70cf384941",
+    "docs/dataset/v0.4.0/primary-checked.records.jsonl": "628153aefed6dd37c94a36e81d7c1afdd6bc95f5bf6318d6c641f15aa1d94b73",
+    "docs/dataset/v0.4.0/quality-report.json": "f9c8977545715d5b24c1d8fc73e1b78b527cfffdf8341810410e574fc0752e26",
+    "docs/dataset/v0.4.0/record_benchmarks.csv": "edab326fa0d87465058b53530cb80ad5401ebd2f8defd6166928d00145445503",
+    "docs/dataset/v0.4.0/record_controls.csv": "1f0a2e1d65b2894b79a1a77f6c2dc909a4fd9d5fd9ac89fdb5df221f908cf51e",
+    "docs/dataset/v0.4.0/record_sources.csv": "a67c854d6143dbbaf1d01d921275f4428f066a3d2c9f0ff43e7d16a370bd19d5",
+    "docs/dataset/v0.4.0/records.csv": "1bd40de3cf509d74a1c0b80f750c6d846f6d5d7cb74a4cdf4a008ff267cddc1f",
+    "docs/dataset/v0.4.0/records.flat.jsonl": "eb57b90d45f9624bd6079459f85e6ee47381bc5740d2306eb14bc8d5badaca0f",
+    "docs/dataset/v0.4.0/records.jsonl": "235426d6085a6f9c9983b3208f551eaf3105a7d56a99b6f58f817667cbe82f9a",
+    "docs/dataset/v0.4.0/review-queue.csv": "bc769c0c3934ac54b9cc0b84eed4799349e637944d4b9d057cbf568ac4ff8d99",
+    "docs/dataset/v0.4.0/reviews.csv": "9ec01a47d77e1707794d6e83fc417605069b84f1f584fae1aebfcc5cbe6b3bc3",
+    "docs/dataset/v0.4.0/schema.json": "4370383fc554b5ed9332fc68fd824ec19c5ecfc7074937d556e2392113814e39",
+    "docs/dataset/v0.4.0/screening.json": "112acf8a5aaaae2e45a5d64e88b7fd55cf6a092c0fe6ef9019989b8a8cb04dc6",
+    "docs/dataset/v0.4.0/search-log.json": "a80648006daef726590c1197e821b388b5f8ae862cdb2ad926bd38c668cfea43",
+    "docs/dataset/v0.4.0/signal_benchmarks.csv": "95a5afb8c40292a74e4229f6b58897c450711249ebe4978c92e39e6f39ceebed",
+    "docs/dataset/v0.4.0/signal_components.csv": "1a3611589443a06bffa8f63cd8991aed5b6f29f635ccb64004c23ef681949a53",
+    "docs/dataset/v0.4.0/signals.csv": "f228e9b49011469a5f2600dd3a3df27086ed86b85d012288846b8bc4f16cd740",
+    "docs/dataset/v0.4.0/signals.flat.jsonl": "ffab17eeb2378a4db2a33a58ca56f8fba06a7d4be37f5050731098339ffe3511",
+    "docs/dataset/v0.4.0/sources.json": "3420a7336d9f85e3dcd0bc49b40609129aaaeeed182176f32c08491614a5ca52"
   }
 }
