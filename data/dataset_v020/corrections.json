@@ -191,5 +191,606 @@
     ],
     "reason": "November 2 revision rechecked: validation gate, offline-only scope and 23/30 positive transfer entries verified; no outcome relabeling. Prior release retained.",
     "checked_on": "2026-11-04"
+  },
+  {
+    "record_id": "terminal-based-engineering-tasks--modularrsi2026",
+    "type": "source_backed_correction",
+    "corrected_on": "2026-11-04",
+    "release": "0.4.1",
+    "fields": [
+      "sections",
+      "sources",
+      "review"
+    ],
+    "before": {
+      "sections": [
+        {
+          "label": "Setting and seed",
+          "text": "An initial modular harness evolves on related tasks outside Terminal-Bench, then undergoes frozen evaluation on version 2.0. The separate Section 6.4 method comparison specifies Terminus-2 and does not establish that seed for every main experiment."
+        },
+        {
+          "label": "Reported evolution",
+          "text": "In Appendix D.4's Go repair case, the initial dispatcher rejects multiline write_file input and sends it to the shell, producing a command-not-found error. The reported revision identifies write_file or edit_block by command name and sends the remaining payload to the editing helper. The paper reports promotion in generation 9 and unchanged multiline handling in generation 12. A separate loop update re-presents pending acceptance conditions when the agent signals completion without commands."
+        },
+        {
+          "label": "Evidence and limits",
+          "text": "The later case retains all successes while mean interactions fall from 36 to 25 across three rollouts per version. Concurrent parser and other changes prevent isolated attribution. The earlier unpinned released-code observation is archived in v0.1.0; current source-code behavior was not re-audited."
+        }
+      ],
+      "sources": [
+        {
+          "name": "ModularRSI: correcting tool dispatch and completion state",
+          "url": "https://arxiv.org/html/2609.14857v2",
+          "locator": "Case-study appendix; Positive case; Listing 10",
+          "first_release_date": "2026-09-14",
+          "source_version_date": "2026-10-09",
+          "source_version": "2609.14857v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ],
+      "review": {
+        "status": "primary_source_checked",
+        "reviewed_on": "2026-10-31",
+        "reviewer": "Codex (AI-assisted source inspection)",
+        "human_review_status": "pending",
+        "scope": "Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation.",
+        "primary_support": {
+          "url": "https://arxiv.org/html/2609.14857v2",
+          "locator": "Case-study appendix; Positive case; Listing 10",
+          "excerpt": "The mean falls from 36 to 25 episodes.",
+          "artifact_sha256": "0729454957ba4913db9c1c9e1f0fb032784aa7d2865f832e9461358fa8d2e85e",
+          "checked_on": "2026-10-31"
+        }
+      }
+    },
+    "after": {
+      "sections": [
+        {
+          "label": "Setting and seed",
+          "text": "An initial modular harness evolves on related tasks outside Terminal-Bench, then undergoes frozen evaluation on version 2.0. The separate Section 6.5 and Appendix F method comparison specifies Terminus-2 and does not establish that seed for every main experiment."
+        },
+        {
+          "label": "Reported evolution",
+          "text": "In Appendix K.4's Go repair case, the initial dispatcher rejects multiline write_file input and sends it to the shell, producing a command-not-found error. The reported revision identifies write_file or edit_block by command name and sends the remaining payload to the editing helper. The paper reports promotion in generation 9 and unchanged multiline handling in generation 12. A separate loop update re-presents pending acceptance conditions when the agent signals completion without commands."
+        },
+        {
+          "label": "Evidence and limits",
+          "text": "The later case retains all successes while mean interactions fall from 36 to 25 across three rollouts per version. Concurrent parser and other changes prevent isolated attribution. The earlier unpinned released-code observation is archived in v0.1.0; current source-code behavior was not re-audited."
+        }
+      ],
+      "sources": [
+        {
+          "name": "ModularRSI: correcting tool dispatch and completion state",
+          "url": "https://arxiv.org/html/2609.14857v2",
+          "locator": "Section 6.5; Appendix F; Appendices K.2–K.4, Listing 10",
+          "first_release_date": "2026-09-14",
+          "source_version_date": "2026-10-09",
+          "source_version": "2609.14857v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ],
+      "review": {
+        "status": "primary_source_checked",
+        "reviewed_on": "2026-10-31",
+        "reviewer": "Codex (AI-assisted source inspection)",
+        "human_review_status": "pending",
+        "scope": "Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation.",
+        "primary_support": {
+          "url": "https://arxiv.org/html/2609.14857v2",
+          "locator": "Appendix K.4, positive case and Listing 10",
+          "excerpt": "The mean falls from 36 to 25 episodes.",
+          "artifact_sha256": "0729454957ba4913db9c1c9e1f0fb032784aa7d2865f832e9461358fa8d2e85e",
+          "checked_on": "2026-10-31"
+        }
+      }
+    },
+    "reason": "Primary-source factual audit: correct version-specific locators, experiment/benchmark scope, or canonical benchmark spelling; no new experiment or human adjudication is claimed."
+  },
+  {
+    "record_id": "qa-over-supplied-records--hcl2026",
+    "type": "source_backed_correction",
+    "corrected_on": "2026-11-04",
+    "release": "0.4.1",
+    "fields": [
+      "sources"
+    ],
+    "before": {
+      "sources": [
+        {
+          "name": "HCL",
+          "url": "https://arxiv.org/abs/2608.19013v2",
+          "locator": "Sections 4.1 and 4.3.1; Appendix C.1",
+          "first_release_date": "2026-08-19",
+          "source_version_date": "2026-09-30",
+          "source_version": "2608.19013v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ]
+    },
+    "after": {
+      "sources": [
+        {
+          "name": "HCL",
+          "url": "https://arxiv.org/abs/2608.19013v2",
+          "locator": "Section 4.2; Appendices C.1 and G",
+          "first_release_date": "2026-08-19",
+          "source_version_date": "2026-09-30",
+          "source_version": "2608.19013v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ]
+    },
+    "reason": "Primary-source factual audit: correct version-specific locators, experiment/benchmark scope, or canonical benchmark spelling; no new experiment or human adjudication is claimed."
+  },
+  {
+    "record_id": "game-playing--hcl2026",
+    "type": "source_backed_correction",
+    "corrected_on": "2026-11-04",
+    "release": "0.4.1",
+    "fields": [
+      "sections",
+      "sources"
+    ],
+    "before": {
+      "sections": [
+        {
+          "label": "Setting and seed",
+          "text": "Minecraft 50-task curriculum. Static task interface and capability library around a frozen model."
+        },
+        {
+          "label": "Reported evolution",
+          "text": "Experience supports capability and workflow revisions; retained skill tests gate later updates, extending reuse across crafting and dependent operations."
+        },
+        {
+          "label": "Evidence and limits",
+          "text": "This is one sequential Minecraft experiment. It documents retention-based capability evolution, without establishing that its updater itself evolves or exposing every final skill diff."
+        }
+      ],
+      "sources": [
+        {
+          "name": "HCL",
+          "url": "https://arxiv.org/abs/2608.19013v2",
+          "locator": "Section 4.2.2; Appendix C.3",
+          "first_release_date": "2026-08-19",
+          "source_version_date": "2026-09-30",
+          "source_version": "2608.19013v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ]
+    },
+    "after": {
+      "sections": [
+        {
+          "label": "Setting and seed",
+          "text": "Minecraft 50-task curriculum. Static task interface and capability library around a frozen model."
+        },
+        {
+          "label": "Reported evolution",
+          "text": "Experience supports capability and workflow revisions across the Minecraft curriculum. For Minecraft and ALFWorld, Appendix C.1 replaces strict historical replay with an LLM judgment based on historical task records, because replay can alter environment state."
+        },
+        {
+          "label": "Evidence and limits",
+          "text": "This is one sequential Minecraft experiment. Candidate acceptance uses a historical-record judge rather than direct replay of every retained skill test. It does not establish that the updater itself evolves or expose every final skill diff."
+        }
+      ],
+      "sources": [
+        {
+          "name": "HCL",
+          "url": "https://arxiv.org/abs/2608.19013v2",
+          "locator": "Section 4.1; Appendix C.1 (interactive-environment acceptance)",
+          "first_release_date": "2026-08-19",
+          "source_version_date": "2026-09-30",
+          "source_version": "2608.19013v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ]
+    },
+    "reason": "Primary-source factual audit: correct version-specific locators, experiment/benchmark scope, or canonical benchmark spelling; no new experiment or human adjudication is claimed."
+  },
+  {
+    "record_id": "image-perception-and-question-answering--hcl2026",
+    "type": "source_backed_correction",
+    "corrected_on": "2026-11-04",
+    "release": "0.4.1",
+    "fields": [
+      "sources"
+    ],
+    "before": {
+      "sources": [
+        {
+          "name": "HCL",
+          "url": "https://arxiv.org/abs/2608.19013v2",
+          "locator": "Section 4.3.2; Appendix B.2, Table 10; Appendix C.2",
+          "first_release_date": "2026-08-19",
+          "source_version_date": "2026-09-30",
+          "source_version": "2608.19013v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ]
+    },
+    "after": {
+      "sources": [
+        {
+          "name": "HCL",
+          "url": "https://arxiv.org/abs/2608.19013v2",
+          "locator": "Sections 4.2 and 4.4; Appendix F.2, Table 7",
+          "first_release_date": "2026-08-19",
+          "source_version_date": "2026-09-30",
+          "source_version": "2608.19013v2",
+          "metadata_checked_on": "2026-10-31",
+          "metadata_basis": "arXiv Atom API, exact version"
+        }
+      ]
+    },
+    "reason": "Primary-source factual audit: correct version-specific locators, experiment/benchmark scope, or canonical benchmark spelling; no new experiment or human adjudication is claimed."
+  },
+  {
+    "record_id": "application-and-service-workflows--masked_erosion2026",
+    "type": "source_backed_correction",
+    "corrected_on": "2026-11-04",
+    "release": "0.4.1",
+    "fields": [
+      "sections",
+      "signals"
+    ],
+    "before": {
+      "sections": [
+        {
+          "label": "Mechanism",
+          "text": "Tests whether task-success acceptance gates remove redundant safeguards while observed harm remains low, followed by model-swap evaluation."
+        },
+        {
+          "label": "Evidence and limits",
+          "text": "Most loops plant deletions in two controlled environments. Natural proposals and three GEPA seeds are case studies, not estimates of deployed erosion prevalence."
+        },
+        {
+          "label": "Reported observation",
+          "text": "Some harnesses protected under the search model exhibit higher misuse under weaker executors after redundant safeguards are lost."
+        }
+      ],
+      "signals": [
+        {
+          "id": "scoped-observation",
+          "outcome": "regression",
+          "retention": "not_assessed",
+          "attribution": "full_system_comparison",
+          "components": [
+            "instructions",
+            "control"
+          ],
+          "benchmark_ids": [
+            "appworld",
+            "opssim"
+          ],
+          "scope": "Sections 3–4.7; Limitations; Most loops plant deletions in two controlled environments. Natural proposals and three GEPA seeds are case studies, not estimates of deployed erosion prevalence.",
+          "summary": "Some harnesses protected under the search model exhibit higher misuse under weaker executors after redundant safeguards are lost.",
+          "section": "Reported observation",
+          "evidence_quote": "Some harnesses protected under the search model exhibit higher misuse under weaker executors after redundant safeguards are lost.",
+          "source_index": 0,
+          "primary_source": {
+            "name": "Masked Erosion (v1)",
+            "url": "https://arxiv.org/html/2610.38392v1",
+            "locator": "Sections 3–4.7; Limitations",
+            "source_version": "2610.38392v1",
+            "first_release_date": "2026-10-28",
+            "source_version_date": "2026-10-28",
+            "metadata_checked_on": "2026-11-01",
+            "metadata_basis": "arXiv Atom API, exact v1 identifier"
+          },
+          "primary_support": {
+            "url": "https://arxiv.org/html/2610.38392v1",
+            "locator": "Sections 3–4.7; Limitations",
+            "excerpt": "Layers that are interchangeable for DeepSeek are not interchangeable for the weaker model",
+            "artifact_sha256": "16d401a85ccfe813a1c7ae9cf95d1fce6228241bf489cdf75eb3eccae0877436",
+            "checked_on": "2026-11-01"
+          }
+        }
+      ]
+    },
+    "after": {
+      "sections": [
+        {
+          "label": "Mechanism",
+          "text": "Tests whether task-success acceptance gates remove redundant safeguards while observed harm remains low, followed by model-swap evaluation."
+        },
+        {
+          "label": "Evidence and limits",
+          "text": "Most loops plant deletions in two controlled environments. Natural proposals and three GEPA seeds are case studies, not estimates of deployed erosion prevalence."
+        },
+        {
+          "label": "Reported observation",
+          "text": "In the AppWorld model-swap experiment, some harnesses protected under the search model exhibit higher misuse under weaker executors after redundant safeguards are lost."
+        }
+      ],
+      "signals": [
+        {
+          "id": "scoped-observation",
+          "outcome": "regression",
+          "retention": "not_assessed",
+          "attribution": "full_system_comparison",
+          "components": [
+            "instructions",
+            "control"
+          ],
+          "benchmark_ids": [
+            "appworld"
+          ],
+          "scope": "Section 4.5: 11 final AppWorld harnesses sampled from 27 DeepSeek loops and evaluated with alternate executors. OpsSim is a separate study setting, not the source of this model-swap result.",
+          "summary": "In the AppWorld model-swap experiment, some harnesses protected under the search model exhibit higher misuse under weaker executors after redundant safeguards are lost.",
+          "section": "Reported observation",
+          "evidence_quote": "In the AppWorld model-swap experiment, some harnesses protected under the search model exhibit higher misuse under weaker executors after redundant safeguards are lost.",
+          "source_index": 0,
+          "primary_source": {
+            "name": "Masked Erosion (v1)",
+            "url": "https://arxiv.org/html/2610.38392v1",
+            "locator": "Section 4.5",
+            "source_version": "2610.38392v1",
+            "first_release_date": "2026-10-28",
+            "source_version_date": "2026-10-28",
+            "metadata_checked_on": "2026-11-01",
+            "metadata_basis": "arXiv Atom API, exact v1 identifier"
+          },
+          "primary_support": {
+            "url": "https://arxiv.org/html/2610.38392v1",
+            "locator": "Section 4.5",
+            "excerpt": "Layers that are interchangeable for DeepSeek are not interchangeable for the weaker model",
+            "artifact_sha256": "16d401a85ccfe813a1c7ae9cf95d1fce6228241bf489cdf75eb3eccae0877436",
+            "checked_on": "2026-11-01"
+          }
+        }
+      ]
+    },
+    "reason": "Primary-source factual audit: correct version-specific locators, experiment/benchmark scope, or canonical benchmark spelling; no new experiment or human adjudication is claimed."
+  },
+  {
+    "record_id": "terminal-based-engineering-tasks--meta2_2026",
+    "type": "source_backed_correction",
+    "corrected_on": "2026-11-04",
+    "release": "0.4.1",
+    "fields": [
+      "benchmarks",
+      "signals"
+    ],
+    "before": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2.1",
+          "role": "evaluated setting; see source-specific protocol"
+        },
+        {
+          "id": "deepswe-1.1",
+          "role": "evaluated setting; see source-specific protocol"
+        }
+      ],
+      "signals": [
+        {
+          "id": "scoped-observation",
+          "outcome": "improvement",
+          "retention": "not_assessed",
+          "attribution": "component_ablation",
+          "components": [
+            "memory",
+            "control"
+          ],
+          "benchmark_ids": [
+            "terminal-bench-2.1",
+            "deepswe-1.1"
+          ],
+          "scope": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F; The Meta-Skill stays frozen at deployment; task edits and outcomes do not update it. Each backbone learns its own Meta-Skill, so multi-model results are not unchanged cross-model transfer.",
+          "summary": "Task-local reset outperforms retaining online edits across tasks on both reported benchmarks; this supports the retained-guidance boundary, not continually improving the optimizer.",
+          "section": "Reported observation",
+          "evidence_quote": "Task-local reset outperforms retaining online edits across tasks on both reported benchmarks; this supports the retained-guidance boundary, not continually improving the optimizer.",
+          "source_index": 0,
+          "primary_source": {
+            "name": "Meta2 (v1)",
+            "url": "https://arxiv.org/html/2611.05139v1",
+            "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+            "source_version": "2611.05139v1",
+            "first_release_date": "2026-11-03",
+            "source_version_date": "2026-11-03",
+            "metadata_checked_on": "2026-11-04",
+            "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+          },
+          "primary_support": {
+            "url": "https://arxiv.org/html/2611.05139v1",
+            "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+            "excerpt": "keeping online harness edits task-local",
+            "artifact_sha256": "c63870da606fc503d5cb1c71cf86da8ab2e9a58f18b13867cbefccfafe045254",
+            "checked_on": "2026-11-04"
+          }
+        }
+      ]
+    },
+    "after": {
+      "benchmarks": [
+        {
+          "id": "terminal-bench-2-1",
+          "role": "evaluated setting; see source-specific protocol"
+        },
+        {
+          "id": "deepswe-1.1",
+          "role": "evaluated setting; see source-specific protocol"
+        }
+      ],
+      "signals": [
+        {
+          "id": "scoped-observation",
+          "outcome": "improvement",
+          "retention": "not_assessed",
+          "attribution": "component_ablation",
+          "components": [
+            "memory",
+            "control"
+          ],
+          "benchmark_ids": [
+            "terminal-bench-2-1",
+            "deepswe-1.1"
+          ],
+          "scope": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F; The Meta-Skill stays frozen at deployment; task edits and outcomes do not update it. Each backbone learns its own Meta-Skill, so multi-model results are not unchanged cross-model transfer.",
+          "summary": "Task-local reset outperforms retaining online edits across tasks on both reported benchmarks; this supports the retained-guidance boundary, not continually improving the optimizer.",
+          "section": "Reported observation",
+          "evidence_quote": "Task-local reset outperforms retaining online edits across tasks on both reported benchmarks; this supports the retained-guidance boundary, not continually improving the optimizer.",
+          "source_index": 0,
+          "primary_source": {
+            "name": "Meta2 (v1)",
+            "url": "https://arxiv.org/html/2611.05139v1",
+            "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+            "source_version": "2611.05139v1",
+            "first_release_date": "2026-11-03",
+            "source_version_date": "2026-11-03",
+            "metadata_checked_on": "2026-11-04",
+            "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+          },
+          "primary_support": {
+            "url": "https://arxiv.org/html/2611.05139v1",
+            "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+            "excerpt": "keeping online harness edits task-local",
+            "artifact_sha256": "c63870da606fc503d5cb1c71cf86da8ab2e9a58f18b13867cbefccfafe045254",
+            "checked_on": "2026-11-04"
+          }
+        }
+      ]
+    },
+    "reason": "Primary-source factual audit: correct version-specific locators, experiment/benchmark scope, or canonical benchmark spelling; no new experiment or human adjudication is claimed."
+  },
+  {
+    "record_id": "multi-domain-agent-evaluation--rsi_env2026",
+    "type": "source_backed_correction",
+    "corrected_on": "2026-11-04",
+    "release": "0.4.1",
+    "fields": [
+      "benchmarks",
+      "signals"
+    ],
+    "before": {
+      "benchmarks": [
+        {
+          "id": "gpqa",
+          "role": "evaluated setting; see source-specific protocol"
+        },
+        {
+          "id": "aime-2025",
+          "role": "evaluated setting; see source-specific protocol"
+        },
+        {
+          "id": "simpleqa-verified",
+          "role": "evaluated setting; see source-specific protocol"
+        },
+        {
+          "id": "terminal-bench-2.1",
+          "role": "evaluated setting; see source-specific protocol"
+        }
+      ],
+      "signals": [
+        {
+          "id": "scoped-observation",
+          "outcome": "mixed",
+          "retention": "not_assessed",
+          "attribution": "full_system_comparison",
+          "components": [
+            "tools",
+            "memory",
+            "control"
+          ],
+          "benchmark_ids": [
+            "gpqa",
+            "aime-2025",
+            "simpleqa-verified",
+            "terminal-bench-2.1"
+          ],
+          "scope": "Sections 3–4; Appendix A; Successor registration checks validity and executability rather than capability gain. Some settings train weights; actual runtime differs substantially despite the same maximum allocation.",
+          "summary": "Open-General Self improves GPQA and AIME while lowering SimpleQA and Terminal-Bench performance; an executable successor is not a monotone improvement across capabilities.",
+          "section": "Reported observation",
+          "evidence_quote": "Open-General Self improves GPQA and AIME while lowering SimpleQA and Terminal-Bench performance; an executable successor is not a monotone improvement across capabilities.",
+          "source_index": 0,
+          "primary_source": {
+            "name": "RSI-Env (v1)",
+            "url": "https://arxiv.org/html/2611.01736v1",
+            "locator": "Sections 3–4; Appendix A",
+            "source_version": "2611.01736v1",
+            "first_release_date": "2026-11-01",
+            "source_version_date": "2026-11-01",
+            "metadata_checked_on": "2026-11-04",
+            "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+          },
+          "primary_support": {
+            "url": "https://arxiv.org/html/2611.01736v1",
+            "locator": "Sections 3–4; Appendix A",
+            "excerpt": "validity and executability",
+            "artifact_sha256": "eedec90e9661feca0b996f1960684b86411aa10a1532a9115e87b2763ac3dfde",
+            "checked_on": "2026-11-04"
+          }
+        }
+      ]
+    },
+    "after": {
+      "benchmarks": [
+        {
+          "id": "gpqa",
+          "role": "GPQA Diamond, 198 questions; avg@3"
+        },
+        {
+          "id": "aime-2026",
+          "role": "AIME 2026, 30 questions; avg@3"
+        },
+        {
+          "id": "simpleqa",
+          "role": "Random 500-question subset of original SimpleQA; avg@3"
+        },
+        {
+          "id": "terminal-bench-2-1",
+          "role": "Terminal-Bench 2.1, 89 tasks; pass@3"
+        }
+      ],
+      "signals": [
+        {
+          "id": "scoped-observation",
+          "outcome": "mixed",
+          "retention": "not_assessed",
+          "attribution": "full_system_comparison",
+          "components": [
+            "tools",
+            "memory",
+            "control"
+          ],
+          "benchmark_ids": [
+            "gpqa",
+            "aime-2026",
+            "simpleqa",
+            "terminal-bench-2-1"
+          ],
+          "scope": "Section 4, Table 1; Appendices A.5 and B.3. GPQA Diamond, AIME 2026 and a 500-question original SimpleQA subset use avg@3; Terminal-Bench 2.1 uses pass@3. This is a whole-successor comparison with potentially changed weights and unequal realized runtime.",
+          "summary": "Open-General Self improves GPQA and AIME while lowering SimpleQA and Terminal-Bench performance; an executable successor is not a monotone improvement across capabilities.",
+          "section": "Reported observation",
+          "evidence_quote": "Open-General Self improves GPQA and AIME while lowering SimpleQA and Terminal-Bench performance; an executable successor is not a monotone improvement across capabilities.",
+          "source_index": 0,
+          "primary_source": {
+            "name": "RSI-Env (v1)",
+            "url": "https://arxiv.org/html/2611.01736v1",
+            "locator": "Section 4, Table 1; Appendices A.5 and B.3",
+            "source_version": "2611.01736v1",
+            "first_release_date": "2026-11-01",
+            "source_version_date": "2026-11-01",
+            "metadata_checked_on": "2026-11-04",
+            "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+          },
+          "primary_support": {
+            "url": "https://arxiv.org/html/2611.01736v1",
+            "locator": "Section 3 (registration contract); Table 1 (separate capability evaluation)",
+            "excerpt": "validity and executability",
+            "artifact_sha256": "eedec90e9661feca0b996f1960684b86411aa10a1532a9115e87b2763ac3dfde",
+            "checked_on": "2026-11-04"
+          }
+        }
+      ]
+    },
+    "reason": "Primary-source factual audit: correct version-specific locators, experiment/benchmark scope, or canonical benchmark spelling; no new experiment or human adjudication is claimed."
   }
 ]

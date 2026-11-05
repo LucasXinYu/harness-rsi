@@ -692,7 +692,7 @@
   {
     "key": "modularrsi2026",
     "title": "ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement",
-    "authors": "Wu, Siwei and Ren, Jincheng and Li, Yizhi and Li, Haau-Sing and Yang, Chengran and Zhang, Yuxuan and Gu, Weicheng and Yang, Jian and Batista-Navarro, Riza and Zhang, Chuanyi and Liu, Xianglong and Zhou, Ming and Dai, Bryan and Lin, Chenghua",
+    "authors": "Wu, Siwei and Ren, Jincheng and Li, Yizhi and Li, Haau-Sing and Yang, Chengran and Ma, Xudong and Zhang, Yuxuan and Gu, Weicheng and Yang, Jian and Batista-Navarro, Riza and Zhang, Chuanyi and Liu, Xianglong and Zhou, Ming and Dai, Bryan and Lin, Chenghua",
     "kind": "paper",
     "arxiv_id": "2609.14857",
     "doi": "10.48550/arXiv.2609.14857",
@@ -706,7 +706,7 @@
       {
         "name": "ModularRSI: correcting tool dispatch and completion state",
         "url": "https://arxiv.org/html/2609.14857v2",
-        "locator": "Case-study appendix; Positive case; Listing 10",
+        "locator": "Section 6.5; Appendix F; Appendices K.2–K.4, Listing 10",
         "first_release_date": "2026-09-14",
         "source_version_date": "2026-10-09",
         "source_version": "2609.14857v2",
@@ -1282,7 +1282,7 @@
       {
         "name": "HCL",
         "url": "https://arxiv.org/abs/2608.19013v2",
-        "locator": "Sections 4.1 and 4.3.1; Appendix C.1",
+        "locator": "Section 4.2; Appendices C.1 and G",
         "first_release_date": "2026-08-19",
         "source_version_date": "2026-09-30",
         "source_version": "2608.19013v2",
@@ -1292,7 +1292,7 @@
       {
         "name": "HCL",
         "url": "https://arxiv.org/abs/2608.19013v2",
-        "locator": "Section 4.2.2; Appendix C.3",
+        "locator": "Section 4.1; Appendix C.1 (interactive-environment acceptance)",
         "first_release_date": "2026-08-19",
         "source_version_date": "2026-09-30",
         "source_version": "2608.19013v2",
@@ -1302,7 +1302,7 @@
       {
         "name": "HCL",
         "url": "https://arxiv.org/abs/2608.19013v2",
-        "locator": "Section 4.3.2; Appendix B.2, Table 10; Appendix C.2",
+        "locator": "Sections 4.2 and 4.4; Appendix F.2, Table 7",
         "first_release_date": "2026-08-19",
         "source_version_date": "2026-09-30",
         "source_version": "2608.19013v2",

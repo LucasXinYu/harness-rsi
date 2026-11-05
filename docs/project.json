@@ -4,7 +4,7 @@
   "arxiv_url": null,
   "website_url": "https://lucasxinyu.github.io/harness-rsi/",
   "paper": {
-    "pdf_url": "https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04.pdf",
+    "pdf_url": "https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf",
     "version_date": "2026-11-04",
     "title": "From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents",
     "authors": [
@@ -97,8 +97,8 @@
             {
               "key": "modularrsi2026",
               "name": "ModularRSI",
-              "url": "https://arxiv.org/abs/2609.14857v1",
-              "locator": "Appendix D.4; Listings 7–9; version-specific Go repair case"
+              "url": "https://arxiv.org/abs/2609.14857v2",
+              "locator": "Appendix K.4; Listing 10; version-specific Go repair case"
             },
             {
               "key": "sica2025",

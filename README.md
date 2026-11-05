@@ -2,7 +2,7 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
 **Author preprint · 2026-11-04 · Not peer-reviewed.** The 86-page reading version integrates new literature and evidence comparisons through November 4, including 13 newly verified studies and a KARMA revision check. The original 95-record domain snapshot remains frozen at October 1; the companion dataset is versioned separately. [October 27 reading copy](docs/paper/Harness_RSI_Preprint_2026-10-27.pdf) and earlier PDFs remain archived. [Preprints.org v2](https://doi.org/10.20944/preprints202610.2293.v2), posted October 30, is a separate version; this update does not replace submitted manuscripts.
 
@@ -57,11 +57,11 @@ The interactive site lets you choose **any two domains** and switch between inte
 
 ## Evidence dataset
 
-**Harness RSI Evidence Dataset v0.4.0** contains **145 category–source records, 113 distinct works and 45 scoped signals**. Thirteen records were added on November 4; earlier dataset releases remain immutable. Records are not independent interventions.
+**Harness RSI Evidence Dataset v0.4.1** contains **145 category–source records, 113 distinct works and 45 scoped signals**. The November 4 factual correction preserves counts and all earlier releases. [Correction note](docs/FACTUAL_CORRECTIONS_2026-11-04.md). Records are not independent interventions.
 
 **60 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
 
-[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.4.0/dataset.json) · [Normalized CSV](docs/dataset/v0.4.0/records.csv) · [Schema](docs/dataset/v0.4.0/schema.json) · [Quality report](docs/dataset/v0.4.0/quality-report.json) · [Corrections](docs/dataset/v0.4.0/corrections.json)
+[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.4.1/dataset.json) · [Normalized CSV](docs/dataset/v0.4.1/records.csv) · [Schema](docs/dataset/v0.4.1/schema.json) · [Quality report](docs/dataset/v0.4.1/quality-report.json) · [Corrections](docs/dataset/v0.4.1/corrections.json)
 
 This is targeted AI-assisted source inspection, not independent reproduction or exhaustive coverage. **Project-owned annotations and compilation are CC BY 4.0; third-party rights are excluded.** See [the license scope](LICENSE-DATA.md). [Historical v0.1.0](docs/dataset/v0.1.0/dataset.json) is preserved byte-for-byte; its HarnessX hit-rate interpretation is superseded by the correction notice.
 
@@ -94,7 +94,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-11-04 | Search horizon; 318 papers and 11 official resources; collection updated 2026-11-04 |
-| **Website update** | 2026-11-04 | 13 literature additions, dataset v0.4.0 and revised author manuscript; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-11-04 | Source-backed factual corrections; dataset v0.4.1; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 

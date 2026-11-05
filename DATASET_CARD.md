@@ -2,13 +2,13 @@
 
 ## Status and purpose
 
-**v0.4.0 — released November 4, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
+**v0.4.1 — corrected November 4, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
 
 This resource documents what agent harnesses change, how changes are selected, what outcomes are reported, and what the evidence cannot establish. It is a curated evidence collection, not a new benchmark or a collection of reproduced experiments.
 
 ## Composition and coverage
 
-| Quantity | v0.1.0 | v0.2.0 | v0.3.0 | v0.4.0 |
+| Quantity | v0.1.0 | v0.2.0 | v0.3.0 | v0.4.0 / v0.4.1 |
 | --- | ---: | ---: | ---: | ---: |
 | Category-source records | 95 | 113 | 132 | 145 |
 | Distinct works | 63 | 81 | 100 | 113 |
@@ -19,7 +19,7 @@ This resource documents what agent harnesses change, how changes are selected, w
 | Populated selection/control fields | 0 | 28 | 47 | 60 |
 | Independently human-adjudicated records | Not claimed | 0 | 0 | 0 |
 
-The 113 works comprise 112 papers and one benchmark resource. v0.4.0 adds 13 records and 13 scoped observations, and rechecks KARMA against its November 2 revision. A paper can appear in several categories; records and signals are not independent effects. All three earlier releases remain byte-for-byte unchanged.
+The 113 works comprise 112 papers and one benchmark resource. v0.4.0 adds 13 records and 13 scoped observations, and rechecks KARMA against its November 2 revision. A paper can appear in several categories; records and signals are not independent effects. The v0.4.1 patch corrects RSI-Env benchmark identities, narrows the Masked Erosion model-swap signal to AppWorld, qualifies HCL interactive acceptance, updates version-specific locators and ModularRSI authors, and normalizes Terminal-Bench 2.1 identifiers. Record and signal counts do not change. All four earlier releases remain byte-for-byte unchanged.
 
 Targeted discovery runs through **November 4, 2026**, with a seven-day overlap beginning October 25. The new batch includes papers first posted October 25–November 3. The original survey atlas retains its **October 1** cutoff and 95 records. The broader bibliography contains 318 papers and 11 resources; it is a separate collection, not the dataset denominator.
 
