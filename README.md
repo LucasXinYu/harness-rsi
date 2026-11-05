@@ -2,9 +2,9 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_revised.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
-**Author preprint · 2026-11-04 · Not peer-reviewed.** The 86-page reading version integrates new literature and evidence comparisons through November 4, including 13 newly verified studies and a KARMA revision check. The original 95-record domain snapshot remains frozen at October 1; the companion dataset is versioned separately. [October 27 reading copy](docs/paper/Harness_RSI_Preprint_2026-10-27.pdf) and earlier PDFs remain archived. [Preprints.org v2](https://doi.org/10.20944/preprints202610.2293.v2), posted October 30, is a separate version; this update does not replace submitted manuscripts.
+**Author preprint · 2026-11-04 · Not peer-reviewed.** The 87-page revised reading version distinguishes task performance, recursive reuse and improved subsequent optimization; it adds proposed comparison criteria and explicit evidence limitations. Literature coverage remains through November 4. The original 95-record domain snapshot remains frozen at October 1; companion dataset v0.4.1 is versioned separately. [Revision note](docs/EDITORIAL_UPDATE_2026-11-04.md). [Earlier November 4 correction edition](docs/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf) and older PDFs remain archived. [Preprints.org v2](https://doi.org/10.20944/preprints202610.2293.v2), posted October 30, is a separate version; this update does not replace submitted manuscripts.
 
 <p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
@@ -94,7 +94,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
 | **Living literature collection** | 2026-11-04 | Search horizon; 318 papers and 11 official resources; collection updated 2026-11-04 |
-| **Website update** | 2026-11-04 | Source-backed factual corrections; dataset v0.4.1; see [release notes](docs/updates.json) for the scope of this update |
+| **Website update** | 2026-11-04 | Manuscript synthesis and version-specific bibliography corrections; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
