@@ -14,7 +14,7 @@
   <meta name="citation_author" content="Haochen Zhang">
   <meta name="citation_author" content="Lingzhou Xue">
   <meta name="citation_publication_date" content="2026/11/04">
-  <meta name="citation_pdf_url" content="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf">
+  <meta name="citation_pdf_url" content="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_revised.pdf">
   <meta name="citation_abstract_html_url" content="https://lucasxinyu.github.io/harness-rsi/paper/">
   <meta name="citation_language" content="en">
   <meta property="og:type" content="article">
@@ -42,15 +42,16 @@
       <p class="authors">Xin Yu<sup>*,†</sup> · Chengyuan Liu<sup>*</sup> · Wenxin Long<sup>*</sup> · Haochen Zhang<sup>*</sup> · Lingzhou Xue<sup>‡</sup></p>
       <p class="roles">Department of Statistics, The Pennsylvania State University, University Park, PA 16802, USA<br>* Equal contribution. † Project Lead. ‡ Corresponding author: <a href="mailto:lzxue@psu.edu">lzxue@psu.edu</a></p>
       <p class="status">Author preprint · Revised <time datetime="2026-11-04">4 November 2026</time> · Not peer-reviewed</p>
-      <div class="actions"><a href="Harness_RSI_Preprint_2026-11-04_corrected.pdf">Read the paper (PDF) ↗</a><a href="#cite">Cite this paper ↓</a><a href="https://doi.org/10.20944/preprints202610.2293.v2">Preprints.org v2 ↗</a></div>
+      <div class="actions"><a href="Harness_RSI_Preprint_2026-11-04_revised.pdf">Read the paper (PDF) ↗</a><a href="#cite">Cite this paper ↓</a><a href="https://doi.org/10.20944/preprints202610.2293.v2">Preprints.org v2 ↗</a></div>
       <section class="abstract" aria-labelledby="abstract-title">
         <h2 id="abstract-title">Abstract</h2>
-        <p>Language-model agents rely on harnesses that govern tool use, context, memory, and execution. Understanding automated harness revision requires connecting improvement methods to the reusable functionality they produce. This survey examines three linked perspectives: improvement workflows, recursive scope, and concrete modifications across task domains. We compare search strategies, memory management, edit guidance, and integration with model training, and use an existing five-level framework to distinguish harness optimization from recursive self-improvement. Across coding, reasoning and information processing, interactive and embodied tasks, and visual tasks, we trace reported changes from starting capabilities to outcomes. Our synthesis identifies repairs at model–environment interfaces, cases where added tools and context fail to help, and conditions constraining recovery reuse. Cross-domain analogies motivate, rather than establish, transfer. We distinguish task-performance gains from improved subsequent optimization and identify priorities in reliable evaluation, attribution, transfer, and safety.</p>
+        <p>Language-model agents can improve by revising the harnesses that govern tool use, context, memory, and execution. A central question is whether these revisions improve task execution, the process that produces later revisions, or both. This survey connects improvement workflows, recursive scope, and the reusable artifacts produced across task domains. We compare candidate search, memory management, edit guidance, and coupling with model training, and apply an existing five-level framework to reported configurations. A source-linked analysis of 95 category–source records from 62 research papers and one benchmark resource traces starting capabilities, concrete changes, reported outcomes, and attribution limits across coding, reasoning and information processing, interactive and embodied tasks, and visual tasks. The cases reveal repairs at model–environment interfaces, failures of added tools or checks to improve performance, and conditions governing recovery reuse. We distinguish an editable improvement mechanism, its actual reuse, and evidence that it improves subsequent optimization. For continual RSI, this distinction motivates separate tests of initialization, later improvement, transfer, and retained capability under explicit budgets. The frozen domain analysis is complemented by dated literature updates and a separately versioned evidence dataset. Cross-domain analogies and proposed evaluation criteria identify testable research questions; they do not establish general recursive self-improvement.</p>
       </section>
       <section class="section" aria-labelledby="versions-title">
         <h2 id="versions-title">Versions and scope</h2>
         <ul class="versions">
-          <li><strong>This page: corrected author reading version, 4 November 2026.</strong> The <a href="Harness_RSI_Preprint_2026-11-04_corrected.pdf">86-page revised PDF</a> integrates contextual synthesis through November 4, including 13 newly verified papers and a KARMA revision check. The companion dataset is v0.4.1 (145 records); the original 95-record domain evidence remains frozen through October 1. This corrected edition clarifies HCL acceptance, the MoMHa composite metric, and source-version locators. The abstract and scholarly metadata describe this version. <a href="Harness_RSI_Preprint_2026-11-04.pdf">The earlier November 4 PDF</a> is archived.</li>
+          <li><strong>This page: revised author reading version, 4 November 2026.</strong> The <a href="Harness_RSI_Preprint_2026-11-04_revised.pdf">87-page PDF</a> clarifies the distinction between task performance, recursive reuse and improved subsequent optimization. It adds proposed comparison criteria, a conclusion and explicit limits on evidence extraction. The manuscript now references dataset v0.4.1 (145 records); the original 95-record domain analysis remains frozen through October 1. The search horizon remains November 4. <a href="../EDITORIAL_UPDATE_2026-11-04.md">Revision note</a>.</li>
+          <li><strong>Earlier November 4 author copies.</strong> The <a href="Harness_RSI_Preprint_2026-11-04_corrected.pdf">86-page factual-correction edition</a> and <a href="Harness_RSI_Preprint_2026-11-04.pdf">preceding reading PDF</a> remain archived.</li>
           <li><strong>Preprints.org v2, posted 30 October 2026.</strong> DOI <a href="https://doi.org/10.20944/preprints202610.2293.v2">10.20944/preprints202610.2293.v2</a> identifies the separately posted version; it does not identify the November 4 author PDF.</li>
           <li><strong>Archived author reading version, 27 October 2026.</strong> The <a href="Harness_RSI_Preprint_2026-10-27.pdf">82-page PDF</a> preserves the preceding manuscript revision.</li>
           <li><strong>Preprints.org v1, posted 23 October 2026.</strong> A separately posted version with DOI <a href="https://doi.org/10.20944/preprints202610.2293.v1">10.20944/preprints202610.2293.v1</a>. Use its DOI citation when referring to that version. Its DOI does not identify the November 4 revised reading PDF.</li>
@@ -88,7 +89,7 @@
             Zhang, Haochen and Xue, Lingzhou},
   year = {2026},
   month = nov,
-  url = {https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf},
+  url = {https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_revised.pdf},
   note = {Author preprint, revised November 4, 2026.
           Not peer-reviewed; distinct from Preprints.org v1/v2}
 }</code></pre>
