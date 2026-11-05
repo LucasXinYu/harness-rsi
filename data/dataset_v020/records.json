@@ -8325,13 +8325,13 @@
     ],
     "sources": [
       {
-        "name": "KARMA (v1)",
-        "url": "https://arxiv.org/html/2610.39884v1",
-        "locator": "Sections 4.6, 5.1–5.2, 5.5 and 6",
-        "source_version": "2610.39884v1",
+        "name": "KARMA (v2)",
+        "url": "https://arxiv.org/html/2610.39884v2",
+        "locator": "Sections 4.6, 5.1, 5.5 and 6",
+        "source_version": "2610.39884v2",
         "first_release_date": "2026-10-29",
-        "source_version_date": "2026-10-29",
-        "metadata_checked_on": "2026-11-01",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
         "metadata_basis": "arXiv Atom API, exact v1 identifier"
       }
     ],
@@ -8361,21 +8361,21 @@
         "evidence_quote": "Across 30 unchanged-knowledge source–target pairs, 23 improve and seven regress; mean action-agreement gain is 8.54 points.",
         "source_index": 0,
         "primary_source": {
-          "name": "KARMA (v1)",
-          "url": "https://arxiv.org/html/2610.39884v1",
-          "locator": "Sections 4.6, 5.1–5.2, 5.5 and 6",
-          "source_version": "2610.39884v1",
+          "name": "KARMA (v2)",
+          "url": "https://arxiv.org/html/2610.39884v2",
+          "locator": "Sections 4.6, 5.1, 5.5 and 6",
+          "source_version": "2610.39884v2",
           "first_release_date": "2026-10-29",
-          "source_version_date": "2026-10-29",
-          "metadata_checked_on": "2026-11-01",
+          "source_version_date": "2026-11-02",
+          "metadata_checked_on": "2026-11-04",
           "metadata_basis": "arXiv Atom API, exact v1 identifier"
         },
         "primary_support": {
-          "url": "https://arxiv.org/html/2610.39884v1",
-          "locator": "Sections 4.6, 5.1–5.2, 5.5 and 6",
+          "url": "https://arxiv.org/html/2610.39884v2",
+          "locator": "Sections 4.6, 5.1, 5.5 and 6",
           "excerpt": "23 are positive",
-          "artifact_sha256": "591768d89a82e06eeb34b87f18fe71995c3b8011c4d609c40bf3af8e3f963b55",
-          "checked_on": "2026-11-01"
+          "artifact_sha256": "b8199c8b5f9adfae2f1df35b4f8b3a335a560046d1f4f299ec609d3d1a268f8b",
+          "checked_on": "2026-11-04"
         }
       }
     ],
@@ -8398,7 +8398,7 @@
     },
     "review": {
       "status": "primary_source_checked",
-      "reviewed_on": "2026-11-01",
+      "reviewed_on": "2026-11-04",
       "reviewer": "Codex (AI-assisted source inspection)",
       "human_review_status": "pending",
       "scope": "Targeted mechanism, protocol and limitation inspection; not independent dual annotation or experimental reproduction."
@@ -9919,6 +9919,1420 @@
         "artifact_sha256": "29ff9e17d564e206c3cb61fe219f7cca7270a1a3dfbc582d1739089ff39e9331",
         "checked_on": "2026-11-01"
       }
+    }
+  },
+  {
+    "id": "terminal-based-engineering-tasks--meta2_2026",
+    "key": "meta2_2026",
+    "domain": "coding",
+    "category": "Terminal-Based Engineering Tasks",
+    "category_id": "terminal-based-engineering-tasks",
+    "title": "Meta2",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Learns a reusable Meta-Skill from contrasted training trajectories; a frozen deployment evolver uses it to decide when to keep or edit a task-local harness."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The Meta-Skill stays frozen at deployment; task edits and outcomes do not update it. Each backbone learns its own Meta-Skill, so multi-model results are not unchanged cross-model transfer."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Task-local reset outperforms retaining online edits across tasks on both reported benchmarks; this supports the retained-guidance boundary, not continually improving the optimizer."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Meta2 (v1)",
+        "url": "https://arxiv.org/html/2611.05139v1",
+        "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+        "source_version": "2611.05139v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "terminal-bench-2.1",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "deepswe-1.1",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "terminal-bench-2.1",
+          "deepswe-1.1"
+        ],
+        "scope": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F; The Meta-Skill stays frozen at deployment; task edits and outcomes do not update it. Each backbone learns its own Meta-Skill, so multi-model results are not unchanged cross-model transfer.",
+        "summary": "Task-local reset outperforms retaining online edits across tasks on both reported benchmarks; this supports the retained-guidance boundary, not continually improving the optimizer.",
+        "section": "Reported observation",
+        "evidence_quote": "Task-local reset outperforms retaining online edits across tasks on both reported benchmarks; this supports the retained-guidance boundary, not continually improving the optimizer.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Meta2 (v1)",
+          "url": "https://arxiv.org/html/2611.05139v1",
+          "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+          "source_version": "2611.05139v1",
+          "first_release_date": "2026-11-03",
+          "source_version_date": "2026-11-03",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.05139v1",
+          "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+          "excerpt": "keeping online harness edits task-local",
+          "artifact_sha256": "c63870da606fc503d5cb1c71cf86da8ab2e9a58f18b13867cbefccfafe045254",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "frozen_meta_skill_task_local_harness_edits",
+    "selection_protocol": "Disjoint training/test tasks; privileged verifier feedback is training-only; reset seed harness for every test task.",
+    "controlled_variables": [
+      "fixed executor within a setting",
+      "same seed harness",
+      "held-out task evaluator"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--harness_s2026",
+    "key": "harness_s2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "Harness-S",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Evolves a fixed pool of complementary harnesses, routes rescue rollouts for base-harness failures, and uses their reward contrasts to train a shared policy with GRPO."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Executor weights change. Equal per-task rescue allocations do not equal total sampling because failure frequencies differ; external harness transfer still depends on the execution interface."
+      },
+      {
+        "label": "Reported observation",
+        "text": "On AppWorld 4B, refreshed routing profiles outperform fixed profiles under equal rescue allocation; improvements also persist when the trained policy is evaluated under the original harness."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Harness-S (v1)",
+        "url": "https://arxiv.org/html/2611.04277v1",
+        "locator": "Sections 3, 4.1, 4.4 and 4.7; Appendices A–B and G",
+        "source_version": "2611.04277v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "appworld",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "control",
+          "context"
+        ],
+        "benchmark_ids": [
+          "appworld"
+        ],
+        "scope": "Sections 3, 4.1, 4.4 and 4.7; Appendices A–B and G; Executor weights change. Equal per-task rescue allocations do not equal total sampling because failure frequencies differ; external harness transfer still depends on the execution interface.",
+        "summary": "On AppWorld 4B, refreshed routing profiles outperform fixed profiles under equal rescue allocation; improvements also persist when the trained policy is evaluated under the original harness.",
+        "section": "Reported observation",
+        "evidence_quote": "On AppWorld 4B, refreshed routing profiles outperform fixed profiles under equal rescue allocation; improvements also persist when the trained policy is evaluated under the original harness.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Harness-S (v1)",
+          "url": "https://arxiv.org/html/2611.04277v1",
+          "locator": "Sections 3, 4.1, 4.4 and 4.7; Appendices A–B and G",
+          "source_version": "2611.04277v1",
+          "first_release_date": "2026-11-03",
+          "source_version_date": "2026-11-03",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.04277v1",
+          "locator": "Sections 3, 4.1, 4.4 and 4.7; Appendices A–B and G",
+          "excerpt": "Test tasks are reserved for final evaluation",
+          "artifact_sha256": "a724d8884d58f40653c685af3d2895fc87a8e2a9366ed84d856960f13b70e47c",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "executor_weights_trained",
+    "transfer_regime": "trained_policy_transfer_to_unseen_harnesses",
+    "selection_protocol": "Train tasks drive edits and policy learning; validation selects parents and refreshes routing profiles; test tasks are reserved for final evaluation.",
+    "controlled_variables": [
+      "shared optimizer in GRPO controls",
+      "same initial policy",
+      "same task verifier",
+      "matched rescue allocation"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "qa-over-supplied-records--evogroup2026",
+    "key": "evogroup2026",
+    "domain": "reasoning",
+    "category": "QA over Supplied Records",
+    "category_id": "qa-over-supplied-records",
+    "title": "EvoGroup",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Uses confidence/correctness buckets and selective trajectory inspection to revise memory representations, tools, execution checks and selection policies for shared group contexts."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Main-table external baselines are projections from full-benchmark category scores, not reruns on held-out question IDs. Frozen cross-benchmark transfer is distinct from unchanged cross-model transfer."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Evolved tools and prompts yield the largest component gains, while successive updates still lose previously passed tasks. Self-reflection has weaker evidence consistency than localization agreement."
+      }
+    ],
+    "sources": [
+      {
+        "name": "EvoGroup (v1)",
+        "url": "https://arxiv.org/html/2611.03868v1",
+        "locator": "Sections 2, 3.1, 3.3 and 3.6; Appendix A",
+        "source_version": "2611.03868v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "evermembench",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "tools",
+          "memory",
+          "context",
+          "control"
+        ],
+        "benchmark_ids": [
+          "evermembench"
+        ],
+        "scope": "Sections 2, 3.1, 3.3 and 3.6; Appendix A; Main-table external baselines are projections from full-benchmark category scores, not reruns on held-out question IDs. Frozen cross-benchmark transfer is distinct from unchanged cross-model transfer.",
+        "summary": "Evolved tools and prompts yield the largest component gains, while successive updates still lose previously passed tasks. Self-reflection has weaker evidence consistency than localization agreement.",
+        "section": "Reported observation",
+        "evidence_quote": "Evolved tools and prompts yield the largest component gains, while successive updates still lose previously passed tasks. Self-reflection has weaker evidence consistency than localization agreement.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "EvoGroup (v1)",
+          "url": "https://arxiv.org/html/2611.03868v1",
+          "locator": "Sections 2, 3.1, 3.3 and 3.6; Appendix A",
+          "source_version": "2611.03868v1",
+          "first_release_date": "2026-11-02",
+          "source_version_date": "2026-11-02",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.03868v1",
+          "locator": "Sections 2, 3.1, 3.3 and 3.6; Appendix A",
+          "excerpt": "not rerun results on the held-out question IDs",
+          "artifact_sha256": "3d634ea0d94bc05e1260b94e6e2b8fe4c0633050636088f2a730f9409ba50bce",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "frozen_harness_cross_benchmark_transfer",
+    "selection_protocol": "Stratified 30/70 EverMemBench evolution/holdout split; freeze the evolved harness before GroupMemBench transfer.",
+    "controlled_variables": [
+      "same base model within each run",
+      "fixed cold-start harness and evolution set for process ablations",
+      "matched process-ablation token budget"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--paretosaddler2026",
+    "key": "paretosaddler2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "ParetoSaddler",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Uses repeated executions and Bayesian-bootstrap quality/cost screening to promote intermediate harnesses, then applies deployment preferences to the development-evaluated candidate set."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Bootstrap uncertainty covers execution variation on fixed screening tasks, not task-sampling uncertainty. Repetition adds evaluation cost; test-repeat variability is not independent search-run variability."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Replacing mean-based promotion with Bayesian screening yields better reported ClawMark quality/cost endpoints. An additional GAIA2 search run supports limited run-to-run stability."
+      }
+    ],
+    "sources": [
+      {
+        "name": "ParetoSaddler (v1)",
+        "url": "https://arxiv.org/html/2611.02079v1",
+        "locator": "Sections 4 and 5.1–5.3; Appendices F, G and L",
+        "source_version": "2611.02079v1",
+        "first_release_date": "2026-11-01",
+        "source_version_date": "2026-11-01",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "clawmark",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "gaia2",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "control"
+        ],
+        "benchmark_ids": [
+          "clawmark",
+          "gaia2"
+        ],
+        "scope": "Sections 4 and 5.1–5.3; Appendices F, G and L; Bootstrap uncertainty covers execution variation on fixed screening tasks, not task-sampling uncertainty. Repetition adds evaluation cost; test-repeat variability is not independent search-run variability.",
+        "summary": "Replacing mean-based promotion with Bayesian screening yields better reported ClawMark quality/cost endpoints. An additional GAIA2 search run supports limited run-to-run stability.",
+        "section": "Reported observation",
+        "evidence_quote": "Replacing mean-based promotion with Bayesian screening yields better reported ClawMark quality/cost endpoints. An additional GAIA2 search run supports limited run-to-run stability.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "ParetoSaddler (v1)",
+          "url": "https://arxiv.org/html/2611.02079v1",
+          "locator": "Sections 4 and 5.1–5.3; Appendices F, G and L",
+          "source_version": "2611.02079v1",
+          "first_release_date": "2026-11-01",
+          "source_version_date": "2026-11-01",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.02079v1",
+          "locator": "Sections 4 and 5.1–5.3; Appendices F, G and L",
+          "excerpt": "rather than uncertainty from task sampling",
+          "artifact_sha256": "1f0a75fc8a01a4b54445028ea9c07a9aa8ff5ce9ffc5e2bbfaf02aed25cb1db4",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "heldout_domains_development_selected_harnesses",
+    "selection_protocol": "Domain-disjoint train/development/test partitions; select final cost/quality endpoints on development data; three test repeats per frozen harness.",
+    "controlled_variables": [
+      "same optimizer configuration",
+      "same execution interface",
+      "fixed remaining setup in promotion-gate ablation"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "machine-learning-engineering--continual_autoresearch2026",
+    "key": "continual_autoresearch2026",
+    "domain": "coding",
+    "category": "Machine Learning Engineering",
+    "category_id": "machine-learning-engineering",
+    "title": "Continual AutoResearch",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Compares native CLI agents that retain conversation, files and experiment artifacts across task streams with the same agents reset before each task."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Gains mainly concern faster initialization; final rewards are mixed. Four of five agents have only one matched run pair; cross-agent differences combine model and harness effects."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Continual agents improve time-to-convergence AUC, but removing first-valid-submission reward removes the observed advantage; this does not establish a better subsequent optimizer."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Continual AutoResearch (v1)",
+        "url": "https://arxiv.org/html/2611.05108v1",
+        "locator": "Sections 3, 5 and 6",
+        "source_version": "2611.05108v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "continual-autoresearch",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "context"
+        ],
+        "benchmark_ids": [
+          "continual-autoresearch"
+        ],
+        "scope": "Sections 3, 5 and 6; Gains mainly concern faster initialization; final rewards are mixed. Four of five agents have only one matched run pair; cross-agent differences combine model and harness effects.",
+        "summary": "Continual agents improve time-to-convergence AUC, but removing first-valid-submission reward removes the observed advantage; this does not establish a better subsequent optimizer.",
+        "section": "Reported observation",
+        "evidence_quote": "Continual agents improve time-to-convergence AUC, but removing first-valid-submission reward removes the observed advantage; this does not establish a better subsequent optimizer.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Continual AutoResearch (v1)",
+          "url": "https://arxiv.org/html/2611.05108v1",
+          "locator": "Sections 3, 5 and 6",
+          "source_version": "2611.05108v1",
+          "first_release_date": "2026-11-03",
+          "source_version_date": "2026-11-03",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.05108v1",
+          "locator": "Sections 3, 5 and 6",
+          "excerpt": "do not show a general improvement in optimization after initialization",
+          "artifact_sha256": "977c2d23bfff575ce7e0504509dcaaf8c9f490cb275d70ad37ce3b40e2f51a80",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "persistent_state_vs_reset_task_stream",
+    "selection_protocol": "Training/development feedback is visible; hidden test evaluates saved submissions after execution. First stream tasks are excluded from transfer summaries.",
+    "controlled_variables": [
+      "same model and environment within pairs",
+      "same tasks",
+      "matched wall-clock budget"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "game-playing--selfimprove_bench2026",
+    "key": "selfimprove_bench2026",
+    "domain": "interactive",
+    "category": "Game Playing",
+    "category_id": "game-playing",
+    "title": "SelfImprove-Bench",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Separates replay on historical instances from new-instance, harder-task, new-game and cross-capability transfer, while tracing which artifacts self-improving agents modify."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Six game environments bound the conclusions. Transfer is asymmetric; the main retained edits contain no meta-optimizer changes, unlike a separately prompted exploratory variant."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Historical-instance replay regresses in 8/18 method-task pairs while new-instance transfer improves in 16/18; retained artifacts and trajectory scores need separate reevaluation."
+      }
+    ],
+    "sources": [
+      {
+        "name": "SelfImprove-Bench (v1)",
+        "url": "https://arxiv.org/html/2611.02797v1",
+        "locator": "Sections 3–4; Appendix A",
+        "source_version": "2611.02797v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "selfimprove-bench",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "instructions",
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "selfimprove-bench"
+        ],
+        "scope": "Sections 3–4; Appendix A; Six game environments bound the conclusions. Transfer is asymmetric; the main retained edits contain no meta-optimizer changes, unlike a separately prompted exploratory variant.",
+        "summary": "Historical-instance replay regresses in 8/18 method-task pairs while new-instance transfer improves in 16/18; retained artifacts and trajectory scores need separate reevaluation.",
+        "section": "Reported observation",
+        "evidence_quote": "Historical-instance replay regresses in 8/18 method-task pairs while new-instance transfer improves in 16/18; retained artifacts and trajectory scores need separate reevaluation.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "SelfImprove-Bench (v1)",
+          "url": "https://arxiv.org/html/2611.02797v1",
+          "locator": "Sections 3–4; Appendix A",
+          "source_version": "2611.02797v1",
+          "first_release_date": "2026-11-02",
+          "source_version_date": "2026-11-02",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.02797v1",
+          "locator": "Sections 3–4; Appendix A",
+          "excerpt": "8 of the 18",
+          "artifact_sha256": "ffbace212d6bc0e82f1e409290f82942122fb5db1ea5aa418dec0d288f51ab67",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "instance_difficulty_game_capability_transfer",
+    "selection_protocol": "Build a disjoint held-out descriptor pool before training; select harnesses from training feedback and freeze them during replay/transfer evaluation.",
+    "controlled_variables": [
+      "fixed backbone within method comparisons",
+      "held-out task descriptors",
+      "no refinement during transfer"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--rsi_env2026",
+    "key": "rsi_env2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "RSI-Env",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "A protected host controller manages a persistent model/harness/research-state successor loop; self-improvement and fixed external-teacher settings can edit harnesses and train models."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Successor registration checks validity and executability rather than capability gain. Some settings train weights; actual runtime differs substantially despite the same maximum allocation."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Open-General Self improves GPQA and AIME while lowering SimpleQA and Terminal-Bench performance; an executable successor is not a monotone improvement across capabilities."
+      }
+    ],
+    "sources": [
+      {
+        "name": "RSI-Env (v1)",
+        "url": "https://arxiv.org/html/2611.01736v1",
+        "locator": "Sections 3–4; Appendix A",
+        "source_version": "2611.01736v1",
+        "first_release_date": "2026-11-01",
+        "source_version_date": "2026-11-01",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "gpqa",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "aime-2025",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "simpleqa-verified",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "terminal-bench-2.1",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "tools",
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "gpqa",
+          "aime-2025",
+          "simpleqa-verified",
+          "terminal-bench-2.1"
+        ],
+        "scope": "Sections 3–4; Appendix A; Successor registration checks validity and executability rather than capability gain. Some settings train weights; actual runtime differs substantially despite the same maximum allocation.",
+        "summary": "Open-General Self improves GPQA and AIME while lowering SimpleQA and Terminal-Bench performance; an executable successor is not a monotone improvement across capabilities.",
+        "section": "Reported observation",
+        "evidence_quote": "Open-General Self improves GPQA and AIME while lowering SimpleQA and Terminal-Bench performance; an executable successor is not a monotone improvement across capabilities.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "RSI-Env (v1)",
+          "url": "https://arxiv.org/html/2611.01736v1",
+          "locator": "Sections 3–4; Appendix A",
+          "source_version": "2611.01736v1",
+          "first_release_date": "2026-11-01",
+          "source_version_date": "2026-11-01",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.01736v1",
+          "locator": "Sections 3–4; Appendix A",
+          "excerpt": "validity and executability",
+          "artifact_sha256": "eedec90e9661feca0b996f1960684b86411aa10a1532a9115e87b2763ac3dfde",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "executor_weights_trained",
+    "transfer_regime": "successor_system_capability_transfer_mixed_weights",
+    "selection_protocol": "Register valid executable successors independently of capability scores; separately evaluate four capability benchmarks under three feedback regimes.",
+    "controlled_variables": [
+      "same initial system",
+      "protected host evaluator",
+      "same maximum time allocation, not actual compute"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--omce2026",
+    "key": "omce2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "OMCE",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "An online contextual-bandit controller chooses direct execution, episodic reuse, guidance reuse or distillation; task feedback updates both memory and routing statistics."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The LLM is fixed but the auxiliary controller learns. Only the chosen route supplies feedback; results rely on timely rewards and differ between first-attempt and four-attempt success."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Continuing controller updates improves first-attempt success in all four freeze comparisons, but BigCodeBench four-attempt success is lower than with the frozen controller."
+      }
+    ],
+    "sources": [
+      {
+        "name": "OMCE (v1)",
+        "url": "https://arxiv.org/html/2611.01747v1",
+        "locator": "Sections 3–4 and Limitations; Appendix G",
+        "source_version": "2611.01747v1",
+        "first_release_date": "2026-11-01",
+        "source_version_date": "2026-11-01",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "bigcodebench",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "swe-bench-verified",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "multichallenge",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "bbeh",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "bigcodebench",
+          "swe-bench-verified",
+          "multichallenge",
+          "bbeh"
+        ],
+        "scope": "Sections 3–4 and Limitations; Appendix G; The LLM is fixed but the auxiliary controller learns. Only the chosen route supplies feedback; results rely on timely rewards and differ between first-attempt and four-attempt success.",
+        "summary": "Continuing controller updates improves first-attempt success in all four freeze comparisons, but BigCodeBench four-attempt success is lower than with the frozen controller.",
+        "section": "Reported observation",
+        "evidence_quote": "Continuing controller updates improves first-attempt success in all four freeze comparisons, but BigCodeBench four-attempt success is lower than with the frozen controller.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "OMCE (v1)",
+          "url": "https://arxiv.org/html/2611.01747v1",
+          "locator": "Sections 3–4 and Limitations; Appendix G",
+          "source_version": "2611.01747v1",
+          "first_release_date": "2026-11-01",
+          "source_version_date": "2026-11-01",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.01747v1",
+          "locator": "Sections 3–4 and Limitations; Appendix G",
+          "excerpt": "their effect on CSR varies across benchmarks",
+          "artifact_sha256": "252f74898bb6ce04446d810861a2cda83bf913e31f414ce5847394ed4b1bd704",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "auxiliary_weights_trained",
+    "transfer_regime": "online_task_stream_controller_and_memory_adaptation",
+    "selection_protocol": "Sequential task feedback updates state; matched memory snapshots and midstream controller-freeze ablations separate routing adaptation from memory growth.",
+    "controlled_variables": [
+      "fixed LLM within comparisons",
+      "same memory snapshots for routing ablation",
+      "same prompt formatting and retrieval settings"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "program-generation-and-editing--skill_plus_plus2026",
+    "key": "skill_plus_plus2026",
+    "domain": "coding",
+    "category": "Program Generation and Editing",
+    "category_id": "program-generation-and-editing",
+    "title": "Skill++",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Refines incoming skill names/descriptions with contrasts and scope exclusions while preserving skill bodies and earlier metadata, reducing routing interference in growing libraries."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Full-coverage-at-five is skill selection, not end-to-end task completion. Evaluation is text-only; continual retriever-training baselines must not be confused with the metadata-only method."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Removing differentiation, scope exclusions or name clarification lowers SRA-Bench routing coverage. Reported gains across routers concern skill selection rather than solved-task accuracy."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Skill++ (v1)",
+        "url": "https://arxiv.org/html/2611.00544v1",
+        "locator": "Sections 3.2 and 4; Limitations",
+        "source_version": "2611.00544v1",
+        "first_release_date": "2026-10-31",
+        "source_version_date": "2026-10-31",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "sra-bench",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "skillret",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "skillrouter",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "context",
+          "control"
+        ],
+        "benchmark_ids": [
+          "sra-bench",
+          "skillret",
+          "skillrouter"
+        ],
+        "scope": "Sections 3.2 and 4; Limitations; Full-coverage-at-five is skill selection, not end-to-end task completion. Evaluation is text-only; continual retriever-training baselines must not be confused with the metadata-only method.",
+        "summary": "Removing differentiation, scope exclusions or name clarification lowers SRA-Bench routing coverage. Reported gains across routers concern skill selection rather than solved-task accuracy.",
+        "section": "Reported observation",
+        "evidence_quote": "Removing differentiation, scope exclusions or name clarification lowers SRA-Bench routing coverage. Reported gains across routers concern skill selection rather than solved-task accuracy.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Skill++ (v1)",
+          "url": "https://arxiv.org/html/2611.00544v1",
+          "locator": "Sections 3.2 and 4; Limitations",
+          "source_version": "2611.00544v1",
+          "first_release_date": "2026-10-31",
+          "source_version_date": "2026-10-31",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.00544v1",
+          "locator": "Sections 3.2 and 4; Limitations",
+          "excerpt": "never see the evaluation queries or their labels",
+          "artifact_sha256": "9c45265fca117a618f85587d57e562b477c2811297a73259440ea8bf887835c6",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "metadata_reuse_across_routers_and_benchmarks",
+    "selection_protocol": "Ten class-incremental sessions; synthetic body-derived queries guide refinement without evaluation queries or labels; evaluate nine library-growth checkpoints.",
+    "controlled_variables": [
+      "unchanged skill bodies",
+      "same fixed router within comparisons",
+      "same query/arrival schedule"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "game-playing--artifact_capability2026",
+    "key": "artifact_capability2026",
+    "domain": "interactive",
+    "category": "Game Playing",
+    "category_id": "game-playing",
+    "title": "Artifact-to-Capability",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Replays frozen Reflexion, Voyager and DGM artifacts on controlled Gomoku states to test whether stored memories, skills and code actually produce intended behavior."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "One game, one executor and adapted implementations limit external validity. A diagnostic state set partly comes from DGM trajectories; findings do not estimate prevalence across all self-evolving agents."
+      },
+      {
+        "label": "Reported observation",
+        "text": "The Voyager case contains useful skills but their calling order overrides winning behavior; DGM versions show loss-only drift. Artifact validity and historical scores do not guarantee retained capability."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Artifact-to-Capability (v1)",
+        "url": "https://arxiv.org/html/2611.04952v1",
+        "locator": "Sections 3–5 and Limitations",
+        "source_version": "2611.04952v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "gomoku-diagnostic",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "regression",
+        "retention": "not_assessed",
+        "attribution": "illustrative_case",
+        "components": [
+          "tools",
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "gomoku-diagnostic"
+        ],
+        "scope": "Sections 3–5 and Limitations; One game, one executor and adapted implementations limit external validity. A diagnostic state set partly comes from DGM trajectories; findings do not estimate prevalence across all self-evolving agents.",
+        "summary": "The Voyager case contains useful skills but their calling order overrides winning behavior; DGM versions show loss-only drift. Artifact validity and historical scores do not guarantee retained capability.",
+        "section": "Reported observation",
+        "evidence_quote": "The Voyager case contains useful skills but their calling order overrides winning behavior; DGM versions show loss-only drift. Artifact validity and historical scores do not guarantee retained capability.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Artifact-to-Capability (v1)",
+          "url": "https://arxiv.org/html/2611.04952v1",
+          "locator": "Sections 3–5 and Limitations",
+          "source_version": "2611.04952v1",
+          "first_release_date": "2026-11-03",
+          "source_version_date": "2026-11-03",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.04952v1",
+          "locator": "Sections 3–5 and Limitations",
+          "excerpt": "compositional override",
+          "artifact_sha256": "c1c2c5865e0dd6fa77a1894ab55ef7f2e3e65511f1eeb928c7c20df3b71c37a0",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "controlled_artifact_replay_not_general_transfer",
+    "selection_protocol": "Freeze evolved artifacts before fixed-state replay; compare artifact versions on common state obligations rather than historical trajectory scores alone.",
+    "controlled_variables": [
+      "same backbone and game interface",
+      "same replay states per version comparison"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "application-and-service-workflows--care2026",
+    "key": "care2026",
+    "domain": "interactive",
+    "category": "Application and Service Workflows",
+    "category_id": "application-and-service-workflows",
+    "title": "CARE",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Attributes production failures to model behavior or external components, trains verified model-behavior repairs by on-policy self-distillation, and gates promotion through frozen simulation, online comparison and human approval."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Harnesses also change between versions, so trends cannot isolate model updates. Satisfaction parity is not statistically significant superiority; retrospective bad-case rates and selected ablations have calibration limits."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Combined offline scores increase, but simulation accuracy and bad-case rates trade off. Final online satisfaction differences from the incumbent are not statistically significant."
+      }
+    ],
+    "sources": [
+      {
+        "name": "CARE (v1)",
+        "url": "https://arxiv.org/html/2611.02839v1",
+        "locator": "Sections 3.3, 5.2, 7.2–7.4, 8.1–8.2 and 9.4–9.6",
+        "source_version": "2611.02839v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "care-production",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "care-frozen-simulation",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "instructions",
+          "tools",
+          "control"
+        ],
+        "benchmark_ids": [
+          "care-production",
+          "care-frozen-simulation"
+        ],
+        "scope": "Sections 3.3, 5.2, 7.2–7.4, 8.1–8.2 and 9.4–9.6; Harnesses also change between versions, so trends cannot isolate model updates. Satisfaction parity is not statistically significant superiority; retrospective bad-case rates and selected ablations have calibration limits.",
+        "summary": "Combined offline scores increase, but simulation accuracy and bad-case rates trade off. Final online satisfaction differences from the incumbent are not statistically significant.",
+        "section": "Reported observation",
+        "evidence_quote": "Combined offline scores increase, but simulation accuracy and bad-case rates trade off. Final online satisfaction differences from the incumbent are not statistically significant.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "CARE (v1)",
+          "url": "https://arxiv.org/html/2611.02839v1",
+          "locator": "Sections 3.3, 5.2, 7.2–7.4, 8.1–8.2 and 9.4–9.6",
+          "source_version": "2611.02839v1",
+          "first_release_date": "2026-11-02",
+          "source_version_date": "2026-11-02",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.02839v1",
+          "locator": "Sections 3.3, 5.2, 7.2–7.4, 8.1–8.2 and 9.4–9.6",
+          "excerpt": "not autonomous",
+          "artifact_sha256": "ef0dd1664790bb2583e9c5cf2b9116c0f55e1789f0d20ddf5040727304706971",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "executor_weights_trained",
+    "transfer_regime": "production_iteration_current_policy_evaluation",
+    "selection_protocol": "Evaluate all versions on 559 frozen current-SOP cases; compare candidate/incumbent concurrently online; accountable humans approve promotion.",
+    "controlled_variables": [
+      "same frozen offline cases",
+      "same within-period operating context",
+      "same repair tuples and budget for learning-objective ablation"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "machine-learning-engineering--rsi_dojo2026",
+    "key": "rsi_dojo2026",
+    "domain": "coding",
+    "category": "Machine Learning Engineering",
+    "category_id": "machine-learning-engineering",
+    "title": "RSI-Dojo",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Builds runnable post-training environments, improves collection guidance, filters execution trajectories, and fine-tunes agents to train target models."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "This trains an improver but does not close a successor self-improvement loop. Official leaderboard hardware differs; hosted/self-hosted tool access also differs."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Fine-tuned agents outperform their own starting models on PostTrainBench and Lite. This is evidence for learning post-training workflows, not autonomous recursive acceleration."
+      }
+    ],
+    "sources": [
+      {
+        "name": "RSI-Dojo (v1)",
+        "url": "https://arxiv.org/html/2611.03698v1",
+        "locator": "Sections 3–5 and 7",
+        "source_version": "2611.03698v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "posttrainbench",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "posttrainbench-lite",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "instructions",
+          "control"
+        ],
+        "benchmark_ids": [
+          "posttrainbench",
+          "posttrainbench-lite"
+        ],
+        "scope": "Sections 3–5 and 7; This trains an improver but does not close a successor self-improvement loop. Official leaderboard hardware differs; hosted/self-hosted tool access also differs.",
+        "summary": "Fine-tuned agents outperform their own starting models on PostTrainBench and Lite. This is evidence for learning post-training workflows, not autonomous recursive acceleration.",
+        "section": "Reported observation",
+        "evidence_quote": "Fine-tuned agents outperform their own starting models on PostTrainBench and Lite. This is evidence for learning post-training workflows, not autonomous recursive acceleration.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "RSI-Dojo (v1)",
+          "url": "https://arxiv.org/html/2611.03698v1",
+          "locator": "Sections 3–5 and 7",
+          "source_version": "2611.03698v1",
+          "first_release_date": "2026-10-29",
+          "source_version_date": "2026-10-29",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.03698v1",
+          "locator": "Sections 3–5 and 7",
+          "excerpt": "do not close the loop",
+          "artifact_sha256": "053d4b8806ceeb97d6c39a6dbd3085bc2534d5dee3102f6b0d8b4468f330fcd9",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "executor_weights_trained",
+    "transfer_regime": "trained_improver_to_posttraining_tasks",
+    "selection_protocol": "Filter trajectories for behavior and measured outcome; evaluate trained agents under the standard AutoTrainess harness without added collection guidance.",
+    "controlled_variables": [
+      "same target tasks for own base/trained comparisons",
+      "same evaluation harness",
+      "reported local compute budget"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--memory_tax2026",
+    "key": "memory_tax2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "Memory Tax",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Compares transformed memory systems with raw-history retrieval and probes information preservation, retrieval accessibility and construction/answering backbone sensitivity."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Retrieval-scope alignment is not equal absolute token cost. Representative systems, sampled offline English benchmarks and model-dependent judging limit generalization."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Many memory systems underperform raw-history RAG and amplify backbone sensitivity, while distilled experience can help web tasks. The effect depends on task and system, not memory presence alone."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Memory Tax (v1)",
+        "url": "https://arxiv.org/html/2610.34073v1",
+        "locator": "Sections 3.1, 4.2–4.4, 5.1 and Limitations; Appendix A.4",
+        "source_version": "2610.34073v1",
+        "first_release_date": "2026-10-25",
+        "source_version_date": "2026-10-25",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "longmemeval-s",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "personamem-v2",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "mint-eval",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "context"
+        ],
+        "benchmark_ids": [
+          "longmemeval-s",
+          "personamem-v2",
+          "mint-eval"
+        ],
+        "scope": "Sections 3.1, 4.2–4.4, 5.1 and Limitations; Appendix A.4; Retrieval-scope alignment is not equal absolute token cost. Representative systems, sampled offline English benchmarks and model-dependent judging limit generalization.",
+        "summary": "Many memory systems underperform raw-history RAG and amplify backbone sensitivity, while distilled experience can help web tasks. The effect depends on task and system, not memory presence alone.",
+        "section": "Reported observation",
+        "evidence_quote": "Many memory systems underperform raw-history RAG and amplify backbone sensitivity, while distilled experience can help web tasks. The effect depends on task and system, not memory presence alone.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Memory Tax (v1)",
+          "url": "https://arxiv.org/html/2610.34073v1",
+          "locator": "Sections 3.1, 4.2–4.4, 5.1 and Limitations; Appendix A.4",
+          "source_version": "2610.34073v1",
+          "first_release_date": "2026-10-25",
+          "source_version_date": "2026-10-25",
+          "metadata_checked_on": "2026-11-04",
+          "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2610.34073v1",
+          "locator": "Sections 3.1, 4.2–4.4, 5.1 and Limitations; Appendix A.4",
+          "excerpt": "magnitude depends strongly on the task settings",
+          "artifact_sha256": "c0080c542596c6a458549d9140805bcb0f7b96b9283fd3aa363a94ebce855552",
+          "checked_on": "2026-11-04"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.4.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "construction_answerer_model_swap_and_frozen_memory_transfer",
+    "selection_protocol": "Construct and evaluate memory separately; experiential-memory experiments freeze training-derived memory before test evaluation.",
+    "controlled_variables": [
+      "shared embedding model",
+      "same answerer within comparisons",
+      "approximately aligned retrieval scope"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
     }
   }
 ]
