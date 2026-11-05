@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "manuscript-polish-2026-11-04",
+      "date": "2026-11-04",
+      "kind": "website",
+      "title": "Manuscript synthesis and version-specific bibliography corrections",
+      "records": 95,
+      "changes": [
+        "Distinguished task gains, recursive reuse, subsequent optimization and continual adaptation with proposed comparison criteria; revised abstract, conclusion and limitations.",
+        "Checked eight disputed author lists against primary PDF title pages. Corrected GAIA and MLE-bench bibliographic metadata; retained six version-specific lists supported by their PDFs.",
+        "Published an 87-page author reading PDF and synchronized its abstract, citation links and dataset v0.4.1 reference. No new papers, dataset records or experiments; frozen releases and posted Preprints.org v2 remain unchanged."
+      ]
+    },
+    {
       "id": "factual-corrections-2026-11-04",
       "date": "2026-11-04",
       "kind": "website",
