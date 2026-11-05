@@ -104,7 +104,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 - **Preserve the paper snapshot.** The frozen survey cutoff stays identifiable. A bibliography import or website redesign does not silently extend the evidence collection.
 - **Verify publication and recover failures.** Updates are complete only after validation, a matching remote commit and a successful website deployment. Failed searches or publications retain separate status and are retried; neither a schedule nor an authentication test counts as a completed update.
 
-AI-assisted literature searches are scheduled daily at 09:00 Pacific time. Verified additions and corrections update the bibliography, collection charts, repository overview and website after validation. Literature, evidence and presentation retain separate dates; a scheduled search does not guarantee new studies or complete coverage.
+The maintenance protocol targets daily literature checks at 09:00 Pacific time, with a seven-day overlap from the last completed search. Completion is established by dated, validated releases below, not by the schedule. Verified additions and corrections update the bibliography, evidence dataset, manuscript and website as appropriate; these retain separate version dates. Search coverage is targeted, not exhaustive.
 
 The workflow is **find and screen → trace the actual change → revise comparisons → validate and record a dated release**. A website redesign does not create a new evidence snapshot. An added bibliography entry does not automatically become evidence for a domain finding.
 
