@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "factual-corrections-2026-11-04",
+      "date": "2026-11-04",
+      "kind": "website",
+      "title": "Source-backed factual corrections; dataset v0.4.1",
+      "records": 95,
+      "changes": [
+        "Corrected RSI-Env benchmark identities, Masked Erosion signal scope, HCL interactive acceptance, ModularRSI authors/locators and Terminal-Bench identifier consistency. Counts are unchanged.",
+        "Corrected the MoMHa composite-metric interpretation and Thinkingbox table locator in the author reading manuscript. Updated VideoWeaver transfer wording.",
+        "Preserved frozen evidence and all earlier dataset/PDF files. The current dataset correction note identifies known errors in older copies. AI-assisted verification does not establish zero errors or independent replication."
+      ]
+    },
+    {
       "id": "literature-dataset-manuscript-2026-11-04",
       "date": "2026-11-04",
       "kind": "website",

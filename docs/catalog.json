@@ -325,9 +325,9 @@
     {
       "id": "modularrsi2026",
       "title": "ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement",
-      "authors": "Wu, Siwei and Ren, Jincheng and Li, Yizhi and Li, Haau-Sing and Yang, Chengran and Zhang, Yuxuan and Gu, Weicheng and Yang, Jian and Batista-Navarro, Riza and Zhang, Chuanyi and Liu, Xianglong and Zhou, Ming and Dai, Bryan and Lin, Chenghua",
+      "authors": "Wu, Siwei and Ren, Jincheng and Li, Yizhi and Li, Haau-Sing and Yang, Chengran and Ma, Xudong and Zhang, Yuxuan and Gu, Weicheng and Yang, Jian and Batista-Navarro, Riza and Zhang, Chuanyi and Liu, Xianglong and Zhou, Ming and Dai, Bryan and Lin, Chenghua",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2609.14857v1",
+      "url": "https://arxiv.org/abs/2609.14857v2",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2609.14857",
       "arxiv": "2609.14857",
@@ -1304,7 +1304,7 @@
     },
     {
       "id": "tau2bench2025",
-      "title": "\\\\textbackslashtau\\textasciicircum2\\-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
+      "title": "τ^2-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
       "authors": "Barres, Victor and Dong, Honghua and Ray, Soham and Si, Xujie and Narasimhan, Karthik R",
       "year": "2026",
       "url": "https://openreview.net/forum?id=OC2z7iSQKa",
@@ -3913,7 +3913,7 @@
       "arxiv": "2606.20683",
       "category": "Surveys, Definitions, and Conceptual Frameworks",
       "kind": "paper",
-      "summary": "Source/version: First submitted 14 June 2026; checked arXiv v1. Sources checked 2026-10-04. Studies task-completing agents through the interaction between the foundation model and its execution harness. It separates observation, context, control, action, state, and verification, then relates task properties and domain pressures to harness configurations. It also discusses evaluation, generalization, and model–harness co-evolution. These are runtime responsibilities, whereas our Section 2 describes roles in the process that improves a harness. \\surveygroupAutomated Agent and Workflow Design",
+      "summary": "Source/version: First submitted 14 June 2026; checked arXiv v1. Sources checked 2026-10-04. Studies task-completing agents through the interaction between the foundation model and its execution harness. It separates observation, context, control, action, state, and verification, then relates task properties and domain pressures to harness configurations. It also discusses evaluation, generalization, and model–harness co-evolution. These are runtime responsibilities, whereas our Section 2 describes roles in the process that improves a harness.",
       "added_on": "2026-10-10",
       "release": {
         "value": "2026-06-14",
@@ -4633,7 +4633,7 @@
       "arxiv": "2606.08091",
       "category": "Additional Task-Domain Harness Evolution",
       "kind": "paper",
-      "summary": "Classification: Visual generation; composition and creator-skill evolution. Source/version: First submitted 2026-06-06; arXiv v2, checked 2026-10-05. Evaluates long-video production and updates reusable composition skills from execution and output feedback. It also evolves category-local creator skills and merges them for transfer. Fixed foundation skills, frozen held-out evaluation and limited-example target-category adaptation are distinct components. Survey placement: Section 4 and its category-organized evidence appendix.",
+      "summary": "Classification: Visual generation; composition and creator-skill evolution. Source/version: First submitted 2026-06-06; arXiv v2, checked 2026-10-05. Evaluates long-video production and updates reusable composition skills from execution and output feedback. It also evolves category-local creator skills and merges them for transfer. Fixed foundation skills, frozen held-out evaluation and frozen merged-creator evaluation on unseen categories without target-category feedback are distinct components. Survey placement: Section 4 and its category-organized evidence appendix.",
       "added_on": "2026-10-10",
       "release": {
         "value": "2026-06-06",
@@ -4833,7 +4833,7 @@
       "arxiv": null,
       "category": "Surveys, Definitions, and Conceptual Frameworks",
       "kind": "paper",
-      "summary": "Source/version: SSRN record posted 5 May 2026, manuscript dated 22 April 2026. The author repository also links a TechRxiv version; these are one work, not two studies. Sources checked 2026-10-10. Organizes the field into model-centric evolution, environment-centric evolution, and their co-evolution. The author-maintained taxonomy places knowledge and experience reuse, modular architectures, and agent topologies within the environment-centric branch. This broad use of environment extends beyond a task simulator and should not be silently substituted for our narrower target-harness definition. Role and placement: Related survey; Introduction and Section 2.5. Provides a comparison for model–environment coupling, not an independent experimental harness-evolution case. Evidence checked: SSRN abstract and author-maintained taxonomy. Full manuscript retrieval was blocked in this pass; detailed claims remain unchecked. \\surveygroupHarness Architecture and Engineering",
+      "summary": "Source/version: SSRN record posted 5 May 2026, manuscript dated 22 April 2026. The author repository also links a TechRxiv version; these are one work, not two studies. Sources checked 2026-10-10. Organizes the field into model-centric evolution, environment-centric evolution, and their co-evolution. The author-maintained taxonomy places knowledge and experience reuse, modular architectures, and agent topologies within the environment-centric branch. This broad use of environment extends beyond a task simulator and should not be silently substituted for our narrower target-harness definition. Role and placement: Related survey; Introduction and Section 2.5. Provides a comparison for model–environment coupling, not an independent experimental harness-evolution case. Evidence checked: SSRN abstract and author-maintained taxonomy. Full manuscript retrieval was blocked in this pass; detailed claims remain unchecked.",
       "added_on": "2026-10-10",
       "release": {
         "value": "2026",
@@ -4853,7 +4853,7 @@
       "arxiv": "2608.18104",
       "category": "Surveys, Definitions, and Conceptual Frameworks",
       "kind": "paper",
-      "summary": "Source/version: Checked arXiv v1. The primary record reports 10 June 2026; dates are taken from the record rather than inferred from the identifier. Sources checked 2026-10-10. Uses typed graph transformations to relate changes to components and features, connection topology, active subgraphs, and cross-component co-evolution. Memory structures and workflows become comparable editable structures, with provenance and rollback relevant to retaining graph changes. The perspective covers a broader space than persistent harness improvement: a runtime graph change does not by itself establish an inherited improvement. Role and placement: Related survey; Section 2 workflow, search, and memory discussions. Use the graph representation as a comparison axis, not evidence that all graph transformations constitute RSI. Evidence checked: Introduction and the graph-transformation taxonomy; arXiv HTML. \\surveygroupDomain-Specific and Evaluation Surveys",
+      "summary": "Source/version: Checked arXiv v1. The primary record reports 10 June 2026; dates are taken from the record rather than inferred from the identifier. Sources checked 2026-10-10. Uses typed graph transformations to relate changes to components and features, connection topology, active subgraphs, and cross-component co-evolution. Memory structures and workflows become comparable editable structures, with provenance and rollback relevant to retaining graph changes. The perspective covers a broader space than persistent harness improvement: a runtime graph change does not by itself establish an inherited improvement. Role and placement: Related survey; Section 2 workflow, search, and memory discussions. Use the graph representation as a comparison axis, not evidence that all graph transformations constitute RSI. Evidence checked: Introduction and the graph-transformation taxonomy; arXiv HTML.",
       "added_on": "2026-10-10",
       "release": {
         "value": "2026-06-10",
@@ -4913,7 +4913,7 @@
       "arxiv": "2610.02996",
       "category": "Surveys, Definitions, and Conceptual Frameworks",
       "kind": "paper",
-      "summary": "Source/version: First submitted 2 October 2026; checked arXiv v1. Sources checked 2026-10-10. Connects evolutionary attacks, evolutionary defenses, and trustworthy self-evolving systems. For persistent updates, it distinguishes restricting the admissible search space, selecting updates with safety-aware feedback, and coupling adaptive attackers and defenders. This helps connect search and retention decisions to trustworthiness while preserving the distinction between one-off adversarial search and inherited system change. Role and placement: Adjacent methodological survey; Sections 2.2 and 5. It supports discussion of search constraints and safe retention, not a new target-agent evolution result. Evidence checked: Sections II-A, III-C, and VII; arXiv HTML. \\surveygroupConceptual Frameworks and Position Papers",
+      "summary": "Source/version: First submitted 2 October 2026; checked arXiv v1. Sources checked 2026-10-10. Connects evolutionary attacks, evolutionary defenses, and trustworthy self-evolving systems. For persistent updates, it distinguishes restricting the admissible search space, selecting updates with safety-aware feedback, and coupling adaptive attackers and defenders. This helps connect search and retention decisions to trustworthiness while preserving the distinction between one-off adversarial search and inherited system change. Role and placement: Adjacent methodological survey; Sections 2.2 and 5. It supports discussion of search constraints and safe retention, not a new target-agent evolution result. Evidence checked: Sections II-A, III-C, and VII; arXiv HTML.",
       "added_on": "2026-10-10",
       "release": {
         "value": "2026-10-02",
