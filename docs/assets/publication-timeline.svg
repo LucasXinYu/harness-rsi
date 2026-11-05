@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">
 <title id="title">Collected papers by publication month · 2026</title>
-<desc id="desc">2026-01: 3; 2026-02: 2; 2026-03: 5; 2026-04: 6; 2026-05: 14; 2026-06: 11; 2026-07: 24; 2026-08: 32; 2026-09: 68; 2026-10: 71; 2026-11: 0 (partial month). Counts describe the survey collection, including related work, not all papers in the field.</desc>
+<desc id="desc">2026-01: 3; 2026-02: 2; 2026-03: 5; 2026-04: 6; 2026-05: 14; 2026-06: 11; 2026-07: 24; 2026-08: 32; 2026-09: 68; 2026-10: 74; 2026-11: 10 (partial month). Counts describe the survey collection, including related work, not all papers in the field.</desc>
 <rect width="1000" height="390" rx="12" fill="#0c1521"/>
 <g font-family="Arial,sans-serif" font-size="13" fill="#e9f2f6">
-<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9eb3c6">2026 · Search through 2026-11-01</text>
+<text x="28" y="34" font-size="21">Collected papers by publication month</text><text x="28" y="57" fill="#9eb3c6">2026 · Search through 2026-11-04</text>
 <path d="M64 305.0h895" stroke="#283b4b"/>
 <text x="52" y="309.0" text-anchor="end" fill="#9eb3c6">0</text>
 <path d="M64 250.0h895" stroke="#283b4b"/>
@@ -41,10 +41,10 @@
 <rect x="732.8" y="118.0" width="45.6" height="187.0" rx="3" fill="#8ec6ff"/>
 <text x="755.6" y="108.0" text-anchor="middle">68</text>
 <text x="755.6" y="329" text-anchor="middle" fill="#9eb3c6">Sep</text>
-<rect x="814.2" y="109.8" width="45.6" height="195.2" rx="3" fill="#8ec6ff"/>
-<text x="837.0" y="99.8" text-anchor="middle">71</text>
+<rect x="814.2" y="101.5" width="45.6" height="203.5" rx="3" fill="#8ec6ff"/>
+<text x="837.0" y="91.5" text-anchor="middle">74</text>
 <text x="837.0" y="329" text-anchor="middle" fill="#9eb3c6">Oct</text>
-<rect x="895.5" y="305.0" width="45.6" height="0.0" rx="3" fill="#ffc080"/>
-<text x="918.3" y="295.0" text-anchor="middle">0</text>
+<rect x="895.5" y="277.5" width="45.6" height="27.5" rx="3" fill="#ffc080"/>
+<text x="918.3" y="267.5" text-anchor="middle">10</text>
 <text x="918.3" y="329" text-anchor="middle" fill="#9eb3c6">Nov*</text>
-<text x="28" y="368" fill="#9eb3c6">* Partial month. Known release months: 291/305 papers. Official resources are excluded.</text></g></svg>
+<text x="28" y="368" fill="#9eb3c6">* Partial month. Known release months: 304/318 papers. Official resources are excluded.</text></g></svg>

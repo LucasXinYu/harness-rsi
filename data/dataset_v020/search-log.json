@@ -1,182 +1,1494 @@
 {
-  "searched_on": "2026-11-01",
-  "window_start": "2026-10-24",
-  "window_end": "2026-11-01",
-  "scope": "Targeted overlapping search; selected full-text batch, not exhaustive coverage. Remaining keyword hits are unscreened, not excluded papers.",
-  "previous_release_log": "v0.2.0/search-log.json",
+  "searched_on": "2026-11-04",
+  "window_start": "2026-10-25",
+  "window_end": "2026-11-04",
+  "scope": "Four overlapping arXiv queries; targeted full-text batch, not exhaustive coverage. Date window overlaps the November 1 search by seven days. Pending keyword candidates are not eligible inclusions or exclusions.",
+  "previous_release_log": "v0.3.0/search-log.json",
   "queries": [
     {
-      "query": "(ti:harness OR abs:\"harness optimization\" OR abs:\"harness evolution\") AND submittedDate:[202610240000 TO 202611012359]",
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aharness+OR+abs%3A%22harness+optimization%22+OR+abs%3A%22harness+evolution%22%29+AND+submittedDate%3A%5B202610240000+TO+202611012359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
-      "returned_count": 33,
-      "total_results": 33
+      "query": "(ti:harness OR abs:\"harness optimization\" OR abs:\"harness evolution\") AND submittedDate:[202610250000 TO 202611042359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aharness+OR+abs%3A%22harness+optimization%22+OR+abs%3A%22harness+evolution%22%29+AND+submittedDate%3A%5B202610250000+TO+202611042359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-04T23:57:05.818549+00:00",
+      "count": 53,
+      "total_results": 53,
+      "status": "complete"
     },
     {
-      "query": "(all:\"recursive self-improvement\" OR ti:\"self-evolving\" OR ti:\"self-improving\") AND submittedDate:[202610240000 TO 202611012359]",
-      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22recursive+self-improvement%22+OR+ti%3A%22self-evolving%22+OR+ti%3A%22self-improving%22%29+AND+submittedDate%3A%5B202610240000+TO+202611012359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
-      "returned_count": 39,
-      "total_results": 39
+      "query": "(all:\"recursive self-improvement\" OR ti:\"self-evolving\" OR ti:\"self-improving\") AND submittedDate:[202610250000 TO 202611042359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22recursive+self-improvement%22+OR+ti%3A%22self-evolving%22+OR+ti%3A%22self-improving%22%29+AND+submittedDate%3A%5B202610250000+TO+202611042359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-04T23:57:06.395781+00:00",
+      "count": 69,
+      "total_results": 69,
+      "status": "complete"
     },
     {
-      "query": "(ti:agent OR ti:agents) AND (ti:memory OR ti:skill OR ti:continual OR ti:workflow) AND submittedDate:[202610240000 TO 202611012359]",
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aagent+OR+ti%3Aagents%29+AND+%28ti%3Amemory+OR+ti%3Askill+OR+ti%3Acontinual+OR+ti%3Aworkflow%29+AND+submittedDate%3A%5B202610240000+TO+202611012359%5D&start=0&max_results=100&sortBy=submittedDate&sortOrder=descending",
-      "returned_count": 57,
-      "total_results": 57
+      "query": "(ti:agent OR ti:agents) AND (ti:memory OR ti:skill OR ti:continual OR ti:workflow) AND submittedDate:[202610250000 TO 202611042359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aagent+OR+ti%3Aagents%29+AND+%28ti%3Amemory+OR+ti%3Askill+OR+ti%3Acontinual+OR+ti%3Aworkflow%29+AND+submittedDate%3A%5B202610250000+TO+202611042359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-04T23:57:06.922514+00:00",
+      "count": 87,
+      "total_results": 87,
+      "status": "complete"
+    },
+    {
+      "query": "(ti:agent OR ti:harness) AND (ti:transfer OR ti:adaptation OR ti:evolution) AND submittedDate:[202610250000 TO 202611042359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aagent+OR+ti%3Aharness%29+AND+%28ti%3Atransfer+OR+ti%3Aadaptation+OR+ti%3Aevolution%29+AND+submittedDate%3A%5B202610250000+TO+202611042359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-04T23:57:07.258917+00:00",
+      "count": 43,
+      "total_results": 43,
+      "status": "complete"
     }
   ],
-  "unique_candidates": 118,
-  "already_collected_in_results": 2,
-  "full_text_inspected": 20,
-  "new_collection_papers": 20,
-  "new_evidence_records": 19,
-  "pending_candidate_count": 96,
+  "unique_candidates": 220,
+  "already_collected_in_results": 22,
+  "new_full_text_inspected": 13,
+  "new_collection_papers": 13,
+  "new_evidence_records": 13,
+  "pending_candidate_count": 185,
   "pending_candidates": [
+    {
+      "arxiv_id": "2611.04579",
+      "title": "FreeForm Harness: A Mobile-Native Agent Harness for Open and Composable Extensions",
+      "url": "https://arxiv.org/abs/2611.04579",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04481",
+      "title": "Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness",
+      "url": "https://arxiv.org/abs/2611.04481",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04196",
+      "title": "DoGNAVY-Exploit: Harnessing Parallel Open-Weight Agents for Stage-Aware Vulnerability Exploitation",
+      "url": "https://arxiv.org/abs/2611.04196",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03434",
+      "title": "Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis",
+      "url": "https://arxiv.org/abs/2611.03434",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03219",
+      "title": "Can Coding Agents Sustain Continual Evolution without Forgetting?",
+      "url": "https://arxiv.org/abs/2611.03219",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03193",
+      "title": "Harnessing Mutual Coupling in Cell-Free mMIMO",
+      "url": "https://arxiv.org/abs/2611.03193",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02784",
+      "title": "HLSClaw: Bringing Vibe Coding to High-Level Synthesis through Skill-Based Agentic Harness",
+      "url": "https://arxiv.org/abs/2611.02784",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01560",
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "url": "https://arxiv.org/abs/2611.01560",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01415",
+      "title": "Latent Harness: Compiling Agent Behaviors into Post-Block Activation Shifts",
+      "url": "https://arxiv.org/abs/2611.01415",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01112",
+      "title": "Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation",
+      "url": "https://arxiv.org/abs/2611.01112",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00867",
+      "title": "Harnessing Inter-Waveguide Evanescent Coupling in Pinching-Antenna Systems",
+      "url": "https://arxiv.org/abs/2611.00867",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00643",
+      "title": "Selecting LLM-Generated Hypotheses Raises Truth Beyond What an LLM Panel Expects: A Pre-registered Study on NAS-Bench-201 and HPOBench",
+      "url": "https://arxiv.org/abs/2611.00643",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41216",
+      "title": "TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents",
+      "url": "https://arxiv.org/abs/2610.41216",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41172",
+      "title": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
+      "url": "https://arxiv.org/abs/2610.41172",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41130",
+      "title": "One Verdict Is Not Enough: Regression Testing Learned World Models and Their Test Harnesses",
+      "url": "https://arxiv.org/abs/2610.41130",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40917",
+      "title": "Towards Portable Specification of the Agent Harness",
+      "url": "https://arxiv.org/abs/2610.40917",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
     {
       "arxiv_id": "2610.40627",
       "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
       "url": "https://arxiv.org/abs/2610.40627",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40747",
+      "title": "Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use From Evolved Harnesses",
+      "url": "https://arxiv.org/abs/2610.40747",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40721",
+      "title": "MetaVul: Agentic Harness Discovery for Vulnerability Detection",
+      "url": "https://arxiv.org/abs/2610.40721",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.39244",
       "title": "CASH: A Capability-Aware Subsidy Harness for Advertiser Subsidy Allocation",
       "url": "https://arxiv.org/abs/2610.39244",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38617",
       "title": "How Deterministic SAST and AI Security Agents Divide the Work: Coverage, Harness Policy and Cost in Snyk VulnBench 2.0",
       "url": "https://arxiv.org/abs/2610.38617",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38546",
       "title": "Implicit Minor Detection from Multi-Turn Dialogue in High-Risk AI Interactions: A Constrained Self-Evolving LLM Harness",
       "url": "https://arxiv.org/abs/2610.38546",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38527",
       "title": "Harnessing Non-Markovian Memory for Quantum-Battery Capacity",
       "url": "https://arxiv.org/abs/2610.38527",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38211",
       "title": "RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh",
       "url": "https://arxiv.org/abs/2610.38211",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37923",
       "title": "VerifiedLab: Harnessing Knowns for Unknowns",
       "url": "https://arxiv.org/abs/2610.37923",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37255",
       "title": "Your Policy Is Secretly a Harness: The Decision Geometry of Agent Interfaces",
       "url": "https://arxiv.org/abs/2610.37255",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36717",
       "title": "A Harness Reducing over-Defensive Writing in Agents by Isolating Objections",
       "url": "https://arxiv.org/abs/2610.36717",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36545",
       "title": "FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation",
       "url": "https://arxiv.org/abs/2610.36545",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36405",
       "title": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
       "url": "https://arxiv.org/abs/2610.36405",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36114",
       "title": "Context Is a Pipeline, Not a Window: Information Attrition in LLM Agent Harnesses",
       "url": "https://arxiv.org/abs/2610.36114",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35845",
       "title": "Work Agents: Systems, Capabilities, and Optimization",
       "url": "https://arxiv.org/abs/2610.35845",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35832",
       "title": "Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy",
       "url": "https://arxiv.org/abs/2610.35832",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35767",
       "title": "Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents",
       "url": "https://arxiv.org/abs/2610.35767",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35349",
       "title": "MarkovSim: an LLM Agent Harness with Bounded Context for Long-Horizon Computational Simulation",
       "url": "https://arxiv.org/abs/2610.35349",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34938",
       "title": "How Do Coding-Agent Harnesses Self-Evolve? An Empirical Study of Retrospective Adaptation",
       "url": "https://arxiv.org/abs/2610.34938",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34884",
       "title": "MedAdaptAgent: An Automatic Harness for Adapting Medical Imaging Models to New Sites",
       "url": "https://arxiv.org/abs/2610.34884",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34724",
       "title": "Harness-Model Collaboration for Long-Horizon Continual Learning",
       "url": "https://arxiv.org/abs/2610.34724",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34577",
       "title": "Rethinking Verification in Agent Harnesses",
       "url": "https://arxiv.org/abs/2610.34577",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34370",
       "title": "ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation",
       "url": "https://arxiv.org/abs/2610.34370",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04998",
+      "title": "ForgeKernel: Self-Evolving Kernels Catching and Surpassing Experts and Agents",
+      "url": "https://arxiv.org/abs/2611.04998",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04469",
+      "title": "EvoCG: Self-Evolving Precision Control for Faster Conjugate Gradient",
+      "url": "https://arxiv.org/abs/2611.04469",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04439",
+      "title": "DualEvolve: Dual-Level Self-Evolution of Mechanism and Orchestration for Recommendation",
+      "url": "https://arxiv.org/abs/2611.04439",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04437",
+      "title": "WiSI: Wireless-in-the-Loop Self-Improvement",
+      "url": "https://arxiv.org/abs/2611.04437",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04268",
+      "title": "Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop",
+      "url": "https://arxiv.org/abs/2611.04268",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04180",
+      "title": "Validation-Gated ML Pipeline Synthesis with Expert-Grounded Self-Evolving Skills",
+      "url": "https://arxiv.org/abs/2611.04180",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04173",
+      "title": "ReconDreamer#: Self-Evolving Closed-Loop Synergy of Reconstruction and Generation for Dynamic Driving Scenes",
+      "url": "https://arxiv.org/abs/2611.04173",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04035",
+      "title": "Recursa: Toward Recursively Self-Improving Foundation Model Systems",
+      "url": "https://arxiv.org/abs/2611.04035",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03754",
+      "title": "The Web Doesn't Sit Still: Adversarial Self-Evolving Attacks on Search Agents",
+      "url": "https://arxiv.org/abs/2611.03754",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02510",
+      "title": "Neuro Inspired Robotics: What Robot Learning Can Borrow from the Sensorimotor Brain",
+      "url": "https://arxiv.org/abs/2611.02510",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02102",
+      "title": "NorthCUA Technical Report: Turbocharging Computer-Use Agents through Experience at Scale",
+      "url": "https://arxiv.org/abs/2611.02102",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01977",
+      "title": "EvoRec: A Unified Self-Evolving Agentic Recommender with Dynamic Reflection Trees",
+      "url": "https://arxiv.org/abs/2611.01977",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01954",
+      "title": "Towards Self-Evolving Narrative Systems: Real-Time Adaptation and Long-Term Optimization with LLMs",
+      "url": "https://arxiv.org/abs/2611.01954",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01840",
+      "title": "Self-Evolving Agentic Workflows via Semantic Decomposition of Complex Tasks",
+      "url": "https://arxiv.org/abs/2611.01840",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01834",
+      "title": "LegoEnv: Self-Evolving Agentic Environments via Modular Recombination",
+      "url": "https://arxiv.org/abs/2611.01834",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01742",
+      "title": "From Single-Agent Self-Discovery to Multi-Agent Adaptation: Scaling Laws of Partner Feedback and Convention Rigidity in Meta Reinforcement Learning Algorithms",
+      "url": "https://arxiv.org/abs/2611.01742",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01581",
+      "title": "Recursive Self-Improvement of Exoskeleton Assistance Policies through Human-in-the-Loop Feedback",
+      "url": "https://arxiv.org/abs/2611.01581",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01377",
+      "title": "A Self-Exploring and Self-Evolving Paradigm for Adaptive Edge AI Development",
+      "url": "https://arxiv.org/abs/2611.01377",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01304",
+      "title": "When LLMs Modify Themselves: Convergence, Values, and Stopping in Iterative Self-Improvement",
+      "url": "https://arxiv.org/abs/2611.01304",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00463",
+      "title": "Exo: An Architecture for Self-Improving Systems at Runtime",
+      "url": "https://arxiv.org/abs/2611.00463",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00452",
+      "title": "Compositional Self-Improvement: Promises and Pitfalls",
+      "url": "https://arxiv.org/abs/2611.00452",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00438",
+      "title": "Statistical Inference under Performativity: From Policy Feedback to Self-Evolving Systems",
+      "url": "https://arxiv.org/abs/2611.00438",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41296",
+      "title": "Self-Improvement with Auxiliary Rewards: Learning from Verified Traces and Evaluating Transfer",
+      "url": "https://arxiv.org/abs/2610.41296",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41245",
+      "title": "MEMIG: Self-evolving Memory Construction for Antibody Optimization",
+      "url": "https://arxiv.org/abs/2610.41245",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41210",
+      "title": "From Evaluation to Evolution: Benchmarking Image Editing and Evolving Image Models",
+      "url": "https://arxiv.org/abs/2610.41210",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40901",
+      "title": "TSFLab: A Self-Improving Agent-Agnostic Workbench for Time Series Forecasting Research",
+      "url": "https://arxiv.org/abs/2610.40901",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40758",
+      "title": "More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum",
+      "url": "https://arxiv.org/abs/2610.40758",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40751",
+      "title": "Safin-1.5: Safety-Native Architecture and Verifiable Reasoning for Recursive Safety Improvement",
+      "url": "https://arxiv.org/abs/2610.40751",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40115",
+      "title": "SelfThinker: Self-Evolving Reasoning via Reliability-Verified Intrinsic Visual Thoughts",
+      "url": "https://arxiv.org/abs/2610.40115",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39795",
+      "title": "The Role of Self-Concept In Language Models",
+      "url": "https://arxiv.org/abs/2610.39795",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39417",
+      "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+      "url": "https://arxiv.org/abs/2610.39417",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38946",
+      "title": "MAS-Loop: Beyond One-Shot Orchestration towards Self-Evolving Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.38946",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38728",
+      "title": "From Grind to Grasp",
+      "url": "https://arxiv.org/abs/2610.38728",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38568",
+      "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+      "url": "https://arxiv.org/abs/2610.38568",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37228",
+      "title": "AutoRSE: Evaluating LLM Agents as Recommendation Engineers for Self-Evolving Recommender Systems",
+      "url": "https://arxiv.org/abs/2610.37228",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36578",
+      "title": "AudioRSI: Recursively Self-Improving Audio Reasoners",
+      "url": "https://arxiv.org/abs/2610.36578",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40684",
+      "title": "Training for Alignment",
+      "url": "https://arxiv.org/abs/2610.40684",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36013",
+      "title": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence",
+      "url": "https://arxiv.org/abs/2610.36013",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35604",
+      "title": "RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies",
+      "url": "https://arxiv.org/abs/2610.35604",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35598",
+      "title": "Evolve on Graph: Self-Evolving Knowledge Graph Reasoning without Question Annotations",
+      "url": "https://arxiv.org/abs/2610.35598",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35579",
+      "title": "Infinity Machine: a self-improving AI agent for research",
+      "url": "https://arxiv.org/abs/2610.35579",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35453",
+      "title": "Beyond Federated Learning: Decentralized Agentic Systems for Self-Evolving Clinical Intelligence",
+      "url": "https://arxiv.org/abs/2610.35453",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35193",
+      "title": "Trustworthy Recursive Self-Improvement in the Era of Large Models: Foundation, Risks, Evaluation and Open Challenges",
+      "url": "https://arxiv.org/abs/2610.35193",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35172",
+      "title": "RetroNav: Scene-Grounded Retrospection and Retry for Self-Evolving Lifelong Navigation",
+      "url": "https://arxiv.org/abs/2610.35172",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35051",
+      "title": "VISTA: Active Exploration for Self-Improvement in Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.35051",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34965",
+      "title": "The Target Agent Is Its Own Best Critic but a Poor Proposer: Self-Improved Red Teaming",
+      "url": "https://arxiv.org/abs/2610.34965",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34649",
+      "title": "RobotAgentBench: Towards Open-world Robot Autonomy",
+      "url": "https://arxiv.org/abs/2610.34649",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34386",
+      "title": "ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains?",
+      "url": "https://arxiv.org/abs/2610.34386",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.05313",
+      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "url": "https://arxiv.org/abs/2611.05313",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.05094",
+      "title": "A Gated Spec-Driven Workflow: An Audit-Trail Study of Coding-Agent Work",
+      "url": "https://arxiv.org/abs/2611.05094",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.05088",
+      "title": "LatentTriad: Pre-Action Risk Representations for Malicious Agent Skill Detection",
+      "url": "https://arxiv.org/abs/2611.05088",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04507",
+      "title": "Signals: Continuous Diagnostics of AI Agents",
+      "url": "https://arxiv.org/abs/2611.04507",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04483",
+      "title": "CogniLife: Continuous Cognitive Distillation for Deployed Multi-Expert Agent Marketplaces",
+      "url": "https://arxiv.org/abs/2611.04483",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04456",
+      "title": "How Agent Skills Evolve: A Large-Scale Empirical Study of Skills on GitHub",
+      "url": "https://arxiv.org/abs/2611.04456",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04299",
+      "title": "Can Benign Skills Induce Misaligned Behavior in LLM Agents?",
+      "url": "https://arxiv.org/abs/2611.04299",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04003",
+      "title": "WASP-Mem: Let Agent Organize Procedural Memory. Human Spend Effort on Diagnosis",
+      "url": "https://arxiv.org/abs/2611.04003",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03930",
+      "title": "What Is This Memory Useful For? Measuring Task-Conditioned Utility in Long-Term Agent Memory",
+      "url": "https://arxiv.org/abs/2611.03930",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03826",
+      "title": "Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication",
+      "url": "https://arxiv.org/abs/2611.03826",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03596",
+      "title": "Spacetime Emergence in the Memory of a Learning Agent",
+      "url": "https://arxiv.org/abs/2611.03596",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03772",
+      "title": "RuntimeTickets: Source-Grounded Security Obligations for Agent Skills",
+      "url": "https://arxiv.org/abs/2611.03772",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03238",
+      "title": "ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents",
+      "url": "https://arxiv.org/abs/2611.03238",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03227",
+      "title": "What Structurally Breaks an Agent? Auditing Difficulty in Stateful Tool-Use Workflows",
+      "url": "https://arxiv.org/abs/2611.03227",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03116",
+      "title": "From Local Skills to Long-Horizon Web Tasks: Progressive Skill Exploration for LLM Web Agents",
+      "url": "https://arxiv.org/abs/2611.03116",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02912",
+      "title": "A State Change Is Local, Its Consequences Are Not: Dependency-Aware State Revision for Long-Term Agent Memory",
+      "url": "https://arxiv.org/abs/2611.02912",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03743",
+      "title": "EvoMemState: Evolving Memory State for Personal Agents",
+      "url": "https://arxiv.org/abs/2611.03743",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02361",
+      "title": "Agent Memory as Rate-Limited Filtering: Explicit State Outlasts Long Context Beyond a Reader-Dependent Horizon",
+      "url": "https://arxiv.org/abs/2611.02361",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02286",
+      "title": "Toward Agentic AI-Ready Workflows in Built Environment Organizations: Knowledge Structures and Interoperability Challenges",
+      "url": "https://arxiv.org/abs/2611.02286",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01778",
+      "title": "MemRole: From Memories to Decisions for Long-Horizon Reasoning in Role-Playing Agents",
+      "url": "https://arxiv.org/abs/2611.01778",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01718",
+      "title": "Delivered, Not Used: Evaluating Agent Memory at Its Point of Use",
+      "url": "https://arxiv.org/abs/2611.01718",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01700",
+      "title": "MemHarmBench: Evaluating Cross-Session Prompt Injection in Memory-Persistent AI Agents",
+      "url": "https://arxiv.org/abs/2611.01700",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01566",
+      "title": "Principled Human-AI Collaboration in Agentic Workflows",
+      "url": "https://arxiv.org/abs/2611.01566",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01563",
+      "title": "\\textsc{ChatDify}: Automating End-to-End Dify Workflow Synthesis from Natural Language via Multi-Agent Collaboration",
+      "url": "https://arxiv.org/abs/2611.01563",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01386",
+      "title": "Learning by Doing: Autonomously Compiling and Curating Agent Skills from Verified Traces",
+      "url": "https://arxiv.org/abs/2611.01386",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00779",
+      "title": "Who Schedules Agent Memory? A Sidecar Approach to Long-Horizon Tasks",
+      "url": "https://arxiv.org/abs/2611.00779",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00628",
+      "title": "AgentPRO: Coordinating Compiler Optimizations for LLM Agent Workflows",
+      "url": "https://arxiv.org/abs/2611.00628",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.42141",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.42068",
+      "title": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+      "url": "https://arxiv.org/abs/2610.42068",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41482",
+      "title": "KEEPER: Learning Control-Sufficient Textual Memory for Long-Horizon LLM Agents",
+      "url": "https://arxiv.org/abs/2610.41482",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41056",
+      "title": "Accept Changes, Reject Attacks: Robust Memory Management for LLM Agents",
+      "url": "https://arxiv.org/abs/2610.41056",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40556",
+      "title": "Advancing Clinical Genomic Analysis with a Skill-Centred Agent",
+      "url": "https://arxiv.org/abs/2610.40556",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40545",
+      "title": "Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents",
+      "url": "https://arxiv.org/abs/2610.40545",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40000",
+      "title": "NORmal: Architecting 3D Ferroelectric NOR Flash as Main Memory -- From Co-Fabricated BEOL Arrays to 200B-Class Multi-Agent LLMs in a Smartphone",
+      "url": "https://arxiv.org/abs/2610.40000",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39790",
+      "title": "Long-Term Agent Memory through Complementary Curation and Consolidation",
+      "url": "https://arxiv.org/abs/2610.39790",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39733",
+      "title": "Bank-World: A Benchmark for Evaluating Agents on Banking Workflows",
+      "url": "https://arxiv.org/abs/2610.39733",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38902",
+      "title": "HEDGE: Gated Hypergraph Memory for Scalable Multi-Agent Debate",
+      "url": "https://arxiv.org/abs/2610.38902",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38799",
+      "title": "CARI: Cross-Boundary Adversarial Runtime Injection in Coding-Agent Workflows",
+      "url": "https://arxiv.org/abs/2610.38799",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38521",
+      "title": "Security Impact of Coding Agent's Memory Files",
+      "url": "https://arxiv.org/abs/2610.38521",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38332",
+      "title": "MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents",
+      "url": "https://arxiv.org/abs/2610.38332",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38209",
+      "title": "Is it my preference? Role Grounding Attack against Agent's Memory via Social Interaction",
+      "url": "https://arxiv.org/abs/2610.38209",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38147",
+      "title": "SkillCT: A Multidimensional Benchmark and Execution-Free Baseline for Agent Skill Assessment",
+      "url": "https://arxiv.org/abs/2610.38147",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37935",
+      "title": "SkillMem: Compact External Skill Memory for Latent Multi-Agent Reasoning",
+      "url": "https://arxiv.org/abs/2610.37935",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37443",
+      "title": "ETAMem: Decoupling and Aligning Heterogeneous Memory for Long-Term Conversational Agents",
+      "url": "https://arxiv.org/abs/2610.37443",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37738",
+      "title": "Poisoned Skills: Propagating Jailbreaks Through Agent Markdown Files",
+      "url": "https://arxiv.org/abs/2610.37738",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37734",
+      "title": "When Skills Tell Agents Not to Ask: A Large-Scale Study of Oversight Directives in Agent Skills",
+      "url": "https://arxiv.org/abs/2610.37734",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37201",
+      "title": "Does Your Generalist Skill Optimizer Really Incentivize Agentic Tasks? Rethinking Skill Optimization via Bipartite Attribution",
+      "url": "https://arxiv.org/abs/2610.37201",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37195",
+      "title": "Action-Value Calibration via Continuation Sharing for Long-Horizon Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2610.37195",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36967",
+      "title": "Proactive Memory for Event-Driven LLM Agents",
+      "url": "https://arxiv.org/abs/2610.36967",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36918",
+      "title": "TrawMem: Reframing Agent Memory as Task-Oriented Role-Adaptive Workspaces",
+      "url": "https://arxiv.org/abs/2610.36918",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36759",
+      "title": "DocSkill: Skill-Integrated Agentic Reasoning for Multilingual Multi-Hop Document Question Answering",
+      "url": "https://arxiv.org/abs/2610.36759",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36713",
+      "title": "From Voiceprints to User Entities: Online Speaker-Memory Construction for Multi-User Spoken Agents",
+      "url": "https://arxiv.org/abs/2610.36713",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36652",
+      "title": "Remembering Is Not Enough: Refining Memories and Learning When to Use Them in Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.36652",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36308",
+      "title": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+      "url": "https://arxiv.org/abs/2610.36308",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36153",
+      "title": "Stratum: Repository Memory for Coding Agents Beyond the Context Window",
+      "url": "https://arxiv.org/abs/2610.36153",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35823",
+      "title": "Back to Basics: A Skill-Centric Approach to Generalist Web Agents",
+      "url": "https://arxiv.org/abs/2610.35823",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35616",
+      "title": "Hierarchical Skill Evolution for Coding Agent",
+      "url": "https://arxiv.org/abs/2610.35616",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35439",
+      "title": "Omni-InteractScope: Benchmarking Proactive and Agentic Interaction in Continuous Omnimodal Streams",
+      "url": "https://arxiv.org/abs/2610.35439",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35997",
+      "title": "PolicyMediator: Multi-Regional Policy Learning through Mediation Agents with Evolving Skills in OPC Ecosystems",
+      "url": "https://arxiv.org/abs/2610.35997",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35215",
+      "title": "SkillLifeBench: Benchmarking Security Across the Lifecycle of Agent Skills",
+      "url": "https://arxiv.org/abs/2610.35215",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35082",
+      "title": "CoSA: The Conflict of Skills Attack in Real-World LLM Agent Ecosystems",
+      "url": "https://arxiv.org/abs/2610.35082",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35054",
+      "title": "From Questions to Queries to Insights: A Schema-Grounded Agentic Workflow for Natural-Language Crash Data Analysis",
+      "url": "https://arxiv.org/abs/2610.35054",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34890",
+      "title": "AIPC: Evidence-Guided Agent Workflows for PyTorch Project Deployment",
+      "url": "https://arxiv.org/abs/2610.34890",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35971",
+      "title": "Continue or Restart? The Limits of Early Failure Prediction in Coding Agents",
+      "url": "https://arxiv.org/abs/2610.35971",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34767",
+      "title": "The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory",
+      "url": "https://arxiv.org/abs/2610.34767",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34673",
+      "title": "Agent Memory as Recommendation: Recommender-System Design for Long-Term Memory of LLM Agents",
+      "url": "https://arxiv.org/abs/2610.34673",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34633",
+      "title": "CodeMeepo: A Multi-Agent Workflow for Repository-Level Code Migration and Optimization",
+      "url": "https://arxiv.org/abs/2610.34633",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34599",
+      "title": "An Agentic AI Workflow for Liver Lesion Segmentation and Structured Radiology Reporting",
+      "url": "https://arxiv.org/abs/2610.34599",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34500",
+      "title": "CaliMem: Search-Efficient Data Agent via Calibrated Memory",
+      "url": "https://arxiv.org/abs/2610.34500",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35966",
+      "title": "EMMA: Structured Episodic Memory for Multi-Agent Workflow Synthesis",
+      "url": "https://arxiv.org/abs/2610.35966",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34365",
+      "title": "SEEK: Skill Extraction with Evolving Knowledge against Frontier Science Agents",
+      "url": "https://arxiv.org/abs/2610.34365",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34043",
+      "title": "Holding a Steady Course: Knowledge Evolution from Expertise and Lessons for Continual Agent Learning",
+      "url": "https://arxiv.org/abs/2610.34043",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04960",
+      "title": "An Agentic Framework for Quality-Aware and Scenario-Adaptive Image Compression",
+      "url": "https://arxiv.org/abs/2611.04960",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03384",
+      "title": "Can We Stop the Backtest Yet? Anytime-Valid Promotion Tests for Adaptive Financial Research Agents",
+      "url": "https://arxiv.org/abs/2611.03384",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02741",
+      "title": "ATrust: Adaptive Trust Boundary Expansion for Securing LLM Agents",
+      "url": "https://arxiv.org/abs/2611.02741",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02516",
+      "title": "Cumulative and Audited Guardrail Tool Evolution for LLM Agent Safety",
+      "url": "https://arxiv.org/abs/2611.02516",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01870",
+      "title": "Automated Stateful Specialization for Adaptive Agent Systems",
+      "url": "https://arxiv.org/abs/2611.01870",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01429",
+      "title": "When Should an Agent Refresh? Adaptive Index Reuse for Efficient Long-Horizon Reasoning",
+      "url": "https://arxiv.org/abs/2611.01429",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.42004",
+      "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+      "url": "https://arxiv.org/abs/2610.42004",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41803",
+      "title": "What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Benchmark Transfer",
+      "url": "https://arxiv.org/abs/2610.41803",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41272",
+      "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
+      "url": "https://arxiv.org/abs/2610.41272",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41228",
+      "title": "Evolution of Financial AI: From Statistical Models to Agentic AI",
+      "url": "https://arxiv.org/abs/2610.41228",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39682",
+      "title": "Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels",
+      "url": "https://arxiv.org/abs/2610.39682",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39680",
+      "title": "Federated Agentic AI for Interference-Aware Adaptive Spectrum Coordination",
+      "url": "https://arxiv.org/abs/2610.39680",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39258",
+      "title": "Agentic LinkDreamer: Adaptive Neuro-Fuzzy World-Model Decision Making for Intermittent V2X Cooperative Perception",
+      "url": "https://arxiv.org/abs/2610.39258",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39251",
+      "title": "Where to Learn and How Far to Roll Out: Efficient Adaptive Training for GUI Agents",
+      "url": "https://arxiv.org/abs/2610.39251",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39180",
+      "title": "EmbodiExp: Compositional Experience Transfer for Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.39180",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39122",
+      "title": "Appreciation Teaches Unauthorized Execution: Self-Evolution Degrades the Robustness of Personal Agents to Indirect Prompt Injection",
+      "url": "https://arxiv.org/abs/2610.39122",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38872",
+      "title": "Principal-agent hypothesis testing under adaptive experimentation",
+      "url": "https://arxiv.org/abs/2610.38872",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38398",
+      "title": "Agent Transfer Protocol: Server-Mediated Agent-to-Agent Communication Architecture for the Agentic Web",
+      "url": "https://arxiv.org/abs/2610.38398",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38225",
+      "title": "FACTS-MAS: A Multi-Agent Architecture for Adaptive Forecasting from Heterogeneous Evidence",
+      "url": "https://arxiv.org/abs/2610.38225",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37441",
+      "title": "Multi-Agent Reinforcement Learning of Co-Adaptive Hip Exoskeleton Control (MARL-Exo) for Metabolic Energy Reduction",
+      "url": "https://arxiv.org/abs/2610.37441",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37276",
+      "title": "Where Should the Evaluation Budget Go in LLM-Driven Agent Scaffold Evolution?",
+      "url": "https://arxiv.org/abs/2610.37276",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36660",
+      "title": "The View from Nowhere: Population-Centered Agent Evolution",
+      "url": "https://arxiv.org/abs/2610.36660",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34968",
+      "title": "Guarded Agent-in-the-Loop Residual Adaptation for Evolving Wind Power Regimes",
+      "url": "https://arxiv.org/abs/2610.34968",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34872",
+      "title": "Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG",
+      "url": "https://arxiv.org/abs/2610.34872",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34751",
+      "title": "Adaptive Probe Design for Auditing AI Agents",
+      "url": "https://arxiv.org/abs/2610.34751",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34450",
+      "title": "EvolveMAS: A Unified Self-Evolution Framework for Decentralized Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.34450",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    }
+  ],
+  "carried_pending_count": 14,
+  "cumulative_pending_candidates": [
+    {
+      "arxiv_id": "2610.40627",
+      "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+      "url": "https://arxiv.org/abs/2610.40627",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39244",
+      "title": "CASH: A Capability-Aware Subsidy Harness for Advertiser Subsidy Allocation",
+      "url": "https://arxiv.org/abs/2610.39244",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38617",
+      "title": "How Deterministic SAST and AI Security Agents Divide the Work: Coverage, Harness Policy and Cost in Snyk VulnBench 2.0",
+      "url": "https://arxiv.org/abs/2610.38617",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38546",
+      "title": "Implicit Minor Detection from Multi-Turn Dialogue in High-Risk AI Interactions: A Constrained Self-Evolving LLM Harness",
+      "url": "https://arxiv.org/abs/2610.38546",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38527",
+      "title": "Harnessing Non-Markovian Memory for Quantum-Battery Capacity",
+      "url": "https://arxiv.org/abs/2610.38527",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38211",
+      "title": "RainCheck: Harnessing Historical Weather Data with Machine Learning for Rainfall Forecasting in Bangladesh",
+      "url": "https://arxiv.org/abs/2610.38211",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37923",
+      "title": "VerifiedLab: Harnessing Knowns for Unknowns",
+      "url": "https://arxiv.org/abs/2610.37923",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37255",
+      "title": "Your Policy Is Secretly a Harness: The Decision Geometry of Agent Interfaces",
+      "url": "https://arxiv.org/abs/2610.37255",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36717",
+      "title": "A Harness Reducing over-Defensive Writing in Agents by Isolating Objections",
+      "url": "https://arxiv.org/abs/2610.36717",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36545",
+      "title": "FrameForge: Harnessing Priors of Video Foundation Models for Unified Image Generation",
+      "url": "https://arxiv.org/abs/2610.36545",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36405",
+      "title": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
+      "url": "https://arxiv.org/abs/2610.36405",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36114",
+      "title": "Context Is a Pipeline, Not a Window: Information Attrition in LLM Agent Harnesses",
+      "url": "https://arxiv.org/abs/2610.36114",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35845",
+      "title": "Work Agents: Systems, Capabilities, and Optimization",
+      "url": "https://arxiv.org/abs/2610.35845",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35832",
+      "title": "Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy",
+      "url": "https://arxiv.org/abs/2610.35832",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35767",
+      "title": "Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents",
+      "url": "https://arxiv.org/abs/2610.35767",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.35349",
+      "title": "MarkovSim: an LLM Agent Harness with Bounded Context for Long-Horizon Computational Simulation",
+      "url": "https://arxiv.org/abs/2610.35349",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34938",
+      "title": "How Do Coding-Agent Harnesses Self-Evolve? An Empirical Study of Retrospective Adaptation",
+      "url": "https://arxiv.org/abs/2610.34938",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34884",
+      "title": "MedAdaptAgent: An Automatic Harness for Adapting Medical Imaging Models to New Sites",
+      "url": "https://arxiv.org/abs/2610.34884",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34724",
+      "title": "Harness-Model Collaboration for Long-Horizon Continual Learning",
+      "url": "https://arxiv.org/abs/2610.34724",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34577",
+      "title": "Rethinking Verification in Agent Harnesses",
+      "url": "https://arxiv.org/abs/2610.34577",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34370",
+      "title": "ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation",
+      "url": "https://arxiv.org/abs/2610.34370",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.33698",
@@ -197,133 +1509,133 @@
       "title": "SelfThinker: Self-Evolving Reasoning via Reliability-Verified Intrinsic Visual Thoughts",
       "url": "https://arxiv.org/abs/2610.40115",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.39795",
       "title": "The Role of Self-Concept In Language Models",
       "url": "https://arxiv.org/abs/2610.39795",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.39417",
       "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
       "url": "https://arxiv.org/abs/2610.39417",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38946",
       "title": "MAS-Loop: Beyond One-Shot Orchestration towards Self-Evolving Multi-Agent Systems",
       "url": "https://arxiv.org/abs/2610.38946",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38728",
       "title": "From Grind to Grasp",
       "url": "https://arxiv.org/abs/2610.38728",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38568",
       "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
       "url": "https://arxiv.org/abs/2610.38568",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37228",
       "title": "AutoRSE: Evaluating LLM Agents as Recommendation Engineers for Self-Evolving Recommender Systems",
       "url": "https://arxiv.org/abs/2610.37228",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36578",
       "title": "AudioRSI: Recursively Self-Improving Audio Reasoners",
       "url": "https://arxiv.org/abs/2610.36578",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36013",
       "title": "OmniBrain-0: A Unified Agentic Model for Embodied Intelligence",
       "url": "https://arxiv.org/abs/2610.36013",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35604",
       "title": "RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies",
       "url": "https://arxiv.org/abs/2610.35604",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35598",
       "title": "Evolve on Graph: Self-Evolving Knowledge Graph Reasoning without Question Annotations",
       "url": "https://arxiv.org/abs/2610.35598",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35579",
       "title": "Infinity Machine: a self-improving AI agent for research",
       "url": "https://arxiv.org/abs/2610.35579",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35453",
       "title": "Beyond Federated Learning: Decentralized Agentic Systems for Self-Evolving Clinical Intelligence",
       "url": "https://arxiv.org/abs/2610.35453",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35193",
       "title": "Trustworthy Recursive Self-Improvement in the Era of Large Models: Foundation, Risks, Evaluation and Open Challenges",
       "url": "https://arxiv.org/abs/2610.35193",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35172",
       "title": "RetroNav: Scene-Grounded Retrospection and Retry for Self-Evolving Lifelong Navigation",
       "url": "https://arxiv.org/abs/2610.35172",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35051",
       "title": "VISTA: Active Exploration for Self-Improvement in Embodied Agents",
       "url": "https://arxiv.org/abs/2610.35051",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34965",
       "title": "The Target Agent Is Its Own Best Critic but a Poor Proposer: Self-Improved Red Teaming",
       "url": "https://arxiv.org/abs/2610.34965",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34649",
       "title": "RobotAgentBench: Towards Open-world Robot Autonomy",
       "url": "https://arxiv.org/abs/2610.34649",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34386",
       "title": "ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains?",
       "url": "https://arxiv.org/abs/2610.34386",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.33845",
@@ -372,294 +1684,287 @@
       "title": "Advancing Clinical Genomic Analysis with a Skill-Centred Agent",
       "url": "https://arxiv.org/abs/2610.40556",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.40545",
       "title": "Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents",
       "url": "https://arxiv.org/abs/2610.40545",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.40000",
       "title": "NORmal: Architecting 3D Ferroelectric NOR Flash as Main Memory -- From Co-Fabricated BEOL Arrays to 200B-Class Multi-Agent LLMs in a Smartphone",
       "url": "https://arxiv.org/abs/2610.40000",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.39790",
       "title": "Long-Term Agent Memory through Complementary Curation and Consolidation",
       "url": "https://arxiv.org/abs/2610.39790",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.39733",
       "title": "Bank-World: A Benchmark for Evaluating Agents on Banking Workflows",
       "url": "https://arxiv.org/abs/2610.39733",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38902",
       "title": "HEDGE: Gated Hypergraph Memory for Scalable Multi-Agent Debate",
       "url": "https://arxiv.org/abs/2610.38902",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38799",
       "title": "CARI: Cross-Boundary Adversarial Runtime Injection in Coding-Agent Workflows",
       "url": "https://arxiv.org/abs/2610.38799",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38521",
       "title": "Security Impact of Coding Agent's Memory Files",
       "url": "https://arxiv.org/abs/2610.38521",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38332",
       "title": "MUSE: Multi-Level Memory with Selective Runtime Injection for Scientific Coding Agents",
       "url": "https://arxiv.org/abs/2610.38332",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38209",
       "title": "Is it my preference? Role Grounding Attack against Agent's Memory via Social Interaction",
       "url": "https://arxiv.org/abs/2610.38209",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.38147",
       "title": "SkillCT: A Multidimensional Benchmark and Execution-Free Baseline for Agent Skill Assessment",
       "url": "https://arxiv.org/abs/2610.38147",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37935",
       "title": "SkillMem: Compact External Skill Memory for Latent Multi-Agent Reasoning",
       "url": "https://arxiv.org/abs/2610.37935",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37443",
       "title": "ETAMem: Decoupling and Aligning Heterogeneous Memory for Long-Term Conversational Agents",
       "url": "https://arxiv.org/abs/2610.37443",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37738",
       "title": "Poisoned Skills: Propagating Jailbreaks Through Agent Markdown Files",
       "url": "https://arxiv.org/abs/2610.37738",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37734",
       "title": "When Skills Tell Agents Not to Ask: A Large-Scale Study of Oversight Directives in Agent Skills",
       "url": "https://arxiv.org/abs/2610.37734",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37201",
       "title": "Does Your Generalist Skill Optimizer Really Incentivize Agentic Tasks? Rethinking Skill Optimization via Bipartite Attribution",
       "url": "https://arxiv.org/abs/2610.37201",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.37195",
       "title": "Action-Value Calibration via Continuation Sharing for Long-Horizon Agentic Reinforcement Learning",
       "url": "https://arxiv.org/abs/2610.37195",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36967",
       "title": "Proactive Memory for Event-Driven LLM Agents",
       "url": "https://arxiv.org/abs/2610.36967",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36918",
       "title": "TrawMem: Reframing Agent Memory as Task-Oriented Role-Adaptive Workspaces",
       "url": "https://arxiv.org/abs/2610.36918",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36759",
       "title": "DocSkill: Skill-Integrated Agentic Reasoning for Multilingual Multi-Hop Document Question Answering",
       "url": "https://arxiv.org/abs/2610.36759",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36713",
       "title": "From Voiceprints to User Entities: Online Speaker-Memory Construction for Multi-User Spoken Agents",
       "url": "https://arxiv.org/abs/2610.36713",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36652",
       "title": "Remembering Is Not Enough: Refining Memories and Learning When to Use Them in Multi-Agent Systems",
       "url": "https://arxiv.org/abs/2610.36652",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36308",
       "title": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
       "url": "https://arxiv.org/abs/2610.36308",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.36153",
       "title": "Stratum: Repository Memory for Coding Agents Beyond the Context Window",
       "url": "https://arxiv.org/abs/2610.36153",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35823",
       "title": "Back to Basics: A Skill-Centric Approach to Generalist Web Agents",
       "url": "https://arxiv.org/abs/2610.35823",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35616",
       "title": "Hierarchical Skill Evolution for Coding Agent",
       "url": "https://arxiv.org/abs/2610.35616",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35439",
       "title": "Omni-InteractScope: Benchmarking Proactive and Agentic Interaction in Continuous Omnimodal Streams",
       "url": "https://arxiv.org/abs/2610.35439",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35997",
       "title": "PolicyMediator: Multi-Regional Policy Learning through Mediation Agents with Evolving Skills in OPC Ecosystems",
       "url": "https://arxiv.org/abs/2610.35997",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35215",
       "title": "SkillLifeBench: Benchmarking Security Across the Lifecycle of Agent Skills",
       "url": "https://arxiv.org/abs/2610.35215",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35082",
       "title": "CoSA: The Conflict of Skills Attack in Real-World LLM Agent Ecosystems",
       "url": "https://arxiv.org/abs/2610.35082",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35054",
       "title": "From Questions to Queries to Insights: A Schema-Grounded Agentic Workflow for Natural-Language Crash Data Analysis",
       "url": "https://arxiv.org/abs/2610.35054",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34890",
       "title": "AIPC: Evidence-Guided Agent Workflows for PyTorch Project Deployment",
       "url": "https://arxiv.org/abs/2610.34890",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35971",
       "title": "Continue or Restart? The Limits of Early Failure Prediction in Coding Agents",
       "url": "https://arxiv.org/abs/2610.35971",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34767",
       "title": "The Right Fact, the Wrong Decision: SciValidityBench for Scientific Agent Memory",
       "url": "https://arxiv.org/abs/2610.34767",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34673",
       "title": "Agent Memory as Recommendation: Recommender-System Design for Long-Term Memory of LLM Agents",
       "url": "https://arxiv.org/abs/2610.34673",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34633",
       "title": "CodeMeepo: A Multi-Agent Workflow for Repository-Level Code Migration and Optimization",
       "url": "https://arxiv.org/abs/2610.34633",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34599",
       "title": "An Agentic AI Workflow for Liver Lesion Segmentation and Structured Radiology Reporting",
       "url": "https://arxiv.org/abs/2610.34599",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34500",
       "title": "CaliMem: Search-Efficient Data Agent via Calibrated Memory",
       "url": "https://arxiv.org/abs/2610.34500",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.35966",
       "title": "EMMA: Structured Episodic Memory for Multi-Agent Workflow Synthesis",
       "url": "https://arxiv.org/abs/2610.35966",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34365",
       "title": "SEEK: Skill Extraction with Evolving Knowledge against Frontier Science Agents",
       "url": "https://arxiv.org/abs/2610.34365",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
-    },
-    {
-      "arxiv_id": "2610.34073",
-      "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
-      "url": "https://arxiv.org/abs/2610.34073",
-      "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.34043",
       "title": "Holding a Steady Course: Knowledge Evolution from Expertise and Lessons for Continual Agent Learning",
       "url": "https://arxiv.org/abs/2610.34043",
       "decision": "pending",
-      "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     },
     {
       "arxiv_id": "2610.33876",
@@ -702,150 +2007,850 @@
       "url": "https://arxiv.org/abs/2610.33446",
       "decision": "pending",
       "reason": "Discovered by keyword search; full-text relevance and eligibility not yet adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04579",
+      "title": "FreeForm Harness: A Mobile-Native Agent Harness for Open and Composable Extensions",
+      "url": "https://arxiv.org/abs/2611.04579",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04481",
+      "title": "Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness",
+      "url": "https://arxiv.org/abs/2611.04481",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04196",
+      "title": "DoGNAVY-Exploit: Harnessing Parallel Open-Weight Agents for Stage-Aware Vulnerability Exploitation",
+      "url": "https://arxiv.org/abs/2611.04196",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03434",
+      "title": "Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis",
+      "url": "https://arxiv.org/abs/2611.03434",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03219",
+      "title": "Can Coding Agents Sustain Continual Evolution without Forgetting?",
+      "url": "https://arxiv.org/abs/2611.03219",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03193",
+      "title": "Harnessing Mutual Coupling in Cell-Free mMIMO",
+      "url": "https://arxiv.org/abs/2611.03193",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02784",
+      "title": "HLSClaw: Bringing Vibe Coding to High-Level Synthesis through Skill-Based Agentic Harness",
+      "url": "https://arxiv.org/abs/2611.02784",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01560",
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "url": "https://arxiv.org/abs/2611.01560",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01415",
+      "title": "Latent Harness: Compiling Agent Behaviors into Post-Block Activation Shifts",
+      "url": "https://arxiv.org/abs/2611.01415",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01112",
+      "title": "Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation",
+      "url": "https://arxiv.org/abs/2611.01112",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00867",
+      "title": "Harnessing Inter-Waveguide Evanescent Coupling in Pinching-Antenna Systems",
+      "url": "https://arxiv.org/abs/2611.00867",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00643",
+      "title": "Selecting LLM-Generated Hypotheses Raises Truth Beyond What an LLM Panel Expects: A Pre-registered Study on NAS-Bench-201 and HPOBench",
+      "url": "https://arxiv.org/abs/2611.00643",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41216",
+      "title": "TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents",
+      "url": "https://arxiv.org/abs/2610.41216",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41172",
+      "title": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
+      "url": "https://arxiv.org/abs/2610.41172",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41130",
+      "title": "One Verdict Is Not Enough: Regression Testing Learned World Models and Their Test Harnesses",
+      "url": "https://arxiv.org/abs/2610.41130",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40917",
+      "title": "Towards Portable Specification of the Agent Harness",
+      "url": "https://arxiv.org/abs/2610.40917",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40747",
+      "title": "Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use From Evolved Harnesses",
+      "url": "https://arxiv.org/abs/2610.40747",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40721",
+      "title": "MetaVul: Agentic Harness Discovery for Vulnerability Detection",
+      "url": "https://arxiv.org/abs/2610.40721",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04998",
+      "title": "ForgeKernel: Self-Evolving Kernels Catching and Surpassing Experts and Agents",
+      "url": "https://arxiv.org/abs/2611.04998",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04469",
+      "title": "EvoCG: Self-Evolving Precision Control for Faster Conjugate Gradient",
+      "url": "https://arxiv.org/abs/2611.04469",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04439",
+      "title": "DualEvolve: Dual-Level Self-Evolution of Mechanism and Orchestration for Recommendation",
+      "url": "https://arxiv.org/abs/2611.04439",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04437",
+      "title": "WiSI: Wireless-in-the-Loop Self-Improvement",
+      "url": "https://arxiv.org/abs/2611.04437",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04268",
+      "title": "Weight-Space Programming for Improving Image-Restoration Diffusion Models: Technical Conjectures and a Recursive Improvement Loop",
+      "url": "https://arxiv.org/abs/2611.04268",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04180",
+      "title": "Validation-Gated ML Pipeline Synthesis with Expert-Grounded Self-Evolving Skills",
+      "url": "https://arxiv.org/abs/2611.04180",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04173",
+      "title": "ReconDreamer#: Self-Evolving Closed-Loop Synergy of Reconstruction and Generation for Dynamic Driving Scenes",
+      "url": "https://arxiv.org/abs/2611.04173",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04035",
+      "title": "Recursa: Toward Recursively Self-Improving Foundation Model Systems",
+      "url": "https://arxiv.org/abs/2611.04035",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03754",
+      "title": "The Web Doesn't Sit Still: Adversarial Self-Evolving Attacks on Search Agents",
+      "url": "https://arxiv.org/abs/2611.03754",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02510",
+      "title": "Neuro Inspired Robotics: What Robot Learning Can Borrow from the Sensorimotor Brain",
+      "url": "https://arxiv.org/abs/2611.02510",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02102",
+      "title": "NorthCUA Technical Report: Turbocharging Computer-Use Agents through Experience at Scale",
+      "url": "https://arxiv.org/abs/2611.02102",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01977",
+      "title": "EvoRec: A Unified Self-Evolving Agentic Recommender with Dynamic Reflection Trees",
+      "url": "https://arxiv.org/abs/2611.01977",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01954",
+      "title": "Towards Self-Evolving Narrative Systems: Real-Time Adaptation and Long-Term Optimization with LLMs",
+      "url": "https://arxiv.org/abs/2611.01954",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01840",
+      "title": "Self-Evolving Agentic Workflows via Semantic Decomposition of Complex Tasks",
+      "url": "https://arxiv.org/abs/2611.01840",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01834",
+      "title": "LegoEnv: Self-Evolving Agentic Environments via Modular Recombination",
+      "url": "https://arxiv.org/abs/2611.01834",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01742",
+      "title": "From Single-Agent Self-Discovery to Multi-Agent Adaptation: Scaling Laws of Partner Feedback and Convention Rigidity in Meta Reinforcement Learning Algorithms",
+      "url": "https://arxiv.org/abs/2611.01742",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01581",
+      "title": "Recursive Self-Improvement of Exoskeleton Assistance Policies through Human-in-the-Loop Feedback",
+      "url": "https://arxiv.org/abs/2611.01581",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01377",
+      "title": "A Self-Exploring and Self-Evolving Paradigm for Adaptive Edge AI Development",
+      "url": "https://arxiv.org/abs/2611.01377",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01304",
+      "title": "When LLMs Modify Themselves: Convergence, Values, and Stopping in Iterative Self-Improvement",
+      "url": "https://arxiv.org/abs/2611.01304",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00463",
+      "title": "Exo: An Architecture for Self-Improving Systems at Runtime",
+      "url": "https://arxiv.org/abs/2611.00463",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00452",
+      "title": "Compositional Self-Improvement: Promises and Pitfalls",
+      "url": "https://arxiv.org/abs/2611.00452",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00438",
+      "title": "Statistical Inference under Performativity: From Policy Feedback to Self-Evolving Systems",
+      "url": "https://arxiv.org/abs/2611.00438",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41296",
+      "title": "Self-Improvement with Auxiliary Rewards: Learning from Verified Traces and Evaluating Transfer",
+      "url": "https://arxiv.org/abs/2610.41296",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41245",
+      "title": "MEMIG: Self-evolving Memory Construction for Antibody Optimization",
+      "url": "https://arxiv.org/abs/2610.41245",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41210",
+      "title": "From Evaluation to Evolution: Benchmarking Image Editing and Evolving Image Models",
+      "url": "https://arxiv.org/abs/2610.41210",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40901",
+      "title": "TSFLab: A Self-Improving Agent-Agnostic Workbench for Time Series Forecasting Research",
+      "url": "https://arxiv.org/abs/2610.40901",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40758",
+      "title": "More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum",
+      "url": "https://arxiv.org/abs/2610.40758",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40751",
+      "title": "Safin-1.5: Safety-Native Architecture and Verifiable Reasoning for Recursive Safety Improvement",
+      "url": "https://arxiv.org/abs/2610.40751",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.40684",
+      "title": "Training for Alignment",
+      "url": "https://arxiv.org/abs/2610.40684",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.05313",
+      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "url": "https://arxiv.org/abs/2611.05313",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.05094",
+      "title": "A Gated Spec-Driven Workflow: An Audit-Trail Study of Coding-Agent Work",
+      "url": "https://arxiv.org/abs/2611.05094",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.05088",
+      "title": "LatentTriad: Pre-Action Risk Representations for Malicious Agent Skill Detection",
+      "url": "https://arxiv.org/abs/2611.05088",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04507",
+      "title": "Signals: Continuous Diagnostics of AI Agents",
+      "url": "https://arxiv.org/abs/2611.04507",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04483",
+      "title": "CogniLife: Continuous Cognitive Distillation for Deployed Multi-Expert Agent Marketplaces",
+      "url": "https://arxiv.org/abs/2611.04483",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04456",
+      "title": "How Agent Skills Evolve: A Large-Scale Empirical Study of Skills on GitHub",
+      "url": "https://arxiv.org/abs/2611.04456",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04299",
+      "title": "Can Benign Skills Induce Misaligned Behavior in LLM Agents?",
+      "url": "https://arxiv.org/abs/2611.04299",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04003",
+      "title": "WASP-Mem: Let Agent Organize Procedural Memory. Human Spend Effort on Diagnosis",
+      "url": "https://arxiv.org/abs/2611.04003",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03930",
+      "title": "What Is This Memory Useful For? Measuring Task-Conditioned Utility in Long-Term Agent Memory",
+      "url": "https://arxiv.org/abs/2611.03930",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03826",
+      "title": "Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication",
+      "url": "https://arxiv.org/abs/2611.03826",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03596",
+      "title": "Spacetime Emergence in the Memory of a Learning Agent",
+      "url": "https://arxiv.org/abs/2611.03596",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03772",
+      "title": "RuntimeTickets: Source-Grounded Security Obligations for Agent Skills",
+      "url": "https://arxiv.org/abs/2611.03772",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03238",
+      "title": "ScienceCUA: Resource-to-Skill Construction and Execution-Guided Skill Evolution for Scientific Computer Use Agents",
+      "url": "https://arxiv.org/abs/2611.03238",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03227",
+      "title": "What Structurally Breaks an Agent? Auditing Difficulty in Stateful Tool-Use Workflows",
+      "url": "https://arxiv.org/abs/2611.03227",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03116",
+      "title": "From Local Skills to Long-Horizon Web Tasks: Progressive Skill Exploration for LLM Web Agents",
+      "url": "https://arxiv.org/abs/2611.03116",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02912",
+      "title": "A State Change Is Local, Its Consequences Are Not: Dependency-Aware State Revision for Long-Term Agent Memory",
+      "url": "https://arxiv.org/abs/2611.02912",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03743",
+      "title": "EvoMemState: Evolving Memory State for Personal Agents",
+      "url": "https://arxiv.org/abs/2611.03743",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02361",
+      "title": "Agent Memory as Rate-Limited Filtering: Explicit State Outlasts Long Context Beyond a Reader-Dependent Horizon",
+      "url": "https://arxiv.org/abs/2611.02361",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02286",
+      "title": "Toward Agentic AI-Ready Workflows in Built Environment Organizations: Knowledge Structures and Interoperability Challenges",
+      "url": "https://arxiv.org/abs/2611.02286",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01778",
+      "title": "MemRole: From Memories to Decisions for Long-Horizon Reasoning in Role-Playing Agents",
+      "url": "https://arxiv.org/abs/2611.01778",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01718",
+      "title": "Delivered, Not Used: Evaluating Agent Memory at Its Point of Use",
+      "url": "https://arxiv.org/abs/2611.01718",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01700",
+      "title": "MemHarmBench: Evaluating Cross-Session Prompt Injection in Memory-Persistent AI Agents",
+      "url": "https://arxiv.org/abs/2611.01700",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01566",
+      "title": "Principled Human-AI Collaboration in Agentic Workflows",
+      "url": "https://arxiv.org/abs/2611.01566",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01563",
+      "title": "\\textsc{ChatDify}: Automating End-to-End Dify Workflow Synthesis from Natural Language via Multi-Agent Collaboration",
+      "url": "https://arxiv.org/abs/2611.01563",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01386",
+      "title": "Learning by Doing: Autonomously Compiling and Curating Agent Skills from Verified Traces",
+      "url": "https://arxiv.org/abs/2611.01386",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00779",
+      "title": "Who Schedules Agent Memory? A Sidecar Approach to Long-Horizon Tasks",
+      "url": "https://arxiv.org/abs/2611.00779",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.00628",
+      "title": "AgentPRO: Coordinating Compiler Optimizations for LLM Agent Workflows",
+      "url": "https://arxiv.org/abs/2611.00628",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.42141",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.42068",
+      "title": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+      "url": "https://arxiv.org/abs/2610.42068",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41482",
+      "title": "KEEPER: Learning Control-Sufficient Textual Memory for Long-Horizon LLM Agents",
+      "url": "https://arxiv.org/abs/2610.41482",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41056",
+      "title": "Accept Changes, Reject Attacks: Robust Memory Management for LLM Agents",
+      "url": "https://arxiv.org/abs/2610.41056",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.04960",
+      "title": "An Agentic Framework for Quality-Aware and Scenario-Adaptive Image Compression",
+      "url": "https://arxiv.org/abs/2611.04960",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.03384",
+      "title": "Can We Stop the Backtest Yet? Anytime-Valid Promotion Tests for Adaptive Financial Research Agents",
+      "url": "https://arxiv.org/abs/2611.03384",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02741",
+      "title": "ATrust: Adaptive Trust Boundary Expansion for Securing LLM Agents",
+      "url": "https://arxiv.org/abs/2611.02741",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.02516",
+      "title": "Cumulative and Audited Guardrail Tool Evolution for LLM Agent Safety",
+      "url": "https://arxiv.org/abs/2611.02516",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01870",
+      "title": "Automated Stateful Specialization for Adaptive Agent Systems",
+      "url": "https://arxiv.org/abs/2611.01870",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2611.01429",
+      "title": "When Should an Agent Refresh? Adaptive Index Reuse for Efficient Long-Horizon Reasoning",
+      "url": "https://arxiv.org/abs/2611.01429",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.42004",
+      "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+      "url": "https://arxiv.org/abs/2610.42004",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41803",
+      "title": "What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Benchmark Transfer",
+      "url": "https://arxiv.org/abs/2610.41803",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41272",
+      "title": "ANGLER: Verifier-Grounded Benchmarking with an Adaptive Attacker for Web Agents",
+      "url": "https://arxiv.org/abs/2610.41272",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.41228",
+      "title": "Evolution of Financial AI: From Statistical Models to Agentic AI",
+      "url": "https://arxiv.org/abs/2610.41228",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39682",
+      "title": "Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels",
+      "url": "https://arxiv.org/abs/2610.39682",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39680",
+      "title": "Federated Agentic AI for Interference-Aware Adaptive Spectrum Coordination",
+      "url": "https://arxiv.org/abs/2610.39680",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39258",
+      "title": "Agentic LinkDreamer: Adaptive Neuro-Fuzzy World-Model Decision Making for Intermittent V2X Cooperative Perception",
+      "url": "https://arxiv.org/abs/2610.39258",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39251",
+      "title": "Where to Learn and How Far to Roll Out: Efficient Adaptive Training for GUI Agents",
+      "url": "https://arxiv.org/abs/2610.39251",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39180",
+      "title": "EmbodiExp: Compositional Experience Transfer for Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.39180",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.39122",
+      "title": "Appreciation Teaches Unauthorized Execution: Self-Evolution Degrades the Robustness of Personal Agents to Indirect Prompt Injection",
+      "url": "https://arxiv.org/abs/2610.39122",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38872",
+      "title": "Principal-agent hypothesis testing under adaptive experimentation",
+      "url": "https://arxiv.org/abs/2610.38872",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38398",
+      "title": "Agent Transfer Protocol: Server-Mediated Agent-to-Agent Communication Architecture for the Agentic Web",
+      "url": "https://arxiv.org/abs/2610.38398",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.38225",
+      "title": "FACTS-MAS: A Multi-Agent Architecture for Adaptive Forecasting from Heterogeneous Evidence",
+      "url": "https://arxiv.org/abs/2610.38225",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37441",
+      "title": "Multi-Agent Reinforcement Learning of Co-Adaptive Hip Exoskeleton Control (MARL-Exo) for Metabolic Energy Reduction",
+      "url": "https://arxiv.org/abs/2610.37441",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.37276",
+      "title": "Where Should the Evaluation Budget Go in LLM-Driven Agent Scaffold Evolution?",
+      "url": "https://arxiv.org/abs/2610.37276",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.36660",
+      "title": "The View from Nowhere: Population-Centered Agent Evolution",
+      "url": "https://arxiv.org/abs/2610.36660",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34968",
+      "title": "Guarded Agent-in-the-Loop Residual Adaptation for Evolving Wind Power Regimes",
+      "url": "https://arxiv.org/abs/2610.34968",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34872",
+      "title": "Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG",
+      "url": "https://arxiv.org/abs/2610.34872",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34751",
+      "title": "Adaptive Probe Design for Auditing AI Agents",
+      "url": "https://arxiv.org/abs/2610.34751",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
+    },
+    {
+      "arxiv_id": "2610.34450",
+      "title": "EvolveMAS: A Unified Self-Evolution Framework for Decentralized Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2610.34450",
+      "decision": "pending",
+      "reason": "Keyword candidate; eligibility and full-text evidence not adjudicated."
     }
   ],
-  "existing_arxiv_works_version_checked": 74,
-  "version_check_note": "Official unversioned-ID API check found no updates dated October 31 or November 1 among the 74 existing arXiv works. This is metadata verification, not fresh review of every prior version.",
+  "existing_arxiv_works_version_checked": 93,
+  "revised_existing_works_inspected": 1,
+  "version_check_note": "All 93 existing arXiv works were checked using unversioned IDs. KARMA v2 (November 2) was the only post-November-1 update and was re-inspected. Other works retain their per-record review dates.",
   "primary_artifacts": [
     {
-      "version": "2610.40191v1",
-      "url": "https://arxiv.org/html/2610.40191v1",
+      "version": "2611.05139v1",
+      "url": "https://arxiv.org/html/2611.05139v1",
+      "sha256": "c63870da606fc503d5cb1c71cf86da8ab2e9a58f18b13867cbefccfafe045254",
+      "bytes": 893938,
       "status": "downloaded",
-      "sha256": "f00af9f6d6b3a48df9e4af819e1994407569b59ffe3129a44f7279da2cb15de4",
-      "characters": 18604
+      "title": "Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents"
     },
     {
-      "version": "2610.40023v1",
-      "url": "https://arxiv.org/html/2610.40023v1",
+      "version": "2611.04277v1",
+      "url": "https://arxiv.org/html/2611.04277v1",
+      "sha256": "a724d8884d58f40653c685af3d2895fc87a8e2a9366ed84d856960f13b70e47c",
+      "bytes": 463799,
       "status": "downloaded",
-      "sha256": "3539245a3f23d2ebc19db9d07004b330be2416f73e18fb6cbe246aa593619d81",
-      "characters": 214201
+      "title": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training"
     },
     {
-      "version": "2610.39884v1",
-      "url": "https://arxiv.org/html/2610.39884v1",
+      "version": "2611.03868v1",
+      "url": "https://arxiv.org/html/2611.03868v1",
+      "sha256": "3d634ea0d94bc05e1260b94e6e2b8fe4c0633050636088f2a730f9409ba50bce",
+      "bytes": 363998,
       "status": "downloaded",
-      "sha256": "591768d89a82e06eeb34b87f18fe71995c3b8011c4d609c40bf3af8e3f963b55",
-      "characters": 64028
+      "title": "EvoGroup: A Self-Evolving Harness for Group Agents in Shared Contexts"
     },
     {
-      "version": "2610.39714v1",
-      "url": "https://arxiv.org/html/2610.39714v1",
+      "version": "2611.02079v1",
+      "url": "https://arxiv.org/html/2611.02079v1",
+      "sha256": "1f0a75fc8a01a4b54445028ea9c07a9aa8ff5ce9ffc5e2bbfaf02aed25cb1db4",
+      "bytes": 707339,
       "status": "downloaded",
-      "sha256": "09ae7ffa9cc3a99af241e033399209b6bc26528c8113edc18a6a490ab2a7a8fd",
-      "characters": 223581
+      "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost"
     },
     {
-      "version": "2610.39508v1",
-      "url": "https://arxiv.org/html/2610.39508v1",
+      "version": "2611.05108v1",
+      "url": "https://arxiv.org/html/2611.05108v1",
+      "sha256": "977c2d23bfff575ce7e0504509dcaaf8c9f490cb275d70ad37ce3b40e2f51a80",
+      "bytes": 568912,
       "status": "downloaded",
-      "sha256": "8476eb3c786b178991ead5a4afa586e159546eb772032b23c74f3765d5596754",
-      "characters": 73956
+      "title": "From AutoResearch to Continual AutoResearch: Do Agents Learn Across Tasks?"
     },
     {
-      "version": "2610.39446v1",
-      "url": "https://arxiv.org/html/2610.39446v1",
+      "version": "2611.02797v1",
+      "url": "https://arxiv.org/html/2611.02797v1",
+      "sha256": "ffbace212d6bc0e82f1e409290f82942122fb5db1ea5aa418dec0d288f51ab67",
+      "bytes": 365028,
       "status": "downloaded",
-      "sha256": "8e3a393bd688320332f1abfb91541387daf6b6816db3af4e0379fcbc08f9bf24",
-      "characters": 107234
+      "title": "SelfImprove-Bench: Evaluating Generalization in Self-Improving Agents"
     },
     {
-      "version": "2610.39352v1",
-      "url": "https://arxiv.org/html/2610.39352v1",
+      "version": "2611.01736v1",
+      "url": "https://arxiv.org/html/2611.01736v1",
+      "sha256": "eedec90e9661feca0b996f1960684b86411aa10a1532a9115e87b2763ac3dfde",
+      "bytes": 213577,
       "status": "downloaded",
-      "sha256": "eebd6616fade378bd4cb9c809a1f7e5a62de9d2a67ad462ccd8d4f3230b895fd",
-      "characters": 78489
+      "title": "RSI-Env: An Open-Ended Environment for Recursive Self-Improvement of Agents"
     },
     {
-      "version": "2610.39276v1",
-      "url": "https://arxiv.org/html/2610.39276v1",
+      "version": "2611.01747v1",
+      "url": "https://arxiv.org/html/2611.01747v1",
+      "sha256": "252f74898bb6ce04446d810861a2cda83bf913e31f414ce5847394ed4b1bd704",
+      "bytes": 569388,
       "status": "downloaded",
-      "sha256": "0d8cd88205828a71c5b83e69a324683a91ae551a2493f3099326a4010302d988",
-      "characters": 67289
+      "title": "Evolving Memory, Learning to Meta-Control: Test-Time Adaptation for Experience-augmented LLM Agents"
     },
     {
-      "version": "2610.39158v1",
-      "url": "https://arxiv.org/html/2610.39158v1",
+      "version": "2611.00544v1",
+      "url": "https://arxiv.org/html/2611.00544v1",
+      "sha256": "9c45265fca117a618f85587d57e562b477c2811297a73259440ea8bf887835c6",
+      "bytes": 598663,
       "status": "downloaded",
-      "sha256": "d551d192ba02cb70535237ccded7dc7f946d2afb76f55f175892ba364a24fdf2",
-      "characters": 65266
+      "title": "Skill++: Towards Lifelong Agents via Routing-Aware Skill Refinement"
     },
     {
-      "version": "2610.38573v1",
-      "url": "https://arxiv.org/html/2610.38573v1",
+      "version": "2611.04952v1",
+      "url": "https://arxiv.org/html/2611.04952v1",
+      "sha256": "c1c2c5865e0dd6fa77a1894ab55ef7f2e3e65511f1eeb928c7c20df3b71c37a0",
+      "bytes": 309117,
       "status": "downloaded",
-      "sha256": "b784b37d2b5526f3196b7c8681628a80b963680233604a17c277696c513a6306",
-      "characters": 110725
+      "title": "Artifact-to-Capability: Diagnosing Breaks in Capability Formation of Self-Evolving Agents in a Controlled Environment"
     },
     {
-      "version": "2610.38392v1",
-      "url": "https://arxiv.org/html/2610.38392v1",
+      "version": "2611.02839v1",
+      "url": "https://arxiv.org/html/2611.02839v1",
+      "sha256": "ef0dd1664790bb2583e9c5cf2b9116c0f55e1789f0d20ddf5040727304706971",
+      "bytes": 995369,
       "status": "downloaded",
-      "sha256": "16d401a85ccfe813a1c7ae9cf95d1fce6228241bf489cdf75eb3eccae0877436",
-      "characters": 109840
+      "title": "CARE: Grounded Recursive Self-Improvement for Production Customer-Service Agents"
     },
     {
-      "version": "2610.37651v1",
-      "url": "https://arxiv.org/html/2610.37651v1",
+      "version": "2611.03698v1",
+      "url": "https://arxiv.org/html/2611.03698v1",
+      "sha256": "053d4b8806ceeb97d6c39a6dbd3085bc2534d5dee3102f6b0d8b4468f330fcd9",
+      "bytes": 157943,
       "status": "downloaded",
-      "sha256": "1ee335bb4ef74898a3e7f518fd05d4c3b51a532de3437cef1000c9e9049af8de",
-      "characters": 90600
+      "title": "Training LLM Agents to Automate LLM Post-Training with RSI-Dojo"
     },
     {
-      "version": "2610.37046v1",
-      "url": "https://arxiv.org/html/2610.37046v1",
+      "version": "2610.34073v1",
+      "url": "https://arxiv.org/html/2610.34073v1",
+      "sha256": "c0080c542596c6a458549d9140805bcb0f7b96b9283fd3aa363a94ebce855552",
+      "bytes": 987746,
       "status": "downloaded",
-      "sha256": "65d65b8f0ba38f0b33c78f31bbfaee79bbe6ff21b116ca56371cfbdde9d8b816",
-      "characters": 66689
+      "title": "Memory Tax: Dissecting the Net Value of Agent Memory"
     },
     {
-      "version": "2610.36826v1",
-      "url": "https://arxiv.org/html/2610.36826v1",
-      "status": "downloaded",
-      "sha256": "54390e5666611c80a74dcf4a19435fba86fb3019d4569c6dcffa6e84424c4cb9",
-      "characters": 85498
-    },
-    {
-      "version": "2610.36469v1",
-      "url": "https://arxiv.org/html/2610.36469v1",
-      "status": "downloaded",
-      "sha256": "ad1e9c128944f698bfe913ebc6d7aeffd5ae0b6f057d87e318813123dd395ac7",
-      "characters": 74496
-    },
-    {
-      "version": "2610.35434v1",
-      "url": "https://arxiv.org/html/2610.35434v1",
-      "status": "downloaded",
-      "sha256": "1cdc4a43d8d03d4aba03efa7943b54806af59f85b95ae4de1d1dac767a4d5ffb",
-      "characters": 72838
-    },
-    {
-      "version": "2610.35316v1",
-      "url": "https://arxiv.org/html/2610.35316v1",
-      "status": "downloaded",
-      "sha256": "a6da2cbd0d409dc9d8f561fe76c2a424b49840ad23e7b5e35fbf866030b36e9d",
-      "characters": 88312
-    },
-    {
-      "version": "2610.34977v1",
-      "url": "https://arxiv.org/html/2610.34977v1",
-      "status": "downloaded",
-      "sha256": "05fe37b67f94ea9560d910186266fdad12a9f62c9ac23b4c976007a1ba43ba0e",
-      "characters": 110202
-    },
-    {
-      "version": "2610.34260v1",
-      "url": "https://arxiv.org/html/2610.34260v1",
-      "status": "downloaded",
-      "sha256": "73b2af56ec7fc579de465aceb7a6b952c13cfd63bea52223a09ddc5190d09bed",
-      "characters": 53522
-    },
-    {
-      "version": "2610.33956v1",
-      "url": "https://arxiv.org/html/2610.33956v1",
-      "status": "downloaded",
-      "sha256": "29ff9e17d564e206c3cb61fe219f7cca7270a1a3dfbc582d1739089ff39e9331",
-      "characters": 112704
+      "version": "2610.39884v2",
+      "url": "https://arxiv.org/html/2610.39884v2",
+      "sha256": "b8199c8b5f9adfae2f1df35b4f8b3a335a560046d1f4f299ec609d3d1a268f8b",
+      "bytes": 308849,
+      "status": "downloaded"
     }
   ]
 }

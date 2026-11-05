@@ -2,13 +2,13 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-27.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
-**Author preprint · 2026-10-27 · Not peer-reviewed.** The GitHub reading version uses an independent single-column layout, not an ACL template. This revision integrates six newly collected studies and the October 24 manuscript update, with contextual synthesis through October 27; the October 1 frozen evidence is unchanged. It is not a replacement of the manuscripts submitted to ARR or Preprints.org. [October 19 submission-era copy](docs/paper/Harness_RSI_Preprint_2026-10-19.pdf) and [October 20 reading copy](docs/paper/Harness_RSI_Preprint_2026-10-20.pdf) remain archived; [Preprints.org v1](https://www.preprints.org/manuscript/202610.2293), posted October 23, is available under DOI [10.20944/preprints202610.2293.v1](https://doi.org/10.20944/preprints202610.2293.v1).
+**Author preprint · 2026-11-04 · Not peer-reviewed.** The 86-page reading version integrates new literature and evidence comparisons through November 4, including 13 newly verified studies and a KARMA revision check. The original 95-record domain snapshot remains frozen at October 1; the companion dataset is versioned separately. [October 27 reading copy](docs/paper/Harness_RSI_Preprint_2026-10-27.pdf) and earlier PDFs remain archived. [Preprints.org v2](https://doi.org/10.20944/preprints202610.2293.v2), posted October 30, is a separate version; this update does not replace submitted manuscripts.
 
 <p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
-**October 27 literature and manuscript update:** Six verified additions cover executor-specific harnesses, fallback routing, memory policies, skill distillation and evaluator validity. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-10-27.md). The updated reading PDF includes the October 24 draft; frozen evidence and submitted platform versions remain unchanged.
+**November 4 literature and manuscript update:** Thirteen additions compare retained guidance, harness routing, selection gates, replay, model-training boundaries and memory costs. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-11-04.md). The revised manuscript integrates these comparisons while preserving the frozen domain evidence.
 
 We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.
 
@@ -57,11 +57,11 @@ The interactive site lets you choose **any two domains** and switch between inte
 
 ## Evidence dataset
 
-**Harness RSI Evidence Dataset v0.3.0** contains **132 category–source records, 100 distinct works and 32 scoped signals**. Nineteen records were added on November 1; earlier dataset releases remain immutable. Records are not independent interventions.
+**Harness RSI Evidence Dataset v0.4.0** contains **145 category–source records, 113 distinct works and 45 scoped signals**. Thirteen records were added on November 4; earlier dataset releases remain immutable. Records are not independent interventions.
 
-**47 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
+**60 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
 
-[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.3.0/dataset.json) · [Normalized CSV](docs/dataset/v0.3.0/records.csv) · [Schema](docs/dataset/v0.3.0/schema.json) · [Quality report](docs/dataset/v0.3.0/quality-report.json) · [Corrections](docs/dataset/v0.3.0/corrections.json)
+[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.4.0/dataset.json) · [Normalized CSV](docs/dataset/v0.4.0/records.csv) · [Schema](docs/dataset/v0.4.0/schema.json) · [Quality report](docs/dataset/v0.4.0/quality-report.json) · [Corrections](docs/dataset/v0.4.0/corrections.json)
 
 This is targeted AI-assisted source inspection, not independent reproduction or exhaustive coverage. **Project-owned annotations and compilation are CC BY 4.0; third-party rights are excluded.** See [the license scope](LICENSE-DATA.md). [Historical v0.1.0](docs/dataset/v0.1.0/dataset.json) is preserved byte-for-byte; its HarnessX hit-rate interpretation is superseded by the correction notice.
 
@@ -88,13 +88,13 @@ The frozen survey evidence covers work through **2026-10-01**. A record is one s
 
 We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.
 
-**Literature synthesis through November 1, 2026.** [Read the latest comparison supplement](docs/LITERATURE_UPDATE_2026-11-01.md): optimizer evolution, memory governance, unchanged transfer and negative evidence. This adds 20 verified papers; 96 keyword hits remain unscreened. The manuscript has not been revised in this dataset release. The [October 27 supplement](docs/LITERATURE_UPDATE_2026-10-27.md) remains available. Earlier [October 20](docs/LITERATURE_UPDATE_2026-10-20.md) and [October 24](docs/LITERATURE_UPDATE_2026-10-24.md) syntheses remain traceable. Earlier PDFs, submitted manuscripts and the evidence dataset are preserved.
+**Literature synthesis through November 4, 2026.** [Read the latest comparison supplement](docs/LITERATURE_UPDATE_2026-11-04.md): retained guidance versus task-local edits, initialization versus optimization, model training and routing boundaries, and independent replay. This adds 13 verified papers and rechecks KARMA v2; 185 new keyword candidates remain unscreened. The November 4 author manuscript integrates the new comparisons. [November 1](docs/LITERATURE_UPDATE_2026-11-01.md), [October 27](docs/LITERATURE_UPDATE_2026-10-27.md), [October 24](docs/LITERATURE_UPDATE_2026-10-24.md) and [October 20](docs/LITERATURE_UPDATE_2026-10-20.md) syntheses remain traceable. Previous PDFs, dataset versions and submitted preprints remain separate.
 
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-11-01 | Search horizon; 305 papers and 11 official resources; collection updated 2026-11-01 |
-| **Website update** | 2026-11-01 | 20 literature additions and evidence dataset v0.3.0; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-11-04 | Search horizon; 318 papers and 11 official resources; collection updated 2026-11-04 |
+| **Website update** | 2026-11-04 | 13 literature additions, dataset v0.4.0 and revised author manuscript; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -104,7 +104,7 @@ We will continue to add verified studies, benchmark-level harness changes and re
 - **Preserve the paper snapshot.** The frozen survey cutoff stays identifiable. A bibliography import or website redesign does not silently extend the evidence collection.
 - **Verify publication and recover failures.** Updates are complete only after validation, a matching remote commit and a successful website deployment. Failed searches or publications retain separate status and are retried; neither a schedule nor an authentication test counts as a completed update.
 
-AI-assisted literature searches are scheduled daily at 09:00 Pacific time. Verified additions and corrections update the bibliography, collection charts, repository overview and website after validation. Literature, evidence and presentation retain separate dates; a scheduled search does not guarantee new studies or complete coverage.
+The maintenance protocol targets daily literature checks at 09:00 Pacific time, with a seven-day overlap from the last completed search. Completion is established by dated, validated releases below, not by the schedule. Verified additions and corrections update the bibliography, evidence dataset, manuscript and website as appropriate; these retain separate version dates. Search coverage is targeted, not exhaustive.
 
 The workflow is **find and screen → trace the actual change → revise comparisons → validate and record a dated release**. A website redesign does not create a new evidence snapshot. An added bibliography entry does not automatically become evidence for a domain finding.
 
@@ -112,11 +112,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**305 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-01**
+**318 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-04**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **291/305** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **304/318** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -126,11 +126,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-10-20 | 269 | 11 |
 | 2026-10-24 | 276 | 11 |
 | 2026-10-27 | 282 | 11 |
 | 2026-10-31 | 285 | 11 |
 | 2026-11-01 | 305 | 11 |
+| 2026-11-04 | 318 | 11 |
 
 </details>
 
@@ -165,7 +165,7 @@ Correspondence: [lzxue@psu.edu](mailto:lzxue@psu.edu)
 Department of Statistics, The Pennsylvania State University<br>
 University Park, PA 16802, USA
 
-The author-hosted reading copy and [Preprints.org v1](https://www.preprints.org/manuscript/202610.2293) are available. DOI: [10.20944/preprints202610.2293.v1](https://doi.org/10.20944/preprints202610.2293.v1). Neither version implies peer review or acceptance.
+The author-hosted reading copy and [Preprints.org v2](https://www.preprints.org/manuscript/202610.2293) are available. DOI: [10.20944/preprints202610.2293.v2](https://doi.org/10.20944/preprints202610.2293.v2). Neither version implies peer review or acceptance.
 
 ## Contributors
 

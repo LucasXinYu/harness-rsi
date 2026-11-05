@@ -161,5 +161,35 @@
     "reason": "Tasks-flipped/predicted was incorrectly labeled a usage observation. Correct to scoped no-gain, without causal attribution.",
     "source_url": "https://arxiv.org/html/2606.14249v3",
     "locator": "Section 12.1 Figure 8; Section 12.3 Figure 10"
+  },
+  {
+    "record_id": "application-and-service-workflows--karma2026",
+    "type": "source_version_update",
+    "before": [
+      {
+        "name": "KARMA (v1)",
+        "url": "https://arxiv.org/html/2610.39884v1",
+        "locator": "Sections 4.6, 5.1–5.2, 5.5 and 6",
+        "source_version": "2610.39884v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-01",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ],
+    "after": [
+      {
+        "name": "KARMA (v2)",
+        "url": "https://arxiv.org/html/2610.39884v2",
+        "locator": "Sections 4.6, 5.1, 5.5 and 6",
+        "source_version": "2610.39884v2",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ],
+    "reason": "November 2 revision rechecked: validation gate, offline-only scope and 23/30 positive transfer entries verified; no outcome relabeling. Prior release retained.",
+    "checked_on": "2026-11-04"
   }
 ]

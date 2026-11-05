@@ -2406,13 +2406,13 @@
     },
     "sources": [
       {
-        "name": "KARMA (v1)",
-        "url": "https://arxiv.org/html/2610.39884v1",
-        "locator": "Sections 4.6, 5.1–5.2, 5.5 and 6",
-        "source_version": "2610.39884v1",
+        "name": "KARMA (v2)",
+        "url": "https://arxiv.org/html/2610.39884v2",
+        "locator": "Sections 4.6, 5.1, 5.5 and 6",
+        "source_version": "2610.39884v2",
         "first_release_date": "2026-10-29",
-        "source_version_date": "2026-10-29",
-        "metadata_checked_on": "2026-11-01",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
         "metadata_basis": "arXiv Atom API, exact v1 identifier"
       }
     ]
@@ -2856,6 +2856,344 @@
         "source_version_date": "2026-10-25",
         "metadata_checked_on": "2026-11-01",
         "metadata_basis": "arXiv Atom API, exact v1 identifier"
+      }
+    ]
+  },
+  {
+    "key": "meta2_2026",
+    "title": "Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents",
+    "authors": "Lingzhi Yuan and Yiguang Cai and Weize Liu and Siqi Yang and Feijiang Han and Yongkyun Lee and Udari Madhushani Sehwag and Furong Huang",
+    "kind": "paper",
+    "arxiv_id": "2611.05139",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-03",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.05139v1"
+    },
+    "sources": [
+      {
+        "name": "Meta2 (v1)",
+        "url": "https://arxiv.org/html/2611.05139v1",
+        "locator": "Sections 3.2–3.3, 4.1 and 4.5; Appendix F",
+        "source_version": "2611.05139v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "harness_s2026",
+    "title": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",
+    "authors": "Kangning Zhang and Wenxiang Jiao and Bowen Fang and Shuai Shao and Jiachen Zhu and Rong Shan and Shijian Wang and Hao Wang and Yuan Lu and Weiwen Liu and Weinan Zhang",
+    "kind": "paper",
+    "arxiv_id": "2611.04277",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-03",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.04277v1"
+    },
+    "sources": [
+      {
+        "name": "Harness-S (v1)",
+        "url": "https://arxiv.org/html/2611.04277v1",
+        "locator": "Sections 3, 4.1, 4.4 and 4.7; Appendices A–B and G",
+        "source_version": "2611.04277v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "evogroup2026",
+    "title": "EvoGroup: A Self-Evolving Harness for Group Agents in Shared Contexts",
+    "authors": "Xinyi Xu and Xiaoyang Li and Yucheng Feng and Wenqing Chen and Youliang Yuan and Wei Shi and Rongxiang Weng and Zibin Zheng",
+    "kind": "paper",
+    "arxiv_id": "2611.03868",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-02",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.03868v1"
+    },
+    "sources": [
+      {
+        "name": "EvoGroup (v1)",
+        "url": "https://arxiv.org/html/2611.03868v1",
+        "locator": "Sections 2, 3.1, 3.3 and 3.6; Appendix A",
+        "source_version": "2611.03868v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "paretosaddler2026",
+    "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost",
+    "authors": "Xingzhi Qian and Sungho Park and Rongyuan Tan and Jianbo Yu and Jue Zhang and Lorenzo Cavallaro and Menglin Xia and Yanzhi Chen and Xinnuo Xu and Yu Kang and Xinran Zheng and Gagan Somashekar and Xuchao Zhang and Chetan Bansal and Qingwei Lin and Victor Rühle",
+    "kind": "paper",
+    "arxiv_id": "2611.02079",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-01",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.02079v1"
+    },
+    "sources": [
+      {
+        "name": "ParetoSaddler (v1)",
+        "url": "https://arxiv.org/html/2611.02079v1",
+        "locator": "Sections 4 and 5.1–5.3; Appendices F, G and L",
+        "source_version": "2611.02079v1",
+        "first_release_date": "2026-11-01",
+        "source_version_date": "2026-11-01",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "continual_autoresearch2026",
+    "title": "From AutoResearch to Continual AutoResearch: Do Agents Learn Across Tasks?",
+    "authors": "Jeremy Qin and Ruizhi Deng and Mohamed Osama Ahmed and Frederick Tung and Leo Feng",
+    "kind": "paper",
+    "arxiv_id": "2611.05108",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-03",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.05108v1"
+    },
+    "sources": [
+      {
+        "name": "Continual AutoResearch (v1)",
+        "url": "https://arxiv.org/html/2611.05108v1",
+        "locator": "Sections 3, 5 and 6",
+        "source_version": "2611.05108v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "selfimprove_bench2026",
+    "title": "SelfImprove-Bench: Evaluating Generalization in Self-Improving Agents",
+    "authors": "Bangrui Xu and Jie Yang and Sidi Chen and Xuanhe Zhou and Jiantao Qiu and Qianyu Yang and Zijie Wang and Fan Wu and Zhoufutu Wen",
+    "kind": "paper",
+    "arxiv_id": "2611.02797",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-02",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.02797v1"
+    },
+    "sources": [
+      {
+        "name": "SelfImprove-Bench (v1)",
+        "url": "https://arxiv.org/html/2611.02797v1",
+        "locator": "Sections 3–4; Appendix A",
+        "source_version": "2611.02797v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "rsi_env2026",
+    "title": "RSI-Env: An Open-Ended Environment for Recursive Self-Improvement of Agents",
+    "authors": "Wanying Qu and Zhiyuan Fan and Jiyao Liu and Jiang Zhou and Jianghan Shen and Yanwei Fu and Dongrui Liu",
+    "kind": "paper",
+    "arxiv_id": "2611.01736",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-01",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.01736v1"
+    },
+    "sources": [
+      {
+        "name": "RSI-Env (v1)",
+        "url": "https://arxiv.org/html/2611.01736v1",
+        "locator": "Sections 3–4; Appendix A",
+        "source_version": "2611.01736v1",
+        "first_release_date": "2026-11-01",
+        "source_version_date": "2026-11-01",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "omce2026",
+    "title": "Evolving Memory, Learning to Meta-Control: Test-Time Adaptation for Experience-augmented LLM Agents",
+    "authors": "Zeyuan Zhao and Yuanyuan Shi and Peng Yu and Lingyue Fu and Shao Zhang and Ying Wen",
+    "kind": "paper",
+    "arxiv_id": "2611.01747",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-01",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.01747v1"
+    },
+    "sources": [
+      {
+        "name": "OMCE (v1)",
+        "url": "https://arxiv.org/html/2611.01747v1",
+        "locator": "Sections 3–4 and Limitations; Appendix G",
+        "source_version": "2611.01747v1",
+        "first_release_date": "2026-11-01",
+        "source_version_date": "2026-11-01",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "skill_plus_plus2026",
+    "title": "Skill++: Towards Lifelong Agents via Routing-Aware Skill Refinement",
+    "authors": "Hanrong Zhang and Minghao Liang and Jiawei Wu and Yankai Chen and Shicheng Fan and Zhiwei Liu and Enze Ma and Junwei Yuan and Tianyi Wang and Dehai Min and Kening Zheng and Xue Liu and Philip S. Yu",
+    "kind": "paper",
+    "arxiv_id": "2611.00544",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-31",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.00544v1"
+    },
+    "sources": [
+      {
+        "name": "Skill++ (v1)",
+        "url": "https://arxiv.org/html/2611.00544v1",
+        "locator": "Sections 3.2 and 4; Limitations",
+        "source_version": "2611.00544v1",
+        "first_release_date": "2026-10-31",
+        "source_version_date": "2026-10-31",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "artifact_capability2026",
+    "title": "Artifact-to-Capability: Diagnosing Breaks in Capability Formation of Self-Evolving Agents in a Controlled Environment",
+    "authors": "Ziqian Ban and Haoxiang Yang and Yanfei Zhang and Shixin Liang and Haoran Yu and Xu Lin and Shaobin Zhao and Xuran Li and Zhiyi Cheng",
+    "kind": "paper",
+    "arxiv_id": "2611.04952",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-03",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.04952v1"
+    },
+    "sources": [
+      {
+        "name": "Artifact-to-Capability (v1)",
+        "url": "https://arxiv.org/html/2611.04952v1",
+        "locator": "Sections 3–5 and Limitations",
+        "source_version": "2611.04952v1",
+        "first_release_date": "2026-11-03",
+        "source_version_date": "2026-11-03",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "care2026",
+    "title": "CARE: Grounded Recursive Self-Improvement for Production Customer-Service Agents",
+    "authors": "Yanbei Jiang and Chao Lei and Rena Gao and Xiaochen Zhao and Yuchen Ge and Haohang Liu and Runze Nie and Qitian Chen and Qi An and Haolin Song and Yufei Sun and Yihao Ding and Jey Han Lau and Krista A. Ehinger and Xingjun Ma and Weijia Chen and Ruiyuan Wu and Zhen Luo and Ke Xing and Yongjun Yin",
+    "kind": "paper",
+    "arxiv_id": "2611.02839",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-02",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.02839v1"
+    },
+    "sources": [
+      {
+        "name": "CARE (v1)",
+        "url": "https://arxiv.org/html/2611.02839v1",
+        "locator": "Sections 3.3, 5.2, 7.2–7.4, 8.1–8.2 and 9.4–9.6",
+        "source_version": "2611.02839v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "rsi_dojo2026",
+    "title": "Training LLM Agents to Automate LLM Post-Training with RSI-Dojo",
+    "authors": "Shuzheng Gao and Zhaojian Yu and Penghao Yin and Yuling Shi and Kai Cai and Shilin He and Michael R. Lyu",
+    "kind": "paper",
+    "arxiv_id": "2611.03698",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-29",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2611.03698v1"
+    },
+    "sources": [
+      {
+        "name": "RSI-Dojo (v1)",
+        "url": "https://arxiv.org/html/2611.03698v1",
+        "locator": "Sections 3–5 and 7",
+        "source_version": "2611.03698v1",
+        "first_release_date": "2026-10-29",
+        "source_version_date": "2026-10-29",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "memory_tax2026",
+    "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
+    "authors": "Xuan He and Sining Zhoubian and Ruozhen Yang and Yuhao Wen and Zhineng Wang and Yuyang Hu and Ke Yang and Yuyu Zhang and Ping Nie and Jiawei Han and ChengXiang Zhai",
+    "kind": "paper",
+    "arxiv_id": "2610.34073",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-25",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+      "source": "https://arxiv.org/abs/2610.34073v1"
+    },
+    "sources": [
+      {
+        "name": "Memory Tax (v1)",
+        "url": "https://arxiv.org/html/2610.34073v1",
+        "locator": "Sections 3.1, 4.2–4.4, 5.1 and Limitations; Appendix A.4",
+        "source_version": "2610.34073v1",
+        "first_release_date": "2026-10-25",
+        "source_version_date": "2026-10-25",
+        "metadata_checked_on": "2026-11-04",
+        "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
       }
     ]
   }

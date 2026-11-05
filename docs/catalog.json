@@ -1,23 +1,23 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-11-01",
-    "updated_on": "2026-11-01",
+    "search_cutoff": "2026-11-04",
+    "updated_on": "2026-11-04",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 305,
+    "papers": 318,
     "resources": 11,
     "categories": {
       "Surveys, Definitions, and Conceptual Frameworks": 33,
-      "Harness Optimization and Search Workflows": 50,
-      "Model and Policy Training, Harness Co-Evolution, and Distillation": 26,
-      "Self-Modification and Meta-Level Improvement": 20,
-      "Memory, Context, Skills, and Experience Reuse": 45,
-      "Benchmarks for Harness Optimization and Adaptation": 6,
-      "Generalization, Evaluation Methodology, and Safety": 33,
+      "Harness Optimization and Search Workflows": 51,
+      "Model and Policy Training, Harness Co-Evolution, and Distillation": 30,
+      "Self-Modification and Meta-Level Improvement": 21,
+      "Memory, Context, Skills, and Experience Reuse": 48,
+      "Benchmarks for Harness Optimization and Adaptation": 7,
+      "Generalization, Evaluation Methodology, and Safety": 36,
       "Agent Architectures and Harness Infrastructure": 22,
       "Prompt, Workflow, and Program Optimization": 20,
       "Task-Time Search and Output Refinement (Adjacent Work)": 6,
@@ -61,7 +61,8 @@
       "2026-07": 24,
       "2026-08": 32,
       "2026-09": 68,
-      "2026-10": 71
+      "2026-10": 74,
+      "2026-11": 10
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -72,12 +73,13 @@
       "2026-07": 6,
       "2026-08": 6,
       "2026-09": 13,
-      "2026-10": 13
+      "2026-10": 13,
+      "2026-11": 1
     },
-    "monthly_coverage": 291,
+    "monthly_coverage": 304,
     "date_precision": {
       "month": 8,
-      "day": 283,
+      "day": 296,
       "year": 13,
       "unknown": 1
     },
@@ -130,6 +132,11 @@
       {
         "date": "2026-11-01",
         "papers": 305,
+        "resources": 11
+      },
+      {
+        "date": "2026-11-04",
+        "papers": 318,
         "resources": 11
       }
     ]
@@ -6100,7 +6107,7 @@
       "title": "KARMA: Training-Free Knowledge-Atomic Harness Evolution for Industrial Advertising Agents",
       "authors": "Xinhua Miao and Yuanzhen Rong and Weiru Zhang and Xiaoyi Zeng",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2610.39884v1",
+      "url": "https://arxiv.org/abs/2610.39884v2",
       "venue": "arXiv preprint arXiv:2610.39884",
       "doi": null,
       "arxiv": "2610.39884",
@@ -6453,6 +6460,266 @@
         "precision": "day",
         "basis": "First arXiv submission; targeted full-text inspection on 2026-11-01",
         "source": "https://arxiv.org/abs/2610.33956v1"
+      }
+    },
+    {
+      "id": "meta2_2026",
+      "title": "Meta^2: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents",
+      "authors": "Lingzhi Yuan and Yiguang Cai and Weize Liu and Siqi Yang and Feijiang Han and Yongkyun Lee and Udari Madhushani Sehwag and Furong Huang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.05139v1",
+      "venue": "arXiv preprint arXiv:2611.05139",
+      "doi": null,
+      "arxiv": "2611.05139",
+      "category": "Self-Modification and Meta-Level Improvement",
+      "kind": "paper",
+      "summary": "Learns a reusable Meta-Skill from contrasted training trajectories; a frozen deployment evolver uses it to decide when to keep or edit a task-local harness. The Meta-Skill stays frozen at deployment; task edits and outcomes do not update it. Each backbone learns its own Meta-Skill, so multi-model results are not unchanged cross-model transfer. Source: Sections 3.2–3.3, 4.1 and 4.5; Appendix F.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-03",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.05139v1"
+      }
+    },
+    {
+      "id": "harness_s2026",
+      "title": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",
+      "authors": "Kangning Zhang and Wenxiang Jiao and Bowen Fang and Shuai Shao and Jiachen Zhu and Rong Shan and Shijian Wang and Hao Wang and Yuan Lu and Weiwen Liu and Weinan Zhang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.04277v1",
+      "venue": "arXiv preprint arXiv:2611.04277",
+      "doi": null,
+      "arxiv": "2611.04277",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Evolves a fixed pool of complementary harnesses, routes rescue rollouts for base-harness failures, and uses their reward contrasts to train a shared policy with GRPO. Executor weights change. Equal per-task rescue allocations do not equal total sampling because failure frequencies differ; external harness transfer still depends on the execution interface. Source: Sections 3, 4.1, 4.4 and 4.7; Appendices A–B and G.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-03",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.04277v1"
+      }
+    },
+    {
+      "id": "evogroup2026",
+      "title": "EvoGroup: A Self-Evolving Harness for Group Agents in Shared Contexts",
+      "authors": "Xinyi Xu and Xiaoyang Li and Yucheng Feng and Wenqing Chen and Youliang Yuan and Wei Shi and Rongxiang Weng and Zibin Zheng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.03868v1",
+      "venue": "arXiv preprint arXiv:2611.03868",
+      "doi": null,
+      "arxiv": "2611.03868",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Uses confidence/correctness buckets and selective trajectory inspection to revise memory representations, tools, execution checks and selection policies for shared group contexts. Main-table external baselines are projections from full-benchmark category scores, not reruns on held-out question IDs. Frozen cross-benchmark transfer is distinct from unchanged cross-model transfer. Source: Sections 2, 3.1, 3.3 and 3.6; Appendix A.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-02",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.03868v1"
+      }
+    },
+    {
+      "id": "paretosaddler2026",
+      "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost",
+      "authors": "Xingzhi Qian and Sungho Park and Rongyuan Tan and Jianbo Yu and Jue Zhang and Lorenzo Cavallaro and Menglin Xia and Yanzhi Chen and Xinnuo Xu and Yu Kang and Xinran Zheng and Gagan Somashekar and Xuchao Zhang and Chetan Bansal and Qingwei Lin and Victor Rühle",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.02079v1",
+      "venue": "arXiv preprint arXiv:2611.02079",
+      "doi": null,
+      "arxiv": "2611.02079",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Uses repeated executions and Bayesian-bootstrap quality/cost screening to promote intermediate harnesses, then applies deployment preferences to the development-evaluated candidate set. Bootstrap uncertainty covers execution variation on fixed screening tasks, not task-sampling uncertainty. Repetition adds evaluation cost; test-repeat variability is not independent search-run variability. Source: Sections 4 and 5.1–5.3; Appendices F, G and L.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-01",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.02079v1"
+      }
+    },
+    {
+      "id": "continual_autoresearch2026",
+      "title": "From AutoResearch to Continual AutoResearch: Do Agents Learn Across Tasks?",
+      "authors": "Jeremy Qin and Ruizhi Deng and Mohamed Osama Ahmed and Frederick Tung and Leo Feng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.05108v1",
+      "venue": "arXiv preprint arXiv:2611.05108",
+      "doi": null,
+      "arxiv": "2611.05108",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Compares native CLI agents that retain conversation, files and experiment artifacts across task streams with the same agents reset before each task. Gains mainly concern faster initialization; final rewards are mixed. Four of five agents have only one matched run pair; cross-agent differences combine model and harness effects. Source: Sections 3, 5 and 6.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-03",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.05108v1"
+      }
+    },
+    {
+      "id": "selfimprove_bench2026",
+      "title": "SelfImprove-Bench: Evaluating Generalization in Self-Improving Agents",
+      "authors": "Bangrui Xu and Jie Yang and Sidi Chen and Xuanhe Zhou and Jiantao Qiu and Qianyu Yang and Zijie Wang and Fan Wu and Zhoufutu Wen",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.02797v1",
+      "venue": "arXiv preprint arXiv:2611.02797",
+      "doi": null,
+      "arxiv": "2611.02797",
+      "category": "Benchmarks for Harness Optimization and Adaptation",
+      "kind": "paper",
+      "summary": "Separates replay on historical instances from new-instance, harder-task, new-game and cross-capability transfer, while tracing which artifacts self-improving agents modify. Six game environments bound the conclusions. Transfer is asymmetric; the main retained edits contain no meta-optimizer changes, unlike a separately prompted exploratory variant. Source: Sections 3–4; Appendix A.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-02",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.02797v1"
+      }
+    },
+    {
+      "id": "rsi_env2026",
+      "title": "RSI-Env: An Open-Ended Environment for Recursive Self-Improvement of Agents",
+      "authors": "Wanying Qu and Zhiyuan Fan and Jiyao Liu and Jiang Zhou and Jianghan Shen and Yanwei Fu and Dongrui Liu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.01736v1",
+      "venue": "arXiv preprint arXiv:2611.01736",
+      "doi": null,
+      "arxiv": "2611.01736",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "A protected host controller manages a persistent model/harness/research-state successor loop; self-improvement and fixed external-teacher settings can edit harnesses and train models. Successor registration checks validity and executability rather than capability gain. Some settings train weights; actual runtime differs substantially despite the same maximum allocation. Source: Sections 3–4; Appendix A.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-01",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.01736v1"
+      }
+    },
+    {
+      "id": "omce2026",
+      "title": "Evolving Memory, Learning to Meta-Control: Test-Time Adaptation for Experience-augmented LLM Agents",
+      "authors": "Zeyuan Zhao and Yuanyuan Shi and Peng Yu and Lingyue Fu and Shao Zhang and Ying Wen",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.01747v1",
+      "venue": "arXiv preprint arXiv:2611.01747",
+      "doi": null,
+      "arxiv": "2611.01747",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "An online contextual-bandit controller chooses direct execution, episodic reuse, guidance reuse or distillation; task feedback updates both memory and routing statistics. The LLM is fixed but the auxiliary controller learns. Only the chosen route supplies feedback; results rely on timely rewards and differ between first-attempt and four-attempt success. Source: Sections 3–4 and Limitations; Appendix G.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-01",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.01747v1"
+      }
+    },
+    {
+      "id": "skill_plus_plus2026",
+      "title": "Skill++: Towards Lifelong Agents via Routing-Aware Skill Refinement",
+      "authors": "Hanrong Zhang and Minghao Liang and Jiawei Wu and Yankai Chen and Shicheng Fan and Zhiwei Liu and Enze Ma and Junwei Yuan and Tianyi Wang and Dehai Min and Kening Zheng and Xue Liu and Philip S. Yu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.00544v1",
+      "venue": "arXiv preprint arXiv:2611.00544",
+      "doi": null,
+      "arxiv": "2611.00544",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Refines incoming skill names/descriptions with contrasts and scope exclusions while preserving skill bodies and earlier metadata, reducing routing interference in growing libraries. Full-coverage-at-five is skill selection, not end-to-end task completion. Evaluation is text-only; continual retriever-training baselines must not be confused with the metadata-only method. Source: Sections 3.2 and 4; Limitations.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-10-31",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.00544v1"
+      }
+    },
+    {
+      "id": "artifact_capability2026",
+      "title": "Artifact-to-Capability: Diagnosing Breaks in Capability Formation of Self-Evolving Agents in a Controlled Environment",
+      "authors": "Ziqian Ban and Haoxiang Yang and Yanfei Zhang and Shixin Liang and Haoran Yu and Xu Lin and Shaobin Zhao and Xuran Li and Zhiyi Cheng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.04952v1",
+      "venue": "arXiv preprint arXiv:2611.04952",
+      "doi": null,
+      "arxiv": "2611.04952",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Replays frozen Reflexion, Voyager and DGM artifacts on controlled Gomoku states to test whether stored memories, skills and code actually produce intended behavior. One game, one executor and adapted implementations limit external validity. A diagnostic state set partly comes from DGM trajectories; findings do not estimate prevalence across all self-evolving agents. Source: Sections 3–5 and Limitations.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-03",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.04952v1"
+      }
+    },
+    {
+      "id": "care2026",
+      "title": "CARE: Grounded Recursive Self-Improvement for Production Customer-Service Agents",
+      "authors": "Yanbei Jiang and Chao Lei and Rena Gao and Xiaochen Zhao and Yuchen Ge and Haohang Liu and Runze Nie and Qitian Chen and Qi An and Haolin Song and Yufei Sun and Yihao Ding and Jey Han Lau and Krista A. Ehinger and Xingjun Ma and Weijia Chen and Ruiyuan Wu and Zhen Luo and Ke Xing and Yongjun Yin",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.02839v1",
+      "venue": "arXiv preprint arXiv:2611.02839",
+      "doi": null,
+      "arxiv": "2611.02839",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Attributes production failures to model behavior or external components, trains verified model-behavior repairs by on-policy self-distillation, and gates promotion through frozen simulation, online comparison and human approval. Harnesses also change between versions, so trends cannot isolate model updates. Satisfaction parity is not statistically significant superiority; retrospective bad-case rates and selected ablations have calibration limits. Source: Sections 3.3, 5.2, 7.2–7.4, 8.1–8.2 and 9.4–9.6.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-11-02",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.02839v1"
+      }
+    },
+    {
+      "id": "rsi_dojo2026",
+      "title": "Training LLM Agents to Automate LLM Post-Training with RSI-Dojo",
+      "authors": "Shuzheng Gao and Zhaojian Yu and Penghao Yin and Yuling Shi and Kai Cai and Shilin He and Michael R. Lyu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.03698v1",
+      "venue": "arXiv preprint arXiv:2611.03698",
+      "doi": null,
+      "arxiv": "2611.03698",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Builds runnable post-training environments, improves collection guidance, filters execution trajectories, and fine-tunes agents to train target models. This trains an improver but does not close a successor self-improvement loop. Official leaderboard hardware differs; hosted/self-hosted tool access also differs. Source: Sections 3–5 and 7.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-10-29",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2611.03698v1"
+      }
+    },
+    {
+      "id": "memory_tax2026",
+      "title": "Memory Tax: Dissecting the Net Value of Agent Memory",
+      "authors": "Xuan He and Sining Zhoubian and Ruozhen Yang and Yuhao Wen and Zhineng Wang and Yuyang Hu and Ke Yang and Yuyu Zhang and Ping Nie and Jiawei Han and ChengXiang Zhai",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.34073v1",
+      "venue": "arXiv preprint arXiv:2610.34073",
+      "doi": null,
+      "arxiv": "2610.34073",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Compares transformed memory systems with raw-history retrieval and probes information preservation, retrieval accessibility and construction/answering backbone sensitivity. Retrieval-scope alignment is not equal absolute token cost. Representative systems, sampled offline English benchmarks and model-dependent judging limit generalization. Source: Sections 3.1, 4.2–4.4, 5.1 and Limitations; Appendix A.4.",
+      "added_on": "2026-11-04",
+      "release": {
+        "value": "2026-10-25",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
+        "source": "https://arxiv.org/abs/2610.34073v1"
       }
     }
   ]

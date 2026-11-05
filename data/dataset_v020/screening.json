@@ -285,5 +285,96 @@
     "decision": "included",
     "reason": "Targeted primary-text mechanism/protocol review; human adjudication pending.",
     "screened_on": "2026-11-01"
+  },
+  {
+    "key": "meta2_2026",
+    "url": "https://arxiv.org/abs/2611.05139v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "harness_s2026",
+    "url": "https://arxiv.org/abs/2611.04277v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "evogroup2026",
+    "url": "https://arxiv.org/abs/2611.03868v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "paretosaddler2026",
+    "url": "https://arxiv.org/abs/2611.02079v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "continual_autoresearch2026",
+    "url": "https://arxiv.org/abs/2611.05108v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "selfimprove_bench2026",
+    "url": "https://arxiv.org/abs/2611.02797v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "rsi_env2026",
+    "url": "https://arxiv.org/abs/2611.01736v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "omce2026",
+    "url": "https://arxiv.org/abs/2611.01747v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "skill_plus_plus2026",
+    "url": "https://arxiv.org/abs/2611.00544v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "artifact_capability2026",
+    "url": "https://arxiv.org/abs/2611.04952v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "care2026",
+    "url": "https://arxiv.org/abs/2611.02839v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "rsi_dojo2026",
+    "url": "https://arxiv.org/abs/2611.03698v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
+  },
+  {
+    "key": "memory_tax2026",
+    "url": "https://arxiv.org/abs/2610.34073v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-04"
   }
 ]
