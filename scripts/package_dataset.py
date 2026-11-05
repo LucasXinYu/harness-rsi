@@ -73,7 +73,8 @@ def main():
         shutil.copy2(ROOT/relative, target)
     shutil.copytree(ROOT/'data/dataset_v020', source/'data/dataset_v020')
     # The builder verifies archived bytes before exporting the candidate.
-    for relative in {**config['frozen_v010_sha256'], **config.get('frozen_v020_sha256', {})}:
+    frozen = {path for key, pins in config.items() if key.startswith('frozen_v') and key.endswith('_sha256') for path in pins}
+    for relative in sorted(frozen):
         target = source/relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT/relative, target)

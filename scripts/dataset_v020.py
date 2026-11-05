@@ -116,10 +116,11 @@ def outputs(root):
     config = read(d/'release.json')
     for name, expected in config['inputs_sha256'].items():
         if digest((d/name).read_bytes()) != expected: raise ValueError('Unreviewed input change: '+name)
-    for path, expected in config['frozen_v010_sha256'].items():
-        if digest((root/path).read_bytes()) != expected: raise ValueError('Published v0.1.0 modified: '+path)
-    for path, expected in config.get('frozen_v020_sha256', {}).items():
-        if digest((root/path).read_bytes()) != expected: raise ValueError('Published v0.2.0 modified: '+path)
+    for field, pins in config.items():
+        if field.startswith('frozen_v') and field.endswith('_sha256'):
+            for path, expected in pins.items():
+                if digest((root/path).read_bytes()) != expected:
+                    raise ValueError('Published dataset modified: '+path)
     records, sources = read(d/'records.json'), read(d/'sources.json')
     validate(records, sources)
     checked = sum(r['review']['status']=='primary_source_checked' for r in records)
@@ -130,7 +131,7 @@ def outputs(root):
             'signal_count': sum(len(r['signals']) for r in records),
             'evidence_cutoff': config['literature_search_through'],
             'evidence_cutoff_meaning': 'Targeted search horizon, not a universal primary-review date; see per-record dates.'}
-    meta.pop('inputs_sha256'); meta.pop('frozen_v010_sha256'); meta.pop('frozen_v020_sha256', None)
+    meta = {k: v for k, v in meta.items() if k != 'inputs_sha256' and not (k.startswith('frozen_v') and k.endswith('_sha256'))}
     dataset = {'metadata': meta, 'records': records}
     release = root/'docs/dataset'/('v'+config['version'])
     files = {release/'dataset.json': dumps(dataset), release/'records.jsonl': ''.join(json.dumps(r,ensure_ascii=False)+'\n' for r in records),
