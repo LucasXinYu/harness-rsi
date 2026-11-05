@@ -1,6 +1,6 @@
 {
   "commitment": "We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.",
-  "cadence": "AI-assisted literature searches are scheduled daily at 09:00 Pacific time. Verified additions and corrections update the bibliography, collection charts, repository overview and website after validation. Literature, evidence and presentation retain separate dates; a scheduled search does not guarantee new studies or complete coverage.",
+  "cadence": "The maintenance protocol targets daily literature checks at 09:00 Pacific time, with a seven-day overlap from the last completed search. Completion is established by dated, validated releases below, not by the schedule. Verified additions and corrections update the bibliography, evidence dataset, manuscript and website as appropriate; these retain separate version dates. Search coverage is targeted, not exhaustive.",
   "steps": [
     {
       "title": "Find & screen",
@@ -16,6 +16,19 @@
     }
   ],
   "releases": [
+    {
+      "id": "literature-dataset-manuscript-2026-11-04",
+      "date": "2026-11-04",
+      "kind": "website",
+      "title": "13 literature additions, dataset v0.4.0 and revised author manuscript",
+      "records": 95,
+      "changes": [
+        "Added 13 primary-text-inspected papers; bibliography now 318 papers and 11 resources. Four arXiv queries returned 220 unique works; 185 new and 14 older candidates remain pending.",
+        "Dataset v0.4.0 has 145 records, 113 works, 60 primary-checked records and 45 scoped observations. Rechecked KARMA v2; 85 legacy records and zero human-adjudicated records remain explicit.",
+        "Integrated retained guidance, routing interference, initialization controls, training boundaries and independent replay into the manuscript. Preserved the frozen October 1 atlas and all previous dataset/PDF versions.",
+        "The author reading version is separate from Preprints.org v2; no new preprint submission is included."
+      ]
+    },
     {
       "id": "dataset-literature-2026-11-01",
       "date": "2026-11-01",

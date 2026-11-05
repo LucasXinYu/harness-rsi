@@ -4,8 +4,8 @@
   "arxiv_url": null,
   "website_url": "https://lucasxinyu.github.io/harness-rsi/",
   "paper": {
-    "pdf_url": "https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-10-27.pdf",
-    "version_date": "2026-10-27",
+    "pdf_url": "https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04.pdf",
+    "version_date": "2026-11-04",
     "title": "From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents",
     "authors": [
       "Xin Yu",
@@ -68,7 +68,7 @@
     "affiliation": "Department of Statistics, The Pennsylvania State University",
     "location": "University Park, PA 16802, USA",
     "preprint_url": "https://www.preprints.org/manuscript/202610.2293",
-    "doi": "10.20944/preprints202610.2293.v1"
+    "doi": "10.20944/preprints202610.2293.v2"
   },
   "domains": [
     {
@@ -500,7 +500,7 @@
     "resources": 1,
     "subcategories": 20,
     "unit": "A source study within a task subcategory. Records are not independent effects; they include reporting gaps.",
-    "release": "All 95 domain records are available in the benchmark explorer and downloadable evidence data. The manuscript is forthcoming."
+    "release": "The frozen October 1 survey atlas contains 95 records. The separately versioned companion dataset adds later primary-source extractions; see the dataset page for review status."
   },
   "insights": [
     {
