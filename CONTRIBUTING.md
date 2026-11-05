@@ -20,7 +20,7 @@ Run the Python tests, `node tests/dataset_model_test.mjs`, and `node --input-typ
 
 ## Maintenance and corrections
 
-AI-assisted literature searches are scheduled daily at 09:00 America/Los_Angeles. Publication follows primary-source verification, duplicate checks and repository validation; a scheduled search does not guarantee a new paper or complete coverage. The local updating agent commits and pushes verified changes, and GitHub Pages deploys the website. Keep three states separate:
+The maintenance protocol targets daily literature searches at 09:00 America/Los_Angeles; an active scheduler must be verified separately. This document does not establish that unattended runs are enabled. Publication follows primary-source verification, duplicate checks and repository validation; a scheduled search does not guarantee a new paper or complete coverage. The local updating agent commits and pushes verified changes, and GitHub Pages deploys the website. Keep three states separate:
 
 | Update | Record the change here | Do not silently change |
 | :-- | :-- | :-- |
@@ -62,7 +62,7 @@ The GitHub issue template accepts paper suggestions and corrections. Contributio
 
 ## Daily literature update procedure
 
-The daily schedule runs in the maintainer's local Codex session. The computer must be awake, Codex running, network access available and Git authentication valid. GitHub Actions handles validation and publication after a push; it does not perform the literature search itself. A missed or failed run must not be presented as a successful search.
+If a daily schedule is configured, it runs in the maintainer's local Codex session; its current enabled state must be checked independently. The computer must be awake, Codex running, network access available and Git authentication valid. GitHub Actions handles validation and publication after a push; it does not perform the literature search itself. A missed or failed run must not be presented as a successful search.
 
 1. **Resume safely.** Read the prior run record, inspect local changes, fetch the remote branch and fast-forward only when safe. Retry an unfinished push or deployment before creating duplicate additions. Never reset unrelated work or force-push.
 2. **Search with overlap.** Start from the last completed search horizon, overlapping seven days to catch indexing delays. On Mondays, also check related surveys and citations of core studies for older omissions. Search harness optimization/evolution, recursive self-improvement, agent workflow search, and evolving tools, skills, memory and context. Save the actual queries, source URLs and date range in local run records outside this public repository.
@@ -130,7 +130,7 @@ Open `http://localhost:8000` for the standalone research homepage. Its domain ta
 
 ## Paper page and citation metadata
 
-`docs/paper/index.html` is the static scholarly landing page. Keep its complete abstract, author order, version date, `citation_*` tags and PDF link consistent with the same manuscript version and `docs/project.json`. Update both displayed BibTeX blocks and their downloadable `.bib` files together. The current author reading version and Preprints.org v1 are distinct: the v1 DOI must not be assigned to the revised reading PDF. Preserve dated PDFs and disclose version differences. Add a website release note for presentation changes; do not advance manuscript or evidence dates.
+`docs/paper/index.html` is the static scholarly landing page. Keep its complete abstract, author order, version date, `citation_*` tags and PDF link consistent with the same manuscript version and `docs/project.json`. Update both displayed BibTeX blocks and their downloadable `.bib` files together. The current author reading version and Preprints.org v2 are distinct: the posted-version DOI must not be assigned to the revised reading PDF. Preserve dated PDFs and disclose version differences. Add a website release note for presentation changes; do not advance manuscript or evidence dates.
 
 ## Update domain findings
 
@@ -165,7 +165,7 @@ The public website is hosted at https://lucasxinyu.github.io/harness-rsi/. GitHu
 
 ## File boundaries
 
-Do not add private manuscript drafts, local audit ledgers, credentials, Overleaf exports, or third-party paper PDFs. The maintainer-authorized public author preprints are the explicit exceptions: `docs/paper/Harness_RSI_Preprint_2026-10-19.pdf` (archived submission-era reading copy) `docs/paper/Harness_RSI_Preprint_2026-10-20.pdf` (archived reading version), and `docs/paper/Harness_RSI_Preprint_2026-10-27.pdf` (current GitHub reading version). The README and website link to the current reading version; this does not change submitted manuscripts. Preserve all dated PDFs; publish later manuscript versions under new dated filenames and update the links without overwriting the earlier version. It is not peer-reviewed and does not imply platform posting or acceptance. Repository-specific files stay here; they do not get imported into the Overleaf project. The repository currently has no blanket license grant; source papers retain their original rights.
+Do not add private manuscript drafts, local audit ledgers, credentials, Overleaf exports, or third-party paper PDFs. The maintainer-authorized public author preprints are the explicit exceptions: `docs/paper/Harness_RSI_Preprint_2026-10-19.pdf` (archived submission-era reading copy) `docs/paper/Harness_RSI_Preprint_2026-10-20.pdf` (archived reading version), and `docs/paper/Harness_RSI_Preprint_2026-10-27.pdf` (archived reading version), and `docs/paper/Harness_RSI_Preprint_2026-11-04.pdf` (archived November 4 reading version), and `docs/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf` (current corrected reading version). The README and website link to the current reading version; this does not change submitted manuscripts. Preserve all dated PDFs; publish later manuscript versions under new dated filenames and update the links without overwriting the earlier version. It is not peer-reviewed and does not imply platform posting or acceptance. Repository-specific files stay here; they do not get imported into the Overleaf project. The repository currently has no blanket license grant; source papers retain their original rights.
 
 
 ## Updating benchmark evidence
