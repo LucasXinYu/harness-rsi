@@ -1,0 +1,32 @@
+{
+  "records": 159,
+  "distinct_sources": 126,
+  "primary_checked_records": 74,
+  "legacy_records_without_new_primary_audit": 85,
+  "signal_records": 57,
+  "signals": 59,
+  "human_adjudicated_records": 0,
+  "selection_protocol_populated": 74,
+  "controlled_variables_populated": 74,
+  "domains": {
+    "coding": 49,
+    "reasoning": 43,
+    "interactive": 33,
+    "visual": 11,
+    "cross_domain": 23
+  },
+  "outcomes": {
+    "improvement": 29,
+    "no_gain": 3,
+    "mixed": 23,
+    "regression": 4
+  },
+  "screening_decisions": {
+    "included": 63,
+    "context_only": 4,
+    "excluded": 4
+  },
+  "structural_validation": "passed",
+  "independent_reproduction": false,
+  "limitations": "Counts report coverage, not an overall quality score or field-wide evidence census."
+}
