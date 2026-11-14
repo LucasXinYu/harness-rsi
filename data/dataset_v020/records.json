@@ -6542,13 +6542,13 @@
     ],
     "sources": [
       {
-        "name": "MemSkill (v1)",
-        "url": "https://arxiv.org/html/2602.02474v1",
-        "locator": "Sections 3.3–3.5, 4.3; Table 2; Appendix A.2",
+        "name": "MemSkill (v3)",
+        "url": "https://arxiv.org/html/2602.02474v3",
+        "locator": "Sections 3.3–3.5 and 4.3; Table 2; Appendix A.2",
         "first_release_date": "2026-02-02",
-        "source_version_date": "2026-02-02",
-        "source_version": "2602.02474v1",
-        "metadata_checked_on": "2026-10-31",
+        "source_version_date": "2026-11-06",
+        "source_version": "2602.02474v3",
+        "metadata_checked_on": "2026-11-14",
         "metadata_basis": "arXiv Atom API, exact version"
       }
     ],
@@ -6577,21 +6577,21 @@
         "evidence_quote": "Removing the designer or learned controller lowers reported LoCoMo performance; the effects concern the complete ablated component.",
         "source_index": 0,
         "primary_source": {
-          "name": "MemSkill (1)",
-          "url": "https://arxiv.org/html/2602.02474v1",
-          "locator": "Sections 3.3–3.5, 4.3; Table 2; Appendix A.2",
+          "name": "MemSkill (v3)",
+          "url": "https://arxiv.org/html/2602.02474v3",
+          "locator": "Sections 3.3–3.5 and 4.3; Table 2; Appendix A.2",
           "first_release_date": "2026-02-02",
-          "source_version_date": "2026-02-02",
-          "source_version": "2602.02474v1",
-          "metadata_checked_on": "2026-10-31",
+          "source_version_date": "2026-11-06",
+          "source_version": "2602.02474v3",
+          "metadata_checked_on": "2026-11-14",
           "metadata_basis": "arXiv Atom API, exact version"
         },
         "primary_support": {
-          "url": "https://arxiv.org/html/2602.02474v1",
-          "locator": "Sections 3.3–3.5, 4.3; Table 2; Appendix A.2",
+          "url": "https://arxiv.org/html/2602.02474v3",
+          "locator": "Sections 3.3–3.5 and 4.3; Table 2; Appendix A.2",
           "excerpt": "Disabling the designer yields an even larger degradation",
-          "artifact_sha256": "0ebfe905d0d178b15b0d89d9962f3ad5c6a4a8646726fdee4b6f052493c0345b",
-          "checked_on": "2026-10-31"
+          "artifact_sha256": "06fff5b2c60311b9c3bd98d19f9b0f9f3aa81ee4c9495b7b2c7f40bf3b03f91c",
+          "checked_on": "2026-11-14"
         }
       }
     ],
@@ -6602,7 +6602,7 @@
     },
     "review": {
       "status": "primary_source_checked",
-      "reviewed_on": "2026-10-31",
+      "reviewed_on": "2026-11-14",
       "reviewer": "Codex (AI-assisted source inspection)",
       "human_review_status": "pending",
       "scope": "Targeted verification of the annotated claim, protocol and limitations; not experimental reproduction or independent dual annotation."
@@ -11137,13 +11137,13 @@
     ],
     "sources": [
       {
-        "name": "RSI-Dojo (v1)",
-        "url": "https://arxiv.org/html/2611.03698v1",
+        "name": "RSI-Dojo (v2)",
+        "url": "https://arxiv.org/html/2611.03698v2",
         "locator": "Sections 3–5 and 7",
-        "source_version": "2611.03698v1",
+        "source_version": "2611.03698v2",
         "first_release_date": "2026-10-29",
-        "source_version_date": "2026-10-29",
-        "metadata_checked_on": "2026-11-04",
+        "source_version_date": "2026-11-09",
+        "metadata_checked_on": "2026-11-14",
         "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
       }
     ],
@@ -11178,21 +11178,21 @@
         "evidence_quote": "Fine-tuned agents outperform their own starting models on PostTrainBench and Lite. This is evidence for learning post-training workflows, not autonomous recursive acceleration.",
         "source_index": 0,
         "primary_source": {
-          "name": "RSI-Dojo (v1)",
-          "url": "https://arxiv.org/html/2611.03698v1",
+          "name": "RSI-Dojo (v2)",
+          "url": "https://arxiv.org/html/2611.03698v2",
           "locator": "Sections 3–5 and 7",
-          "source_version": "2611.03698v1",
+          "source_version": "2611.03698v2",
           "first_release_date": "2026-10-29",
-          "source_version_date": "2026-10-29",
-          "metadata_checked_on": "2026-11-04",
+          "source_version_date": "2026-11-09",
+          "metadata_checked_on": "2026-11-14",
           "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
         },
         "primary_support": {
-          "url": "https://arxiv.org/html/2611.03698v1",
+          "url": "https://arxiv.org/html/2611.03698v2",
           "locator": "Sections 3–5 and 7",
           "excerpt": "do not close the loop",
-          "artifact_sha256": "053d4b8806ceeb97d6c39a6dbd3085bc2534d5dee3102f6b0d8b4468f330fcd9",
-          "checked_on": "2026-11-04"
+          "artifact_sha256": "9e8190f24928869f4af40029648192fa7bd9296093580e85ab38ce7c6e3f7984",
+          "checked_on": "2026-11-14"
         }
       }
     ],
@@ -11215,7 +11215,7 @@
     },
     "review": {
       "status": "primary_source_checked",
-      "reviewed_on": "2026-11-04",
+      "reviewed_on": "2026-11-14",
       "reviewer": "Codex (AI-assisted source inspection)",
       "human_review_status": "pending",
       "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
@@ -11329,6 +11329,1597 @@
     "review": {
       "status": "primary_source_checked",
       "reviewed_on": "2026-11-04",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--harnessflow2026",
+    "key": "harnessflow2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "HarnessFlow",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Uses MCTS over executable harness variants; a coding agent edits prompts, tools and control code using archived validation scores and trajectories."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Five executions per candidate are not five independent search runs. Search is rerun for the second model, so this is not unchanged cross-model transfer; reported inference costs exclude one-time search costs."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Combining exploration and exploitation improves reported validation-guided search results over either extreme; the comparison matches candidate attempts, not every source of computation."
+      }
+    ],
+    "sources": [
+      {
+        "name": "HarnessFlow (v1)",
+        "url": "https://arxiv.org/html/2611.06254v1",
+        "locator": "Sections 2–4.3; Tables 3–4; Appendices C–D",
+        "source_version": "2611.06254v1",
+        "first_release_date": "2026-11-04",
+        "source_version_date": "2026-11-04",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "tau2-bench",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "appworld",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "swe-bench-verified",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "bigcodebench-hard",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "webshop",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "browsecomp-plus",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "control"
+        ],
+        "benchmark_ids": [
+          "tau2-bench",
+          "appworld",
+          "swe-bench-verified",
+          "bigcodebench-hard",
+          "webshop",
+          "browsecomp-plus"
+        ],
+        "scope": "Sections 2–4.3; Tables 3–4; Appendices C–D; Five executions per candidate are not five independent search runs. Search is rerun for the second model, so this is not unchanged cross-model transfer; reported inference costs exclude one-time search costs.",
+        "summary": "Combining exploration and exploitation improves reported validation-guided search results over either extreme; the comparison matches candidate attempts, not every source of computation.",
+        "section": "Reported observation",
+        "evidence_quote": "Combining exploration and exploitation improves reported validation-guided search results over either extreme; the comparison matches candidate attempts, not every source of computation.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "HarnessFlow (v1)",
+          "url": "https://arxiv.org/html/2611.06254v1",
+          "locator": "Sections 2–4.3; Tables 3–4; Appendices C–D",
+          "source_version": "2611.06254v1",
+          "first_release_date": "2026-11-04",
+          "source_version_date": "2026-11-04",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.06254v1",
+          "locator": "Sections 2–4.3; Tables 3–4; Appendices C–D",
+          "excerpt": "These estimates exclude one-time harness-search costs",
+          "artifact_sha256": "40d7df4038ef6ace3791df7b5d71df4a9e951db86ec371d3bb195362aa55d270",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "heldout_tasks_with_model_specific_reoptimization",
+    "selection_protocol": "Validation selects a harness from 15 candidate attempts; held-out test tasks are unavailable to the optimizer.",
+    "controlled_variables": [
+      "fixed model within each search",
+      "same environment",
+      "matched candidate-attempt budget in search ablations"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--trust2026",
+    "key": "trust2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "TRUST",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Places an online statistical gate around fixed-proposer harness updates, using e-values, adaptive error-budget allocation and a correction for validation reuse."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The error-control result depends on a conditional mean bound and overlap-bias specification; tolerated loss is not a guarantee that each accepted edit improves. Empirical zero-tolerance error differs from the theoretical tolerance-adjusted quantity."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Reported acceptance error is lower than greedy acceptance across the tested settings; the conditional statistical guarantee and empirical test results must remain distinct."
+      }
+    ],
+    "sources": [
+      {
+        "name": "TRUST (v1)",
+        "url": "https://arxiv.org/html/2611.10787v1",
+        "locator": "Sections 3–7; Table 1; Section 6.2",
+        "source_version": "2611.10787v1",
+        "first_release_date": "2026-11-07",
+        "source_version_date": "2026-11-07",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "hotpotqa",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "drop",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "apps",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "control"
+        ],
+        "benchmark_ids": [
+          "hotpotqa",
+          "drop",
+          "apps"
+        ],
+        "scope": "Sections 3–7; Table 1; Section 6.2; The error-control result depends on a conditional mean bound and overlap-bias specification; tolerated loss is not a guarantee that each accepted edit improves. Empirical zero-tolerance error differs from the theoretical tolerance-adjusted quantity.",
+        "summary": "Reported acceptance error is lower than greedy acceptance across the tested settings; the conditional statistical guarantee and empirical test results must remain distinct.",
+        "section": "Reported observation",
+        "evidence_quote": "Reported acceptance error is lower than greedy acceptance across the tested settings; the conditional statistical guarantee and empirical test results must remain distinct.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "TRUST (v1)",
+          "url": "https://arxiv.org/html/2611.10787v1",
+          "locator": "Sections 3–7; Table 1; Section 6.2",
+          "source_version": "2611.10787v1",
+          "first_release_date": "2026-11-07",
+          "source_version_date": "2026-11-07",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.10787v1",
+          "locator": "Sections 3–7; Table 1; Section 6.2",
+          "excerpt": "conditional mean",
+          "artifact_sha256": "6265aab8f8bd265eb944cf9d8b0cc4c276e60363e31b20c6cab915d425224d88",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "sequential_harness_acceptance_with_reused_validation",
+    "selection_protocol": "Repeated validation controls acceptance; held-out test data separately measure performance. The LLM allocates testing budget from prior context.",
+    "controlled_variables": [
+      "fixed proposer",
+      "common validation/test protocol within settings",
+      "same base model for gate comparisons"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "open-web-information-seeking--multiloop2026",
+    "key": "multiloop2026",
+    "domain": "reasoning",
+    "category": "Open-Web Information Seeking",
+    "category_id": "open-web-information-seeking",
+    "title": "MULTILOOP",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Optimizes executable multi-agent search loops and keeps an archive of code and training performance; improvements include prompts, tools and coordination code."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The single-agent/multi-agent comparison is not compute matched. Evaluation uses one benchmark; orchestration failures largely persist despite gains from prompt formatting and tool changes."
+      },
+      {
+        "label": "Reported observation",
+        "text": "The evolved loop improves fully correct answers over reported single-agent baselines, but persistent coordination failures and unequal inference cost limit attribution to multi-agent orchestration."
+      }
+    ],
+    "sources": [
+      {
+        "name": "MULTILOOP (v1)",
+        "url": "https://arxiv.org/html/2611.15754v1",
+        "locator": "Sections 2–4; Appendix B",
+        "source_version": "2611.15754v1",
+        "first_release_date": "2026-11-11",
+        "source_version_date": "2026-11-11",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "deepsearchqa",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "instructions",
+          "tools",
+          "control"
+        ],
+        "benchmark_ids": [
+          "deepsearchqa"
+        ],
+        "scope": "Sections 2–4; Appendix B; The single-agent/multi-agent comparison is not compute matched. Evaluation uses one benchmark; orchestration failures largely persist despite gains from prompt formatting and tool changes.",
+        "summary": "The evolved loop improves fully correct answers over reported single-agent baselines, but persistent coordination failures and unequal inference cost limit attribution to multi-agent orchestration.",
+        "section": "Reported observation",
+        "evidence_quote": "The evolved loop improves fully correct answers over reported single-agent baselines, but persistent coordination failures and unequal inference cost limit attribution to multi-agent orchestration.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "MULTILOOP (v1)",
+          "url": "https://arxiv.org/html/2611.15754v1",
+          "locator": "Sections 2–4; Appendix B",
+          "source_version": "2611.15754v1",
+          "first_release_date": "2026-11-11",
+          "source_version_date": "2026-11-11",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.15754v1",
+          "locator": "Sections 2–4; Appendix B",
+          "excerpt": "orchestration failures",
+          "artifact_sha256": "9a7344a3eec95aceac25791074c8be78bc559235bded363ceb02cc3624c22f39",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "heldout_questions_after_small_training_set_search",
+    "selection_protocol": "Optimize on ten challenging training questions and evaluate the selected loop on the remaining 890 DeepSearchQA questions.",
+    "controlled_variables": [
+      "fixed executor model",
+      "same held-out questions",
+      "separate optimizer and executor roles"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--jomoha2026",
+    "key": "jomoha2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "JoMoHa",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Jointly trains an Engineer that generates harness programs and a Solver that executes them, using shared rewards, collaboration-aware critics and asymmetric policy updates."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Both policies change weights. Most external baseline scores are taken from Harness-R1; only JoMoHa and WHALE are evaluated locally. Freezing the Engineer parameters still permits fresh program sampling."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Frozen-policy and fixed-harness swaps support contributions from co-adaptation; gains cannot be attributed to harness edits with unchanged executor weights."
+      }
+    ],
+    "sources": [
+      {
+        "name": "JoMoHa (v1)",
+        "url": "https://arxiv.org/html/2611.11499v1",
+        "locator": "Sections 4–6; Section 6.2",
+        "source_version": "2611.11499v1",
+        "first_release_date": "2026-11-08",
+        "source_version_date": "2026-11-08",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "alfworld",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "webshop",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "dbbench",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "control"
+        ],
+        "benchmark_ids": [
+          "alfworld",
+          "webshop",
+          "dbbench"
+        ],
+        "scope": "Sections 4–6; Section 6.2; Both policies change weights. Most external baseline scores are taken from Harness-R1; only JoMoHa and WHALE are evaluated locally. Freezing the Engineer parameters still permits fresh program sampling.",
+        "summary": "Frozen-policy and fixed-harness swaps support contributions from co-adaptation; gains cannot be attributed to harness edits with unchanged executor weights.",
+        "section": "Reported observation",
+        "evidence_quote": "Frozen-policy and fixed-harness swaps support contributions from co-adaptation; gains cannot be attributed to harness edits with unchanged executor weights.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "JoMoHa (v1)",
+          "url": "https://arxiv.org/html/2611.11499v1",
+          "locator": "Sections 4–6; Section 6.2",
+          "source_version": "2611.11499v1",
+          "first_release_date": "2026-11-08",
+          "source_version_date": "2026-11-08",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.11499v1",
+          "locator": "Sections 4–6; Section 6.2",
+          "excerpt": "Frozen Engineer",
+          "artifact_sha256": "18d040320f4463de1a35c962afd0938953becf05f854555b2ffe46c24bc907ef",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "executor_weights_trained",
+    "transfer_regime": "coadapted_policy_and_harness_with_frozen_policy_ablations",
+    "selection_protocol": "Separate training, validation and test tasks; paired frozen-policy and fixed-harness evaluations probe compatibility between the two policies.",
+    "controlled_variables": [
+      "shared initial policies in ablations",
+      "paired harness/solver swaps",
+      "matched interaction budget for the local WHALE comparison"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "repository-level-software-engineering--rsi_tax2026",
+    "key": "rsi_tax2026",
+    "domain": "coding",
+    "category": "Repository-Level Software Engineering",
+    "category_id": "repository-level-software-engineering",
+    "title": "RSI Tax",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Evaluates continual harness methods prequentially and accounts for proposer, execution and verification tokens; a bounded periodic-note baseline tests low-cost persistent adaptation."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The evaluation uses fixed task orders and few repeated runs. An artifact not used later is not proof its generation was causally wasted; token totals are not monetary cost. Terminal task order is not measured environmental drift."
+      },
+      {
+        "label": "Reported observation",
+        "text": "A small periodic-note baseline matches or leads reported accuracy while using substantially fewer tokens than heavier methods; verification dominates much of the measured improvement overhead."
+      }
+    ],
+    "sources": [
+      {
+        "name": "RSI Tax (v1)",
+        "url": "https://arxiv.org/html/2611.13524v1",
+        "locator": "Sections 2–6; Tables 2–3",
+        "source_version": "2611.13524v1",
+        "first_release_date": "2026-11-10",
+        "source_version_date": "2026-11-10",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "swechainevo",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "terminal-bench-2.1",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "swechainevo",
+          "terminal-bench-2.1"
+        ],
+        "scope": "Sections 2–6; Tables 2–3; The evaluation uses fixed task orders and few repeated runs. An artifact not used later is not proof its generation was causally wasted; token totals are not monetary cost. Terminal task order is not measured environmental drift.",
+        "summary": "A small periodic-note baseline matches or leads reported accuracy while using substantially fewer tokens than heavier methods; verification dominates much of the measured improvement overhead.",
+        "section": "Reported observation",
+        "evidence_quote": "A small periodic-note baseline matches or leads reported accuracy while using substantially fewer tokens than heavier methods; verification dominates much of the measured improvement overhead.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "RSI Tax (v1)",
+          "url": "https://arxiv.org/html/2611.13524v1",
+          "locator": "Sections 2–6; Tables 2–3",
+          "source_version": "2611.13524v1",
+          "first_release_date": "2026-11-10",
+          "source_version_date": "2026-11-10",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.13524v1",
+          "locator": "Sections 2–6; Tables 2–3",
+          "excerpt": "not a measured effect on task behavior or accuracy",
+          "artifact_sha256": "1127ac62c546c0ae89db8f4fdfae20e452104878e3d7b5535a55ca40bf72b92a",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "prequential_task_stream_with_full_token_accounting",
+    "selection_protocol": "Score each task before exposing feedback; subsequent reruns count toward cost and do not replace the original score. Reset state between SWEChainEvo chains.",
+    "controlled_variables": [
+      "same backbone within comparisons",
+      "same initial KIRA harness",
+      "matched task order",
+      "common nominal execution limits"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--flex_rsi2026",
+    "key": "flex_rsi2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "Flex-RSI",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Alternates an executor that improves a task solution with an improver that edits executor and improver harness code and prompts under protected validation and hidden-test evaluation."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Agent backbone weights remain fixed, but some task solutions train helper models. Most model/task configurations have one run; the frozen-harness comparison covers seven pairs, not all benchmark settings."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Editing the harness beats a frozen harness in six of seven reported paired settings, with one tie; this limited ablation does not establish uniform gains across the full benchmark."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Flex-RSI (v1)",
+        "url": "https://arxiv.org/html/2611.08946v1",
+        "locator": "Sections 3.2–4.1 and 5.4; Tables 8–9; Section 6",
+        "source_version": "2611.08946v1",
+        "first_release_date": "2026-11-06",
+        "source_version_date": "2026-11-06",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "flex-rsi",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "instructions",
+          "tools",
+          "control"
+        ],
+        "benchmark_ids": [
+          "flex-rsi"
+        ],
+        "scope": "Sections 3.2–4.1 and 5.4; Tables 8–9; Section 6; Agent backbone weights remain fixed, but some task solutions train helper models. Most model/task configurations have one run; the frozen-harness comparison covers seven pairs, not all benchmark settings.",
+        "summary": "Editing the harness beats a frozen harness in six of seven reported paired settings, with one tie; this limited ablation does not establish uniform gains across the full benchmark.",
+        "section": "Reported observation",
+        "evidence_quote": "Editing the harness beats a frozen harness in six of seven reported paired settings, with one tie; this limited ablation does not establish uniform gains across the full benchmark.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Flex-RSI (v1)",
+          "url": "https://arxiv.org/html/2611.08946v1",
+          "locator": "Sections 3.2–4.1 and 5.4; Tables 8–9; Section 6",
+          "source_version": "2611.08946v1",
+          "first_release_date": "2026-11-06",
+          "source_version_date": "2026-11-06",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.08946v1",
+          "locator": "Sections 3.2–4.1 and 5.4; Tables 8–9; Section 6",
+          "excerpt": "Each model is run once",
+          "artifact_sha256": "85f7e20db24c8b747a2ac09484cea13e28a7a18f958ea003b89004f7dbe8e0ed",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "task_local_harness_evolution_and_limited_initialization_transfer",
+    "selection_protocol": "Keep a solution only when held-out validation improves; reserve hidden tests for final scoring; fix wall-clock, hardware, model, round and evaluation budgets.",
+    "controlled_variables": [
+      "same model and task within paired runs",
+      "same seed and declared budgets",
+      "protected held-out files"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--fgse2026",
+    "key": "fgse2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "FGSE",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Represents lessons as scoped, verifier-aware hypotheses and tests temporary updates with transfer, falsification and regression probes before commit, refinement or rejection."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Reliability depends on executable verifiers and probe coverage. The theoretical bound requires fresh final probes and a finite conditionally fixed candidate set; it is not unconditional safety for arbitrary updates."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Removing falsification probes raises reported harmful-update rates, and removing the regression archive increases regression damage; probe type matters beyond simply adding verification calls."
+      }
+    ],
+    "sources": [
+      {
+        "name": "FGSE (v1)",
+        "url": "https://arxiv.org/html/2611.14326v1",
+        "locator": "Sections 3–6; Tables 2 and 6; Appendices C–D",
+        "source_version": "2611.14326v1",
+        "first_release_date": "2026-11-10",
+        "source_version_date": "2026-11-10",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "webarena",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "appworld",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "tau-bench-retail",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "longmemeval",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "locomo",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "webarena",
+          "appworld",
+          "tau-bench-retail",
+          "longmemeval",
+          "locomo"
+        ],
+        "scope": "Sections 3–6; Tables 2 and 6; Appendices C–D; Reliability depends on executable verifiers and probe coverage. The theoretical bound requires fresh final probes and a finite conditionally fixed candidate set; it is not unconditional safety for arbitrary updates.",
+        "summary": "Removing falsification probes raises reported harmful-update rates, and removing the regression archive increases regression damage; probe type matters beyond simply adding verification calls.",
+        "section": "Reported observation",
+        "evidence_quote": "Removing falsification probes raises reported harmful-update rates, and removing the regression archive increases regression damage; probe type matters beyond simply adding verification calls.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "FGSE (v1)",
+          "url": "https://arxiv.org/html/2611.14326v1",
+          "locator": "Sections 3–6; Tables 2 and 6; Appendices C–D",
+          "source_version": "2611.14326v1",
+          "first_release_date": "2026-11-10",
+          "source_version_date": "2026-11-10",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.14326v1",
+          "locator": "Sections 3–6; Tables 2 and 6; Appendices C–D",
+          "excerpt": "final commitment uses fresh probes",
+          "artifact_sha256": "73b30a47759dea36fb245533de62836173c35de94402ffda3661b1860c1e7cfc",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "scoped_lesson_transfer_with_regression_and_falsification_probes",
+    "selection_protocol": "Tune thresholds on development data; gate commitment using separate probe types and monitor committed hypotheses for later violations.",
+    "controlled_variables": [
+      "frozen ReAct executor",
+      "single-factor ablations",
+      "shared task evaluation protocol"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "application-and-service-workflows--failure_traces2026",
+    "key": "failure_traces2026",
+    "domain": "interactive",
+    "category": "Application and Service Workflows",
+    "category_id": "application-and-service-workflows",
+    "title": "Failure traces and portable skills",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Compares teacher-written portable skill notes derived from target-agent failure traces with a same-budget-ceiling teacher that sees no episode-specific trace."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Actual searches are not identical despite common ceilings. Improvements on generated sealed decisions do not carry to official interactive-task success; other tested domains have null results or data defects."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Trace-conditioned notes improve generated sealed-decision accuracy over the no-episode control, but the official retail task estimate is negative with an interval spanning zero; no interactive success gain is established."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Failure traces and portable skills (v2)",
+        "url": "https://arxiv.org/html/2611.11342v2",
+        "locator": "Sections 2–4; Table 1",
+        "source_version": "2611.11342v2",
+        "first_release_date": "2026-11-08",
+        "source_version_date": "2026-11-11",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "tau2-bench-retail",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "instructions",
+          "memory"
+        ],
+        "benchmark_ids": [
+          "tau2-bench-retail"
+        ],
+        "scope": "Sections 2–4; Table 1; Actual searches are not identical despite common ceilings. Improvements on generated sealed decisions do not carry to official interactive-task success; other tested domains have null results or data defects.",
+        "summary": "Trace-conditioned notes improve generated sealed-decision accuracy over the no-episode control, but the official retail task estimate is negative with an interval spanning zero; no interactive success gain is established.",
+        "section": "Reported observation",
+        "evidence_quote": "Trace-conditioned notes improve generated sealed-decision accuracy over the no-episode control, but the official retail task estimate is negative with an interval spanning zero; no interactive success gain is established.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Failure traces and portable skills (v2)",
+          "url": "https://arxiv.org/html/2611.11342v2",
+          "locator": "Sections 2–4; Table 1",
+          "source_version": "2611.11342v2",
+          "first_release_date": "2026-11-08",
+          "source_version_date": "2026-11-11",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.11342v2",
+          "locator": "Sections 2–4; Table 1",
+          "excerpt": "Our control only partly separates these sources",
+          "artifact_sha256": "7714a7d3813902bf609396d0827f9c63b1054db7a2d9c9d512cabfda33a2b4c5",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "teacher_written_notes_to_frozen_student_with_sealed_test",
+    "selection_protocol": "Select notes with development feedback; separately evaluate generated sealed decisions and official held-out interactive tasks.",
+    "controlled_variables": [
+      "frozen Qwen3.5-9B target",
+      "same teacher budget ceiling",
+      "matched held-out evaluation"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--student_aware_teaching2026",
+    "key": "student_aware_teaching2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "Student-Aware Teaching",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Maintains a student profile, diagnoses failures with probes and writes validated executable skills for a frozen student; the teacher is absent at deployment."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Primary evidence uses one teacher/student pair and custom task suites. Control runs are separate jobs rather than perfectly paired experiments; transfer depends on the receiving student and selector."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Student-aware teaching improves reported held-out performance over student-agnostic teaching; library swaps show that the same skill collection is not equally effective for every student."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Student-Aware Teaching (v1)",
+        "url": "https://arxiv.org/html/2611.13144v1",
+        "locator": "Sections 3–6; Tables 2–3 and 5–6",
+        "source_version": "2611.13144v1",
+        "first_release_date": "2026-11-09",
+        "source_version_date": "2026-11-09",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "sat-task-suites",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "memory",
+          "tools"
+        ],
+        "benchmark_ids": [
+          "sat-task-suites"
+        ],
+        "scope": "Sections 3–6; Tables 2–3 and 5–6; Primary evidence uses one teacher/student pair and custom task suites. Control runs are separate jobs rather than perfectly paired experiments; transfer depends on the receiving student and selector.",
+        "summary": "Student-aware teaching improves reported held-out performance over student-agnostic teaching; library swaps show that the same skill collection is not equally effective for every student.",
+        "section": "Reported observation",
+        "evidence_quote": "Student-aware teaching improves reported held-out performance over student-agnostic teaching; library swaps show that the same skill collection is not equally effective for every student.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Student-Aware Teaching (v1)",
+          "url": "https://arxiv.org/html/2611.13144v1",
+          "locator": "Sections 3–6; Tables 2–3 and 5–6",
+          "source_version": "2611.13144v1",
+          "first_release_date": "2026-11-09",
+          "source_version_date": "2026-11-09",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.13144v1",
+          "locator": "Sections 3–6; Tables 2–3 and 5–6",
+          "excerpt": "each performs better with its own",
+          "artifact_sha256": "ea52df7a4b926358c44a893826b1c0780649fe38ce2cf5e1b8678ba61319aa32",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "student_specific_skill_libraries_and_frozen_library_swaps",
+    "selection_protocol": "Use separate teaching, development and held-out tasks; freeze skill libraries for library-swap evaluation between students.",
+    "controlled_variables": [
+      "fixed student weights",
+      "common held-out tasks",
+      "frozen-library swaps"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--veritas2026",
+    "key": "veritas2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "Veritas",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Generates task-grounded verifier programs using evidence contracts, domain rules and authoring principles; candidates are revised by a model or researchers and selected on validation agreement."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Some main results use tasks involved in mechanism development. Terminal evaluations are the closest held-out results. Pairwise judging sees candidates, unlike execution-verifier generation; oracle agreement is not task-solving improvement."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Authoring-principle ablations support better reported verifier agreement, while model transfer is positive in most but not all settings; neither result establishes universally reliable verification."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Veritas (v1)",
+        "url": "https://arxiv.org/html/2611.13336v1",
+        "locator": "Sections 3.1–4.5; Tables 3–4; Limitations",
+        "source_version": "2611.13336v1",
+        "first_release_date": "2026-11-09",
+        "source_version_date": "2026-11-09",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "tau2-bench",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "swe-bench-verified",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "terminal-bench-4.0",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "tb-science",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "instructions",
+          "control"
+        ],
+        "benchmark_ids": [
+          "tau2-bench",
+          "swe-bench-verified",
+          "terminal-bench-4.0",
+          "tb-science"
+        ],
+        "scope": "Sections 3.1–4.5; Tables 3–4; Limitations; Some main results use tasks involved in mechanism development. Terminal evaluations are the closest held-out results. Pairwise judging sees candidates, unlike execution-verifier generation; oracle agreement is not task-solving improvement.",
+        "summary": "Authoring-principle ablations support better reported verifier agreement, while model transfer is positive in most but not all settings; neither result establishes universally reliable verification.",
+        "section": "Reported observation",
+        "evidence_quote": "Authoring-principle ablations support better reported verifier agreement, while model transfer is positive in most but not all settings; neither result establishes universally reliable verification.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Veritas (v1)",
+          "url": "https://arxiv.org/html/2611.13336v1",
+          "locator": "Sections 3.1–4.5; Tables 3–4; Limitations",
+          "source_version": "2611.13336v1",
+          "first_release_date": "2026-11-09",
+          "source_version_date": "2026-11-09",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.13336v1",
+          "locator": "Sections 3.1–4.5; Tables 3–4; Limitations",
+          "excerpt": "the closest we have to held-out results",
+          "artifact_sha256": "e0f85c2ac97ab16f99b41567e9fe65e3b3945e15942c6ba7cad4516984baf0a4",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "verifier_mechanism_transfer_after_validation_selection",
+    "selection_protocol": "Separate mechanism editing and validation from post-freeze transfer; four edits are accepted from 32 rounds, with human or model proposals.",
+    "controlled_variables": [
+      "fixed generator within component ablations",
+      "same evidence contract and materials",
+      "unchanged mechanism for transfer generators"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "machine-learning-engineering--infrarsi2026",
+    "key": "infrarsi2026",
+    "domain": "coding",
+    "category": "Machine Learning Engineering",
+    "category_id": "machine-learning-engineering",
+    "title": "InfraRSI",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Co-optimizes training launch configurations and code under fixed workload contracts, fits time/memory surrogates from trials and stores verified, hardware-conditioned experience for later searches."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Auxiliary surrogates are fitted; the optimized workload itself trains models. Predeclared loss tolerances vary by task and do not prove unchanged final model quality. Cross-hardware reuse warm-starts further search rather than directly deploying an unchanged configuration."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Filtered cross-hardware experience improves final speedup and convergence on the reported target workload relative to cold start and unfiltered eligible packs; the transfer evaluation covers one target workload."
+      }
+    ],
+    "sources": [
+      {
+        "name": "InfraRSI (v1)",
+        "url": "https://arxiv.org/html/2611.11558v1",
+        "locator": "Sections 3–6; Tables 5–6; Appendix A",
+        "source_version": "2611.11558v1",
+        "first_release_date": "2026-11-08",
+        "source_version_date": "2026-11-08",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "infrarsi-training-workloads",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "infrarsi-training-workloads"
+        ],
+        "scope": "Sections 3–6; Tables 5–6; Appendix A; Auxiliary surrogates are fitted; the optimized workload itself trains models. Predeclared loss tolerances vary by task and do not prove unchanged final model quality. Cross-hardware reuse warm-starts further search rather than directly deploying an unchanged configuration.",
+        "summary": "Filtered cross-hardware experience improves final speedup and convergence on the reported target workload relative to cold start and unfiltered eligible packs; the transfer evaluation covers one target workload.",
+        "section": "Reported observation",
+        "evidence_quote": "Filtered cross-hardware experience improves final speedup and convergence on the reported target workload relative to cold start and unfiltered eligible packs; the transfer evaluation covers one target workload.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "InfraRSI (v1)",
+          "url": "https://arxiv.org/html/2611.11558v1",
+          "locator": "Sections 3–6; Tables 5–6; Appendix A",
+          "source_version": "2611.11558v1",
+          "first_release_date": "2026-11-08",
+          "source_version_date": "2026-11-08",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.11558v1",
+          "locator": "Sections 3–6; Tables 5–6; Appendix A",
+          "excerpt": "all loss tolerances and adaptation rules are fixed",
+          "artifact_sha256": "56c239bcf3220fc04f7fafc9a8fc6064c88cc56b8d7fe31dcfa5dd0e9fb4f2e8",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "auxiliary_weights_trained",
+    "transfer_regime": "cross_hardware_experience_seeded_target_search",
+    "selection_protocol": "Paired baseline reruns and numerical/timing checks select candidates; count failed trials; transfer filters exclude same-task, same-hardware history.",
+    "controlled_variables": [
+      "fixed task contract",
+      "same target workload in experience ablation",
+      "paired baseline measurement",
+      "declared numerical and timing rules"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "repository-level-software-engineering--continual_harness_forgetting2026",
+    "key": "continual_harness_forgetting2026",
+    "domain": "coding",
+    "category": "Repository-Level Software Engineering",
+    "category_id": "repository-level-software-engineering",
+    "title": "Continual harness forgetting",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Sequentially evolves coding harnesses on two task types, then replays earlier tasks to measure forgetting and inspect verification, workflow and budget conflicts."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Experiments sample 50 SWE-Bench Verified, 50 SWT and 30 FeatureBench tasks with one backbone. Replayed evolution tasks are not a separate held-out generalization test; SWT prompts are paraphrased to remove lexical shortcuts."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Second-stage evolution can sharply reduce success on earlier sampled tasks; inspected conflicts show why current-task gains alone do not establish continual retention."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Continual harness forgetting (v1)",
+        "url": "https://arxiv.org/html/2611.03219v1",
+        "locator": "Sections 3–4; Appendices A–B",
+        "source_version": "2611.03219v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and original PDF title page; experimental HTML omits two authors"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "swe-bench-verified",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "swt-bench",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "featurebench",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "regression",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "instructions",
+          "tools",
+          "control"
+        ],
+        "benchmark_ids": [
+          "swe-bench-verified",
+          "swt-bench",
+          "featurebench"
+        ],
+        "scope": "Sections 3–4; Appendices A–B; Experiments sample 50 SWE-Bench Verified, 50 SWT and 30 FeatureBench tasks with one backbone. Replayed evolution tasks are not a separate held-out generalization test; SWT prompts are paraphrased to remove lexical shortcuts.",
+        "summary": "Second-stage evolution can sharply reduce success on earlier sampled tasks; inspected conflicts show why current-task gains alone do not establish continual retention.",
+        "section": "Reported observation",
+        "evidence_quote": "Second-stage evolution can sharply reduce success on earlier sampled tasks; inspected conflicts show why current-task gains alone do not establish continual retention.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Continual harness forgetting (v1)",
+          "url": "https://arxiv.org/html/2611.03219v1",
+          "locator": "Sections 3–4; Appendices A–B",
+          "source_version": "2611.03219v1",
+          "first_release_date": "2026-11-02",
+          "source_version_date": "2026-11-02",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and original PDF title page; experimental HTML omits two authors"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.03219v1",
+          "locator": "Sections 3–4; Appendices A–B",
+          "excerpt": "50 instances from SWE-Bench Verified",
+          "artifact_sha256": "0d557dd620e2ebf427ec1d4284ea23755e92045edade1b3e52d4bea7b83ef574",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "ordered_two_stage_evolution_with_backward_replay",
+    "selection_protocol": "Select the strongest harness from first-stage evolution, evolve on the second task type and reevaluate earlier tasks at later rounds.",
+    "controlled_variables": [
+      "fixed DeepSeek backbone",
+      "same seed Mini-SWE harness",
+      "same sampled tasks per evolution direction",
+      "common execution timeout"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "application-and-service-workflows--teacher_free_coevolution2026",
+    "key": "teacher_free_coevolution2026",
+    "domain": "interactive",
+    "category": "Application and Service Workflows",
+    "category_id": "application-and-service-workflows",
+    "title": "Teacher-free skill and policy co-evolution",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Alternates validation-gated external skill-rule edits with GRPO LoRA policy training; the base model remains the editor even when the executing policy is adapted."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Teacher-free does not mean fixed executor weights or a learned successor editor. The empirical edit gate is not a calibrated statistical test, and the two-round study does not establish long-run stability."
+      },
+      {
+        "label": "Reported observation",
+        "text": "The final rule/weight swap comparison supports complementary contributions from external skills and adapted policy weights; it does not show that the editor itself improves across generations."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Teacher-free skill and policy co-evolution (v1)",
+        "url": "https://arxiv.org/html/2611.15268v1",
+        "locator": "Sections 4–6; Tables 2–3",
+        "source_version": "2611.15268v1",
+        "first_release_date": "2026-11-11",
+        "source_version_date": "2026-11-11",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "tau2-bench-retail",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "tau2-bench-airline",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "instructions",
+          "memory"
+        ],
+        "benchmark_ids": [
+          "tau2-bench-retail",
+          "tau2-bench-airline"
+        ],
+        "scope": "Sections 4–6; Tables 2–3; Teacher-free does not mean fixed executor weights or a learned successor editor. The empirical edit gate is not a calibrated statistical test, and the two-round study does not establish long-run stability.",
+        "summary": "The final rule/weight swap comparison supports complementary contributions from external skills and adapted policy weights; it does not show that the editor itself improves across generations.",
+        "section": "Reported observation",
+        "evidence_quote": "The final rule/weight swap comparison supports complementary contributions from external skills and adapted policy weights; it does not show that the editor itself improves across generations.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Teacher-free skill and policy co-evolution (v1)",
+          "url": "https://arxiv.org/html/2611.15268v1",
+          "locator": "Sections 4–6; Tables 2–3",
+          "source_version": "2611.15268v1",
+          "first_release_date": "2026-11-11",
+          "source_version_date": "2026-11-11",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and names in full primary text"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.15268v1",
+          "locator": "Sections 4–6; Tables 2–3",
+          "excerpt": "The editor is always the base model",
+          "artifact_sha256": "f48faaaf1aa76e9c3babefe0fbda623b4598a09a3f0506a2f1aa2ed7f552568a",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "executor_weights_trained",
+    "transfer_regime": "joint_external_skill_and_weight_adaptation",
+    "selection_protocol": "Use fresh current-policy rollouts for editing and training; select rules and policy checkpoints on validation; reserve official retail and airline tasks for final evaluation.",
+    "controlled_variables": [
+      "same base editor",
+      "fixed final evaluation tasks",
+      "factorial final rule/weight swaps"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."
+    }
+  },
+  {
+    "id": "multi-domain-agent-evaluation--multitask_selfharness2026",
+    "key": "multitask_selfharness2026",
+    "domain": "cross_domain",
+    "category": "Multi-Domain Agent Evaluation",
+    "category_id": "multi-domain-agent-evaluation",
+    "title": "Multi-Task Self-Evolving Harnesses",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Runs the same frozen model and current harness as solver and proposer; edits code and evolution notes after mixed-domain batches, then continues on Claw-Eval with replayed success anchors."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Acceptance checks executability rather than performance. Gains depend on backbone and task; the out-of-distribution mean is driven largely by BrowseComp-Plus. Only one model has three independent first-stage search runs."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Two stronger backbones improve mean in-domain scores, one has uncertain gains and another regresses; out-of-domain improvement is uneven. Success-anchor replay is a design choice, not a guarantee against forgetting."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Multi-Task Self-Evolving Harnesses (v2)",
+        "url": "https://arxiv.org/html/2609.38372v2",
+        "locator": "Sections 3–6; Tables 3–5; Appendix D",
+        "source_version": "2609.38372v2",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-11-12",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and primary-text identity"
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "terminal-bench-2.1",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "gaia2",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "officeqa-pro",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "tau3-bench-banking",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "swe-bench-pro",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "swe-bench-verified",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "deepswe",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "browsecomp-plus",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "apex-agents",
+        "role": "evaluated setting; see source-specific protocol"
+      },
+      {
+        "id": "claw-eval",
+        "role": "evaluated setting; see source-specific protocol"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "control",
+          "tools"
+        ],
+        "benchmark_ids": [
+          "terminal-bench-2.1",
+          "gaia2",
+          "officeqa-pro",
+          "tau3-bench-banking",
+          "swe-bench-pro",
+          "swe-bench-verified",
+          "deepswe",
+          "browsecomp-plus",
+          "apex-agents",
+          "claw-eval"
+        ],
+        "scope": "Sections 3–6; Tables 3–5; Appendix D; Acceptance checks executability rather than performance. Gains depend on backbone and task; the out-of-distribution mean is driven largely by BrowseComp-Plus. Only one model has three independent first-stage search runs.",
+        "summary": "Two stronger backbones improve mean in-domain scores, one has uncertain gains and another regresses; out-of-domain improvement is uneven. Success-anchor replay is a design choice, not a guarantee against forgetting.",
+        "section": "Reported observation",
+        "evidence_quote": "Two stronger backbones improve mean in-domain scores, one has uncertain gains and another regresses; out-of-domain improvement is uneven. Success-anchor replay is a design choice, not a guarantee against forgetting.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Multi-Task Self-Evolving Harnesses (v2)",
+          "url": "https://arxiv.org/html/2609.38372v2",
+          "locator": "Sections 3–6; Tables 3–5; Appendix D",
+          "source_version": "2609.38372v2",
+          "first_release_date": "2026-09-29",
+          "source_version_date": "2026-11-12",
+          "metadata_checked_on": "2026-11-14",
+          "metadata_basis": "Official arXiv metadata and primary-text identity"
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2609.38372v2",
+          "locator": "Sections 3–6; Tables 3–5; Appendix D",
+          "excerpt": "Acceptance without validation",
+          "artifact_sha256": "827a39766f273ec73f30ad6c2a2dbffe14978408eb8b1f251a0f7ede6fb3f9e4",
+          "checked_on": "2026-11-14"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.5.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "mixed_domain_evolution_then_new_domain_adaptation",
+    "selection_protocol": "Keep evolution tasks separate from held-out tests; evaluate five unseen benchmarks after first-stage evolution and separate Claw-Eval tasks after continued evolution.",
+    "controlled_variables": [
+      "same seed and edit budgets across models",
+      "fixed weights within a run",
+      "same model and reasoning effort for within-model harness comparisons"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-14",
       "reviewer": "Codex (AI-assisted source inspection)",
       "human_review_status": "pending",
       "scope": "Targeted mechanism, protocol, outcome and limitation review; not experimental reproduction or independent dual annotation."

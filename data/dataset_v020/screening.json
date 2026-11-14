@@ -376,5 +376,124 @@
     "decision": "included",
     "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
     "screened_on": "2026-11-04"
+  },
+  {
+    "key": "harnessflow2026",
+    "url": "https://arxiv.org/abs/2611.06254v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "trust2026",
+    "url": "https://arxiv.org/abs/2611.10787v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "multiloop2026",
+    "url": "https://arxiv.org/abs/2611.15754v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "jomoha2026",
+    "url": "https://arxiv.org/abs/2611.11499v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "rsi_tax2026",
+    "url": "https://arxiv.org/abs/2611.13524v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "flex_rsi2026",
+    "url": "https://arxiv.org/abs/2611.08946v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "fgse2026",
+    "url": "https://arxiv.org/abs/2611.14326v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "failure_traces2026",
+    "url": "https://arxiv.org/abs/2611.11342v2",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "student_aware_teaching2026",
+    "url": "https://arxiv.org/abs/2611.13144v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "veritas2026",
+    "url": "https://arxiv.org/abs/2611.13336v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "infrarsi2026",
+    "url": "https://arxiv.org/abs/2611.11558v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "continual_harness_forgetting2026",
+    "url": "https://arxiv.org/abs/2611.03219v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "teacher_free_coevolution2026",
+    "url": "https://arxiv.org/abs/2611.15268v1",
+    "decision": "included",
+    "reason": "Targeted primary-text mechanism, controls, outcome and limitation review; human adjudication pending.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "evox2026",
+    "url": "https://arxiv.org/abs/2611.15006v1",
+    "decision": "excluded",
+    "reason": "Included in broader bibliography only; outside empirical retained-harness intervention evidence for this release. A Rust runtime organizes action realization, execution continuity and outcome grounding. The controlled runtime comparison disables memory, evolution and extensions, so it is architectural evidence rather than a demonstrated recursive-improvement loop. Sections 3–5.6.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "third_eye2026",
+    "url": "https://arxiv.org/abs/2611.12988v1",
+    "decision": "excluded",
+    "reason": "Included in broader bibliography only; outside empirical retained-harness intervention evidence for this release. Tests whether a first-update winner remains a good choice after another update using separate selection/final tests. The intervention is small-model LoRA training, not harness revision; harm is model-dependent and the no-update control is not compute matched. Sections 3–5.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "conitzer_rsi_competition2026",
+    "url": "https://arxiv.org/abs/2611.10261v1",
+    "decision": "excluded",
+    "reason": "Included in broader bibliography only; outside empirical retained-harness intervention evidence for this release. Analyzes competitive incentives for self-improvement using a stochastic two-actor game. This is a conceptual safety model, not an empirical demonstration of harness optimization or observed recursive gains. Section 4.",
+    "screened_on": "2026-11-14"
+  },
+  {
+    "key": "agenttorrent2026",
+    "url": "https://arxiv.org/abs/2611.15436v1",
+    "decision": "excluded",
+    "reason": "Included in broader bibliography only; outside empirical retained-harness intervention evidence for this release. Collects public repository artifacts associated with coding agents. Configuration and planning files offer a resource for studying harness practice; detection and co-occurrence do not establish causal performance gains or autonomous evolution. Artifact detection and repository classification have distinct validation procedures. Sections IV–V.",
+    "screened_on": "2026-11-14"
   }
 ]
