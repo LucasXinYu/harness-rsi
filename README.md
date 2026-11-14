@@ -2,13 +2,13 @@
 
 <p align="center"><strong>What actually evolves around the model?</strong><br>A curated, source-traceable evidence dataset and research atlas of reported agent-harness changes.<br><sub>Survey companion · Versioned data · Reported gains, failures and evidence limits</sub></p>
 
-<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_revised.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
+<p align="center"><a href="https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-14.pdf"><strong>Read the paper (PDF) ↗</strong></a> · <a href="https://lucasxinyu.github.io/harness-rsi/paper/">Abstract &amp; citation ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/">Interactive website ↗</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#benchmarks">Benchmark evidence</a> · <a href="https://lucasxinyu.github.io/harness-rsi/#activity">Literature growth</a></p>
 
-**Author preprint · 2026-11-04 · Not peer-reviewed.** The 87-page revised reading version distinguishes task performance, recursive reuse and improved subsequent optimization; it adds proposed comparison criteria and explicit evidence limitations. Literature coverage remains through November 4. The original 95-record domain snapshot remains frozen at October 1; companion dataset v0.4.1 is versioned separately. [Revision note](docs/EDITORIAL_UPDATE_2026-11-04.md). [Earlier November 4 correction edition](docs/paper/Harness_RSI_Preprint_2026-11-04_corrected.pdf) and older PDFs remain archived. [Preprints.org v2](https://doi.org/10.20944/preprints202610.2293.v2), posted October 30, is a separate version; this update does not replace submitted manuscripts.
+**Author preprint · 2026-11-14 · Not peer-reviewed.** The 93-page November 14 reading version integrates continual forgetting, total improvement cost, statistical acceptance, verifier validity and transfer boundaries. The original 95-record October 1 domain snapshot remains frozen. Companion dataset v0.5.0 is versioned separately. [Revision note](docs/EDITORIAL_UPDATE_2026-11-14.md). [November 4 reading version](docs/paper/Harness_RSI_Preprint_2026-11-04_revised.pdf) and earlier PDFs remain archived. [Preprints.org v2](https://doi.org/10.20944/preprints202610.2293.v2), posted October 30, is a separate version; this update does not replace submitted manuscripts.
 
 <p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
-**November 4 literature and manuscript update:** Thirteen additions compare retained guidance, harness routing, selection gates, replay, model-training boundaries and memory costs. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-11-04.md). The revised manuscript integrates these comparisons while preserving the frozen domain evidence.
+**November 14 literature and manuscript update:** Seventeen new papers and three inspected revisions sharpen comparisons of continual retention, validation, cost and policy/harness co-adaptation. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-11-14.md).
 
 We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.
 
@@ -57,11 +57,11 @@ The interactive site lets you choose **any two domains** and switch between inte
 
 ## Evidence dataset
 
-**Harness RSI Evidence Dataset v0.4.1** contains **145 category–source records, 113 distinct works and 45 scoped signals**. The November 4 factual correction preserves counts and all earlier releases. [Correction note](docs/FACTUAL_CORRECTIONS_2026-11-04.md). Records are not independent interventions.
+**Harness RSI Evidence Dataset v0.5.0** contains **159 category–source records, 126 distinct works and 59 scoped signals**. Fourteen records are added; all five previous releases remain immutable. [Release note](docs/EDITORIAL_UPDATE_2026-11-14.md). Records are not independent interventions.
 
-**60 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
+**74 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
 
-[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.4.1/dataset.json) · [Normalized CSV](docs/dataset/v0.4.1/records.csv) · [Schema](docs/dataset/v0.4.1/schema.json) · [Quality report](docs/dataset/v0.4.1/quality-report.json) · [Corrections](docs/dataset/v0.4.1/corrections.json)
+[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.5.0/dataset.json) · [Normalized CSV](docs/dataset/v0.5.0/records.csv) · [Schema](docs/dataset/v0.5.0/schema.json) · [Quality report](docs/dataset/v0.5.0/quality-report.json) · [Corrections](docs/dataset/v0.5.0/corrections.json)
 
 This is targeted AI-assisted source inspection, not independent reproduction or exhaustive coverage. **Project-owned annotations and compilation are CC BY 4.0; third-party rights are excluded.** See [the license scope](LICENSE-DATA.md). [Historical v0.1.0](docs/dataset/v0.1.0/dataset.json) is preserved byte-for-byte; its HarnessX hit-rate interpretation is superseded by the correction notice.
 
@@ -88,13 +88,13 @@ The frozen survey evidence covers work through **2026-10-01**. A record is one s
 
 We will continue to add verified studies, benchmark-level harness changes and revised syntheses as new evidence becomes available. Each evidence release will be dated and traceable; the paper’s frozen snapshot will remain identifiable.
 
-**Literature synthesis through November 4, 2026.** [Read the latest comparison supplement](docs/LITERATURE_UPDATE_2026-11-04.md): retained guidance versus task-local edits, initialization versus optimization, model training and routing boundaries, and independent replay. This adds 13 verified papers and rechecks KARMA v2; 185 new keyword candidates remain unscreened. The November 4 author manuscript integrates the new comparisons. [November 1](docs/LITERATURE_UPDATE_2026-11-01.md), [October 27](docs/LITERATURE_UPDATE_2026-10-27.md), [October 24](docs/LITERATURE_UPDATE_2026-10-24.md) and [October 20](docs/LITERATURE_UPDATE_2026-10-20.md) syntheses remain traceable. Previous PDFs, dataset versions and submitted preprints remain separate.
+**Literature synthesis through November 14, 2026.** [Read the latest comparison supplement](docs/LITERATURE_UPDATE_2026-11-14.md). The batch adds 17 inspected papers and checks MemSkill v3, RSI-Dojo v2 and Multi-Task Self-Evolving Harnesses v2. The cumulative queue contains 334 unresolved keyword candidates; coverage is targeted, not exhaustive. [November 4](docs/LITERATURE_UPDATE_2026-11-04.md), [November 1](docs/LITERATURE_UPDATE_2026-11-01.md), and earlier syntheses remain traceable. Previous PDFs, dataset releases and submitted preprints retain separate version dates.
 
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-11-04 | Search horizon; 318 papers and 11 official resources; collection updated 2026-11-04 |
-| **Website update** | 2026-11-04 | Manuscript synthesis and version-specific bibliography corrections; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-11-14 | Search horizon; 335 papers and 11 official resources; collection updated 2026-11-14 |
+| **Website update** | 2026-11-14 | November 14 literature refresh and evidence dataset v0.5.0; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -112,11 +112,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**318 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-04**
+**335 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-14**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **304/318** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **321/335** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -126,11 +126,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-10-24 | 276 | 11 |
 | 2026-10-27 | 282 | 11 |
 | 2026-10-31 | 285 | 11 |
 | 2026-11-01 | 305 | 11 |
 | 2026-11-04 | 318 | 11 |
+| 2026-11-14 | 335 | 11 |
 
 </details>
 

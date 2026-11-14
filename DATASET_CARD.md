@@ -2,34 +2,34 @@
 
 ## Status and purpose
 
-**v0.4.1 — corrected November 4, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
+**v0.5.0 — released November 14, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
 
 This resource documents what agent harnesses change, how changes are selected, what outcomes are reported, and what the evidence cannot establish. It is a curated evidence collection, not a new benchmark or a collection of reproduced experiments.
 
 ## Composition and coverage
 
-| Quantity | v0.1.0 | v0.2.0 | v0.3.0 | v0.4.0 / v0.4.1 |
-| --- | ---: | ---: | ---: | ---: |
-| Category-source records | 95 | 113 | 132 | 145 |
-| Distinct works | 63 | 81 | 100 | 113 |
-| Records with structured signals | 4 | 22 | 30 | 43 |
-| Scoped signals | 6 | 24 | 32 | 45 |
-| Documented primary-source checks | Not claimed | 28 | 47 | 60 |
-| Inherited records without a new primary audit | 95 | 85 | 85 | 85 |
-| Populated selection/control fields | 0 | 28 | 47 | 60 |
-| Independently human-adjudicated records | Not claimed | 0 | 0 | 0 |
+| Quantity | v0.1.0 | v0.2.0 | v0.3.0 | v0.4.0 / v0.4.1 | v0.5.0 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Category-source records | 95 | 113 | 132 | 145 | 159 |
+| Distinct works | 63 | 81 | 100 | 113 | 126 |
+| Records with structured signals | 4 | 22 | 30 | 43 | 57 |
+| Scoped signals | 6 | 24 | 32 | 45 | 59 |
+| Documented primary-source checks | Not claimed | 28 | 47 | 60 | 74 |
+| Inherited records without a new primary audit | 95 | 85 | 85 | 85 | 85 |
+| Populated selection/control fields | 0 | 28 | 47 | 60 | 74 |
+| Independently human-adjudicated records | Not claimed | 0 | 0 | 0 | 0 |
 
-The 113 works comprise 112 papers and one benchmark resource. v0.4.0 adds 13 records and 13 scoped observations, and rechecks KARMA against its November 2 revision. A paper can appear in several categories; records and signals are not independent effects. The v0.4.1 patch corrects RSI-Env benchmark identities, narrows the Masked Erosion model-swap signal to AppWorld, qualifies HCL interactive acceptance, updates version-specific locators and ModularRSI authors, and normalizes Terminal-Bench 2.1 identifiers. Record and signal counts do not change. All four earlier releases remain byte-for-byte unchanged.
+The 126 works comprise 125 papers and one benchmark resource. v0.5.0 adds 14 records and 14 scoped observations: 13 new works and one new multi-domain record for an existing work's v2. MemSkill v3 and RSI-Dojo v2 retain their scoped labels after version rechecks. The two legacy Multi-Task Self-Harness v1 records remain unchanged. Records and signals are not independent effects. All five earlier releases remain byte-for-byte unchanged; their correction notices remain applicable.
 
-Targeted discovery runs through **November 4, 2026**, with a seven-day overlap beginning October 25. The new batch includes papers first posted October 25–November 3. The original survey atlas retains its **October 1** cutoff and 95 records. The broader bibliography contains 318 papers and 11 resources; it is a separate collection, not the dataset denominator.
+Targeted discovery runs through **November 14, 2026**, with a seven-day overlap beginning October 28. New additions were first posted November 2–11. The original survey atlas retains its **October 1** cutoff and 95 records. The broader bibliography contains 335 papers and 11 resources; it is a separate collection, not the dataset denominator.
 
-The dataset spans coding, reasoning, interactive, visual and cross-domain settings. Existing task categories accommodate this batch; no new category or historical reassignment was needed. This release distinguishes retained guidance from task-local edits, router learning from fixed-executor behavior, promotion from deployment selection, and skill-routing accuracy from task completion.
+The dataset spans coding, reasoning, interactive, visual and cross-domain settings. Existing task categories accommodate this batch; no new category or historical reassignment was needed. This release emphasizes continual forgetting, total improvement cost, statistical acceptance, verifier validity, student-specific skill reuse and coupled weight/harness training. Positive, mixed and regression observations are all retained.
 
 ## Collection and review
 
-See `PROTOCOL.md` for eligibility and scientific distinctions. Four date-bounded arXiv queries returned 220 unique works: 22 already collected, 13 newly inspected and included, and 185 unscreened keyword candidates. Fourteen older pending candidates outside this result set remain queued, making 199 pending candidates across the two runs. Pending does not mean eligible or excluded. Prior discovery lacks a complete corpus denominator; no PRISMA completeness or recall estimate is claimed.
+See `PROTOCOL.md` for eligibility and scientific distinctions. Four date-bounded arXiv queries returned 295 unique works: 24 already collected, 17 newly inspected and included in the bibliography, and 254 pending keyword candidates. Of the 17 additions, 13 contribute evidence records; four remain contextual bibliography entries. Eighty older pending candidates outside this result set remain queued, for 334 cumulative pending candidates. These are keyword matches, not an eligible-study denominator. Supplemental primary-site searches and unresolved follow-ups are recorded separately. BOXBOX v2 remains pending because its latest full text could not be retrieved. No PRISMA completeness or recall estimate is claimed.
 
-All 93 arXiv works already in the source registry were checked through the official unversioned-ID API. KARMA v2 was the only update dated after November 1; its gate, transfer result and limitations were re-inspected. The remaining works retain their earlier claim-review dates. `screening.json` now retains 54 decisions: 50 included extractions and four contextual works. Version migrations are separately recorded in `corrections.json`.
+All 106 arXiv works in the prior evidence-source registry were checked through the official unversioned-ID API. Three post-November-4 revisions were inspected: MemSkill v3, RSI-Dojo v2 and Multi-Task Self-Evolving Harnesses v2. This is not a version audit of all 335 bibliography papers. Other records retain their earlier review dates. The screening ledger retains prior decisions and distinguishes contextual exclusions from evidence inclusions; version migrations are separately recorded in `corrections.json`.
 
 Evidence uses pinned papers and locators. First release, inspected revision, metadata check and claim review are distinct dates. Full third-party papers are not distributed. Short support anchors and hashes identify inspected HTML renderings; arXiv can regenerate HTML without changing the PDF version.
 
@@ -37,9 +37,9 @@ Evidence uses pinned papers and locators. First release, inspected revision, met
 
 ## Files and loading
 
-`dataset.json` and `records.jsonl` preserve the nested representation; `schema.json` specifies it. `primary-checked.records.jsonl` contains only the 60 targeted primary-checked records. Seventeen have no structured outcome; use `signals.csv` for the 45 scoped observations. This subset is not independently human-adjudicated.
+`dataset.json` and `records.jsonl` preserve the nested representation; `schema.json` specifies it. `primary-checked.records.jsonl` contains only the 74 targeted primary-checked records. Seventeen have no structured outcome; use `signals.csv` for the 59 scoped observations. This subset is not independently human-adjudicated.
 
-`sources.json`, `screening.json`, `search-log.json`, `corrections.json`, `quality-report.json`, `citation.bib` and `checksums.json` accompany every version. The v0.4.0 search log preserves its query counts and pending identities; the historical logs remain separately archived.
+`sources.json`, `screening.json`, `search-log.json`, `corrections.json`, `quality-report.json`, `citation.bib` and `checksums.json` accompany every version. The v0.5.0 search log preserves its query counts and pending identities; the historical logs remain separately archived.
 
 Normalized tables avoid nested JSON strings inside CSV cells:
 
@@ -54,7 +54,7 @@ Normalized tables avoid nested JSON strings inside CSV cells:
 | `signal_components.csv` | Signal/component relation |
 | `signal_benchmarks.csv` | Explicit signal applicability |
 | `reviews.csv` | Review provenance per record |
-| `review-queue.csv` | 85 primary-source reviews and 60 human-adjudication tasks; reviewer fields are blank |
+| `review-queue.csv` | 85 primary-source reviews and 74 human-adjudication tasks; reviewer fields are blank |
 
 Flat JSONL files for papers, all records, the primary-checked subset and signals support separate HF configurations. The split is called `data`; no training/test partition is invented. Randomly splitting related literature rows would not produce a valid model benchmark.
 
