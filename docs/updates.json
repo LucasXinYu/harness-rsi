@@ -17,6 +17,21 @@
   ],
   "releases": [
     {
+      "id": "dataset-v050-2026-11-14",
+      "date": "2026-11-14",
+      "kind": "website",
+      "title": "November 14 literature refresh and evidence dataset v0.5.0",
+      "records": 95,
+      "changes": [
+        "Added 17 primary-text-inspected bibliography papers; the collection now has 335 papers and 11 resources.",
+        "Dataset v0.5.0 adds 14 scoped records: 159 records from 126 works, 74 AI-assisted primary checks and 59 observations. Human adjudication remains pending.",
+        "Inspected MemSkill v3, RSI-Dojo v2 and Multi-Task Self-Evolving Harnesses v2; preserved older version-specific evidence and all five published dataset releases.",
+        "Search covers October 28–November 14 with 334 cumulative unresolved keyword candidates; coverage is targeted, not exhaustive.",
+        "The historical October 1 atlas remains 95 records. Search, dataset, manuscript and platform preprint dates remain separate.",
+        "Published a 93-page November 14 author reading revision with main-text synthesis and version-specific citations; posted Preprints.org v2 remains separate."
+      ]
+    },
+    {
       "id": "manuscript-polish-2026-11-04",
       "date": "2026-11-04",
       "kind": "website",

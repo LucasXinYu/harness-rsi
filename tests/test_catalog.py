@@ -152,6 +152,24 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'exactly one'):
             c.validate_project(bad,records)
 
+    def test_frozen_finding_version_must_be_pinned_and_same_work(self):
+        project=c.read_json(c.ROOT/'docs/project.json')
+        records=c.load_catalog()
+        source=next(s for d in project['domains'] for f in d['findings'] for s in f['sources'] if s['key']=='multitask_selfharness2026')
+        source['url']='https://arxiv.org/abs/2609.38372v1'
+        source['version_note']='Frozen finding inspected against v1.'
+        c.validate_project(project,records)
+        source.pop('version_note')
+        with self.assertRaisesRegex(ValueError,'differs'):
+            c.validate_project(project,records)
+        source['version_note']='A note cannot authorize a different paper.'
+        source['url']='https://arxiv.org/abs/2609.00001v1'
+        with self.assertRaisesRegex(ValueError,'differs'):
+            c.validate_project(project,records)
+        source['url']='https://arxiv.org/abs/2609.38372'
+        with self.assertRaisesRegex(ValueError,'differs'):
+            c.validate_project(project,records)
+
     def test_current_corpus_totals_and_generated_output(self):
         records=c.load_catalog()
         stats=c.statistics(records,c.read_json(c.ROOT/'data/history.json'))

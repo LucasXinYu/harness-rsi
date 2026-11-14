@@ -320,6 +320,16 @@
         "source_version": "2609.38372v1",
         "metadata_checked_on": "2026-10-31",
         "metadata_basis": "arXiv Atom API, exact version"
+      },
+      {
+        "name": "Multi-Task Self-Evolving Harnesses (v2)",
+        "url": "https://arxiv.org/html/2609.38372v2",
+        "locator": "Sections 3–6; Tables 3–5; Appendix D",
+        "source_version": "2609.38372v2",
+        "first_release_date": "2026-09-29",
+        "source_version_date": "2026-11-12",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and primary-text identity"
       }
     ]
   },
@@ -1912,13 +1922,13 @@
     },
     "sources": [
       {
-        "name": "MemSkill (v1)",
-        "url": "https://arxiv.org/html/2602.02474v1",
-        "locator": "Sections 3.3–3.5, 4.3; Table 2; Appendix A.2",
+        "name": "MemSkill (v3)",
+        "url": "https://arxiv.org/html/2602.02474v3",
+        "locator": "Sections 3.3–3.5 and 4.3; Table 2; Appendix A.2",
         "first_release_date": "2026-02-02",
-        "source_version_date": "2026-02-02",
-        "source_version": "2602.02474v1",
-        "metadata_checked_on": "2026-10-31",
+        "source_version_date": "2026-11-06",
+        "source_version": "2602.02474v3",
+        "metadata_checked_on": "2026-11-14",
         "metadata_basis": "arXiv Atom API, exact version"
       }
     ]
@@ -3160,13 +3170,13 @@
     },
     "sources": [
       {
-        "name": "RSI-Dojo (v1)",
-        "url": "https://arxiv.org/html/2611.03698v1",
+        "name": "RSI-Dojo (v2)",
+        "url": "https://arxiv.org/html/2611.03698v2",
         "locator": "Sections 3–5 and 7",
-        "source_version": "2611.03698v1",
+        "source_version": "2611.03698v2",
         "first_release_date": "2026-10-29",
-        "source_version_date": "2026-10-29",
-        "metadata_checked_on": "2026-11-04",
+        "source_version_date": "2026-11-09",
+        "metadata_checked_on": "2026-11-14",
         "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
       }
     ]
@@ -3194,6 +3204,344 @@
         "source_version_date": "2026-10-25",
         "metadata_checked_on": "2026-11-04",
         "metadata_basis": "Official arXiv Atom metadata and primary-text author match"
+      }
+    ]
+  },
+  {
+    "key": "harnessflow2026",
+    "title": "HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents",
+    "authors": "Zhi Hong and Qianlong Wang and Hongchen Wei and Aidan Wu and Daohong Ying and Mingze Kong and Bei Liu and Chong Luo",
+    "kind": "paper",
+    "arxiv_id": "2611.06254",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-04",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.06254v1"
+    },
+    "sources": [
+      {
+        "name": "HarnessFlow (v1)",
+        "url": "https://arxiv.org/html/2611.06254v1",
+        "locator": "Sections 2–4.3; Tables 3–4; Appendices C–D",
+        "source_version": "2611.06254v1",
+        "first_release_date": "2026-11-04",
+        "source_version_date": "2026-11-04",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "trust2026",
+    "title": "Trustworthy Recursive Self-Improvement with Statistical Guarantees",
+    "authors": "Zihe Gao and Zhengling Qi and Yifan Cui",
+    "kind": "paper",
+    "arxiv_id": "2611.10787",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-07",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.10787v1"
+    },
+    "sources": [
+      {
+        "name": "TRUST (v1)",
+        "url": "https://arxiv.org/html/2611.10787v1",
+        "locator": "Sections 3–7; Table 1; Section 6.2",
+        "source_version": "2611.10787v1",
+        "first_release_date": "2026-11-07",
+        "source_version_date": "2026-11-07",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "multiloop2026",
+    "title": "MULTILOOP: Evolving Multi-Agent Harnesses for Complex Information-Seeking Tasks",
+    "authors": "Daniela Gottesman and Gal Yona and Ori Ram and Zorik Gekhman and Jonathan Herzig and Mor Geva and Roee Aharoni",
+    "kind": "paper",
+    "arxiv_id": "2611.15754",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-11",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.15754v1"
+    },
+    "sources": [
+      {
+        "name": "MULTILOOP (v1)",
+        "url": "https://arxiv.org/html/2611.15754v1",
+        "locator": "Sections 2–4; Appendix B",
+        "source_version": "2611.15754v1",
+        "first_release_date": "2026-11-11",
+        "source_version_date": "2026-11-11",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "jomoha2026",
+    "title": "JoMoHa: Joint Model--Harness Optimization with Reinforcement Learning",
+    "authors": "Xudong Wu and Guangchen Lan and Mingqi Yuan and Jiayu Chen",
+    "kind": "paper",
+    "arxiv_id": "2611.11499",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-08",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.11499v1"
+    },
+    "sources": [
+      {
+        "name": "JoMoHa (v1)",
+        "url": "https://arxiv.org/html/2611.11499v1",
+        "locator": "Sections 4–6; Section 6.2",
+        "source_version": "2611.11499v1",
+        "first_release_date": "2026-11-08",
+        "source_version_date": "2026-11-08",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "rsi_tax2026",
+    "title": "The RSI Tax: When Recursive Self-Improvement Is Not Worth the Cost",
+    "authors": "Yitong Zhang and Ang Li and Yisen Wang",
+    "kind": "paper",
+    "arxiv_id": "2611.13524",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-10",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.13524v1"
+    },
+    "sources": [
+      {
+        "name": "RSI Tax (v1)",
+        "url": "https://arxiv.org/html/2611.13524v1",
+        "locator": "Sections 2–6; Tables 2–3",
+        "source_version": "2611.13524v1",
+        "first_release_date": "2026-11-10",
+        "source_version_date": "2026-11-10",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "flex_rsi2026",
+    "title": "Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents",
+    "authors": "Jingdong Zhang and Jionghao Wang and Zhengming Yu and Yancheng Cai and Wei Chow and Chris Choy and Zhiyang Dou and Hang Hua and Jiachen Li and Zhixuan Liu and Chen Wang and Songlin Wei and Siyuan Yang and Yu Yuan and Xiaohang Zhan and Yucheng Zhang and Shuhong Zheng and Xin Li and Lingjie Liu and Wojciech Matusik and Zhengzhong Tu and Wenping Wang",
+    "kind": "paper",
+    "arxiv_id": "2611.08946",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-06",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.08946v1"
+    },
+    "sources": [
+      {
+        "name": "Flex-RSI (v1)",
+        "url": "https://arxiv.org/html/2611.08946v1",
+        "locator": "Sections 3.2–4.1 and 5.4; Tables 8–9; Section 6",
+        "source_version": "2611.08946v1",
+        "first_release_date": "2026-11-06",
+        "source_version_date": "2026-11-06",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "fgse2026",
+    "title": "When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents",
+    "authors": "Runxuan Tang and Haoyu Gao and Yuyan Ding and Junyi Yao and Zihao Zheng and Zecheng Sheng and Liwei Hou",
+    "kind": "paper",
+    "arxiv_id": "2611.14326",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-10",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.14326v1"
+    },
+    "sources": [
+      {
+        "name": "FGSE (v1)",
+        "url": "https://arxiv.org/html/2611.14326v1",
+        "locator": "Sections 3–6; Tables 2 and 6; Appendices C–D",
+        "source_version": "2611.14326v1",
+        "first_release_date": "2026-11-10",
+        "source_version_date": "2026-11-10",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "failure_traces2026",
+    "title": "Agent Self-Improvement with Frozen Weights: The Added Value and Limits of Failure Traces",
+    "authors": "Arkid Mitra and Snehil Saluja",
+    "kind": "paper",
+    "arxiv_id": "2611.11342",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-08",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.11342v2"
+    },
+    "sources": [
+      {
+        "name": "Failure traces and portable skills (v2)",
+        "url": "https://arxiv.org/html/2611.11342v2",
+        "locator": "Sections 2–4; Table 1",
+        "source_version": "2611.11342v2",
+        "first_release_date": "2026-11-08",
+        "source_version_date": "2026-11-11",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "student_aware_teaching2026",
+    "title": "Teaching the Harness: Student-Aware Skill Transfer for LLM Agents",
+    "authors": "Chang Liu and Bo Wu",
+    "kind": "paper",
+    "arxiv_id": "2611.13144",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-09",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.13144v1"
+    },
+    "sources": [
+      {
+        "name": "Student-Aware Teaching (v1)",
+        "url": "https://arxiv.org/html/2611.13144v1",
+        "locator": "Sections 3–6; Tables 2–3 and 5–6",
+        "source_version": "2611.13144v1",
+        "first_release_date": "2026-11-09",
+        "source_version_date": "2026-11-09",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "veritas2026",
+    "title": "Veritas: A Verifier Generation Harness for Agent Tasks",
+    "authors": "Daoan Zhang and Qinbo Bai and Dehai Min and Xingyu Mu and Ziyi Chen and Jianing Yin",
+    "kind": "paper",
+    "arxiv_id": "2611.13336",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-09",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.13336v1"
+    },
+    "sources": [
+      {
+        "name": "Veritas (v1)",
+        "url": "https://arxiv.org/html/2611.13336v1",
+        "locator": "Sections 3.1–4.5; Tables 3–4; Limitations",
+        "source_version": "2611.13336v1",
+        "first_release_date": "2026-11-09",
+        "source_version_date": "2026-11-09",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "infrarsi2026",
+    "title": "InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure",
+    "authors": "InfraRSI Team and Yuchuan Tian and Haocheng Mei and Ye Yuan and Chao Xu and Boxun Li and Guohao Dai and Kai Han and Allen Chen and Yunhe Wang and Yu Wang",
+    "kind": "paper",
+    "arxiv_id": "2611.11558",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-08",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.11558v1"
+    },
+    "sources": [
+      {
+        "name": "InfraRSI (v1)",
+        "url": "https://arxiv.org/html/2611.11558v1",
+        "locator": "Sections 3–6; Tables 5–6; Appendix A",
+        "source_version": "2611.11558v1",
+        "first_release_date": "2026-11-08",
+        "source_version_date": "2026-11-08",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
+      }
+    ]
+  },
+  {
+    "key": "continual_harness_forgetting2026",
+    "title": "Can Coding Agents Sustain Continual Evolution without Forgetting?",
+    "authors": "Shangziqi Zhao and Yitong Zhang and Jia Li",
+    "kind": "paper",
+    "arxiv_id": "2611.03219",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-02",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.03219v1"
+    },
+    "sources": [
+      {
+        "name": "Continual harness forgetting (v1)",
+        "url": "https://arxiv.org/html/2611.03219v1",
+        "locator": "Sections 3–4; Appendices A–B",
+        "source_version": "2611.03219v1",
+        "first_release_date": "2026-11-02",
+        "source_version_date": "2026-11-02",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and original PDF title page; experimental HTML omits two authors"
+      }
+    ]
+  },
+  {
+    "key": "teacher_free_coevolution2026",
+    "title": "Knowledge in the Harness, Reliability in the Weights: Teacher-Free Co-Evolution of an LLM Agent",
+    "authors": "Yujia Zhang and Xinqi Ren and Shixiong Zhou and Jia Meng",
+    "kind": "paper",
+    "arxiv_id": "2611.15268",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-11",
+      "precision": "day",
+      "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+      "source": "https://arxiv.org/abs/2611.15268v1"
+    },
+    "sources": [
+      {
+        "name": "Teacher-free skill and policy co-evolution (v1)",
+        "url": "https://arxiv.org/html/2611.15268v1",
+        "locator": "Sections 4–6; Tables 2–3",
+        "source_version": "2611.15268v1",
+        "first_release_date": "2026-11-11",
+        "source_version_date": "2026-11-11",
+        "metadata_checked_on": "2026-11-14",
+        "metadata_basis": "Official arXiv metadata and names in full primary text"
       }
     ]
   }

@@ -1,24 +1,24 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-11-04",
-    "updated_on": "2026-11-04",
+    "search_cutoff": "2026-11-14",
+    "updated_on": "2026-11-14",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 318,
+    "papers": 335,
     "resources": 11,
     "categories": {
-      "Surveys, Definitions, and Conceptual Frameworks": 33,
-      "Harness Optimization and Search Workflows": 51,
-      "Model and Policy Training, Harness Co-Evolution, and Distillation": 30,
+      "Surveys, Definitions, and Conceptual Frameworks": 34,
+      "Harness Optimization and Search Workflows": 54,
+      "Model and Policy Training, Harness Co-Evolution, and Distillation": 32,
       "Self-Modification and Meta-Level Improvement": 21,
-      "Memory, Context, Skills, and Experience Reuse": 48,
-      "Benchmarks for Harness Optimization and Adaptation": 7,
-      "Generalization, Evaluation Methodology, and Safety": 36,
-      "Agent Architectures and Harness Infrastructure": 22,
+      "Memory, Context, Skills, and Experience Reuse": 50,
+      "Benchmarks for Harness Optimization and Adaptation": 8,
+      "Generalization, Evaluation Methodology, and Safety": 42,
+      "Agent Architectures and Harness Infrastructure": 24,
       "Prompt, Workflow, and Program Optimization": 20,
       "Task-Time Search and Output Refinement (Adjacent Work)": 6,
       "Downstream Task Benchmarks": 16,
@@ -62,7 +62,7 @@
       "2026-08": 32,
       "2026-09": 68,
       "2026-10": 74,
-      "2026-11": 10
+      "2026-11": 27
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -74,12 +74,12 @@
       "2026-08": 6,
       "2026-09": 13,
       "2026-10": 13,
-      "2026-11": 1
+      "2026-11": 4
     },
-    "monthly_coverage": 304,
+    "monthly_coverage": 321,
     "date_precision": {
       "month": 8,
-      "day": 296,
+      "day": 313,
       "year": 13,
       "unknown": 1
     },
@@ -137,6 +137,11 @@
       {
         "date": "2026-11-04",
         "papers": 318,
+        "resources": 11
+      },
+      {
+        "date": "2026-11-14",
+        "papers": 335,
         "resources": 11
       }
     ]
@@ -2727,13 +2732,13 @@
       "title": "Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer",
       "authors": "Xu, Qiankai",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2609.38372v1",
+      "url": "https://arxiv.org/abs/2609.38372v2",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2609.38372",
       "arxiv": "2609.38372",
       "category": "Harness Optimization and Search Workflows",
       "kind": "paper",
-      "summary": "A single-author paper affiliated with Nanjing University. The solver and proposer use the same frozen model and current harness, with the proposer directly editing the code and evolution notes. Evolution mixes five benchmarks, followed by continual adaptation with replay; evaluation includes held-out tasks and five initially unseen benchmarks. Its pretraining/training terminology refers to external harness optimization, not weight updates. Acceptance checks runnability rather than requiring a measured performance improvement. The updated harness is reused by both roles in subsequent iterations, supporting discussion of partial recursion. The execution interface and outer scheduling remain fixed; task-score gains alone do not isolate an improvement in the proposer. This is a central reference for shared solver/proposer harnesses, data mixtures, transfer, and update scheduling.",
+      "summary": "Runs the same frozen model and current harness as solver and proposer; edits code and evolution notes after mixed-domain batches, then continues on Claw-Eval with replayed success anchors. Acceptance checks executability rather than performance. Gains depend on backbone and task; the out-of-distribution mean is driven largely by BrowseComp-Plus. Only one model has three independent first-stage search runs. Source: Sections 3–6; Tables 3–5; Appendix D.",
       "added_on": "2026-10-03",
       "release": {
         "value": "2026-09-29",
@@ -5647,7 +5652,7 @@
       "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
       "authors": "Zhang, Haozhen and Long, Quanyu and Bao, Jianzhu and Feng, Tao and Zhang, Weizhi and Yue, Haodong and Wang, Wenya",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2602.02474v2",
+      "url": "https://arxiv.org/abs/2602.02474v3",
       "venue": "arXiv preprint",
       "doi": "10.48550/arXiv.2602.02474",
       "arxiv": "2602.02474",
@@ -6687,7 +6692,7 @@
       "title": "Training LLM Agents to Automate LLM Post-Training with RSI-Dojo",
       "authors": "Shuzheng Gao and Zhaojian Yu and Penghao Yin and Yuling Shi and Kai Cai and Shilin He and Michael R. Lyu",
       "year": "2026",
-      "url": "https://arxiv.org/abs/2611.03698v1",
+      "url": "https://arxiv.org/abs/2611.03698v2",
       "venue": "arXiv preprint arXiv:2611.03698",
       "doi": null,
       "arxiv": "2611.03698",
@@ -6720,6 +6725,346 @@
         "precision": "day",
         "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-04",
         "source": "https://arxiv.org/abs/2610.34073v1"
+      }
+    },
+    {
+      "id": "harnessflow2026",
+      "title": "HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents",
+      "authors": "Zhi Hong and Qianlong Wang and Hongchen Wei and Aidan Wu and Daohong Ying and Mingze Kong and Bei Liu and Chong Luo",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.06254v1",
+      "venue": "arXiv preprint arXiv:2611.06254",
+      "doi": null,
+      "arxiv": "2611.06254",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Uses MCTS over executable harness variants; a coding agent edits prompts, tools and control code using archived validation scores and trajectories. Five executions per candidate are not five independent search runs. Search is rerun for the second model, so this is not unchanged cross-model transfer; reported inference costs exclude one-time search costs. Source: Sections 2–4.3; Tables 3–4; Appendices C–D.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-04",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.06254v1"
+      }
+    },
+    {
+      "id": "trust2026",
+      "title": "Trustworthy Recursive Self-Improvement with Statistical Guarantees",
+      "authors": "Zihe Gao and Zhengling Qi and Yifan Cui",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.10787v1",
+      "venue": "arXiv preprint arXiv:2611.10787",
+      "doi": null,
+      "arxiv": "2611.10787",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Places an online statistical gate around fixed-proposer harness updates, using e-values, adaptive error-budget allocation and a correction for validation reuse. The error-control result depends on a conditional mean bound and overlap-bias specification; tolerated loss is not a guarantee that each accepted edit improves. Empirical zero-tolerance error differs from the theoretical tolerance-adjusted quantity. Source: Sections 3–7; Table 1; Section 6.2.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-07",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.10787v1"
+      }
+    },
+    {
+      "id": "multiloop2026",
+      "title": "MULTILOOP: Evolving Multi-Agent Harnesses for Complex Information-Seeking Tasks",
+      "authors": "Daniela Gottesman and Gal Yona and Ori Ram and Zorik Gekhman and Jonathan Herzig and Mor Geva and Roee Aharoni",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.15754v1",
+      "venue": "arXiv preprint arXiv:2611.15754",
+      "doi": null,
+      "arxiv": "2611.15754",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Optimizes executable multi-agent search loops and keeps an archive of code and training performance; improvements include prompts, tools and coordination code. The single-agent/multi-agent comparison is not compute matched. Evaluation uses one benchmark; orchestration failures largely persist despite gains from prompt formatting and tool changes. Source: Sections 2–4; Appendix B.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-11",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.15754v1"
+      }
+    },
+    {
+      "id": "jomoha2026",
+      "title": "JoMoHa: Joint Model–Harness Optimization with Reinforcement Learning",
+      "authors": "Xudong Wu and Guangchen Lan and Mingqi Yuan and Jiayu Chen",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.11499v1",
+      "venue": "arXiv preprint arXiv:2611.11499",
+      "doi": null,
+      "arxiv": "2611.11499",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Jointly trains an Engineer that generates harness programs and a Solver that executes them, using shared rewards, collaboration-aware critics and asymmetric policy updates. Both policies change weights. Most external baseline scores are taken from Harness-R1; only JoMoHa and WHALE are evaluated locally. Freezing the Engineer parameters still permits fresh program sampling. Source: Sections 4–6; Section 6.2.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-08",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.11499v1"
+      }
+    },
+    {
+      "id": "rsi_tax2026",
+      "title": "The RSI Tax: When Recursive Self-Improvement Is Not Worth the Cost",
+      "authors": "Yitong Zhang and Ang Li and Yisen Wang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.13524v1",
+      "venue": "arXiv preprint arXiv:2611.13524",
+      "doi": null,
+      "arxiv": "2611.13524",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Evaluates continual harness methods prequentially and accounts for proposer, execution and verification tokens; a bounded periodic-note baseline tests low-cost persistent adaptation. The evaluation uses fixed task orders and few repeated runs. An artifact not used later is not proof its generation was causally wasted; token totals are not monetary cost. Terminal task order is not measured environmental drift. Source: Sections 2–6; Tables 2–3.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-10",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.13524v1"
+      }
+    },
+    {
+      "id": "flex_rsi2026",
+      "title": "Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents",
+      "authors": "Jingdong Zhang and Jionghao Wang and Zhengming Yu and Yancheng Cai and Wei Chow and Chris Choy and Zhiyang Dou and Hang Hua and Jiachen Li and Zhixuan Liu and Chen Wang and Songlin Wei and Siyuan Yang and Yu Yuan and Xiaohang Zhan and Yucheng Zhang and Shuhong Zheng and Xin Li and Lingjie Liu and Wojciech Matusik and Zhengzhong Tu and Wenping Wang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.08946v1",
+      "venue": "arXiv preprint arXiv:2611.08946",
+      "doi": null,
+      "arxiv": "2611.08946",
+      "category": "Benchmarks for Harness Optimization and Adaptation",
+      "kind": "paper",
+      "summary": "Alternates an executor that improves a task solution with an improver that edits executor and improver harness code and prompts under protected validation and hidden-test evaluation. Agent backbone weights remain fixed, but some task solutions train helper models. Most model/task configurations have one run; the frozen-harness comparison covers seven pairs, not all benchmark settings. Source: Sections 3.2–4.1 and 5.4; Tables 8–9; Section 6.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-06",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.08946v1"
+      }
+    },
+    {
+      "id": "fgse2026",
+      "title": "When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents",
+      "authors": "Runxuan Tang and Haoyu Gao and Yuyan Ding and Junyi Yao and Zihao Zheng and Zecheng Sheng and Liwei Hou",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.14326v1",
+      "venue": "arXiv preprint arXiv:2611.14326",
+      "doi": null,
+      "arxiv": "2611.14326",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Represents lessons as scoped, verifier-aware hypotheses and tests temporary updates with transfer, falsification and regression probes before commit, refinement or rejection. Reliability depends on executable verifiers and probe coverage. The theoretical bound requires fresh final probes and a finite conditionally fixed candidate set; it is not unconditional safety for arbitrary updates. Source: Sections 3–6; Tables 2 and 6; Appendices C–D.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-10",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.14326v1"
+      }
+    },
+    {
+      "id": "failure_traces2026",
+      "title": "Agent Self-Improvement with Frozen Weights: The Added Value and Limits of Failure Traces",
+      "authors": "Arkid Mitra and Snehil Saluja",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.11342v2",
+      "venue": "arXiv preprint arXiv:2611.11342",
+      "doi": null,
+      "arxiv": "2611.11342",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Compares teacher-written portable skill notes derived from target-agent failure traces with a same-budget-ceiling teacher that sees no episode-specific trace. Actual searches are not identical despite common ceilings. Improvements on generated sealed decisions do not carry to official interactive-task success; other tested domains have null results or data defects. Source: Sections 2–4; Table 1.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-08",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.11342v2"
+      }
+    },
+    {
+      "id": "student_aware_teaching2026",
+      "title": "Teaching the Harness: Student-Aware Skill Transfer for LLM Agents",
+      "authors": "Chang Liu and Bo Wu",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.13144v1",
+      "venue": "arXiv preprint arXiv:2611.13144",
+      "doi": null,
+      "arxiv": "2611.13144",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Maintains a student profile, diagnoses failures with probes and writes validated executable skills for a frozen student; the teacher is absent at deployment. Primary evidence uses one teacher/student pair and custom task suites. Control runs are separate jobs rather than perfectly paired experiments; transfer depends on the receiving student and selector. Source: Sections 3–6; Tables 2–3 and 5–6.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-09",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.13144v1"
+      }
+    },
+    {
+      "id": "veritas2026",
+      "title": "Veritas: A Verifier Generation Harness for Agent Tasks",
+      "authors": "Daoan Zhang and Qinbo Bai and Dehai Min and Xingyu Mu and Ziyi Chen and Jianing Yin",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.13336v1",
+      "venue": "arXiv preprint arXiv:2611.13336",
+      "doi": null,
+      "arxiv": "2611.13336",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Generates task-grounded verifier programs using evidence contracts, domain rules and authoring principles; candidates are revised by a model or researchers and selected on validation agreement. Some main results use tasks involved in mechanism development. Terminal evaluations are the closest held-out results. Pairwise judging sees candidates, unlike execution-verifier generation; oracle agreement is not task-solving improvement. Source: Sections 3.1–4.5; Tables 3–4; Limitations.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-09",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.13336v1"
+      }
+    },
+    {
+      "id": "infrarsi2026",
+      "title": "InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure",
+      "authors": "InfraRSI Team and Yuchuan Tian and Haocheng Mei and Ye Yuan and Chao Xu and Boxun Li and Guohao Dai and Kai Han and Allen Chen and Yunhe Wang and Yu Wang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.11558v1",
+      "venue": "arXiv preprint arXiv:2611.11558",
+      "doi": null,
+      "arxiv": "2611.11558",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Co-optimizes training launch configurations and code under fixed workload contracts, fits time/memory surrogates from trials and stores verified, hardware-conditioned experience for later searches. Auxiliary surrogates are fitted; the optimized workload itself trains models. Predeclared loss tolerances vary by task and do not prove unchanged final model quality. Cross-hardware reuse warm-starts further search rather than directly deploying an unchanged configuration. Source: Sections 3–6; Tables 5–6; Appendix A.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-08",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.11558v1"
+      }
+    },
+    {
+      "id": "continual_harness_forgetting2026",
+      "title": "Can Coding Agents Sustain Continual Evolution without Forgetting?",
+      "authors": "Shangziqi Zhao and Yitong Zhang and Jia Li",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.03219v1",
+      "venue": "arXiv preprint arXiv:2611.03219",
+      "doi": null,
+      "arxiv": "2611.03219",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Sequentially evolves coding harnesses on two task types, then replays earlier tasks to measure forgetting and inspect verification, workflow and budget conflicts. Experiments sample 50 SWE-Bench Verified, 50 SWT and 30 FeatureBench tasks with one backbone. Replayed evolution tasks are not a separate held-out generalization test; SWT prompts are paraphrased to remove lexical shortcuts. Source: Sections 3–4; Appendices A–B.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-02",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.03219v1"
+      }
+    },
+    {
+      "id": "teacher_free_coevolution2026",
+      "title": "Knowledge in the Harness, Reliability in the Weights: Teacher-Free Co-Evolution of an LLM Agent",
+      "authors": "Yujia Zhang and Xinqi Ren and Shixiong Zhou and Jia Meng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.15268v1",
+      "venue": "arXiv preprint arXiv:2611.15268",
+      "doi": null,
+      "arxiv": "2611.15268",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Alternates validation-gated external skill-rule edits with GRPO LoRA policy training; the base model remains the editor even when the executing policy is adapted. Teacher-free does not mean fixed executor weights or a learned successor editor. The empirical edit gate is not a calibrated statistical test, and the two-round study does not establish long-run stability. Source: Sections 4–6; Tables 2–3.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-11",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.15268v1"
+      }
+    },
+    {
+      "id": "evox2026",
+      "title": "EvoX: Rethinking the Agent Harness as a Runtime Policy",
+      "authors": "Haoyang Zhang and Qumeng Sun and Xiao Zhang and Xiang Liu and Zhidong Fan and Junjie Wang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.15006v1",
+      "venue": "arXiv preprint arXiv:2611.15006",
+      "doi": null,
+      "arxiv": "2611.15006",
+      "category": "Agent Architectures and Harness Infrastructure",
+      "kind": "paper",
+      "summary": "A Rust runtime organizes action realization, execution continuity and outcome grounding. The controlled runtime comparison disables memory, evolution and extensions, so it is architectural evidence rather than a demonstrated recursive-improvement loop. Sections 3–5.6.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-11",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.15006v1"
+      }
+    },
+    {
+      "id": "third_eye2026",
+      "title": "Third Eye: Beyond Immediate Gains in Recursive Self-Improvement",
+      "authors": "Sujato Dutta and Padala Indira Sneha and Kypu Mahitha and Shashank Vanga and Neeraj Choudhary",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.12988v1",
+      "venue": "arXiv preprint arXiv:2611.12988",
+      "doi": null,
+      "arxiv": "2611.12988",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Tests whether a first-update winner remains a good choice after another update using separate selection/final tests. The intervention is small-model LoRA training, not harness revision; harm is model-dependent and the no-update control is not compute matched. Sections 3–5.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-08",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.12988v1"
+      }
+    },
+    {
+      "id": "conitzer_rsi_competition2026",
+      "title": "Is Recursive Self-Improvement Safe?",
+      "authors": "Vincent Conitzer",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.10261v1",
+      "venue": "arXiv preprint arXiv:2611.10261",
+      "doi": null,
+      "arxiv": "2611.10261",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Analyzes competitive incentives for self-improvement using a stochastic two-actor game. This is a conceptual safety model, not an empirical demonstration of harness optimization or observed recursive gains. Section 4.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-06",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.10261v1"
+      }
+    },
+    {
+      "id": "agenttorrent2026",
+      "title": "AgentTorrent: A Dataset of Context and Harness Engineering Artifacts on GitHub",
+      "authors": "Sebastian Baltes and Seyedmoein Mohsenimofidi and Levi Böhme and Vahram Nersesyan and Muhammad Auwal Abubakar and Jai Lal Lulla and Matthias Galster and Christoph Treude",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.15436v1",
+      "venue": "arXiv preprint arXiv:2611.15436",
+      "doi": null,
+      "arxiv": "2611.15436",
+      "category": "Agent Architectures and Harness Infrastructure",
+      "kind": "paper",
+      "summary": "Collects public repository artifacts associated with coding agents. Configuration and planning files offer a resource for studying harness practice; detection and co-occurrence do not establish causal performance gains or autonomous evolution. Artifact detection and repository classification have distinct validation procedures. Sections IV–V.",
+      "added_on": "2026-11-14",
+      "release": {
+        "value": "2026-11-11",
+        "precision": "day",
+        "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
+        "source": "https://arxiv.org/abs/2611.15436v1"
       }
     }
   ]

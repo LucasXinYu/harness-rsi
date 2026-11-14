@@ -4,8 +4,8 @@
   "arxiv_url": null,
   "website_url": "https://lucasxinyu.github.io/harness-rsi/",
   "paper": {
-    "pdf_url": "https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-04_revised.pdf",
-    "version_date": "2026-11-04",
+    "pdf_url": "https://lucasxinyu.github.io/harness-rsi/paper/Harness_RSI_Preprint_2026-11-14.pdf",
+    "version_date": "2026-11-14",
     "title": "From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents",
     "authors": [
       "Xin Yu",
@@ -140,7 +140,8 @@
               "key": "multitask_selfharness2026",
               "name": "Multi-task Self-Harness",
               "url": "https://arxiv.org/abs/2609.38372v1",
-              "locator": "SWE-Bench Pro input-limit recovery analysis"
+              "locator": "SWE-Bench Pro input-limit recovery analysis",
+              "version_note": "Frozen October 1 finding uses v1. The living bibliography and a separate v0.5.0 dataset record inspect v2; the v1 claim is not silently reassigned."
             },
             {
               "key": "aide2_2026",
