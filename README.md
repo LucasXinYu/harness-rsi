@@ -8,6 +8,8 @@
 
 <p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
+**November 15 bibliography update:** Added the source-checked Evo-Harness proceedings paper, with explicit transfer and regression boundaries. [Daily literature note](docs/LITERATURE_UPDATE_2026-11-15.md). Dataset and manuscript versions remain November 14.
+
 **November 14 literature and manuscript update:** Seventeen new papers and three inspected revisions sharpen comparisons of continual retention, validation, cost and policy/harness co-adaptation. [Read the source-linked synthesis](docs/LITERATURE_UPDATE_2026-11-14.md).
 
 We trace **what changed in the target-agent harness, what that change accomplished, and under which conditions it might be useful again**. The central object is a reusable change to an interface, parser, context rule, recovery branch or persistent skill. A benchmark score alone does not tell that story.
@@ -93,8 +95,8 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-11-14 | Search horizon; 335 papers and 11 official resources; collection updated 2026-11-14 |
-| **Website update** | 2026-11-14 | November 14 literature refresh and evidence dataset v0.5.0; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-11-15 | Search horizon; 336 papers and 11 official resources; collection updated 2026-11-15 |
+| **Website update** | 2026-11-15 | Add source-checked Evo-Harness to the living bibliography; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -112,11 +114,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**335 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-14**
+**336 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-15**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **321/335** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **322/336** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -126,11 +128,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-10-27 | 282 | 11 |
 | 2026-10-31 | 285 | 11 |
 | 2026-11-01 | 305 | 11 |
 | 2026-11-04 | 318 | 11 |
 | 2026-11-14 | 335 | 11 |
+| 2026-11-15 | 336 | 11 |
 
 </details>
 
