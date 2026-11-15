@@ -4150,5 +4150,17 @@
       "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
       "source": "https://arxiv.org/abs/2611.15436v1"
     }
+  },
+  "evo_harness_skill_compilation2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Compiles failed execution contexts into general and topic-specific skill guidance for a frozen solver, retaining updates across task batches. Distinguishes frozen train-split transfer from online target-stream updates and solver/evolver pairing. Benefits depend on recipient and feedback: Sonnet-solver pairings and self-generated feedback can regress. Natural-language skills and automatic benchmark feedback do not establish autonomous improvement of the evolver. Source: EMNLP 2026, Sections 3–4.6, Figure 6, Table 4 and Appendices F–I.",
+    "added_on": "2026-11-15",
+    "release": {
+      "value": "2026-10",
+      "precision": "month",
+      "basis": "ACL Anthology proceedings month; no earlier preprint verified. This is a publication-month fallback, not an exact first-release date.",
+      "source": "https://aclanthology.org/2026.emnlp-main.969/"
+    }
   }
 }

@@ -17,6 +17,19 @@
   ],
   "releases": [
     {
+      "id": "literature-2026-11-15",
+      "date": "2026-11-15",
+      "kind": "website",
+      "title": "Add source-checked Evo-Harness to the living bibliography",
+      "records": 95,
+      "changes": [
+        "Added one previously omitted EMNLP study after primary-text and author checks: 336 papers and 11 resources.",
+        "Daily search covered November 7–15; 102 unique arXiv results were already present in yesterday's discovery set. No newer revisions were returned for 119 arXiv evidence sources.",
+        "The new literature note separates transfer protocols, recipient-dependent regressions and grounded feedback. Bibliography inclusion does not add a structured dataset finding.",
+        "Dataset v0.5.0, the 95-record historical atlas, November 14 reading PDF and submitted preprint retain their own dates and contents."
+      ]
+    },
+    {
       "id": "dataset-v050-2026-11-14",
       "date": "2026-11-14",
       "kind": "website",
