@@ -1,21 +1,21 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-11-14",
-    "updated_on": "2026-11-14",
+    "search_cutoff": "2026-11-15",
+    "updated_on": "2026-11-15",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 335,
+    "papers": 336,
     "resources": 11,
     "categories": {
       "Surveys, Definitions, and Conceptual Frameworks": 34,
       "Harness Optimization and Search Workflows": 54,
       "Model and Policy Training, Harness Co-Evolution, and Distillation": 32,
       "Self-Modification and Meta-Level Improvement": 21,
-      "Memory, Context, Skills, and Experience Reuse": 50,
+      "Memory, Context, Skills, and Experience Reuse": 51,
       "Benchmarks for Harness Optimization and Adaptation": 8,
       "Generalization, Evaluation Methodology, and Safety": 42,
       "Agent Architectures and Harness Infrastructure": 24,
@@ -61,7 +61,7 @@
       "2026-07": 24,
       "2026-08": 32,
       "2026-09": 68,
-      "2026-10": 74,
+      "2026-10": 75,
       "2026-11": 27
     },
     "focus_monthly": {
@@ -76,9 +76,9 @@
       "2026-10": 13,
       "2026-11": 4
     },
-    "monthly_coverage": 321,
+    "monthly_coverage": 322,
     "date_precision": {
-      "month": 8,
+      "month": 9,
       "day": 313,
       "year": 13,
       "unknown": 1
@@ -142,6 +142,11 @@
       {
         "date": "2026-11-14",
         "papers": 335,
+        "resources": 11
+      },
+      {
+        "date": "2026-11-15",
+        "papers": 336,
         "resources": 11
       }
     ]
@@ -7065,6 +7070,26 @@
         "precision": "day",
         "basis": "First arXiv submission; targeted primary-text inspection on 2026-11-14",
         "source": "https://arxiv.org/abs/2611.15436v1"
+      }
+    },
+    {
+      "id": "evo_harness_skill_compilation2026",
+      "title": "Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents",
+      "authors": "Wei, Tianxin and Shi, Zhan and Lin, Minhua and He, Bing and Liu, Zewen and Sang, Yisi and Bei, Yuanchen and Ning, Xuying and Zou, Jiaru and Li, Ting-Wei and Lin, Xiao and Zhao, Yanjun and Wang, Chi and Dumoulin, Benoit and Wang, Dakuo and He, Jingrui and Lu, Hanqing",
+      "year": "2026",
+      "url": "https://aclanthology.org/2026.emnlp-main.969/",
+      "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+      "doi": "10.18653/2026.emnlp-main.969",
+      "arxiv": null,
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Compiles failed execution contexts into general and topic-specific skill guidance for a frozen solver, retaining updates across task batches. Distinguishes frozen train-split transfer from online target-stream updates and solver/evolver pairing. Benefits depend on recipient and feedback: Sonnet-solver pairings and self-generated feedback can regress. Natural-language skills and automatic benchmark feedback do not establish autonomous improvement of the evolver. Source: EMNLP 2026, Sections 3–4.6, Figure 6, Table 4 and Appendices F–I.",
+      "added_on": "2026-11-15",
+      "release": {
+        "value": "2026-10",
+        "precision": "month",
+        "basis": "ACL Anthology proceedings month; no earlier preprint verified. This is a publication-month fallback, not an exact first-release date.",
+        "source": "https://aclanthology.org/2026.emnlp-main.969/"
       }
     }
   ]

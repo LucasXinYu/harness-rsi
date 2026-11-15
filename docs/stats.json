@@ -1,9 +1,9 @@
 {
-  "papers": 335,
+  "papers": 336,
   "resources": 11,
-  "monthly_coverage": 321,
-  "search_cutoff": "2026-11-14",
-  "updated_on": "2026-11-14",
+  "monthly_coverage": 322,
+  "search_cutoff": "2026-11-15",
+  "updated_on": "2026-11-15",
   "timeline": [
     {
       "month": "2022-01",
@@ -349,14 +349,14 @@
     },
     {
       "month": "2026-10",
-      "papers": 74,
-      "cumulative": 294,
+      "papers": 75,
+      "cumulative": 295,
       "partial": false
     },
     {
       "month": "2026-11",
       "papers": 27,
-      "cumulative": 321,
+      "cumulative": 322,
       "partial": true
     }
   ],
@@ -419,6 +419,11 @@
     {
       "date": "2026-11-14",
       "papers": 335,
+      "resources": 11
+    },
+    {
+      "date": "2026-11-15",
+      "papers": 336,
       "resources": 11
     }
   ]
