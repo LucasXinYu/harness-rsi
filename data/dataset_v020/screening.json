@@ -495,5 +495,26 @@
     "decision": "excluded",
     "reason": "Included in broader bibliography only; outside empirical retained-harness intervention evidence for this release. Collects public repository artifacts associated with coding agents. Configuration and planning files offer a resource for studying harness practice; detection and co-occurrence do not establish causal performance gains or autonomous evolution. Artifact detection and repository classification have distinct validation procedures. Sections IV–V.",
     "screened_on": "2026-11-14"
+  },
+  {
+    "key": "modharness_rl2026",
+    "url": "https://arxiv.org/abs/2611.18533v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 3.2 and 4.1–4.3, Table 3, Limitations, Appendix C.3.",
+    "screened_on": "2026-11-16"
+  },
+  {
+    "key": "finacumen2026",
+    "url": "https://arxiv.org/abs/2606.17642v6",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 3, 4.2, 5.1 and 5.3, Table 2, Appendix K.",
+    "screened_on": "2026-11-16"
+  },
+  {
+    "key": "harnesspro2026",
+    "url": "https://arxiv.org/abs/2610.26770v2",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 3–5.2, Table 2 and Appendix A.",
+    "screened_on": "2026-11-16"
   }
 ]
