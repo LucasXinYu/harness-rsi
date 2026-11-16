@@ -4157,10 +4157,46 @@
     "summary": "Compiles failed execution contexts into general and topic-specific skill guidance for a frozen solver, retaining updates across task batches. Distinguishes frozen train-split transfer from online target-stream updates and solver/evolver pairing. Benefits depend on recipient and feedback: Sonnet-solver pairings and self-generated feedback can regress. Natural-language skills and automatic benchmark feedback do not establish autonomous improvement of the evolver. Source: EMNLP 2026, Sections 3–4.6, Figure 6, Table 4 and Appendices F–I.",
     "added_on": "2026-11-15",
     "release": {
-      "value": "2026-10",
-      "precision": "month",
-      "basis": "ACL Anthology proceedings month; no earlier preprint verified. This is a publication-month fallback, not an exact first-release date.",
-      "source": "https://aclanthology.org/2026.emnlp-main.969/"
+      "value": "2026-08-15",
+      "precision": "day",
+      "basis": "arXiv v1 submission. The EMNLP proceedings appeared in October.",
+      "source": "https://arxiv.org/abs/2608.15071v1"
+    }
+  },
+  "modharness_rl2026": {
+    "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+    "kind": "paper",
+    "summary": "Learns a compression program before policy training and periodically revises a separate steering program during GRPO. On CodeSearch with Qwen3-8B and limited history, repeatedly refitting compression scored 0.279 validation localization F1. The default with compression held fixed scored 0.412. Steering still evolves during training. The endpoint measures file, module and entity localization. Policy weights are trained. Cost estimates in Table 2 have a separate scope and include scaled quantities.",
+    "added_on": "2026-11-16",
+    "release": {
+      "value": "2026-11-13",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.18533v1"
+    }
+  },
+  "finacumen2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Distills useful strategies and cautions from graded trajectories into a persistent memory bank. A similarity threshold governs retrieval. Test queries have read-only access. Adding the frozen memory bank to the tool-equipped agent raised FinMMR Easy accuracy from 74.08% to 81.67% (+7.59 percentage points). This ablation covers the memory module as a whole in one benchmark split. It does not isolate the retrieval threshold. Appendix K reports a higher average inference cost with memory in a separate sampled comparison.",
+    "added_on": "2026-11-16",
+    "release": {
+      "value": "2026-06-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2606.17642v1"
+    }
+  },
+  "harnesspro2026": {
+    "category": "Harness Optimization and Search Workflows",
+    "kind": "paper",
+    "summary": "Uses execution feedback, generated validation tests and performance–cost preferences to select executable harness variants for a fixed model and coding scaffold. On SWE-Bench Pro, HarnessPro-Medium reported a 79.0% pass rate and $1.26 mean cost per task. RHO reported 80.0% and $2.68, respectively. This comparison applies to one model, benchmark and budget profile. The cost is per test task. It does not give a break-even point after the cost of searching for the harness.",
+    "added_on": "2026-11-16",
+    "release": {
+      "value": "2026-10-19",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2610.26770v1"
     }
   }
 }
