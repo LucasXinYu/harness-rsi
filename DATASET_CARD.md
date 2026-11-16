@@ -2,34 +2,32 @@
 
 ## Status and purpose
 
-**v0.5.0 — released November 14, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
+**v0.6.0, November 16, 2026.** Maintained by the Harness RSI project team as a companion to *From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents*. Xin Yu leads the project. Codex assisted search, extraction and validation; it is not a scholarly author. No additional funding is asserted for this dataset release.
 
 This resource documents what agent harnesses change, how changes are selected, what outcomes are reported, and what the evidence cannot establish. It is a curated evidence collection, not a new benchmark or a collection of reproduced experiments.
 
 ## Composition and coverage
 
-| Quantity | v0.1.0 | v0.2.0 | v0.3.0 | v0.4.0 / v0.4.1 | v0.5.0 |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Category-source records | 95 | 113 | 132 | 145 | 159 |
-| Distinct works | 63 | 81 | 100 | 113 | 126 |
-| Records with structured signals | 4 | 22 | 30 | 43 | 57 |
-| Scoped signals | 6 | 24 | 32 | 45 | 59 |
-| Documented primary-source checks | Not claimed | 28 | 47 | 60 | 74 |
-| Inherited records without a new primary audit | 95 | 85 | 85 | 85 | 85 |
-| Populated selection/control fields | 0 | 28 | 47 | 60 | 74 |
-| Independently human-adjudicated records | Not claimed | 0 | 0 | 0 | 0 |
+| Quantity | v0.1.0 | v0.2.0 | v0.3.0 | v0.4.0 / v0.4.1 | v0.5.0 | v0.6.0 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Category-source records | 95 | 113 | 132 | 145 | 159 | 162 |
+| Distinct works | 63 | 81 | 100 | 113 | 126 | 129 |
+| Records with structured signals | 4 | 22 | 30 | 43 | 57 | 60 |
+| Scoped signals | 6 | 24 | 32 | 45 | 59 | 62 |
+| Documented primary-source checks | Not claimed | 28 | 47 | 60 | 74 | 77 |
+| Inherited records without a new primary audit | 95 | 85 | 85 | 85 | 85 | 85 |
+| Populated selection/control fields | 0 | 28 | 47 | 60 | 74 | 77 |
+| Independently human-adjudicated records | Not claimed | 0 | 0 | 0 | 0 | 0 |
 
-The 126 works comprise 125 papers and one benchmark resource. v0.5.0 adds 14 records and 14 scoped observations: 13 new works and one new multi-domain record for an existing work's v2. MemSkill v3 and RSI-Dojo v2 retain their scoped labels after version rechecks. The two legacy Multi-Task Self-Harness v1 records remain unchanged. Records and signals are not independent effects. All five earlier releases remain byte-for-byte unchanged; their correction notices remain applicable.
+This release adds three works and three observations to v0.5.0. The observations measure a CodeSearch compression-schedule ablation, a FinMMR Easy memory ablation, and a SWE-Bench Pro performance–cost trade-off. Each applies to the model, benchmark and comparison named in the record. All six stable releases retain their original bytes.
 
-Targeted discovery runs through **November 14, 2026**, with a seven-day overlap beginning October 28. New additions were first posted November 2–11. The original survey atlas retains its **October 1** cutoff and 95 records. The broader bibliography contains 335 papers and 11 resources; it is a separate collection, not the dataset denominator.
-
-The dataset spans coding, reasoning, interactive, visual and cross-domain settings. Existing task categories accommodate this batch; no new category or historical reassignment was needed. This release emphasizes continual forgetting, total improvement cost, statistical acceptance, verifier validity, student-specific skill reuse and coupled weight/harness training. Positive, mixed and regression observations are all retained.
+The bibliography contains 339 papers and 11 resources. The frozen October 1 atlas contains 95 category–source records. The separately versioned evidence collection contains 129 works, including one benchmark resource.
 
 ## Collection and review
 
-See `PROTOCOL.md` for eligibility and scientific distinctions. Four date-bounded arXiv queries returned 295 unique works: 24 already collected, 17 newly inspected and included in the bibliography, and 254 pending keyword candidates. Of the 17 additions, 13 contribute evidence records; four remain contextual bibliography entries. Eighty older pending candidates outside this result set remain queued, for 334 cumulative pending candidates. These are keyword matches, not an eligible-study denominator. Supplemental primary-site searches and unresolved follow-ups are recorded separately. BOXBOX v2 remains pending because its latest full text could not be retrieved. No PRISMA completeness or recall estimate is claimed.
+The last completed standard search was November 15. On November 16 the four date-bounded Atom queries returned HTTP 503 or 429. Three official arXiv announcement lists, primary proceedings, citation backtracking and the existing queue supplied targeted coverage. The updated search log gives the filters, dates, source URLs and queue size. The date on an announcement can differ from the submission date used for the bibliography timeline.
 
-All 106 arXiv works in the prior evidence-source registry were checked through the official unversioned-ID API. Three post-November-4 revisions were inspected: MemSkill v3, RSI-Dojo v2 and Multi-Task Self-Evolving Harnesses v2. This is not a version audit of all 335 bibliography papers. Other records retain their earlier review dates. The screening ledger retains prior decisions and distinguishes contextual exclusions from evidence inclusions; version migrations are separately recorded in `corrections.json`.
+ModHarness-RL revises steering while training its policy and keeps its default compression program fixed. FinAcumen freezes its development memory bank during held-out evaluation. HarnessPro compares budget-specific harnesses using per-task execution cost. These studies support different claims about adaptation and cost. See the records for the pinned full texts and comparison conditions.
 
 Evidence uses pinned papers and locators. First release, inspected revision, metadata check and claim review are distinct dates. Full third-party papers are not distributed. Short support anchors and hashes identify inspected HTML renderings; arXiv can regenerate HTML without changing the PDF version.
 
@@ -37,9 +35,9 @@ Evidence uses pinned papers and locators. First release, inspected revision, met
 
 ## Files and loading
 
-`dataset.json` and `records.jsonl` preserve the nested representation; `schema.json` specifies it. `primary-checked.records.jsonl` contains only the 74 targeted primary-checked records. Seventeen have no structured outcome; use `signals.csv` for the 59 scoped observations. This subset is not independently human-adjudicated.
+`dataset.json` and `records.jsonl` preserve the nested representation; `schema.json` specifies it. `primary-checked.records.jsonl` contains only the 77 targeted primary-checked records. Seventeen have no structured outcome; use `signals.csv` for the 62 scoped observations. This subset is not independently human-adjudicated.
 
-`sources.json`, `screening.json`, `search-log.json`, `corrections.json`, `quality-report.json`, `citation.bib` and `checksums.json` accompany every version. The v0.5.0 search log preserves its query counts and pending identities; the historical logs remain separately archived.
+`sources.json`, `screening.json`, `search-log.json`, `corrections.json`, `quality-report.json`, `citation.bib` and `checksums.json` accompany every version. The v0.6.0 search log preserves its query counts and pending identities; the historical logs remain separately archived.
 
 Normalized tables avoid nested JSON strings inside CSV cells:
 
@@ -54,7 +52,7 @@ Normalized tables avoid nested JSON strings inside CSV cells:
 | `signal_components.csv` | Signal/component relation |
 | `signal_benchmarks.csv` | Explicit signal applicability |
 | `reviews.csv` | Review provenance per record |
-| `review-queue.csv` | 85 primary-source reviews and 74 human-adjudication tasks; reviewer fields are blank |
+| `review-queue.csv` | 85 primary-source reviews and 77 human-adjudication tasks; reviewer fields are blank |
 
 Flat JSONL files for papers, all records, the primary-checked subset and signals support separate HF configurations. The split is called `data`; no training/test partition is invented. Randomly splitting related literature rows would not produce a valid model benchmark.
 
