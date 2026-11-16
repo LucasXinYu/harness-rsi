@@ -3544,5 +3544,83 @@
         "metadata_basis": "Official arXiv metadata and names in full primary text"
       }
     ]
+  },
+  {
+    "key": "modharness_rl2026",
+    "title": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
+    "authors": "Zelin He and Siyu Zhu and Jacob Helwig and Yujian Liu and Li An and Rohit Jain and Shiyu Chang and Alborz Geramifard",
+    "kind": "paper",
+    "arxiv_id": "2611.18533",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-13",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.18533v1"
+    },
+    "sources": [
+      {
+        "name": "ModHarness-RL (v1)",
+        "url": "https://arxiv.org/html/2611.18533v1",
+        "locator": "Sections 3.2 and 4.1–4.3, Table 3, Limitations, Appendix C.3",
+        "source_version": "2611.18533v1",
+        "first_release_date": "2026-11-13",
+        "source_version_date": "2026-11-13",
+        "metadata_checked_on": "2026-11-16",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
+  },
+  {
+    "key": "finacumen2026",
+    "title": "FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness",
+    "authors": "Pianran Guo and Pengcheng Zhou and Yucheng Jian and Shuhua Chen and Zhongliang Yang and Linna Zhou",
+    "kind": "paper",
+    "arxiv_id": "2606.17642",
+    "doi": "10.18653/2026.findings-emnlp.2357",
+    "first_release": {
+      "value": "2026-06-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2606.17642v1"
+    },
+    "sources": [
+      {
+        "name": "FinAcumen (v6)",
+        "url": "https://arxiv.org/html/2606.17642v6",
+        "locator": "Sections 3, 4.2, 5.1 and 5.3, Table 2, Appendix K",
+        "source_version": "2606.17642v6",
+        "first_release_date": "2026-06-16",
+        "source_version_date": "2026-09-21",
+        "metadata_checked_on": "2026-11-16",
+        "metadata_basis": "Publisher BibTeX and arXiv metadata give Yucheng Jian. The proceedings title page and arXiv v6 full text give Yuchen Jian. The catalog preserves the publisher metadata spelling."
+      }
+    ]
+  },
+  {
+    "key": "harnesspro2026",
+    "title": "HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs",
+    "authors": "Zhuoshi Pan and ZhiYuan Feng and Yukuo Cen and Honglin Lin and Junru Lu and Zhongxia Chen and Shuo Yang and H. Vicky Zhao and Jie Tang",
+    "kind": "paper",
+    "arxiv_id": "2610.26770",
+    "doi": null,
+    "first_release": {
+      "value": "2026-10-19",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2610.26770v1"
+    },
+    "sources": [
+      {
+        "name": "HarnessPro (v2)",
+        "url": "https://arxiv.org/html/2610.26770v2",
+        "locator": "Sections 3–5.2, Table 2 and Appendix A",
+        "source_version": "2610.26770v2",
+        "first_release_date": "2026-10-19",
+        "source_version_date": "2026-10-20",
+        "metadata_checked_on": "2026-11-16",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
   }
 ]

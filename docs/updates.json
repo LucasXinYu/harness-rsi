@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "literature-2026-11-16",
+      "date": "2026-11-16",
+      "kind": "website",
+      "title": "Training schedules, frozen memory and execution-cost trade-offs",
+      "records": 95,
+      "changes": [
+        "Added ModHarness-RL, FinAcumen and HarnessPro. The living bibliography contains 339 papers and 11 resources.",
+        "Reconciled the Evo-Harness proceedings entry with its August 15 arXiv release.",
+        "Dataset v0.6.0 adds three scoped observations. Its 162 records cover 129 works. All six earlier releases remain available."
+      ]
+    },
+    {
       "id": "literature-2026-11-15",
       "date": "2026-11-15",
       "kind": "website",

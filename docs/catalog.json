@@ -2,20 +2,20 @@
   "config": {
     "title": "Harness RSI",
     "search_cutoff": "2026-11-15",
-    "updated_on": "2026-11-15",
+    "updated_on": "2026-11-16",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 336,
+    "papers": 339,
     "resources": 11,
     "categories": {
       "Surveys, Definitions, and Conceptual Frameworks": 34,
-      "Harness Optimization and Search Workflows": 54,
-      "Model and Policy Training, Harness Co-Evolution, and Distillation": 32,
+      "Harness Optimization and Search Workflows": 55,
+      "Model and Policy Training, Harness Co-Evolution, and Distillation": 33,
       "Self-Modification and Meta-Level Improvement": 21,
-      "Memory, Context, Skills, and Experience Reuse": 51,
+      "Memory, Context, Skills, and Experience Reuse": 52,
       "Benchmarks for Harness Optimization and Adaptation": 8,
       "Generalization, Evaluation Methodology, and Safety": 42,
       "Agent Architectures and Harness Infrastructure": 24,
@@ -57,12 +57,12 @@
       "2026-03": 5,
       "2026-04": 6,
       "2026-05": 14,
-      "2026-06": 11,
+      "2026-06": 12,
       "2026-07": 24,
-      "2026-08": 32,
+      "2026-08": 33,
       "2026-09": 68,
       "2026-10": 75,
-      "2026-11": 27
+      "2026-11": 28
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -73,13 +73,13 @@
       "2026-07": 6,
       "2026-08": 6,
       "2026-09": 13,
-      "2026-10": 13,
+      "2026-10": 14,
       "2026-11": 4
     },
-    "monthly_coverage": 322,
+    "monthly_coverage": 325,
     "date_precision": {
-      "month": 9,
-      "day": 313,
+      "month": 8,
+      "day": 317,
       "year": 13,
       "unknown": 1
     },
@@ -147,6 +147,11 @@
       {
         "date": "2026-11-15",
         "papers": 336,
+        "resources": 11
+      },
+      {
+        "date": "2026-11-16",
+        "papers": 339,
         "resources": 11
       }
     ]
@@ -7080,16 +7085,76 @@
       "url": "https://aclanthology.org/2026.emnlp-main.969/",
       "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
       "doi": "10.18653/2026.emnlp-main.969",
-      "arxiv": null,
+      "arxiv": "2608.15071",
       "category": "Memory, Context, Skills, and Experience Reuse",
       "kind": "paper",
       "summary": "Compiles failed execution contexts into general and topic-specific skill guidance for a frozen solver, retaining updates across task batches. Distinguishes frozen train-split transfer from online target-stream updates and solver/evolver pairing. Benefits depend on recipient and feedback: Sonnet-solver pairings and self-generated feedback can regress. Natural-language skills and automatic benchmark feedback do not establish autonomous improvement of the evolver. Source: EMNLP 2026, Sections 3–4.6, Figure 6, Table 4 and Appendices F–I.",
       "added_on": "2026-11-15",
       "release": {
-        "value": "2026-10",
-        "precision": "month",
-        "basis": "ACL Anthology proceedings month; no earlier preprint verified. This is a publication-month fallback, not an exact first-release date.",
-        "source": "https://aclanthology.org/2026.emnlp-main.969/"
+        "value": "2026-08-15",
+        "precision": "day",
+        "basis": "arXiv v1 submission. The EMNLP proceedings appeared in October.",
+        "source": "https://arxiv.org/abs/2608.15071v1"
+      }
+    },
+    {
+      "id": "modharness_rl2026",
+      "title": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
+      "authors": "Zelin He and Siyu Zhu and Jacob Helwig and Yujian Liu and Li An and Rohit Jain and Shiyu Chang and Alborz Geramifard",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.18533v1",
+      "venue": "arXiv preprint arXiv:2611.18533",
+      "doi": null,
+      "arxiv": "2611.18533",
+      "category": "Model and Policy Training, Harness Co-Evolution, and Distillation",
+      "kind": "paper",
+      "summary": "Learns a compression program before policy training and periodically revises a separate steering program during GRPO. On CodeSearch with Qwen3-8B and limited history, repeatedly refitting compression scored 0.279 validation localization F1. The default with compression held fixed scored 0.412. Steering still evolves during training. The endpoint measures file, module and entity localization. Policy weights are trained. Cost estimates in Table 2 have a separate scope and include scaled quantities.",
+      "added_on": "2026-11-16",
+      "release": {
+        "value": "2026-11-13",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.18533v1"
+      }
+    },
+    {
+      "id": "finacumen2026",
+      "title": "FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness",
+      "authors": "Pianran Guo and Pengcheng Zhou and Yucheng Jian and Shuhua Chen and Zhongliang Yang and Linna Zhou",
+      "year": "2026",
+      "url": "https://aclanthology.org/2026.findings-emnlp.2357/",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+      "doi": "10.18653/2026.findings-emnlp.2357",
+      "arxiv": "2606.17642",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Distills useful strategies and cautions from graded trajectories into a persistent memory bank. A similarity threshold governs retrieval. Test queries have read-only access. Adding the frozen memory bank to the tool-equipped agent raised FinMMR Easy accuracy from 74.08% to 81.67% (+7.59 percentage points). This ablation covers the memory module as a whole in one benchmark split. It does not isolate the retrieval threshold. Appendix K reports a higher average inference cost with memory in a separate sampled comparison.",
+      "added_on": "2026-11-16",
+      "release": {
+        "value": "2026-06-16",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2606.17642v1"
+      }
+    },
+    {
+      "id": "harnesspro2026",
+      "title": "HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs",
+      "authors": "Zhuoshi Pan and ZhiYuan Feng and Yukuo Cen and Honglin Lin and Junru Lu and Zhongxia Chen and Shuo Yang and H. Vicky Zhao and Jie Tang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2610.26770v2",
+      "venue": "arXiv preprint arXiv:2610.26770",
+      "doi": null,
+      "arxiv": "2610.26770",
+      "category": "Harness Optimization and Search Workflows",
+      "kind": "paper",
+      "summary": "Uses execution feedback, generated validation tests and performance–cost preferences to select executable harness variants for a fixed model and coding scaffold. On SWE-Bench Pro, HarnessPro-Medium reported a 79.0% pass rate and $1.26 mean cost per task. RHO reported 80.0% and $2.68, respectively. This comparison applies to one model, benchmark and budget profile. The cost is per test task. It does not give a break-even point after the cost of searching for the harness.",
+      "added_on": "2026-11-16",
+      "release": {
+        "value": "2026-10-19",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2610.26770v1"
       }
     }
   ]
