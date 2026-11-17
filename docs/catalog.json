@@ -1,29 +1,29 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-11-15",
-    "updated_on": "2026-11-16",
+    "search_cutoff": "2026-11-17",
+    "updated_on": "2026-11-17",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 339,
+    "papers": 343,
     "resources": 11,
     "categories": {
       "Surveys, Definitions, and Conceptual Frameworks": 34,
       "Harness Optimization and Search Workflows": 55,
       "Model and Policy Training, Harness Co-Evolution, and Distillation": 33,
-      "Self-Modification and Meta-Level Improvement": 21,
-      "Memory, Context, Skills, and Experience Reuse": 52,
+      "Self-Modification and Meta-Level Improvement": 22,
+      "Memory, Context, Skills, and Experience Reuse": 53,
       "Benchmarks for Harness Optimization and Adaptation": 8,
-      "Generalization, Evaluation Methodology, and Safety": 42,
+      "Generalization, Evaluation Methodology, and Safety": 43,
       "Agent Architectures and Harness Infrastructure": 24,
       "Prompt, Workflow, and Program Optimization": 20,
       "Task-Time Search and Output Refinement (Adjacent Work)": 6,
       "Downstream Task Benchmarks": 16,
       "Official Benchmark and Implementation Resources": 11,
-      "Additional Task-Domain Harness Evolution": 28
+      "Additional Task-Domain Harness Evolution": 29
     },
     "monthly": {
       "2022-10": 1,
@@ -59,10 +59,10 @@
       "2026-05": 14,
       "2026-06": 12,
       "2026-07": 24,
-      "2026-08": 33,
-      "2026-09": 68,
+      "2026-08": 34,
+      "2026-09": 69,
       "2026-10": 75,
-      "2026-11": 28
+      "2026-11": 30
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -76,10 +76,10 @@
       "2026-10": 14,
       "2026-11": 4
     },
-    "monthly_coverage": 325,
+    "monthly_coverage": 329,
     "date_precision": {
       "month": 8,
-      "day": 317,
+      "day": 321,
       "year": 13,
       "unknown": 1
     },
@@ -152,6 +152,11 @@
       {
         "date": "2026-11-16",
         "papers": 339,
+        "resources": 11
+      },
+      {
+        "date": "2026-11-17",
+        "papers": 343,
         "resources": 11
       }
     ]
@@ -7155,6 +7160,86 @@
         "precision": "day",
         "basis": "First submission date in the arXiv version history.",
         "source": "https://arxiv.org/abs/2610.26770v1"
+      }
+    },
+    {
+      "id": "elite_evaluation_free2026",
+      "title": "Evaluation-Free Recursive Self-Improvement for Coding Agents",
+      "authors": "Zhe Ren and Guowei Rong and Yimeng Chen and Nanbo Li and Piotr Piękos and Mateusz Ostaszewski and Dandan Guo and Jürgen Schmidhuber",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.21056v1",
+      "venue": "arXiv preprint arXiv:2611.21056",
+      "doi": null,
+      "arxiv": "2611.21056",
+      "category": "Self-Modification and Meta-Level Improvement",
+      "kind": "paper",
+      "summary": "Develops alternative changes to a common agent scaffold and integrates compatible edits after inspecting their implementations. With DeepSeek-V4-Flash, the authors report 73.3% on SWE-bench Verified after evolution versus 64.0% for the initial agent. This is a full-system transfer comparison on 50 tasks. Three evolution runs inform the mean. On the Pro subset ELITE scored below HGM (85.6% vs 88.3%). The zero task-evaluation count excludes final testing and does not imply zero evolution cost.",
+      "added_on": "2026-11-17",
+      "release": {
+        "value": "2026-11-16",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.21056v1"
+      }
+    },
+    {
+      "id": "harness_leverage_ladder2026",
+      "title": "Harness Leverage Across Model Size: A Ladder of Five Local Agent Harnesses from 0.75B to 4.7B",
+      "authors": "Hao Wang and Ting Huang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.21407v1",
+      "venue": "arXiv preprint arXiv:2611.21407",
+      "doi": null,
+      "arxiv": "2611.21407",
+      "category": "Generalization, Evaluation Methodology, and Safety",
+      "kind": "paper",
+      "summary": "Compares a fixed set of workflow harnesses and ablates the six executable completion checks within Mingbird. At 4.7B, the full harness averaged 0.980 versus 0.984 with its six checks disabled. The paired difference was -0.004, with an interval from -0.052 to +0.044. The interval includes zero. This ablation cannot identify which individual check matters, and the paper reports saturation on higher-capacity runs. Results describe a fixed harness comparison.",
+      "added_on": "2026-11-17",
+      "release": {
+        "value": "2026-11-16",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.21407v1"
+      }
+    },
+    {
+      "id": "easyfoam_skill_evolution2026",
+      "title": "EasyFoam: Skill-Oriented OpenFOAM Agents with Evidence-Driven Evolution",
+      "authors": "Peng Yin and Zhiwei Chen and Tianyi Liu and Chen Li and Kai Li and Jian Cheng",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.14525v1",
+      "venue": "arXiv preprint arXiv:2611.14525",
+      "doi": null,
+      "arxiv": "2611.14525",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Distills solver traces into edits to external skill files. Each proposal competes against the same parent on separate validation tasks. On the 25 held-out ExtFoamBench tasks, 5 passed all acceptance checks with evolved skills versus 2 with the initial skills (20% vs 8%). Development and test share task families. The comparison measures transfer to new tasks within those families and the combined effect of the selected edits. Execution completion alone is insufficient for acceptance.",
+      "added_on": "2026-11-17",
+      "release": {
+        "value": "2026-09-27",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.14525v1"
+      }
+    },
+    {
+      "id": "validitymem_filtering2026",
+      "title": "When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors",
+      "authors": "Samarth Vinayaka",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.17338v1",
+      "venue": "arXiv preprint arXiv:2611.17338",
+      "doi": null,
+      "arxiv": "2611.17338",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Selects whether to discard memories flagged as stale or pass the flat context to the generator according to performance at a matched resolver-error level. Pooled over 612 environment–query outcomes, the calibrated gate achieved 0.655 accuracy versus 0.641 for always discarding items labeled stale. The 612 outcomes reuse 102 distinct test queries. The study uses synthetic validity errors and a retrospective matched sweep. Transfer to a new error distribution and production costs were not established by this comparison.",
+      "added_on": "2026-11-17",
+      "release": {
+        "value": "2026-08-30",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.17338v1"
       }
     }
   ]

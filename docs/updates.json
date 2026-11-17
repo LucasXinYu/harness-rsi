@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "literature-2026-11-17",
+      "date": "2026-11-17",
+      "kind": "website",
+      "title": "Selection without downstream scores, held-out skills and two limits of harness control",
+      "records": 95,
+      "changes": [
+        "Two November 16 preprints and two earlier studies bring the bibliography to 343 papers and 11 resources.",
+        "Evidence v0.7.0 adds four scoped comparisons, including a completion-check ablation whose interval includes zero.",
+        "Date-bounded arXiv searches completed through November 17."
+      ]
+    },
+    {
       "id": "literature-2026-11-16",
       "date": "2026-11-16",
       "kind": "website",

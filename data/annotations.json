@@ -4198,5 +4198,53 @@
       "basis": "First submission date in the arXiv version history.",
       "source": "https://arxiv.org/abs/2610.26770v1"
     }
+  },
+  "elite_evaluation_free2026": {
+    "category": "Self-Modification and Meta-Level Improvement",
+    "kind": "paper",
+    "summary": "Develops alternative changes to a common agent scaffold and integrates compatible edits after inspecting their implementations. With DeepSeek-V4-Flash, the authors report 73.3% on SWE-bench Verified after evolution versus 64.0% for the initial agent. This is a full-system transfer comparison on 50 tasks. Three evolution runs inform the mean. On the Pro subset ELITE scored below HGM (85.6% vs 88.3%). The zero task-evaluation count excludes final testing and does not imply zero evolution cost.",
+    "added_on": "2026-11-17",
+    "release": {
+      "value": "2026-11-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.21056v1"
+    }
+  },
+  "harness_leverage_ladder2026": {
+    "category": "Generalization, Evaluation Methodology, and Safety",
+    "kind": "paper",
+    "summary": "Compares a fixed set of workflow harnesses and ablates the six executable completion checks within Mingbird. At 4.7B, the full harness averaged 0.980 versus 0.984 with its six checks disabled. The paired difference was -0.004, with an interval from -0.052 to +0.044. The interval includes zero. This ablation cannot identify which individual check matters, and the paper reports saturation on higher-capacity runs. Results describe a fixed harness comparison.",
+    "added_on": "2026-11-17",
+    "release": {
+      "value": "2026-11-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.21407v1"
+    }
+  },
+  "easyfoam_skill_evolution2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Distills solver traces into edits to external skill files. Each proposal competes against the same parent on separate validation tasks. On the 25 held-out ExtFoamBench tasks, 5 passed all acceptance checks with evolved skills versus 2 with the initial skills (20% vs 8%). Development and test share task families. The comparison measures transfer to new tasks within those families and the combined effect of the selected edits. Execution completion alone is insufficient for acceptance.",
+    "added_on": "2026-11-17",
+    "release": {
+      "value": "2026-09-27",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.14525v1"
+    }
+  },
+  "validitymem_filtering2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Selects whether to discard memories flagged as stale or pass the flat context to the generator according to performance at a matched resolver-error level. Pooled over 612 environment–query outcomes, the calibrated gate achieved 0.655 accuracy versus 0.641 for always discarding items labeled stale. The 612 outcomes reuse 102 distinct test queries. The study uses synthetic validity errors and a retrospective matched sweep. Transfer to a new error distribution and production costs were not established by this comparison.",
+    "added_on": "2026-11-17",
+    "release": {
+      "value": "2026-08-30",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.17338v1"
+    }
   }
 }

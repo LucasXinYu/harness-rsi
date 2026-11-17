@@ -3622,5 +3622,109 @@
         "metadata_basis": "Official arXiv submission history and full-text author list."
       }
     ]
+  },
+  {
+    "key": "elite_evaluation_free2026",
+    "title": "Evaluation-Free Recursive Self-Improvement for Coding Agents",
+    "authors": "Zhe Ren and Guowei Rong and Yimeng Chen and Nanbo Li and Piotr Piękos and Mateusz Ostaszewski and Dandan Guo and Jürgen Schmidhuber",
+    "kind": "paper",
+    "arxiv_id": "2611.21056",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.21056v1"
+    },
+    "sources": [
+      {
+        "name": "ELITE (v1)",
+        "url": "https://arxiv.org/html/2611.21056v1",
+        "locator": "Sections 4–5.3, Tables 1–2 and Appendix A.4",
+        "source_version": "2611.21056v1",
+        "first_release_date": "2026-11-16",
+        "source_version_date": "2026-11-16",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "ArXiv author metadata uses Nanbo Li. The full-text title page uses Li Nanbo."
+      }
+    ]
+  },
+  {
+    "key": "harness_leverage_ladder2026",
+    "title": "Harness Leverage Across Model Size: A Ladder of Five Local Agent Harnesses from 0.75B to 4.7B",
+    "authors": "Hao Wang and Ting Huang",
+    "kind": "paper",
+    "arxiv_id": "2611.21407",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.21407v1"
+    },
+    "sources": [
+      {
+        "name": "Harness Leverage Across Model Size (v1)",
+        "url": "https://arxiv.org/html/2611.21407v1",
+        "locator": "Sections 3.4–3.8 and 4.4, Table 7",
+        "source_version": "2611.21407v1",
+        "first_release_date": "2026-11-16",
+        "source_version_date": "2026-11-16",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
+  },
+  {
+    "key": "easyfoam_skill_evolution2026",
+    "title": "EasyFoam: Skill-Oriented OpenFOAM Agents with Evidence-Driven Evolution",
+    "authors": "Peng Yin and Zhiwei Chen and Tianyi Liu and Chen Li and Kai Li and Jian Cheng",
+    "kind": "paper",
+    "arxiv_id": "2611.14525",
+    "doi": null,
+    "first_release": {
+      "value": "2026-09-27",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.14525v1"
+    },
+    "sources": [
+      {
+        "name": "EasyFoam (v1)",
+        "url": "https://arxiv.org/html/2611.14525v1",
+        "locator": "Sections 3.3 and 4.4, Table 3 and Appendix D.3",
+        "source_version": "2611.14525v1",
+        "first_release_date": "2026-09-27",
+        "source_version_date": "2026-09-27",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
+  },
+  {
+    "key": "validitymem_filtering2026",
+    "title": "When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors",
+    "authors": "Samarth Vinayaka",
+    "kind": "paper",
+    "arxiv_id": "2611.17338",
+    "doi": null,
+    "first_release": {
+      "value": "2026-08-30",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.17338v1"
+    },
+    "sources": [
+      {
+        "name": "When Should LLM Agents Forget? (v1)",
+        "url": "https://arxiv.org/html/2611.17338v1",
+        "locator": "Sections 4–6 and 12, deployment-matched validation gate in Section 6",
+        "source_version": "2611.17338v1",
+        "first_release_date": "2026-08-30",
+        "source_version_date": "2026-08-30",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
   }
 ]

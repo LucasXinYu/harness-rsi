@@ -1,0 +1,204 @@
+record_id,control
+program-generation-and-editing--tthe2026,reported within-study comparison; combined edits remain possible
+program-generation-and-editing--evolvenet2026,reported within-study comparison; combined edits remain possible
+repository-level-software-engineering--tthe2026,reported within-study comparison; combined edits remain possible
+terminal-based-engineering-tasks--modularrsi2026,reported within-study comparison; combined edits remain possible
+terminal-based-engineering-tasks--rrsi2026,reported within-study comparison; combined edits remain possible
+machine-learning-engineering--aide2_2026,benchmark-specific protocol in Table 2
+formal-theorem-proving--proverinterface2026,same Lean comparison subset for cost/time
+browser-mediated-interaction--harnessx2026,reported WebShop run
+robot-manipulation--harnesspai2026,reported within-study comparison; combined edits remain possible
+temporal-grounding--videoevolve2026,same illustrated query
+qa-over-supplied-records--memskill2026,same backbone within ablation
+qa-over-supplied-records--memskill2026,same LoCoMo evaluation protocol
+qa-over-supplied-records--erskill2026,LoCoMo-trained transfer configuration identified by table marker
+open-web-information-seeking--sesa2026,same Qwen3-4B backbone in leave-one-out comparison
+open-web-information-seeking--sesa2026,other pipeline components held fixed
+multi-domain-agent-evaluation--mad_rsi2026,shared queries across executor models
+multi-domain-agent-evaluation--mad_rsi2026,matched sampling configurations
+robot-manipulation--sera2026,same reported RoboMME evaluation setting
+terminal-based-engineering-tasks--riseharness2026,fixed executor per evolution run
+terminal-based-engineering-tasks--riseharness2026,frozen transferred harness
+terminal-based-engineering-tasks--riseharness2026,four runs per task in transfer table
+application-and-service-workflows--oo_harness2026,same frozen catalogue in routing ablation
+application-and-service-workflows--oo_harness2026,same executor and grader
+multi-domain-agent-evaluation--herd2026,one fixed base model across comparison
+multi-domain-agent-evaluation--herd2026,known task boundaries
+multi-domain-agent-evaluation--herd2026,verified training answers
+competition-and-advanced-mathematics--beam2026,task executor held fixed
+application-and-service-workflows--verievolve2026,external verifier hidden from model roles
+application-and-service-workflows--verievolve2026,fixed evaluator within each workflow-search run
+multi-domain-agent-evaluation--trinity2026,same base harness in Table 2
+multi-domain-agent-evaluation--trinity2026,fixed backbone
+application-and-service-workflows--selm2026,same target model and harness within each cell
+application-and-service-workflows--selm2026,same scorer
+application-and-service-workflows--harness_ceiling2026,same split across conditions
+application-and-service-workflows--harness_ceiling2026,official tools and scorer unchanged
+multi-domain-agent-evaluation--harness_delta_attribution2026,fixed executor within comparison
+multi-domain-agent-evaluation--harness_delta_attribution2026,explicit compute matching
+application-and-service-workflows--harness_scaling2026,factorized harness definitions
+application-and-service-workflows--harness_scaling2026,reported GRPO/PPO training configurations
+repository-level-software-engineering--harnessadapt_rl2026,fixed R2E-Gym-Lite training subset
+repository-level-software-engineering--harnessadapt_rl2026,single Qwen3.5-9B base model
+multi-domain-agent-evaluation--continual_learners2026,frozen task models
+multi-domain-agent-evaluation--continual_learners2026,explicit stream ordering
+application-and-service-workflows--verifier_recoverability2026,controlled tau2-bench airline/retail experiments
+multi-objective-combinatorial-optimization--hemo2026,fixed execution scaffold
+multi-objective-combinatorial-optimization--hemo2026,matched final candidate budgets
+multi-objective-combinatorial-optimization--hemo2026,four independent trials
+application-and-service-workflows--karma2026,fixed model within each setting
+application-and-service-workflows--karma2026,fixed executable harness
+application-and-service-workflows--karma2026,unchanged target cases
+machine-learning-engineering--molrsi2026,same agent backbone
+machine-learning-engineering--molrsi2026,same target partitions
+machine-learning-engineering--molrsi2026,matched target search budget
+multi-domain-agent-evaluation--skillcompiler2026,fixed executor within a setting
+multi-domain-agent-evaluation--skillcompiler2026,persistent test bank frozen
+multi-domain-agent-evaluation--skillcompiler2026,three learning seeds
+embodied-navigation--evolife2026,shared navigation interface
+embodied-navigation--evolife2026,same revisit tasks
+machine-learning-engineering--recrsi2026,shared initialization
+machine-learning-engineering--recrsi2026,same splits and seed
+machine-learning-engineering--recrsi2026,fixed promotion rule
+qa-over-supplied-records--memsteer2026,fixed answerer
+qa-over-supplied-records--memsteer2026,fixed answer prompt
+qa-over-supplied-records--memsteer2026,fixed final context budget
+image-generation--vevo_harness2026,frozen image generator
+image-generation--vevo_harness2026,cached visual constraints
+image-generation--vevo_harness2026,paired replay seeds
+qa-over-supplied-records--calm2026,same answerer within comparisons
+qa-over-supplied-records--calm2026,same retrieved candidates
+qa-over-supplied-records--calm2026,same memory-token budget
+application-and-service-workflows--masked_erosion2026,fixed executor within a loop
+application-and-service-workflows--masked_erosion2026,held-out final tasks
+application-and-service-workflows--masked_erosion2026,matched gate comparisons
+browser-mediated-interaction--gepa_curator2026,same seed prompt
+browser-mediated-interaction--gepa_curator2026,same evaluator and action limits
+browser-mediated-interaction--gepa_curator2026,same environment
+compositional-3d-reconstruction--sceneevolve2026,fixed student weights
+compositional-3d-reconstruction--sceneevolve2026,same decoding and rendering
+compositional-3d-reconstruction--sceneevolve2026,100 development scenes disjoint from 60 test scenes
+multi-domain-agent-evaluation--ruharness2026,fixed model within each run
+multi-domain-agent-evaluation--ruharness2026,fixed task evaluator
+multi-domain-agent-evaluation--ruharness2026,matched candidate and round budgets
+repository-level-software-engineering--coharl2026,fixed benchmark evaluator
+repository-level-software-engineering--coharl2026,shared initial policy
+repository-level-software-engineering--coharl2026,approximately matched main training episodes
+multi-domain-agent-evaluation--skill_infinity2026,fixed backbone weights
+multi-domain-agent-evaluation--skill_infinity2026,same harness/backbone for compared task agents
+program-generation-and-editing--rsiv_harness2026,unchanged transferred harness
+program-generation-and-editing--rsiv_harness2026,disjoint test domains
+program-generation-and-editing--rsiv_harness2026,no target-backbone search
+qa-over-supplied-records--amie2026,fixed answerer and stored content
+qa-over-supplied-records--amie2026,same candidate pools
+qa-over-supplied-records--amie2026,same query order and context policy
+multi-domain-agent-evaluation--multievoskill2026,same splits and seed
+multi-domain-agent-evaluation--multievoskill2026,fixed parent for constituent edits
+multi-domain-agent-evaluation--cle2026,fixed model within each run
+multi-domain-agent-evaluation--cle2026,same task stream
+multi-domain-agent-evaluation--cle2026,hidden grading rubric
+terminal-based-engineering-tasks--meta2_2026,fixed executor within a setting
+terminal-based-engineering-tasks--meta2_2026,same seed harness
+terminal-based-engineering-tasks--meta2_2026,held-out task evaluator
+multi-domain-agent-evaluation--harness_s2026,shared optimizer in GRPO controls
+multi-domain-agent-evaluation--harness_s2026,same initial policy
+multi-domain-agent-evaluation--harness_s2026,same task verifier
+multi-domain-agent-evaluation--harness_s2026,matched rescue allocation
+qa-over-supplied-records--evogroup2026,same base model within each run
+qa-over-supplied-records--evogroup2026,fixed cold-start harness and evolution set for process ablations
+qa-over-supplied-records--evogroup2026,matched process-ablation token budget
+multi-domain-agent-evaluation--paretosaddler2026,same optimizer configuration
+multi-domain-agent-evaluation--paretosaddler2026,same execution interface
+multi-domain-agent-evaluation--paretosaddler2026,fixed remaining setup in promotion-gate ablation
+machine-learning-engineering--continual_autoresearch2026,same model and environment within pairs
+machine-learning-engineering--continual_autoresearch2026,same tasks
+machine-learning-engineering--continual_autoresearch2026,matched wall-clock budget
+game-playing--selfimprove_bench2026,fixed backbone within method comparisons
+game-playing--selfimprove_bench2026,held-out task descriptors
+game-playing--selfimprove_bench2026,no refinement during transfer
+multi-domain-agent-evaluation--rsi_env2026,same initial system
+multi-domain-agent-evaluation--rsi_env2026,protected host evaluator
+multi-domain-agent-evaluation--rsi_env2026,"same maximum time allocation, not actual compute"
+multi-domain-agent-evaluation--omce2026,fixed LLM within comparisons
+multi-domain-agent-evaluation--omce2026,same memory snapshots for routing ablation
+multi-domain-agent-evaluation--omce2026,same prompt formatting and retrieval settings
+program-generation-and-editing--skill_plus_plus2026,unchanged skill bodies
+program-generation-and-editing--skill_plus_plus2026,same fixed router within comparisons
+program-generation-and-editing--skill_plus_plus2026,same query/arrival schedule
+game-playing--artifact_capability2026,same backbone and game interface
+game-playing--artifact_capability2026,same replay states per version comparison
+application-and-service-workflows--care2026,same frozen offline cases
+application-and-service-workflows--care2026,same within-period operating context
+application-and-service-workflows--care2026,same repair tuples and budget for learning-objective ablation
+machine-learning-engineering--rsi_dojo2026,same target tasks for own base/trained comparisons
+machine-learning-engineering--rsi_dojo2026,same evaluation harness
+machine-learning-engineering--rsi_dojo2026,reported local compute budget
+multi-domain-agent-evaluation--memory_tax2026,shared embedding model
+multi-domain-agent-evaluation--memory_tax2026,same answerer within comparisons
+multi-domain-agent-evaluation--memory_tax2026,approximately aligned retrieval scope
+multi-domain-agent-evaluation--harnessflow2026,fixed model within each search
+multi-domain-agent-evaluation--harnessflow2026,same environment
+multi-domain-agent-evaluation--harnessflow2026,matched candidate-attempt budget in search ablations
+multi-domain-agent-evaluation--trust2026,fixed proposer
+multi-domain-agent-evaluation--trust2026,common validation/test protocol within settings
+multi-domain-agent-evaluation--trust2026,same base model for gate comparisons
+open-web-information-seeking--multiloop2026,fixed executor model
+open-web-information-seeking--multiloop2026,same held-out questions
+open-web-information-seeking--multiloop2026,separate optimizer and executor roles
+multi-domain-agent-evaluation--jomoha2026,shared initial policies in ablations
+multi-domain-agent-evaluation--jomoha2026,paired harness/solver swaps
+multi-domain-agent-evaluation--jomoha2026,matched interaction budget for the local WHALE comparison
+repository-level-software-engineering--rsi_tax2026,same backbone within comparisons
+repository-level-software-engineering--rsi_tax2026,same initial KIRA harness
+repository-level-software-engineering--rsi_tax2026,matched task order
+repository-level-software-engineering--rsi_tax2026,common nominal execution limits
+multi-domain-agent-evaluation--flex_rsi2026,same model and task within paired runs
+multi-domain-agent-evaluation--flex_rsi2026,same seed and declared budgets
+multi-domain-agent-evaluation--flex_rsi2026,protected held-out files
+multi-domain-agent-evaluation--fgse2026,frozen ReAct executor
+multi-domain-agent-evaluation--fgse2026,single-factor ablations
+multi-domain-agent-evaluation--fgse2026,shared task evaluation protocol
+application-and-service-workflows--failure_traces2026,frozen Qwen3.5-9B target
+application-and-service-workflows--failure_traces2026,same teacher budget ceiling
+application-and-service-workflows--failure_traces2026,matched held-out evaluation
+multi-domain-agent-evaluation--student_aware_teaching2026,fixed student weights
+multi-domain-agent-evaluation--student_aware_teaching2026,common held-out tasks
+multi-domain-agent-evaluation--student_aware_teaching2026,frozen-library swaps
+multi-domain-agent-evaluation--veritas2026,fixed generator within component ablations
+multi-domain-agent-evaluation--veritas2026,same evidence contract and materials
+multi-domain-agent-evaluation--veritas2026,unchanged mechanism for transfer generators
+machine-learning-engineering--infrarsi2026,fixed task contract
+machine-learning-engineering--infrarsi2026,same target workload in experience ablation
+machine-learning-engineering--infrarsi2026,paired baseline measurement
+machine-learning-engineering--infrarsi2026,declared numerical and timing rules
+repository-level-software-engineering--continual_harness_forgetting2026,fixed DeepSeek backbone
+repository-level-software-engineering--continual_harness_forgetting2026,same seed Mini-SWE harness
+repository-level-software-engineering--continual_harness_forgetting2026,same sampled tasks per evolution direction
+repository-level-software-engineering--continual_harness_forgetting2026,common execution timeout
+application-and-service-workflows--teacher_free_coevolution2026,same base editor
+application-and-service-workflows--teacher_free_coevolution2026,fixed final evaluation tasks
+application-and-service-workflows--teacher_free_coevolution2026,factorial final rule/weight swaps
+multi-domain-agent-evaluation--multitask_selfharness2026,same seed and edit budgets across models
+multi-domain-agent-evaluation--multitask_selfharness2026,fixed weights within a run
+multi-domain-agent-evaluation--multitask_selfharness2026,same model and reasoning effort for within-model harness comparisons
+repository-level-software-engineering--modharness_rl2026,CodeSearch held-out localization F1
+repository-level-software-engineering--modharness_rl2026,"Qwen3-8B, context-limited condition"
+repository-level-software-engineering--modharness_rl2026,matched GRPO training configuration and history budget
+qa-over-supplied-records--finacumen2026,FinMMR Easy
+qa-over-supplied-records--finacumen2026,frozen Qwen3-VL-8B-Instruct
+qa-over-supplied-records--finacumen2026,"same financial tool suite, decoding settings and scoring protocol"
+repository-level-software-engineering--harnesspro2026,100 held-out SWE-Bench Pro tasks
+repository-level-software-engineering--harnesspro2026,GPT-5.5 with Codex
+repository-level-software-engineering--harnesspro2026,same official test metric and per-task cost definition
+repository-level-software-engineering--elite_evaluation_free2026,DeepSeek-V4-Flash and a common initial scaffold
+repository-level-software-engineering--elite_evaluation_free2026,50 fixed SWE-bench Verified transfer tasks
+repository-level-software-engineering--elite_evaluation_free2026,frozen final agent with no benchmark-specific adaptation
+application-and-service-workflows--harness_leverage_ladder2026,same 4.7B model and task fixtures
+application-and-service-workflows--harness_leverage_ladder2026,same 18 held-out tasks
+application-and-service-workflows--harness_leverage_ladder2026,paired full and guards-off Mingbird variants
+terminal-based-engineering-tasks--easyfoam_skill_evolution2026,DeepSeek-V4-Flash with fixed weights
+terminal-based-engineering-tasks--easyfoam_skill_evolution2026,"same 25 held-out ExtFoamBench tasks, prompts and scoring rules"
+terminal-based-engineering-tasks--easyfoam_skill_evolution2026,same 7200-second rollout limit
+qa-over-supplied-records--validitymem_filtering2026,102 calibration and 102 test queries split by scenario
+qa-over-supplied-records--validitymem_filtering2026,same held-out queries across six corruption settings
+qa-over-supplied-records--validitymem_filtering2026,frozen selection choices for test
