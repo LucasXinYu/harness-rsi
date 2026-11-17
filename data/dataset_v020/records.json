@@ -13231,5 +13231,415 @@
       "human_review_status": "pending",
       "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
     }
+  },
+  {
+    "id": "repository-level-software-engineering--elite_evaluation_free2026",
+    "key": "elite_evaluation_free2026",
+    "domain": "coding",
+    "category": "Repository-Level Software Engineering",
+    "category_id": "repository-level-software-engineering",
+    "title": "ELITE",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Develops alternative changes to a common agent scaffold and integrates compatible edits after inspecting their implementations."
+      },
+      {
+        "label": "Reported observation",
+        "text": "With DeepSeek-V4-Flash, the authors report 73.3% on SWE-bench Verified after evolution versus 64.0% for the initial agent."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "This is a full-system transfer comparison on 50 tasks. Three evolution runs inform the mean. On the Pro subset ELITE scored below HGM (85.6% vs 88.3%). The zero task-evaluation count excludes final testing and does not imply zero evolution cost."
+      }
+    ],
+    "sources": [
+      {
+        "name": "ELITE (v1)",
+        "url": "https://arxiv.org/html/2611.21056v1",
+        "locator": "Sections 4–5.3, Tables 1–2 and Appendix A.4",
+        "source_version": "2611.21056v1",
+        "first_release_date": "2026-11-16",
+        "source_version_date": "2026-11-16",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "ArXiv author metadata uses Nanbo Li. The full-text title page uses Li Nanbo."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "swe-bench-verified",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "control"
+        ],
+        "benchmark_ids": [
+          "swe-bench-verified"
+        ],
+        "scope": "Sections 4–5.3, Tables 1–2 and Appendix A.4. This is a full-system transfer comparison on 50 tasks. Three evolution runs inform the mean. On the Pro subset ELITE scored below HGM (85.6% vs 88.3%). The zero task-evaluation count excludes final testing and does not imply zero evolution cost.",
+        "summary": "With DeepSeek-V4-Flash, the authors report 73.3% on SWE-bench Verified after evolution versus 64.0% for the initial agent.",
+        "section": "Reported observation",
+        "evidence_quote": "With DeepSeek-V4-Flash, the authors report 73.3% on SWE-bench Verified after evolution versus 64.0% for the initial agent.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "ELITE (v1)",
+          "url": "https://arxiv.org/html/2611.21056v1",
+          "locator": "Sections 4–5.3, Tables 1–2 and Appendix A.4",
+          "source_version": "2611.21056v1",
+          "first_release_date": "2026-11-16",
+          "source_version_date": "2026-11-16",
+          "metadata_checked_on": "2026-11-17",
+          "metadata_basis": "ArXiv author metadata uses Nanbo Li. The full-text title page uses Li Nanbo."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.21056v1",
+          "locator": "Sections 4–5.3, Tables 1–2 and Appendix A.4",
+          "excerpt": "without further adaptation",
+          "artifact_sha256": "3c2309ec9e80dd8cd4cf05799e26f7282b5adaa5a03e03500ceb653d20817d57",
+          "checked_on": "2026-11-17"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.7.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "unchanged_cross_benchmark",
+    "selection_protocol": "Structural checks and smoke tests gate updates. An invalid integrated agent leaves the parent in place. The evolution loop receives no downstream task scores.",
+    "controlled_variables": [
+      "DeepSeek-V4-Flash and a common initial scaffold",
+      "50 fixed SWE-bench Verified transfer tasks",
+      "frozen final agent with no benchmark-specific adaptation"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-17",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
+  },
+  {
+    "id": "application-and-service-workflows--harness_leverage_ladder2026",
+    "key": "harness_leverage_ladder2026",
+    "domain": "interactive",
+    "category": "Application and Service Workflows",
+    "category_id": "application-and-service-workflows",
+    "title": "Harness Leverage Across Model Size",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Compares a fixed set of workflow harnesses and ablates the six executable completion checks within Mingbird."
+      },
+      {
+        "label": "Reported observation",
+        "text": "At 4.7B, the full harness averaged 0.980 versus 0.984 with its six checks disabled. The paired difference was -0.004, with an interval from -0.052 to +0.044."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The interval includes zero. This ablation cannot identify which individual check matters, and the paper reports saturation on higher-capacity runs. Results describe a fixed harness comparison."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Harness Leverage Across Model Size (v1)",
+        "url": "https://arxiv.org/html/2611.21407v1",
+        "locator": "Sections 3.4–3.8 and 4.4, Table 7",
+        "source_version": "2611.21407v1",
+        "first_release_date": "2026-11-16",
+        "source_version_date": "2026-11-16",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "local-harness-ladder",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "no_gain",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "control"
+        ],
+        "benchmark_ids": [
+          "local-harness-ladder"
+        ],
+        "scope": "Sections 3.4–3.8 and 4.4, Table 7. The interval includes zero. This ablation cannot identify which individual check matters, and the paper reports saturation on higher-capacity runs. Results describe a fixed harness comparison.",
+        "summary": "At 4.7B, the full harness averaged 0.980 versus 0.984 with its six checks disabled. The paired difference was -0.004, with an interval from -0.052 to +0.044.",
+        "section": "Reported observation",
+        "evidence_quote": "At 4.7B, the full harness averaged 0.980 versus 0.984 with its six checks disabled. The paired difference was -0.004, with an interval from -0.052 to +0.044.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Harness Leverage Across Model Size (v1)",
+          "url": "https://arxiv.org/html/2611.21407v1",
+          "locator": "Sections 3.4–3.8 and 4.4, Table 7",
+          "source_version": "2611.21407v1",
+          "first_release_date": "2026-11-16",
+          "source_version_date": "2026-11-16",
+          "metadata_checked_on": "2026-11-17",
+          "metadata_basis": "Official arXiv submission history and full-text author list."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.21407v1",
+          "locator": "Sections 3.4–3.8 and 4.4, Table 7",
+          "excerpt": "guards off 0.984",
+          "artifact_sha256": "fafc86d97e4a4b1ff4351a725fc54a5529949289d938f6c9111c6a6576c3cf0c",
+          "checked_on": "2026-11-17"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.7.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "within_model_paired_ablation",
+    "selection_protocol": "The study prespecifies harness variants and scores output artifacts on a frozen suite. The checks govern completion during a run.",
+    "controlled_variables": [
+      "same 4.7B model and task fixtures",
+      "same 18 held-out tasks",
+      "paired full and guards-off Mingbird variants"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-17",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
+  },
+  {
+    "id": "terminal-based-engineering-tasks--easyfoam_skill_evolution2026",
+    "key": "easyfoam_skill_evolution2026",
+    "domain": "coding",
+    "category": "Terminal-Based Engineering Tasks",
+    "category_id": "terminal-based-engineering-tasks",
+    "title": "EasyFoam",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Distills solver traces into edits to external skill files. Each proposal competes against the same parent on separate validation tasks."
+      },
+      {
+        "label": "Reported observation",
+        "text": "On the 25 held-out ExtFoamBench tasks, 5 passed all acceptance checks with evolved skills versus 2 with the initial skills (20% vs 8%)."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Development and test share task families. The comparison measures transfer to new tasks within those families and the combined effect of the selected edits. Execution completion alone is insufficient for acceptance."
+      }
+    ],
+    "sources": [
+      {
+        "name": "EasyFoam (v1)",
+        "url": "https://arxiv.org/html/2611.14525v1",
+        "locator": "Sections 3.3 and 4.4, Table 3 and Appendix D.3",
+        "source_version": "2611.14525v1",
+        "first_release_date": "2026-09-27",
+        "source_version_date": "2026-09-27",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "extfoambench",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "extfoambench"
+        ],
+        "scope": "Sections 3.3 and 4.4, Table 3 and Appendix D.3. Development and test share task families. The comparison measures transfer to new tasks within those families and the combined effect of the selected edits. Execution completion alone is insufficient for acceptance.",
+        "summary": "On the 25 held-out ExtFoamBench tasks, 5 passed all acceptance checks with evolved skills versus 2 with the initial skills (20% vs 8%).",
+        "section": "Reported observation",
+        "evidence_quote": "On the 25 held-out ExtFoamBench tasks, 5 passed all acceptance checks with evolved skills versus 2 with the initial skills (20% vs 8%).",
+        "source_index": 0,
+        "primary_source": {
+          "name": "EasyFoam (v1)",
+          "url": "https://arxiv.org/html/2611.14525v1",
+          "locator": "Sections 3.3 and 4.4, Table 3 and Appendix D.3",
+          "source_version": "2611.14525v1",
+          "first_release_date": "2026-09-27",
+          "source_version_date": "2026-09-27",
+          "metadata_checked_on": "2026-11-17",
+          "metadata_basis": "Official arXiv submission history and full-text author list."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.14525v1",
+          "locator": "Sections 3.3 and 4.4, Table 3 and Appendix D.3",
+          "excerpt": "Families are represented in both development and test sets",
+          "artifact_sha256": "90cfc4d501f76509aa507fd56da6c61093b711c483fee795345438432cc030eb",
+          "checked_on": "2026-11-17"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.7.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "held_out_tasks_shared_families",
+    "selection_protocol": "Each round uses disjoint proposal and validation tasks and penalizes regressions across task families. The final skill library is frozen for test.",
+    "controlled_variables": [
+      "DeepSeek-V4-Flash with fixed weights",
+      "same 25 held-out ExtFoamBench tasks, prompts and scoring rules",
+      "same 7200-second rollout limit"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-17",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
+  },
+  {
+    "id": "qa-over-supplied-records--validitymem_filtering2026",
+    "key": "validitymem_filtering2026",
+    "domain": "reasoning",
+    "category": "QA over Supplied Records",
+    "category_id": "qa-over-supplied-records",
+    "title": "When Should LLM Agents Forget?",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Selects whether to discard memories flagged as stale or pass the flat context to the generator according to performance at a matched resolver-error level."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Pooled over 612 environment–query outcomes, the calibrated gate achieved 0.655 accuracy versus 0.641 for always discarding items labeled stale."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The 612 outcomes reuse 102 distinct test queries. The study uses synthetic validity errors and a retrospective matched sweep. Transfer to a new error distribution and production costs were not established by this comparison."
+      }
+    ],
+    "sources": [
+      {
+        "name": "When Should LLM Agents Forget? (v1)",
+        "url": "https://arxiv.org/html/2611.17338v1",
+        "locator": "Sections 4–6 and 12, deployment-matched validation gate in Section 6",
+        "source_version": "2611.17338v1",
+        "first_release_date": "2026-08-30",
+        "source_version_date": "2026-08-30",
+        "metadata_checked_on": "2026-11-17",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "validitymem-530",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "context"
+        ],
+        "benchmark_ids": [
+          "validitymem-530"
+        ],
+        "scope": "Sections 4–6 and 12, deployment-matched validation gate in Section 6. The 612 outcomes reuse 102 distinct test queries. The study uses synthetic validity errors and a retrospective matched sweep. Transfer to a new error distribution and production costs were not established by this comparison.",
+        "summary": "Pooled over 612 environment–query outcomes, the calibrated gate achieved 0.655 accuracy versus 0.641 for always discarding items labeled stale.",
+        "section": "Reported observation",
+        "evidence_quote": "Pooled over 612 environment–query outcomes, the calibrated gate achieved 0.655 accuracy versus 0.641 for always discarding items labeled stale.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "When Should LLM Agents Forget? (v1)",
+          "url": "https://arxiv.org/html/2611.17338v1",
+          "locator": "Sections 4–6 and 12, deployment-matched validation gate in Section 6",
+          "source_version": "2611.17338v1",
+          "first_release_date": "2026-08-30",
+          "source_version_date": "2026-08-30",
+          "metadata_checked_on": "2026-11-17",
+          "metadata_basis": "Official arXiv submission history and full-text author list."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.17338v1",
+          "locator": "Sections 4–6 and 12, deployment-matched validation gate in Section 6",
+          "excerpt": "612 held-out environment–query outcomes",
+          "artifact_sha256": "b8945416ade1e77768fe4e1c9da16074070d3bcf9762c40d0aaf22b44dad505c",
+          "checked_on": "2026-11-17"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.7.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "matched_synthetic_error_conditions",
+    "selection_protocol": "Within each simulated corruption level, choose hard deletion only when it beats flat retention on calibration data. Freeze that choice for test.",
+    "controlled_variables": [
+      "102 calibration and 102 test queries split by scenario",
+      "same held-out queries across six corruption settings",
+      "frozen selection choices for test"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-17",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
   }
 ]

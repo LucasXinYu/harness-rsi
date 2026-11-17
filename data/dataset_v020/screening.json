@@ -516,5 +516,33 @@
     "decision": "included",
     "reason": "Pinned full text supports the scoped contrast in Sections 3–5.2, Table 2 and Appendix A.",
     "screened_on": "2026-11-16"
+  },
+  {
+    "key": "elite_evaluation_free2026",
+    "url": "https://arxiv.org/abs/2611.21056v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 4–5.3, Tables 1–2 and Appendix A.4.",
+    "screened_on": "2026-11-17"
+  },
+  {
+    "key": "harness_leverage_ladder2026",
+    "url": "https://arxiv.org/abs/2611.21407v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 3.4–3.8 and 4.4, Table 7.",
+    "screened_on": "2026-11-17"
+  },
+  {
+    "key": "easyfoam_skill_evolution2026",
+    "url": "https://arxiv.org/abs/2611.14525v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 3.3 and 4.4, Table 3 and Appendix D.3.",
+    "screened_on": "2026-11-17"
+  },
+  {
+    "key": "validitymem_filtering2026",
+    "url": "https://arxiv.org/abs/2611.17338v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 4–6 and 12, deployment-matched validation gate in Section 6.",
+    "screened_on": "2026-11-17"
   }
 ]
