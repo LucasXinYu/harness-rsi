@@ -13641,5 +13641,417 @@
       "human_review_status": "pending",
       "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
     }
+  },
+  {
+    "id": "repository-level-software-engineering--unifying_self_improving_harnesses2026",
+    "key": "unifying_self_improving_harnesses2026",
+    "domain": "coding",
+    "category": "Repository-Level Software Engineering",
+    "category_id": "repository-level-software-engineering",
+    "title": "Harnesses That Improve Themselves",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Proposes changes to one harness module at a time and gates them using validation outcomes, executed-code checks and a runtime token cap."
+      },
+      {
+        "label": "Reported observation",
+        "text": "Modular gated evolution attained 40.0% held-out accuracy at 46.7k tokens per task, versus 42.5% at 451.6k for an unconstrained full rewrite."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The modular harness permits 12 turns, while the unconstrained rewrite permits 28. This is a combined accuracy–cost comparison, not an equal-budget estimate of the gate alone. The test set mixes held-out tasks from the development repository and a new repository."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Harnesses That Improve Themselves (v1)",
+        "url": "https://arxiv.org/html/2611.22299v1",
+        "locator": "Section VII, Table IV",
+        "source_version": "2611.22299v1",
+        "first_release_date": "2026-11-17",
+        "source_version_date": "2026-11-17",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "swe-bench-lite",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "context",
+          "control"
+        ],
+        "benchmark_ids": [
+          "swe-bench-lite"
+        ],
+        "scope": "Section VII, Table IV. The modular harness permits 12 turns, while the unconstrained rewrite permits 28. This is a combined accuracy–cost comparison, not an equal-budget estimate of the gate alone. The test set mixes held-out tasks from the development repository and a new repository.",
+        "summary": "Modular gated evolution attained 40.0% held-out accuracy at 46.7k tokens per task, versus 42.5% at 451.6k for an unconstrained full rewrite.",
+        "section": "Reported observation",
+        "evidence_quote": "Modular gated evolution attained 40.0% held-out accuracy at 46.7k tokens per task, versus 42.5% at 451.6k for an unconstrained full rewrite.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Harnesses That Improve Themselves (v1)",
+          "url": "https://arxiv.org/html/2611.22299v1",
+          "locator": "Section VII, Table IV",
+          "source_version": "2611.22299v1",
+          "first_release_date": "2026-11-17",
+          "source_version_date": "2026-11-17",
+          "metadata_checked_on": "2026-11-18",
+          "metadata_basis": "Official arXiv submission history and full-text author list."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.22299v1",
+          "locator": "Section VII, Table IV",
+          "excerpt": "keeps the 12-turn cap",
+          "artifact_sha256": "d467f91c06e9df937174731d80b596428b2dbf935e13f4a0ae634d0c6ecdf552",
+          "checked_on": "2026-11-18"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.8.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "held_out_tasks_and_cross_repository",
+    "selection_protocol": "Reject updates that fail validation or exceed the cost limit. Freeze the chosen harness before held-out evaluation.",
+    "controlled_variables": [
+      "Gemini 3.8 Flash executor with fixed weights",
+      "same seed harness and external optimizer",
+      "same 40 held-out tasks across two repositories"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-18",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
+  },
+  {
+    "id": "image-perception-and-question-answering--synapse_skill_repair2026",
+    "key": "synapse_skill_repair2026",
+    "domain": "visual",
+    "category": "Image Perception and Question Answering",
+    "category_id": "image-perception-and-question-answering",
+    "title": "Synapse",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Compiles recognized skill instructions into a source-linked partial program, repairs mapped spans, and screens structurally related tests including previously passing cases."
+      },
+      {
+        "label": "Reported observation",
+        "text": "On DocVQA with GPT-6 Sol, full Synapse scored 90.64% versus 87.97% for the variant without SkIR-based repair and broader screening."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The ablation jointly changes repair representation and screening, so it does not isolate either effect. The method relies on self-reported coverage and an unmeasured locality assumption. Small validation suites and earlier development-time test scoring limit confidence in generalization."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Synapse (v1)",
+        "url": "https://arxiv.org/html/2611.20856v1",
+        "locator": "Sections 3.6, 4.1 and 4.3, Table 2, Section 5",
+        "source_version": "2611.20856v1",
+        "first_release_date": "2026-11-16",
+        "source_version_date": "2026-11-16",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "docvqa",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "improvement",
+        "retention": "not_assessed",
+        "attribution": "component_ablation",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "docvqa"
+        ],
+        "scope": "Sections 3.6, 4.1 and 4.3, Table 2, Section 5. The ablation jointly changes repair representation and screening, so it does not isolate either effect. The method relies on self-reported coverage and an unmeasured locality assumption. Small validation suites and earlier development-time test scoring limit confidence in generalization.",
+        "summary": "On DocVQA with GPT-6 Sol, full Synapse scored 90.64% versus 87.97% for the variant without SkIR-based repair and broader screening.",
+        "section": "Reported observation",
+        "evidence_quote": "On DocVQA with GPT-6 Sol, full Synapse scored 90.64% versus 87.97% for the variant without SkIR-based repair and broader screening.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "Synapse (v1)",
+          "url": "https://arxiv.org/html/2611.20856v1",
+          "locator": "Sections 3.6, 4.1 and 4.3, Table 2, Section 5",
+          "source_version": "2611.20856v1",
+          "first_release_date": "2026-11-16",
+          "source_version_date": "2026-11-16",
+          "metadata_checked_on": "2026-11-18",
+          "metadata_basis": "Official arXiv submission history and full-text author list."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.20856v1",
+          "locator": "Sections 3.6, 4.1 and 4.3, Table 2, Section 5",
+          "excerpt": "screening observes no regressions",
+          "artifact_sha256": "f85c8f43f7489220c357b5346a3447090a9e4c1f478322f19894985030fbbaf0",
+          "checked_on": "2026-11-18"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.8.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "within_benchmark_held_out_tasks",
+    "selection_protocol": "Rank candidate patches using repair-test results, then accept only a validation improvement. Run three repair iterations and evaluate the selected skill on held-out questions.",
+    "controlled_variables": [
+      "same GPT-6 Sol executor and initial skill",
+      "same 374 held-out DocVQA questions",
+      "same data partitions, iteration count and validation acceptance rule"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-18",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
+  },
+  {
+    "id": "robot-manipulation--craft_scope_aware_adaptation2026",
+    "key": "craft_scope_aware_adaptation2026",
+    "domain": "interactive",
+    "category": "Robot Manipulation",
+    "category_id": "robot-manipulation",
+    "title": "CRAFT",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Routes adaptation between correction memory, inferred rules and an online learned model while a supervisor enforces the robot execution contract."
+      },
+      {
+        "label": "Reported observation",
+        "text": "The ladder completed 96/120 acceptable jobs versus 94/120 for a frontier agent with memory and rules. It asked 6 versus 11 optional questions, but dispatched 13 versus 9 wrong actions."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "Six streams support a descriptive comparison, not a superiority claim. Both methods use simulation and different adaptation providers. The frontier incurs seven decision timeouts. The project includes a separately trained perception probe and online adaptation learners. The integrated pilot uses a shared segmentation/depth frontend and a frozen robot skill."
+      }
+    ],
+    "sources": [
+      {
+        "name": "CRAFT (v1)",
+        "url": "https://arxiv.org/html/2611.19952v1",
+        "locator": "Sections 4–6.5, Table 3 and Appendix G",
+        "source_version": "2611.19952v1",
+        "first_release_date": "2026-11-15",
+        "source_version_date": "2026-11-15",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "craft-continuing-service",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "craft-continuing-service"
+        ],
+        "scope": "Sections 4–6.5, Table 3 and Appendix G. Six streams support a descriptive comparison, not a superiority claim. Both methods use simulation and different adaptation providers. The frontier incurs seven decision timeouts. The project includes a separately trained perception probe and online adaptation learners. The integrated pilot uses a shared segmentation/depth frontend and a frozen robot skill.",
+        "summary": "The ladder completed 96/120 acceptable jobs versus 94/120 for a frontier agent with memory and rules. It asked 6 versus 11 optional questions, but dispatched 13 versus 9 wrong actions.",
+        "section": "Reported observation",
+        "evidence_quote": "The ladder completed 96/120 acceptable jobs versus 94/120 for a frontier agent with memory and rules. It asked 6 versus 11 optional questions, but dispatched 13 versus 9 wrong actions.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "CRAFT (v1)",
+          "url": "https://arxiv.org/html/2611.19952v1",
+          "locator": "Sections 4–6.5, Table 3 and Appendix G",
+          "source_version": "2611.19952v1",
+          "first_release_date": "2026-11-15",
+          "source_version_date": "2026-11-15",
+          "metadata_checked_on": "2026-11-18",
+          "metadata_basis": "Official arXiv submission history and full-text author list."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.19952v1",
+          "locator": "Sections 4–6.5, Table 3 and Appendix G",
+          "excerpt": "six paired streams",
+          "artifact_sha256": "fe561e3be4445530911314d73b700720197de621e4baed2d844d582de722675a",
+          "checked_on": "2026-11-18"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.8.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "auxiliary_weights_trained",
+    "transfer_regime": "online_requirement_adaptation",
+    "selection_protocol": "Update the provider from scoped outcome feedback. Physical completion and task acceptability are scored separately. The pilot freezes the service and interaction budgets before evaluation.",
+    "controlled_variables": [
+      "same continuing service and frozen push skill",
+      "six paired simulated streams with 120 scored jobs per method",
+      "same camera frontend and interaction budgets"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-18",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
+  },
+  {
+    "id": "application-and-service-workflows--stale_agent_skill_maintenance2026",
+    "key": "stale_agent_skill_maintenance2026",
+    "domain": "interactive",
+    "category": "Application and Service Workflows",
+    "category_id": "application-and-service-workflows",
+    "title": "When Agent Skills Go Stale",
+    "evidence_status": "reported",
+    "sections": [
+      {
+        "label": "Mechanism",
+        "text": "Replays previously recorded checks, verifies conflicts with retained skill state, and attempts local repair before rebuilding when necessary."
+      },
+      {
+        "label": "Reported observation",
+        "text": "For procedural AppWorld skills, selective maintenance scored 0.569 versus 0.627 without maintenance, with mean execution cost 24.8 versus 25.7. The paired performance difference was -5.9 percentage points, with a bootstrap interval from -21.6 to +9.8."
+      },
+      {
+        "label": "Evidence and limits",
+        "text": "The interval spans decline and improvement. The study evaluates one maintenance event after a controlled environment change, not successive continual updates. Lower execution cost does not establish preserved task performance."
+      }
+    ],
+    "sources": [
+      {
+        "name": "When Agent Skills Go Stale (v1)",
+        "url": "https://arxiv.org/html/2611.22525v1",
+        "locator": "Sections 4.1–4.2, Table 4 and Appendix E.1",
+        "source_version": "2611.22525v1",
+        "first_release_date": "2026-11-17",
+        "source_version_date": "2026-11-17",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ],
+    "benchmarks": [
+      {
+        "id": "appworld",
+        "role": "evaluated setting for the stated contrast"
+      }
+    ],
+    "annotation_status": "record_screened",
+    "signals": [
+      {
+        "id": "scoped-observation",
+        "outcome": "mixed",
+        "retention": "not_assessed",
+        "attribution": "full_system_comparison",
+        "components": [
+          "memory",
+          "control"
+        ],
+        "benchmark_ids": [
+          "appworld"
+        ],
+        "scope": "Sections 4.1–4.2, Table 4 and Appendix E.1. The interval spans decline and improvement. The study evaluates one maintenance event after a controlled environment change, not successive continual updates. Lower execution cost does not establish preserved task performance.",
+        "summary": "For procedural AppWorld skills, selective maintenance scored 0.569 versus 0.627 without maintenance, with mean execution cost 24.8 versus 25.7. The paired performance difference was -5.9 percentage points, with a bootstrap interval from -21.6 to +9.8.",
+        "section": "Reported observation",
+        "evidence_quote": "For procedural AppWorld skills, selective maintenance scored 0.569 versus 0.627 without maintenance, with mean execution cost 24.8 versus 25.7. The paired performance difference was -5.9 percentage points, with a bootstrap interval from -21.6 to +9.8.",
+        "source_index": 0,
+        "primary_source": {
+          "name": "When Agent Skills Go Stale (v1)",
+          "url": "https://arxiv.org/html/2611.22525v1",
+          "locator": "Sections 4.1–4.2, Table 4 and Appendix E.1",
+          "source_version": "2611.22525v1",
+          "first_release_date": "2026-11-17",
+          "source_version_date": "2026-11-17",
+          "metadata_checked_on": "2026-11-18",
+          "metadata_basis": "Official arXiv submission history and full-text author list."
+        },
+        "primary_support": {
+          "url": "https://arxiv.org/html/2611.22525v1",
+          "locator": "Sections 4.1–4.2, Table 4 and Appendix E.1",
+          "excerpt": "do not evaluate successive maintenance events",
+          "artifact_sha256": "f7bc3fbb2ceedafbf00c7f102fd542403dd76380121cf1b727276a8e5a2be2db",
+          "checked_on": "2026-11-18"
+        }
+      }
+    ],
+    "provenance": {
+      "introduced_in": "0.8.0",
+      "original_record_id": null,
+      "legacy_evidence_cutoff": null
+    },
+    "weight_update_boundary": "fixed_executor",
+    "transfer_regime": "single_environment_change",
+    "selection_protocol": "Validate candidates on disjoint tasks or runs using performance and cost criteria. Retain the previous state if neither repair nor rebuilding is accepted.",
+    "controlled_variables": [
+      "Haiku 4.5 executor held fixed",
+      "same post-change AppWorld evaluation tasks",
+      "same procedural skill style and evaluation criteria"
+    ],
+    "missingness": {
+      "selection_protocol": "reported",
+      "controlled_variables": "reported"
+    },
+    "review": {
+      "status": "primary_source_checked",
+      "reviewed_on": "2026-11-18",
+      "reviewer": "Codex (AI-assisted source inspection)",
+      "human_review_status": "pending",
+      "scope": "Targeted inspection of the pinned contrast, selection protocol and limits."
+    }
   }
 ]
