@@ -1,114 +1,114 @@
 {
-  "searched_on": "2026-11-17",
-  "window_start": "2026-11-08",
-  "window_end": "2026-11-17",
-  "last_completed_standard_query_date": "2026-11-17",
-  "previous_release_log": "v0.6.0/search-log.json",
-  "scope": "Four date-bounded arXiv Atom queries plus three official category announcement lists, direct primary-text checks and review of earlier candidates.",
+  "searched_on": "2026-11-18",
+  "window_start": "2026-11-10",
+  "window_end": "2026-11-18",
+  "last_completed_standard_query_date": "2026-11-18",
+  "previous_release_log": "v0.7.0/search-log.json",
+  "scope": "Four date-bounded arXiv Atom queries, three official category announcement lists and targeted primary-text review of new and earlier candidates.",
   "queries": [
     {
-      "query": "(ti:harness OR abs:\"harness optimization\" OR abs:\"harness evolution\") AND submittedDate:[202611080000 TO 202611172359]",
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aharness+OR+abs%3A%22harness+optimization%22+OR+abs%3A%22harness+evolution%22%29+AND+submittedDate%3A%5B202611080000+TO+202611172359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
-      "checked_at": "2026-11-17T17:04:45.123495+00:00",
-      "count": 40,
-      "total_results": 40,
-      "status": "complete"
-    },
-    {
-      "query": "(all:\"recursive self-improvement\" OR ti:\"self-evolving\" OR ti:\"self-improving\") AND submittedDate:[202611080000 TO 202611172359]",
-      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22recursive+self-improvement%22+OR+ti%3A%22self-evolving%22+OR+ti%3A%22self-improving%22%29+AND+submittedDate%3A%5B202611080000+TO+202611172359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
-      "checked_at": "2026-11-17T17:04:48.638039+00:00",
+      "query": "(ti:harness OR abs:\"harness optimization\" OR abs:\"harness evolution\") AND submittedDate:[202611100000 TO 202611182359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aharness+OR+abs%3A%22harness+optimization%22+OR+abs%3A%22harness+evolution%22%29+AND+submittedDate%3A%5B202611100000+TO+202611182359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-18T17:18:34.831963+00:00",
       "count": 36,
       "total_results": 36,
       "status": "complete"
     },
     {
-      "query": "(ti:agent OR ti:agents) AND (ti:memory OR ti:skill OR ti:continual OR ti:workflow) AND submittedDate:[202611080000 TO 202611172359]",
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aagent+OR+ti%3Aagents%29+AND+%28ti%3Amemory+OR+ti%3Askill+OR+ti%3Acontinual+OR+ti%3Aworkflow%29+AND+submittedDate%3A%5B202611080000+TO+202611172359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
-      "checked_at": "2026-11-17T17:04:52.781321+00:00",
-      "count": 59,
-      "total_results": 59,
+      "query": "(all:\"recursive self-improvement\" OR ti:\"self-evolving\" OR ti:\"self-improving\") AND submittedDate:[202611100000 TO 202611182359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28all%3A%22recursive+self-improvement%22+OR+ti%3A%22self-evolving%22+OR+ti%3A%22self-improving%22%29+AND+submittedDate%3A%5B202611100000+TO+202611182359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-18T17:18:38.386003+00:00",
+      "count": 34,
+      "total_results": 34,
       "status": "complete"
     },
     {
-      "query": "(ti:agent OR ti:harness) AND (ti:transfer OR ti:adaptation OR ti:evolution) AND submittedDate:[202611080000 TO 202611172359]",
-      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aagent+OR+ti%3Aharness%29+AND+%28ti%3Atransfer+OR+ti%3Aadaptation+OR+ti%3Aevolution%29+AND+submittedDate%3A%5B202611080000+TO+202611172359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
-      "checked_at": "2026-11-17T17:04:56.554993+00:00",
-      "count": 27,
-      "total_results": 27,
+      "query": "(ti:agent OR ti:agents) AND (ti:memory OR ti:skill OR ti:continual OR ti:workflow) AND submittedDate:[202611100000 TO 202611182359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aagent+OR+ti%3Aagents%29+AND+%28ti%3Amemory+OR+ti%3Askill+OR+ti%3Acontinual+OR+ti%3Aworkflow%29+AND+submittedDate%3A%5B202611100000+TO+202611182359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-18T17:18:42.041752+00:00",
+      "count": 58,
+      "total_results": 58,
+      "status": "complete"
+    },
+    {
+      "query": "(ti:agent OR ti:harness) AND (ti:transfer OR ti:adaptation OR ti:evolution) AND submittedDate:[202611100000 TO 202611182359]",
+      "url": "https://export.arxiv.org/api/query?search_query=%28ti%3Aagent+OR+ti%3Aharness%29+AND+%28ti%3Atransfer+OR+ti%3Aadaptation+OR+ti%3Aevolution%29+AND+submittedDate%3A%5B202611100000+TO+202611182359%5D&start=0&max_results=500&sortBy=submittedDate&sortOrder=descending",
+      "checked_at": "2026-11-18T17:18:45.610045+00:00",
+      "count": 26,
+      "total_results": 26,
       "status": "complete"
     }
   ],
   "listing_sources": [
     {
       "url": "https://arxiv.org/list/cs.AI/recent?show=2000",
-      "entries": 1641,
+      "entries": 1420,
       "headings": [
+        "Wed, 18 Nov 2026 (showing 259 of 259 entries )",
         "Tue, 17 Nov 2026 (showing 428 of 428 entries )",
         "Mon, 16 Nov 2026 (showing 164 of 164 entries )",
         "Fri, 13 Nov 2026 (showing 321 of 321 entries )",
-        "Wed, 11 Nov 2026 (showing 248 of 248 entries )",
-        "Tue, 10 Nov 2026 (showing 480 of 480 entries )"
+        "Wed, 11 Nov 2026 (showing 248 of 248 entries )"
       ]
     },
     {
       "url": "https://arxiv.org/list/cs.CL/recent?show=2000",
-      "entries": 752,
+      "entries": 647,
       "headings": [
+        "Wed, 18 Nov 2026 (showing 102 of 102 entries )",
         "Tue, 17 Nov 2026 (showing 236 of 236 entries )",
         "Mon, 16 Nov 2026 (showing 62 of 62 entries )",
         "Fri, 13 Nov 2026 (showing 135 of 135 entries )",
-        "Wed, 11 Nov 2026 (showing 112 of 112 entries )",
-        "Tue, 10 Nov 2026 (showing 207 of 207 entries )"
+        "Wed, 11 Nov 2026 (showing 112 of 112 entries )"
       ]
     },
     {
       "url": "https://arxiv.org/list/cs.LG/recent?show=2000",
-      "entries": 1705,
+      "entries": 1407,
       "headings": [
+        "Wed, 18 Nov 2026 (showing 211 of 211 entries )",
         "Tue, 17 Nov 2026 (showing 461 of 461 entries )",
         "Mon, 16 Nov 2026 (showing 160 of 160 entries )",
         "Fri, 13 Nov 2026 (showing 340 of 340 entries )",
-        "Wed, 11 Nov 2026 (showing 235 of 235 entries )",
-        "Tue, 10 Nov 2026 (showing 509 of 509 entries )"
+        "Wed, 11 Nov 2026 (showing 235 of 235 entries )"
       ]
     }
   ],
-  "unique_query_ids": 144,
-  "unique_announcement_ids": 3179,
+  "unique_query_ids": 135,
+  "unique_announcement_ids": 2692,
   "title_filter": "\\bharness(?:es)?\\b|self.evolv|self.improv|agent.*(?:memory|skills?|workflow|continual|transfer)|(?:memory|skills?|workflow|continual).*agent",
-  "title_filter_matches": 96,
+  "title_filter_matches": 86,
   "new_collection_papers": 4,
   "new_evidence_records": 4,
-  "cumulative_pending_count": 397,
+  "cumulative_pending_count": 423,
   "included": [
     {
-      "key": "elite_evaluation_free2026",
-      "source": "https://arxiv.org/html/2611.21056v1",
-      "locator": "Sections 4–5.3, Tables 1–2 and Appendix A.4"
+      "key": "unifying_self_improving_harnesses2026",
+      "source": "https://arxiv.org/html/2611.22299v1",
+      "locator": "Section VII, Table IV"
     },
     {
-      "key": "harness_leverage_ladder2026",
-      "source": "https://arxiv.org/html/2611.21407v1",
-      "locator": "Sections 3.4–3.8 and 4.4, Table 7"
+      "key": "synapse_skill_repair2026",
+      "source": "https://arxiv.org/html/2611.20856v1",
+      "locator": "Sections 3.6, 4.1 and 4.3, Table 2, Section 5"
     },
     {
-      "key": "easyfoam_skill_evolution2026",
-      "source": "https://arxiv.org/html/2611.14525v1",
-      "locator": "Sections 3.3 and 4.4, Table 3 and Appendix D.3"
+      "key": "craft_scope_aware_adaptation2026",
+      "source": "https://arxiv.org/html/2611.19952v1",
+      "locator": "Sections 4–6.5, Table 3 and Appendix G"
     },
     {
-      "key": "validitymem_filtering2026",
-      "source": "https://arxiv.org/html/2611.17338v1",
-      "locator": "Sections 4–6 and 12, deployment-matched validation gate in Section 6"
+      "key": "stale_agent_skill_maintenance2026",
+      "source": "https://arxiv.org/html/2611.22525v1",
+      "locator": "Sections 4.1–4.2, Table 4 and Appendix E.1"
     }
   ],
   "version_audit": {
-    "requested": 122,
-    "returned": 122,
+    "requested": 126,
+    "returned": 126,
     "recent_updates": [],
-    "distinct_arxiv_ids_checked_across_registry_and_bibliography": 325,
-    "updated_since_november_15": []
+    "distinct_arxiv_ids_checked_across_registry_and_bibliography": 329,
+    "updated_since_november_17": []
   },
-  "screening_note": "Pending items are discovery leads. Screening and human adjudication are incomplete. The dates are submission dates for the query and announcement dates for the listings."
+  "screening_note": "Pending items are discovery leads, not accepted literature or confirmed omissions. Coverage is targeted. Query dates are submission dates; announcement dates can differ."
 }

@@ -544,5 +544,33 @@
     "decision": "included",
     "reason": "Pinned full text supports the scoped contrast in Sections 4–6 and 12, deployment-matched validation gate in Section 6.",
     "screened_on": "2026-11-17"
+  },
+  {
+    "key": "unifying_self_improving_harnesses2026",
+    "url": "https://arxiv.org/abs/2611.22299v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Section VII, Table IV.",
+    "screened_on": "2026-11-18"
+  },
+  {
+    "key": "synapse_skill_repair2026",
+    "url": "https://arxiv.org/abs/2611.20856v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 3.6, 4.1 and 4.3, Table 2, Section 5.",
+    "screened_on": "2026-11-18"
+  },
+  {
+    "key": "craft_scope_aware_adaptation2026",
+    "url": "https://arxiv.org/abs/2611.19952v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 4–6.5, Table 3 and Appendix G.",
+    "screened_on": "2026-11-18"
+  },
+  {
+    "key": "stale_agent_skill_maintenance2026",
+    "url": "https://arxiv.org/abs/2611.22525v1",
+    "decision": "included",
+    "reason": "Pinned full text supports the scoped contrast in Sections 4.1–4.2, Table 4 and Appendix E.1.",
+    "screened_on": "2026-11-18"
   }
 ]

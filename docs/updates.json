@@ -17,6 +17,18 @@
   ],
   "releases": [
     {
+      "id": "literature-2026-11-18",
+      "date": "2026-11-18",
+      "kind": "website",
+      "title": "Validation gates, skill repair and the limits of adaptation",
+      "records": 95,
+      "changes": [
+        "Four source-checked studies bring the living bibliography to 347 papers and 11 resources.",
+        "Evidence v0.8.0 adds four scoped comparisons, including cost–accuracy tradeoffs and an uncertain maintenance regression.",
+        "Targeted searches completed through November 18. README primary-check counts corrected."
+      ]
+    },
+    {
       "id": "literature-2026-11-17",
       "date": "2026-11-17",
       "kind": "website",

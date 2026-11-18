@@ -4246,5 +4246,53 @@
       "basis": "First submission date in the arXiv version history.",
       "source": "https://arxiv.org/abs/2611.17338v1"
     }
+  },
+  "unifying_self_improving_harnesses2026": {
+    "category": "Surveys, Definitions, and Conceptual Frameworks",
+    "kind": "paper",
+    "summary": "Proposes changes to one harness module at a time and gates them using validation outcomes, executed-code checks and a runtime token cap. Modular gated evolution attained 40.0% held-out accuracy at 46.7k tokens per task, versus 42.5% at 451.6k for an unconstrained full rewrite. The modular harness permits 12 turns, while the unconstrained rewrite permits 28. This is a combined accuracy–cost comparison, not an equal-budget estimate of the gate alone. The test set mixes held-out tasks from the development repository and a new repository.",
+    "added_on": "2026-11-18",
+    "release": {
+      "value": "2026-11-17",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.22299v1"
+    }
+  },
+  "synapse_skill_repair2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Compiles recognized skill instructions into a source-linked partial program, repairs mapped spans, and screens structurally related tests including previously passing cases. On DocVQA with GPT-6 Sol, full Synapse scored 90.64% versus 87.97% for the variant without SkIR-based repair and broader screening. The ablation jointly changes repair representation and screening, so it does not isolate either effect. The method relies on self-reported coverage and an unmeasured locality assumption. Small validation suites and earlier development-time test scoring limit confidence in generalization.",
+    "added_on": "2026-11-18",
+    "release": {
+      "value": "2026-11-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.20856v1"
+    }
+  },
+  "craft_scope_aware_adaptation2026": {
+    "category": "Additional Task-Domain Harness Evolution",
+    "kind": "paper",
+    "summary": "Routes adaptation between correction memory, inferred rules and an online learned model while a supervisor enforces the robot execution contract. The ladder completed 96/120 acceptable jobs versus 94/120 for a frontier agent with memory and rules. It asked 6 versus 11 optional questions, but dispatched 13 versus 9 wrong actions. Six streams support a descriptive comparison, not a superiority claim. Both methods use simulation and different adaptation providers. The frontier incurs seven decision timeouts. The project includes a separately trained perception probe and online adaptation learners. The integrated pilot uses a shared segmentation/depth frontend and a frozen robot skill.",
+    "added_on": "2026-11-18",
+    "release": {
+      "value": "2026-11-15",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.19952v1"
+    }
+  },
+  "stale_agent_skill_maintenance2026": {
+    "category": "Memory, Context, Skills, and Experience Reuse",
+    "kind": "paper",
+    "summary": "Replays previously recorded checks, verifies conflicts with retained skill state, and attempts local repair before rebuilding when necessary. For procedural AppWorld skills, selective maintenance scored 0.569 versus 0.627 without maintenance, with mean execution cost 24.8 versus 25.7. The paired performance difference was -5.9 percentage points, with a bootstrap interval from -21.6 to +9.8. The interval spans decline and improvement. The study evaluates one maintenance event after a controlled environment change, not successive continual updates. Lower execution cost does not establish preserved task performance.",
+    "added_on": "2026-11-18",
+    "release": {
+      "value": "2026-11-17",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.22525v1"
+    }
   }
 }

@@ -3726,5 +3726,109 @@
         "metadata_basis": "Official arXiv submission history and full-text author list."
       }
     ]
+  },
+  {
+    "key": "unifying_self_improving_harnesses2026",
+    "title": "Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses",
+    "authors": "Deep Shah and Nehal Kathrotia",
+    "kind": "paper",
+    "arxiv_id": "2611.22299",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-17",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.22299v1"
+    },
+    "sources": [
+      {
+        "name": "Harnesses That Improve Themselves (v1)",
+        "url": "https://arxiv.org/html/2611.22299v1",
+        "locator": "Section VII, Table IV",
+        "source_version": "2611.22299v1",
+        "first_release_date": "2026-11-17",
+        "source_version_date": "2026-11-17",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
+  },
+  {
+    "key": "synapse_skill_repair2026",
+    "title": "Synapse: Optimizing Natural-Language Agent Skills through Program Repair",
+    "authors": "Lijuan Li and Zhenpeng Chen and Chenxi Zhang and Yihao Huang and Yang Liu and Chong Wang",
+    "kind": "paper",
+    "arxiv_id": "2611.20856",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-16",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.20856v1"
+    },
+    "sources": [
+      {
+        "name": "Synapse (v1)",
+        "url": "https://arxiv.org/html/2611.20856v1",
+        "locator": "Sections 3.6, 4.1 and 4.3, Table 2, Section 5",
+        "source_version": "2611.20856v1",
+        "first_release_date": "2026-11-16",
+        "source_version_date": "2026-11-16",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
+  },
+  {
+    "key": "craft_scope_aware_adaptation2026",
+    "title": "CRAFT: A Robot-Agent Harness with Scope-Aware Adaptation",
+    "authors": "Peng Zhang and Jiawen Wang and Cheng Xue and Jochen Renz",
+    "kind": "paper",
+    "arxiv_id": "2611.19952",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-15",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.19952v1"
+    },
+    "sources": [
+      {
+        "name": "CRAFT (v1)",
+        "url": "https://arxiv.org/html/2611.19952v1",
+        "locator": "Sections 4–6.5, Table 3 and Appendix G",
+        "source_version": "2611.19952v1",
+        "first_release_date": "2026-11-15",
+        "source_version_date": "2026-11-15",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
+  },
+  {
+    "key": "stale_agent_skill_maintenance2026",
+    "title": "When Agent Skills Go Stale: Runtime Behavior and Selective Maintenance in Evolving Environments",
+    "authors": "Ömer Faruk Akgül and Shuli Jiang and Yuting Zhang and Yi Zhang and Xiaohan Fei and Wei Xia and Stefano Soatto",
+    "kind": "paper",
+    "arxiv_id": "2611.22525",
+    "doi": null,
+    "first_release": {
+      "value": "2026-11-17",
+      "precision": "day",
+      "basis": "First submission date in the arXiv version history.",
+      "source": "https://arxiv.org/abs/2611.22525v1"
+    },
+    "sources": [
+      {
+        "name": "When Agent Skills Go Stale (v1)",
+        "url": "https://arxiv.org/html/2611.22525v1",
+        "locator": "Sections 4.1–4.2, Table 4 and Appendix E.1",
+        "source_version": "2611.22525v1",
+        "first_release_date": "2026-11-17",
+        "source_version_date": "2026-11-17",
+        "metadata_checked_on": "2026-11-18",
+        "metadata_basis": "Official arXiv submission history and full-text author list."
+      }
+    ]
   }
 ]
