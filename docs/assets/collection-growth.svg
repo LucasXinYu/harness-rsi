@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="366" viewBox="0 0 1000 366" role="img" aria-labelledby="title desc">
 <title id="title">Cumulative collected literature by publication month</title>
-<desc id="desc">2026-01: 58; 2026-02: 60; 2026-03: 65; 2026-04: 71; 2026-05: 85; 2026-06: 97; 2026-07: 121; 2026-08: 155; 2026-09: 224; 2026-10: 299; 2026-11: 329. Only papers with known months. Earlier years included.</desc>
+<desc id="desc">2026-01: 58; 2026-02: 60; 2026-03: 65; 2026-04: 71; 2026-05: 85; 2026-06: 97; 2026-07: 121; 2026-08: 155; 2026-09: 224; 2026-10: 299; 2026-11: 333. Only papers with known months. Earlier years included.</desc>
 <rect width="1000" height="366" rx="16" fill="#0c1521"/>
 <g font-family="Arial,sans-serif" fill="#e9f2f6">
 <text x="30" y="35" font-size="21">A growing literature collection</text>
-<text x="30" y="61" font-size="13" fill="#9eb3c6">2026 · Cumulative by release month · Search through 2026-11-17</text>
-<text x="945" y="37" text-anchor="end" font-size="24">343 papers</text>
+<text x="30" y="61" font-size="13" fill="#9eb3c6">2026 · Cumulative by release month · Search through 2026-11-18</text>
+<text x="945" y="37" text-anchor="end" font-size="24">347 papers</text>
 <text x="945" y="61" text-anchor="end" font-size="12" fill="#9eb3c6">11 resources tracked separately</text>
 <path d="M60 286.0h884" stroke="#283b4b"/>
 <text x="50" y="290.0" text-anchor="end" font-size="11" fill="#9eb3c6">0</text>
@@ -17,8 +17,8 @@
 <text x="50" y="153.5" text-anchor="end" font-size="11" fill="#9eb3c6">262.5</text>
 <path d="M60 104.0h884" stroke="#283b4b"/>
 <text x="50" y="108.0" text-anchor="end" font-size="11" fill="#9eb3c6">350</text>
-<polygon points="60,286 60.0,255.8 148.4,254.8 236.8,252.2 325.2,249.1 413.6,241.8 502.0,235.6 590.4,223.1 678.8,205.4 767.2,169.5 855.6,130.5 944.0,114.9 944,286" fill="#133632"/>
-<polyline points="60.0,255.8 148.4,254.8 236.8,252.2 325.2,249.1 413.6,241.8 502.0,235.6 590.4,223.1 678.8,205.4 767.2,169.5 855.6,130.5 944.0,114.9" fill="none" stroke="#79ead3" stroke-width="2.5"/>
+<polygon points="60,286 60.0,255.8 148.4,254.8 236.8,252.2 325.2,249.1 413.6,241.8 502.0,235.6 590.4,223.1 678.8,205.4 767.2,169.5 855.6,130.5 944.0,112.8 944,286" fill="#133632"/>
+<polyline points="60.0,255.8 148.4,254.8 236.8,252.2 325.2,249.1 413.6,241.8 502.0,235.6 590.4,223.1 678.8,205.4 767.2,169.5 855.6,130.5 944.0,112.8" fill="none" stroke="#79ead3" stroke-width="2.5"/>
 <circle cx="60.0" cy="255.84" r="4" fill="#79ead3"/>
 <text x="60.0" y="243.84" text-anchor="middle" font-size="11">58</text>
 <text x="60.0" y="309" text-anchor="middle" font-size="11" fill="#9eb3c6">Jan</text>
@@ -49,7 +49,7 @@
 <circle cx="855.6" cy="130.51999999999998" r="4" fill="#79ead3"/>
 <text x="855.6" y="118.51999999999998" text-anchor="middle" font-size="11">299</text>
 <text x="855.6" y="309" text-anchor="middle" font-size="11" fill="#9eb3c6">Oct</text>
-<circle cx="944.0" cy="114.92000000000002" r="4" fill="#79ead3"/>
-<text x="944.0" y="102.92000000000002" text-anchor="middle" font-size="11">329</text>
+<circle cx="944.0" cy="112.84" r="4" fill="#79ead3"/>
+<text x="944.0" y="100.84" text-anchor="middle" font-size="11">333</text>
 <text x="944.0" y="309" text-anchor="middle" font-size="11" fill="#9eb3c6">Nov*</text>
-<text x="30" y="345" font-size="11" fill="#9eb3c6">329/343 papers have known months. * Partial month. Collection coverage, not a census or count of achieved RSI.</text></g></svg>
+<text x="30" y="345" font-size="11" fill="#9eb3c6">333/347 papers have known months. * Partial month. Collection coverage, not a census or count of achieved RSI.</text></g></svg>
