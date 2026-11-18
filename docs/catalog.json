@@ -1,21 +1,21 @@
 {
   "config": {
     "title": "Harness RSI",
-    "search_cutoff": "2026-11-17",
-    "updated_on": "2026-11-17",
+    "search_cutoff": "2026-11-18",
+    "updated_on": "2026-11-18",
     "repository_url": "https://github.com/LucasXinYu/harness-rsi",
     "baseline_note": "Initial import of the existing survey collection. Earlier collection dates are unknown.",
     "source_sha256": "9e405ca467f8c9c586527bd9e79c36befe4d6f7f2fcc0f1600efe3f29b26d70f"
   },
   "stats": {
-    "papers": 343,
+    "papers": 347,
     "resources": 11,
     "categories": {
-      "Surveys, Definitions, and Conceptual Frameworks": 34,
+      "Surveys, Definitions, and Conceptual Frameworks": 35,
       "Harness Optimization and Search Workflows": 55,
       "Model and Policy Training, Harness Co-Evolution, and Distillation": 33,
       "Self-Modification and Meta-Level Improvement": 22,
-      "Memory, Context, Skills, and Experience Reuse": 53,
+      "Memory, Context, Skills, and Experience Reuse": 55,
       "Benchmarks for Harness Optimization and Adaptation": 8,
       "Generalization, Evaluation Methodology, and Safety": 43,
       "Agent Architectures and Harness Infrastructure": 24,
@@ -23,7 +23,7 @@
       "Task-Time Search and Output Refinement (Adjacent Work)": 6,
       "Downstream Task Benchmarks": 16,
       "Official Benchmark and Implementation Resources": 11,
-      "Additional Task-Domain Harness Evolution": 29
+      "Additional Task-Domain Harness Evolution": 30
     },
     "monthly": {
       "2022-10": 1,
@@ -62,7 +62,7 @@
       "2026-08": 34,
       "2026-09": 69,
       "2026-10": 75,
-      "2026-11": 30
+      "2026-11": 34
     },
     "focus_monthly": {
       "2026-02": 1,
@@ -76,10 +76,10 @@
       "2026-10": 14,
       "2026-11": 4
     },
-    "monthly_coverage": 329,
+    "monthly_coverage": 333,
     "date_precision": {
       "month": 8,
-      "day": 321,
+      "day": 325,
       "year": 13,
       "unknown": 1
     },
@@ -157,6 +157,11 @@
       {
         "date": "2026-11-17",
         "papers": 343,
+        "resources": 11
+      },
+      {
+        "date": "2026-11-18",
+        "papers": 347,
         "resources": 11
       }
     ]
@@ -7240,6 +7245,86 @@
         "precision": "day",
         "basis": "First submission date in the arXiv version history.",
         "source": "https://arxiv.org/abs/2611.17338v1"
+      }
+    },
+    {
+      "id": "unifying_self_improving_harnesses2026",
+      "title": "Harnesses That Improve Themselves: A Unifying Framework for Self-Improving Agent Harnesses",
+      "authors": "Deep Shah and Nehal Kathrotia",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.22299v1",
+      "venue": "arXiv preprint arXiv:2611.22299",
+      "doi": null,
+      "arxiv": "2611.22299",
+      "category": "Surveys, Definitions, and Conceptual Frameworks",
+      "kind": "paper",
+      "summary": "Proposes changes to one harness module at a time and gates them using validation outcomes, executed-code checks and a runtime token cap. Modular gated evolution attained 40.0% held-out accuracy at 46.7k tokens per task, versus 42.5% at 451.6k for an unconstrained full rewrite. The modular harness permits 12 turns, while the unconstrained rewrite permits 28. This is a combined accuracy–cost comparison, not an equal-budget estimate of the gate alone. The test set mixes held-out tasks from the development repository and a new repository.",
+      "added_on": "2026-11-18",
+      "release": {
+        "value": "2026-11-17",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.22299v1"
+      }
+    },
+    {
+      "id": "synapse_skill_repair2026",
+      "title": "Synapse: Optimizing Natural-Language Agent Skills through Program Repair",
+      "authors": "Lijuan Li and Zhenpeng Chen and Chenxi Zhang and Yihao Huang and Yang Liu and Chong Wang",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.20856v1",
+      "venue": "arXiv preprint arXiv:2611.20856",
+      "doi": null,
+      "arxiv": "2611.20856",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Compiles recognized skill instructions into a source-linked partial program, repairs mapped spans, and screens structurally related tests including previously passing cases. On DocVQA with GPT-6 Sol, full Synapse scored 90.64% versus 87.97% for the variant without SkIR-based repair and broader screening. The ablation jointly changes repair representation and screening, so it does not isolate either effect. The method relies on self-reported coverage and an unmeasured locality assumption. Small validation suites and earlier development-time test scoring limit confidence in generalization.",
+      "added_on": "2026-11-18",
+      "release": {
+        "value": "2026-11-16",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.20856v1"
+      }
+    },
+    {
+      "id": "craft_scope_aware_adaptation2026",
+      "title": "CRAFT: A Robot-Agent Harness with Scope-Aware Adaptation",
+      "authors": "Peng Zhang and Jiawen Wang and Cheng Xue and Jochen Renz",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.19952v1",
+      "venue": "arXiv preprint arXiv:2611.19952",
+      "doi": null,
+      "arxiv": "2611.19952",
+      "category": "Additional Task-Domain Harness Evolution",
+      "kind": "paper",
+      "summary": "Routes adaptation between correction memory, inferred rules and an online learned model while a supervisor enforces the robot execution contract. The ladder completed 96/120 acceptable jobs versus 94/120 for a frontier agent with memory and rules. It asked 6 versus 11 optional questions, but dispatched 13 versus 9 wrong actions. Six streams support a descriptive comparison, not a superiority claim. Both methods use simulation and different adaptation providers. The frontier incurs seven decision timeouts. The project includes a separately trained perception probe and online adaptation learners. The integrated pilot uses a shared segmentation/depth frontend and a frozen robot skill.",
+      "added_on": "2026-11-18",
+      "release": {
+        "value": "2026-11-15",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.19952v1"
+      }
+    },
+    {
+      "id": "stale_agent_skill_maintenance2026",
+      "title": "When Agent Skills Go Stale: Runtime Behavior and Selective Maintenance in Evolving Environments",
+      "authors": "Ömer Faruk Akgül and Shuli Jiang and Yuting Zhang and Yi Zhang and Xiaohan Fei and Wei Xia and Stefano Soatto",
+      "year": "2026",
+      "url": "https://arxiv.org/abs/2611.22525v1",
+      "venue": "arXiv preprint arXiv:2611.22525",
+      "doi": null,
+      "arxiv": "2611.22525",
+      "category": "Memory, Context, Skills, and Experience Reuse",
+      "kind": "paper",
+      "summary": "Replays previously recorded checks, verifies conflicts with retained skill state, and attempts local repair before rebuilding when necessary. For procedural AppWorld skills, selective maintenance scored 0.569 versus 0.627 without maintenance, with mean execution cost 24.8 versus 25.7. The paired performance difference was -5.9 percentage points, with a bootstrap interval from -21.6 to +9.8. The interval spans decline and improvement. The study evaluates one maintenance event after a controlled environment change, not successive continual updates. Lower execution cost does not establish preserved task performance.",
+      "added_on": "2026-11-18",
+      "release": {
+        "value": "2026-11-17",
+        "precision": "day",
+        "basis": "First submission date in the arXiv version history.",
+        "source": "https://arxiv.org/abs/2611.22525v1"
       }
     }
   ]
