@@ -8,6 +8,8 @@
 
 <p align="center"><a href="#video-overview">Video</a> · <a href="#what-we-study">Our work</a> · <a href="#compare-the-mechanisms">Compare mechanisms</a> · <a href="#evidence-you-can-trace">Evidence</a> · <a href="#maintenance-and-versions">Maintenance</a> · <a href="#authors">Authors</a></p>
 
+**November 18 literature update.** Four studies examine modular gates, skill repair, robot adaptation and stale skills. [Read the comparisons](docs/LITERATURE_UPDATE_2026-11-18.md).
+
 **November 17 literature update.** Four studies compare agent selection, completion checks, engineering skills and memory filtering. [Read the comparisons](docs/LITERATURE_UPDATE_2026-11-17.md).
 
 **November 16 literature update.** Three source-checked additions and an earlier first-release date for Evo-Harness. [Comparisons and v0.6.0 data](docs/LITERATURE_UPDATE_2026-11-16.md).
@@ -63,11 +65,11 @@ The interactive site lets you choose **any two domains** and switch between inte
 
 ## Evidence dataset
 
-**Harness RSI Evidence Dataset v0.7.0** contains **166 category–source records, 133 distinct works and 66 scoped signals**. This release adds four records. [Release note](docs/LITERATURE_UPDATE_2026-11-17.md). Records are not independent interventions.
+**Harness RSI Evidence Dataset v0.8.0** contains **170 category–source records, 137 distinct works and 70 scoped signals**. This release adds four records. [Release note](docs/LITERATURE_UPDATE_2026-11-18.md). Records are not independent interventions.
 
-**77 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
+**85 records with documented primary-source checks · 85 inherited narrative records · 0 independently human-adjudicated records.** Review provenance, training boundaries, transfer regimes, selection rules and scientific corrections are explicit. Seventeen checked records carry no coded outcome.
 
-[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](docs/dataset/v0.7.0/DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.7.0/dataset.json) · [Normalized CSV](docs/dataset/v0.7.0/records.csv) · [Schema](docs/dataset/v0.7.0/schema.json) · [Quality report](docs/dataset/v0.7.0/quality-report.json) · [Corrections](docs/dataset/v0.7.0/corrections.json)
+[Inspect the dataset](https://lucasxinyu.github.io/harness-rsi/dataset/) · [Dataset card](docs/dataset/v0.8.0/DATASET_CARD.md) · [Curation protocol](DATASET_PROTOCOL.md) · [JSON](docs/dataset/v0.8.0/dataset.json) · [Normalized CSV](docs/dataset/v0.8.0/records.csv) · [Schema](docs/dataset/v0.8.0/schema.json) · [Quality report](docs/dataset/v0.8.0/quality-report.json) · [Corrections](docs/dataset/v0.8.0/corrections.json)
 
 This is targeted AI-assisted source inspection, not independent reproduction or exhaustive coverage. **Project-owned annotations and compilation are CC BY 4.0; third-party rights are excluded.** See [the license scope](LICENSE-DATA.md). [Historical v0.1.0](docs/dataset/v0.1.0/dataset.json) is preserved byte-for-byte; its HarnessX hit-rate interpretation is superseded by the correction notice.
 
@@ -99,8 +101,8 @@ We will continue to add verified studies, benchmark-level harness changes and re
 | State | Date | What it means |
 | :-- | :-- | :-- |
 | **Frozen paper evidence** | 2026-10-01 | 95 category–source records; evidence export dated 2026-10-10 |
-| **Living literature collection** | 2026-11-17 | Search horizon; 343 papers and 11 official resources; collection updated 2026-11-17 |
-| **Website update** | 2026-11-17 | Selection without downstream scores, held-out skills and two limits of harness control; see [release notes](docs/updates.json) for the scope of this update |
+| **Living literature collection** | 2026-11-18 | Search horizon; 347 papers and 11 official resources; collection updated 2026-11-18 |
+| **Website update** | 2026-11-18 | Validation gates, skill repair and the limits of adaptation; see [release notes](docs/updates.json) for the scope of this update |
 
 **Our maintenance commitments**
 
@@ -118,11 +120,11 @@ The workflow is **find and screen → trace the actual change → revise compari
 
 ## Living collection
 
-**343 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-17**
+**347 collected papers & manuscripts** · **11 official resources** · Collection updated **2026-11-18**
 
 ![Cumulative collected literature by release month](docs/assets/collection-growth.svg)
 
-This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **329/343** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
+This collection is broader and newer than the frozen domain evidence. It includes surveys, adjacent methods, benchmarks and supporting work. **333/347** papers have known release months; year-only and undated records stay in the total but are not plotted. Resources are counted separately. These are collection statistics, not a census of the field or a count of methods achieving RSI.
 
 <details><summary>Monthly counts and actual collection updates</summary>
 
@@ -132,11 +134,11 @@ Publication dates use the first arXiv submission where available, then recorded 
 
 | Collection snapshot | Papers | Resources |
 | :-- | --: | --: |
-| 2026-11-04 | 318 | 11 |
 | 2026-11-14 | 335 | 11 |
 | 2026-11-15 | 336 | 11 |
 | 2026-11-16 | 339 | 11 |
 | 2026-11-17 | 343 | 11 |
+| 2026-11-18 | 347 | 11 |
 
 </details>
 
